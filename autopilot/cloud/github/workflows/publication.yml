@@ -1,0 +1,93 @@
+# Publication, PC éteint : récupère dans le stock les vidéos prêtes, les envoie sur YouTube (programmées à l'heure de la chaîne),
+# envoie les Shorts dans la boîte de réception TikTok, nettoie le stock et met l'état à jour pour l'interface.
+# Lancement à la main au début (Actions > Publication > Run workflow, « à blanc » par défaut) ; la planification 2 fois par jour
+# se décommente quand le premier essai réel a réussi.
+# Identifiants (secrets GitHub, jamais affichés) : YT_CLIENT_SECRET, YT_TOKEN ; TikTok (facultatif) : TIKTOK_CLIENT, TIKTOK_TOKEN.
+name: Publication
+on:
+  # schedule:
+  #   - cron: "0 6,16 * * *"
+  workflow_dispatch:
+    inputs:
+      a_blanc:
+        description: "À blanc (ne publie rien)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+concurrency:
+  group: publication
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      STOCKAGE: github
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      PYTHONIOENCODING: utf-8
+      A_BLANC: ${{ github.event_name == 'workflow_dispatch' && inputs.a_blanc }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Préparation
+        run: |
+          npm ci --silent
+          mkdir -p autopilot/state autopilot/secrets
+          python autopilot/cloud/etat_cloud.py restore
+      - name: Identifiants (jamais affichés)
+        env:
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_TOKEN: ${{ secrets.YT_TOKEN }}
+          TIKTOK_CLIENT: ${{ secrets.TIKTOK_CLIENT }}
+          TIKTOK_TOKEN: ${{ secrets.TIKTOK_TOKEN }}
+        run: |
+          set +x
+          [ -n "$YT_CLIENT_SECRET" ] && printf '%s' "$YT_CLIENT_SECRET" > autopilot/secrets/client_secret.json
+          [ -n "$YT_TOKEN" ] && printf '%s' "$YT_TOKEN" > autopilot/secrets/token.json
+          [ -n "$TIKTOK_CLIENT" ] && printf '%s' "$TIKTOK_CLIENT" > autopilot/secrets/tiktok_client.json
+          [ -n "$TIKTOK_TOKEN" ] && printf '%s' "$TIKTOK_TOKEN" > autopilot/secrets/tiktok_token.json
+          echo "YouTube : $( [ -f autopilot/secrets/token.json ] && echo identifiants présents || echo identifiants ABSENTS )"
+          echo "TikTok  : $( [ -f autopilot/secrets/tiktok_token.json ] && echo identifiants présents || echo non configuré )"
+      - name: Récupération des vidéos dans le stock
+        run: python autopilot/cloud/recuperer.py
+      - name: Publication YouTube
+        run: |
+          set +e
+          export BDF_PUBLIER_SEULEMENT="$(cat autopilot/state/publiables.txt)"
+          opts=""
+          [ "$A_BLANC" = "true" ] && opts="--dry-run"
+          python autopilot/publish/publish.py --en-attente $opts
+          code=$?
+          echo "code de sortie : $code"
+          # 1 = au moins un épisode en quarantaine (déjà noté dans son état) ; 3 = connexion YouTube à refaire
+          [ "$code" = "3" ] && { echo "::error::Connexion YouTube à refaire (jeton expiré ou absent)"; exit 3; }
+          exit 0
+      - name: Envoi TikTok (boîte de réception)
+        if: ${{ env.A_BLANC != 'true' && hashFiles('autopilot/secrets/tiktok_token.json') != '' }}
+        continue-on-error: true
+        run: python autopilot/tiktok/envoi.py
+      - name: Nettoyage du stock
+        if: ${{ env.A_BLANC != 'true' }}
+        run: python autopilot/cloud/nettoyer_stock.py
+      - name: Instantané et enregistrement de l'état
+        if: always()
+        run: |
+          rm -rf autopilot/secrets
+          python autopilot/cloud/etat_cloud.py save
+          python autopilot/run_daily.py etat --json > /dev/null || true
+          mkdir -p live
+          npx tsx tools/autopilot-snapshot.ts --out=live/snapshot.json
+          git config user.name "bdf-publication"
+          git config user.email "bdf-publication@users.noreply.github.com"
+          git add live etat-cloud
+          [ "$A_BLANC" = "true" ] || git add episodes-b
+          git diff --cached --quiet || git commit -qm "Publication : état ($(date -u +%F-%H%M))"
+          git pull --rebase -q origin main || true
+          git push

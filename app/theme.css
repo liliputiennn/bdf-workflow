@@ -351,3 +351,20 @@ a.btn { display: block; text-align: center; text-decoration: none; }
 .ap-sec[open] { padding-bottom: 14px; display: flex; flex-direction: column; gap: 8px; }
 .ap-sec[open] > summary { padding-bottom: 6px; }
 .ap-redac .btn.sm { min-height: 40px; }
+
+/* ---- Autopilote : lisibilité (corrections) ---- */
+.ap { font-size: 15px; }
+.ap > * { flex-shrink: 0; }                    /* sans cela, la colonne écrase les blocs quand la page est longue */
+.ap .small { font-size: 13.5px; color: var(--soft); }
+.ap-kpi .k { font-size: 12.5px; color: var(--soft); }
+.ap-hero h2 { font-size: 22px; }
+.ap-hero p { font-size: 15px; }
+.ap-title { font-size: 15.5px; -webkit-line-clamp: 3; }
+.ap-chip { font-size: 12.5px; padding: 3px 10px; }
+.ap-pill { font-size: 14px; }
+.ap-thumb:disabled { opacity: .85; }
+.ap-thumb span { font-size: 12px; }
+.ap-nextcard:not(:disabled):active { transform: scale(.995); }
+.ap-row { font-size: 14px; min-height: 34px; }
+.ap-alert { font-size: 13.5px; }
+.ap-sec > summary { font-size: 15.5px; }

@@ -36,7 +36,7 @@ $gi = Join-Path $Dest ".gitignore"
 (Get-Content $gi) | Where-Object { $_ -ne "episodes-b/**/status.json" } | Set-Content $gi -Encoding utf8
 $wf = Join-Path $Dest ".github\workflows"
 New-Item -ItemType Directory -Force $wf | Out-Null
-Copy-Item (Join-Path $PSScriptRoot "github\workflows\fabrique.yml") $wf -Force
+Get-ChildItem (Join-Path $PSScriptRoot "github\workflows") -Filter *.yml | Where-Object { $_.Name -ne "mesure.yml" } | Copy-Item -Destination $wf -Force
 if ($TestEpisode) {
   $st = Join-Path $Dest "episodes-b\$TestEpisode\status.json"
   $j = Get-Content $st -Raw | ConvertFrom-Json

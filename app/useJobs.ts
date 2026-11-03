@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { JobView } from "../server/types";
-import { API_BASE, ONLINE } from "./config";
+import { API_BASE, CLOUD_ONLY, ONLINE } from "./config";
 
 /** Dernière tâche par épisode, mise à jour en direct ; `version` change quand une tâche se termine. */
 export const useJobs = () => {
@@ -8,6 +8,7 @@ export const useJobs = () => {
   const [version, setVersion] = useState(0);
   const [toast, setToast] = useState<{ ok: boolean; text: string } | null>(null);
   useEffect(() => {
+    if (CLOUD_ONLY) return;
     const es = new EventSource(`${API_BASE}/api/jobs/stream`);
     es.onmessage = (e) => {
       const job = JSON.parse(e.data) as JobView;

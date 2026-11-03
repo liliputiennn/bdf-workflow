@@ -9,6 +9,7 @@ quarantaine ou un échec de validation, 3 authentification à refaire (rien n'es
 La dernière ligne imprimée est un résumé JSON pour l'orchestrateur.
 """
 import json
+import os
 import struct
 import sys
 from datetime import datetime, timezone
@@ -377,6 +378,10 @@ def main(argv: list[str]) -> int:
         return 0
     if "--en-attente" in argv:
         ids = common.list_episodes("pret")
+        # cloud : seuls les épisodes dont la vidéo a été récupérée dans le stock (liste séparée par des virgules, « - » = aucun)
+        seulement = os.environ.get("BDF_PUBLIER_SEULEMENT")
+        if seulement is not None:
+            ids = [i for i in ids if i in seulement.split(",")]
     elif not ids:
         print(__doc__)
         return 2

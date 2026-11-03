@@ -93,3 +93,6 @@ Lance `python autopilot/writer/valider.py <id>`. Elle contrôle la forme, la dur
 - Code 0 : accepté, le dossier est déplacé dans `episodes-b/<id>/` (ne touche plus à rien).
 - Code 1 : lis la liste d'erreurs, corrige les fichiers du brouillon, relance (3 essais au plus ; au troisième échec l'épisode part en quarantaine pour relecture humaine, passe au sujet suivant).
 - Une erreur « aucune source ne contient … » veut dire : change de source ou corrige le chiffre, ne contourne jamais en changeant le `check` pour un mot qui n'a rien à voir.
+
+## Titres, descriptions et hashtags (à lire avant d'écrire `publication.json`)
+Lis `autopilot/writer/META-YOUTUBE.md` : titre de 45 à 60 caractères avec le mot-clé en tête et une promesse tenue par la vidéo, **formes de titre variées d'une vidéo à l'autre**, deux premières lignes de description = résumé avec mot-clé, sources citées, 3 hashtags pertinents au plus, aucun gabarit copié-collé.

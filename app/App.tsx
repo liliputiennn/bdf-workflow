@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { api, type BatchStatus } from "./api";
-import { ONLINE } from "./config";
+import { CLOUD_ONLY, ONLINE } from "./config";
 import { JobTray } from "./JobTray";
 import { Autopilote } from "./screens/Autopilote";
 import { Ideas } from "./screens/Ideas";
@@ -28,6 +28,7 @@ export const App = () => {
   // vérifie le moteur toutes les 5 s : le bandeau disparaît tout seul dès qu'il répond
   const [reconnects, setReconnects] = useState(0);
   useEffect(() => {
+    if (CLOUD_ONLY) return;
     let wasDown = false;
     const check = () =>
       api
@@ -55,6 +56,7 @@ export const App = () => {
     }
   });
   useEffect(() => {
+    if (CLOUD_ONLY) return;
     api.batch().then((b) => setBatch(b.summary), () => {});
   }, [jobs.version]);
   const closeBatch = () => {
