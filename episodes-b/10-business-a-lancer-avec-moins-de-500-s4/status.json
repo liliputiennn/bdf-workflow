@@ -1,13 +1,14 @@
 {
- "etat": "pret",
- "maj": "2026-11-03T23:16:49",
+ "etat": "programme",
+ "maj": "2026-11-03T23:33:50",
  "raison": null,
  "tentatives": 0,
  "youtube": {
-  "video_id": null,
-  "url": null,
-  "visibilite": null,
-  "publie_a": null
+  "video_id": "kbTY-Jkd8oU",
+  "url": "https://youtu.be/kbTY-Jkd8oU",
+  "visibilite": "programme",
+  "publie_a": "2026-11-08T17:00:00Z",
+  "miniature": true
  },
  "origine": "10-business-a-lancer-avec-moins-de-500",
  "miniature": {
