@@ -1,664 +1,664 @@
 {
- "total": 33.2,
+ "total": 33.18,
  "lines": [
   {
    "start": 0.15,
-   "end": 2.45,
+   "end": 2.76,
    "words": [
     {
      "w": "Ton",
      "start": 0.15,
-     "end": 0.28
+     "end": 0.29
     },
     {
      "w": "appli",
-     "start": 0.28,
-     "end": 0.5
+     "start": 0.29,
+     "end": 0.53
     },
     {
      "w": "gratuite",
-     "start": 0.5,
-     "end": 0.92
+     "start": 0.53,
+     "end": 1.13
     },
     {
      "w": "n'est",
-     "start": 0.92,
-     "end": 1.18
+     "start": 1.13,
+     "end": 1.47
     },
     {
      "w": "pas",
-     "start": 1.18,
-     "end": 1.34
+     "start": 1.47,
+     "end": 1.61
     },
     {
      "w": "gratuite",
-     "start": 1.34,
-     "end": 1.72
+     "start": 1.61,
+     "end": 1.99
     },
     {
      "w": "pour",
-     "start": 1.72,
-     "end": 1.86
+     "start": 1.99,
+     "end": 2.13
     },
     {
      "w": "tout",
-     "start": 1.86,
-     "end": 2.0
+     "start": 2.13,
+     "end": 2.27
     },
     {
      "w": "le",
-     "start": 2.0,
-     "end": 2.08
+     "start": 2.27,
+     "end": 2.35
     },
     {
      "w": "monde.",
-     "start": 2.08,
-     "end": 2.24
+     "start": 2.35,
+     "end": 2.55
     }
    ]
   },
   {
-   "start": 2.63,
-   "end": 4.67,
+   "start": 2.94,
+   "end": 4.92,
    "words": [
     {
      "w": "Alors,",
-     "start": 2.63,
-     "end": 2.89
+     "start": 2.94,
+     "end": 3.16
     },
     {
      "w": "qui",
-     "start": 3.13,
-     "end": 3.29
+     "start": 3.32,
+     "end": 3.4
     },
     {
      "w": "paie",
-     "start": 3.29,
-     "end": 3.47
+     "start": 3.4,
+     "end": 3.6
     },
     {
      "w": "pour",
-     "start": 3.47,
-     "end": 3.55
+     "start": 3.6,
+     "end": 3.72
     },
     {
      "w": "que",
-     "start": 3.55,
-     "end": 3.69
+     "start": 3.72,
+     "end": 3.84
     },
     {
      "w": "tu",
-     "start": 3.69,
-     "end": 3.85
+     "start": 3.84,
+     "end": 3.98
     },
     {
      "w": "joues",
-     "start": 3.85,
-     "end": 4.09
+     "start": 3.98,
+     "end": 4.18
     },
     {
      "w": "sans",
-     "start": 4.09,
-     "end": 4.19
+     "start": 4.18,
+     "end": 4.36
     },
     {
      "w": "payer",
-     "start": 4.19,
-     "end": 4.45
+     "start": 4.36,
+     "end": 4.64
     }
    ]
   },
   {
-   "start": 4.85,
-   "end": 10.2,
+   "start": 5.1,
+   "end": 10.7,
    "words": [
     {
      "w": "Selon",
-     "start": 4.85,
-     "end": 5.22
+     "start": 5.1,
+     "end": 5.45
     },
     {
      "w": "un",
-     "start": 5.22,
-     "end": 5.3
+     "start": 5.45,
+     "end": 5.53
     },
     {
      "w": "rapport",
-     "start": 5.3,
-     "end": 5.54
+     "start": 5.53,
+     "end": 5.75
     },
     {
      "w": "de",
-     "start": 5.54,
-     "end": 5.7
+     "start": 5.75,
+     "end": 5.91
     },
     {
      "w": "deux",
-     "start": 5.7,
-     "end": 5.92
+     "start": 5.91,
+     "end": 6.05
     },
     {
      "w": "mille",
-     "start": 5.92,
-     "end": 6.14
+     "start": 6.05,
+     "end": 6.23
     },
     {
      "w": "quatorze,",
-     "start": 6.14,
-     "end": 6.64
+     "start": 6.23,
+     "end": 6.71
     },
     {
      "w": "seuls",
-     "start": 6.9,
-     "end": 7.24
+     "start": 7.13,
+     "end": 7.29
     },
     {
      "w": "un",
-     "start": 7.24,
-     "end": 7.4
+     "start": 7.29,
+     "end": 7.41
     },
     {
      "w": "virgule",
-     "start": 7.4,
-     "end": 7.74
+     "start": 7.41,
+     "end": 7.71
     },
     {
      "w": "cinq",
-     "start": 7.74,
-     "end": 8.02
+     "start": 7.71,
+     "end": 7.95
     },
     {
      "w": "pour",
-     "start": 8.02,
-     "end": 8.26
+     "start": 7.95,
+     "end": 8.17
     },
     {
      "w": "cent",
-     "start": 8.26,
-     "end": 8.46
+     "start": 8.17,
+     "end": 8.31
     },
     {
      "w": "des",
-     "start": 8.46,
-     "end": 8.6
+     "start": 8.31,
+     "end": 8.47
     },
     {
      "w": "joueurs",
-     "start": 8.6,
-     "end": 8.86
+     "start": 8.47,
+     "end": 8.83
     },
     {
      "w": "achètent",
-     "start": 8.86,
-     "end": 9.2
+     "start": 8.83,
+     "end": 9.57
     },
     {
      "w": "quelque",
-     "start": 9.2,
-     "end": 9.3
+     "start": 9.57,
+     "end": 9.69
     },
     {
      "w": "chose",
-     "start": 9.3,
-     "end": 9.64
+     "start": 9.69,
+     "end": 10.09
     },
     {
      "w": "dans",
-     "start": 9.64,
-     "end": 9.78
+     "start": 10.09,
+     "end": 10.25
     },
     {
      "w": "le",
-     "start": 9.78,
-     "end": 9.86
+     "start": 10.25,
+     "end": 10.35
     },
     {
      "w": "mois.",
-     "start": 9.86,
-     "end": 10.02
+     "start": 10.35,
+     "end": 10.53
     }
    ]
   },
   {
-   "start": 10.38,
-   "end": 12.26,
+   "start": 10.88,
+   "end": 12.7,
    "words": [
     {
      "w": "Presque",
-     "start": 10.38,
-     "end": 10.73
+     "start": 10.88,
+     "end": 11.21
     },
     {
      "w": "tous",
-     "start": 10.73,
-     "end": 10.95
+     "start": 11.21,
+     "end": 11.39
     },
     {
      "w": "les",
-     "start": 10.95,
-     "end": 11.09
-    },
-    {
-     "w": "joueurs",
-     "start": 11.09,
-     "end": 11.37
-    },
-    {
-     "w": "ne",
-     "start": 11.37,
+     "start": 11.39,
      "end": 11.51
     },
     {
-     "w": "dépensent",
+     "w": "joueurs",
      "start": 11.51,
-     "end": 11.91
+     "end": 11.83
+    },
+    {
+     "w": "ne",
+     "start": 11.83,
+     "end": 11.99
+    },
+    {
+     "w": "dépensent",
+     "start": 11.99,
+     "end": 12.37
     },
     {
      "w": "rien.",
-     "start": 11.91,
-     "end": 12.07
+     "start": 12.37,
+     "end": 12.51
     }
    ]
   },
   {
-   "start": 12.44,
-   "end": 14.65,
+   "start": 12.88,
+   "end": 15.17,
    "words": [
     {
      "w": "Et",
-     "start": 12.44,
-     "end": 12.6
+     "start": 12.88,
+     "end": 13.01
     },
     {
      "w": "dans",
-     "start": 12.6,
-     "end": 12.72
+     "start": 13.01,
+     "end": 13.13
     },
     {
      "w": "ce",
-     "start": 12.72,
-     "end": 12.9
+     "start": 13.13,
+     "end": 13.29
     },
     {
      "w": "petit",
-     "start": 12.9,
-     "end": 13.08
+     "start": 13.29,
+     "end": 13.43
     },
     {
      "w": "groupe,",
-     "start": 13.08,
-     "end": 13.38
+     "start": 13.43,
+     "end": 13.75
     },
     {
      "w": "il",
-     "start": 13.52,
-     "end": 13.62
+     "start": 14.01,
+     "end": 14.15
     },
     {
      "w": "y",
-     "start": 13.62,
-     "end": 13.72
+     "start": 14.15,
+     "end": 14.23
     },
     {
      "w": "a",
-     "start": 13.72,
-     "end": 13.78
+     "start": 14.23,
+     "end": 14.29
     },
     {
      "w": "encore",
-     "start": 13.78,
-     "end": 13.94
+     "start": 14.29,
+     "end": 14.47
     },
     {
      "w": "plus",
-     "start": 13.94,
-     "end": 14.18
+     "start": 14.47,
+     "end": 14.71
     },
     {
      "w": "petit.",
-     "start": 14.18,
-     "end": 14.46
+     "start": 14.71,
+     "end": 15.01
     }
    ]
   },
   {
-   "start": 14.83,
-   "end": 18.26,
+   "start": 15.35,
+   "end": 19.03,
    "words": [
     {
      "w": "Zéro",
-     "start": 14.83,
-     "end": 15.2
+     "start": 15.35,
+     "end": 15.74
     },
     {
      "w": "virgule",
-     "start": 15.2,
-     "end": 15.52
+     "start": 15.74,
+     "end": 16.2
     },
     {
      "w": "quinze",
-     "start": 15.52,
-     "end": 15.9
+     "start": 16.2,
+     "end": 16.62
     },
     {
      "w": "pour",
-     "start": 15.9,
-     "end": 16.04
+     "start": 16.62,
+     "end": 16.76
     },
     {
      "w": "cent",
-     "start": 16.04,
-     "end": 16.24
+     "start": 16.76,
+     "end": 16.98
     },
     {
      "w": "des",
-     "start": 16.24,
-     "end": 16.4
+     "start": 16.98,
+     "end": 17.18
     },
     {
      "w": "joueurs",
-     "start": 16.4,
-     "end": 16.8
+     "start": 17.18,
+     "end": 17.6
     },
     {
      "w": "apportent",
-     "start": 16.8,
-     "end": 17.3
+     "start": 17.6,
+     "end": 18.1
     },
     {
      "w": "la",
-     "start": 17.3,
-     "end": 17.42
+     "start": 18.1,
+     "end": 18.22
     },
     {
      "w": "moitié",
-     "start": 17.42,
-     "end": 17.7
+     "start": 18.22,
+     "end": 18.48
     },
     {
      "w": "de",
-     "start": 17.7,
-     "end": 17.8
+     "start": 18.48,
+     "end": 18.6
     },
     {
      "w": "l'argent.",
-     "start": 17.8,
-     "end": 18.06
+     "start": 18.6,
+     "end": 18.84
     }
    ]
   },
   {
-   "start": 18.44,
-   "end": 20.78,
+   "start": 19.21,
+   "end": 21.56,
    "words": [
     {
      "w": "Ces",
-     "start": 18.44,
-     "end": 18.67
-    },
-    {
-     "w": "gros",
-     "start": 18.67,
-     "end": 18.91
-    },
-    {
-     "w": "payeurs,",
-     "start": 18.91,
+     "start": 19.21,
      "end": 19.43
     },
     {
-     "w": "on",
-     "start": 19.57,
+     "w": "gros",
+     "start": 19.43,
      "end": 19.65
     },
     {
-     "w": "les",
+     "w": "payeurs,",
      "start": 19.65,
-     "end": 19.75
+     "end": 20.13
+    },
+    {
+     "w": "on",
+     "start": 20.33,
+     "end": 20.41
+    },
+    {
+     "w": "les",
+     "start": 20.41,
+     "end": 20.53
     },
     {
      "w": "appelle",
-     "start": 19.75,
-     "end": 20.01
+     "start": 20.53,
+     "end": 20.75
     },
     {
      "w": "des",
-     "start": 20.01,
-     "end": 20.21
+     "start": 20.75,
+     "end": 20.95
     },
     {
      "w": "baleines.",
-     "start": 20.21,
-     "end": 20.61
+     "start": 20.95,
+     "end": 21.39
     }
    ]
   },
   {
-   "start": 20.96,
-   "end": 24.5,
+   "start": 21.74,
+   "end": 25.25,
    "words": [
     {
      "w": "Et",
-     "start": 20.96,
-     "end": 21.13
+     "start": 21.74,
+     "end": 21.91
     },
     {
      "w": "chaque",
-     "start": 21.13,
-     "end": 21.31
+     "start": 21.91,
+     "end": 22.09
     },
     {
      "w": "achat",
-     "start": 21.31,
-     "end": 21.77
+     "start": 22.09,
+     "end": 22.55
     },
     {
      "w": "a",
-     "start": 21.77,
-     "end": 21.95
+     "start": 22.55,
+     "end": 22.71
     },
     {
      "w": "un",
-     "start": 21.95,
-     "end": 22.05
+     "start": 22.71,
+     "end": 22.83
     },
     {
      "w": "coût",
-     "start": 22.05,
-     "end": 22.29
+     "start": 22.83,
+     "end": 23.07
     },
     {
      "w": "caché",
-     "start": 22.29,
-     "end": 22.67
+     "start": 23.07,
+     "end": 23.41
     },
     {
      "w": "Apple",
-     "start": 22.97,
-     "end": 23.23
+     "start": 23.71,
+     "end": 24.01
     },
     {
      "w": "garde",
-     "start": 23.23,
-     "end": 23.55
+     "start": 24.01,
+     "end": 24.33
     },
     {
      "w": "trente",
-     "start": 23.55,
-     "end": 23.97
-    },
-    {
-     "w": "pour",
-     "start": 23.97,
-     "end": 24.17
-    },
-    {
-     "w": "cent.",
-     "start": 24.17,
-     "end": 24.39
-    }
-   ]
-  },
-  {
-   "start": 24.68,
-   "end": 27.38,
-   "words": [
-    {
-     "w": "Quinze",
-     "start": 24.68,
+     "start": 24.33,
      "end": 24.73
     },
     {
      "w": "pour",
-     "start": 24.68,
-     "end": 25.02
+     "start": 24.73,
+     "end": 24.93
     },
     {
-     "w": "cent",
-     "start": 25.02,
-     "end": 25.36
-    },
+     "w": "cent.",
+     "start": 24.93,
+     "end": 25.13
+    }
+   ]
+  },
+  {
+   "start": 25.43,
+   "end": 27.91,
+   "words": [
     {
-     "w": "seulement,",
-     "start": 25.36,
-     "end": 25.78
+     "w": "Quinze",
+     "start": 25.43,
+     "end": 25.557
     },
     {
      "w": "pour",
-     "start": 25.78,
-     "end": 26.26
+     "start": 25.557,
+     "end": 25.743
+    },
+    {
+     "w": "cent",
+     "start": 25.743,
+     "end": 25.93
+    },
+    {
+     "w": "seulement,",
+     "start": 25.93,
+     "end": 26.37
+    },
+    {
+     "w": "pour",
+     "start": 26.37,
+     "end": 26.87
     },
     {
      "w": "les",
-     "start": 26.26,
-     "end": 26.38
+     "start": 26.87,
+     "end": 26.99
     },
     {
      "w": "petits",
-     "start": 26.38,
-     "end": 26.6
+     "start": 26.99,
+     "end": 27.19
     },
     {
      "w": "développeurs.",
-     "start": 26.6,
-     "end": 27.26
+     "start": 27.19,
+     "end": 27.81
     }
    ]
   },
   {
-   "start": 27.56,
-   "end": 29.95,
+   "start": 28.09,
+   "end": 30.59,
    "words": [
     {
      "w": "Les",
-     "start": 27.56,
-     "end": 27.75
+     "start": 28.09,
+     "end": 28.25
     },
     {
      "w": "achats",
-     "start": 27.75,
-     "end": 28.09
+     "start": 28.25,
+     "end": 28.65
     },
     {
      "w": "dans",
-     "start": 28.09,
-     "end": 28.17
+     "start": 28.65,
+     "end": 28.73
     },
     {
      "w": "le",
-     "start": 28.17,
-     "end": 28.29
+     "start": 28.73,
+     "end": 28.85
     },
     {
      "w": "jeu",
-     "start": 28.29,
-     "end": 28.49
+     "start": 28.85,
+     "end": 29.05
     },
     {
      "w": "viennent",
-     "start": 28.49,
-     "end": 28.69
+     "start": 29.05,
+     "end": 29.31
     },
     {
      "w": "donc",
-     "start": 28.69,
-     "end": 28.95
+     "start": 29.31,
+     "end": 29.57
     },
     {
      "w": "de",
-     "start": 28.95,
-     "end": 29.13
+     "start": 29.57,
+     "end": 29.71
     },
     {
      "w": "très",
-     "start": 29.13,
-     "end": 29.37
+     "start": 29.71,
+     "end": 29.97
     },
     {
      "w": "peu",
-     "start": 29.37,
-     "end": 29.45
+     "start": 29.97,
+     "end": 30.07
     },
     {
      "w": "de",
-     "start": 29.45,
-     "end": 29.55
+     "start": 30.07,
+     "end": 30.17
     },
     {
      "w": "monde.",
-     "start": 29.55,
-     "end": 29.71
+     "start": 30.17,
+     "end": 30.35
     }
    ]
   },
   {
-   "start": 30.13,
-   "end": 33.02,
+   "start": 30.77,
+   "end": 33.0,
    "words": [
     {
      "w": "Alors",
-     "start": 30.13,
-     "end": 30.34
+     "start": 30.77,
+     "end": 30.98
     },
     {
      "w": "toi,",
-     "start": 30.34,
-     "end": 30.78
-    },
-    {
-     "w": "tu",
-     "start": 31.12,
+     "start": 30.98,
      "end": 31.2
     },
     {
+     "w": "tu",
+     "start": 31.4,
+     "end": 31.5
+    },
+    {
      "w": "es",
-     "start": 31.2,
-     "end": 31.3
+     "start": 31.5,
+     "end": 31.56
     },
     {
      "w": "plutôt",
-     "start": 31.3,
-     "end": 31.48
+     "start": 31.56,
+     "end": 31.74
     },
     {
      "w": "joueur",
-     "start": 31.48,
-     "end": 31.88
+     "start": 31.74,
+     "end": 32.14
     },
     {
      "w": "gratuit",
-     "start": 31.88,
-     "end": 32.2
+     "start": 32.14,
+     "end": 32.4
     },
     {
      "w": "ou",
-     "start": 32.2,
-     "end": 32.48
+     "start": 32.4,
+     "end": 32.56
     },
     {
      "w": "baleine",
-     "start": 32.48,
-     "end": 32.88
+     "start": 32.56,
+     "end": 32.84
     }
    ]
   }

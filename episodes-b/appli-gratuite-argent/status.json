@@ -1,19 +1,19 @@
 {
-    "etat":  "ecrit",
-    "maj":  "2026-11-03T18:00:20",
-    "raison":  null,
-    "tentatives":  0,
-    "youtube":  {
-                    "video_id":  "7UWMGI8joig",
-                    "url":  "https://youtu.be/7UWMGI8joig",
-                    "visibilite":  "public",
-                    "publie_a":  "2026-11-03T17:00:00Z",
-                    "miniature":  true
-                },
-    "miniature":  {
-                      "source":  "auto",
-                      "fichier":  "miniature.png",
-                      "style":  "chiffre",
-                      "octets":  410101
-                  }
+ "etat": "pret",
+ "maj": "2026-11-03T21:50:48",
+ "raison": null,
+ "tentatives": 0,
+ "youtube": {
+  "video_id": "7UWMGI8joig",
+  "url": "https://youtu.be/7UWMGI8joig",
+  "visibilite": "public",
+  "publie_a": "2026-11-03T17:00:00Z",
+  "miniature": true
+ },
+ "miniature": {
+  "source": "auto",
+  "fichier": "miniature.png",
+  "style": "createur",
+  "octets": 731074
+ }
 }
