@@ -3,9 +3,8 @@
 # « À blanc » (par défaut à la main) : liste ce qui serait fabriqué, sans rien lancer.
 name: Fabrique
 on:
-  # Lancement automatique DÉSACTIVÉ le temps des essais : décommente ces 2 lignes une fois le test à la main réussi.
-  # schedule:
-  #   - cron: "30 1 * * *"
+  schedule:
+    - cron: "30 1 * * *"   # 01 h 30 UTC = 02 h 30 à Paris en hiver : la fabrication de nuit
   workflow_dispatch:
     inputs:
       a_blanc:
@@ -51,8 +50,8 @@ jobs:
           pip install -q kaggle six
       - name: Fabrication (voix Kaggle + rendu)
         run: |
-          opts="--max 1"
-          [ -n "${{ inputs.id }}" ] && opts="$opts --id ${{ inputs.id }}"
+          opts="--max 12 --budget-min 290"
+          [ -n "${{ inputs.id }}" ] && opts="--max 1 --id ${{ inputs.id }}"
           [ "${{ github.event_name == 'workflow_dispatch' && inputs.a_blanc }}" = "true" ] && opts="$opts --dry-run"
           python autopilot/run_daily.py fabriquer $opts
       - name: Miniature et contrôle
@@ -75,9 +74,7 @@ jobs:
           git add live
           # à blanc : seul l'instantané de l'interface est enregistré
           [ "${{ github.event_name == 'workflow_dispatch' && inputs.a_blanc }}" = "true" ] || git add episodes-b
-          git diff --cached --quiet || git commit -qm "Fabrique : état des épisodes ($(date -u +%F))"
-          git pull --rebase -q origin main || true
-          git push
+          bash autopilot/cloud/enregistrer.sh "Fabrique : état des épisodes ($(date -u +%F))"
       - name: Journal
         if: always()
         run: tail -n 60 autopilot/logs/*.log 2>/dev/null || true

@@ -35,4 +35,4 @@ jobs:
           git config user.name "bdf-instantane"
           git config user.email "bdf-instantane@users.noreply.github.com"
           git add live
-          git diff --cached --quiet || { git commit -qm "Instantané de l'interface"; git pull --rebase -q origin main || true; git push; }
+          bash autopilot/cloud/enregistrer.sh "Instantané de l'interface"
