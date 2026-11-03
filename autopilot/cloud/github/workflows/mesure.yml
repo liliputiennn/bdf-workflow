@@ -1,0 +1,52 @@
+# Phase 1 : mesure, sans rien publier. À lancer à la main (Actions > Mesure > Run workflow).
+# Répond à la question qui décide de tout : combien de minutes de quota coûte un Short, donc un long (≈ 10 Shorts + 1 rendu 16:9) ?
+# Le résultat s'affiche en bas de la page du run (« Summary »). Aucun secret n'est utilisé.
+name: Mesure
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Épisode Short dont la voix est dans le dépôt"
+        default: appli-gratuite-argent
+
+jobs:
+  mesure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Machine et installation
+        run: |
+          mkdir -p autopilot/state mesure
+          t0=$(date +%s)
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          npm ci --silent
+          npx remotion browser ensure > /dev/null
+          bash tools/fetch-audio.sh
+          t1=$(date +%s)
+          {
+            echo "### Machine"
+            echo "- cœurs : $(nproc) · RAM : $(free -m | awk '/Mem:/{print $2}') Mo · disque libre : $(df -h . | awk 'NR==2{print $4}')"
+            echo "- installation (apt + npm ci + Chrome + audio) : $((t1-t0)) s"
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Orchestrateur à blanc
+        continue-on-error: true
+        run: python autopilot/run_daily.py fabriquer --dry-run
+      - name: Rendu d'un Short (voix déjà prête)
+        run: |
+          t0=$(date +%s)
+          BDF_CONCURRENCY=$(nproc) python autopilot/make_short.py "${{ inputs.episode }}" --voix-prete
+          t1=$(date +%s)
+          s=$((t1-t0))
+          {
+            echo "### Rendu d'un Short (${{ inputs.episode }})"
+            echo "- durée totale : **${s} s** ($((s/60)) min)"
+            echo "- estimation d'un long : ≈ 10 Shorts = **$((s*10/60)) min** + rendu 16:9 (à mesurer en phase 1b)"
+            echo "- quota mensuel gratuit privé : ≈ 2000 min Linux 2 cœurs (12 \$ à 0,006 \$/min)"
+            echo "- coût d'1 long/jour sur 30 jours (hors rendu 16:9) : **$((s*10*30/60)) min**"
+            ls -l exports-b/${{ inputs.episode }}/*.mp4 | awk '{print "- fichier : " $5/1048576 " Mo"}'
+          } >> "$GITHUB_STEP_SUMMARY"

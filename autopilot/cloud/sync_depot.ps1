@@ -1,11 +1,13 @@
 # Met à jour le dépôt cloud local (C:\Users\ESSAI\bdf-cloud) avec ton code actuel, puis l'envoie sur GitHub.
 # Usage : powershell -File autopilot/cloud/sync_depot.ps1 [-TestEpisode appli-gratuite-argent]
 #   -TestEpisode : dans le dépôt cloud SEULEMENT, remet cet épisode à « ecrit » pour tester la fabrication de nuit.
-param([string]$Dest = "C:\Users\ESSAI\bdf-cloud", [string]$TestEpisode = "")
+param([string]$Dest = "C:\Users\ESSAI\bdf-public", [string]$TestEpisode = "")
 $ErrorActionPreference = "Stop"
 $src = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 if (-not (Test-Path (Join-Path $Dest ".git"))) { throw "$Dest n'est pas le dépôt cloud (lance d'abord exporter_depot.ps1)" }
-$files = git -C $src -c core.quotepath=off ls-files
+$ok = '^(autopilot|src|tools|sfx-src|app|server|episodes-b|tests|miniatures-manuelles|miniatures-ref|public|\.github)/|^(package\.json|package-lock\.json|remotion\.config\.ts|tsconfig\.json|eslint\.config\.mjs|vitest\.config\.ts|firebase\.json|\.firebaserc|\.gitignore|README\.md)$'
+# dépôt PUBLIC : jamais d'audio (ta voix), ni idées / planning / anciens épisodes
+$files = git -C $src -c core.quotepath=off ls-files | Where-Object { $_ -match $ok -and $_ -notmatch '\.(mp3|wav)$' }
 $suspects = $files | Where-Object { $_ -match "client_secret|token\.json|tiktok_client|(^|/)\.env($|\.(local|secret))|\.pem$|id_rsa" }
 if ($suspects) { throw "Fichiers suspects suivis par Git : $($suspects -join ', ')" }
 foreach ($f in $files) {
@@ -33,7 +35,7 @@ $gi = Join-Path $Dest ".gitignore"
 (Get-Content $gi) | Where-Object { $_ -ne "episodes-b/**/status.json" } | Set-Content $gi -Encoding utf8
 $wf = Join-Path $Dest ".github\workflows"
 New-Item -ItemType Directory -Force $wf | Out-Null
-Copy-Item (Join-Path $PSScriptRoot "github\workflows\*.yml") $wf -Force
+Copy-Item (Join-Path $PSScriptRoot "github\workflows\fabrique.yml") $wf -Force
 if ($TestEpisode) {
   $st = Join-Path $Dest "episodes-b\$TestEpisode\status.json"
   $j = Get-Content $st -Raw | ConvertFrom-Json
