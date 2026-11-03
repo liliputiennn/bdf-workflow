@@ -5,8 +5,10 @@
 # Identifiants (secrets GitHub, jamais affichés) : YT_CLIENT_SECRET, YT_TOKEN ; TikTok (facultatif) : TIKTOK_CLIENT, TIKTOK_TOKEN.
 name: Publication
 on:
-  schedule:
-    - cron: "0 6,16 * * *"   # 07 h et 17 h à Paris en hiver : programme les envois avant l'heure de mise en ligne (18 h)
+  # EN PAUSE (04/11) : le stock actuel traite surtout de lois et de papiers ; on attend les nouveaux épisodes « gagner de l'argent ».
+  # Pour réactiver, décommente ces 2 lignes.
+  # schedule:
+  #   - cron: "0 6,16 * * *"   # 07 h et 17 h à Paris en hiver : programme les envois avant l'heure de mise en ligne (18 h)
   workflow_dispatch:
     inputs:
       a_blanc:
