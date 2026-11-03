@@ -144,6 +144,9 @@ def description_finale(pub: dict, cfg: dict, ep_id: str | None = None) -> str:
     q = (pub.get("question_commentaires") or "").strip()
     if cfg["question_dans_description"] and q and q not in desc:
         desc += "\n\n" + q
+    ia = "voix de synthèse (ia)"
+    if cfg.get("mention_ia_description", True) and pub.get("contenu_ia") and ia not in desc.lower() and "synthèse" not in desc.lower():
+        desc += "\n\nVoix de synthèse (IA)."  # le badge YouTube est désactivé : on le dit ici, dans la description
     if cfg["hashtag_shorts"] and not long and "#shorts" not in desc.lower():  # un long 16:9 n'est pas un Short
         desc += "\n\n#Shorts"
     return desc

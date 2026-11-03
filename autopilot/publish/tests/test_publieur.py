@@ -104,7 +104,7 @@ class TestEnvoi(Base):
         s, sn = v["status"], v["snippet"]
         self.assertEqual((s["privacyStatus"], s["publishAt"]), ("private", "2026-11-02T17:00:00Z"))
         self.assertIs(s["selfDeclaredMadeForKids"], False)
-        self.assertIs(s["containsSyntheticMedia"], True)
+        self.assertIs(s["containsSyntheticMedia"], False)  # badge IA YouTube désactivé par défaut (badge_ia_youtube) : la mention est dans la description
         self.assertEqual((sn["categoryId"], sn["defaultLanguage"]), ("27", "fr"))
         self.assertIn("Tu as la carte ?", sn["description"])
         reg = self.quota.etat()

@@ -274,6 +274,6 @@ def construire_ressource(pub: dict, cfg: dict, publie_a_iso: str) -> dict:
         "status": {
             "privacyStatus": "private", "publishAt": publie_a_iso,
             "selfDeclaredMadeForKids": False, "embeddable": True, "publicStatsViewable": True,
-            "containsSyntheticMedia": bool(pub.get("contenu_ia", False)),
+            "containsSyntheticMedia": bool(cfg.get("badge_ia_youtube", False)) and bool(pub.get("contenu_ia", False)),
         },
     }

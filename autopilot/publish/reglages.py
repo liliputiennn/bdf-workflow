@@ -18,6 +18,8 @@ DEFAUTS = {
     "tags_max_caracteres": 500,
     "miniature_max_octets": 2 * 1024 * 1024,
     "hashtag_shorts": True,
+    "badge_ia_youtube": False,       # True = coche aussi l'option « contenu modifié ou synthétique » de YouTube (badge IA sur la vidéo)
+    "mention_ia_description": False, # ajoute une ligne « voix de synthèse » à la description quand publication.json a contenu_ia: true
     "question_dans_description": True,
     "tentatives_max_avant_quarantaine": 6,
     "reseau": {"tentatives_max": 8, "attente_initiale_s": 2.0, "attente_max_s": 120.0, "timeout_s": 120.0},
