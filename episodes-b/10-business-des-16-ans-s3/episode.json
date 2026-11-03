@@ -1,0 +1,63 @@
+{
+ "id": "10-business-des-16-ans-s3",
+ "titre": "Écrire le livre de vie d'un grand-parent : ce que dit la loi",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "LIVRE VIE GRAND PARENT",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Idée suivante : écrire le livre de vie d'un grand-parent, ou d'une personne âgée de ton entourage.",
+  "Beaucoup de familles aimeraient garder ces souvenirs, mais personne n'ose s'y mettre.",
+  "Tu enregistres des conversations, tu les écris, puis tu les mets en page dans un petit livre.",
+  "Audacity est un logiciel libre et gratuit pour enregistrer et nettoyer le son.",
+  "LibreOffice est gratuit lui aussi, et il sert à écrire et à mettre en page.",
+  "La règle de loi : chacun a droit au respect de sa vie privée, donc la personne doit donner son accord avant la publication.",
+  "Fais signer un accord écrit qui dit quoi, où et pour combien de temps."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "livre",
+     "vie"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 4,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "Audacity pour le son"
+     },
+     {
+      "texte": "LibreOffice pour écrire"
+     },
+     {
+      "texte": "Un accord écrit"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 6,
+   "params": {
+    "question": "Qui doit être d'accord ?",
+    "pistes": [
+     "La personne",
+     "Les proches cités",
+     "Toi"
+    ]
+   }
+  }
+ ]
+}

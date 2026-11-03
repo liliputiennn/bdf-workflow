@@ -1,0 +1,699 @@
+{
+ "total": 39.14,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.1,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 0.15,
+     "end": 0.44
+    },
+    {
+     "w": "métier",
+     "start": 0.44,
+     "end": 0.86
+    },
+    {
+     "w": "cueilleur",
+     "start": 1.14,
+     "end": 1.48
+    },
+    {
+     "w": "de",
+     "start": 1.48,
+     "end": 1.56
+    },
+    {
+     "w": "plantes",
+     "start": 1.56,
+     "end": 1.86
+    },
+    {
+     "w": "sauvages",
+     "start": 1.86,
+     "end": 2.22
+    },
+    {
+     "w": "pour",
+     "start": 2.22,
+     "end": 2.42
+    },
+    {
+     "w": "les",
+     "start": 2.42,
+     "end": 2.54
+    },
+    {
+     "w": "restaurants.",
+     "start": 2.54,
+     "end": 2.88
+    }
+   ]
+  },
+  {
+   "start": 3.28,
+   "end": 7.54,
+   "words": [
+    {
+     "w": "Un",
+     "start": 3.28,
+     "end": 3.46
+    },
+    {
+     "w": "cuisinier",
+     "start": 3.46,
+     "end": 4.0
+    },
+    {
+     "w": "veut",
+     "start": 4.0,
+     "end": 4.14
+    },
+    {
+     "w": "des",
+     "start": 4.14,
+     "end": 4.3
+    },
+    {
+     "w": "feuilles,",
+     "start": 4.3,
+     "end": 4.74
+    },
+    {
+     "w": "des",
+     "start": 4.98,
+     "end": 5.04
+    },
+    {
+     "w": "fleurs",
+     "start": 5.04,
+     "end": 5.54
+    },
+    {
+     "w": "ou",
+     "start": 5.54,
+     "end": 5.68
+    },
+    {
+     "w": "des",
+     "start": 5.68,
+     "end": 5.86
+    },
+    {
+     "w": "herbes",
+     "start": 5.86,
+     "end": 6.2
+    },
+    {
+     "w": "qu'on",
+     "start": 6.2,
+     "end": 6.52
+    },
+    {
+     "w": "ne",
+     "start": 6.52,
+     "end": 6.62
+    },
+    {
+     "w": "trouve",
+     "start": 6.62,
+     "end": 6.78
+    },
+    {
+     "w": "pas",
+     "start": 6.78,
+     "end": 6.94
+    },
+    {
+     "w": "au",
+     "start": 6.94,
+     "end": 7.08
+    },
+    {
+     "w": "marché.",
+     "start": 7.08,
+     "end": 7.32
+    }
+   ]
+  },
+  {
+   "start": 7.72,
+   "end": 11.21,
+   "words": [
+    {
+     "w": "Toi,",
+     "start": 7.72,
+     "end": 8.04
+    },
+    {
+     "w": "tu",
+     "start": 8.14,
+     "end": 8.24
+    },
+    {
+     "w": "les",
+     "start": 8.24,
+     "end": 8.32
+    },
+    {
+     "w": "ramasses",
+     "start": 8.32,
+     "end": 8.7
+    },
+    {
+     "w": "le",
+     "start": 8.7,
+     "end": 8.78
+    },
+    {
+     "w": "matin,",
+     "start": 8.78,
+     "end": 9.06
+    },
+    {
+     "w": "tu",
+     "start": 9.24,
+     "end": 9.34
+    },
+    {
+     "w": "les",
+     "start": 9.34,
+     "end": 9.44
+    },
+    {
+     "w": "nettoies",
+     "start": 9.44,
+     "end": 9.96
+    },
+    {
+     "w": "et",
+     "start": 9.96,
+     "end": 10.18
+    },
+    {
+     "w": "tu",
+     "start": 10.18,
+     "end": 10.32
+    },
+    {
+     "w": "les",
+     "start": 10.32,
+     "end": 10.42
+    },
+    {
+     "w": "livres",
+     "start": 10.42,
+     "end": 10.6
+    },
+    {
+     "w": "bien",
+     "start": 10.6,
+     "end": 10.8
+    },
+    {
+     "w": "frais.",
+     "start": 10.8,
+     "end": 11.12
+    }
+   ]
+  },
+  {
+   "start": 11.39,
+   "end": 17.24,
+   "words": [
+    {
+     "w": "Premier",
+     "start": 11.39,
+     "end": 11.64
+    },
+    {
+     "w": "outil",
+     "start": 11.64,
+     "end": 12.06
+    },
+    {
+     "w": "l'application",
+     "start": 12.36,
+     "end": 12.92
+    },
+    {
+     "w": "Plantnet,",
+     "start": 12.92,
+     "end": 13.38
+    },
+    {
+     "w": "qui",
+     "start": 13.62,
+     "end": 13.76
+    },
+    {
+     "w": "reconnaît",
+     "start": 13.76,
+     "end": 14.24
+    },
+    {
+     "w": "une",
+     "start": 14.24,
+     "end": 14.4
+    },
+    {
+     "w": "plante",
+     "start": 14.4,
+     "end": 14.74
+    },
+    {
+     "w": "grâce",
+     "start": 14.74,
+     "end": 15.06
+    },
+    {
+     "w": "à",
+     "start": 15.06,
+     "end": 15.26
+    },
+    {
+     "w": "une",
+     "start": 15.26,
+     "end": 15.34
+    },
+    {
+     "w": "photo,",
+     "start": 15.34,
+     "end": 15.62
+    },
+    {
+     "w": "et",
+     "start": 16.06,
+     "end": 16.28
+    },
+    {
+     "w": "elle",
+     "start": 16.28,
+     "end": 16.42
+    },
+    {
+     "w": "est",
+     "start": 16.42,
+     "end": 16.5
+    },
+    {
+     "w": "gratuite.",
+     "start": 16.5,
+     "end": 16.9
+    }
+   ]
+  },
+  {
+   "start": 17.42,
+   "end": 21.43,
+   "words": [
+    {
+     "w": "Mais",
+     "start": 17.42,
+     "end": 17.58
+    },
+    {
+     "w": "une",
+     "start": 17.58,
+     "end": 17.7
+    },
+    {
+     "w": "application",
+     "start": 17.7,
+     "end": 18.12
+    },
+    {
+     "w": "peut",
+     "start": 18.12,
+     "end": 18.4
+    },
+    {
+     "w": "se",
+     "start": 18.4,
+     "end": 18.52
+    },
+    {
+     "w": "tromper",
+     "start": 18.52,
+     "end": 18.9
+    },
+    {
+     "w": "au",
+     "start": 19.2,
+     "end": 19.32
+    },
+    {
+     "w": "moindre",
+     "start": 19.32,
+     "end": 19.56
+    },
+    {
+     "w": "doute,",
+     "start": 19.56,
+     "end": 19.8
+    },
+    {
+     "w": "tu",
+     "start": 19.98,
+     "end": 20.06
+    },
+    {
+     "w": "ne",
+     "start": 20.06,
+     "end": 20.14
+    },
+    {
+     "w": "ramasses",
+     "start": 20.14,
+     "end": 20.46
+    },
+    {
+     "w": "pas",
+     "start": 20.46,
+     "end": 20.64
+    },
+    {
+     "w": "et",
+     "start": 20.64,
+     "end": 20.84
+    },
+    {
+     "w": "tu",
+     "start": 20.84,
+     "end": 20.92
+    },
+    {
+     "w": "ne",
+     "start": 20.92,
+     "end": 20.98
+    },
+    {
+     "w": "vends",
+     "start": 20.98,
+     "end": 21.16
+    },
+    {
+     "w": "pas.",
+     "start": 21.16,
+     "end": 21.28
+    }
+   ]
+  },
+  {
+   "start": 21.61,
+   "end": 26.46,
+   "words": [
+    {
+     "w": "Premier",
+     "start": 21.61,
+     "end": 21.88
+    },
+    {
+     "w": "point",
+     "start": 21.88,
+     "end": 22.08
+    },
+    {
+     "w": "de",
+     "start": 22.08,
+     "end": 22.18
+    },
+    {
+     "w": "loi",
+     "start": 22.18,
+     "end": 22.34
+    },
+    {
+     "w": "les",
+     "start": 22.62,
+     "end": 22.72
+    },
+    {
+     "w": "fruits",
+     "start": 22.72,
+     "end": 22.96
+    },
+    {
+     "w": "et",
+     "start": 22.96,
+     "end": 23.06
+    },
+    {
+     "w": "les",
+     "start": 23.06,
+     "end": 23.14
+    },
+    {
+     "w": "produits",
+     "start": 23.14,
+     "end": 23.34
+    },
+    {
+     "w": "du",
+     "start": 23.34,
+     "end": 23.5
+    },
+    {
+     "w": "sol",
+     "start": 23.5,
+     "end": 23.74
+    },
+    {
+     "w": "appartiennent",
+     "start": 23.74,
+     "end": 24.26
+    },
+    {
+     "w": "au",
+     "start": 24.26,
+     "end": 24.36
+    },
+    {
+     "w": "propriétaire,",
+     "start": 24.36,
+     "end": 25.16
+    },
+    {
+     "w": "alors",
+     "start": 25.34,
+     "end": 25.48
+    },
+    {
+     "w": "il",
+     "start": 25.48,
+     "end": 25.62
+    },
+    {
+     "w": "faut",
+     "start": 25.62,
+     "end": 25.76
+    },
+    {
+     "w": "son",
+     "start": 25.76,
+     "end": 25.92
+    },
+    {
+     "w": "accord.",
+     "start": 25.92,
+     "end": 26.14
+    }
+   ]
+  },
+  {
+   "start": 26.64,
+   "end": 30.93,
+   "words": [
+    {
+     "w": "Deuxième",
+     "start": 26.64,
+     "end": 27.07
+    },
+    {
+     "w": "point",
+     "start": 27.07,
+     "end": 27.29
+    },
+    {
+     "w": "certaines",
+     "start": 27.77,
+     "end": 27.97
+    },
+    {
+     "w": "plantes",
+     "start": 27.97,
+     "end": 28.45
+    },
+    {
+     "w": "sont",
+     "start": 28.45,
+     "end": 28.53
+    },
+    {
+     "w": "protégées,",
+     "start": 28.53,
+     "end": 29.31
+    },
+    {
+     "w": "et",
+     "start": 29.45,
+     "end": 29.59
+    },
+    {
+     "w": "leur",
+     "start": 29.59,
+     "end": 29.71
+    },
+    {
+     "w": "cueillette",
+     "start": 29.71,
+     "end": 30.11
+    },
+    {
+     "w": "est",
+     "start": 30.11,
+     "end": 30.21
+    },
+    {
+     "w": "interdite.",
+     "start": 30.21,
+     "end": 30.77
+    }
+   ]
+  },
+  {
+   "start": 31.11,
+   "end": 34.99,
+   "words": [
+    {
+     "w": "Troisième",
+     "start": 31.11,
+     "end": 31.54
+    },
+    {
+     "w": "point",
+     "start": 31.54,
+     "end": 31.76
+    },
+    {
+     "w": "beaucoup",
+     "start": 32.14,
+     "end": 32.34
+    },
+    {
+     "w": "de",
+     "start": 32.34,
+     "end": 32.5
+    },
+    {
+     "w": "plantes",
+     "start": 32.5,
+     "end": 32.84
+    },
+    {
+     "w": "médicinales",
+     "start": 32.84,
+     "end": 33.46
+    },
+    {
+     "w": "ne",
+     "start": 33.46,
+     "end": 33.52
+    },
+    {
+     "w": "peuvent",
+     "start": 33.52,
+     "end": 33.68
+    },
+    {
+     "w": "se",
+     "start": 33.68,
+     "end": 33.88
+    },
+    {
+     "w": "vendre",
+     "start": 33.88,
+     "end": 34.18
+    },
+    {
+     "w": "qu'en",
+     "start": 34.18,
+     "end": 34.34
+    },
+    {
+     "w": "pharmacie.",
+     "start": 34.34,
+     "end": 34.84
+    }
+   ]
+  },
+  {
+   "start": 35.17,
+   "end": 38.84,
+   "words": [
+    {
+     "w": "Seules",
+     "start": 35.17,
+     "end": 35.55
+    },
+    {
+     "w": "cent",
+     "start": 35.55,
+     "end": 35.71
+    },
+    {
+     "w": "quarante-huit",
+     "start": 35.71,
+     "end": 36.15
+    },
+    {
+     "w": "plantes",
+     "start": 36.15,
+     "end": 36.55
+    },
+    {
+     "w": "ont",
+     "start": 36.55,
+     "end": 36.69
+    },
+    {
+     "w": "été",
+     "start": 36.69,
+     "end": 36.87
+    },
+    {
+     "w": "libérées",
+     "start": 36.87,
+     "end": 37.39
+    },
+    {
+     "w": "de",
+     "start": 37.39,
+     "end": 37.51
+    },
+    {
+     "w": "ce",
+     "start": 37.51,
+     "end": 37.67
+    },
+    {
+     "w": "monopole",
+     "start": 37.67,
+     "end": 38.11
+    },
+    {
+     "w": "des",
+     "start": 38.11,
+     "end": 38.23
+    },
+    {
+     "w": "pharmaciens.",
+     "start": 38.23,
+     "end": 38.73
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,613 @@
+{
+ "total": 33.25,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.64,
+   "words": [
+    {
+     "w": "Idée",
+     "start": 0.15,
+     "end": 0.48
+    },
+    {
+     "w": "suivante",
+     "start": 0.48,
+     "end": 0.92
+    },
+    {
+     "w": "réécrire",
+     "start": 1.08,
+     "end": 1.48
+    },
+    {
+     "w": "des",
+     "start": 1.48,
+     "end": 1.66
+    },
+    {
+     "w": "textes",
+     "start": 1.66,
+     "end": 2.08
+    },
+    {
+     "w": "en",
+     "start": 2.08,
+     "end": 2.14
+    },
+    {
+     "w": "facile",
+     "start": 2.14,
+     "end": 2.34
+    },
+    {
+     "w": "à",
+     "start": 2.34,
+     "end": 2.56
+    },
+    {
+     "w": "lire",
+     "start": 2.56,
+     "end": 2.74
+    },
+    {
+     "w": "et",
+     "start": 2.74,
+     "end": 2.88
+    },
+    {
+     "w": "à",
+     "start": 2.88,
+     "end": 2.96
+    },
+    {
+     "w": "comprendre.",
+     "start": 2.96,
+     "end": 3.22
+    }
+   ]
+  },
+  {
+   "start": 3.82,
+   "end": 6.75,
+   "words": [
+    {
+     "w": "Cette",
+     "start": 3.82,
+     "end": 4.05
+    },
+    {
+     "w": "méthode",
+     "start": 4.05,
+     "end": 4.51
+    },
+    {
+     "w": "aide",
+     "start": 4.51,
+     "end": 4.67
+    },
+    {
+     "w": "les",
+     "start": 4.67,
+     "end": 4.81
+    },
+    {
+     "w": "personnes",
+     "start": 4.81,
+     "end": 5.15
+    },
+    {
+     "w": "qui",
+     "start": 5.15,
+     "end": 5.35
+    },
+    {
+     "w": "ont",
+     "start": 5.35,
+     "end": 5.43
+    },
+    {
+     "w": "du",
+     "start": 5.43,
+     "end": 5.51
+    },
+    {
+     "w": "mal",
+     "start": 5.51,
+     "end": 5.67
+    },
+    {
+     "w": "à",
+     "start": 5.67,
+     "end": 5.81
+    },
+    {
+     "w": "lire",
+     "start": 5.81,
+     "end": 5.95
+    },
+    {
+     "w": "ou",
+     "start": 5.95,
+     "end": 6.09
+    },
+    {
+     "w": "à",
+     "start": 6.09,
+     "end": 6.14
+    },
+    {
+     "w": "comprendre.",
+     "start": 6.13,
+     "end": 6.43
+    }
+   ]
+  },
+  {
+   "start": 6.93,
+   "end": 11.67,
+   "words": [
+    {
+     "w": "Une",
+     "start": 6.93,
+     "end": 7.13
+    },
+    {
+     "w": "association,",
+     "start": 7.13,
+     "end": 7.59
+    },
+    {
+     "w": "une",
+     "start": 8.23,
+     "end": 8.31
+    },
+    {
+     "w": "mairie",
+     "start": 8.31,
+     "end": 8.75
+    },
+    {
+     "w": "ou",
+     "start": 8.75,
+     "end": 9.05
+    },
+    {
+     "w": "un",
+     "start": 9.05,
+     "end": 9.15
+    },
+    {
+     "w": "petit",
+     "start": 9.15,
+     "end": 9.37
+    },
+    {
+     "w": "commerce",
+     "start": 9.37,
+     "end": 9.73
+    },
+    {
+     "w": "a",
+     "start": 9.73,
+     "end": 10.01
+    },
+    {
+     "w": "parfois",
+     "start": 10.01,
+     "end": 10.27
+    },
+    {
+     "w": "des",
+     "start": 10.27,
+     "end": 10.41
+    },
+    {
+     "w": "papiers",
+     "start": 10.41,
+     "end": 10.79
+    },
+    {
+     "w": "trop",
+     "start": 10.79,
+     "end": 11.01
+    },
+    {
+     "w": "compliqués.",
+     "start": 11.01,
+     "end": 11.57
+    }
+   ]
+  },
+  {
+   "start": 11.85,
+   "end": 14.85,
+   "words": [
+    {
+     "w": "La",
+     "start": 11.85,
+     "end": 11.99
+    },
+    {
+     "w": "méthode",
+     "start": 11.99,
+     "end": 12.31
+    },
+    {
+     "w": "vient",
+     "start": 12.31,
+     "end": 12.41
+    },
+    {
+     "w": "d'un",
+     "start": 12.41,
+     "end": 12.55
+    },
+    {
+     "w": "projet",
+     "start": 12.55,
+     "end": 12.79
+    },
+    {
+     "w": "européen,",
+     "start": 12.79,
+     "end": 13.27
+    },
+    {
+     "w": "avec",
+     "start": 13.39,
+     "end": 13.55
+    },
+    {
+     "w": "beaucoup",
+     "start": 13.55,
+     "end": 13.85
+    },
+    {
+     "w": "de",
+     "start": 13.85,
+     "end": 13.97
+    },
+    {
+     "w": "règles",
+     "start": 13.97,
+     "end": 14.21
+    },
+    {
+     "w": "précises.",
+     "start": 14.21,
+     "end": 14.73
+    }
+   ]
+  },
+  {
+   "start": 15.03,
+   "end": 19.15,
+   "words": [
+    {
+     "w": "Quelques",
+     "start": 15.03,
+     "end": 15.35
+    },
+    {
+     "w": "règles",
+     "start": 15.35,
+     "end": 15.65
+    },
+    {
+     "w": "de",
+     "start": 15.65,
+     "end": 15.77
+    },
+    {
+     "w": "base",
+     "start": 15.77,
+     "end": 16.11
+    },
+    {
+     "w": "des",
+     "start": 16.47,
+     "end": 16.55
+    },
+    {
+     "w": "phrases",
+     "start": 16.55,
+     "end": 16.73
+    },
+    {
+     "w": "courtes,",
+     "start": 16.73,
+     "end": 17.35
+    },
+    {
+     "w": "des",
+     "start": 17.37,
+     "end": 17.49
+    },
+    {
+     "w": "mots",
+     "start": 17.49,
+     "end": 17.63
+    },
+    {
+     "w": "simples,",
+     "start": 17.63,
+     "end": 17.97
+    },
+    {
+     "w": "une",
+     "start": 18.23,
+     "end": 18.33
+    },
+    {
+     "w": "idée",
+     "start": 18.33,
+     "end": 18.47
+    },
+    {
+     "w": "par",
+     "start": 18.47,
+     "end": 18.65
+    },
+    {
+     "w": "phrase.",
+     "start": 18.65,
+     "end": 18.95
+    }
+   ]
+  },
+  {
+   "start": 19.33,
+   "end": 24.96,
+   "words": [
+    {
+     "w": "La",
+     "start": 19.33,
+     "end": 19.5
+    },
+    {
+     "w": "règle",
+     "start": 19.5,
+     "end": 19.8
+    },
+    {
+     "w": "la",
+     "start": 19.8,
+     "end": 19.88
+    },
+    {
+     "w": "plus",
+     "start": 19.88,
+     "end": 20.0
+    },
+    {
+     "w": "importante",
+     "start": 20.0,
+     "end": 20.48
+    },
+    {
+     "w": "des",
+     "start": 20.92,
+     "end": 21.02
+    },
+    {
+     "w": "personnes",
+     "start": 21.02,
+     "end": 21.28
+    },
+    {
+     "w": "concernées",
+     "start": 21.28,
+     "end": 21.84
+    },
+    {
+     "w": "doivent",
+     "start": 21.84,
+     "end": 21.96
+    },
+    {
+     "w": "relire",
+     "start": 21.96,
+     "end": 22.36
+    },
+    {
+     "w": "le",
+     "start": 22.36,
+     "end": 22.48
+    },
+    {
+     "w": "texte,",
+     "start": 22.48,
+     "end": 23.2
+    },
+    {
+     "w": "sinon",
+     "start": 23.2,
+     "end": 23.48
+    },
+    {
+     "w": "ce",
+     "start": 23.48,
+     "end": 23.68
+    },
+    {
+     "w": "n'est",
+     "start": 23.68,
+     "end": 23.78
+    },
+    {
+     "w": "pas",
+     "start": 23.78,
+     "end": 23.86
+    },
+    {
+     "w": "du",
+     "start": 23.86,
+     "end": 23.98
+    },
+    {
+     "w": "vrai",
+     "start": 23.98,
+     "end": 24.12
+    },
+    {
+     "w": "facile",
+     "start": 24.12,
+     "end": 24.42
+    },
+    {
+     "w": "à",
+     "start": 24.42,
+     "end": 24.56
+    },
+    {
+     "w": "lire.",
+     "start": 24.56,
+     "end": 24.76
+    }
+   ]
+  },
+  {
+   "start": 25.14,
+   "end": 29.84,
+   "words": [
+    {
+     "w": "Le",
+     "start": 25.14,
+     "end": 25.32
+    },
+    {
+     "w": "logo",
+     "start": 25.32,
+     "end": 25.62
+    },
+    {
+     "w": "appartient",
+     "start": 25.62,
+     "end": 26.08
+    },
+    {
+     "w": "à",
+     "start": 26.08,
+     "end": 26.16
+    },
+    {
+     "w": "une",
+     "start": 26.16,
+     "end": 26.24
+    },
+    {
+     "w": "association",
+     "start": 26.24,
+     "end": 26.58
+    },
+    {
+     "w": "européenne,",
+     "start": 26.58,
+     "end": 27.3
+    },
+    {
+     "w": "donc",
+     "start": 27.58,
+     "end": 27.76
+    },
+    {
+     "w": "on",
+     "start": 27.76,
+     "end": 27.94
+    },
+    {
+     "w": "ne",
+     "start": 27.94,
+     "end": 28.06
+    },
+    {
+     "w": "le",
+     "start": 28.06,
+     "end": 28.16
+    },
+    {
+     "w": "colle",
+     "start": 28.16,
+     "end": 28.32
+    },
+    {
+     "w": "pas",
+     "start": 28.32,
+     "end": 28.6
+    },
+    {
+     "w": "sans",
+     "start": 28.6,
+     "end": 28.76
+    },
+    {
+     "w": "respecter",
+     "start": 28.76,
+     "end": 29.26
+    },
+    {
+     "w": "la",
+     "start": 29.26,
+     "end": 29.36
+    },
+    {
+     "w": "méthode.",
+     "start": 29.36,
+     "end": 29.76
+    }
+   ]
+  },
+  {
+   "start": 30.02,
+   "end": 32.95,
+   "words": [
+    {
+     "w": "LibreOffice",
+     "start": 30.02,
+     "end": 30.74
+    },
+    {
+     "w": "est",
+     "start": 30.74,
+     "end": 30.84
+    },
+    {
+     "w": "gratuit",
+     "start": 30.84,
+     "end": 31.18
+    },
+    {
+     "w": "pour",
+     "start": 31.18,
+     "end": 31.44
+    },
+    {
+     "w": "écrire",
+     "start": 31.44,
+     "end": 31.76
+    },
+    {
+     "w": "et",
+     "start": 31.76,
+     "end": 32.16
+    },
+    {
+     "w": "mettre",
+     "start": 32.16,
+     "end": 32.34
+    },
+    {
+     "w": "en",
+     "start": 32.34,
+     "end": 32.5
+    },
+    {
+     "w": "page.",
+     "start": 32.5,
+     "end": 32.76
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,775 @@
+{
+ "total": 46.74,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 4.34,
+   "words": [
+    {
+     "w": "Laver",
+     "start": 0.15,
+     "end": 0.43
+    },
+    {
+     "w": "une",
+     "start": 0.43,
+     "end": 0.51
+    },
+    {
+     "w": "voiture",
+     "start": 0.51,
+     "end": 0.77
+    },
+    {
+     "w": "sans",
+     "start": 0.77,
+     "end": 0.97
+    },
+    {
+     "w": "eau,",
+     "start": 0.97,
+     "end": 1.31
+    },
+    {
+     "w": "chez",
+     "start": 1.35,
+     "end": 1.45
+    },
+    {
+     "w": "le",
+     "start": 1.45,
+     "end": 1.59
+    },
+    {
+     "w": "client,",
+     "start": 1.59,
+     "end": 1.89
+    },
+    {
+     "w": "c'est",
+     "start": 2.09,
+     "end": 2.19
+    },
+    {
+     "w": "possible",
+     "start": 2.19,
+     "end": 2.49
+    },
+    {
+     "w": "avec",
+     "start": 2.49,
+     "end": 2.69
+    },
+    {
+     "w": "des",
+     "start": 2.69,
+     "end": 2.85
+    },
+    {
+     "w": "produits",
+     "start": 2.85,
+     "end": 3.17
+    },
+    {
+     "w": "qui",
+     "start": 3.17,
+     "end": 3.39
+    },
+    {
+     "w": "décollent",
+     "start": 3.39,
+     "end": 3.77
+    },
+    {
+     "w": "la",
+     "start": 3.77,
+     "end": 3.85
+    },
+    {
+     "w": "saleté.",
+     "start": 3.85,
+     "end": 4.21
+    }
+   ]
+  },
+  {
+   "start": 4.52,
+   "end": 8.33,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 4.52,
+     "end": 4.67
+    },
+    {
+     "w": "pulvérises,",
+     "start": 4.67,
+     "end": 5.29
+    },
+    {
+     "w": "tu",
+     "start": 5.39,
+     "end": 5.45
+    },
+    {
+     "w": "laisses",
+     "start": 5.45,
+     "end": 5.69
+    },
+    {
+     "w": "agir,",
+     "start": 5.69,
+     "end": 6.21
+    },
+    {
+     "w": "puis",
+     "start": 6.29,
+     "end": 6.37
+    },
+    {
+     "w": "tu",
+     "start": 6.37,
+     "end": 6.49
+    },
+    {
+     "w": "essuies",
+     "start": 6.49,
+     "end": 6.79
+    },
+    {
+     "w": "avec",
+     "start": 6.79,
+     "end": 6.91
+    },
+    {
+     "w": "des",
+     "start": 6.91,
+     "end": 7.09
+    },
+    {
+     "w": "chiffons",
+     "start": 7.09,
+     "end": 7.47
+    },
+    {
+     "w": "en",
+     "start": 7.47,
+     "end": 7.55
+    },
+    {
+     "w": "microfibre.",
+     "start": 7.55,
+     "end": 8.19
+    }
+   ]
+  },
+  {
+   "start": 8.51,
+   "end": 11.92,
+   "words": [
+    {
+     "w": "Le",
+     "start": 8.51,
+     "end": 8.66
+    },
+    {
+     "w": "principe",
+     "start": 8.66,
+     "end": 8.92
+    },
+    {
+     "w": "existe",
+     "start": 8.92,
+     "end": 9.34
+    },
+    {
+     "w": "aux",
+     "start": 9.34,
+     "end": 9.52
+    },
+    {
+     "w": "États-Unis,",
+     "start": 9.52,
+     "end": 10.02
+    },
+    {
+     "w": "et",
+     "start": 10.3,
+     "end": 10.6
+    },
+    {
+     "w": "on",
+     "start": 10.6,
+     "end": 10.7
+    },
+    {
+     "w": "le",
+     "start": 10.7,
+     "end": 10.8
+    },
+    {
+     "w": "voit",
+     "start": 10.8,
+     "end": 10.98
+    },
+    {
+     "w": "peu",
+     "start": 10.98,
+     "end": 11.18
+    },
+    {
+     "w": "en",
+     "start": 11.18,
+     "end": 11.34
+    },
+    {
+     "w": "France.",
+     "start": 11.34,
+     "end": 11.54
+    }
+   ]
+  },
+  {
+   "start": 12.1,
+   "end": 18.07,
+   "words": [
+    {
+     "w": "En",
+     "start": 12.1,
+     "end": 12.27
+    },
+    {
+     "w": "France,",
+     "start": 12.27,
+     "end": 12.65
+    },
+    {
+     "w": "l'eau",
+     "start": 12.93,
+     "end": 13.05
+    },
+    {
+     "w": "est",
+     "start": 13.05,
+     "end": 13.17
+    },
+    {
+     "w": "justement",
+     "start": 13.17,
+     "end": 13.49
+    },
+    {
+     "w": "le",
+     "start": 13.49,
+     "end": 13.67
+    },
+    {
+     "w": "sujet",
+     "start": 13.67,
+     "end": 13.95
+    },
+    {
+     "w": "quand",
+     "start": 14.49,
+     "end": 14.65
+    },
+    {
+     "w": "la",
+     "start": 14.65,
+     "end": 14.79
+    },
+    {
+     "w": "sécheresse",
+     "start": 14.79,
+     "end": 15.15
+    },
+    {
+     "w": "arrive,",
+     "start": 15.15,
+     "end": 15.47
+    },
+    {
+     "w": "des",
+     "start": 15.93,
+     "end": 16.03
+    },
+    {
+     "w": "restrictions",
+     "start": 16.03,
+     "end": 16.43
+    },
+    {
+     "w": "touchent",
+     "start": 16.43,
+     "end": 16.89
+    },
+    {
+     "w": "le",
+     "start": 16.89,
+     "end": 16.97
+    },
+    {
+     "w": "lavage",
+     "start": 16.97,
+     "end": 17.33
+    },
+    {
+     "w": "des",
+     "start": 17.33,
+     "end": 17.43
+    },
+    {
+     "w": "véhicules.",
+     "start": 17.43,
+     "end": 17.91
+    }
+   ]
+  },
+  {
+   "start": 18.25,
+   "end": 23.01,
+   "words": [
+    {
+     "w": "Les",
+     "start": 18.25,
+     "end": 18.41
+    },
+    {
+     "w": "préfets",
+     "start": 18.41,
+     "end": 18.77
+    },
+    {
+     "w": "utilisent",
+     "start": 18.77,
+     "end": 19.27
+    },
+    {
+     "w": "quatre",
+     "start": 19.27,
+     "end": 19.43
+    },
+    {
+     "w": "niveaux",
+     "start": 19.43,
+     "end": 19.91
+    },
+    {
+     "w": "vigilance,",
+     "start": 20.21,
+     "end": 20.77
+    },
+    {
+     "w": "alerte,",
+     "start": 20.95,
+     "end": 21.37
+    },
+    {
+     "w": "alerte",
+     "start": 21.41,
+     "end": 21.73
+    },
+    {
+     "w": "renforcée",
+     "start": 21.73,
+     "end": 22.33
+    },
+    {
+     "w": "et",
+     "start": 22.33,
+     "end": 22.51
+    },
+    {
+     "w": "crise.",
+     "start": 22.51,
+     "end": 22.75
+    }
+   ]
+  },
+  {
+   "start": 23.19,
+   "end": 27.65,
+   "words": [
+    {
+     "w": "Un",
+     "start": 23.19,
+     "end": 23.4
+    },
+    {
+     "w": "site",
+     "start": 23.4,
+     "end": 23.58
+    },
+    {
+     "w": "officiel,",
+     "start": 23.58,
+     "end": 24.24
+    },
+    {
+     "w": "Vigie-Eau,",
+     "start": 24.54,
+     "end": 25.16
+    },
+    {
+     "w": "indique",
+     "start": 25.4,
+     "end": 25.72
+    },
+    {
+     "w": "les",
+     "start": 25.72,
+     "end": 25.84
+    },
+    {
+     "w": "restrictions",
+     "start": 25.84,
+     "end": 26.22
+    },
+    {
+     "w": "en",
+     "start": 26.22,
+     "end": 26.5
+    },
+    {
+     "w": "vigueur",
+     "start": 26.5,
+     "end": 26.84
+    },
+    {
+     "w": "à",
+     "start": 26.84,
+     "end": 26.96
+    },
+    {
+     "w": "ton",
+     "start": 26.96,
+     "end": 27.04
+    },
+    {
+     "w": "adresse.",
+     "start": 27.04,
+     "end": 27.42
+    }
+   ]
+  },
+  {
+   "start": 27.83,
+   "end": 30.76,
+   "words": [
+    {
+     "w": "Un",
+     "start": 27.83,
+     "end": 27.99
+    },
+    {
+     "w": "lavage",
+     "start": 27.99,
+     "end": 28.41
+    },
+    {
+     "w": "sans",
+     "start": 28.41,
+     "end": 28.61
+    },
+    {
+     "w": "eau",
+     "start": 28.61,
+     "end": 28.89
+    },
+    {
+     "w": "évite",
+     "start": 28.89,
+     "end": 29.13
+    },
+    {
+     "w": "de",
+     "start": 29.13,
+     "end": 29.25
+    },
+    {
+     "w": "faire",
+     "start": 29.25,
+     "end": 29.41
+    },
+    {
+     "w": "couler",
+     "start": 29.41,
+     "end": 29.71
+    },
+    {
+     "w": "de",
+     "start": 29.71,
+     "end": 29.83
+    },
+    {
+     "w": "l'eau",
+     "start": 29.83,
+     "end": 29.99
+    },
+    {
+     "w": "sale",
+     "start": 29.99,
+     "end": 30.21
+    },
+    {
+     "w": "dans",
+     "start": 30.21,
+     "end": 30.35
+    },
+    {
+     "w": "la",
+     "start": 30.35,
+     "end": 30.47
+    },
+    {
+     "w": "rue.",
+     "start": 30.47,
+     "end": 30.63
+    }
+   ]
+  },
+  {
+   "start": 30.94,
+   "end": 35.0,
+   "words": [
+    {
+     "w": "Mais",
+     "start": 30.94,
+     "end": 31.1
+    },
+    {
+     "w": "ne",
+     "start": 31.1,
+     "end": 31.2
+    },
+    {
+     "w": "dis",
+     "start": 31.2,
+     "end": 31.34
+    },
+    {
+     "w": "jamais",
+     "start": 31.34,
+     "end": 31.56
+    },
+    {
+     "w": "que",
+     "start": 31.56,
+     "end": 31.74
+    },
+    {
+     "w": "c'est",
+     "start": 31.74,
+     "end": 31.92
+    },
+    {
+     "w": "autorisé",
+     "start": 31.92,
+     "end": 32.42
+    },
+    {
+     "w": "partout",
+     "start": 32.42,
+     "end": 32.74
+    },
+    {
+     "w": "l'arrêté",
+     "start": 33.18,
+     "end": 33.7
+    },
+    {
+     "w": "de",
+     "start": 33.7,
+     "end": 33.76
+    },
+    {
+     "w": "ton",
+     "start": 33.76,
+     "end": 33.92
+    },
+    {
+     "w": "département",
+     "start": 33.92,
+     "end": 34.38
+    },
+    {
+     "w": "décide.",
+     "start": 34.38,
+     "end": 34.82
+    }
+   ]
+  },
+  {
+   "start": 35.18,
+   "end": 41.02,
+   "words": [
+    {
+     "w": "Matériel",
+     "start": 35.18,
+     "end": 35.83
+    },
+    {
+     "w": "produit",
+     "start": 36.11,
+     "end": 36.45
+    },
+    {
+     "w": "de",
+     "start": 36.45,
+     "end": 36.65
+    },
+    {
+     "w": "lavage",
+     "start": 36.65,
+     "end": 37.07
+    },
+    {
+     "w": "sans",
+     "start": 37.07,
+     "end": 37.25
+    },
+    {
+     "w": "eau,",
+     "start": 37.25,
+     "end": 37.59
+    },
+    {
+     "w": "beaucoup",
+     "start": 37.75,
+     "end": 37.89
+    },
+    {
+     "w": "de",
+     "start": 37.89,
+     "end": 38.05
+    },
+    {
+     "w": "chiffons",
+     "start": 38.05,
+     "end": 38.29
+    },
+    {
+     "w": "propres,",
+     "start": 38.29,
+     "end": 38.79
+    },
+    {
+     "w": "un",
+     "start": 38.89,
+     "end": 38.97
+    },
+    {
+     "w": "pulvérisateur",
+     "start": 38.97,
+     "end": 39.73
+    },
+    {
+     "w": "et",
+     "start": 39.73,
+     "end": 40.13
+    },
+    {
+     "w": "un",
+     "start": 40.13,
+     "end": 40.25
+    },
+    {
+     "w": "aspirateur.",
+     "start": 40.25,
+     "end": 40.75
+    }
+   ]
+  },
+  {
+   "start": 41.2,
+   "end": 46.44,
+   "words": [
+    {
+     "w": "Le",
+     "start": 41.2,
+     "end": 41.37
+    },
+    {
+     "w": "piège",
+     "start": 41.37,
+     "end": 41.83
+    },
+    {
+     "w": "une",
+     "start": 42.11,
+     "end": 42.31
+    },
+    {
+     "w": "voiture",
+     "start": 42.31,
+     "end": 42.65
+    },
+    {
+     "w": "très",
+     "start": 42.65,
+     "end": 42.91
+    },
+    {
+     "w": "sale",
+     "start": 42.91,
+     "end": 43.17
+    },
+    {
+     "w": "ou",
+     "start": 43.17,
+     "end": 43.29
+    },
+    {
+     "w": "pleine",
+     "start": 43.29,
+     "end": 43.57
+    },
+    {
+     "w": "de",
+     "start": 43.57,
+     "end": 43.65
+    },
+    {
+     "w": "sable",
+     "start": 43.65,
+     "end": 44.05
+    },
+    {
+     "w": "peut",
+     "start": 44.41,
+     "end": 44.55
+    },
+    {
+     "w": "se",
+     "start": 44.55,
+     "end": 44.71
+    },
+    {
+     "w": "rayer,",
+     "start": 44.71,
+     "end": 45.01
+    },
+    {
+     "w": "alors",
+     "start": 45.39,
+     "end": 45.51
+    },
+    {
+     "w": "refuse",
+     "start": 45.51,
+     "end": 45.93
+    },
+    {
+     "w": "ces",
+     "start": 45.93,
+     "end": 46.13
+    },
+    {
+     "w": "cas.",
+     "start": 46.13,
+     "end": 46.27
+    }
+   ]
+  }
+ ]
+}

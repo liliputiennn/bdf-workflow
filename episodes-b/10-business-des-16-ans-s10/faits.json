@@ -1,0 +1,17 @@
+[
+ {
+  "claim": "L'association Entreprendre pour apprendre est agréée par le ministère de l'Éducation nationale.",
+  "valeur": "agréée",
+  "phrase": 3,
+  "sources": [
+   "https://www.entreprendre-pour-apprendre.fr/",
+   "https://cache.media.education.gouv.fr/file/Actions_ecole_entreprise/46/7/EPA_presentation_du_dispositif-mini-entreprise1_552467.pdf"
+  ],
+  "check": [
+   "Entreprendre pour apprendre"
+  ],
+  "verified": [
+   "https://www.entreprendre-pour-apprendre.fr/"
+  ]
+ }
+]

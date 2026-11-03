@@ -1,0 +1,59 @@
+{
+ "id": "10-business-des-16-ans-s1",
+ "titre": "Mineur : la micro-entreprise t'est interdite, voici la vraie loi",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "ACCROCHE LOI DIT SEIZE",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "À seize ans, tu ne peux pas ouvrir une micro-entreprise.",
+  "Certaines vidéos disent le contraire, mais la loi est claire.",
+  "Un mineur qui n'est pas émancipé ne peut pas être commerçant.",
+  "Il existe pourtant des portes légales, avec l'accord de tes parents.",
+  "Avec leur autorisation écrite, tu peux créer une société à associé unique, mais c'est lourd, et il faut de l'aide.",
+  "Si le juge accorde l'émancipation, tu peux ouvrir une micro-entreprise, mais seuls tes parents peuvent la demander.",
+  "Et il existe des chemins faits pour les jeunes : une coopérative d'été, une mini-entreprise, une association de jeunes."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "micro-entreprise"
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 3,
+   "params": {
+    "valeur": 16,
+    "suffixe": " ans",
+    "etiquette": "âge pour créer une société, avec les parents"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "LA LOI À 16 ANS",
+    "items": [
+     {
+      "texte": "Sans émancipation : société à associé unique"
+     },
+     {
+      "texte": "Émancipé : micro-entreprise possible"
+     },
+     {
+      "texte": "Autres chemins : coopérative, mini-entreprise, association"
+     }
+    ]
+   }
+  }
+ ]
+}

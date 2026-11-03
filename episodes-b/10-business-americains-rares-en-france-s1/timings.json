@@ -1,0 +1,825 @@
+{
+ "total": 47.5,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 4.58,
+   "words": [
+    {
+     "w": "Aux",
+     "start": 0.15,
+     "end": 0.37
+    },
+    {
+     "w": "États-Unis,",
+     "start": 0.37,
+     "end": 0.83
+    },
+    {
+     "w": "des",
+     "start": 1.25,
+     "end": 1.35
+    },
+    {
+     "w": "entreprises",
+     "start": 1.35,
+     "end": 1.71
+    },
+    {
+     "w": "installent",
+     "start": 1.71,
+     "end": 2.19
+    },
+    {
+     "w": "les",
+     "start": 2.19,
+     "end": 2.31
+    },
+    {
+     "w": "guirlandes",
+     "start": 2.31,
+     "end": 2.79
+    },
+    {
+     "w": "de",
+     "start": 2.79,
+     "end": 2.87
+    },
+    {
+     "w": "Noël",
+     "start": 2.87,
+     "end": 3.27
+    },
+    {
+     "w": "sur",
+     "start": 3.27,
+     "end": 3.57
+    },
+    {
+     "w": "les",
+     "start": 3.57,
+     "end": 3.71
+    },
+    {
+     "w": "maisons",
+     "start": 3.71,
+     "end": 3.99
+    },
+    {
+     "w": "des",
+     "start": 3.99,
+     "end": 4.11
+    },
+    {
+     "w": "autres.",
+     "start": 4.11,
+     "end": 4.39
+    }
+   ]
+  },
+  {
+   "start": 4.76,
+   "end": 10.7,
+   "words": [
+    {
+     "w": "Elles",
+     "start": 4.76,
+     "end": 5.05
+    },
+    {
+     "w": "viennent",
+     "start": 5.05,
+     "end": 5.19
+    },
+    {
+     "w": "en",
+     "start": 5.19,
+     "end": 5.33
+    },
+    {
+     "w": "novembre,",
+     "start": 5.33,
+     "end": 5.81
+    },
+    {
+     "w": "posent",
+     "start": 6.03,
+     "end": 6.31
+    },
+    {
+     "w": "tout,",
+     "start": 6.31,
+     "end": 6.45
+    },
+    {
+     "w": "vérifient",
+     "start": 6.81,
+     "end": 7.17
+    },
+    {
+     "w": "le",
+     "start": 7.17,
+     "end": 7.25
+    },
+    {
+     "w": "soir",
+     "start": 7.25,
+     "end": 7.45
+    },
+    {
+     "w": "que",
+     "start": 7.45,
+     "end": 7.63
+    },
+    {
+     "w": "ça",
+     "start": 7.63,
+     "end": 7.75
+    },
+    {
+     "w": "brille,",
+     "start": 7.75,
+     "end": 8.11
+    },
+    {
+     "w": "puis",
+     "start": 8.39,
+     "end": 8.63
+    },
+    {
+     "w": "reviennent",
+     "start": 8.63,
+     "end": 9.21
+    },
+    {
+     "w": "en",
+     "start": 9.21,
+     "end": 9.33
+    },
+    {
+     "w": "janvier",
+     "start": 9.33,
+     "end": 9.71
+    },
+    {
+     "w": "pour",
+     "start": 9.71,
+     "end": 9.97
+    },
+    {
+     "w": "tout",
+     "start": 9.97,
+     "end": 10.19
+    },
+    {
+     "w": "retirer.",
+     "start": 10.19,
+     "end": 10.61
+    }
+   ]
+  },
+  {
+   "start": 10.88,
+   "end": 13.73,
+   "words": [
+    {
+     "w": "Le",
+     "start": 10.88,
+     "end": 11.04
+    },
+    {
+     "w": "client",
+     "start": 11.04,
+     "end": 11.3
+    },
+    {
+     "w": "n'a",
+     "start": 11.3,
+     "end": 11.52
+    },
+    {
+     "w": "ni",
+     "start": 11.52,
+     "end": 11.62
+    },
+    {
+     "w": "le",
+     "start": 11.62,
+     "end": 11.74
+    },
+    {
+     "w": "temps,",
+     "start": 11.74,
+     "end": 11.96
+    },
+    {
+     "w": "ni",
+     "start": 12.14,
+     "end": 12.22
+    },
+    {
+     "w": "l'envie",
+     "start": 12.22,
+     "end": 12.5
+    },
+    {
+     "w": "de",
+     "start": 12.5,
+     "end": 12.6
+    },
+    {
+     "w": "monter",
+     "start": 12.6,
+     "end": 12.82
+    },
+    {
+     "w": "sur",
+     "start": 12.82,
+     "end": 13.08
+    },
+    {
+     "w": "une",
+     "start": 13.08,
+     "end": 13.22
+    },
+    {
+     "w": "échelle.",
+     "start": 13.22,
+     "end": 13.58
+    }
+   ]
+  },
+  {
+   "start": 13.91,
+   "end": 15.65,
+   "words": [
+    {
+     "w": "En",
+     "start": 13.91,
+     "end": 14.07
+    },
+    {
+     "w": "France,",
+     "start": 14.07,
+     "end": 14.45
+    },
+    {
+     "w": "on",
+     "start": 14.63,
+     "end": 14.73
+    },
+    {
+     "w": "en",
+     "start": 14.73,
+     "end": 14.81
+    },
+    {
+     "w": "parle",
+     "start": 14.81,
+     "end": 15.01
+    },
+    {
+     "w": "encore",
+     "start": 15.01,
+     "end": 15.23
+    },
+    {
+     "w": "peu.",
+     "start": 15.23,
+     "end": 15.49
+    }
+   ]
+  },
+  {
+   "start": 15.83,
+   "end": 22.06,
+   "words": [
+    {
+     "w": "Ton",
+     "start": 15.83,
+     "end": 15.99
+    },
+    {
+     "w": "travail",
+     "start": 15.99,
+     "end": 16.37
+    },
+    {
+     "w": "mesurer,",
+     "start": 16.69,
+     "end": 17.19
+    },
+    {
+     "w": "choisir",
+     "start": 17.45,
+     "end": 17.81
+    },
+    {
+     "w": "le",
+     "start": 17.81,
+     "end": 17.89
+    },
+    {
+     "w": "matériel,",
+     "start": 17.89,
+     "end": 18.55
+    },
+    {
+     "w": "poser,",
+     "start": 18.73,
+     "end": 18.95
+    },
+    {
+     "w": "vérifier,",
+     "start": 19.33,
+     "end": 19.79
+    },
+    {
+     "w": "puis",
+     "start": 20.07,
+     "end": 20.12
+    },
+    {
+     "w": "déposer",
+     "start": 20.09,
+     "end": 20.67
+    },
+    {
+     "w": "et",
+     "start": 20.67,
+     "end": 20.97
+    },
+    {
+     "w": "ranger",
+     "start": 20.97,
+     "end": 21.27
+    },
+    {
+     "w": "après",
+     "start": 21.27,
+     "end": 21.45
+    },
+    {
+     "w": "les",
+     "start": 21.45,
+     "end": 21.59
+    },
+    {
+     "w": "fêtes.",
+     "start": 21.59,
+     "end": 21.91
+    }
+   ]
+  },
+  {
+   "start": 22.24,
+   "end": 26.6,
+   "words": [
+    {
+     "w": "La",
+     "start": 22.24,
+     "end": 22.39
+    },
+    {
+     "w": "répression",
+     "start": 22.39,
+     "end": 22.81
+    },
+    {
+     "w": "des",
+     "start": 22.81,
+     "end": 22.97
+    },
+    {
+     "w": "fraudes",
+     "start": 22.97,
+     "end": 23.29
+    },
+    {
+     "w": "rappelle",
+     "start": 23.29,
+     "end": 23.55
+    },
+    {
+     "w": "de",
+     "start": 23.55,
+     "end": 23.75
+    },
+    {
+     "w": "ne",
+     "start": 23.75,
+     "end": 23.83
+    },
+    {
+     "w": "jamais",
+     "start": 23.83,
+     "end": 24.19
+    },
+    {
+     "w": "laisser",
+     "start": 24.19,
+     "end": 24.53
+    },
+    {
+     "w": "des",
+     "start": 24.53,
+     "end": 24.69
+    },
+    {
+     "w": "guirlandes",
+     "start": 24.69,
+     "end": 25.21
+    },
+    {
+     "w": "branchées",
+     "start": 25.21,
+     "end": 25.63
+    },
+    {
+     "w": "sans",
+     "start": 25.63,
+     "end": 25.83
+    },
+    {
+     "w": "surveillance.",
+     "start": 25.83,
+     "end": 26.15
+    }
+   ]
+  },
+  {
+   "start": 26.78,
+   "end": 31.75,
+   "words": [
+    {
+     "w": "Elle",
+     "start": 26.78,
+     "end": 26.93
+    },
+    {
+     "w": "demande",
+     "start": 26.93,
+     "end": 27.19
+    },
+    {
+     "w": "aussi",
+     "start": 27.19,
+     "end": 27.43
+    },
+    {
+     "w": "de",
+     "start": 27.43,
+     "end": 27.57
+    },
+    {
+     "w": "vérifier",
+     "start": 27.57,
+     "end": 27.99
+    },
+    {
+     "w": "que",
+     "start": 27.99,
+     "end": 28.13
+    },
+    {
+     "w": "le",
+     "start": 28.13,
+     "end": 28.21
+    },
+    {
+     "w": "matériel",
+     "start": 28.21,
+     "end": 28.71
+    },
+    {
+     "w": "est",
+     "start": 28.71,
+     "end": 28.79
+    },
+    {
+     "w": "prévu",
+     "start": 28.79,
+     "end": 29.09
+    },
+    {
+     "w": "pour",
+     "start": 29.09,
+     "end": 29.23
+    },
+    {
+     "w": "l'extérieur,",
+     "start": 29.23,
+     "end": 29.81
+    },
+    {
+     "w": "et",
+     "start": 30.27,
+     "end": 30.33
+    },
+    {
+     "w": "pas",
+     "start": 30.33,
+     "end": 30.47
+    },
+    {
+     "w": "seulement",
+     "start": 30.47,
+     "end": 30.73
+    },
+    {
+     "w": "pour",
+     "start": 30.73,
+     "end": 30.97
+    },
+    {
+     "w": "l'intérieur.",
+     "start": 30.97,
+     "end": 31.29
+    }
+   ]
+  },
+  {
+   "start": 31.93,
+   "end": 36.82,
+   "words": [
+    {
+     "w": "Dès",
+     "start": 31.93,
+     "end": 32.17
+    },
+    {
+     "w": "que",
+     "start": 32.17,
+     "end": 32.27
+    },
+    {
+     "w": "tu",
+     "start": 32.27,
+     "end": 32.39
+    },
+    {
+     "w": "factures,",
+     "start": 32.39,
+     "end": 32.89
+    },
+    {
+     "w": "tu",
+     "start": 33.15,
+     "end": 33.27
+    },
+    {
+     "w": "es",
+     "start": 33.27,
+     "end": 33.37
+    },
+    {
+     "w": "indépendant,",
+     "start": 33.37,
+     "end": 34.29
+    },
+    {
+     "w": "et",
+     "start": 34.31,
+     "end": 34.47
+    },
+    {
+     "w": "la",
+     "start": 34.47,
+     "end": 34.55
+    },
+    {
+     "w": "micro-entreprise",
+     "start": 34.55,
+     "end": 35.27
+    },
+    {
+     "w": "est",
+     "start": 35.27,
+     "end": 35.53
+    },
+    {
+     "w": "un",
+     "start": 35.53,
+     "end": 35.63
+    },
+    {
+     "w": "statut",
+     "start": 35.63,
+     "end": 35.89
+    },
+    {
+     "w": "courant",
+     "start": 35.89,
+     "end": 36.19
+    },
+    {
+     "w": "pour",
+     "start": 36.19,
+     "end": 36.33
+    },
+    {
+     "w": "tester.",
+     "start": 36.33,
+     "end": 36.61
+    }
+   ]
+  },
+  {
+   "start": 37.0,
+   "end": 41.96,
+   "words": [
+    {
+     "w": "Le",
+     "start": 37.0,
+     "end": 37.15
+    },
+    {
+     "w": "piège",
+     "start": 37.15,
+     "end": 37.55
+    },
+    {
+     "w": "le",
+     "start": 37.93,
+     "end": 38.09
+    },
+    {
+     "w": "travail",
+     "start": 38.09,
+     "end": 38.35
+    },
+    {
+     "w": "est",
+     "start": 38.35,
+     "end": 38.53
+    },
+    {
+     "w": "saisonnier,",
+     "start": 38.53,
+     "end": 39.05
+    },
+    {
+     "w": "quelques",
+     "start": 39.13,
+     "end": 39.29
+    },
+    {
+     "w": "semaines",
+     "start": 39.29,
+     "end": 39.61
+    },
+    {
+     "w": "par",
+     "start": 39.61,
+     "end": 39.89
+    },
+    {
+     "w": "an,",
+     "start": 39.89,
+     "end": 40.07
+    },
+    {
+     "w": "et",
+     "start": 40.43,
+     "end": 40.49
+    },
+    {
+     "w": "une",
+     "start": 40.49,
+     "end": 40.59
+    },
+    {
+     "w": "chute",
+     "start": 40.59,
+     "end": 40.81
+    },
+    {
+     "w": "d'échelle",
+     "start": 40.81,
+     "end": 41.17
+    },
+    {
+     "w": "arrive",
+     "start": 41.17,
+     "end": 41.45
+    },
+    {
+     "w": "vite.",
+     "start": 41.45,
+     "end": 41.77
+    }
+   ]
+  },
+  {
+   "start": 42.14,
+   "end": 47.2,
+   "words": [
+    {
+     "w": "Reste",
+     "start": 42.14,
+     "end": 42.51
+    },
+    {
+     "w": "le",
+     "start": 42.51,
+     "end": 42.65
+    },
+    {
+     "w": "plus",
+     "start": 42.65,
+     "end": 42.79
+    },
+    {
+     "w": "bas",
+     "start": 42.79,
+     "end": 42.91
+    },
+    {
+     "w": "possible,",
+     "start": 42.91,
+     "end": 43.33
+    },
+    {
+     "w": "ne",
+     "start": 43.57,
+     "end": 43.65
+    },
+    {
+     "w": "monte",
+     "start": 43.65,
+     "end": 43.83
+    },
+    {
+     "w": "jamais",
+     "start": 43.83,
+     "end": 44.09
+    },
+    {
+     "w": "seul",
+     "start": 44.09,
+     "end": 44.37
+    },
+    {
+     "w": "sur",
+     "start": 44.37,
+     "end": 44.59
+    },
+    {
+     "w": "un",
+     "start": 44.59,
+     "end": 44.73
+    },
+    {
+     "w": "toit,",
+     "start": 44.73,
+     "end": 45.03
+    },
+    {
+     "w": "et",
+     "start": 45.21,
+     "end": 45.27
+    },
+    {
+     "w": "demande",
+     "start": 45.27,
+     "end": 45.55
+    },
+    {
+     "w": "à",
+     "start": 45.55,
+     "end": 45.71
+    },
+    {
+     "w": "un",
+     "start": 45.71,
+     "end": 45.79
+    },
+    {
+     "w": "assureur",
+     "start": 45.79,
+     "end": 46.27
+    },
+    {
+     "w": "ce",
+     "start": 46.27,
+     "end": 46.39
+    },
+    {
+     "w": "qui",
+     "start": 46.39,
+     "end": 46.55
+    },
+    {
+     "w": "est",
+     "start": 46.55,
+     "end": 46.61
+    },
+    {
+     "w": "couvert.",
+     "start": 46.61,
+     "end": 47.01
+    }
+   ]
+  }
+ ]
+}

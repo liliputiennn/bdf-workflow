@@ -1,0 +1,50 @@
+[
+ {
+  "claim": "L'oubli de mentions obligatoires dans le registre unique du personnel peut entraîner jusqu'à 750 euros d'amende par salarié concerné.",
+  "valeur": "750 €",
+  "phrase": 4,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F1784",
+   "https://www.economie.gouv.fr/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/registre-unique-du-personnel-quelles-sont"
+  ],
+  "check": [
+   "750"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F1784",
+   "https://www.economie.gouv.fr/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/registre-unique-du-personnel-quelles-sont"
+  ]
+ },
+ {
+  "claim": "Le document unique d'évaluation des risques et ses versions successives doivent être conservés pendant 40 ans.",
+  "valeur": "40 ans",
+  "phrase": 6,
+  "sources": [
+   "https://www.inrs.fr/publications/juridique/focus-juridiques/focus-juridique-document-unique-evaluation-risques.html",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F35360"
+  ],
+  "check": [
+   "40 ans"
+  ],
+  "verified": [
+   "https://www.inrs.fr/publications/juridique/focus-juridiques/focus-juridique-document-unique-evaluation-risques.html",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F35360"
+  ]
+ },
+ {
+  "claim": "Ne pas rédiger le document unique est puni d'une amende pouvant aller jusqu'à 1 500 euros pour une personne physique.",
+  "valeur": "1 500 €",
+  "phrase": 7,
+  "sources": [
+   "https://www.inrs.fr/publications/juridique/focus-juridiques/focus-juridique-document-unique-evaluation-risques.html",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F35360"
+  ],
+  "check": [
+   "1 500"
+  ],
+  "verified": [
+   "https://www.inrs.fr/publications/juridique/focus-juridiques/focus-juridique-document-unique-evaluation-risques.html",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F35360"
+  ]
+ }
+]

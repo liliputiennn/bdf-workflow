@@ -1,0 +1,33 @@
+[
+ {
+  "claim": "Les distributeurs doivent retirer du marché tout produit dont ils savent qu'il présente un risque.",
+  "valeur": "retirer",
+  "phrase": 6,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/actualites/A18561",
+   "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032222739/"
+  ],
+  "check": [
+   "retir"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/actualites/A18561",
+   "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032222739/"
+  ]
+ },
+ {
+  "claim": "Les entreprises qui mettent en œuvre un rappel de produit doivent le déclarer sur le site RappelConso.",
+  "valeur": "RappelConso",
+  "phrase": 7,
+  "sources": [
+   "https://www.economie.gouv.fr/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/rappels-de-produits-vous-devez-les-declarer-sur-le-site-rappelconso",
+   "https://entreprendre.service-public.gouv.fr/actualites/A18842"
+  ],
+  "check": [
+   "RappelConso"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/actualites/A18842"
+  ]
+ }
+]

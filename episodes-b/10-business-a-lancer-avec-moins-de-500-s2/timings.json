@@ -1,0 +1,618 @@
+{
+ "total": 37.55,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.57,
+   "words": [
+    {
+     "w": "Une",
+     "start": 0.15,
+     "end": 0.37
+    },
+    {
+     "w": "idée",
+     "start": 0.37,
+     "end": 0.65
+    },
+    {
+     "w": "aider",
+     "start": 1.07,
+     "end": 1.25
+    },
+    {
+     "w": "les",
+     "start": 1.25,
+     "end": 1.43
+    },
+    {
+     "w": "petits",
+     "start": 1.43,
+     "end": 1.63
+    },
+    {
+     "w": "artisans",
+     "start": 1.63,
+     "end": 2.17
+    },
+    {
+     "w": "à",
+     "start": 2.17,
+     "end": 2.25
+    },
+    {
+     "w": "répondre",
+     "start": 2.25,
+     "end": 2.53
+    },
+    {
+     "w": "aux",
+     "start": 2.53,
+     "end": 2.71
+    },
+    {
+     "w": "marchés",
+     "start": 2.71,
+     "end": 3.01
+    },
+    {
+     "w": "publics.",
+     "start": 3.01,
+     "end": 3.55
+    }
+   ]
+  },
+  {
+   "start": 3.75,
+   "end": 8.89,
+   "words": [
+    {
+     "w": "Une",
+     "start": 3.75,
+     "end": 3.94
+    },
+    {
+     "w": "mairie",
+     "start": 3.94,
+     "end": 4.22
+    },
+    {
+     "w": "ou",
+     "start": 4.22,
+     "end": 4.36
+    },
+    {
+     "w": "une",
+     "start": 4.36,
+     "end": 4.44
+    },
+    {
+     "w": "école",
+     "start": 4.44,
+     "end": 4.7
+    },
+    {
+     "w": "cherche",
+     "start": 4.7,
+     "end": 4.94
+    },
+    {
+     "w": "un",
+     "start": 4.94,
+     "end": 5.14
+    },
+    {
+     "w": "peintre,",
+     "start": 5.14,
+     "end": 5.52
+    },
+    {
+     "w": "un",
+     "start": 5.62,
+     "end": 5.7
+    },
+    {
+     "w": "jardinier,",
+     "start": 5.7,
+     "end": 6.22
+    },
+    {
+     "w": "un",
+     "start": 6.44,
+     "end": 6.52
+    },
+    {
+     "w": "informaticien,",
+     "start": 6.52,
+     "end": 7.28
+    },
+    {
+     "w": "et",
+     "start": 7.56,
+     "end": 7.64
+    },
+    {
+     "w": "elle",
+     "start": 7.64,
+     "end": 7.72
+    },
+    {
+     "w": "doit",
+     "start": 7.72,
+     "end": 7.86
+    },
+    {
+     "w": "publier",
+     "start": 7.86,
+     "end": 8.28
+    },
+    {
+     "w": "son",
+     "start": 8.28,
+     "end": 8.42
+    },
+    {
+     "w": "besoin.",
+     "start": 8.42,
+     "end": 8.64
+    }
+   ]
+  },
+  {
+   "start": 9.07,
+   "end": 12.75,
+   "words": [
+    {
+     "w": "Un",
+     "start": 9.07,
+     "end": 9.26
+    },
+    {
+     "w": "petit",
+     "start": 9.26,
+     "end": 9.46
+    },
+    {
+     "w": "artisan",
+     "start": 9.46,
+     "end": 9.9
+    },
+    {
+     "w": "n'ose",
+     "start": 9.9,
+     "end": 10.14
+    },
+    {
+     "w": "pas",
+     "start": 10.14,
+     "end": 10.3
+    },
+    {
+     "w": "toujours",
+     "start": 10.3,
+     "end": 10.52
+    },
+    {
+     "w": "répondre,",
+     "start": 10.52,
+     "end": 10.94
+    },
+    {
+     "w": "car",
+     "start": 11.24,
+     "end": 11.5
+    },
+    {
+     "w": "les",
+     "start": 11.5,
+     "end": 11.64
+    },
+    {
+     "w": "dossiers",
+     "start": 11.64,
+     "end": 11.96
+    },
+    {
+     "w": "font",
+     "start": 11.96,
+     "end": 12.14
+    },
+    {
+     "w": "peur.",
+     "start": 12.14,
+     "end": 12.46
+    }
+   ]
+  },
+  {
+   "start": 12.93,
+   "end": 16.32,
+   "words": [
+    {
+     "w": "Toi,",
+     "start": 12.93,
+     "end": 13.26
+    },
+    {
+     "w": "tu",
+     "start": 13.42,
+     "end": 13.5
+    },
+    {
+     "w": "surveilles",
+     "start": 13.5,
+     "end": 13.86
+    },
+    {
+     "w": "les",
+     "start": 13.86,
+     "end": 13.96
+    },
+    {
+     "w": "annonces",
+     "start": 13.96,
+     "end": 14.48
+    },
+    {
+     "w": "et",
+     "start": 14.48,
+     "end": 14.68
+    },
+    {
+     "w": "tu",
+     "start": 14.68,
+     "end": 14.82
+    },
+    {
+     "w": "prépares",
+     "start": 14.82,
+     "end": 15.2
+    },
+    {
+     "w": "le",
+     "start": 15.2,
+     "end": 15.28
+    },
+    {
+     "w": "dossier",
+     "start": 15.28,
+     "end": 15.68
+    },
+    {
+     "w": "avec",
+     "start": 15.68,
+     "end": 15.82
+    },
+    {
+     "w": "lui.",
+     "start": 15.82,
+     "end": 16.08
+    }
+   ]
+  },
+  {
+   "start": 16.5,
+   "end": 23.19,
+   "words": [
+    {
+     "w": "Le",
+     "start": 16.5,
+     "end": 16.66
+    },
+    {
+     "w": "BOAMP,",
+     "start": 16.66,
+     "end": 17.3
+    },
+    {
+     "w": "le",
+     "start": 17.32,
+     "end": 17.38
+    },
+    {
+     "w": "bulletin",
+     "start": 17.38,
+     "end": 17.8
+    },
+    {
+     "w": "officiel",
+     "start": 17.8,
+     "end": 18.24
+    },
+    {
+     "w": "des",
+     "start": 18.24,
+     "end": 18.38
+    },
+    {
+     "w": "annonces",
+     "start": 18.38,
+     "end": 18.74
+    },
+    {
+     "w": "des",
+     "start": 18.74,
+     "end": 18.88
+    },
+    {
+     "w": "marchés",
+     "start": 18.88,
+     "end": 19.18
+    },
+    {
+     "w": "publics,",
+     "start": 19.18,
+     "end": 19.88
+    },
+    {
+     "w": "et",
+     "start": 19.9,
+     "end": 19.98
+    },
+    {
+     "w": "le",
+     "start": 19.98,
+     "end": 20.08
+    },
+    {
+     "w": "portail",
+     "start": 20.08,
+     "end": 20.46
+    },
+    {
+     "w": "des",
+     "start": 20.46,
+     "end": 20.62
+    },
+    {
+     "w": "marchés",
+     "start": 20.62,
+     "end": 21.02
+    },
+    {
+     "w": "publics",
+     "start": 21.02,
+     "end": 21.52
+    },
+    {
+     "w": "de",
+     "start": 21.52,
+     "end": 21.57
+    },
+    {
+     "w": "l'État",
+     "start": 21.56,
+     "end": 21.94
+    },
+    {
+     "w": "listent",
+     "start": 21.94,
+     "end": 22.58
+    },
+    {
+     "w": "les",
+     "start": 22.58,
+     "end": 22.68
+    },
+    {
+     "w": "offres.",
+     "start": 22.68,
+     "end": 23.08
+    }
+   ]
+  },
+  {
+   "start": 23.37,
+   "end": 25.97,
+   "words": [
+    {
+     "w": "Même",
+     "start": 23.37,
+     "end": 23.61
+    },
+    {
+     "w": "une",
+     "start": 23.61,
+     "end": 23.81
+    },
+    {
+     "w": "micro-entreprise",
+     "start": 23.81,
+     "end": 24.59
+    },
+    {
+     "w": "peut",
+     "start": 24.59,
+     "end": 24.75
+    },
+    {
+     "w": "répondre",
+     "start": 24.75,
+     "end": 24.99
+    },
+    {
+     "w": "à",
+     "start": 24.99,
+     "end": 25.13
+    },
+    {
+     "w": "un",
+     "start": 25.13,
+     "end": 25.18
+    },
+    {
+     "w": "marché",
+     "start": 25.15,
+     "end": 25.35
+    },
+    {
+     "w": "public.",
+     "start": 25.35,
+     "end": 25.65
+    }
+   ]
+  },
+  {
+   "start": 26.15,
+   "end": 33.4,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 26.15,
+     "end": 26.29
+    },
+    {
+     "w": "la",
+     "start": 26.29,
+     "end": 26.41
+    },
+    {
+     "w": "candidature,",
+     "start": 26.41,
+     "end": 27.07
+    },
+    {
+     "w": "il",
+     "start": 27.21,
+     "end": 27.29
+    },
+    {
+     "w": "existe",
+     "start": 27.29,
+     "end": 27.61
+    },
+    {
+     "w": "le",
+     "start": 27.61,
+     "end": 27.87
+    },
+    {
+     "w": "DUME,",
+     "start": 27.87,
+     "end": 28.37
+    },
+    {
+     "w": "un",
+     "start": 28.57,
+     "end": 28.71
+    },
+    {
+     "w": "formulaire",
+     "start": 28.71,
+     "end": 29.23
+    },
+    {
+     "w": "européen",
+     "start": 29.23,
+     "end": 29.79
+    },
+    {
+     "w": "en",
+     "start": 29.79,
+     "end": 29.93
+    },
+    {
+     "w": "ligne",
+     "start": 29.93,
+     "end": 30.19
+    },
+    {
+     "w": "qui",
+     "start": 30.19,
+     "end": 30.67
+    },
+    {
+     "w": "évite",
+     "start": 30.67,
+     "end": 30.99
+    },
+    {
+     "w": "de",
+     "start": 30.99,
+     "end": 31.11
+    },
+    {
+     "w": "redonner",
+     "start": 31.11,
+     "end": 31.51
+    },
+    {
+     "w": "ce",
+     "start": 31.51,
+     "end": 31.71
+    },
+    {
+     "w": "que",
+     "start": 31.71,
+     "end": 31.85
+    },
+    {
+     "w": "l'administration",
+     "start": 31.85,
+     "end": 32.65
+    },
+    {
+     "w": "connaît",
+     "start": 32.65,
+     "end": 33.01
+    },
+    {
+     "w": "déjà.",
+     "start": 33.01,
+     "end": 33.19
+    }
+   ]
+  },
+  {
+   "start": 33.58,
+   "end": 37.25,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 33.58,
+     "end": 33.74
+    },
+    {
+     "w": "certains",
+     "start": 33.74,
+     "end": 34.02
+    },
+    {
+     "w": "marchés,",
+     "start": 34.02,
+     "end": 34.52
+    },
+    {
+     "w": "le",
+     "start": 34.88,
+     "end": 34.96
+    },
+    {
+     "w": "numéro",
+     "start": 34.96,
+     "end": 35.24
+    },
+    {
+     "w": "SIRET",
+     "start": 35.24,
+     "end": 35.72
+    },
+    {
+     "w": "suffit",
+     "start": 35.72,
+     "end": 36.34
+    },
+    {
+     "w": "pour",
+     "start": 36.34,
+     "end": 36.52
+    },
+    {
+     "w": "candidater.",
+     "start": 36.52,
+     "end": 37.08
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,532 @@
+{
+ "total": 30.61,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 2.66,
+   "words": [
+    {
+     "w": "À",
+     "start": 0.15,
+     "end": 0.31
+    },
+    {
+     "w": "seize",
+     "start": 0.31,
+     "end": 0.53
+    },
+    {
+     "w": "ans,",
+     "start": 0.53,
+     "end": 0.71
+    },
+    {
+     "w": "tu",
+     "start": 0.83,
+     "end": 0.89
+    },
+    {
+     "w": "ne",
+     "start": 0.89,
+     "end": 0.97
+    },
+    {
+     "w": "peux",
+     "start": 0.97,
+     "end": 1.07
+    },
+    {
+     "w": "pas",
+     "start": 1.07,
+     "end": 1.23
+    },
+    {
+     "w": "ouvrir",
+     "start": 1.23,
+     "end": 1.55
+    },
+    {
+     "w": "une",
+     "start": 1.55,
+     "end": 1.69
+    },
+    {
+     "w": "micro-entreprise.",
+     "start": 1.69,
+     "end": 2.45
+    }
+   ]
+  },
+  {
+   "start": 2.84,
+   "end": 5.73,
+   "words": [
+    {
+     "w": "Certaines",
+     "start": 2.84,
+     "end": 3.29
+    },
+    {
+     "w": "vidéos",
+     "start": 3.29,
+     "end": 3.47
+    },
+    {
+     "w": "disent",
+     "start": 3.47,
+     "end": 3.75
+    },
+    {
+     "w": "le",
+     "start": 3.75,
+     "end": 3.87
+    },
+    {
+     "w": "contraire,",
+     "start": 3.87,
+     "end": 4.39
+    },
+    {
+     "w": "mais",
+     "start": 4.61,
+     "end": 4.79
+    },
+    {
+     "w": "la",
+     "start": 4.79,
+     "end": 4.91
+    },
+    {
+     "w": "loi",
+     "start": 4.91,
+     "end": 5.05
+    },
+    {
+     "w": "est",
+     "start": 5.05,
+     "end": 5.19
+    },
+    {
+     "w": "claire.",
+     "start": 5.19,
+     "end": 5.61
+    }
+   ]
+  },
+  {
+   "start": 5.91,
+   "end": 8.71,
+   "words": [
+    {
+     "w": "Un",
+     "start": 5.91,
+     "end": 6.09
+    },
+    {
+     "w": "mineur",
+     "start": 6.09,
+     "end": 6.47
+    },
+    {
+     "w": "qui",
+     "start": 6.47,
+     "end": 6.61
+    },
+    {
+     "w": "n'est",
+     "start": 6.61,
+     "end": 6.75
+    },
+    {
+     "w": "pas",
+     "start": 6.75,
+     "end": 6.89
+    },
+    {
+     "w": "émancipé",
+     "start": 6.89,
+     "end": 7.47
+    },
+    {
+     "w": "ne",
+     "start": 7.47,
+     "end": 7.57
+    },
+    {
+     "w": "peut",
+     "start": 7.57,
+     "end": 7.71
+    },
+    {
+     "w": "pas",
+     "start": 7.71,
+     "end": 7.87
+    },
+    {
+     "w": "être",
+     "start": 7.87,
+     "end": 8.01
+    },
+    {
+     "w": "commerçant.",
+     "start": 8.01,
+     "end": 8.61
+    }
+   ]
+  },
+  {
+   "start": 8.89,
+   "end": 12.05,
+   "words": [
+    {
+     "w": "Il",
+     "start": 8.89,
+     "end": 9.04
+    },
+    {
+     "w": "existe",
+     "start": 9.04,
+     "end": 9.38
+    },
+    {
+     "w": "pourtant",
+     "start": 9.38,
+     "end": 9.68
+    },
+    {
+     "w": "des",
+     "start": 9.68,
+     "end": 9.84
+    },
+    {
+     "w": "portes",
+     "start": 9.84,
+     "end": 10.08
+    },
+    {
+     "w": "légales,",
+     "start": 10.08,
+     "end": 10.74
+    },
+    {
+     "w": "avec",
+     "start": 10.82,
+     "end": 11.04
+    },
+    {
+     "w": "l'accord",
+     "start": 11.04,
+     "end": 11.4
+    },
+    {
+     "w": "de",
+     "start": 11.4,
+     "end": 11.56
+    },
+    {
+     "w": "tes",
+     "start": 11.56,
+     "end": 11.66
+    },
+    {
+     "w": "parents.",
+     "start": 11.66,
+     "end": 11.88
+    }
+   ]
+  },
+  {
+   "start": 12.23,
+   "end": 18.25,
+   "words": [
+    {
+     "w": "Avec",
+     "start": 12.23,
+     "end": 12.47
+    },
+    {
+     "w": "leur",
+     "start": 12.47,
+     "end": 12.69
+    },
+    {
+     "w": "autorisation",
+     "start": 12.69,
+     "end": 13.25
+    },
+    {
+     "w": "écrite,",
+     "start": 13.25,
+     "end": 13.79
+    },
+    {
+     "w": "tu",
+     "start": 14.07,
+     "end": 14.15
+    },
+    {
+     "w": "peux",
+     "start": 14.15,
+     "end": 14.27
+    },
+    {
+     "w": "créer",
+     "start": 14.27,
+     "end": 14.47
+    },
+    {
+     "w": "une",
+     "start": 14.47,
+     "end": 14.63
+    },
+    {
+     "w": "société",
+     "start": 14.63,
+     "end": 15.05
+    },
+    {
+     "w": "à",
+     "start": 15.05,
+     "end": 15.29
+    },
+    {
+     "w": "associé",
+     "start": 15.29,
+     "end": 15.81
+    },
+    {
+     "w": "unique,",
+     "start": 15.81,
+     "end": 16.17
+    },
+    {
+     "w": "mais",
+     "start": 16.41,
+     "end": 16.55
+    },
+    {
+     "w": "c'est",
+     "start": 16.55,
+     "end": 16.75
+    },
+    {
+     "w": "lourd,",
+     "start": 16.75,
+     "end": 17.11
+    },
+    {
+     "w": "et",
+     "start": 17.35,
+     "end": 17.41
+    },
+    {
+     "w": "il",
+     "start": 17.41,
+     "end": 17.51
+    },
+    {
+     "w": "faut",
+     "start": 17.51,
+     "end": 17.67
+    },
+    {
+     "w": "de",
+     "start": 17.67,
+     "end": 17.81
+    },
+    {
+     "w": "l'aide.",
+     "start": 17.81,
+     "end": 18.07
+    }
+   ]
+  },
+  {
+   "start": 18.43,
+   "end": 24.28,
+   "words": [
+    {
+     "w": "Si",
+     "start": 18.43,
+     "end": 18.63
+    },
+    {
+     "w": "le",
+     "start": 18.63,
+     "end": 18.77
+    },
+    {
+     "w": "juge",
+     "start": 18.77,
+     "end": 19.13
+    },
+    {
+     "w": "accorde",
+     "start": 19.13,
+     "end": 19.47
+    },
+    {
+     "w": "l'émancipation,",
+     "start": 19.47,
+     "end": 20.51
+    },
+    {
+     "w": "tu",
+     "start": 20.75,
+     "end": 20.81
+    },
+    {
+     "w": "peux",
+     "start": 20.81,
+     "end": 20.97
+    },
+    {
+     "w": "ouvrir",
+     "start": 20.97,
+     "end": 21.29
+    },
+    {
+     "w": "une",
+     "start": 21.29,
+     "end": 21.45
+    },
+    {
+     "w": "micro-entreprise,",
+     "start": 21.45,
+     "end": 22.27
+    },
+    {
+     "w": "mais",
+     "start": 22.47,
+     "end": 22.59
+    },
+    {
+     "w": "seuls",
+     "start": 22.59,
+     "end": 22.93
+    },
+    {
+     "w": "tes",
+     "start": 22.93,
+     "end": 23.03
+    },
+    {
+     "w": "parents",
+     "start": 23.03,
+     "end": 23.31
+    },
+    {
+     "w": "peuvent",
+     "start": 23.31,
+     "end": 23.51
+    },
+    {
+     "w": "la",
+     "start": 23.51,
+     "end": 23.71
+    },
+    {
+     "w": "demander.",
+     "start": 23.71,
+     "end": 23.93
+    }
+   ]
+  },
+  {
+   "start": 24.46,
+   "end": 30.31,
+   "words": [
+    {
+     "w": "Et",
+     "start": 24.46,
+     "end": 24.62
+    },
+    {
+     "w": "il",
+     "start": 24.62,
+     "end": 24.72
+    },
+    {
+     "w": "existe",
+     "start": 24.72,
+     "end": 25.0
+    },
+    {
+     "w": "des",
+     "start": 25.0,
+     "end": 25.24
+    },
+    {
+     "w": "chemins",
+     "start": 25.24,
+     "end": 25.5
+    },
+    {
+     "w": "faits",
+     "start": 25.5,
+     "end": 25.7
+    },
+    {
+     "w": "pour",
+     "start": 25.7,
+     "end": 25.78
+    },
+    {
+     "w": "les",
+     "start": 25.78,
+     "end": 25.92
+    },
+    {
+     "w": "jeunes",
+     "start": 25.92,
+     "end": 26.16
+    },
+    {
+     "w": "une",
+     "start": 26.58,
+     "end": 26.76
+    },
+    {
+     "w": "coopérative",
+     "start": 26.76,
+     "end": 27.34
+    },
+    {
+     "w": "d'été,",
+     "start": 27.34,
+     "end": 27.74
+    },
+    {
+     "w": "une",
+     "start": 27.98,
+     "end": 28.06
+    },
+    {
+     "w": "mini-entreprise,",
+     "start": 28.06,
+     "end": 28.8
+    },
+    {
+     "w": "une",
+     "start": 29.04,
+     "end": 29.14
+    },
+    {
+     "w": "association",
+     "start": 29.14,
+     "end": 29.5
+    },
+    {
+     "w": "de",
+     "start": 29.5,
+     "end": 29.82
+    },
+    {
+     "w": "jeunes.",
+     "start": 29.82,
+     "end": 30.06
+    }
+   ]
+  }
+ ]
+}

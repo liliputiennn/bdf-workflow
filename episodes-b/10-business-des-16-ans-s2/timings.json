@@ -1,0 +1,648 @@
+{
+ "total": 38.18,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 4.78,
+   "words": [
+    {
+     "w": "Première",
+     "start": 0.16,
+     "end": 0.54
+    },
+    {
+     "w": "idée",
+     "start": 0.54,
+     "end": 0.78
+    },
+    {
+     "w": "retrouver",
+     "start": 1.4,
+     "end": 1.64
+    },
+    {
+     "w": "l'histoire",
+     "start": 1.64,
+     "end": 1.93
+    },
+    {
+     "w": "d'une",
+     "start": 1.93,
+     "end": 2.22
+    },
+    {
+     "w": "famille,",
+     "start": 2.22,
+     "end": 2.54
+    },
+    {
+     "w": "c'est",
+     "start": 2.64,
+     "end": 2.78
+    },
+    {
+     "w": "le",
+     "start": 2.78,
+     "end": 2.86
+    },
+    {
+     "w": "métier",
+     "start": 2.86,
+     "end": 3.22
+    },
+    {
+     "w": "de",
+     "start": 3.22,
+     "end": 3.36
+    },
+    {
+     "w": "généalogiste",
+     "start": 3.36,
+     "end": 4.02
+    },
+    {
+     "w": "familial.",
+     "start": 4.02,
+     "end": 4.6
+    }
+   ]
+  },
+  {
+   "start": 4.96,
+   "end": 9.36,
+   "words": [
+    {
+     "w": "Quelqu'un",
+     "start": 4.96,
+     "end": 5.38
+    },
+    {
+     "w": "veut",
+     "start": 5.38,
+     "end": 5.52
+    },
+    {
+     "w": "savoir",
+     "start": 5.52,
+     "end": 5.86
+    },
+    {
+     "w": "d'où",
+     "start": 5.86,
+     "end": 6.16
+    },
+    {
+     "w": "viennent",
+     "start": 6.16,
+     "end": 6.32
+    },
+    {
+     "w": "ses",
+     "start": 6.32,
+     "end": 6.46
+    },
+    {
+     "w": "ancêtres,",
+     "start": 6.46,
+     "end": 7.0
+    },
+    {
+     "w": "mais",
+     "start": 7.18,
+     "end": 7.28
+    },
+    {
+     "w": "il",
+     "start": 7.28,
+     "end": 7.42
+    },
+    {
+     "w": "n'a",
+     "start": 7.42,
+     "end": 7.58
+    },
+    {
+     "w": "ni",
+     "start": 7.58,
+     "end": 7.74
+    },
+    {
+     "w": "le",
+     "start": 7.74,
+     "end": 7.88
+    },
+    {
+     "w": "temps",
+     "start": 7.88,
+     "end": 8.14
+    },
+    {
+     "w": "ni",
+     "start": 8.14,
+     "end": 8.54
+    },
+    {
+     "w": "les",
+     "start": 8.54,
+     "end": 8.68
+    },
+    {
+     "w": "bons",
+     "start": 8.68,
+     "end": 8.82
+    },
+    {
+     "w": "réflexes.",
+     "start": 8.82,
+     "end": 9.34
+    }
+   ]
+  },
+  {
+   "start": 9.54,
+   "end": 13.34,
+   "words": [
+    {
+     "w": "Toi,",
+     "start": 9.54,
+     "end": 9.87
+    },
+    {
+     "w": "tu",
+     "start": 9.91,
+     "end": 9.99
+    },
+    {
+     "w": "cherches",
+     "start": 9.99,
+     "end": 10.31
+    },
+    {
+     "w": "dans",
+     "start": 10.31,
+     "end": 10.41
+    },
+    {
+     "w": "les",
+     "start": 10.41,
+     "end": 10.51
+    },
+    {
+     "w": "registres,",
+     "start": 10.51,
+     "end": 11.05
+    },
+    {
+     "w": "tu",
+     "start": 11.23,
+     "end": 11.31
+    },
+    {
+     "w": "recoupes",
+     "start": 11.31,
+     "end": 11.69
+    },
+    {
+     "w": "les",
+     "start": 11.69,
+     "end": 11.77
+    },
+    {
+     "w": "dates",
+     "start": 11.77,
+     "end": 12.03
+    },
+    {
+     "w": "et",
+     "start": 12.03,
+     "end": 12.33
+    },
+    {
+     "w": "tu",
+     "start": 12.33,
+     "end": 12.45
+    },
+    {
+     "w": "dessines",
+     "start": 12.45,
+     "end": 12.83
+    },
+    {
+     "w": "l'arbre.",
+     "start": 12.83,
+     "end": 13.19
+    }
+   ]
+  },
+  {
+   "start": 13.52,
+   "end": 17.82,
+   "words": [
+    {
+     "w": "Le",
+     "start": 13.52,
+     "end": 13.67
+    },
+    {
+     "w": "site",
+     "start": 13.67,
+     "end": 13.85
+    },
+    {
+     "w": "FranceArchives",
+     "start": 13.85,
+     "end": 14.57
+    },
+    {
+     "w": "et",
+     "start": 14.57,
+     "end": 14.73
+    },
+    {
+     "w": "les",
+     "start": 14.73,
+     "end": 14.85
+    },
+    {
+     "w": "archives",
+     "start": 14.85,
+     "end": 15.13
+    },
+    {
+     "w": "des",
+     "start": 15.13,
+     "end": 15.33
+    },
+    {
+     "w": "départements",
+     "start": 15.33,
+     "end": 15.93
+    },
+    {
+     "w": "donnent",
+     "start": 15.93,
+     "end": 16.29
+    },
+    {
+     "w": "accès",
+     "start": 16.29,
+     "end": 16.55
+    },
+    {
+     "w": "à",
+     "start": 16.55,
+     "end": 16.61
+    },
+    {
+     "w": "des",
+     "start": 16.61,
+     "end": 16.71
+    },
+    {
+     "w": "registres",
+     "start": 16.71,
+     "end": 17.11
+    },
+    {
+     "w": "numérisés.",
+     "start": 17.11,
+     "end": 17.63
+    }
+   ]
+  },
+  {
+   "start": 18.0,
+   "end": 21.93,
+   "words": [
+    {
+     "w": "FamilySearch",
+     "start": 18.0,
+     "end": 18.64
+    },
+    {
+     "w": "est",
+     "start": 18.64,
+     "end": 18.74
+    },
+    {
+     "w": "un",
+     "start": 18.74,
+     "end": 18.9
+    },
+    {
+     "w": "site",
+     "start": 18.9,
+     "end": 19.1
+    },
+    {
+     "w": "gratuit",
+     "start": 19.1,
+     "end": 19.5
+    },
+    {
+     "w": "qui",
+     "start": 19.5,
+     "end": 19.72
+    },
+    {
+     "w": "propose",
+     "start": 19.72,
+     "end": 20.1
+    },
+    {
+     "w": "des",
+     "start": 20.1,
+     "end": 20.3
+    },
+    {
+     "w": "actes",
+     "start": 20.3,
+     "end": 20.58
+    },
+    {
+     "w": "numérisés",
+     "start": 20.58,
+     "end": 21.1
+    },
+    {
+     "w": "du",
+     "start": 21.1,
+     "end": 21.26
+    },
+    {
+     "w": "monde",
+     "start": 21.26,
+     "end": 21.42
+    },
+    {
+     "w": "entier.",
+     "start": 21.42,
+     "end": 21.82
+    }
+   ]
+  },
+  {
+   "start": 22.11,
+   "end": 26.96,
+   "words": [
+    {
+     "w": "Geneanet",
+     "start": 22.11,
+     "end": 22.7
+    },
+    {
+     "w": "permet",
+     "start": 22.7,
+     "end": 22.92
+    },
+    {
+     "w": "de",
+     "start": 22.92,
+     "end": 23.08
+    },
+    {
+     "w": "construire",
+     "start": 23.08,
+     "end": 23.56
+    },
+    {
+     "w": "un",
+     "start": 23.56,
+     "end": 23.66
+    },
+    {
+     "w": "arbre",
+     "start": 23.66,
+     "end": 23.94
+    },
+    {
+     "w": "en",
+     "start": 23.94,
+     "end": 24.06
+    },
+    {
+     "w": "ligne,",
+     "start": 24.06,
+     "end": 24.3
+    },
+    {
+     "w": "avec",
+     "start": 24.5,
+     "end": 24.7
+    },
+    {
+     "w": "une",
+     "start": 24.7,
+     "end": 24.9
+    },
+    {
+     "w": "offre",
+     "start": 24.9,
+     "end": 25.14
+    },
+    {
+     "w": "gratuite",
+     "start": 25.14,
+     "end": 25.68
+    },
+    {
+     "w": "et",
+     "start": 25.68,
+     "end": 25.92
+    },
+    {
+     "w": "des",
+     "start": 25.92,
+     "end": 26.06
+    },
+    {
+     "w": "offres",
+     "start": 26.06,
+     "end": 26.34
+    },
+    {
+     "w": "payantes.",
+     "start": 26.34,
+     "end": 26.76
+    }
+   ]
+  },
+  {
+   "start": 27.14,
+   "end": 33.2,
+   "words": [
+    {
+     "w": "La",
+     "start": 27.14,
+     "end": 27.32
+    },
+    {
+     "w": "règle",
+     "start": 27.32,
+     "end": 27.62
+    },
+    {
+     "w": "de",
+     "start": 27.62,
+     "end": 27.76
+    },
+    {
+     "w": "loi",
+     "start": 27.76,
+     "end": 28.0
+    },
+    {
+     "w": "un",
+     "start": 28.28,
+     "end": 28.42
+    },
+    {
+     "w": "acte",
+     "start": 28.42,
+     "end": 28.74
+    },
+    {
+     "w": "de",
+     "start": 28.74,
+     "end": 28.8
+    },
+    {
+     "w": "naissance",
+     "start": 28.8,
+     "end": 29.18
+    },
+    {
+     "w": "ou",
+     "start": 29.18,
+     "end": 29.38
+    },
+    {
+     "w": "de",
+     "start": 29.38,
+     "end": 29.48
+    },
+    {
+     "w": "mariage",
+     "start": 29.48,
+     "end": 30.06
+    },
+    {
+     "w": "devient",
+     "start": 30.06,
+     "end": 30.58
+    },
+    {
+     "w": "librement",
+     "start": 30.58,
+     "end": 31.14
+    },
+    {
+     "w": "consultable",
+     "start": 31.14,
+     "end": 31.82
+    },
+    {
+     "w": "après",
+     "start": 31.82,
+     "end": 32.22
+    },
+    {
+     "w": "soixante-quinze",
+     "start": 32.22,
+     "end": 33.04
+    },
+    {
+     "w": "ans.",
+     "start": 33.04,
+     "end": 33.12
+    }
+   ]
+  },
+  {
+   "start": 33.38,
+   "end": 37.88,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 33.38,
+     "end": 33.52
+    },
+    {
+     "w": "une",
+     "start": 33.52,
+     "end": 33.68
+    },
+    {
+     "w": "famille",
+     "start": 33.68,
+     "end": 33.96
+    },
+    {
+     "w": "vivante,",
+     "start": 33.96,
+     "end": 34.46
+    },
+    {
+     "w": "demande",
+     "start": 34.54,
+     "end": 34.86
+    },
+    {
+     "w": "l'accord",
+     "start": 34.86,
+     "end": 35.24
+    },
+    {
+     "w": "de",
+     "start": 35.24,
+     "end": 35.4
+    },
+    {
+     "w": "chacun",
+     "start": 35.4,
+     "end": 35.74
+    },
+    {
+     "w": "avant",
+     "start": 35.74,
+     "end": 36.02
+    },
+    {
+     "w": "de",
+     "start": 36.02,
+     "end": 36.2
+    },
+    {
+     "w": "publier",
+     "start": 36.2,
+     "end": 36.64
+    },
+    {
+     "w": "son",
+     "start": 36.64,
+     "end": 36.82
+    },
+    {
+     "w": "nom",
+     "start": 36.82,
+     "end": 37.1
+    },
+    {
+     "w": "ou",
+     "start": 37.1,
+     "end": 37.32
+    },
+    {
+     "w": "sa",
+     "start": 37.32,
+     "end": 37.46
+    },
+    {
+     "w": "photo.",
+     "start": 37.46,
+     "end": 37.68
+    }
+   ]
+  }
+ ]
+}

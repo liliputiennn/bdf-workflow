@@ -1,0 +1,84 @@
+{
+ "id": "10-business-americains-rares-en-france-s8",
+ "titre": "Installer des composteurs chez les gens : la règle à connaître.",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "INSTALLER SUIVRE COMPOSTEURS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Les restes de cuisine, épluchures, marc de café, peaux de fruits, n'ont pas leur place dans la poubelle grise.",
+  "Depuis le premier janvier deux mille vingt-quatre, le tri de ces restes est généralisé en France.",
+  "Aux États-Unis, des services installent des bacs à compost chez les particuliers et les restaurants, puis viennent les vider.",
+  "Toi, tu peux installer un composteur, expliquer comment l'utiliser, et passer vérifier qu'il fonctionne bien.",
+  "Ton rôle, c'est le conseil : emporter les déchets des autres est plus encadré.",
+  "Si tu transportes les restes d'autres personnes, tu transportes des déchets, et la règle de la demi-tonne par chargement s'applique.",
+  "Ta commune doit proposer une solution de tri : renseigne-toi, elle propose parfois déjà des composteurs.",
+  "Le réseau compost citoyen propose des formations pour apprendre.",
+  "Un bon compost mélange des matières sèches et des restes humides, remués de temps en temps.",
+  "Le piège : un compost mal tenu sent mauvais, attire les mouches et fâche les voisins."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "restes",
+     "cuisine"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 4,
+   "params": {
+    "titre": "TON RÔLE",
+    "items": [
+     {
+      "texte": "Installer le composteur"
+     },
+     {
+      "texte": "Expliquer"
+     },
+     {
+      "texte": "Passer vérifier"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 6,
+   "params": {
+    "question": "Conseiller ou collecter ?",
+    "pistes": [
+     "Conseiller",
+     "Collecter",
+     "Déclarer"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 9,
+   "params": {
+    "titre": "UN BON COMPOST",
+    "items": [
+     {
+      "texte": "Matières sèches"
+     },
+     {
+      "texte": "Restes humides"
+     },
+     {
+      "texte": "Un coup de fourche"
+     }
+    ]
+   }
+  }
+ ]
+}

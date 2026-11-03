@@ -1,0 +1,55 @@
+{
+ "id": "10-business-a-lancer-avec-moins-de-500-s2",
+ "titre": "Marchés publics : une micro-entreprise peut-elle répondre ?",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "MARCHÉS PUBLICS PETITS ARTISANS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Une idée : aider les petits artisans à répondre aux marchés publics.",
+  "Une mairie ou une école cherche un peintre, un jardinier, un informaticien, et elle doit publier son besoin.",
+  "Un petit artisan n'ose pas toujours répondre, car les dossiers font peur.",
+  "Toi, tu surveilles les annonces et tu prépares le dossier avec lui.",
+  "Le BOAMP, le bulletin officiel des annonces des marchés publics, et le portail des marchés publics de l'État listent les offres.",
+  "Même une micro-entreprise peut répondre à un marché public.",
+  "Pour la candidature, il existe le DUME, un formulaire européen en ligne qui évite de redonner ce que l'administration connaît déjà.",
+  "Pour certains marchés, le numéro SIRET suffit pour candidater."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "petits",
+     "artisans"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "BOAMP"
+     },
+     {
+      "texte": "Portail des marchés publics"
+     },
+     {
+      "texte": "DUME (formulaire en ligne)"
+     },
+     {
+      "texte": "Fiche service-public"
+     }
+    ]
+   }
+  }
+ ]
+}

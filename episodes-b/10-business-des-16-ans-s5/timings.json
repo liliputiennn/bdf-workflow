@@ -1,0 +1,648 @@
+{
+ "total": 35.53,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.45,
+   "words": [
+    {
+     "w": "Idée",
+     "start": 0.15,
+     "end": 0.5
+    },
+    {
+     "w": "suivante",
+     "start": 0.5,
+     "end": 0.96
+    },
+    {
+     "w": "surveiller",
+     "start": 1.08,
+     "end": 1.42
+    },
+    {
+     "w": "les",
+     "start": 1.42,
+     "end": 1.52
+    },
+    {
+     "w": "rappels",
+     "start": 1.52,
+     "end": 1.82
+    },
+    {
+     "w": "de",
+     "start": 1.82,
+     "end": 1.92
+    },
+    {
+     "w": "produits",
+     "start": 1.92,
+     "end": 2.28
+    },
+    {
+     "w": "pour",
+     "start": 2.28,
+     "end": 2.48
+    },
+    {
+     "w": "de",
+     "start": 2.48,
+     "end": 2.6
+    },
+    {
+     "w": "petits",
+     "start": 2.6,
+     "end": 2.84
+    },
+    {
+     "w": "commerçants.",
+     "start": 2.84,
+     "end": 3.36
+    }
+   ]
+  },
+  {
+   "start": 3.63,
+   "end": 8.0,
+   "words": [
+    {
+     "w": "Quand",
+     "start": 3.63,
+     "end": 3.81
+    },
+    {
+     "w": "un",
+     "start": 3.81,
+     "end": 3.97
+    },
+    {
+     "w": "produit",
+     "start": 3.97,
+     "end": 4.35
+    },
+    {
+     "w": "est",
+     "start": 4.35,
+     "end": 4.61
+    },
+    {
+     "w": "dangereux,",
+     "start": 4.61,
+     "end": 5.27
+    },
+    {
+     "w": "il",
+     "start": 5.39,
+     "end": 5.49
+    },
+    {
+     "w": "est",
+     "start": 5.49,
+     "end": 5.59
+    },
+    {
+     "w": "rappelé,",
+     "start": 5.59,
+     "end": 6.01
+    },
+    {
+     "w": "et",
+     "start": 6.19,
+     "end": 6.27
+    },
+    {
+     "w": "il",
+     "start": 6.27,
+     "end": 6.35
+    },
+    {
+     "w": "faut",
+     "start": 6.35,
+     "end": 6.53
+    },
+    {
+     "w": "vite",
+     "start": 6.53,
+     "end": 6.81
+    },
+    {
+     "w": "le",
+     "start": 6.81,
+     "end": 7.13
+    },
+    {
+     "w": "retirer",
+     "start": 7.13,
+     "end": 7.51
+    },
+    {
+     "w": "des",
+     "start": 7.51,
+     "end": 7.57
+    },
+    {
+     "w": "rayons.",
+     "start": 7.57,
+     "end": 7.89
+    }
+   ]
+  },
+  {
+   "start": 8.18,
+   "end": 11.14,
+   "words": [
+    {
+     "w": "Les",
+     "start": 8.18,
+     "end": 8.35
+    },
+    {
+     "w": "commerçants",
+     "start": 8.35,
+     "end": 8.91
+    },
+    {
+     "w": "n'ont",
+     "start": 8.91,
+     "end": 9.09
+    },
+    {
+     "w": "pas",
+     "start": 9.09,
+     "end": 9.27
+    },
+    {
+     "w": "le",
+     "start": 9.27,
+     "end": 9.39
+    },
+    {
+     "w": "temps",
+     "start": 9.39,
+     "end": 9.59
+    },
+    {
+     "w": "de",
+     "start": 9.59,
+     "end": 9.71
+    },
+    {
+     "w": "lire",
+     "start": 9.71,
+     "end": 9.89
+    },
+    {
+     "w": "ces",
+     "start": 9.89,
+     "end": 10.07
+    },
+    {
+     "w": "avis",
+     "start": 10.07,
+     "end": 10.31
+    },
+    {
+     "w": "tous",
+     "start": 10.31,
+     "end": 10.53
+    },
+    {
+     "w": "les",
+     "start": 10.53,
+     "end": 10.69
+    },
+    {
+     "w": "jours.",
+     "start": 10.69,
+     "end": 10.89
+    }
+   ]
+  },
+  {
+   "start": 11.32,
+   "end": 15.81,
+   "words": [
+    {
+     "w": "Le",
+     "start": 11.32,
+     "end": 11.5
+    },
+    {
+     "w": "site",
+     "start": 11.5,
+     "end": 11.7
+    },
+    {
+     "w": "officiel",
+     "start": 11.7,
+     "end": 12.14
+    },
+    {
+     "w": "Rappel",
+     "start": 12.14,
+     "end": 12.5
+    },
+    {
+     "w": "Conso",
+     "start": 12.5,
+     "end": 12.9
+    },
+    {
+     "w": "publie",
+     "start": 12.9,
+     "end": 13.34
+    },
+    {
+     "w": "les",
+     "start": 13.34,
+     "end": 13.46
+    },
+    {
+     "w": "rappels,",
+     "start": 13.46,
+     "end": 14.06
+    },
+    {
+     "w": "avec",
+     "start": 14.06,
+     "end": 14.38
+    },
+    {
+     "w": "des",
+     "start": 14.38,
+     "end": 14.56
+    },
+    {
+     "w": "filtres",
+     "start": 14.56,
+     "end": 14.94
+    },
+    {
+     "w": "par",
+     "start": 14.94,
+     "end": 15.1
+    },
+    {
+     "w": "catégorie.",
+     "start": 15.1,
+     "end": 15.68
+    }
+   ]
+  },
+  {
+   "start": 15.99,
+   "end": 20.57,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 15.99,
+     "end": 16.14
+    },
+    {
+     "w": "suis",
+     "start": 16.14,
+     "end": 16.3
+    },
+    {
+     "w": "ses",
+     "start": 16.3,
+     "end": 16.48
+    },
+    {
+     "w": "flux,",
+     "start": 16.48,
+     "end": 16.72
+    },
+    {
+     "w": "tu",
+     "start": 17.04,
+     "end": 17.12
+    },
+    {
+     "w": "tries",
+     "start": 17.12,
+     "end": 17.28
+    },
+    {
+     "w": "les",
+     "start": 17.28,
+     "end": 17.4
+    },
+    {
+     "w": "alertes",
+     "start": 17.4,
+     "end": 17.86
+    },
+    {
+     "w": "qui",
+     "start": 17.86,
+     "end": 17.96
+    },
+    {
+     "w": "concernent",
+     "start": 17.96,
+     "end": 18.38
+    },
+    {
+     "w": "un",
+     "start": 18.38,
+     "end": 18.43
+    },
+    {
+     "w": "magasin",
+     "start": 18.42,
+     "end": 18.82
+    },
+    {
+     "w": "précis,",
+     "start": 18.82,
+     "end": 19.18
+    },
+    {
+     "w": "puis",
+     "start": 19.5,
+     "end": 19.58
+    },
+    {
+     "w": "tu",
+     "start": 19.58,
+     "end": 19.7
+    },
+    {
+     "w": "les",
+     "start": 19.7,
+     "end": 19.82
+    },
+    {
+     "w": "lui",
+     "start": 19.82,
+     "end": 19.94
+    },
+    {
+     "w": "résumes.",
+     "start": 19.94,
+     "end": 20.4
+    }
+   ]
+  },
+  {
+   "start": 20.75,
+   "end": 26.41,
+   "words": [
+    {
+     "w": "La",
+     "start": 20.75,
+     "end": 20.93
+    },
+    {
+     "w": "règle",
+     "start": 20.93,
+     "end": 21.23
+    },
+    {
+     "w": "de",
+     "start": 21.23,
+     "end": 21.39
+    },
+    {
+     "w": "loi",
+     "start": 21.39,
+     "end": 21.61
+    },
+    {
+     "w": "un",
+     "start": 22.01,
+     "end": 22.19
+    },
+    {
+     "w": "distributeur",
+     "start": 22.19,
+     "end": 22.83
+    },
+    {
+     "w": "doit",
+     "start": 22.83,
+     "end": 22.95
+    },
+    {
+     "w": "retirer",
+     "start": 22.95,
+     "end": 23.45
+    },
+    {
+     "w": "du",
+     "start": 23.45,
+     "end": 23.53
+    },
+    {
+     "w": "marché",
+     "start": 23.53,
+     "end": 23.83
+    },
+    {
+     "w": "tout",
+     "start": 23.83,
+     "end": 24.17
+    },
+    {
+     "w": "produit",
+     "start": 24.17,
+     "end": 24.57
+    },
+    {
+     "w": "dont",
+     "start": 24.57,
+     "end": 24.89
+    },
+    {
+     "w": "il",
+     "start": 24.89,
+     "end": 25.03
+    },
+    {
+     "w": "sait",
+     "start": 25.03,
+     "end": 25.27
+    },
+    {
+     "w": "qu'il",
+     "start": 25.27,
+     "end": 25.47
+    },
+    {
+     "w": "présente",
+     "start": 25.47,
+     "end": 25.85
+    },
+    {
+     "w": "un",
+     "start": 25.85,
+     "end": 25.95
+    },
+    {
+     "w": "risque.",
+     "start": 25.95,
+     "end": 26.23
+    }
+   ]
+  },
+  {
+   "start": 26.59,
+   "end": 30.6,
+   "words": [
+    {
+     "w": "Les",
+     "start": 26.59,
+     "end": 26.74
+    },
+    {
+     "w": "entreprises",
+     "start": 26.74,
+     "end": 27.16
+    },
+    {
+     "w": "qui",
+     "start": 27.16,
+     "end": 27.42
+    },
+    {
+     "w": "lancent",
+     "start": 27.42,
+     "end": 27.82
+    },
+    {
+     "w": "un",
+     "start": 27.82,
+     "end": 27.98
+    },
+    {
+     "w": "rappel",
+     "start": 27.98,
+     "end": 28.46
+    },
+    {
+     "w": "doivent",
+     "start": 28.46,
+     "end": 28.84
+    },
+    {
+     "w": "le",
+     "start": 28.84,
+     "end": 29.06
+    },
+    {
+     "w": "déclarer",
+     "start": 29.06,
+     "end": 29.54
+    },
+    {
+     "w": "sur",
+     "start": 29.54,
+     "end": 29.72
+    },
+    {
+     "w": "ce",
+     "start": 29.72,
+     "end": 29.9
+    },
+    {
+     "w": "même",
+     "start": 29.9,
+     "end": 30.12
+    },
+    {
+     "w": "site.",
+     "start": 30.12,
+     "end": 30.42
+    }
+   ]
+  },
+  {
+   "start": 30.78,
+   "end": 35.23,
+   "words": [
+    {
+     "w": "Le",
+     "start": 30.78,
+     "end": 30.92
+    },
+    {
+     "w": "piège",
+     "start": 30.92,
+     "end": 31.28
+    },
+    {
+     "w": "tu",
+     "start": 31.5,
+     "end": 31.64
+    },
+    {
+     "w": "informes,",
+     "start": 31.64,
+     "end": 32.26
+    },
+    {
+     "w": "mais",
+     "start": 32.3,
+     "end": 32.38
+    },
+    {
+     "w": "tu",
+     "start": 32.38,
+     "end": 32.52
+    },
+    {
+     "w": "ne",
+     "start": 32.52,
+     "end": 32.58
+    },
+    {
+     "w": "décides",
+     "start": 32.58,
+     "end": 32.92
+    },
+    {
+     "w": "rien,",
+     "start": 32.92,
+     "end": 33.1
+    },
+    {
+     "w": "c'est",
+     "start": 33.46,
+     "end": 33.66
+    },
+    {
+     "w": "le",
+     "start": 33.66,
+     "end": 33.76
+    },
+    {
+     "w": "commerçant",
+     "start": 33.76,
+     "end": 34.26
+    },
+    {
+     "w": "qui",
+     "start": 34.26,
+     "end": 34.36
+    },
+    {
+     "w": "retire",
+     "start": 34.36,
+     "end": 34.64
+    },
+    {
+     "w": "le",
+     "start": 34.64,
+     "end": 34.78
+    },
+    {
+     "w": "produit.",
+     "start": 34.78,
+     "end": 35.0
+    }
+   ]
+  }
+ ]
+}

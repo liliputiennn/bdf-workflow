@@ -1,0 +1,13 @@
+{
+ "etat": "quarantaine",
+ "maj": "2026-11-03T23:35:15",
+ "raison": "miniature : erreur technique (RuntimeError : rendu Remotion échoué : : net::ERR_NAME_NOT_RESOLVED\u001b[39m\n\u001b[40m https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2 \u001b[49m \u001b[31mFailed to load resource: net::ERR_NAME_NOT_RESOLVED\u001b[39m\n\u001b[40m https://fonts.gstatic.com/s/anton/v27/1Ptgg87LROyAm3Kz-C8.woff2 \u001b[49m \u001b[31mFailed to load resource: net::ERR_NAME_NOT_RESOLVED\u001b[39m\n\u001b[31m\u001b[41m\u001b[37m TypeError \u001b[39m\u001b[31m\u001b[49m\u001b[39m \u001b[31mFailed to fetch\u001b[39m)",
+ "tentatives": 1,
+ "youtube": {
+  "video_id": null,
+  "url": null,
+  "visibilite": null,
+  "publie_a": null
+ },
+ "origine": "10-business-bizarres-qui-existent-vraiment"
+}

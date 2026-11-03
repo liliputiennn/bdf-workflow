@@ -1,0 +1,42 @@
+{
+ "id": "10-business-a-lancer-avec-moins-de-500-s4",
+ "titre": "Premier salarié : les papiers obligatoires et leurs amendes",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "PACK PREMIER SALARIÉ",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Une idée : le pack du premier salarié, pour les petits patrons.",
+  "Quand on embauche pour la première fois, on découvre une pile de papiers à remplir.",
+  "Le premier, c'est le registre unique du personnel, ouvert dès l'embauche du premier salarié.",
+  "Des mentions oubliées peuvent coûter jusqu'à sept cent cinquante euros d'amende par salarié concerné.",
+  "Ensuite vient le document unique des risques, obligatoire dès le premier salarié.",
+  "Le patron doit le garder pendant quarante ans, avec toutes ses versions.",
+  "Sans document, l'amende peut aller jusqu'à mille cinq cents euros pour une personne."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "pack",
+     "salarié"
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 4,
+   "params": {
+    "valeur": 750,
+    "suffixe": " €",
+    "etiquette": "amende maximale par salarié concerné"
+   }
+  }
+ ]
+}

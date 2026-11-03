@@ -1,0 +1,72 @@
+{
+ "id": "10-business-a-lancer-avec-moins-de-500-s1",
+ "titre": "Une étude de marché de quartier avec les données de l'État",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "ÉTUDE DE MARCHÉ GRATUITE",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Une idée : l'étude de marché de quartier.",
+  "Quelqu'un veut ouvrir une boulangerie ou un salon de coiffure, et se demande s'il y a déjà trop de concurrents autour.",
+  "Les réponses existent, mais elles sont éparpillées dans des fichiers publics que personne ne regroupe.",
+  "Toi, tu les rassembles en un petit dossier clair, avec une carte.",
+  "L'Annuaire des entreprises et la base Sirene de l'Insee listent les commerces déjà installés dans la rue.",
+  "Le fichier des ventes immobilières, appelé DVF, montre les prix des logements autour.",
+  "Le comparateur de territoires de l'Insee donne l'âge, les revenus et les familles de la commune.",
+  "Overpass Turbo compte les écoles, les arrêts de bus et les concurrents à partir des données d'OpenStreetMap.",
+  "Le logiciel QGIS est libre et gratuit, et il dessine les cartes de ton dossier.",
+  "La règle de loi : ces données sont sous Licence Ouverte, donc tu peux les réutiliser, même pour vendre ton travail, en citant la source."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "étude",
+     "marché"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "Annuaire des entreprises"
+     },
+     {
+      "texte": "Base Sirene"
+     },
+     {
+      "texte": "DVF"
+     },
+     {
+      "texte": "Overpass Turbo"
+     },
+     {
+      "texte": "QGIS"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 10,
+   "params": {
+    "question": "Peut-on réutiliser ces données ?",
+    "pistes": [
+     "Oui",
+     "Source citée",
+     "Vie privée"
+    ]
+   }
+  }
+ ]
+}

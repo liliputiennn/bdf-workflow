@@ -1,0 +1,668 @@
+{
+ "total": 37.45,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 4.44,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 0.15,
+     "end": 0.47
+    },
+    {
+     "w": "idée",
+     "start": 0.47,
+     "end": 0.67
+    },
+    {
+     "w": "installer",
+     "start": 1.03,
+     "end": 1.43
+    },
+    {
+     "w": "des",
+     "start": 1.43,
+     "end": 1.67
+    },
+    {
+     "w": "ruches",
+     "start": 1.67,
+     "end": 1.95
+    },
+    {
+     "w": "dans",
+     "start": 1.95,
+     "end": 2.05
+    },
+    {
+     "w": "une",
+     "start": 2.05,
+     "end": 2.21
+    },
+    {
+     "w": "entreprise,",
+     "start": 2.21,
+     "end": 2.77
+    },
+    {
+     "w": "qui",
+     "start": 2.89,
+     "end": 3.09
+    },
+    {
+     "w": "les",
+     "start": 3.09,
+     "end": 3.25
+    },
+    {
+     "w": "loue",
+     "start": 3.25,
+     "end": 3.69
+    },
+    {
+     "w": "ou",
+     "start": 3.69,
+     "end": 3.77
+    },
+    {
+     "w": "les",
+     "start": 3.77,
+     "end": 3.87
+    },
+    {
+     "w": "parraine.",
+     "start": 3.87,
+     "end": 4.27
+    }
+   ]
+  },
+  {
+   "start": 4.62,
+   "end": 9.35,
+   "words": [
+    {
+     "w": "Les",
+     "start": 4.62,
+     "end": 4.8
+    },
+    {
+     "w": "employés",
+     "start": 4.8,
+     "end": 5.22
+    },
+    {
+     "w": "voient",
+     "start": 5.22,
+     "end": 5.42
+    },
+    {
+     "w": "les",
+     "start": 5.42,
+     "end": 5.5
+    },
+    {
+     "w": "abeilles,",
+     "start": 5.5,
+     "end": 6.0
+    },
+    {
+     "w": "et",
+     "start": 6.26,
+     "end": 6.31
+    },
+    {
+     "w": "l'entreprise",
+     "start": 6.3,
+     "end": 6.8
+    },
+    {
+     "w": "reçoit",
+     "start": 6.8,
+     "end": 7.18
+    },
+    {
+     "w": "du",
+     "start": 7.18,
+     "end": 7.28
+    },
+    {
+     "w": "miel",
+     "start": 7.28,
+     "end": 7.52
+    },
+    {
+     "w": "et",
+     "start": 7.52,
+     "end": 8.0
+    },
+    {
+     "w": "une",
+     "start": 8.0,
+     "end": 8.16
+    },
+    {
+     "w": "belle",
+     "start": 8.16,
+     "end": 8.32
+    },
+    {
+     "w": "histoire",
+     "start": 8.32,
+     "end": 8.64
+    },
+    {
+     "w": "à",
+     "start": 8.64,
+     "end": 8.8
+    },
+    {
+     "w": "raconter.",
+     "start": 8.8,
+     "end": 9.16
+    }
+   ]
+  },
+  {
+   "start": 9.53,
+   "end": 14.72,
+   "words": [
+    {
+     "w": "Des",
+     "start": 9.53,
+     "end": 9.72
+    },
+    {
+     "w": "entreprises",
+     "start": 9.72,
+     "end": 10.12
+    },
+    {
+     "w": "françaises",
+     "start": 10.12,
+     "end": 10.8
+    },
+    {
+     "w": "parrainent",
+     "start": 10.8,
+     "end": 11.24
+    },
+    {
+     "w": "déjà",
+     "start": 11.24,
+     "end": 11.42
+    },
+    {
+     "w": "des",
+     "start": 11.42,
+     "end": 11.6
+    },
+    {
+     "w": "ruches,",
+     "start": 11.6,
+     "end": 12.08
+    },
+    {
+     "w": "par",
+     "start": 12.4,
+     "end": 12.45
+    },
+    {
+     "w": "exemple",
+     "start": 12.4,
+     "end": 12.68
+    },
+    {
+     "w": "avec",
+     "start": 12.68,
+     "end": 12.82
+    },
+    {
+     "w": "l'association",
+     "start": 12.82,
+     "end": 13.48
+    },
+    {
+     "w": "Un",
+     "start": 13.48,
+     "end": 13.6
+    },
+    {
+     "w": "toit",
+     "start": 13.6,
+     "end": 13.86
+    },
+    {
+     "w": "pour",
+     "start": 13.86,
+     "end": 14.04
+    },
+    {
+     "w": "les",
+     "start": 14.04,
+     "end": 14.18
+    },
+    {
+     "w": "abeilles.",
+     "start": 14.18,
+     "end": 14.58
+    }
+   ]
+  },
+  {
+   "start": 14.9,
+   "end": 19.27,
+   "words": [
+    {
+     "w": "Toi,",
+     "start": 14.9,
+     "end": 15.17
+    },
+    {
+     "w": "tu",
+     "start": 15.21,
+     "end": 15.29
+    },
+    {
+     "w": "poses",
+     "start": 15.29,
+     "end": 15.47
+    },
+    {
+     "w": "les",
+     "start": 15.47,
+     "end": 15.63
+    },
+    {
+     "w": "ruches,",
+     "start": 15.63,
+     "end": 16.03
+    },
+    {
+     "w": "tu",
+     "start": 16.11,
+     "end": 16.19
+    },
+    {
+     "w": "les",
+     "start": 16.19,
+     "end": 16.31
+    },
+    {
+     "w": "visites,",
+     "start": 16.31,
+     "end": 16.77
+    },
+    {
+     "w": "tu",
+     "start": 16.99,
+     "end": 17.09
+    },
+    {
+     "w": "récoltes",
+     "start": 17.09,
+     "end": 17.55
+    },
+    {
+     "w": "le",
+     "start": 17.55,
+     "end": 17.63
+    },
+    {
+     "w": "miel",
+     "start": 17.63,
+     "end": 17.83
+    },
+    {
+     "w": "et",
+     "start": 17.83,
+     "end": 18.23
+    },
+    {
+     "w": "tu",
+     "start": 18.23,
+     "end": 18.35
+    },
+    {
+     "w": "rends",
+     "start": 18.35,
+     "end": 18.73
+    },
+    {
+     "w": "compte",
+     "start": 18.73,
+     "end": 18.78
+    },
+    {
+     "w": "au",
+     "start": 18.73,
+     "end": 18.83
+    },
+    {
+     "w": "client.",
+     "start": 18.83,
+     "end": 19.07
+    }
+   ]
+  },
+  {
+   "start": 19.45,
+   "end": 23.61,
+   "words": [
+    {
+     "w": "Premier",
+     "start": 19.45,
+     "end": 19.69
+    },
+    {
+     "w": "point",
+     "start": 19.69,
+     "end": 19.89
+    },
+    {
+     "w": "de",
+     "start": 19.89,
+     "end": 20.01
+    },
+    {
+     "w": "loi",
+     "start": 20.01,
+     "end": 20.21
+    },
+    {
+     "w": "tout",
+     "start": 20.21,
+     "end": 20.51
+    },
+    {
+     "w": "apiculteur",
+     "start": 20.51,
+     "end": 21.11
+    },
+    {
+     "w": "doit",
+     "start": 21.11,
+     "end": 21.25
+    },
+    {
+     "w": "déclarer",
+     "start": 21.25,
+     "end": 21.75
+    },
+    {
+     "w": "ses",
+     "start": 21.75,
+     "end": 21.85
+    },
+    {
+     "w": "colonies",
+     "start": 21.85,
+     "end": 22.07
+    },
+    {
+     "w": "d'abeilles",
+     "start": 22.07,
+     "end": 22.73
+    },
+    {
+     "w": "chaque",
+     "start": 22.73,
+     "end": 23.17
+    },
+    {
+     "w": "année.",
+     "start": 23.17,
+     "end": 23.47
+    }
+   ]
+  },
+  {
+   "start": 23.79,
+   "end": 28.18,
+   "words": [
+    {
+     "w": "La",
+     "start": 23.79,
+     "end": 23.95
+    },
+    {
+     "w": "déclaration",
+     "start": 23.95,
+     "end": 24.45
+    },
+    {
+     "w": "se",
+     "start": 24.45,
+     "end": 24.69
+    },
+    {
+     "w": "fait",
+     "start": 24.69,
+     "end": 24.85
+    },
+    {
+     "w": "du",
+     "start": 24.85,
+     "end": 24.95
+    },
+    {
+     "w": "premier",
+     "start": 24.95,
+     "end": 25.19
+    },
+    {
+     "w": "septembre",
+     "start": 25.19,
+     "end": 25.77
+    },
+    {
+     "w": "au",
+     "start": 25.77,
+     "end": 25.91
+    },
+    {
+     "w": "trente",
+     "start": 25.91,
+     "end": 26.11
+    },
+    {
+     "w": "et",
+     "start": 26.11,
+     "end": 26.25
+    },
+    {
+     "w": "un",
+     "start": 26.25,
+     "end": 26.3
+    },
+    {
+     "w": "décembre,",
+     "start": 26.29,
+     "end": 26.83
+    },
+    {
+     "w": "dès",
+     "start": 26.95,
+     "end": 27.23
+    },
+    {
+     "w": "la",
+     "start": 27.23,
+     "end": 27.37
+    },
+    {
+     "w": "première",
+     "start": 27.37,
+     "end": 27.63
+    },
+    {
+     "w": "colonie.",
+     "start": 27.63,
+     "end": 28.09
+    }
+   ]
+  },
+  {
+   "start": 28.36,
+   "end": 31.89,
+   "words": [
+    {
+     "w": "Elle",
+     "start": 28.36,
+     "end": 28.55
+    },
+    {
+     "w": "se",
+     "start": 28.55,
+     "end": 28.71
+    },
+    {
+     "w": "fait",
+     "start": 28.71,
+     "end": 28.89
+    },
+    {
+     "w": "en",
+     "start": 28.89,
+     "end": 28.99
+    },
+    {
+     "w": "ligne",
+     "start": 28.99,
+     "end": 29.17
+    },
+    {
+     "w": "sur",
+     "start": 29.17,
+     "end": 29.37
+    },
+    {
+     "w": "Mes",
+     "start": 29.37,
+     "end": 29.53
+    },
+    {
+     "w": "démarches,",
+     "start": 29.53,
+     "end": 30.09
+    },
+    {
+     "w": "le",
+     "start": 30.19,
+     "end": 30.25
+    },
+    {
+     "w": "site",
+     "start": 30.25,
+     "end": 30.43
+    },
+    {
+     "w": "du",
+     "start": 30.43,
+     "end": 30.57
+    },
+    {
+     "w": "ministère",
+     "start": 30.57,
+     "end": 31.01
+    },
+    {
+     "w": "de",
+     "start": 31.01,
+     "end": 31.09
+    },
+    {
+     "w": "l'agriculture.",
+     "start": 31.09,
+     "end": 31.71
+    }
+   ]
+  },
+  {
+   "start": 32.07,
+   "end": 37.15,
+   "words": [
+    {
+     "w": "Le",
+     "start": 32.07,
+     "end": 32.23
+    },
+    {
+     "w": "texte",
+     "start": 32.23,
+     "end": 32.65
+    },
+    {
+     "w": "vise",
+     "start": 32.65,
+     "end": 32.85
+    },
+    {
+     "w": "le",
+     "start": 32.85,
+     "end": 32.95
+    },
+    {
+     "w": "propriétaire",
+     "start": 32.95,
+     "end": 33.77
+    },
+    {
+     "w": "ou",
+     "start": 33.77,
+     "end": 33.89
+    },
+    {
+     "w": "le",
+     "start": 33.89,
+     "end": 33.97
+    },
+    {
+     "w": "détenteur",
+     "start": 33.97,
+     "end": 34.55
+    },
+    {
+     "w": "des",
+     "start": 34.55,
+     "end": 34.65
+    },
+    {
+     "w": "colonies",
+     "start": 34.65,
+     "end": 35.09
+    },
+    {
+     "w": "écris",
+     "start": 35.29,
+     "end": 35.63
+    },
+    {
+     "w": "dans",
+     "start": 35.63,
+     "end": 35.81
+    },
+    {
+     "w": "le",
+     "start": 35.81,
+     "end": 35.91
+    },
+    {
+     "w": "contrat",
+     "start": 35.91,
+     "end": 36.27
+    },
+    {
+     "w": "qui",
+     "start": 36.27,
+     "end": 36.51
+    },
+    {
+     "w": "déclare.",
+     "start": 36.51,
+     "end": 37.03
+    }
+   ]
+  }
+ ]
+}

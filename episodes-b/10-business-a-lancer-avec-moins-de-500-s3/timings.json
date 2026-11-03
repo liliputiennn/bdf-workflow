@@ -1,0 +1,502 @@
+{
+ "total": 33.87,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 5.02,
+   "words": [
+    {
+     "w": "Une",
+     "start": 0.15,
+     "end": 0.34
+    },
+    {
+     "w": "idée",
+     "start": 0.34,
+     "end": 0.6
+    },
+    {
+     "w": "aider",
+     "start": 1.04,
+     "end": 1.3
+    },
+    {
+     "w": "les",
+     "start": 1.3,
+     "end": 1.48
+    },
+    {
+     "w": "petits",
+     "start": 1.48,
+     "end": 1.68
+    },
+    {
+     "w": "organismes",
+     "start": 1.68,
+     "end": 2.38
+    },
+    {
+     "w": "de",
+     "start": 2.38,
+     "end": 2.46
+    },
+    {
+     "w": "formation",
+     "start": 2.46,
+     "end": 2.78
+    },
+    {
+     "w": "à",
+     "start": 2.78,
+     "end": 3.06
+    },
+    {
+     "w": "préparer",
+     "start": 3.06,
+     "end": 3.46
+    },
+    {
+     "w": "la",
+     "start": 3.46,
+     "end": 3.56
+    },
+    {
+     "w": "certification",
+     "start": 3.56,
+     "end": 4.02
+    },
+    {
+     "w": "Qualiopi.",
+     "start": 4.02,
+     "end": 4.88
+    }
+   ]
+  },
+  {
+   "start": 5.2,
+   "end": 10.37,
+   "words": [
+    {
+     "w": "Un",
+     "start": 5.2,
+     "end": 5.37
+    },
+    {
+     "w": "formateur",
+     "start": 5.37,
+     "end": 5.79
+    },
+    {
+     "w": "indépendant",
+     "start": 5.79,
+     "end": 6.39
+    },
+    {
+     "w": "qui",
+     "start": 6.39,
+     "end": 6.51
+    },
+    {
+     "w": "veut",
+     "start": 6.51,
+     "end": 6.63
+    },
+    {
+     "w": "des",
+     "start": 6.63,
+     "end": 6.79
+    },
+    {
+     "w": "financements",
+     "start": 6.79,
+     "end": 7.25
+    },
+    {
+     "w": "publics",
+     "start": 7.25,
+     "end": 7.85
+    },
+    {
+     "w": "ou",
+     "start": 7.85,
+     "end": 7.93
+    },
+    {
+     "w": "mutualisés",
+     "start": 7.93,
+     "end": 8.59
+    },
+    {
+     "w": "doit",
+     "start": 8.59,
+     "end": 8.95
+    },
+    {
+     "w": "avoir",
+     "start": 8.95,
+     "end": 9.21
+    },
+    {
+     "w": "cette",
+     "start": 9.21,
+     "end": 9.47
+    },
+    {
+     "w": "certification.",
+     "start": 9.47,
+     "end": 9.73
+    }
+   ]
+  },
+  {
+   "start": 10.55,
+   "end": 14.7,
+   "words": [
+    {
+     "w": "Elle",
+     "start": 10.55,
+     "end": 10.74
+    },
+    {
+     "w": "est",
+     "start": 10.74,
+     "end": 10.82
+    },
+    {
+     "w": "délivrée",
+     "start": 10.82,
+     "end": 11.26
+    },
+    {
+     "w": "par",
+     "start": 11.26,
+     "end": 11.4
+    },
+    {
+     "w": "un",
+     "start": 11.4,
+     "end": 11.54
+    },
+    {
+     "w": "organisme",
+     "start": 11.54,
+     "end": 12.08
+    },
+    {
+     "w": "certificateur",
+     "start": 12.08,
+     "end": 12.98
+    },
+    {
+     "w": "reconnu,",
+     "start": 12.98,
+     "end": 13.7
+    },
+    {
+     "w": "pas",
+     "start": 14.04,
+     "end": 14.14
+    },
+    {
+     "w": "par",
+     "start": 14.14,
+     "end": 14.32
+    },
+    {
+     "w": "toi.",
+     "start": 14.32,
+     "end": 14.52
+    }
+   ]
+  },
+  {
+   "start": 14.88,
+   "end": 20.23,
+   "words": [
+    {
+     "w": "Toi,",
+     "start": 14.88,
+     "end": 15.25
+    },
+    {
+     "w": "tu",
+     "start": 15.37,
+     "end": 15.59
+    },
+    {
+     "w": "prépares",
+     "start": 15.59,
+     "end": 15.91
+    },
+    {
+     "w": "les",
+     "start": 15.91,
+     "end": 15.99
+    },
+    {
+     "w": "preuves",
+     "start": 15.99,
+     "end": 16.39
+    },
+    {
+     "w": "programmes,",
+     "start": 16.63,
+     "end": 17.03
+    },
+    {
+     "w": "évaluations,",
+     "start": 17.39,
+     "end": 17.97
+    },
+    {
+     "w": "suivi",
+     "start": 18.21,
+     "end": 18.43
+    },
+    {
+     "w": "des",
+     "start": 18.43,
+     "end": 18.51
+    },
+    {
+     "w": "stagiaires,",
+     "start": 18.51,
+     "end": 19.05
+    },
+    {
+     "w": "traitement",
+     "start": 19.13,
+     "end": 19.43
+    },
+    {
+     "w": "des",
+     "start": 19.43,
+     "end": 19.55
+    },
+    {
+     "w": "réclamations.",
+     "start": 19.55,
+     "end": 20.03
+    }
+   ]
+  },
+  {
+   "start": 20.41,
+   "end": 24.88,
+   "words": [
+    {
+     "w": "L'État",
+     "start": 20.41,
+     "end": 20.85
+    },
+    {
+     "w": "et",
+     "start": 20.85,
+     "end": 21.01
+    },
+    {
+     "w": "France",
+     "start": 21.01,
+     "end": 21.25
+    },
+    {
+     "w": "compétences",
+     "start": 21.25,
+     "end": 21.89
+    },
+    {
+     "w": "publient",
+     "start": 21.89,
+     "end": 22.21
+    },
+    {
+     "w": "le",
+     "start": 22.21,
+     "end": 22.29
+    },
+    {
+     "w": "référentiel",
+     "start": 22.29,
+     "end": 22.87
+    },
+    {
+     "w": "officiel,",
+     "start": 22.87,
+     "end": 23.43
+    },
+    {
+     "w": "que",
+     "start": 23.59,
+     "end": 23.81
+    },
+    {
+     "w": "tu",
+     "start": 23.81,
+     "end": 23.95
+    },
+    {
+     "w": "peux",
+     "start": 23.95,
+     "end": 24.09
+    },
+    {
+     "w": "lire",
+     "start": 24.09,
+     "end": 24.31
+    },
+    {
+     "w": "en",
+     "start": 24.31,
+     "end": 24.45
+    },
+    {
+     "w": "ligne.",
+     "start": 24.45,
+     "end": 24.69
+    }
+   ]
+  },
+  {
+   "start": 25.06,
+   "end": 29.47,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 25.06,
+     "end": 25.23
+    },
+    {
+     "w": "démarrer,",
+     "start": 25.23,
+     "end": 25.91
+    },
+    {
+     "w": "un",
+     "start": 25.99,
+     "end": 26.15
+    },
+    {
+     "w": "organisme",
+     "start": 26.15,
+     "end": 26.65
+    },
+    {
+     "w": "déclare",
+     "start": 26.65,
+     "end": 26.99
+    },
+    {
+     "w": "son",
+     "start": 26.99,
+     "end": 27.05
+    },
+    {
+     "w": "activité",
+     "start": 27.05,
+     "end": 27.63
+    },
+    {
+     "w": "en",
+     "start": 27.63,
+     "end": 27.75
+    },
+    {
+     "w": "ligne",
+     "start": 27.75,
+     "end": 27.89
+    },
+    {
+     "w": "sur",
+     "start": 27.89,
+     "end": 28.13
+    },
+    {
+     "w": "Mon",
+     "start": 28.13,
+     "end": 28.25
+    },
+    {
+     "w": "Activité",
+     "start": 28.25,
+     "end": 28.81
+    },
+    {
+     "w": "Formation.",
+     "start": 28.81,
+     "end": 29.35
+    }
+   ]
+  },
+  {
+   "start": 29.65,
+   "end": 33.57,
+   "words": [
+    {
+     "w": "Il",
+     "start": 29.65,
+     "end": 29.82
+    },
+    {
+     "w": "reçoit",
+     "start": 29.82,
+     "end": 30.18
+    },
+    {
+     "w": "alors",
+     "start": 30.18,
+     "end": 30.26
+    },
+    {
+     "w": "un",
+     "start": 30.26,
+     "end": 30.44
+    },
+    {
+     "w": "numéro",
+     "start": 30.44,
+     "end": 30.7
+    },
+    {
+     "w": "de",
+     "start": 30.7,
+     "end": 30.84
+    },
+    {
+     "w": "déclaration",
+     "start": 30.84,
+     "end": 31.34
+    },
+    {
+     "w": "d'activité,",
+     "start": 31.34,
+     "end": 32.0
+    },
+    {
+     "w": "à",
+     "start": 32.18,
+     "end": 32.4
+    },
+    {
+     "w": "mettre",
+     "start": 32.4,
+     "end": 32.54
+    },
+    {
+     "w": "sur",
+     "start": 32.54,
+     "end": 32.84
+    },
+    {
+     "w": "ses",
+     "start": 32.84,
+     "end": 33.02
+    },
+    {
+     "w": "documents.",
+     "start": 33.02,
+     "end": 33.28
+    }
+   ]
+  }
+ ]
+}

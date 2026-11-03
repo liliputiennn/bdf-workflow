@@ -1,0 +1,567 @@
+{
+ "total": 32.51,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.81,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 0.15,
+     "end": 0.44
+    },
+    {
+     "w": "métier",
+     "start": 0.44,
+     "end": 0.86
+    },
+    {
+     "w": "louer",
+     "start": 1.28,
+     "end": 1.54
+    },
+    {
+     "w": "des",
+     "start": 1.54,
+     "end": 1.64
+    },
+    {
+     "w": "moutons",
+     "start": 1.64,
+     "end": 2.06
+    },
+    {
+     "w": "pour",
+     "start": 2.06,
+     "end": 2.28
+    },
+    {
+     "w": "tondre",
+     "start": 2.28,
+     "end": 2.58
+    },
+    {
+     "w": "des",
+     "start": 2.58,
+     "end": 2.68
+    },
+    {
+     "w": "pelouses",
+     "start": 2.68,
+     "end": 3.14
+    },
+    {
+     "w": "et",
+     "start": 3.14,
+     "end": 3.24
+    },
+    {
+     "w": "des",
+     "start": 3.24,
+     "end": 3.36
+    },
+    {
+     "w": "terrains.",
+     "start": 3.36,
+     "end": 3.74
+    }
+   ]
+  },
+  {
+   "start": 3.99,
+   "end": 9.53,
+   "words": [
+    {
+     "w": "Une",
+     "start": 3.99,
+     "end": 4.17
+    },
+    {
+     "w": "entreprise",
+     "start": 4.17,
+     "end": 4.69
+    },
+    {
+     "w": "ou",
+     "start": 4.69,
+     "end": 4.95
+    },
+    {
+     "w": "une",
+     "start": 4.95,
+     "end": 5.07
+    },
+    {
+     "w": "commune",
+     "start": 5.07,
+     "end": 5.53
+    },
+    {
+     "w": "veut",
+     "start": 5.53,
+     "end": 5.63
+    },
+    {
+     "w": "un",
+     "start": 5.63,
+     "end": 5.79
+    },
+    {
+     "w": "terrain",
+     "start": 5.79,
+     "end": 6.03
+    },
+    {
+     "w": "entretenu",
+     "start": 6.03,
+     "end": 6.53
+    },
+    {
+     "w": "sans",
+     "start": 6.53,
+     "end": 6.81
+    },
+    {
+     "w": "moteur",
+     "start": 6.81,
+     "end": 7.33
+    },
+    {
+     "w": "ni",
+     "start": 7.33,
+     "end": 7.55
+    },
+    {
+     "w": "bruit,",
+     "start": 7.55,
+     "end": 8.11
+    },
+    {
+     "w": "alors",
+     "start": 8.27,
+     "end": 8.33
+    },
+    {
+     "w": "des",
+     "start": 8.33,
+     "end": 8.53
+    },
+    {
+     "w": "moutons",
+     "start": 8.53,
+     "end": 8.79
+    },
+    {
+     "w": "broutent",
+     "start": 8.79,
+     "end": 9.09
+    },
+    {
+     "w": "l'herbe.",
+     "start": 9.09,
+     "end": 9.41
+    }
+   ]
+  },
+  {
+   "start": 9.71,
+   "end": 15.28,
+   "words": [
+    {
+     "w": "Le",
+     "start": 9.71,
+     "end": 9.87
+    },
+    {
+     "w": "point",
+     "start": 9.87,
+     "end": 10.05
+    },
+    {
+     "w": "de",
+     "start": 10.05,
+     "end": 10.17
+    },
+    {
+     "w": "loi",
+     "start": 10.17,
+     "end": 10.31
+    },
+    {
+     "w": "surprenant",
+     "start": 10.31,
+     "end": 10.93
+    },
+    {
+     "w": "dès",
+     "start": 11.15,
+     "end": 11.29
+    },
+    {
+     "w": "le",
+     "start": 11.29,
+     "end": 11.43
+    },
+    {
+     "w": "premier",
+     "start": 11.43,
+     "end": 11.71
+    },
+    {
+     "w": "mouton,",
+     "start": 11.71,
+     "end": 12.15
+    },
+    {
+     "w": "on",
+     "start": 12.43,
+     "end": 12.57
+    },
+    {
+     "w": "doit",
+     "start": 12.57,
+     "end": 12.69
+    },
+    {
+     "w": "se",
+     "start": 12.69,
+     "end": 12.81
+    },
+    {
+     "w": "déclarer",
+     "start": 12.81,
+     "end": 13.25
+    },
+    {
+     "w": "à",
+     "start": 13.25,
+     "end": 13.31
+    },
+    {
+     "w": "l'établissement",
+     "start": 13.31,
+     "end": 13.79
+    },
+    {
+     "w": "départemental",
+     "start": 13.79,
+     "end": 14.51
+    },
+    {
+     "w": "de",
+     "start": 14.51,
+     "end": 14.59
+    },
+    {
+     "w": "l'élevage.",
+     "start": 14.59,
+     "end": 15.15
+    }
+   ]
+  },
+  {
+   "start": 15.46,
+   "end": 19.58,
+   "words": [
+    {
+     "w": "Les",
+     "start": 15.46,
+     "end": 15.64
+    },
+    {
+     "w": "moutons",
+     "start": 15.64,
+     "end": 15.94
+    },
+    {
+     "w": "restent",
+     "start": 15.94,
+     "end": 16.32
+    },
+    {
+     "w": "des",
+     "start": 16.32,
+     "end": 16.44
+    },
+    {
+     "w": "animaux",
+     "start": 16.44,
+     "end": 16.86
+    },
+    {
+     "w": "d'élevage,",
+     "start": 16.86,
+     "end": 17.38
+    },
+    {
+     "w": "même",
+     "start": 17.62,
+     "end": 17.84
+    },
+    {
+     "w": "quand",
+     "start": 17.84,
+     "end": 18.06
+    },
+    {
+     "w": "ils",
+     "start": 18.06,
+     "end": 18.22
+    },
+    {
+     "w": "servent",
+     "start": 18.22,
+     "end": 18.86
+    },
+    {
+     "w": "seulement",
+     "start": 18.86,
+     "end": 18.91
+    },
+    {
+     "w": "à",
+     "start": 18.86,
+     "end": 19.02
+    },
+    {
+     "w": "tondre.",
+     "start": 19.02,
+     "end": 19.38
+    }
+   ]
+  },
+  {
+   "start": 19.76,
+   "end": 23.32,
+   "words": [
+    {
+     "w": "Chaque",
+     "start": 19.76,
+     "end": 20.09
+    },
+    {
+     "w": "mouton",
+     "start": 20.09,
+     "end": 20.41
+    },
+    {
+     "w": "doit",
+     "start": 20.41,
+     "end": 20.55
+    },
+    {
+     "w": "porter",
+     "start": 20.55,
+     "end": 20.79
+    },
+    {
+     "w": "des",
+     "start": 20.79,
+     "end": 20.99
+    },
+    {
+     "w": "boucles",
+     "start": 20.99,
+     "end": 21.25
+    },
+    {
+     "w": "d'oreille",
+     "start": 21.25,
+     "end": 21.65
+    },
+    {
+     "w": "officielles",
+     "start": 21.65,
+     "end": 22.05
+    },
+    {
+     "w": "pour",
+     "start": 22.05,
+     "end": 22.23
+    },
+    {
+     "w": "être",
+     "start": 22.23,
+     "end": 22.39
+    },
+    {
+     "w": "identifié.",
+     "start": 22.39,
+     "end": 23.21
+    }
+   ]
+  },
+  {
+   "start": 23.5,
+   "end": 26.63,
+   "words": [
+    {
+     "w": "Les",
+     "start": 23.5,
+     "end": 23.67
+    },
+    {
+     "w": "arrivées",
+     "start": 23.67,
+     "end": 24.27
+    },
+    {
+     "w": "et",
+     "start": 24.27,
+     "end": 24.37
+    },
+    {
+     "w": "les",
+     "start": 24.37,
+     "end": 24.47
+    },
+    {
+     "w": "départs",
+     "start": 24.47,
+     "end": 24.83
+    },
+    {
+     "w": "d'animaux",
+     "start": 24.83,
+     "end": 25.19
+    },
+    {
+     "w": "se",
+     "start": 25.19,
+     "end": 25.37
+    },
+    {
+     "w": "déclarent",
+     "start": 25.37,
+     "end": 25.83
+    },
+    {
+     "w": "dans",
+     "start": 25.83,
+     "end": 25.93
+    },
+    {
+     "w": "les",
+     "start": 25.93,
+     "end": 26.03
+    },
+    {
+     "w": "sept",
+     "start": 26.03,
+     "end": 26.19
+    },
+    {
+     "w": "jours.",
+     "start": 26.19,
+     "end": 26.43
+    }
+   ]
+  },
+  {
+   "start": 26.81,
+   "end": 32.21,
+   "words": [
+    {
+     "w": "Il",
+     "start": 26.81,
+     "end": 26.99
+    },
+    {
+     "w": "faut",
+     "start": 26.99,
+     "end": 27.15
+    },
+    {
+     "w": "aussi",
+     "start": 27.15,
+     "end": 27.31
+    },
+    {
+     "w": "des",
+     "start": 27.31,
+     "end": 27.45
+    },
+    {
+     "w": "clôtures,",
+     "start": 27.45,
+     "end": 27.93
+    },
+    {
+     "w": "de",
+     "start": 28.09,
+     "end": 28.15
+    },
+    {
+     "w": "l'eau,",
+     "start": 28.15,
+     "end": 28.39
+    },
+    {
+     "w": "de",
+     "start": 28.53,
+     "end": 28.58
+    },
+    {
+     "w": "l'ombre",
+     "start": 28.57,
+     "end": 28.97
+    },
+    {
+     "w": "et",
+     "start": 28.97,
+     "end": 29.19
+    },
+    {
+     "w": "une",
+     "start": 29.19,
+     "end": 29.31
+    },
+    {
+     "w": "visite",
+     "start": 29.31,
+     "end": 29.59
+    },
+    {
+     "w": "régulière,",
+     "start": 29.59,
+     "end": 30.21
+    },
+    {
+     "w": "parce",
+     "start": 30.39,
+     "end": 30.59
+    },
+    {
+     "w": "que",
+     "start": 30.59,
+     "end": 30.73
+    },
+    {
+     "w": "le",
+     "start": 30.73,
+     "end": 30.79
+    },
+    {
+     "w": "bien-être",
+     "start": 30.79,
+     "end": 31.13
+    },
+    {
+     "w": "des",
+     "start": 31.13,
+     "end": 31.31
+    },
+    {
+     "w": "animaux",
+     "start": 31.31,
+     "end": 31.69
+    },
+    {
+     "w": "compte.",
+     "start": 31.69,
+     "end": 31.99
+    }
+   ]
+  }
+ ]
+}

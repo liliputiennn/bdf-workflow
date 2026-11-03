@@ -1,0 +1,52 @@
+{
+ "id": "10-business-des-16-ans-s4",
+ "titre": "La loi oblige les notices en français : un petit business",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "NOTICES MODES EMPLOI FRANÇAIS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Autre idée : écrire des notices en français pour des objets vendus en ligne.",
+  "Un petit vendeur reçoit des produits venus de loin, avec un mode d'emploi seulement en anglais.",
+  "Or la loi exige un mode d'emploi en français pour un produit vendu en France.",
+  "Cette règle vaut aussi pour la vente sur internet.",
+  "Et la version française doit être aussi facile à comprendre que l'original.",
+  "Toi, tu rédiges ou tu corriges la notice, avec des phrases courtes et des étapes claires.",
+  "LibreOffice et LanguageTool sont gratuits pour écrire et corriger les fautes.",
+  "DeepL propose une version gratuite pour traduire, mais avec une limite chaque mois."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "notices",
+     "français"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 7,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "LibreOffice"
+     },
+     {
+      "texte": "LanguageTool"
+     },
+     {
+      "texte": "DeepL version gratuite"
+     }
+    ]
+   }
+  }
+ ]
+}

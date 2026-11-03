@@ -1,0 +1,533 @@
+{
+ "total": 30.83,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.15,
+   "words": [
+    {
+     "w": "Une",
+     "start": 0.15,
+     "end": 0.37
+    },
+    {
+     "w": "idée",
+     "start": 0.37,
+     "end": 0.63
+    },
+    {
+     "w": "préparer",
+     "start": 0.75,
+     "end": 1.17
+    },
+    {
+     "w": "le",
+     "start": 1.17,
+     "end": 1.23
+    },
+    {
+     "w": "dossier",
+     "start": 1.23,
+     "end": 1.57
+    },
+    {
+     "w": "numérique",
+     "start": 1.57,
+     "end": 1.97
+    },
+    {
+     "w": "d'urgence",
+     "start": 1.97,
+     "end": 2.25
+    },
+    {
+     "w": "d'une",
+     "start": 2.25,
+     "end": 2.53
+    },
+    {
+     "w": "famille.",
+     "start": 2.53,
+     "end": 2.79
+    }
+   ]
+  },
+  {
+   "start": 3.33,
+   "end": 6.89,
+   "words": [
+    {
+     "w": "Que",
+     "start": 3.33,
+     "end": 3.5
+    },
+    {
+     "w": "deviennent",
+     "start": 3.5,
+     "end": 3.84
+    },
+    {
+     "w": "ta",
+     "start": 3.84,
+     "end": 4.0
+    },
+    {
+     "w": "messagerie,",
+     "start": 4.0,
+     "end": 4.5
+    },
+    {
+     "w": "tes",
+     "start": 4.52,
+     "end": 4.57
+    },
+    {
+     "w": "photos",
+     "start": 4.56,
+     "end": 4.86
+    },
+    {
+     "w": "et",
+     "start": 4.86,
+     "end": 5.16
+    },
+    {
+     "w": "tes",
+     "start": 5.16,
+     "end": 5.26
+    },
+    {
+     "w": "mots",
+     "start": 5.26,
+     "end": 5.38
+    },
+    {
+     "w": "de",
+     "start": 5.38,
+     "end": 5.44
+    },
+    {
+     "w": "passe",
+     "start": 5.44,
+     "end": 5.76
+    },
+    {
+     "w": "si",
+     "start": 5.76,
+     "end": 6.16
+    },
+    {
+     "w": "tu",
+     "start": 6.16,
+     "end": 6.28
+    },
+    {
+     "w": "disparais",
+     "start": 6.28,
+     "end": 6.8
+    }
+   ]
+  },
+  {
+   "start": 7.07,
+   "end": 11.05,
+   "words": [
+    {
+     "w": "La",
+     "start": 7.07,
+     "end": 7.23
+    },
+    {
+     "w": "loi",
+     "start": 7.23,
+     "end": 7.37
+    },
+    {
+     "w": "française",
+     "start": 7.37,
+     "end": 7.79
+    },
+    {
+     "w": "permet",
+     "start": 7.79,
+     "end": 8.13
+    },
+    {
+     "w": "de",
+     "start": 8.13,
+     "end": 8.29
+    },
+    {
+     "w": "laisser",
+     "start": 8.29,
+     "end": 8.51
+    },
+    {
+     "w": "des",
+     "start": 8.51,
+     "end": 8.67
+    },
+    {
+     "w": "directives",
+     "start": 8.67,
+     "end": 9.17
+    },
+    {
+     "w": "sur",
+     "start": 9.17,
+     "end": 9.33
+    },
+    {
+     "w": "le",
+     "start": 9.33,
+     "end": 9.45
+    },
+    {
+     "w": "sort",
+     "start": 9.45,
+     "end": 9.67
+    },
+    {
+     "w": "de",
+     "start": 9.67,
+     "end": 9.81
+    },
+    {
+     "w": "tes",
+     "start": 9.81,
+     "end": 9.91
+    },
+    {
+     "w": "données",
+     "start": 9.91,
+     "end": 10.17
+    },
+    {
+     "w": "après",
+     "start": 10.17,
+     "end": 10.39
+    },
+    {
+     "w": "ta",
+     "start": 10.39,
+     "end": 10.57
+    },
+    {
+     "w": "mort.",
+     "start": 10.57,
+     "end": 10.77
+    }
+   ]
+  },
+  {
+   "start": 11.23,
+   "end": 15.52,
+   "words": [
+    {
+     "w": "Google",
+     "start": 11.23,
+     "end": 11.54
+    },
+    {
+     "w": "et",
+     "start": 11.54,
+     "end": 11.94
+    },
+    {
+     "w": "Apple",
+     "start": 11.94,
+     "end": 12.28
+    },
+    {
+     "w": "proposent",
+     "start": 12.28,
+     "end": 12.8
+    },
+    {
+     "w": "aussi",
+     "start": 12.8,
+     "end": 13.0
+    },
+    {
+     "w": "un",
+     "start": 13.0,
+     "end": 13.2
+    },
+    {
+     "w": "réglage",
+     "start": 13.2,
+     "end": 13.62
+    },
+    {
+     "w": "pour",
+     "start": 13.62,
+     "end": 13.78
+    },
+    {
+     "w": "désigner",
+     "start": 13.78,
+     "end": 14.18
+    },
+    {
+     "w": "quelqu'un",
+     "start": 14.18,
+     "end": 14.64
+    },
+    {
+     "w": "de",
+     "start": 14.64,
+     "end": 14.74
+    },
+    {
+     "w": "confiance.",
+     "start": 14.74,
+     "end": 15.12
+    }
+   ]
+  },
+  {
+   "start": 15.7,
+   "end": 18.58,
+   "words": [
+    {
+     "w": "Chez",
+     "start": 15.84,
+     "end": 16.2
+    },
+    {
+     "w": "Google,",
+     "start": 16.2,
+     "end": 16.25
+    },
+    {
+     "w": "il",
+     "start": 16.38,
+     "end": 16.46
+    },
+    {
+     "w": "s'appelle",
+     "start": 16.46,
+     "end": 16.78
+    },
+    {
+     "w": "le",
+     "start": 16.78,
+     "end": 16.94
+    },
+    {
+     "w": "gestionnaire",
+     "start": 16.94,
+     "end": 17.36
+    },
+    {
+     "w": "de",
+     "start": 17.36,
+     "end": 17.48
+    },
+    {
+     "w": "compte",
+     "start": 17.48,
+     "end": 17.7
+    },
+    {
+     "w": "inactif.",
+     "start": 17.7,
+     "end": 18.44
+    }
+   ]
+  },
+  {
+   "start": 18.76,
+   "end": 20.9,
+   "words": [
+    {
+     "w": "Chez",
+     "start": 18.79,
+     "end": 19.07
+    },
+    {
+     "w": "Apple,",
+     "start": 19.07,
+     "end": 19.31
+    },
+    {
+     "w": "c'est",
+     "start": 19.45,
+     "end": 19.59
+    },
+    {
+     "w": "le",
+     "start": 19.59,
+     "end": 19.65
+    },
+    {
+     "w": "contact",
+     "start": 19.65,
+     "end": 19.91
+    },
+    {
+     "w": "légataire.",
+     "start": 19.91,
+     "end": 20.81
+    }
+   ]
+  },
+  {
+   "start": 21.08,
+   "end": 26.53,
+   "words": [
+    {
+     "w": "Un",
+     "start": 21.08,
+     "end": 21.23
+    },
+    {
+     "w": "gestionnaire",
+     "start": 21.23,
+     "end": 21.69
+    },
+    {
+     "w": "de",
+     "start": 21.69,
+     "end": 21.81
+    },
+    {
+     "w": "mots",
+     "start": 21.81,
+     "end": 21.99
+    },
+    {
+     "w": "de",
+     "start": 21.99,
+     "end": 22.13
+    },
+    {
+     "w": "passe",
+     "start": 22.13,
+     "end": 22.37
+    },
+    {
+     "w": "comme",
+     "start": 22.37,
+     "end": 22.61
+    },
+    {
+     "w": "Bitwarden",
+     "start": 22.61,
+     "end": 23.25
+    },
+    {
+     "w": "propose",
+     "start": 23.25,
+     "end": 23.65
+    },
+    {
+     "w": "un",
+     "start": 23.65,
+     "end": 23.93
+    },
+    {
+     "w": "accès",
+     "start": 23.93,
+     "end": 24.21
+    },
+    {
+     "w": "d'urgence,",
+     "start": 24.21,
+     "end": 24.71
+    },
+    {
+     "w": "mais",
+     "start": 24.95,
+     "end": 25.09
+    },
+    {
+     "w": "il",
+     "start": 25.09,
+     "end": 25.21
+    },
+    {
+     "w": "demande",
+     "start": 25.21,
+     "end": 25.53
+    },
+    {
+     "w": "l'offre",
+     "start": 25.53,
+     "end": 25.93
+    },
+    {
+     "w": "payante.",
+     "start": 25.93,
+     "end": 26.35
+    }
+   ]
+  },
+  {
+   "start": 26.71,
+   "end": 30.53,
+   "words": [
+    {
+     "w": "KeePassXC",
+     "start": 26.71,
+     "end": 27.5
+    },
+    {
+     "w": "est",
+     "start": 27.5,
+     "end": 27.62
+    },
+    {
+     "w": "un",
+     "start": 27.62,
+     "end": 27.78
+    },
+    {
+     "w": "coffre",
+     "start": 27.78,
+     "end": 28.1
+    },
+    {
+     "w": "libre",
+     "start": 28.1,
+     "end": 28.3
+    },
+    {
+     "w": "et",
+     "start": 28.3,
+     "end": 28.44
+    },
+    {
+     "w": "gratuit",
+     "start": 28.44,
+     "end": 28.76
+    },
+    {
+     "w": "qui",
+     "start": 28.76,
+     "end": 29.0
+    },
+    {
+     "w": "reste",
+     "start": 29.0,
+     "end": 29.24
+    },
+    {
+     "w": "sur",
+     "start": 29.24,
+     "end": 29.5
+    },
+    {
+     "w": "ton",
+     "start": 29.5,
+     "end": 29.68
+    },
+    {
+     "w": "ordinateur.",
+     "start": 29.68,
+     "end": 30.36
+    }
+   ]
+  }
+ ]
+}

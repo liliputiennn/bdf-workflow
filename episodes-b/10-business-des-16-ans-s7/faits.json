@@ -1,0 +1,33 @@
+[
+ {
+  "claim": "Dans la méthode du facile à lire et à comprendre, la participation de personnes en situation de handicap intellectuel à la relecture est la règle à laquelle on ne peut déroger.",
+  "valeur": "relecture",
+  "phrase": 6,
+  "sources": [
+   "https://falc.unapei.org/quest-ce-que-le-falc/les-regles-du-falc/",
+   "https://www.unapei.org/article/de-nouvelles-fiches-en-facile-a-lire-et-a-comprendre-falc-realisees-par-la-cnsa/"
+  ],
+  "check": [
+   "relecture"
+  ],
+  "verified": [
+   "https://falc.unapei.org/quest-ce-que-le-falc/les-regles-du-falc/"
+  ]
+ },
+ {
+  "claim": "Le pictogramme du facile à lire et à comprendre appartient à Inclusion Europe.",
+  "valeur": "Inclusion Europe",
+  "phrase": 7,
+  "sources": [
+   "https://falc.unapei.org/quest-ce-que-le-falc/le-falc-cest-quoi/",
+   "https://www.inclusion-europe.eu/easy-to-read/"
+  ],
+  "check": [
+   "Inclusion Europe"
+  ],
+  "verified": [
+   "https://falc.unapei.org/quest-ce-que-le-falc/le-falc-cest-quoi/",
+   "https://www.inclusion-europe.eu/easy-to-read/"
+  ]
+ }
+]

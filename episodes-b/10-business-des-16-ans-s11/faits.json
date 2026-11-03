@@ -1,0 +1,47 @@
+[
+ {
+  "claim": "La junior association est un label réservé aux jeunes de moins de 18 ans.",
+  "valeur": "label",
+  "phrase": 2,
+  "sources": [
+   "https://associations.gouv.fr/la-junior-association",
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F34101"
+  ],
+  "check": [
+   "junior"
+  ],
+  "verified": [
+   "https://associations.gouv.fr/la-junior-association"
+  ]
+ },
+ {
+  "claim": "La junior association est un label : la majorité des membres a moins de 18 ans et des mineurs y ont des responsabilités.",
+  "valeur": "18 ans",
+  "phrase": 3,
+  "sources": [
+   "https://associations.gouv.fr/la-junior-association",
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F34101"
+  ],
+  "check": [
+   "18 ans"
+  ],
+  "verified": [
+   "https://associations.gouv.fr/la-junior-association"
+  ]
+ },
+ {
+  "claim": "À partir de 16 ans, un mineur peut participer à la création et à la direction d'une association, en informant ses représentants légaux qui peuvent s'y opposer.",
+  "valeur": "16 ans",
+  "phrase": 6,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F34101",
+   "https://associations.gouv.fr/sites/default/files/2025-10/engagement_associatif_des_mineur_es.pdf"
+  ],
+  "check": [
+   "16 ans"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F34101"
+  ]
+ }
+]

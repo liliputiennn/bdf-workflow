@@ -1,0 +1,608 @@
+{
+ "total": 35.33,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 4.21,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 0.15,
+     "end": 0.45
+    },
+    {
+     "w": "métier",
+     "start": 0.45,
+     "end": 0.91
+    },
+    {
+     "w": "piégeur",
+     "start": 1.23,
+     "end": 1.73
+    },
+    {
+     "w": "agréé,",
+     "start": 1.73,
+     "end": 2.25
+    },
+    {
+     "w": "qui",
+     "start": 2.31,
+     "end": 2.37
+    },
+    {
+     "w": "capture",
+     "start": 2.37,
+     "end": 2.65
+    },
+    {
+     "w": "les",
+     "start": 2.65,
+     "end": 2.85
+    },
+    {
+     "w": "animaux",
+     "start": 2.85,
+     "end": 3.23
+    },
+    {
+     "w": "qui",
+     "start": 3.23,
+     "end": 3.35
+    },
+    {
+     "w": "causent",
+     "start": 3.35,
+     "end": 3.67
+    },
+    {
+     "w": "des",
+     "start": 3.67,
+     "end": 3.75
+    },
+    {
+     "w": "dégâts.",
+     "start": 3.75,
+     "end": 4.13
+    }
+   ]
+  },
+  {
+   "start": 4.39,
+   "end": 8.06,
+   "words": [
+    {
+     "w": "Des",
+     "start": 4.39,
+     "end": 4.56
+    },
+    {
+     "w": "ragondins",
+     "start": 4.56,
+     "end": 5.02
+    },
+    {
+     "w": "creusent",
+     "start": 5.02,
+     "end": 5.34
+    },
+    {
+     "w": "des",
+     "start": 5.34,
+     "end": 5.46
+    },
+    {
+     "w": "berges,",
+     "start": 5.46,
+     "end": 5.86
+    },
+    {
+     "w": "et",
+     "start": 6.04,
+     "end": 6.09
+    },
+    {
+     "w": "des",
+     "start": 6.06,
+     "end": 6.18
+    },
+    {
+     "w": "propriétaires",
+     "start": 6.18,
+     "end": 6.8
+    },
+    {
+     "w": "cherchent",
+     "start": 6.8,
+     "end": 7.1
+    },
+    {
+     "w": "quelqu'un",
+     "start": 7.1,
+     "end": 7.42
+    },
+    {
+     "w": "de",
+     "start": 7.42,
+     "end": 7.52
+    },
+    {
+     "w": "compétent.",
+     "start": 7.52,
+     "end": 7.96
+    }
+   ]
+  },
+  {
+   "start": 8.24,
+   "end": 12.53,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 8.24,
+     "end": 8.39
+    },
+    {
+     "w": "utiliser",
+     "start": 8.39,
+     "end": 8.71
+    },
+    {
+     "w": "des",
+     "start": 8.71,
+     "end": 8.95
+    },
+    {
+     "w": "pièges",
+     "start": 8.95,
+     "end": 9.31
+    },
+    {
+     "w": "contre",
+     "start": 9.31,
+     "end": 9.51
+    },
+    {
+     "w": "certaines",
+     "start": 9.51,
+     "end": 9.85
+    },
+    {
+     "w": "espèces,",
+     "start": 9.85,
+     "end": 10.45
+    },
+    {
+     "w": "il",
+     "start": 10.57,
+     "end": 10.62
+    },
+    {
+     "w": "faut",
+     "start": 10.61,
+     "end": 10.79
+    },
+    {
+     "w": "un",
+     "start": 10.79,
+     "end": 10.89
+    },
+    {
+     "w": "agrément",
+     "start": 10.89,
+     "end": 11.23
+    },
+    {
+     "w": "délivré",
+     "start": 11.23,
+     "end": 11.79
+    },
+    {
+     "w": "par",
+     "start": 11.79,
+     "end": 11.93
+    },
+    {
+     "w": "le",
+     "start": 11.93,
+     "end": 12.05
+    },
+    {
+     "w": "préfet.",
+     "start": 12.05,
+     "end": 12.43
+    }
+   ]
+  },
+  {
+   "start": 12.71,
+   "end": 16.24,
+   "words": [
+    {
+     "w": "Cet",
+     "start": 12.71,
+     "end": 12.97
+    },
+    {
+     "w": "agrément",
+     "start": 12.97,
+     "end": 13.39
+    },
+    {
+     "w": "s'obtient",
+     "start": 13.39,
+     "end": 14.09
+    },
+    {
+     "w": "après",
+     "start": 14.09,
+     "end": 14.41
+    },
+    {
+     "w": "une",
+     "start": 14.41,
+     "end": 14.57
+    },
+    {
+     "w": "formation",
+     "start": 14.57,
+     "end": 14.93
+    },
+    {
+     "w": "d'au",
+     "start": 14.93,
+     "end": 15.21
+    },
+    {
+     "w": "moins",
+     "start": 15.21,
+     "end": 15.39
+    },
+    {
+     "w": "seize",
+     "start": 15.39,
+     "end": 15.71
+    },
+    {
+     "w": "heures.",
+     "start": 15.71,
+     "end": 16.01
+    }
+   ]
+  },
+  {
+   "start": 16.42,
+   "end": 19.3,
+   "words": [
+    {
+     "w": "Ces",
+     "start": 16.42,
+     "end": 16.62
+    },
+    {
+     "w": "formations",
+     "start": 16.62,
+     "end": 16.92
+    },
+    {
+     "w": "sont",
+     "start": 16.92,
+     "end": 17.2
+    },
+    {
+     "w": "proposées",
+     "start": 17.2,
+     "end": 17.7
+    },
+    {
+     "w": "par",
+     "start": 17.7,
+     "end": 17.8
+    },
+    {
+     "w": "les",
+     "start": 17.8,
+     "end": 17.92
+    },
+    {
+     "w": "fédérations",
+     "start": 17.92,
+     "end": 18.44
+    },
+    {
+     "w": "de",
+     "start": 18.44,
+     "end": 18.6
+    },
+    {
+     "w": "chasseurs.",
+     "start": 18.6,
+     "end": 19.16
+    }
+   ]
+  },
+  {
+   "start": 19.48,
+   "end": 25.62,
+   "words": [
+    {
+     "w": "Toutes",
+     "start": 19.48,
+     "end": 19.73
+    },
+    {
+     "w": "les",
+     "start": 19.73,
+     "end": 19.85
+    },
+    {
+     "w": "bêtes",
+     "start": 19.85,
+     "end": 20.11
+    },
+    {
+     "w": "ne",
+     "start": 20.11,
+     "end": 20.27
+    },
+    {
+     "w": "relèvent",
+     "start": 20.27,
+     "end": 20.59
+    },
+    {
+     "w": "pas",
+     "start": 20.59,
+     "end": 20.73
+    },
+    {
+     "w": "de",
+     "start": 20.73,
+     "end": 20.83
+    },
+    {
+     "w": "la",
+     "start": 20.83,
+     "end": 20.91
+    },
+    {
+     "w": "même",
+     "start": 20.91,
+     "end": 21.01
+    },
+    {
+     "w": "règle",
+     "start": 21.01,
+     "end": 21.41
+    },
+    {
+     "w": "même",
+     "start": 21.65,
+     "end": 21.91
+    },
+    {
+     "w": "pour",
+     "start": 21.91,
+     "end": 22.13
+    },
+    {
+     "w": "une",
+     "start": 22.13,
+     "end": 22.29
+    },
+    {
+     "w": "taupe,",
+     "start": 22.29,
+     "end": 22.67
+    },
+    {
+     "w": "renseigne-toi,",
+     "start": 22.89,
+     "end": 23.55
+    },
+    {
+     "w": "car",
+     "start": 23.85,
+     "end": 24.01
+    },
+    {
+     "w": "la",
+     "start": 24.01,
+     "end": 24.15
+    },
+    {
+     "w": "règle",
+     "start": 24.15,
+     "end": 24.41
+    },
+    {
+     "w": "dépend",
+     "start": 24.41,
+     "end": 24.77
+    },
+    {
+     "w": "de",
+     "start": 24.77,
+     "end": 24.97
+    },
+    {
+     "w": "l'espèce.",
+     "start": 24.97,
+     "end": 25.45
+    }
+   ]
+  },
+  {
+   "start": 25.8,
+   "end": 30.68,
+   "words": [
+    {
+     "w": "Un",
+     "start": 25.8,
+     "end": 25.96
+    },
+    {
+     "w": "piège",
+     "start": 25.96,
+     "end": 26.26
+    },
+    {
+     "w": "doit",
+     "start": 26.26,
+     "end": 26.38
+    },
+    {
+     "w": "être",
+     "start": 26.38,
+     "end": 26.6
+    },
+    {
+     "w": "choisi",
+     "start": 26.6,
+     "end": 27.1
+    },
+    {
+     "w": "et",
+     "start": 27.1,
+     "end": 27.36
+    },
+    {
+     "w": "posé",
+     "start": 27.36,
+     "end": 27.74
+    },
+    {
+     "w": "selon",
+     "start": 27.74,
+     "end": 27.92
+    },
+    {
+     "w": "des",
+     "start": 27.92,
+     "end": 28.12
+    },
+    {
+     "w": "règles",
+     "start": 28.12,
+     "end": 28.38
+    },
+    {
+     "w": "précises,",
+     "start": 28.38,
+     "end": 29.02
+    },
+    {
+     "w": "pour",
+     "start": 29.22,
+     "end": 29.3
+    },
+    {
+     "w": "ne",
+     "start": 29.3,
+     "end": 29.42
+    },
+    {
+     "w": "pas",
+     "start": 29.42,
+     "end": 29.58
+    },
+    {
+     "w": "blesser",
+     "start": 29.58,
+     "end": 29.94
+    },
+    {
+     "w": "d'autres",
+     "start": 29.94,
+     "end": 30.1
+    },
+    {
+     "w": "animaux.",
+     "start": 30.1,
+     "end": 30.6
+    }
+   ]
+  },
+  {
+   "start": 30.86,
+   "end": 35.03,
+   "words": [
+    {
+     "w": "Le",
+     "start": 30.86,
+     "end": 31.03
+    },
+    {
+     "w": "terrain",
+     "start": 31.03,
+     "end": 31.25
+    },
+    {
+     "w": "compte",
+     "start": 31.25,
+     "end": 31.65
+    },
+    {
+     "w": "chaque",
+     "start": 31.85,
+     "end": 31.99
+    },
+    {
+     "w": "propriétaire",
+     "start": 31.99,
+     "end": 32.69
+    },
+    {
+     "w": "doit",
+     "start": 32.69,
+     "end": 32.79
+    },
+    {
+     "w": "donner",
+     "start": 32.79,
+     "end": 33.05
+    },
+    {
+     "w": "son",
+     "start": 33.05,
+     "end": 33.25
+    },
+    {
+     "w": "accord",
+     "start": 33.25,
+     "end": 33.55
+    },
+    {
+     "w": "avant",
+     "start": 33.55,
+     "end": 33.89
+    },
+    {
+     "w": "que",
+     "start": 33.89,
+     "end": 34.09
+    },
+    {
+     "w": "tu",
+     "start": 34.09,
+     "end": 34.19
+    },
+    {
+     "w": "poses",
+     "start": 34.19,
+     "end": 34.41
+    },
+    {
+     "w": "un",
+     "start": 34.41,
+     "end": 34.53
+    },
+    {
+     "w": "piège.",
+     "start": 34.53,
+     "end": 34.91
+    }
+   ]
+  }
+ ]
+}

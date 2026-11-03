@@ -1,0 +1,447 @@
+{
+ "total": 26.4,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.89,
+   "words": [
+    {
+     "w": "Idée",
+     "start": 0.15,
+     "end": 0.48
+    },
+    {
+     "w": "suivante",
+     "start": 0.48,
+     "end": 1.06
+    },
+    {
+     "w": "monter",
+     "start": 1.26,
+     "end": 1.5
+    },
+    {
+     "w": "une",
+     "start": 1.5,
+     "end": 1.76
+    },
+    {
+     "w": "coopérative",
+     "start": 1.76,
+     "end": 2.28
+    },
+    {
+     "w": "jeunesse",
+     "start": 2.28,
+     "end": 2.68
+    },
+    {
+     "w": "de",
+     "start": 2.68,
+     "end": 2.78
+    },
+    {
+     "w": "services",
+     "start": 2.78,
+     "end": 3.14
+    },
+    {
+     "w": "pendant",
+     "start": 3.14,
+     "end": 3.4
+    },
+    {
+     "w": "l'été.",
+     "start": 3.4,
+     "end": 3.72
+    }
+   ]
+  },
+  {
+   "start": 4.07,
+   "end": 8.17,
+   "words": [
+    {
+     "w": "Un",
+     "start": 4.07,
+     "end": 4.23
+    },
+    {
+     "w": "groupe",
+     "start": 4.23,
+     "end": 4.43
+    },
+    {
+     "w": "de",
+     "start": 4.43,
+     "end": 4.59
+    },
+    {
+     "w": "jeunes",
+     "start": 4.59,
+     "end": 4.79
+    },
+    {
+     "w": "crée",
+     "start": 4.79,
+     "end": 5.13
+    },
+    {
+     "w": "une",
+     "start": 5.13,
+     "end": 5.23
+    },
+    {
+     "w": "vraie",
+     "start": 5.23,
+     "end": 5.53
+    },
+    {
+     "w": "petite",
+     "start": 5.53,
+     "end": 5.67
+    },
+    {
+     "w": "entreprise",
+     "start": 5.67,
+     "end": 6.19
+    },
+    {
+     "w": "pour",
+     "start": 6.19,
+     "end": 6.35
+    },
+    {
+     "w": "quelques",
+     "start": 6.35,
+     "end": 6.53
+    },
+    {
+     "w": "mois,",
+     "start": 6.53,
+     "end": 6.93
+    },
+    {
+     "w": "avec",
+     "start": 7.27,
+     "end": 7.51
+    },
+    {
+     "w": "ses",
+     "start": 7.51,
+     "end": 7.67
+    },
+    {
+     "w": "clients.",
+     "start": 7.67,
+     "end": 7.93
+    }
+   ]
+  },
+  {
+   "start": 8.35,
+   "end": 11.04,
+   "words": [
+    {
+     "w": "Ce",
+     "start": 8.35,
+     "end": 8.55
+    },
+    {
+     "w": "dispositif",
+     "start": 8.55,
+     "end": 9.27
+    },
+    {
+     "w": "s'adresse",
+     "start": 9.27,
+     "end": 9.61
+    },
+    {
+     "w": "aux",
+     "start": 9.61,
+     "end": 9.73
+    },
+    {
+     "w": "jeunes",
+     "start": 9.73,
+     "end": 9.91
+    },
+    {
+     "w": "de",
+     "start": 9.91,
+     "end": 10.07
+    },
+    {
+     "w": "seize",
+     "start": 10.07,
+     "end": 10.31
+    },
+    {
+     "w": "à",
+     "start": 10.31,
+     "end": 10.47
+    },
+    {
+     "w": "dix-huit",
+     "start": 10.47,
+     "end": 10.83
+    },
+    {
+     "w": "ans.",
+     "start": 10.83,
+     "end": 10.95
+    }
+   ]
+  },
+  {
+   "start": 11.22,
+   "end": 15.36,
+   "words": [
+    {
+     "w": "La",
+     "start": 11.22,
+     "end": 11.39
+    },
+    {
+     "w": "coopérative",
+     "start": 11.39,
+     "end": 11.99
+    },
+    {
+     "w": "dure",
+     "start": 11.99,
+     "end": 12.23
+    },
+    {
+     "w": "le",
+     "start": 12.23,
+     "end": 12.35
+    },
+    {
+     "w": "temps",
+     "start": 12.35,
+     "end": 12.55
+    },
+    {
+     "w": "d'un",
+     "start": 12.55,
+     "end": 12.71
+    },
+    {
+     "w": "été,",
+     "start": 12.71,
+     "end": 12.99
+    },
+    {
+     "w": "avec",
+     "start": 13.19,
+     "end": 13.43
+    },
+    {
+     "w": "des",
+     "start": 13.43,
+     "end": 13.65
+    },
+    {
+     "w": "animateurs",
+     "start": 13.65,
+     "end": 14.19
+    },
+    {
+     "w": "qui",
+     "start": 14.19,
+     "end": 14.35
+    },
+    {
+     "w": "accompagnent",
+     "start": 14.35,
+     "end": 14.83
+    },
+    {
+     "w": "le",
+     "start": 14.83,
+     "end": 14.91
+    },
+    {
+     "w": "groupe.",
+     "start": 14.91,
+     "end": 15.13
+    }
+   ]
+  },
+  {
+   "start": 15.54,
+   "end": 17.8,
+   "words": [
+    {
+     "w": "Les",
+     "start": 15.54,
+     "end": 15.72
+    },
+    {
+     "w": "jeunes",
+     "start": 15.72,
+     "end": 15.88
+    },
+    {
+     "w": "décident",
+     "start": 15.88,
+     "end": 16.26
+    },
+    {
+     "w": "ensemble",
+     "start": 16.26,
+     "end": 16.54
+    },
+    {
+     "w": "des",
+     "start": 16.54,
+     "end": 16.72
+    },
+    {
+     "w": "services",
+     "start": 16.72,
+     "end": 17.04
+    },
+    {
+     "w": "à",
+     "start": 17.04,
+     "end": 17.22
+    },
+    {
+     "w": "proposer.",
+     "start": 17.22,
+     "end": 17.7
+    }
+   ]
+  },
+  {
+   "start": 17.98,
+   "end": 21.39,
+   "words": [
+    {
+     "w": "Les",
+     "start": 17.98,
+     "end": 18.16
+    },
+    {
+     "w": "services",
+     "start": 18.16,
+     "end": 18.42
+    },
+    {
+     "w": "varient",
+     "start": 18.42,
+     "end": 18.88
+    },
+    {
+     "w": "selon",
+     "start": 18.88,
+     "end": 19.08
+    },
+    {
+     "w": "les",
+     "start": 19.08,
+     "end": 19.28
+    },
+    {
+     "w": "villes",
+     "start": 19.28,
+     "end": 19.86
+    },
+    {
+     "w": "et",
+     "start": 19.86,
+     "end": 19.98
+    },
+    {
+     "w": "selon",
+     "start": 19.98,
+     "end": 20.22
+    },
+    {
+     "w": "les",
+     "start": 20.22,
+     "end": 20.38
+    },
+    {
+     "w": "besoins",
+     "start": 20.38,
+     "end": 20.74
+    },
+    {
+     "w": "des",
+     "start": 20.74,
+     "end": 20.86
+    },
+    {
+     "w": "habitants.",
+     "start": 20.86,
+     "end": 21.28
+    }
+   ]
+  },
+  {
+   "start": 21.57,
+   "end": 26.1,
+   "words": [
+    {
+     "w": "C'est",
+     "start": 21.57,
+     "end": 21.8
+    },
+    {
+     "w": "un",
+     "start": 21.8,
+     "end": 21.92
+    },
+    {
+     "w": "projet",
+     "start": 21.92,
+     "end": 22.2
+    },
+    {
+     "w": "d'éducation",
+     "start": 22.2,
+     "end": 22.88
+    },
+    {
+     "w": "à",
+     "start": 22.88,
+     "end": 22.98
+    },
+    {
+     "w": "l'entrepreneuriat",
+     "start": 22.98,
+     "end": 23.62
+    },
+    {
+     "w": "coopératif,",
+     "start": 23.62,
+     "end": 24.5
+    },
+    {
+     "w": "encadré",
+     "start": 24.72,
+     "end": 25.2
+    },
+    {
+     "w": "par",
+     "start": 25.2,
+     "end": 25.36
+    },
+    {
+     "w": "des",
+     "start": 25.36,
+     "end": 25.5
+    },
+    {
+     "w": "adultes.",
+     "start": 25.5,
+     "end": 26.0
+    }
+   ]
+  }
+ ]
+}

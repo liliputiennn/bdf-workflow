@@ -1,0 +1,63 @@
+{
+ "id": "10-business-des-16-ans-s5",
+ "titre": "Surveiller les rappels de produits : un business méconnu",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "VEILLE RAPPELS PRODUITS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Idée suivante : surveiller les rappels de produits pour de petits commerçants.",
+  "Quand un produit est dangereux, il est rappelé, et il faut vite le retirer des rayons.",
+  "Les commerçants n'ont pas le temps de lire ces avis tous les jours.",
+  "Le site officiel Rappel Conso publie les rappels, avec des filtres par catégorie.",
+  "Tu suis ses flux, tu tries les alertes qui concernent un magasin précis, puis tu les lui résumes.",
+  "La règle de loi : un distributeur doit retirer du marché tout produit dont il sait qu'il présente un risque.",
+  "Les entreprises qui lancent un rappel doivent le déclarer sur ce même site.",
+  "Le piège : tu informes, mais tu ne décides rien, c'est le commerçant qui retire le produit."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "rappels"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 4,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "Rappel Conso"
+     },
+     {
+      "texte": "Flux de nouveautés"
+     },
+     {
+      "texte": "Un tableur gratuit"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 6,
+   "params": {
+    "question": "Qui retire le produit ?",
+    "pistes": [
+     "Le commerçant",
+     "Pas toi",
+     "La loi"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,850 @@
+{
+ "total": 50.79,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 5.08,
+   "words": [
+    {
+     "w": "Les",
+     "start": 0.15,
+     "end": 0.32
+    },
+    {
+     "w": "restes",
+     "start": 0.32,
+     "end": 0.66
+    },
+    {
+     "w": "de",
+     "start": 0.66,
+     "end": 0.74
+    },
+    {
+     "w": "cuisine,",
+     "start": 0.74,
+     "end": 1.08
+    },
+    {
+     "w": "épluchures,",
+     "start": 1.22,
+     "end": 1.78
+    },
+    {
+     "w": "marc",
+     "start": 1.92,
+     "end": 2.06
+    },
+    {
+     "w": "de",
+     "start": 2.06,
+     "end": 2.26
+    },
+    {
+     "w": "café,",
+     "start": 2.26,
+     "end": 2.56
+    },
+    {
+     "w": "peaux",
+     "start": 2.7,
+     "end": 2.9
+    },
+    {
+     "w": "de",
+     "start": 2.9,
+     "end": 2.95
+    },
+    {
+     "w": "fruits,",
+     "start": 2.92,
+     "end": 3.18
+    },
+    {
+     "w": "n'ont",
+     "start": 3.44,
+     "end": 3.54
+    },
+    {
+     "w": "pas",
+     "start": 3.54,
+     "end": 3.66
+    },
+    {
+     "w": "leur",
+     "start": 3.66,
+     "end": 3.8
+    },
+    {
+     "w": "place",
+     "start": 3.8,
+     "end": 4.02
+    },
+    {
+     "w": "dans",
+     "start": 4.02,
+     "end": 4.18
+    },
+    {
+     "w": "la",
+     "start": 4.18,
+     "end": 4.28
+    },
+    {
+     "w": "poubelle",
+     "start": 4.28,
+     "end": 4.56
+    },
+    {
+     "w": "grise.",
+     "start": 4.56,
+     "end": 4.94
+    }
+   ]
+  },
+  {
+   "start": 5.26,
+   "end": 9.69,
+   "words": [
+    {
+     "w": "Depuis",
+     "start": 5.26,
+     "end": 5.63
+    },
+    {
+     "w": "le",
+     "start": 5.63,
+     "end": 5.73
+    },
+    {
+     "w": "premier",
+     "start": 5.73,
+     "end": 5.97
+    },
+    {
+     "w": "janvier",
+     "start": 5.97,
+     "end": 6.37
+    },
+    {
+     "w": "deux",
+     "start": 6.37,
+     "end": 6.51
+    },
+    {
+     "w": "mille",
+     "start": 6.51,
+     "end": 6.73
+    },
+    {
+     "w": "vingt-quatre,",
+     "start": 6.73,
+     "end": 7.19
+    },
+    {
+     "w": "le",
+     "start": 7.49,
+     "end": 7.55
+    },
+    {
+     "w": "tri",
+     "start": 7.55,
+     "end": 7.75
+    },
+    {
+     "w": "de",
+     "start": 7.75,
+     "end": 7.85
+    },
+    {
+     "w": "ces",
+     "start": 7.85,
+     "end": 7.99
+    },
+    {
+     "w": "restes",
+     "start": 7.99,
+     "end": 8.35
+    },
+    {
+     "w": "est",
+     "start": 8.35,
+     "end": 8.41
+    },
+    {
+     "w": "généralisé",
+     "start": 8.41,
+     "end": 8.97
+    },
+    {
+     "w": "en",
+     "start": 8.97,
+     "end": 9.09
+    },
+    {
+     "w": "France.",
+     "start": 9.09,
+     "end": 9.31
+    }
+   ]
+  },
+  {
+   "start": 9.87,
+   "end": 15.37,
+   "words": [
+    {
+     "w": "Aux",
+     "start": 9.87,
+     "end": 10.1
+    },
+    {
+     "w": "États-Unis,",
+     "start": 10.1,
+     "end": 10.54
+    },
+    {
+     "w": "des",
+     "start": 10.62,
+     "end": 10.7
+    },
+    {
+     "w": "services",
+     "start": 10.7,
+     "end": 10.98
+    },
+    {
+     "w": "installent",
+     "start": 10.98,
+     "end": 11.58
+    },
+    {
+     "w": "des",
+     "start": 11.58,
+     "end": 11.66
+    },
+    {
+     "w": "bacs",
+     "start": 11.66,
+     "end": 12.0
+    },
+    {
+     "w": "à",
+     "start": 12.0,
+     "end": 12.06
+    },
+    {
+     "w": "compost",
+     "start": 12.06,
+     "end": 12.36
+    },
+    {
+     "w": "chez",
+     "start": 12.36,
+     "end": 12.74
+    },
+    {
+     "w": "les",
+     "start": 12.74,
+     "end": 12.84
+    },
+    {
+     "w": "particuliers",
+     "start": 12.84,
+     "end": 13.46
+    },
+    {
+     "w": "et",
+     "start": 13.46,
+     "end": 13.6
+    },
+    {
+     "w": "les",
+     "start": 13.6,
+     "end": 13.7
+    },
+    {
+     "w": "restaurants,",
+     "start": 13.7,
+     "end": 14.06
+    },
+    {
+     "w": "puis",
+     "start": 14.42,
+     "end": 14.6
+    },
+    {
+     "w": "viennent",
+     "start": 14.6,
+     "end": 14.84
+    },
+    {
+     "w": "les",
+     "start": 14.84,
+     "end": 14.94
+    },
+    {
+     "w": "vider.",
+     "start": 14.94,
+     "end": 15.18
+    }
+   ]
+  },
+  {
+   "start": 15.55,
+   "end": 21.79,
+   "words": [
+    {
+     "w": "Toi,",
+     "start": 15.55,
+     "end": 15.95
+    },
+    {
+     "w": "tu",
+     "start": 16.31,
+     "end": 16.47
+    },
+    {
+     "w": "peux",
+     "start": 16.47,
+     "end": 16.65
+    },
+    {
+     "w": "installer",
+     "start": 16.65,
+     "end": 16.99
+    },
+    {
+     "w": "un",
+     "start": 16.99,
+     "end": 17.19
+    },
+    {
+     "w": "composteur,",
+     "start": 17.19,
+     "end": 17.85
+    },
+    {
+     "w": "expliquer",
+     "start": 18.09,
+     "end": 18.65
+    },
+    {
+     "w": "comment",
+     "start": 18.65,
+     "end": 18.89
+    },
+    {
+     "w": "l'utiliser,",
+     "start": 18.89,
+     "end": 19.59
+    },
+    {
+     "w": "et",
+     "start": 20.05,
+     "end": 20.1
+    },
+    {
+     "w": "passer",
+     "start": 20.09,
+     "end": 20.35
+    },
+    {
+     "w": "vérifier",
+     "start": 20.35,
+     "end": 20.87
+    },
+    {
+     "w": "qu'il",
+     "start": 20.87,
+     "end": 21.05
+    },
+    {
+     "w": "fonctionne",
+     "start": 21.05,
+     "end": 21.31
+    },
+    {
+     "w": "bien.",
+     "start": 21.31,
+     "end": 21.67
+    }
+   ]
+  },
+  {
+   "start": 21.97,
+   "end": 25.91,
+   "words": [
+    {
+     "w": "Ton",
+     "start": 21.97,
+     "end": 22.15
+    },
+    {
+     "w": "rôle,",
+     "start": 22.15,
+     "end": 22.37
+    },
+    {
+     "w": "c'est",
+     "start": 22.49,
+     "end": 22.61
+    },
+    {
+     "w": "le",
+     "start": 22.61,
+     "end": 22.71
+    },
+    {
+     "w": "conseil",
+     "start": 22.71,
+     "end": 23.25
+    },
+    {
+     "w": "emporter",
+     "start": 23.53,
+     "end": 23.87
+    },
+    {
+     "w": "les",
+     "start": 23.87,
+     "end": 24.05
+    },
+    {
+     "w": "déchets",
+     "start": 24.05,
+     "end": 24.35
+    },
+    {
+     "w": "des",
+     "start": 24.35,
+     "end": 24.45
+    },
+    {
+     "w": "autres",
+     "start": 24.45,
+     "end": 24.73
+    },
+    {
+     "w": "est",
+     "start": 24.73,
+     "end": 24.99
+    },
+    {
+     "w": "plus",
+     "start": 24.99,
+     "end": 25.23
+    },
+    {
+     "w": "encadré.",
+     "start": 25.23,
+     "end": 25.77
+    }
+   ]
+  },
+  {
+   "start": 26.09,
+   "end": 31.95,
+   "words": [
+    {
+     "w": "Si",
+     "start": 26.09,
+     "end": 26.27
+    },
+    {
+     "w": "tu",
+     "start": 26.27,
+     "end": 26.41
+    },
+    {
+     "w": "transportes",
+     "start": 26.41,
+     "end": 26.91
+    },
+    {
+     "w": "les",
+     "start": 26.91,
+     "end": 26.99
+    },
+    {
+     "w": "restes",
+     "start": 26.99,
+     "end": 27.31
+    },
+    {
+     "w": "d'autres",
+     "start": 27.31,
+     "end": 27.49
+    },
+    {
+     "w": "personnes,",
+     "start": 27.49,
+     "end": 28.01
+    },
+    {
+     "w": "tu",
+     "start": 28.25,
+     "end": 28.33
+    },
+    {
+     "w": "transportes",
+     "start": 28.33,
+     "end": 28.87
+    },
+    {
+     "w": "des",
+     "start": 28.87,
+     "end": 28.97
+    },
+    {
+     "w": "déchets,",
+     "start": 28.97,
+     "end": 29.47
+    },
+    {
+     "w": "et",
+     "start": 29.47,
+     "end": 29.63
+    },
+    {
+     "w": "la",
+     "start": 29.63,
+     "end": 29.75
+    },
+    {
+     "w": "règle",
+     "start": 29.75,
+     "end": 29.95
+    },
+    {
+     "w": "de",
+     "start": 29.95,
+     "end": 30.11
+    },
+    {
+     "w": "la",
+     "start": 30.11,
+     "end": 30.21
+    },
+    {
+     "w": "demi-tonne",
+     "start": 30.21,
+     "end": 30.75
+    },
+    {
+     "w": "par",
+     "start": 30.75,
+     "end": 30.87
+    },
+    {
+     "w": "chargement",
+     "start": 30.87,
+     "end": 31.31
+    },
+    {
+     "w": "s'applique.",
+     "start": 31.31,
+     "end": 31.81
+    }
+   ]
+  },
+  {
+   "start": 32.13,
+   "end": 38.02,
+   "words": [
+    {
+     "w": "Ta",
+     "start": 32.13,
+     "end": 32.28
+    },
+    {
+     "w": "commune",
+     "start": 32.28,
+     "end": 32.88
+    },
+    {
+     "w": "doit",
+     "start": 32.88,
+     "end": 32.98
+    },
+    {
+     "w": "proposer",
+     "start": 32.98,
+     "end": 33.5
+    },
+    {
+     "w": "une",
+     "start": 33.5,
+     "end": 33.58
+    },
+    {
+     "w": "solution",
+     "start": 33.58,
+     "end": 33.96
+    },
+    {
+     "w": "de",
+     "start": 33.96,
+     "end": 34.18
+    },
+    {
+     "w": "tri",
+     "start": 34.18,
+     "end": 34.46
+    },
+    {
+     "w": "renseigne-toi,",
+     "start": 34.78,
+     "end": 35.48
+    },
+    {
+     "w": "elle",
+     "start": 35.88,
+     "end": 36.0
+    },
+    {
+     "w": "propose",
+     "start": 36.0,
+     "end": 36.4
+    },
+    {
+     "w": "parfois",
+     "start": 36.4,
+     "end": 36.74
+    },
+    {
+     "w": "déjà",
+     "start": 36.74,
+     "end": 37.08
+    },
+    {
+     "w": "des",
+     "start": 37.08,
+     "end": 37.26
+    },
+    {
+     "w": "composteurs.",
+     "start": 37.26,
+     "end": 37.88
+    }
+   ]
+  },
+  {
+   "start": 38.2,
+   "end": 41.19,
+   "words": [
+    {
+     "w": "Le",
+     "start": 38.2,
+     "end": 38.35
+    },
+    {
+     "w": "réseau",
+     "start": 38.35,
+     "end": 38.67
+    },
+    {
+     "w": "compost",
+     "start": 38.67,
+     "end": 38.87
+    },
+    {
+     "w": "citoyen",
+     "start": 38.87,
+     "end": 39.49
+    },
+    {
+     "w": "propose",
+     "start": 39.49,
+     "end": 39.81
+    },
+    {
+     "w": "des",
+     "start": 39.81,
+     "end": 40.03
+    },
+    {
+     "w": "formations",
+     "start": 40.03,
+     "end": 40.45
+    },
+    {
+     "w": "pour",
+     "start": 40.45,
+     "end": 40.69
+    },
+    {
+     "w": "apprendre.",
+     "start": 40.69,
+     "end": 40.93
+    }
+   ]
+  },
+  {
+   "start": 41.37,
+   "end": 45.81,
+   "words": [
+    {
+     "w": "Un",
+     "start": 41.37,
+     "end": 41.53
+    },
+    {
+     "w": "bon",
+     "start": 41.53,
+     "end": 41.69
+    },
+    {
+     "w": "compost",
+     "start": 41.69,
+     "end": 42.03
+    },
+    {
+     "w": "mélange",
+     "start": 42.03,
+     "end": 42.59
+    },
+    {
+     "w": "des",
+     "start": 42.59,
+     "end": 42.69
+    },
+    {
+     "w": "matières",
+     "start": 42.69,
+     "end": 43.01
+    },
+    {
+     "w": "sèches",
+     "start": 43.01,
+     "end": 43.39
+    },
+    {
+     "w": "et",
+     "start": 43.39,
+     "end": 43.51
+    },
+    {
+     "w": "des",
+     "start": 43.51,
+     "end": 43.63
+    },
+    {
+     "w": "restes",
+     "start": 43.63,
+     "end": 44.01
+    },
+    {
+     "w": "humides,",
+     "start": 44.01,
+     "end": 44.33
+    },
+    {
+     "w": "remués",
+     "start": 44.61,
+     "end": 45.09
+    },
+    {
+     "w": "de",
+     "start": 45.09,
+     "end": 45.23
+    },
+    {
+     "w": "temps",
+     "start": 45.23,
+     "end": 45.37
+    },
+    {
+     "w": "en",
+     "start": 45.37,
+     "end": 45.53
+    },
+    {
+     "w": "temps.",
+     "start": 45.53,
+     "end": 45.71
+    }
+   ]
+  },
+  {
+   "start": 45.99,
+   "end": 50.49,
+   "words": [
+    {
+     "w": "Le",
+     "start": 45.99,
+     "end": 46.16
+    },
+    {
+     "w": "piège",
+     "start": 46.16,
+     "end": 46.66
+    },
+    {
+     "w": "un",
+     "start": 46.88,
+     "end": 47.0
+    },
+    {
+     "w": "compost",
+     "start": 47.0,
+     "end": 47.28
+    },
+    {
+     "w": "mal",
+     "start": 47.28,
+     "end": 47.66
+    },
+    {
+     "w": "tenu",
+     "start": 47.66,
+     "end": 48.0
+    },
+    {
+     "w": "sent",
+     "start": 48.0,
+     "end": 48.12
+    },
+    {
+     "w": "mauvais,",
+     "start": 48.12,
+     "end": 48.44
+    },
+    {
+     "w": "attire",
+     "start": 48.8,
+     "end": 49.06
+    },
+    {
+     "w": "les",
+     "start": 49.06,
+     "end": 49.18
+    },
+    {
+     "w": "mouches",
+     "start": 49.18,
+     "end": 49.6
+    },
+    {
+     "w": "et",
+     "start": 49.6,
+     "end": 49.68
+    },
+    {
+     "w": "fâche",
+     "start": 49.68,
+     "end": 49.92
+    },
+    {
+     "w": "les",
+     "start": 49.92,
+     "end": 50.02
+    },
+    {
+     "w": "voisins.",
+     "start": 50.02,
+     "end": 50.36
+    }
+   ]
+  }
+ ]
+}

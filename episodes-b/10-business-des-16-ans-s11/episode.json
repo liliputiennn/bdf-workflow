@@ -1,0 +1,64 @@
+{
+ "id": "10-business-des-16-ans-s11",
+ "titre": "Junior association : ce que tu peux diriger avant dix-huit ans",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "JUNIOR ASSOCIATION",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Idée suivante : monter une junior association pour mener un projet entre jeunes.",
+  "Ce n'est pas une entreprise : c'est un label pour des projets menés par des jeunes de moins de dix-huit ans.",
+  "La majorité des membres doivent avoir moins de dix-huit ans, et des mineurs doivent avoir des responsabilités.",
+  "Le label est reconnu pour un an, puis il se renouvelle.",
+  "Tu peux ouvrir un compte bancaire au nom du groupe, et une assurance gratuite couvre les activités.",
+  "La règle de loi : dès seize ans, tu peux créer et diriger une association, mais tu dois informer tes parents, qui peuvent s'y opposer.",
+  "Tu peux gérer les actes courants, mais pas les actes lourds comme un emprunt.",
+  "Le relais de ton département peut préparer le projet avec toi."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "junior",
+     "association"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 4,
+   "params": {
+    "titre": "CE QUE ÇA DONNE",
+    "items": [
+     {
+      "texte": "Un label d'un an"
+     },
+     {
+      "texte": "Un compte au nom du groupe"
+     },
+     {
+      "texte": "Une assurance gratuite"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 6,
+   "params": {
+    "question": "Qui doit être prévenu ?",
+    "pistes": [
+     "Tes parents",
+     "Ils peuvent s'opposer",
+     "Avant la déclaration"
+    ]
+   }
+  }
+ ]
+}

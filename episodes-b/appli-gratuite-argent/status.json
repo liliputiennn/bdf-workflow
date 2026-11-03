@@ -1,6 +1,6 @@
 {
- "etat": "pret",
- "maj": "2026-11-03T21:50:48",
+ "etat": "publie",
+ "maj": "2026-11-03T18:00:20",
  "raison": null,
  "tentatives": 0,
  "youtube": {
@@ -13,7 +13,7 @@
  "miniature": {
   "source": "auto",
   "fichier": "miniature.png",
-  "style": "createur",
-  "octets": 731074
+  "style": "chiffre",
+  "octets": 410101
  }
 }

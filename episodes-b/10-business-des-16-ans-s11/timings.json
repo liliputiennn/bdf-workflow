@@ -1,0 +1,683 @@
+{
+ "total": 35.29,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 4.68,
+   "words": [
+    {
+     "w": "Idée",
+     "start": 0.15,
+     "end": 0.45
+    },
+    {
+     "w": "suivante",
+     "start": 0.45,
+     "end": 0.97
+    },
+    {
+     "w": "monter",
+     "start": 1.25,
+     "end": 1.55
+    },
+    {
+     "w": "une",
+     "start": 1.55,
+     "end": 1.77
+    },
+    {
+     "w": "junior",
+     "start": 1.77,
+     "end": 2.03
+    },
+    {
+     "w": "association",
+     "start": 2.03,
+     "end": 2.57
+    },
+    {
+     "w": "pour",
+     "start": 2.57,
+     "end": 2.93
+    },
+    {
+     "w": "mener",
+     "start": 2.93,
+     "end": 3.27
+    },
+    {
+     "w": "un",
+     "start": 3.27,
+     "end": 3.35
+    },
+    {
+     "w": "projet",
+     "start": 3.35,
+     "end": 3.71
+    },
+    {
+     "w": "entre",
+     "start": 3.71,
+     "end": 4.11
+    },
+    {
+     "w": "jeunes.",
+     "start": 4.11,
+     "end": 4.39
+    }
+   ]
+  },
+  {
+   "start": 4.86,
+   "end": 9.1,
+   "words": [
+    {
+     "w": "Ce",
+     "start": 4.86,
+     "end": 5.04
+    },
+    {
+     "w": "n'est",
+     "start": 5.04,
+     "end": 5.16
+    },
+    {
+     "w": "pas",
+     "start": 5.16,
+     "end": 5.24
+    },
+    {
+     "w": "une",
+     "start": 5.24,
+     "end": 5.4
+    },
+    {
+     "w": "entreprise",
+     "start": 5.4,
+     "end": 5.92
+    },
+    {
+     "w": "c'est",
+     "start": 6.14,
+     "end": 6.28
+    },
+    {
+     "w": "un",
+     "start": 6.28,
+     "end": 6.4
+    },
+    {
+     "w": "label",
+     "start": 6.4,
+     "end": 6.62
+    },
+    {
+     "w": "pour",
+     "start": 6.62,
+     "end": 6.86
+    },
+    {
+     "w": "des",
+     "start": 6.86,
+     "end": 6.98
+    },
+    {
+     "w": "projets",
+     "start": 6.98,
+     "end": 7.24
+    },
+    {
+     "w": "menés",
+     "start": 7.24,
+     "end": 7.54
+    },
+    {
+     "w": "par",
+     "start": 7.54,
+     "end": 7.64
+    },
+    {
+     "w": "des",
+     "start": 7.64,
+     "end": 7.8
+    },
+    {
+     "w": "jeunes",
+     "start": 7.8,
+     "end": 8.02
+    },
+    {
+     "w": "de",
+     "start": 8.02,
+     "end": 8.2
+    },
+    {
+     "w": "moins",
+     "start": 8.2,
+     "end": 8.34
+    },
+    {
+     "w": "de",
+     "start": 8.34,
+     "end": 8.52
+    },
+    {
+     "w": "dix-huit",
+     "start": 8.52,
+     "end": 8.84
+    },
+    {
+     "w": "ans.",
+     "start": 8.84,
+     "end": 8.98
+    }
+   ]
+  },
+  {
+   "start": 9.28,
+   "end": 14.21,
+   "words": [
+    {
+     "w": "La",
+     "start": 9.28,
+     "end": 9.45
+    },
+    {
+     "w": "majorité",
+     "start": 9.45,
+     "end": 9.89
+    },
+    {
+     "w": "des",
+     "start": 9.89,
+     "end": 10.01
+    },
+    {
+     "w": "membres",
+     "start": 10.01,
+     "end": 10.33
+    },
+    {
+     "w": "doivent",
+     "start": 10.33,
+     "end": 10.47
+    },
+    {
+     "w": "avoir",
+     "start": 10.47,
+     "end": 10.83
+    },
+    {
+     "w": "moins",
+     "start": 10.83,
+     "end": 11.07
+    },
+    {
+     "w": "de",
+     "start": 11.07,
+     "end": 11.27
+    },
+    {
+     "w": "dix-huit",
+     "start": 11.27,
+     "end": 11.63
+    },
+    {
+     "w": "ans,",
+     "start": 11.63,
+     "end": 11.77
+    },
+    {
+     "w": "et",
+     "start": 11.89,
+     "end": 12.11
+    },
+    {
+     "w": "des",
+     "start": 12.11,
+     "end": 12.23
+    },
+    {
+     "w": "mineurs",
+     "start": 12.23,
+     "end": 12.57
+    },
+    {
+     "w": "doivent",
+     "start": 12.57,
+     "end": 12.75
+    },
+    {
+     "w": "avoir",
+     "start": 12.75,
+     "end": 13.09
+    },
+    {
+     "w": "des",
+     "start": 13.09,
+     "end": 13.21
+    },
+    {
+     "w": "responsabilités.",
+     "start": 13.21,
+     "end": 13.99
+    }
+   ]
+  },
+  {
+   "start": 14.39,
+   "end": 16.98,
+   "words": [
+    {
+     "w": "Le",
+     "start": 14.39,
+     "end": 14.56
+    },
+    {
+     "w": "label",
+     "start": 14.56,
+     "end": 14.8
+    },
+    {
+     "w": "est",
+     "start": 14.8,
+     "end": 15.06
+    },
+    {
+     "w": "reconnu",
+     "start": 15.06,
+     "end": 15.46
+    },
+    {
+     "w": "pour",
+     "start": 15.46,
+     "end": 15.62
+    },
+    {
+     "w": "un",
+     "start": 15.62,
+     "end": 15.8
+    },
+    {
+     "w": "an,",
+     "start": 15.8,
+     "end": 15.96
+    },
+    {
+     "w": "puis",
+     "start": 15.96,
+     "end": 16.08
+    },
+    {
+     "w": "il",
+     "start": 16.08,
+     "end": 16.2
+    },
+    {
+     "w": "se",
+     "start": 16.2,
+     "end": 16.34
+    },
+    {
+     "w": "renouvelle.",
+     "start": 16.34,
+     "end": 16.82
+    }
+   ]
+  },
+  {
+   "start": 17.16,
+   "end": 22.11,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 17.16,
+     "end": 17.31
+    },
+    {
+     "w": "peux",
+     "start": 17.31,
+     "end": 17.49
+    },
+    {
+     "w": "ouvrir",
+     "start": 17.49,
+     "end": 17.83
+    },
+    {
+     "w": "un",
+     "start": 17.83,
+     "end": 17.97
+    },
+    {
+     "w": "compte",
+     "start": 17.97,
+     "end": 18.19
+    },
+    {
+     "w": "bancaire",
+     "start": 18.19,
+     "end": 18.75
+    },
+    {
+     "w": "au",
+     "start": 18.75,
+     "end": 18.93
+    },
+    {
+     "w": "nom",
+     "start": 18.93,
+     "end": 19.07
+    },
+    {
+     "w": "du",
+     "start": 19.07,
+     "end": 19.21
+    },
+    {
+     "w": "groupe,",
+     "start": 19.21,
+     "end": 19.49
+    },
+    {
+     "w": "et",
+     "start": 19.71,
+     "end": 19.91
+    },
+    {
+     "w": "une",
+     "start": 19.91,
+     "end": 20.05
+    },
+    {
+     "w": "assurance",
+     "start": 20.05,
+     "end": 20.31
+    },
+    {
+     "w": "gratuite",
+     "start": 20.31,
+     "end": 20.89
+    },
+    {
+     "w": "couvre",
+     "start": 20.89,
+     "end": 21.31
+    },
+    {
+     "w": "les",
+     "start": 21.31,
+     "end": 21.43
+    },
+    {
+     "w": "activités.",
+     "start": 21.43,
+     "end": 21.99
+    }
+   ]
+  },
+  {
+   "start": 22.29,
+   "end": 28.99,
+   "words": [
+    {
+     "w": "La",
+     "start": 22.29,
+     "end": 22.48
+    },
+    {
+     "w": "règle",
+     "start": 22.48,
+     "end": 22.7
+    },
+    {
+     "w": "de",
+     "start": 22.7,
+     "end": 22.84
+    },
+    {
+     "w": "loi",
+     "start": 22.84,
+     "end": 23.06
+    },
+    {
+     "w": "dès",
+     "start": 23.56,
+     "end": 23.74
+    },
+    {
+     "w": "seize",
+     "start": 23.74,
+     "end": 23.98
+    },
+    {
+     "w": "ans,",
+     "start": 23.98,
+     "end": 24.2
+    },
+    {
+     "w": "tu",
+     "start": 24.26,
+     "end": 24.34
+    },
+    {
+     "w": "peux",
+     "start": 24.34,
+     "end": 24.46
+    },
+    {
+     "w": "créer",
+     "start": 24.46,
+     "end": 24.76
+    },
+    {
+     "w": "et",
+     "start": 24.76,
+     "end": 25.06
+    },
+    {
+     "w": "diriger",
+     "start": 25.06,
+     "end": 25.5
+    },
+    {
+     "w": "une",
+     "start": 25.5,
+     "end": 25.6
+    },
+    {
+     "w": "association,",
+     "start": 25.6,
+     "end": 26.02
+    },
+    {
+     "w": "mais",
+     "start": 26.44,
+     "end": 26.54
+    },
+    {
+     "w": "tu",
+     "start": 26.54,
+     "end": 26.66
+    },
+    {
+     "w": "dois",
+     "start": 26.66,
+     "end": 26.8
+    },
+    {
+     "w": "informer",
+     "start": 26.8,
+     "end": 27.38
+    },
+    {
+     "w": "tes",
+     "start": 27.38,
+     "end": 27.44
+    },
+    {
+     "w": "parents,",
+     "start": 27.44,
+     "end": 27.76
+    },
+    {
+     "w": "qui",
+     "start": 27.84,
+     "end": 28.02
+    },
+    {
+     "w": "peuvent",
+     "start": 28.02,
+     "end": 28.2
+    },
+    {
+     "w": "s'y",
+     "start": 28.2,
+     "end": 28.42
+    },
+    {
+     "w": "opposer.",
+     "start": 28.42,
+     "end": 28.9
+    }
+   ]
+  },
+  {
+   "start": 29.17,
+   "end": 32.19,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 29.17,
+     "end": 29.32
+    },
+    {
+     "w": "peux",
+     "start": 29.32,
+     "end": 29.46
+    },
+    {
+     "w": "gérer",
+     "start": 29.46,
+     "end": 29.7
+    },
+    {
+     "w": "les",
+     "start": 29.7,
+     "end": 29.82
+    },
+    {
+     "w": "actes",
+     "start": 29.82,
+     "end": 30.1
+    },
+    {
+     "w": "courants,",
+     "start": 30.1,
+     "end": 30.46
+    },
+    {
+     "w": "mais",
+     "start": 30.58,
+     "end": 30.66
+    },
+    {
+     "w": "pas",
+     "start": 30.66,
+     "end": 30.84
+    },
+    {
+     "w": "les",
+     "start": 30.84,
+     "end": 30.96
+    },
+    {
+     "w": "actes",
+     "start": 30.96,
+     "end": 31.28
+    },
+    {
+     "w": "lourds",
+     "start": 31.28,
+     "end": 31.56
+    },
+    {
+     "w": "comme",
+     "start": 31.56,
+     "end": 31.66
+    },
+    {
+     "w": "un",
+     "start": 31.66,
+     "end": 31.78
+    },
+    {
+     "w": "emprunt.",
+     "start": 31.78,
+     "end": 32.1
+    }
+   ]
+  },
+  {
+   "start": 32.37,
+   "end": 34.99,
+   "words": [
+    {
+     "w": "Le",
+     "start": 32.37,
+     "end": 32.52
+    },
+    {
+     "w": "relais",
+     "start": 32.52,
+     "end": 32.82
+    },
+    {
+     "w": "de",
+     "start": 32.82,
+     "end": 32.88
+    },
+    {
+     "w": "ton",
+     "start": 32.88,
+     "end": 33.04
+    },
+    {
+     "w": "département",
+     "start": 33.04,
+     "end": 33.54
+    },
+    {
+     "w": "peut",
+     "start": 33.54,
+     "end": 33.7
+    },
+    {
+     "w": "préparer",
+     "start": 33.7,
+     "end": 34.1
+    },
+    {
+     "w": "le",
+     "start": 34.1,
+     "end": 34.16
+    },
+    {
+     "w": "projet",
+     "start": 34.16,
+     "end": 34.46
+    },
+    {
+     "w": "avec",
+     "start": 34.46,
+     "end": 34.6
+    },
+    {
+     "w": "toi.",
+     "start": 34.6,
+     "end": 34.84
+    }
+   ]
+  }
+ ]
+}

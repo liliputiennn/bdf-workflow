@@ -1,0 +1,815 @@
+{
+ "total": 46.9,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 6.34,
+   "words": [
+    {
+     "w": "Un",
+     "start": 0.15,
+     "end": 0.3
+    },
+    {
+     "w": "canapé",
+     "start": 0.3,
+     "end": 0.72
+    },
+    {
+     "w": "cassé,",
+     "start": 0.72,
+     "end": 1.1
+    },
+    {
+     "w": "un",
+     "start": 1.38,
+     "end": 1.46
+    },
+    {
+     "w": "frigo",
+     "start": 1.46,
+     "end": 1.78
+    },
+    {
+     "w": "vide,",
+     "start": 1.78,
+     "end": 2.08
+    },
+    {
+     "w": "des",
+     "start": 2.56,
+     "end": 2.64
+    },
+    {
+     "w": "cartons",
+     "start": 2.64,
+     "end": 3.04
+    },
+    {
+     "w": "oubliés",
+     "start": 3.04,
+     "end": 3.6
+    },
+    {
+     "w": "les",
+     "start": 3.88,
+     "end": 4.02
+    },
+    {
+     "w": "gens",
+     "start": 4.02,
+     "end": 4.18
+    },
+    {
+     "w": "veulent",
+     "start": 4.18,
+     "end": 4.38
+    },
+    {
+     "w": "s'en",
+     "start": 4.38,
+     "end": 4.56
+    },
+    {
+     "w": "débarrasser",
+     "start": 4.56,
+     "end": 5.12
+    },
+    {
+     "w": "sans",
+     "start": 5.12,
+     "end": 5.34
+    },
+    {
+     "w": "aller",
+     "start": 5.34,
+     "end": 5.62
+    },
+    {
+     "w": "à",
+     "start": 5.62,
+     "end": 5.7
+    },
+    {
+     "w": "la",
+     "start": 5.7,
+     "end": 5.76
+    },
+    {
+     "w": "déchèterie.",
+     "start": 5.76,
+     "end": 6.26
+    }
+   ]
+  },
+  {
+   "start": 6.52,
+   "end": 12.09,
+   "words": [
+    {
+     "w": "Aux",
+     "start": 6.52,
+     "end": 6.73
+    },
+    {
+     "w": "États-Unis,",
+     "start": 6.73,
+     "end": 7.21
+    },
+    {
+     "w": "des",
+     "start": 7.49,
+     "end": 7.65
+    },
+    {
+     "w": "camions",
+     "start": 7.65,
+     "end": 7.91
+    },
+    {
+     "w": "passent",
+     "start": 7.91,
+     "end": 8.25
+    },
+    {
+     "w": "chez",
+     "start": 8.25,
+     "end": 8.35
+    },
+    {
+     "w": "le",
+     "start": 8.35,
+     "end": 8.45
+    },
+    {
+     "w": "client,",
+     "start": 8.45,
+     "end": 8.77
+    },
+    {
+     "w": "chargent",
+     "start": 9.07,
+     "end": 9.41
+    },
+    {
+     "w": "tout",
+     "start": 9.41,
+     "end": 9.69
+    },
+    {
+     "w": "et",
+     "start": 9.69,
+     "end": 9.85
+    },
+    {
+     "w": "trient",
+     "start": 9.85,
+     "end": 10.13
+    },
+    {
+     "w": "ce",
+     "start": 10.13,
+     "end": 10.18
+    },
+    {
+     "w": "qui",
+     "start": 10.17,
+     "end": 10.33
+    },
+    {
+     "w": "peut",
+     "start": 10.33,
+     "end": 10.51
+    },
+    {
+     "w": "être",
+     "start": 10.51,
+     "end": 10.67
+    },
+    {
+     "w": "donné",
+     "start": 10.67,
+     "end": 11.03
+    },
+    {
+     "w": "ou",
+     "start": 11.03,
+     "end": 11.47
+    },
+    {
+     "w": "recyclé.",
+     "start": 11.47,
+     "end": 12.01
+    }
+   ]
+  },
+  {
+   "start": 12.27,
+   "end": 15.56,
+   "words": [
+    {
+     "w": "Le",
+     "start": 12.27,
+     "end": 12.45
+    },
+    {
+     "w": "point",
+     "start": 12.45,
+     "end": 12.65
+    },
+    {
+     "w": "de",
+     "start": 12.65,
+     "end": 12.79
+    },
+    {
+     "w": "loi",
+     "start": 12.79,
+     "end": 13.03
+    },
+    {
+     "w": "transporter",
+     "start": 13.37,
+     "end": 13.95
+    },
+    {
+     "w": "des",
+     "start": 13.95,
+     "end": 14.15
+    },
+    {
+     "w": "déchets",
+     "start": 14.15,
+     "end": 14.63
+    },
+    {
+     "w": "est",
+     "start": 14.63,
+     "end": 14.79
+    },
+    {
+     "w": "encadré.",
+     "start": 14.79,
+     "end": 15.41
+    }
+   ]
+  },
+  {
+   "start": 15.74,
+   "end": 21.01,
+   "words": [
+    {
+     "w": "Au-delà",
+     "start": 15.74,
+     "end": 16.01
+    },
+    {
+     "w": "d'une",
+     "start": 16.01,
+     "end": 16.43
+    },
+    {
+     "w": "demi-tonne",
+     "start": 16.43,
+     "end": 16.85
+    },
+    {
+     "w": "de",
+     "start": 16.85,
+     "end": 16.91
+    },
+    {
+     "w": "déchets",
+     "start": 16.91,
+     "end": 17.27
+    },
+    {
+     "w": "non",
+     "start": 17.27,
+     "end": 17.45
+    },
+    {
+     "w": "dangereux",
+     "start": 17.45,
+     "end": 17.89
+    },
+    {
+     "w": "par",
+     "start": 17.89,
+     "end": 18.01
+    },
+    {
+     "w": "chargement,",
+     "start": 18.01,
+     "end": 18.45
+    },
+    {
+     "w": "tu",
+     "start": 18.45,
+     "end": 18.85
+    },
+    {
+     "w": "dois",
+     "start": 18.85,
+     "end": 18.99
+    },
+    {
+     "w": "déclarer",
+     "start": 18.99,
+     "end": 19.47
+    },
+    {
+     "w": "ton",
+     "start": 19.47,
+     "end": 19.57
+    },
+    {
+     "w": "activité",
+     "start": 19.57,
+     "end": 20.15
+    },
+    {
+     "w": "à",
+     "start": 20.15,
+     "end": 20.25
+    },
+    {
+     "w": "la",
+     "start": 20.25,
+     "end": 20.31
+    },
+    {
+     "w": "préfecture.",
+     "start": 20.31,
+     "end": 20.67
+    }
+   ]
+  },
+  {
+   "start": 21.19,
+   "end": 24.75,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 21.19,
+     "end": 21.35
+    },
+    {
+     "w": "dois",
+     "start": 21.35,
+     "end": 21.53
+    },
+    {
+     "w": "aussi",
+     "start": 21.53,
+     "end": 21.75
+    },
+    {
+     "w": "savoir",
+     "start": 21.75,
+     "end": 22.05
+    },
+    {
+     "w": "où",
+     "start": 22.05,
+     "end": 22.39
+    },
+    {
+     "w": "tu",
+     "start": 22.39,
+     "end": 22.53
+    },
+    {
+     "w": "les",
+     "start": 22.53,
+     "end": 22.65
+    },
+    {
+     "w": "déposes,",
+     "start": 22.65,
+     "end": 23.13
+    },
+    {
+     "w": "et",
+     "start": 23.37,
+     "end": 23.43
+    },
+    {
+     "w": "garder",
+     "start": 23.43,
+     "end": 23.69
+    },
+    {
+     "w": "une",
+     "start": 23.69,
+     "end": 23.87
+    },
+    {
+     "w": "preuve",
+     "start": 23.87,
+     "end": 24.21
+    },
+    {
+     "w": "de",
+     "start": 24.21,
+     "end": 24.33
+    },
+    {
+     "w": "dépôt.",
+     "start": 24.33,
+     "end": 24.73
+    }
+   ]
+  },
+  {
+   "start": 24.93,
+   "end": 29.39,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 24.93,
+     "end": 25.09
+    },
+    {
+     "w": "les",
+     "start": 25.09,
+     "end": 25.21
+    },
+    {
+     "w": "déchets",
+     "start": 25.21,
+     "end": 25.55
+    },
+    {
+     "w": "dangereux,",
+     "start": 25.55,
+     "end": 26.11
+    },
+    {
+     "w": "comme",
+     "start": 26.31,
+     "end": 26.39
+    },
+    {
+     "w": "les",
+     "start": 26.39,
+     "end": 26.51
+    },
+    {
+     "w": "peintures",
+     "start": 26.51,
+     "end": 27.01
+    },
+    {
+     "w": "ou",
+     "start": 27.01,
+     "end": 27.13
+    },
+    {
+     "w": "les",
+     "start": 27.13,
+     "end": 27.25
+    },
+    {
+     "w": "batteries,",
+     "start": 27.25,
+     "end": 27.49
+    },
+    {
+     "w": "le",
+     "start": 28.01,
+     "end": 28.09
+    },
+    {
+     "w": "seuil",
+     "start": 28.09,
+     "end": 28.53
+    },
+    {
+     "w": "est",
+     "start": 28.53,
+     "end": 28.67
+    },
+    {
+     "w": "bien",
+     "start": 28.67,
+     "end": 28.89
+    },
+    {
+     "w": "plus",
+     "start": 28.89,
+     "end": 29.07
+    },
+    {
+     "w": "bas.",
+     "start": 29.07,
+     "end": 29.25
+    }
+   ]
+  },
+  {
+   "start": 29.57,
+   "end": 33.68,
+   "words": [
+    {
+     "w": "Jeter",
+     "start": 29.57,
+     "end": 29.92
+    },
+    {
+     "w": "ses",
+     "start": 29.92,
+     "end": 30.06
+    },
+    {
+     "w": "déchets",
+     "start": 30.06,
+     "end": 30.36
+    },
+    {
+     "w": "n'importe",
+     "start": 30.36,
+     "end": 30.66
+    },
+    {
+     "w": "où",
+     "start": 30.66,
+     "end": 30.9
+    },
+    {
+     "w": "est",
+     "start": 30.9,
+     "end": 31.02
+    },
+    {
+     "w": "puni",
+     "start": 31.02,
+     "end": 31.38
+    },
+    {
+     "w": "l'amende",
+     "start": 31.76,
+     "end": 32.1
+    },
+    {
+     "w": "peut",
+     "start": 32.1,
+     "end": 32.28
+    },
+    {
+     "w": "aller",
+     "start": 32.28,
+     "end": 32.42
+    },
+    {
+     "w": "jusqu'à",
+     "start": 32.42,
+     "end": 32.78
+    },
+    {
+     "w": "mille",
+     "start": 32.78,
+     "end": 33.04
+    },
+    {
+     "w": "cinq",
+     "start": 33.04,
+     "end": 33.12
+    },
+    {
+     "w": "cents",
+     "start": 33.12,
+     "end": 33.3
+    },
+    {
+     "w": "euros.",
+     "start": 33.3,
+     "end": 33.5
+    }
+   ]
+  },
+  {
+   "start": 33.86,
+   "end": 36.68,
+   "words": [
+    {
+     "w": "Un",
+     "start": 33.86,
+     "end": 34.04
+    },
+    {
+     "w": "site",
+     "start": 34.04,
+     "end": 34.22
+    },
+    {
+     "w": "de",
+     "start": 34.22,
+     "end": 34.34
+    },
+    {
+     "w": "l'État,",
+     "start": 34.34,
+     "end": 34.7
+    },
+    {
+     "w": "Trackdéchets,",
+     "start": 34.8,
+     "end": 35.4
+    },
+    {
+     "w": "sert",
+     "start": 35.52,
+     "end": 35.64
+    },
+    {
+     "w": "à",
+     "start": 35.64,
+     "end": 35.76
+    },
+    {
+     "w": "suivre",
+     "start": 35.76,
+     "end": 35.98
+    },
+    {
+     "w": "les",
+     "start": 35.98,
+     "end": 36.18
+    },
+    {
+     "w": "déchets.",
+     "start": 36.18,
+     "end": 36.58
+    }
+   ]
+  },
+  {
+   "start": 36.86,
+   "end": 40.74,
+   "words": [
+    {
+     "w": "Le",
+     "start": 36.86,
+     "end": 37.03
+    },
+    {
+     "w": "site",
+     "start": 37.03,
+     "end": 37.19
+    },
+    {
+     "w": "de",
+     "start": 37.19,
+     "end": 37.31
+    },
+    {
+     "w": "l'agence",
+     "start": 37.31,
+     "end": 37.65
+    },
+    {
+     "w": "de",
+     "start": 37.65,
+     "end": 37.77
+    },
+    {
+     "w": "la",
+     "start": 37.77,
+     "end": 37.87
+    },
+    {
+     "w": "transition",
+     "start": 37.87,
+     "end": 38.25
+    },
+    {
+     "w": "écologique",
+     "start": 38.25,
+     "end": 38.79
+    },
+    {
+     "w": "indique",
+     "start": 38.79,
+     "end": 39.41
+    },
+    {
+     "w": "où",
+     "start": 39.41,
+     "end": 39.63
+    },
+    {
+     "w": "déposer",
+     "start": 39.63,
+     "end": 40.03
+    },
+    {
+     "w": "chaque",
+     "start": 40.03,
+     "end": 40.25
+    },
+    {
+     "w": "objet.",
+     "start": 40.25,
+     "end": 40.57
+    }
+   ]
+  },
+  {
+   "start": 40.92,
+   "end": 46.6,
+   "words": [
+    {
+     "w": "Le",
+     "start": 40.92,
+     "end": 41.09
+    },
+    {
+     "w": "piège",
+     "start": 41.09,
+     "end": 41.49
+    },
+    {
+     "w": "un",
+     "start": 41.79,
+     "end": 41.93
+    },
+    {
+     "w": "camion,",
+     "start": 41.93,
+     "end": 42.37
+    },
+    {
+     "w": "du",
+     "start": 42.63,
+     "end": 42.71
+    },
+    {
+     "w": "carburant",
+     "start": 42.71,
+     "end": 43.27
+    },
+    {
+     "w": "et",
+     "start": 43.27,
+     "end": 43.39
+    },
+    {
+     "w": "les",
+     "start": 43.39,
+     "end": 43.49
+    },
+    {
+     "w": "frais",
+     "start": 43.49,
+     "end": 43.75
+    },
+    {
+     "w": "de",
+     "start": 43.75,
+     "end": 43.81
+    },
+    {
+     "w": "déchèterie",
+     "start": 43.81,
+     "end": 44.43
+    },
+    {
+     "w": "coûtent",
+     "start": 44.43,
+     "end": 44.81
+    },
+    {
+     "w": "cher",
+     "start": 44.81,
+     "end": 45.09
+    },
+    {
+     "w": "avant",
+     "start": 45.09,
+     "end": 45.41
+    },
+    {
+     "w": "même",
+     "start": 45.41,
+     "end": 45.71
+    },
+    {
+     "w": "le",
+     "start": 45.71,
+     "end": 45.85
+    },
+    {
+     "w": "premier",
+     "start": 45.85,
+     "end": 46.11
+    },
+    {
+     "w": "client.",
+     "start": 46.11,
+     "end": 46.41
+    }
+   ]
+  }
+ ]
+}

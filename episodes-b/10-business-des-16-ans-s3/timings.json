@@ -1,0 +1,597 @@
+{
+ "total": 31.01,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 4.99,
+   "words": [
+    {
+     "w": "Idée",
+     "start": 0.15,
+     "end": 0.45
+    },
+    {
+     "w": "suivante",
+     "start": 0.45,
+     "end": 1.03
+    },
+    {
+     "w": "écrire",
+     "start": 1.25,
+     "end": 1.51
+    },
+    {
+     "w": "le",
+     "start": 1.51,
+     "end": 1.71
+    },
+    {
+     "w": "livre",
+     "start": 1.71,
+     "end": 1.91
+    },
+    {
+     "w": "de",
+     "start": 1.91,
+     "end": 2.11
+    },
+    {
+     "w": "vie",
+     "start": 2.11,
+     "end": 2.27
+    },
+    {
+     "w": "d'un",
+     "start": 2.27,
+     "end": 2.57
+    },
+    {
+     "w": "grand-parent,",
+     "start": 2.57,
+     "end": 2.87
+    },
+    {
+     "w": "ou",
+     "start": 3.33,
+     "end": 3.41
+    },
+    {
+     "w": "d'une",
+     "start": 3.41,
+     "end": 3.55
+    },
+    {
+     "w": "personne",
+     "start": 3.55,
+     "end": 3.79
+    },
+    {
+     "w": "âgée",
+     "start": 3.79,
+     "end": 4.13
+    },
+    {
+     "w": "de",
+     "start": 4.13,
+     "end": 4.25
+    },
+    {
+     "w": "ton",
+     "start": 4.25,
+     "end": 4.37
+    },
+    {
+     "w": "entourage.",
+     "start": 4.37,
+     "end": 4.71
+    }
+   ]
+  },
+  {
+   "start": 5.17,
+   "end": 8.63,
+   "words": [
+    {
+     "w": "Beaucoup",
+     "start": 5.17,
+     "end": 5.53
+    },
+    {
+     "w": "de",
+     "start": 5.53,
+     "end": 5.59
+    },
+    {
+     "w": "familles",
+     "start": 5.59,
+     "end": 5.87
+    },
+    {
+     "w": "aimeraient",
+     "start": 5.87,
+     "end": 6.15
+    },
+    {
+     "w": "garder",
+     "start": 6.15,
+     "end": 6.41
+    },
+    {
+     "w": "ces",
+     "start": 6.41,
+     "end": 6.63
+    },
+    {
+     "w": "souvenirs,",
+     "start": 6.63,
+     "end": 7.17
+    },
+    {
+     "w": "mais",
+     "start": 7.27,
+     "end": 7.35
+    },
+    {
+     "w": "personne",
+     "start": 7.35,
+     "end": 7.77
+    },
+    {
+     "w": "n'ose",
+     "start": 7.77,
+     "end": 8.0
+    },
+    {
+     "w": "s'y",
+     "start": 8.0,
+     "end": 8.23
+    },
+    {
+     "w": "mettre.",
+     "start": 8.23,
+     "end": 8.43
+    }
+   ]
+  },
+  {
+   "start": 8.81,
+   "end": 12.98,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 8.81,
+     "end": 8.94
+    },
+    {
+     "w": "enregistres",
+     "start": 8.94,
+     "end": 9.42
+    },
+    {
+     "w": "des",
+     "start": 9.42,
+     "end": 9.5
+    },
+    {
+     "w": "conversations,",
+     "start": 9.5,
+     "end": 9.98
+    },
+    {
+     "w": "tu",
+     "start": 10.28,
+     "end": 10.34
+    },
+    {
+     "w": "les",
+     "start": 10.34,
+     "end": 10.46
+    },
+    {
+     "w": "écris,",
+     "start": 10.46,
+     "end": 10.88
+    },
+    {
+     "w": "puis",
+     "start": 11.1,
+     "end": 11.2
+    },
+    {
+     "w": "tu",
+     "start": 11.2,
+     "end": 11.36
+    },
+    {
+     "w": "les",
+     "start": 11.36,
+     "end": 11.46
+    },
+    {
+     "w": "mets",
+     "start": 11.46,
+     "end": 11.6
+    },
+    {
+     "w": "en",
+     "start": 11.6,
+     "end": 11.74
+    },
+    {
+     "w": "page",
+     "start": 11.74,
+     "end": 12.02
+    },
+    {
+     "w": "dans",
+     "start": 12.02,
+     "end": 12.2
+    },
+    {
+     "w": "un",
+     "start": 12.2,
+     "end": 12.36
+    },
+    {
+     "w": "petit",
+     "start": 12.36,
+     "end": 12.52
+    },
+    {
+     "w": "livre.",
+     "start": 12.52,
+     "end": 12.8
+    }
+   ]
+  },
+  {
+   "start": 13.16,
+   "end": 17.46,
+   "words": [
+    {
+     "w": "Audacity",
+     "start": 13.16,
+     "end": 13.68
+    },
+    {
+     "w": "est",
+     "start": 13.68,
+     "end": 13.94
+    },
+    {
+     "w": "un",
+     "start": 13.94,
+     "end": 14.04
+    },
+    {
+     "w": "logiciel",
+     "start": 14.04,
+     "end": 14.54
+    },
+    {
+     "w": "libre",
+     "start": 14.54,
+     "end": 14.82
+    },
+    {
+     "w": "et",
+     "start": 14.82,
+     "end": 14.96
+    },
+    {
+     "w": "gratuit",
+     "start": 14.96,
+     "end": 15.32
+    },
+    {
+     "w": "pour",
+     "start": 15.32,
+     "end": 15.66
+    },
+    {
+     "w": "enregistrer",
+     "start": 15.66,
+     "end": 16.3
+    },
+    {
+     "w": "et",
+     "start": 16.3,
+     "end": 16.5
+    },
+    {
+     "w": "nettoyer",
+     "start": 16.5,
+     "end": 17.02
+    },
+    {
+     "w": "le",
+     "start": 17.02,
+     "end": 17.12
+    },
+    {
+     "w": "son.",
+     "start": 17.12,
+     "end": 17.36
+    }
+   ]
+  },
+  {
+   "start": 17.64,
+   "end": 21.33,
+   "words": [
+    {
+     "w": "LibreOffice",
+     "start": 17.85,
+     "end": 18.25
+    },
+    {
+     "w": "est",
+     "start": 18.25,
+     "end": 18.35
+    },
+    {
+     "w": "gratuit",
+     "start": 18.35,
+     "end": 18.63
+    },
+    {
+     "w": "lui",
+     "start": 18.63,
+     "end": 18.83
+    },
+    {
+     "w": "aussi,",
+     "start": 18.83,
+     "end": 19.17
+    },
+    {
+     "w": "et",
+     "start": 19.55,
+     "end": 19.61
+    },
+    {
+     "w": "il",
+     "start": 19.61,
+     "end": 19.71
+    },
+    {
+     "w": "sert",
+     "start": 19.71,
+     "end": 19.93
+    },
+    {
+     "w": "à",
+     "start": 19.93,
+     "end": 20.05
+    },
+    {
+     "w": "écrire",
+     "start": 20.05,
+     "end": 20.31
+    },
+    {
+     "w": "et",
+     "start": 20.31,
+     "end": 20.55
+    },
+    {
+     "w": "à",
+     "start": 20.55,
+     "end": 20.61
+    },
+    {
+     "w": "mettre",
+     "start": 20.61,
+     "end": 20.75
+    },
+    {
+     "w": "en",
+     "start": 20.75,
+     "end": 20.89
+    },
+    {
+     "w": "page.",
+     "start": 20.89,
+     "end": 21.15
+    }
+   ]
+  },
+  {
+   "start": 21.51,
+   "end": 27.16,
+   "words": [
+    {
+     "w": "La",
+     "start": 21.51,
+     "end": 21.66
+    },
+    {
+     "w": "règle",
+     "start": 21.66,
+     "end": 21.88
+    },
+    {
+     "w": "de",
+     "start": 21.88,
+     "end": 22.04
+    },
+    {
+     "w": "loi",
+     "start": 22.04,
+     "end": 22.22
+    },
+    {
+     "w": "chacun",
+     "start": 22.52,
+     "end": 22.76
+    },
+    {
+     "w": "a",
+     "start": 22.76,
+     "end": 22.98
+    },
+    {
+     "w": "droit",
+     "start": 22.98,
+     "end": 23.12
+    },
+    {
+     "w": "au",
+     "start": 23.12,
+     "end": 23.26
+    },
+    {
+     "w": "respect",
+     "start": 23.26,
+     "end": 23.5
+    },
+    {
+     "w": "de",
+     "start": 23.5,
+     "end": 23.62
+    },
+    {
+     "w": "sa",
+     "start": 23.62,
+     "end": 23.7
+    },
+    {
+     "w": "vie",
+     "start": 23.7,
+     "end": 23.84
+    },
+    {
+     "w": "privée,",
+     "start": 23.84,
+     "end": 24.28
+    },
+    {
+     "w": "donc",
+     "start": 24.58,
+     "end": 24.68
+    },
+    {
+     "w": "la",
+     "start": 24.68,
+     "end": 24.86
+    },
+    {
+     "w": "personne",
+     "start": 24.86,
+     "end": 25.12
+    },
+    {
+     "w": "doit",
+     "start": 25.12,
+     "end": 25.28
+    },
+    {
+     "w": "donner",
+     "start": 25.28,
+     "end": 25.5
+    },
+    {
+     "w": "son",
+     "start": 25.5,
+     "end": 25.68
+    },
+    {
+     "w": "accord",
+     "start": 25.68,
+     "end": 26.0
+    },
+    {
+     "w": "avant",
+     "start": 26.0,
+     "end": 26.36
+    },
+    {
+     "w": "la",
+     "start": 26.36,
+     "end": 26.5
+    },
+    {
+     "w": "publication.",
+     "start": 26.5,
+     "end": 26.72
+    }
+   ]
+  },
+  {
+   "start": 27.34,
+   "end": 30.71,
+   "words": [
+    {
+     "w": "Fais",
+     "start": 27.34,
+     "end": 27.63
+    },
+    {
+     "w": "signer",
+     "start": 27.63,
+     "end": 27.95
+    },
+    {
+     "w": "un",
+     "start": 27.95,
+     "end": 28.05
+    },
+    {
+     "w": "accord",
+     "start": 28.05,
+     "end": 28.31
+    },
+    {
+     "w": "écrit",
+     "start": 28.31,
+     "end": 28.51
+    },
+    {
+     "w": "qui",
+     "start": 28.51,
+     "end": 28.73
+    },
+    {
+     "w": "dit",
+     "start": 28.73,
+     "end": 28.87
+    },
+    {
+     "w": "quoi,",
+     "start": 28.87,
+     "end": 29.11
+    },
+    {
+     "w": "où",
+     "start": 29.53,
+     "end": 29.63
+    },
+    {
+     "w": "et",
+     "start": 29.63,
+     "end": 29.77
+    },
+    {
+     "w": "pour",
+     "start": 29.77,
+     "end": 29.95
+    },
+    {
+     "w": "combien",
+     "start": 29.95,
+     "end": 30.21
+    },
+    {
+     "w": "de",
+     "start": 30.21,
+     "end": 30.39
+    },
+    {
+     "w": "temps.",
+     "start": 30.39,
+     "end": 30.59
+    }
+   ]
+  }
+ ]
+}

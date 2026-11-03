@@ -1,0 +1,90 @@
+{
+ "id": "10-business-americains-rares-en-france-s4",
+ "titre": "Laver une voiture sans une goutte d'eau : l'idée qui change tout.",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "LAVER VOITURES EAU DOMICILE",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Laver une voiture sans eau, chez le client, c'est possible avec des produits qui décollent la saleté.",
+  "Tu pulvérises, tu laisses agir, puis tu essuies avec des chiffons en microfibre.",
+  "Le principe existe aux États-Unis, et on le voit peu en France.",
+  "En France, l'eau est justement le sujet : quand la sécheresse arrive, des restrictions touchent le lavage des véhicules.",
+  "Les préfets utilisent quatre niveaux : vigilance, alerte, alerte renforcée et crise.",
+  "Un site officiel, Vigie-Eau, indique les restrictions en vigueur à ton adresse.",
+  "Un lavage sans eau évite de faire couler de l'eau sale dans la rue.",
+  "Mais ne dis jamais que c'est autorisé partout : l'arrêté de ton département décide.",
+  "Matériel : produit de lavage sans eau, beaucoup de chiffons propres, un pulvérisateur et un aspirateur.",
+  "Le piège : une voiture très sale ou pleine de sable peut se rayer, alors refuse ces cas."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "sans",
+     "eau"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "NIVEAUX DE SÉCHERESSE",
+    "items": [
+     {
+      "texte": "Vigilance"
+     },
+     {
+      "texte": "Alerte"
+     },
+     {
+      "texte": "Alerte renforcée"
+     },
+     {
+      "texte": "Crise"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 8,
+   "params": {
+    "question": "Permis partout ?",
+    "pistes": [
+     "Pas partout",
+     "Arrêté local",
+     "Vérifie"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 9,
+   "params": {
+    "titre": "MATÉRIEL",
+    "items": [
+     {
+      "texte": "Produit sans eau"
+     },
+     {
+      "texte": "Chiffons propres"
+     },
+     {
+      "texte": "Pulvérisateur"
+     },
+     {
+      "texte": "Aspirateur"
+     }
+    ]
+   }
+  }
+ ]
+}

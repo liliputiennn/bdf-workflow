@@ -1,0 +1,50 @@
+[
+ {
+  "claim": "La déclaration de succession doit être déposée dans les 6 mois à compter du décès si celui-ci a lieu en France.",
+  "valeur": "6 mois",
+  "phrase": 4,
+  "sources": [
+   "https://www.impots.gouv.fr/particulier/declarer-une-succesion",
+   "https://tournaire.notaires.fr/guides/declaration-de-succession"
+  ],
+  "check": [
+   "6 mois"
+  ],
+  "verified": [
+   "https://www.impots.gouv.fr/particulier/declarer-une-succesion"
+  ]
+ },
+ {
+  "claim": "Les revendeurs d'objets mobiliers doivent tenir un registre de police et se déclarer à la préfecture.",
+  "valeur": "registre",
+  "phrase": 7,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F39552",
+   "https://bpifrance-creation.fr/activites-reglementees/antiquaire-brocanteur"
+  ],
+  "check": [
+   "registre",
+   "préfecture"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F39552",
+   "https://bpifrance-creation.fr/activites-reglementees/antiquaire-brocanteur"
+  ]
+ },
+ {
+  "claim": "Le registre des objets mobiliers est tenu sans rature.",
+  "valeur": "registre",
+  "phrase": 8,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F39552",
+   "https://bpifrance-creation.fr/activites-reglementees/antiquaire-brocanteur"
+  ],
+  "check": [
+   "rature"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F39552",
+   "https://bpifrance-creation.fr/activites-reglementees/antiquaire-brocanteur"
+  ]
+ }
+]

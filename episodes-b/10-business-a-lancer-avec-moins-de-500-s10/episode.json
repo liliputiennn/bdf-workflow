@@ -1,0 +1,55 @@
+{
+ "id": "10-business-a-lancer-avec-moins-de-500-s10",
+ "titre": "Que deviennent tes comptes en ligne si tu disparais ?",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "DOSSIER NUMÉRIQUE URGENCE FAMILLES",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Une idée : préparer le dossier numérique d'urgence d'une famille.",
+  "Que deviennent ta messagerie, tes photos et tes mots de passe si tu disparais ?",
+  "La loi française permet de laisser des directives sur le sort de tes données après ta mort.",
+  "Google et Apple proposent aussi un réglage pour désigner quelqu'un de confiance.",
+  "Chez Google, il s'appelle le gestionnaire de compte inactif.",
+  "Chez Apple, c'est le contact légataire.",
+  "Un gestionnaire de mots de passe comme Bitwarden propose un accès d'urgence, mais il demande l'offre payante.",
+  "KeePassXC est un coffre libre et gratuit qui reste sur ton ordinateur."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "dossier",
+     "urgence"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "Gestionnaire de compte inactif"
+     },
+     {
+      "texte": "Contact légataire (Apple)"
+     },
+     {
+      "texte": "Bitwarden (accès d'urgence)"
+     },
+     {
+      "texte": "KeePassXC"
+     }
+    ]
+   }
+  }
+ ]
+}

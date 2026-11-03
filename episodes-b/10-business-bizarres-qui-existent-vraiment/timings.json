@@ -1,0 +1,9087 @@
+{
+ "total": 540.58,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 5.04,
+   "words": [
+    {
+     "w": "Louer",
+     "start": 0.15,
+     "end": 0.49
+    },
+    {
+     "w": "des",
+     "start": 0.49,
+     "end": 0.61
+    },
+    {
+     "w": "poules",
+     "start": 0.61,
+     "end": 0.85
+    },
+    {
+     "w": "à",
+     "start": 0.85,
+     "end": 0.93
+    },
+    {
+     "w": "des",
+     "start": 0.93,
+     "end": 1.01
+    },
+    {
+     "w": "familles,",
+     "start": 1.01,
+     "end": 1.43
+    },
+    {
+     "w": "envoyer",
+     "start": 1.61,
+     "end": 1.97
+    },
+    {
+     "w": "des",
+     "start": 1.97,
+     "end": 2.05
+    },
+    {
+     "w": "faucons",
+     "start": 2.05,
+     "end": 2.43
+    },
+    {
+     "w": "chasser",
+     "start": 2.43,
+     "end": 2.67
+    },
+    {
+     "w": "les",
+     "start": 2.67,
+     "end": 2.81
+    },
+    {
+     "w": "pigeons",
+     "start": 2.81,
+     "end": 3.09
+    },
+    {
+     "w": "ça",
+     "start": 3.35,
+     "end": 3.57
+    },
+    {
+     "w": "existe",
+     "start": 3.57,
+     "end": 3.89
+    },
+    {
+     "w": "vraiment",
+     "start": 3.89,
+     "end": 4.29
+    },
+    {
+     "w": "en",
+     "start": 4.29,
+     "end": 4.53
+    },
+    {
+     "w": "France.",
+     "start": 4.53,
+     "end": 4.69
+    }
+   ]
+  },
+  {
+   "start": 5.22,
+   "end": 8.79,
+   "words": [
+    {
+     "w": "Dans",
+     "start": 5.22,
+     "end": 5.36
+    },
+    {
+     "w": "cette",
+     "start": 5.36,
+     "end": 5.52
+    },
+    {
+     "w": "vidéo,",
+     "start": 5.52,
+     "end": 5.8
+    },
+    {
+     "w": "tu",
+     "start": 5.8,
+     "end": 6.04
+    },
+    {
+     "w": "découvres",
+     "start": 6.04,
+     "end": 6.38
+    },
+    {
+     "w": "des",
+     "start": 6.38,
+     "end": 6.5
+    },
+    {
+     "w": "métiers",
+     "start": 6.5,
+     "end": 6.8
+    },
+    {
+     "w": "qui",
+     "start": 6.8,
+     "end": 6.9
+    },
+    {
+     "w": "semblent",
+     "start": 6.9,
+     "end": 7.24
+    },
+    {
+     "w": "faux,",
+     "start": 7.24,
+     "end": 7.46
+    },
+    {
+     "w": "mais",
+     "start": 7.68,
+     "end": 7.74
+    },
+    {
+     "w": "qui",
+     "start": 7.74,
+     "end": 7.88
+    },
+    {
+     "w": "existent",
+     "start": 7.88,
+     "end": 8.32
+    },
+    {
+     "w": "vraiment.",
+     "start": 8.32,
+     "end": 8.54
+    }
+   ]
+  },
+  {
+   "start": 8.97,
+   "end": 14.56,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 8.97,
+     "end": 9.12
+    },
+    {
+     "w": "chacun,",
+     "start": 9.12,
+     "end": 9.4
+    },
+    {
+     "w": "tu",
+     "start": 9.4,
+     "end": 9.72
+    },
+    {
+     "w": "vois",
+     "start": 9.72,
+     "end": 9.86
+    },
+    {
+     "w": "ce",
+     "start": 9.86,
+     "end": 9.94
+    },
+    {
+     "w": "que",
+     "start": 9.94,
+     "end": 10.02
+    },
+    {
+     "w": "la",
+     "start": 10.02,
+     "end": 10.12
+    },
+    {
+     "w": "loi",
+     "start": 10.12,
+     "end": 10.24
+    },
+    {
+     "w": "demande",
+     "start": 10.24,
+     "end": 10.64
+    },
+    {
+     "w": "une",
+     "start": 11.04,
+     "end": 11.14
+    },
+    {
+     "w": "déclaration,",
+     "start": 11.14,
+     "end": 11.68
+    },
+    {
+     "w": "un",
+     "start": 12.04,
+     "end": 12.14
+    },
+    {
+     "w": "agrément,",
+     "start": 12.14,
+     "end": 12.6
+    },
+    {
+     "w": "une",
+     "start": 12.8,
+     "end": 12.9
+    },
+    {
+     "w": "formation",
+     "start": 12.9,
+     "end": 13.24
+    },
+    {
+     "w": "ou",
+     "start": 13.24,
+     "end": 13.7
+    },
+    {
+     "w": "une",
+     "start": 13.7,
+     "end": 13.84
+    },
+    {
+     "w": "assurance.",
+     "start": 13.84,
+     "end": 14.14
+    }
+   ]
+  },
+  {
+   "start": 14.74,
+   "end": 19.42,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 14.74,
+     "end": 14.89
+    },
+    {
+     "w": "vois",
+     "start": 14.89,
+     "end": 15.05
+    },
+    {
+     "w": "aussi",
+     "start": 15.05,
+     "end": 15.25
+    },
+    {
+     "w": "les",
+     "start": 15.25,
+     "end": 15.41
+    },
+    {
+     "w": "outils",
+     "start": 15.41,
+     "end": 15.71
+    },
+    {
+     "w": "les",
+     "start": 15.71,
+     "end": 15.79
+    },
+    {
+     "w": "plus",
+     "start": 15.79,
+     "end": 15.93
+    },
+    {
+     "w": "utiles,",
+     "start": 15.93,
+     "end": 16.39
+    },
+    {
+     "w": "souvent",
+     "start": 16.59,
+     "end": 16.77
+    },
+    {
+     "w": "gratuits,",
+     "start": 16.77,
+     "end": 17.33
+    },
+    {
+     "w": "et",
+     "start": 17.61,
+     "end": 17.69
+    },
+    {
+     "w": "toutes",
+     "start": 17.69,
+     "end": 17.91
+    },
+    {
+     "w": "les",
+     "start": 17.91,
+     "end": 17.99
+    },
+    {
+     "w": "adresses",
+     "start": 17.99,
+     "end": 18.39
+    },
+    {
+     "w": "sont",
+     "start": 18.39,
+     "end": 18.57
+    },
+    {
+     "w": "dans",
+     "start": 18.57,
+     "end": 18.69
+    },
+    {
+     "w": "la",
+     "start": 18.69,
+     "end": 18.79
+    },
+    {
+     "w": "description.",
+     "start": 18.79,
+     "end": 19.01
+    }
+   ]
+  },
+  {
+   "start": 19.6,
+   "end": 23.49,
+   "words": [
+    {
+     "w": "Un",
+     "start": 19.6,
+     "end": 19.77
+    },
+    {
+     "w": "point",
+     "start": 19.77,
+     "end": 19.91
+    },
+    {
+     "w": "d'honnêteté",
+     "start": 19.91,
+     "end": 20.47
+    },
+    {
+     "w": "ce",
+     "start": 20.67,
+     "end": 20.93
+    },
+    {
+     "w": "sont",
+     "start": 20.93,
+     "end": 21.13
+    },
+    {
+     "w": "des",
+     "start": 21.13,
+     "end": 21.27
+    },
+    {
+     "w": "niches,",
+     "start": 21.27,
+     "end": 21.97
+    },
+    {
+     "w": "c'est-à-dire",
+     "start": 21.97,
+     "end": 22.41
+    },
+    {
+     "w": "de",
+     "start": 22.41,
+     "end": 22.55
+    },
+    {
+     "w": "très",
+     "start": 22.55,
+     "end": 22.77
+    },
+    {
+     "w": "petits",
+     "start": 22.77,
+     "end": 22.97
+    },
+    {
+     "w": "marchés.",
+     "start": 22.97,
+     "end": 23.39
+    }
+   ]
+  },
+  {
+   "start": 23.67,
+   "end": 28.65,
+   "words": [
+    {
+     "w": "Aucun",
+     "start": 23.67,
+     "end": 24.01
+    },
+    {
+     "w": "revenu",
+     "start": 24.01,
+     "end": 24.43
+    },
+    {
+     "w": "n'est",
+     "start": 24.43,
+     "end": 24.61
+    },
+    {
+     "w": "promis,",
+     "start": 24.61,
+     "end": 25.03
+    },
+    {
+     "w": "et",
+     "start": 25.21,
+     "end": 25.41
+    },
+    {
+     "w": "certaines",
+     "start": 25.41,
+     "end": 25.67
+    },
+    {
+     "w": "de",
+     "start": 25.67,
+     "end": 25.87
+    },
+    {
+     "w": "ces",
+     "start": 25.87,
+     "end": 26.01
+    },
+    {
+     "w": "idées",
+     "start": 26.01,
+     "end": 26.39
+    },
+    {
+     "w": "n'auront",
+     "start": 26.39,
+     "end": 26.74
+    },
+    {
+     "w": "peut-être",
+     "start": 26.74,
+     "end": 27.09
+    },
+    {
+     "w": "aucun",
+     "start": 27.09,
+     "end": 27.37
+    },
+    {
+     "w": "client",
+     "start": 27.37,
+     "end": 27.75
+    },
+    {
+     "w": "près",
+     "start": 27.75,
+     "end": 28.01
+    },
+    {
+     "w": "de",
+     "start": 28.01,
+     "end": 28.15
+    },
+    {
+     "w": "chez",
+     "start": 28.15,
+     "end": 28.29
+    },
+    {
+     "w": "toi.",
+     "start": 28.29,
+     "end": 28.47
+    }
+   ]
+  },
+  {
+   "start": 28.83,
+   "end": 33.68,
+   "words": [
+    {
+     "w": "Les",
+     "start": 28.83,
+     "end": 29.0
+    },
+    {
+     "w": "règles",
+     "start": 29.0,
+     "end": 29.28
+    },
+    {
+     "w": "citées",
+     "start": 29.28,
+     "end": 29.68
+    },
+    {
+     "w": "sont",
+     "start": 29.68,
+     "end": 29.84
+    },
+    {
+     "w": "celles",
+     "start": 29.84,
+     "end": 30.14
+    },
+    {
+     "w": "de",
+     "start": 30.14,
+     "end": 30.2
+    },
+    {
+     "w": "la",
+     "start": 30.2,
+     "end": 30.32
+    },
+    {
+     "w": "France,",
+     "start": 30.32,
+     "end": 30.64
+    },
+    {
+     "w": "et",
+     "start": 30.94,
+     "end": 30.99
+    },
+    {
+     "w": "elles",
+     "start": 30.96,
+     "end": 31.08
+    },
+    {
+     "w": "peuvent",
+     "start": 31.08,
+     "end": 31.24
+    },
+    {
+     "w": "changer",
+     "start": 31.24,
+     "end": 31.64
+    },
+    {
+     "w": "relis",
+     "start": 31.98,
+     "end": 32.3
+    },
+    {
+     "w": "toujours",
+     "start": 32.3,
+     "end": 32.66
+    },
+    {
+     "w": "la",
+     "start": 32.66,
+     "end": 32.78
+    },
+    {
+     "w": "page",
+     "start": 32.78,
+     "end": 32.98
+    },
+    {
+     "w": "officielle.",
+     "start": 32.98,
+     "end": 33.54
+    }
+   ]
+  },
+  {
+   "start": 33.86,
+   "end": 37.21,
+   "words": [
+    {
+     "w": "Et",
+     "start": 33.86,
+     "end": 33.99
+    },
+    {
+     "w": "quand",
+     "start": 33.99,
+     "end": 34.13
+    },
+    {
+     "w": "un",
+     "start": 34.13,
+     "end": 34.29
+    },
+    {
+     "w": "animal",
+     "start": 34.29,
+     "end": 34.57
+    },
+    {
+     "w": "est",
+     "start": 34.57,
+     "end": 34.73
+    },
+    {
+     "w": "en",
+     "start": 34.73,
+     "end": 34.85
+    },
+    {
+     "w": "jeu,",
+     "start": 34.85,
+     "end": 35.07
+    },
+    {
+     "w": "son",
+     "start": 35.43,
+     "end": 35.59
+    },
+    {
+     "w": "bien-être",
+     "start": 35.59,
+     "end": 35.99
+    },
+    {
+     "w": "passe",
+     "start": 35.99,
+     "end": 36.29
+    },
+    {
+     "w": "avant",
+     "start": 36.29,
+     "end": 36.71
+    },
+    {
+     "w": "l'argent.",
+     "start": 36.71,
+     "end": 37.03
+    }
+   ]
+  },
+  {
+   "start": 39.39,
+   "end": 43.2,
+   "words": [
+    {
+     "w": "Première",
+     "start": 39.39,
+     "end": 39.76
+    },
+    {
+     "w": "idée",
+     "start": 39.76,
+     "end": 39.98
+    },
+    {
+     "w": "louer",
+     "start": 40.38,
+     "end": 40.64
+    },
+    {
+     "w": "des",
+     "start": 40.64,
+     "end": 40.74
+    },
+    {
+     "w": "poules",
+     "start": 40.74,
+     "end": 40.96
+    },
+    {
+     "w": "pondeuses",
+     "start": 40.96,
+     "end": 41.46
+    },
+    {
+     "w": "à",
+     "start": 41.46,
+     "end": 41.64
+    },
+    {
+     "w": "des",
+     "start": 41.64,
+     "end": 41.76
+    },
+    {
+     "w": "familles,",
+     "start": 41.76,
+     "end": 42.24
+    },
+    {
+     "w": "pour",
+     "start": 42.24,
+     "end": 42.52
+    },
+    {
+     "w": "quelques",
+     "start": 42.52,
+     "end": 42.7
+    },
+    {
+     "w": "mois.",
+     "start": 42.7,
+     "end": 43.02
+    }
+   ]
+  },
+  {
+   "start": 43.38,
+   "end": 48.51,
+   "words": [
+    {
+     "w": "La",
+     "start": 43.38,
+     "end": 43.55
+    },
+    {
+     "w": "famille",
+     "start": 43.55,
+     "end": 43.79
+    },
+    {
+     "w": "reçoit",
+     "start": 43.79,
+     "end": 44.17
+    },
+    {
+     "w": "un",
+     "start": 44.17,
+     "end": 44.23
+    },
+    {
+     "w": "petit",
+     "start": 44.23,
+     "end": 44.41
+    },
+    {
+     "w": "poulailler,",
+     "start": 44.41,
+     "end": 44.99
+    },
+    {
+     "w": "des",
+     "start": 45.31,
+     "end": 45.43
+    },
+    {
+     "w": "poules",
+     "start": 45.43,
+     "end": 45.89
+    },
+    {
+     "w": "et",
+     "start": 45.89,
+     "end": 46.07
+    },
+    {
+     "w": "un",
+     "start": 46.07,
+     "end": 46.17
+    },
+    {
+     "w": "sac",
+     "start": 46.17,
+     "end": 46.39
+    },
+    {
+     "w": "de",
+     "start": 46.39,
+     "end": 46.55
+    },
+    {
+     "w": "grains,",
+     "start": 46.55,
+     "end": 46.81
+    },
+    {
+     "w": "et",
+     "start": 47.15,
+     "end": 47.2
+    },
+    {
+     "w": "elle",
+     "start": 47.15,
+     "end": 47.25
+    },
+    {
+     "w": "ramasse",
+     "start": 47.25,
+     "end": 47.63
+    },
+    {
+     "w": "les",
+     "start": 47.63,
+     "end": 47.77
+    },
+    {
+     "w": "œufs",
+     "start": 47.77,
+     "end": 47.99
+    },
+    {
+     "w": "chez",
+     "start": 47.99,
+     "end": 48.09
+    },
+    {
+     "w": "elle.",
+     "start": 48.09,
+     "end": 48.37
+    }
+   ]
+  },
+  {
+   "start": 48.69,
+   "end": 52.58,
+   "words": [
+    {
+     "w": "Toi,",
+     "start": 48.69,
+     "end": 48.95
+    },
+    {
+     "w": "tu",
+     "start": 48.99,
+     "end": 49.05
+    },
+    {
+     "w": "fournis",
+     "start": 49.05,
+     "end": 49.35
+    },
+    {
+     "w": "les",
+     "start": 49.35,
+     "end": 49.45
+    },
+    {
+     "w": "poules,",
+     "start": 49.45,
+     "end": 49.79
+    },
+    {
+     "w": "tu",
+     "start": 49.93,
+     "end": 50.17
+    },
+    {
+     "w": "expliques",
+     "start": 50.17,
+     "end": 50.53
+    },
+    {
+     "w": "les",
+     "start": 50.53,
+     "end": 50.65
+    },
+    {
+     "w": "soins,",
+     "start": 50.65,
+     "end": 51.21
+    },
+    {
+     "w": "et",
+     "start": 51.27,
+     "end": 51.35
+    },
+    {
+     "w": "tu",
+     "start": 51.35,
+     "end": 51.49
+    },
+    {
+     "w": "reprends",
+     "start": 51.49,
+     "end": 51.87
+    },
+    {
+     "w": "les",
+     "start": 51.87,
+     "end": 51.92
+    },
+    {
+     "w": "poules",
+     "start": 51.87,
+     "end": 52.11
+    },
+    {
+     "w": "à",
+     "start": 52.11,
+     "end": 52.16
+    },
+    {
+     "w": "la",
+     "start": 52.15,
+     "end": 52.21
+    },
+    {
+     "w": "fin.",
+     "start": 52.21,
+     "end": 52.45
+    }
+   ]
+  },
+  {
+   "start": 52.76,
+   "end": 58.15,
+   "words": [
+    {
+     "w": "Ce",
+     "start": 52.76,
+     "end": 52.95
+    },
+    {
+     "w": "n'est",
+     "start": 52.95,
+     "end": 53.09
+    },
+    {
+     "w": "pas",
+     "start": 53.09,
+     "end": 53.21
+    },
+    {
+     "w": "qu'une",
+     "start": 53.21,
+     "end": 53.47
+    },
+    {
+     "w": "idée",
+     "start": 53.47,
+     "end": 53.69
+    },
+    {
+     "w": "en",
+     "start": 53.69,
+     "end": 53.83
+    },
+    {
+     "w": "l'air",
+     "start": 53.83,
+     "end": 54.15
+    },
+    {
+     "w": "les",
+     "start": 54.51,
+     "end": 54.79
+    },
+    {
+     "w": "Fermiers",
+     "start": 54.79,
+     "end": 55.07
+    },
+    {
+     "w": "de",
+     "start": 55.07,
+     "end": 55.17
+    },
+    {
+     "w": "Loué",
+     "start": 55.17,
+     "end": 55.41
+    },
+    {
+     "w": "ont",
+     "start": 55.41,
+     "end": 55.53
+    },
+    {
+     "w": "proposé",
+     "start": 55.53,
+     "end": 56.03
+    },
+    {
+     "w": "de",
+     "start": 56.03,
+     "end": 56.17
+    },
+    {
+     "w": "louer",
+     "start": 56.17,
+     "end": 56.51
+    },
+    {
+     "w": "des",
+     "start": 56.51,
+     "end": 56.61
+    },
+    {
+     "w": "poules",
+     "start": 56.61,
+     "end": 56.85
+    },
+    {
+     "w": "pondeuses",
+     "start": 56.85,
+     "end": 57.27
+    },
+    {
+     "w": "à",
+     "start": 57.27,
+     "end": 57.37
+    },
+    {
+     "w": "des",
+     "start": 57.37,
+     "end": 57.45
+    },
+    {
+     "w": "particuliers.",
+     "start": 57.45,
+     "end": 58.07
+    }
+   ]
+  },
+  {
+   "start": 58.33,
+   "end": 62.73,
+   "words": [
+    {
+     "w": "Premier",
+     "start": 58.33,
+     "end": 58.57
+    },
+    {
+     "w": "point",
+     "start": 58.57,
+     "end": 58.83
+    },
+    {
+     "w": "de",
+     "start": 58.83,
+     "end": 58.99
+    },
+    {
+     "w": "loi",
+     "start": 58.99,
+     "end": 59.19
+    },
+    {
+     "w": "les",
+     "start": 59.47,
+     "end": 59.63
+    },
+    {
+     "w": "poules",
+     "start": 59.63,
+     "end": 59.91
+    },
+    {
+     "w": "sont",
+     "start": 59.91,
+     "end": 60.07
+    },
+    {
+     "w": "des",
+     "start": 60.07,
+     "end": 60.21
+    },
+    {
+     "w": "animaux,",
+     "start": 60.21,
+     "end": 60.73
+    },
+    {
+     "w": "alors",
+     "start": 60.95,
+     "end": 61.13
+    },
+    {
+     "w": "leur",
+     "start": 61.13,
+     "end": 61.37
+    },
+    {
+     "w": "santé",
+     "start": 61.37,
+     "end": 61.69
+    },
+    {
+     "w": "passe",
+     "start": 61.69,
+     "end": 62.03
+    },
+    {
+     "w": "avant",
+     "start": 62.03,
+     "end": 62.37
+    },
+    {
+     "w": "tout.",
+     "start": 62.37,
+     "end": 62.65
+    }
+   ]
+  },
+  {
+   "start": 62.91,
+   "end": 69.43,
+   "words": [
+    {
+     "w": "Quand",
+     "start": 62.91,
+     "end": 63.07
+    },
+    {
+     "w": "le",
+     "start": 63.07,
+     "end": 63.17
+    },
+    {
+     "w": "risque",
+     "start": 63.17,
+     "end": 63.37
+    },
+    {
+     "w": "de",
+     "start": 63.37,
+     "end": 63.55
+    },
+    {
+     "w": "grippe",
+     "start": 63.55,
+     "end": 63.87
+    },
+    {
+     "w": "aviaire",
+     "start": 63.87,
+     "end": 64.21
+    },
+    {
+     "w": "est",
+     "start": 64.21,
+     "end": 64.35
+    },
+    {
+     "w": "élevé,",
+     "start": 64.35,
+     "end": 64.73
+    },
+    {
+     "w": "les",
+     "start": 65.09,
+     "end": 65.17
+    },
+    {
+     "w": "volailles",
+     "start": 65.17,
+     "end": 65.51
+    },
+    {
+     "w": "des",
+     "start": 65.51,
+     "end": 65.59
+    },
+    {
+     "w": "particuliers",
+     "start": 65.59,
+     "end": 66.27
+    },
+    {
+     "w": "doivent",
+     "start": 66.27,
+     "end": 66.45
+    },
+    {
+     "w": "être",
+     "start": 66.45,
+     "end": 66.71
+    },
+    {
+     "w": "protégées",
+     "start": 66.71,
+     "end": 67.29
+    },
+    {
+     "w": "de",
+     "start": 67.29,
+     "end": 67.41
+    },
+    {
+     "w": "tout",
+     "start": 67.41,
+     "end": 67.63
+    },
+    {
+     "w": "contact",
+     "start": 67.63,
+     "end": 68.03
+    },
+    {
+     "w": "avec",
+     "start": 68.03,
+     "end": 68.39
+    },
+    {
+     "w": "la",
+     "start": 68.39,
+     "end": 68.59
+    },
+    {
+     "w": "faune",
+     "start": 68.59,
+     "end": 68.83
+    },
+    {
+     "w": "sauvage.",
+     "start": 68.83,
+     "end": 69.31
+    }
+   ]
+  },
+  {
+   "start": 69.61,
+   "end": 76.89,
+   "words": [
+    {
+     "w": "Selon",
+     "start": 69.61,
+     "end": 69.96
+    },
+    {
+     "w": "la",
+     "start": 69.96,
+     "end": 70.06
+    },
+    {
+     "w": "direction",
+     "start": 70.06,
+     "end": 70.38
+    },
+    {
+     "w": "régionale",
+     "start": 70.38,
+     "end": 70.98
+    },
+    {
+     "w": "de",
+     "start": 70.98,
+     "end": 71.08
+    },
+    {
+     "w": "l'agriculture",
+     "start": 71.08,
+     "end": 71.66
+    },
+    {
+     "w": "de",
+     "start": 71.66,
+     "end": 71.78
+    },
+    {
+     "w": "Bretagne,",
+     "start": 71.78,
+     "end": 72.28
+    },
+    {
+     "w": "les",
+     "start": 72.56,
+     "end": 72.64
+    },
+    {
+     "w": "particuliers",
+     "start": 72.64,
+     "end": 73.3
+    },
+    {
+     "w": "qui",
+     "start": 73.3,
+     "end": 73.42
+    },
+    {
+     "w": "gardent",
+     "start": 73.42,
+     "end": 73.78
+    },
+    {
+     "w": "des",
+     "start": 73.78,
+     "end": 73.9
+    },
+    {
+     "w": "volailles",
+     "start": 73.9,
+     "end": 74.4
+    },
+    {
+     "w": "doivent",
+     "start": 74.4,
+     "end": 74.86
+    },
+    {
+     "w": "aussi",
+     "start": 74.86,
+     "end": 75.28
+    },
+    {
+     "w": "se",
+     "start": 75.28,
+     "end": 75.46
+    },
+    {
+     "w": "déclarer",
+     "start": 75.46,
+     "end": 76.06
+    },
+    {
+     "w": "à",
+     "start": 76.06,
+     "end": 76.22
+    },
+    {
+     "w": "leur",
+     "start": 76.22,
+     "end": 76.38
+    },
+    {
+     "w": "mairie.",
+     "start": 76.38,
+     "end": 76.74
+    }
+   ]
+  },
+  {
+   "start": 77.07,
+   "end": 83.03,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 77.07,
+     "end": 77.22
+    },
+    {
+     "w": "cela,",
+     "start": 77.22,
+     "end": 77.5
+    },
+    {
+     "w": "il",
+     "start": 77.74,
+     "end": 77.84
+    },
+    {
+     "w": "existe",
+     "start": 77.84,
+     "end": 78.16
+    },
+    {
+     "w": "un",
+     "start": 78.16,
+     "end": 78.34
+    },
+    {
+     "w": "formulaire",
+     "start": 78.34,
+     "end": 78.94
+    },
+    {
+     "w": "officiel",
+     "start": 78.94,
+     "end": 79.52
+    },
+    {
+     "w": "en",
+     "start": 79.52,
+     "end": 79.62
+    },
+    {
+     "w": "ligne,",
+     "start": 79.62,
+     "end": 79.96
+    },
+    {
+     "w": "sur",
+     "start": 80.3,
+     "end": 80.36
+    },
+    {
+     "w": "le",
+     "start": 80.36,
+     "end": 80.48
+    },
+    {
+     "w": "site",
+     "start": 80.48,
+     "end": 80.76
+    },
+    {
+     "w": "Mes",
+     "start": 80.76,
+     "end": 81.1
+    },
+    {
+     "w": "démarches",
+     "start": 81.1,
+     "end": 81.6
+    },
+    {
+     "w": "du",
+     "start": 81.6,
+     "end": 81.7
+    },
+    {
+     "w": "ministère",
+     "start": 81.7,
+     "end": 82.16
+    },
+    {
+     "w": "de",
+     "start": 82.16,
+     "end": 82.24
+    },
+    {
+     "w": "l'agriculture.",
+     "start": 82.24,
+     "end": 82.82
+    }
+   ]
+  },
+  {
+   "start": 83.21,
+   "end": 87.45,
+   "words": [
+    {
+     "w": "Les",
+     "start": 83.21,
+     "end": 83.4
+    },
+    {
+     "w": "règles",
+     "start": 83.4,
+     "end": 83.68
+    },
+    {
+     "w": "locales",
+     "start": 83.68,
+     "end": 84.2
+    },
+    {
+     "w": "varient",
+     "start": 84.2,
+     "end": 84.6
+    },
+    {
+     "w": "demande",
+     "start": 84.8,
+     "end": 85.2
+    },
+    {
+     "w": "à",
+     "start": 85.2,
+     "end": 85.3
+    },
+    {
+     "w": "la",
+     "start": 85.3,
+     "end": 85.36
+    },
+    {
+     "w": "mairie",
+     "start": 85.36,
+     "end": 85.68
+    },
+    {
+     "w": "avant",
+     "start": 85.68,
+     "end": 86.08
+    },
+    {
+     "w": "de",
+     "start": 86.08,
+     "end": 86.26
+    },
+    {
+     "w": "prêter",
+     "start": 86.26,
+     "end": 86.56
+    },
+    {
+     "w": "une",
+     "start": 86.56,
+     "end": 86.72
+    },
+    {
+     "w": "seule",
+     "start": 86.72,
+     "end": 86.92
+    },
+    {
+     "w": "poule.",
+     "start": 86.92,
+     "end": 87.3
+    }
+   ]
+  },
+  {
+   "start": 87.63,
+   "end": 92.13,
+   "words": [
+    {
+     "w": "Pense",
+     "start": 87.63,
+     "end": 87.89
+    },
+    {
+     "w": "aussi",
+     "start": 87.89,
+     "end": 88.19
+    },
+    {
+     "w": "à",
+     "start": 88.19,
+     "end": 88.43
+    },
+    {
+     "w": "une",
+     "start": 88.43,
+     "end": 88.55
+    },
+    {
+     "w": "assurance",
+     "start": 88.55,
+     "end": 88.81
+    },
+    {
+     "w": "de",
+     "start": 88.81,
+     "end": 89.05
+    },
+    {
+     "w": "responsabilité",
+     "start": 89.05,
+     "end": 89.77
+    },
+    {
+     "w": "civile",
+     "start": 89.77,
+     "end": 90.21
+    },
+    {
+     "w": "demande",
+     "start": 90.39,
+     "end": 90.71
+    },
+    {
+     "w": "conseil",
+     "start": 90.71,
+     "end": 91.27
+    },
+    {
+     "w": "à",
+     "start": 91.27,
+     "end": 91.37
+    },
+    {
+     "w": "un",
+     "start": 91.37,
+     "end": 91.47
+    },
+    {
+     "w": "assureur.",
+     "start": 91.47,
+     "end": 91.99
+    }
+   ]
+  },
+  {
+   "start": 92.31,
+   "end": 96.98,
+   "words": [
+    {
+     "w": "La",
+     "start": 92.31,
+     "end": 92.48
+    },
+    {
+     "w": "limite",
+     "start": 92.48,
+     "end": 92.72
+    },
+    {
+     "w": "une",
+     "start": 93.12,
+     "end": 93.24
+    },
+    {
+     "w": "poule",
+     "start": 93.24,
+     "end": 93.48
+    },
+    {
+     "w": "malade",
+     "start": 93.48,
+     "end": 93.82
+    },
+    {
+     "w": "ou",
+     "start": 93.82,
+     "end": 93.96
+    },
+    {
+     "w": "qui",
+     "start": 93.96,
+     "end": 94.1
+    },
+    {
+     "w": "s'échappe",
+     "start": 94.1,
+     "end": 94.48
+    },
+    {
+     "w": "devient",
+     "start": 94.48,
+     "end": 94.74
+    },
+    {
+     "w": "vite",
+     "start": 94.74,
+     "end": 94.9
+    },
+    {
+     "w": "ton",
+     "start": 94.9,
+     "end": 95.12
+    },
+    {
+     "w": "problème,",
+     "start": 95.12,
+     "end": 95.48
+    },
+    {
+     "w": "pas",
+     "start": 95.92,
+     "end": 96.08
+    },
+    {
+     "w": "celui",
+     "start": 96.08,
+     "end": 96.28
+    },
+    {
+     "w": "de",
+     "start": 96.28,
+     "end": 96.42
+    },
+    {
+     "w": "la",
+     "start": 96.42,
+     "end": 96.52
+    },
+    {
+     "w": "famille.",
+     "start": 96.52,
+     "end": 96.78
+    }
+   ]
+  },
+  {
+   "start": 99.16,
+   "end": 103.45,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 99.16,
+     "end": 99.48
+    },
+    {
+     "w": "idée",
+     "start": 99.48,
+     "end": 99.68
+    },
+    {
+     "w": "installer",
+     "start": 100.04,
+     "end": 100.44
+    },
+    {
+     "w": "des",
+     "start": 100.44,
+     "end": 100.68
+    },
+    {
+     "w": "ruches",
+     "start": 100.68,
+     "end": 100.96
+    },
+    {
+     "w": "dans",
+     "start": 100.96,
+     "end": 101.06
+    },
+    {
+     "w": "une",
+     "start": 101.06,
+     "end": 101.22
+    },
+    {
+     "w": "entreprise,",
+     "start": 101.22,
+     "end": 101.78
+    },
+    {
+     "w": "qui",
+     "start": 101.9,
+     "end": 102.1
+    },
+    {
+     "w": "les",
+     "start": 102.1,
+     "end": 102.26
+    },
+    {
+     "w": "loue",
+     "start": 102.26,
+     "end": 102.7
+    },
+    {
+     "w": "ou",
+     "start": 102.7,
+     "end": 102.78
+    },
+    {
+     "w": "les",
+     "start": 102.78,
+     "end": 102.88
+    },
+    {
+     "w": "parraine.",
+     "start": 102.88,
+     "end": 103.28
+    }
+   ]
+  },
+  {
+   "start": 103.63,
+   "end": 108.36,
+   "words": [
+    {
+     "w": "Les",
+     "start": 103.63,
+     "end": 103.81
+    },
+    {
+     "w": "employés",
+     "start": 103.81,
+     "end": 104.23
+    },
+    {
+     "w": "voient",
+     "start": 104.23,
+     "end": 104.43
+    },
+    {
+     "w": "les",
+     "start": 104.43,
+     "end": 104.51
+    },
+    {
+     "w": "abeilles,",
+     "start": 104.51,
+     "end": 105.01
+    },
+    {
+     "w": "et",
+     "start": 105.27,
+     "end": 105.32
+    },
+    {
+     "w": "l'entreprise",
+     "start": 105.31,
+     "end": 105.81
+    },
+    {
+     "w": "reçoit",
+     "start": 105.81,
+     "end": 106.19
+    },
+    {
+     "w": "du",
+     "start": 106.19,
+     "end": 106.29
+    },
+    {
+     "w": "miel",
+     "start": 106.29,
+     "end": 106.53
+    },
+    {
+     "w": "et",
+     "start": 106.53,
+     "end": 107.01
+    },
+    {
+     "w": "une",
+     "start": 107.01,
+     "end": 107.17
+    },
+    {
+     "w": "belle",
+     "start": 107.17,
+     "end": 107.33
+    },
+    {
+     "w": "histoire",
+     "start": 107.33,
+     "end": 107.65
+    },
+    {
+     "w": "à",
+     "start": 107.65,
+     "end": 107.81
+    },
+    {
+     "w": "raconter.",
+     "start": 107.81,
+     "end": 108.17
+    }
+   ]
+  },
+  {
+   "start": 108.54,
+   "end": 113.73,
+   "words": [
+    {
+     "w": "Des",
+     "start": 108.54,
+     "end": 108.73
+    },
+    {
+     "w": "entreprises",
+     "start": 108.73,
+     "end": 109.13
+    },
+    {
+     "w": "françaises",
+     "start": 109.13,
+     "end": 109.81
+    },
+    {
+     "w": "parrainent",
+     "start": 109.81,
+     "end": 110.25
+    },
+    {
+     "w": "déjà",
+     "start": 110.25,
+     "end": 110.43
+    },
+    {
+     "w": "des",
+     "start": 110.43,
+     "end": 110.61
+    },
+    {
+     "w": "ruches,",
+     "start": 110.61,
+     "end": 111.09
+    },
+    {
+     "w": "par",
+     "start": 111.41,
+     "end": 111.46
+    },
+    {
+     "w": "exemple",
+     "start": 111.41,
+     "end": 111.69
+    },
+    {
+     "w": "avec",
+     "start": 111.69,
+     "end": 111.83
+    },
+    {
+     "w": "l'association",
+     "start": 111.83,
+     "end": 112.49
+    },
+    {
+     "w": "Un",
+     "start": 112.49,
+     "end": 112.61
+    },
+    {
+     "w": "toit",
+     "start": 112.61,
+     "end": 112.87
+    },
+    {
+     "w": "pour",
+     "start": 112.87,
+     "end": 113.05
+    },
+    {
+     "w": "les",
+     "start": 113.05,
+     "end": 113.19
+    },
+    {
+     "w": "abeilles.",
+     "start": 113.19,
+     "end": 113.59
+    }
+   ]
+  },
+  {
+   "start": 113.91,
+   "end": 118.28,
+   "words": [
+    {
+     "w": "Toi,",
+     "start": 113.91,
+     "end": 114.18
+    },
+    {
+     "w": "tu",
+     "start": 114.22,
+     "end": 114.3
+    },
+    {
+     "w": "poses",
+     "start": 114.3,
+     "end": 114.48
+    },
+    {
+     "w": "les",
+     "start": 114.48,
+     "end": 114.64
+    },
+    {
+     "w": "ruches,",
+     "start": 114.64,
+     "end": 115.04
+    },
+    {
+     "w": "tu",
+     "start": 115.12,
+     "end": 115.2
+    },
+    {
+     "w": "les",
+     "start": 115.2,
+     "end": 115.32
+    },
+    {
+     "w": "visites,",
+     "start": 115.32,
+     "end": 115.78
+    },
+    {
+     "w": "tu",
+     "start": 116.0,
+     "end": 116.1
+    },
+    {
+     "w": "récoltes",
+     "start": 116.1,
+     "end": 116.56
+    },
+    {
+     "w": "le",
+     "start": 116.56,
+     "end": 116.64
+    },
+    {
+     "w": "miel",
+     "start": 116.64,
+     "end": 116.84
+    },
+    {
+     "w": "et",
+     "start": 116.84,
+     "end": 117.24
+    },
+    {
+     "w": "tu",
+     "start": 117.24,
+     "end": 117.36
+    },
+    {
+     "w": "rends",
+     "start": 117.36,
+     "end": 117.74
+    },
+    {
+     "w": "compte",
+     "start": 117.74,
+     "end": 117.79
+    },
+    {
+     "w": "au",
+     "start": 117.74,
+     "end": 117.84
+    },
+    {
+     "w": "client.",
+     "start": 117.84,
+     "end": 118.08
+    }
+   ]
+  },
+  {
+   "start": 118.46,
+   "end": 122.62,
+   "words": [
+    {
+     "w": "Premier",
+     "start": 118.46,
+     "end": 118.7
+    },
+    {
+     "w": "point",
+     "start": 118.7,
+     "end": 118.9
+    },
+    {
+     "w": "de",
+     "start": 118.9,
+     "end": 119.02
+    },
+    {
+     "w": "loi",
+     "start": 119.02,
+     "end": 119.22
+    },
+    {
+     "w": "tout",
+     "start": 119.22,
+     "end": 119.52
+    },
+    {
+     "w": "apiculteur",
+     "start": 119.52,
+     "end": 120.12
+    },
+    {
+     "w": "doit",
+     "start": 120.12,
+     "end": 120.26
+    },
+    {
+     "w": "déclarer",
+     "start": 120.26,
+     "end": 120.76
+    },
+    {
+     "w": "ses",
+     "start": 120.76,
+     "end": 120.86
+    },
+    {
+     "w": "colonies",
+     "start": 120.86,
+     "end": 121.08
+    },
+    {
+     "w": "d'abeilles",
+     "start": 121.08,
+     "end": 121.74
+    },
+    {
+     "w": "chaque",
+     "start": 121.74,
+     "end": 122.18
+    },
+    {
+     "w": "année.",
+     "start": 122.18,
+     "end": 122.48
+    }
+   ]
+  },
+  {
+   "start": 122.8,
+   "end": 127.19,
+   "words": [
+    {
+     "w": "La",
+     "start": 122.8,
+     "end": 122.96
+    },
+    {
+     "w": "déclaration",
+     "start": 122.96,
+     "end": 123.46
+    },
+    {
+     "w": "se",
+     "start": 123.46,
+     "end": 123.7
+    },
+    {
+     "w": "fait",
+     "start": 123.7,
+     "end": 123.86
+    },
+    {
+     "w": "du",
+     "start": 123.86,
+     "end": 123.96
+    },
+    {
+     "w": "premier",
+     "start": 123.96,
+     "end": 124.2
+    },
+    {
+     "w": "septembre",
+     "start": 124.2,
+     "end": 124.78
+    },
+    {
+     "w": "au",
+     "start": 124.78,
+     "end": 124.92
+    },
+    {
+     "w": "trente",
+     "start": 124.92,
+     "end": 125.12
+    },
+    {
+     "w": "et",
+     "start": 125.12,
+     "end": 125.26
+    },
+    {
+     "w": "un",
+     "start": 125.26,
+     "end": 125.31
+    },
+    {
+     "w": "décembre,",
+     "start": 125.3,
+     "end": 125.84
+    },
+    {
+     "w": "dès",
+     "start": 125.96,
+     "end": 126.24
+    },
+    {
+     "w": "la",
+     "start": 126.24,
+     "end": 126.38
+    },
+    {
+     "w": "première",
+     "start": 126.38,
+     "end": 126.64
+    },
+    {
+     "w": "colonie.",
+     "start": 126.64,
+     "end": 127.1
+    }
+   ]
+  },
+  {
+   "start": 127.37,
+   "end": 130.9,
+   "words": [
+    {
+     "w": "Elle",
+     "start": 127.37,
+     "end": 127.56
+    },
+    {
+     "w": "se",
+     "start": 127.56,
+     "end": 127.72
+    },
+    {
+     "w": "fait",
+     "start": 127.72,
+     "end": 127.9
+    },
+    {
+     "w": "en",
+     "start": 127.9,
+     "end": 128.0
+    },
+    {
+     "w": "ligne",
+     "start": 128.0,
+     "end": 128.18
+    },
+    {
+     "w": "sur",
+     "start": 128.18,
+     "end": 128.38
+    },
+    {
+     "w": "Mes",
+     "start": 128.38,
+     "end": 128.54
+    },
+    {
+     "w": "démarches,",
+     "start": 128.54,
+     "end": 129.1
+    },
+    {
+     "w": "le",
+     "start": 129.2,
+     "end": 129.26
+    },
+    {
+     "w": "site",
+     "start": 129.26,
+     "end": 129.44
+    },
+    {
+     "w": "du",
+     "start": 129.44,
+     "end": 129.58
+    },
+    {
+     "w": "ministère",
+     "start": 129.58,
+     "end": 130.02
+    },
+    {
+     "w": "de",
+     "start": 130.02,
+     "end": 130.1
+    },
+    {
+     "w": "l'agriculture.",
+     "start": 130.1,
+     "end": 130.72
+    }
+   ]
+  },
+  {
+   "start": 131.08,
+   "end": 136.16,
+   "words": [
+    {
+     "w": "Le",
+     "start": 131.08,
+     "end": 131.24
+    },
+    {
+     "w": "texte",
+     "start": 131.24,
+     "end": 131.66
+    },
+    {
+     "w": "vise",
+     "start": 131.66,
+     "end": 131.86
+    },
+    {
+     "w": "le",
+     "start": 131.86,
+     "end": 131.96
+    },
+    {
+     "w": "propriétaire",
+     "start": 131.96,
+     "end": 132.78
+    },
+    {
+     "w": "ou",
+     "start": 132.78,
+     "end": 132.9
+    },
+    {
+     "w": "le",
+     "start": 132.9,
+     "end": 132.98
+    },
+    {
+     "w": "détenteur",
+     "start": 132.98,
+     "end": 133.56
+    },
+    {
+     "w": "des",
+     "start": 133.56,
+     "end": 133.66
+    },
+    {
+     "w": "colonies",
+     "start": 133.66,
+     "end": 134.1
+    },
+    {
+     "w": "écris",
+     "start": 134.3,
+     "end": 134.64
+    },
+    {
+     "w": "dans",
+     "start": 134.64,
+     "end": 134.82
+    },
+    {
+     "w": "le",
+     "start": 134.82,
+     "end": 134.92
+    },
+    {
+     "w": "contrat",
+     "start": 134.92,
+     "end": 135.28
+    },
+    {
+     "w": "qui",
+     "start": 135.28,
+     "end": 135.52
+    },
+    {
+     "w": "déclare.",
+     "start": 135.52,
+     "end": 136.04
+    }
+   ]
+  },
+  {
+   "start": 136.34,
+   "end": 142.13,
+   "words": [
+    {
+     "w": "Les",
+     "start": 136.34,
+     "end": 136.53
+    },
+    {
+     "w": "abeilles",
+     "start": 136.53,
+     "end": 136.87
+    },
+    {
+     "w": "piquent",
+     "start": 136.87,
+     "end": 137.43
+    },
+    {
+     "w": "pense",
+     "start": 137.45,
+     "end": 137.65
+    },
+    {
+     "w": "à",
+     "start": 137.65,
+     "end": 137.83
+    },
+    {
+     "w": "une",
+     "start": 137.83,
+     "end": 137.93
+    },
+    {
+     "w": "assurance,",
+     "start": 137.93,
+     "end": 138.25
+    },
+    {
+     "w": "à",
+     "start": 138.63,
+     "end": 138.68
+    },
+    {
+     "w": "une",
+     "start": 138.65,
+     "end": 138.77
+    },
+    {
+     "w": "tenue",
+     "start": 138.77,
+     "end": 139.05
+    },
+    {
+     "w": "de",
+     "start": 139.05,
+     "end": 139.13
+    },
+    {
+     "w": "protection",
+     "start": 139.13,
+     "end": 139.59
+    },
+    {
+     "w": "et",
+     "start": 139.59,
+     "end": 140.21
+    },
+    {
+     "w": "à",
+     "start": 140.21,
+     "end": 140.29
+    },
+    {
+     "w": "une",
+     "start": 140.29,
+     "end": 140.41
+    },
+    {
+     "w": "formation",
+     "start": 140.41,
+     "end": 140.81
+    },
+    {
+     "w": "chez",
+     "start": 140.81,
+     "end": 141.13
+    },
+    {
+     "w": "un",
+     "start": 141.13,
+     "end": 141.31
+    },
+    {
+     "w": "apiculteur.",
+     "start": 141.31,
+     "end": 141.97
+    }
+   ]
+  },
+  {
+   "start": 142.31,
+   "end": 146.45,
+   "words": [
+    {
+     "w": "La",
+     "start": 142.31,
+     "end": 142.47
+    },
+    {
+     "w": "limite",
+     "start": 142.47,
+     "end": 142.71
+    },
+    {
+     "w": "une",
+     "start": 143.05,
+     "end": 143.15
+    },
+    {
+     "w": "ruche",
+     "start": 143.15,
+     "end": 143.39
+    },
+    {
+     "w": "demande",
+     "start": 143.39,
+     "end": 143.63
+    },
+    {
+     "w": "du",
+     "start": 143.63,
+     "end": 143.81
+    },
+    {
+     "w": "temps",
+     "start": 143.81,
+     "end": 143.99
+    },
+    {
+     "w": "toute",
+     "start": 143.99,
+     "end": 144.21
+    },
+    {
+     "w": "l'année,",
+     "start": 144.21,
+     "end": 144.59
+    },
+    {
+     "w": "et",
+     "start": 144.89,
+     "end": 144.97
+    },
+    {
+     "w": "le",
+     "start": 144.97,
+     "end": 145.11
+    },
+    {
+     "w": "miel",
+     "start": 145.11,
+     "end": 145.27
+    },
+    {
+     "w": "dépend",
+     "start": 145.27,
+     "end": 145.67
+    },
+    {
+     "w": "de",
+     "start": 145.67,
+     "end": 145.83
+    },
+    {
+     "w": "la",
+     "start": 145.83,
+     "end": 145.91
+    },
+    {
+     "w": "météo.",
+     "start": 145.91,
+     "end": 146.33
+    }
+   ]
+  },
+  {
+   "start": 148.63,
+   "end": 151.58,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 148.63,
+     "end": 148.92
+    },
+    {
+     "w": "métier",
+     "start": 148.92,
+     "end": 149.34
+    },
+    {
+     "w": "cueilleur",
+     "start": 149.62,
+     "end": 149.96
+    },
+    {
+     "w": "de",
+     "start": 149.96,
+     "end": 150.04
+    },
+    {
+     "w": "plantes",
+     "start": 150.04,
+     "end": 150.34
+    },
+    {
+     "w": "sauvages",
+     "start": 150.34,
+     "end": 150.7
+    },
+    {
+     "w": "pour",
+     "start": 150.7,
+     "end": 150.9
+    },
+    {
+     "w": "les",
+     "start": 150.9,
+     "end": 151.02
+    },
+    {
+     "w": "restaurants.",
+     "start": 151.02,
+     "end": 151.36
+    }
+   ]
+  },
+  {
+   "start": 151.76,
+   "end": 156.02,
+   "words": [
+    {
+     "w": "Un",
+     "start": 151.76,
+     "end": 151.94
+    },
+    {
+     "w": "cuisinier",
+     "start": 151.94,
+     "end": 152.48
+    },
+    {
+     "w": "veut",
+     "start": 152.48,
+     "end": 152.62
+    },
+    {
+     "w": "des",
+     "start": 152.62,
+     "end": 152.78
+    },
+    {
+     "w": "feuilles,",
+     "start": 152.78,
+     "end": 153.22
+    },
+    {
+     "w": "des",
+     "start": 153.46,
+     "end": 153.52
+    },
+    {
+     "w": "fleurs",
+     "start": 153.52,
+     "end": 154.02
+    },
+    {
+     "w": "ou",
+     "start": 154.02,
+     "end": 154.16
+    },
+    {
+     "w": "des",
+     "start": 154.16,
+     "end": 154.34
+    },
+    {
+     "w": "herbes",
+     "start": 154.34,
+     "end": 154.68
+    },
+    {
+     "w": "qu'on",
+     "start": 154.68,
+     "end": 155.0
+    },
+    {
+     "w": "ne",
+     "start": 155.0,
+     "end": 155.1
+    },
+    {
+     "w": "trouve",
+     "start": 155.1,
+     "end": 155.26
+    },
+    {
+     "w": "pas",
+     "start": 155.26,
+     "end": 155.42
+    },
+    {
+     "w": "au",
+     "start": 155.42,
+     "end": 155.56
+    },
+    {
+     "w": "marché.",
+     "start": 155.56,
+     "end": 155.8
+    }
+   ]
+  },
+  {
+   "start": 156.2,
+   "end": 159.69,
+   "words": [
+    {
+     "w": "Toi,",
+     "start": 156.2,
+     "end": 156.52
+    },
+    {
+     "w": "tu",
+     "start": 156.62,
+     "end": 156.72
+    },
+    {
+     "w": "les",
+     "start": 156.72,
+     "end": 156.8
+    },
+    {
+     "w": "ramasses",
+     "start": 156.8,
+     "end": 157.18
+    },
+    {
+     "w": "le",
+     "start": 157.18,
+     "end": 157.26
+    },
+    {
+     "w": "matin,",
+     "start": 157.26,
+     "end": 157.54
+    },
+    {
+     "w": "tu",
+     "start": 157.72,
+     "end": 157.82
+    },
+    {
+     "w": "les",
+     "start": 157.82,
+     "end": 157.92
+    },
+    {
+     "w": "nettoies",
+     "start": 157.92,
+     "end": 158.44
+    },
+    {
+     "w": "et",
+     "start": 158.44,
+     "end": 158.66
+    },
+    {
+     "w": "tu",
+     "start": 158.66,
+     "end": 158.8
+    },
+    {
+     "w": "les",
+     "start": 158.8,
+     "end": 158.9
+    },
+    {
+     "w": "livres",
+     "start": 158.9,
+     "end": 159.08
+    },
+    {
+     "w": "bien",
+     "start": 159.08,
+     "end": 159.28
+    },
+    {
+     "w": "frais.",
+     "start": 159.28,
+     "end": 159.6
+    }
+   ]
+  },
+  {
+   "start": 159.87,
+   "end": 165.72,
+   "words": [
+    {
+     "w": "Premier",
+     "start": 159.87,
+     "end": 160.12
+    },
+    {
+     "w": "outil",
+     "start": 160.12,
+     "end": 160.54
+    },
+    {
+     "w": "l'application",
+     "start": 160.84,
+     "end": 161.4
+    },
+    {
+     "w": "Plantnet,",
+     "start": 161.4,
+     "end": 161.86
+    },
+    {
+     "w": "qui",
+     "start": 162.1,
+     "end": 162.24
+    },
+    {
+     "w": "reconnaît",
+     "start": 162.24,
+     "end": 162.72
+    },
+    {
+     "w": "une",
+     "start": 162.72,
+     "end": 162.88
+    },
+    {
+     "w": "plante",
+     "start": 162.88,
+     "end": 163.22
+    },
+    {
+     "w": "grâce",
+     "start": 163.22,
+     "end": 163.54
+    },
+    {
+     "w": "à",
+     "start": 163.54,
+     "end": 163.74
+    },
+    {
+     "w": "une",
+     "start": 163.74,
+     "end": 163.82
+    },
+    {
+     "w": "photo,",
+     "start": 163.82,
+     "end": 164.1
+    },
+    {
+     "w": "et",
+     "start": 164.54,
+     "end": 164.76
+    },
+    {
+     "w": "elle",
+     "start": 164.76,
+     "end": 164.9
+    },
+    {
+     "w": "est",
+     "start": 164.9,
+     "end": 164.98
+    },
+    {
+     "w": "gratuite.",
+     "start": 164.98,
+     "end": 165.38
+    }
+   ]
+  },
+  {
+   "start": 165.9,
+   "end": 169.91,
+   "words": [
+    {
+     "w": "Mais",
+     "start": 165.9,
+     "end": 166.06
+    },
+    {
+     "w": "une",
+     "start": 166.06,
+     "end": 166.18
+    },
+    {
+     "w": "application",
+     "start": 166.18,
+     "end": 166.6
+    },
+    {
+     "w": "peut",
+     "start": 166.6,
+     "end": 166.88
+    },
+    {
+     "w": "se",
+     "start": 166.88,
+     "end": 167.0
+    },
+    {
+     "w": "tromper",
+     "start": 167.0,
+     "end": 167.38
+    },
+    {
+     "w": "au",
+     "start": 167.68,
+     "end": 167.8
+    },
+    {
+     "w": "moindre",
+     "start": 167.8,
+     "end": 168.04
+    },
+    {
+     "w": "doute,",
+     "start": 168.04,
+     "end": 168.28
+    },
+    {
+     "w": "tu",
+     "start": 168.46,
+     "end": 168.54
+    },
+    {
+     "w": "ne",
+     "start": 168.54,
+     "end": 168.62
+    },
+    {
+     "w": "ramasses",
+     "start": 168.62,
+     "end": 168.94
+    },
+    {
+     "w": "pas",
+     "start": 168.94,
+     "end": 169.12
+    },
+    {
+     "w": "et",
+     "start": 169.12,
+     "end": 169.32
+    },
+    {
+     "w": "tu",
+     "start": 169.32,
+     "end": 169.4
+    },
+    {
+     "w": "ne",
+     "start": 169.4,
+     "end": 169.46
+    },
+    {
+     "w": "vends",
+     "start": 169.46,
+     "end": 169.64
+    },
+    {
+     "w": "pas.",
+     "start": 169.64,
+     "end": 169.76
+    }
+   ]
+  },
+  {
+   "start": 170.09,
+   "end": 174.94,
+   "words": [
+    {
+     "w": "Premier",
+     "start": 170.09,
+     "end": 170.36
+    },
+    {
+     "w": "point",
+     "start": 170.36,
+     "end": 170.56
+    },
+    {
+     "w": "de",
+     "start": 170.56,
+     "end": 170.66
+    },
+    {
+     "w": "loi",
+     "start": 170.66,
+     "end": 170.82
+    },
+    {
+     "w": "les",
+     "start": 171.1,
+     "end": 171.2
+    },
+    {
+     "w": "fruits",
+     "start": 171.2,
+     "end": 171.44
+    },
+    {
+     "w": "et",
+     "start": 171.44,
+     "end": 171.54
+    },
+    {
+     "w": "les",
+     "start": 171.54,
+     "end": 171.62
+    },
+    {
+     "w": "produits",
+     "start": 171.62,
+     "end": 171.82
+    },
+    {
+     "w": "du",
+     "start": 171.82,
+     "end": 171.98
+    },
+    {
+     "w": "sol",
+     "start": 171.98,
+     "end": 172.22
+    },
+    {
+     "w": "appartiennent",
+     "start": 172.22,
+     "end": 172.74
+    },
+    {
+     "w": "au",
+     "start": 172.74,
+     "end": 172.84
+    },
+    {
+     "w": "propriétaire,",
+     "start": 172.84,
+     "end": 173.64
+    },
+    {
+     "w": "alors",
+     "start": 173.82,
+     "end": 173.96
+    },
+    {
+     "w": "il",
+     "start": 173.96,
+     "end": 174.1
+    },
+    {
+     "w": "faut",
+     "start": 174.1,
+     "end": 174.24
+    },
+    {
+     "w": "son",
+     "start": 174.24,
+     "end": 174.4
+    },
+    {
+     "w": "accord.",
+     "start": 174.4,
+     "end": 174.62
+    }
+   ]
+  },
+  {
+   "start": 175.12,
+   "end": 179.41,
+   "words": [
+    {
+     "w": "Deuxième",
+     "start": 175.12,
+     "end": 175.55
+    },
+    {
+     "w": "point",
+     "start": 175.55,
+     "end": 175.77
+    },
+    {
+     "w": "certaines",
+     "start": 176.25,
+     "end": 176.45
+    },
+    {
+     "w": "plantes",
+     "start": 176.45,
+     "end": 176.93
+    },
+    {
+     "w": "sont",
+     "start": 176.93,
+     "end": 177.01
+    },
+    {
+     "w": "protégées,",
+     "start": 177.01,
+     "end": 177.79
+    },
+    {
+     "w": "et",
+     "start": 177.93,
+     "end": 178.07
+    },
+    {
+     "w": "leur",
+     "start": 178.07,
+     "end": 178.19
+    },
+    {
+     "w": "cueillette",
+     "start": 178.19,
+     "end": 178.59
+    },
+    {
+     "w": "est",
+     "start": 178.59,
+     "end": 178.69
+    },
+    {
+     "w": "interdite.",
+     "start": 178.69,
+     "end": 179.25
+    }
+   ]
+  },
+  {
+   "start": 179.59,
+   "end": 183.47,
+   "words": [
+    {
+     "w": "Troisième",
+     "start": 179.59,
+     "end": 180.02
+    },
+    {
+     "w": "point",
+     "start": 180.02,
+     "end": 180.24
+    },
+    {
+     "w": "beaucoup",
+     "start": 180.62,
+     "end": 180.82
+    },
+    {
+     "w": "de",
+     "start": 180.82,
+     "end": 180.98
+    },
+    {
+     "w": "plantes",
+     "start": 180.98,
+     "end": 181.32
+    },
+    {
+     "w": "médicinales",
+     "start": 181.32,
+     "end": 181.94
+    },
+    {
+     "w": "ne",
+     "start": 181.94,
+     "end": 182.0
+    },
+    {
+     "w": "peuvent",
+     "start": 182.0,
+     "end": 182.16
+    },
+    {
+     "w": "se",
+     "start": 182.16,
+     "end": 182.36
+    },
+    {
+     "w": "vendre",
+     "start": 182.36,
+     "end": 182.66
+    },
+    {
+     "w": "qu'en",
+     "start": 182.66,
+     "end": 182.82
+    },
+    {
+     "w": "pharmacie.",
+     "start": 182.82,
+     "end": 183.32
+    }
+   ]
+  },
+  {
+   "start": 183.65,
+   "end": 187.32,
+   "words": [
+    {
+     "w": "Seules",
+     "start": 183.65,
+     "end": 184.03
+    },
+    {
+     "w": "cent",
+     "start": 184.03,
+     "end": 184.19
+    },
+    {
+     "w": "quarante-huit",
+     "start": 184.19,
+     "end": 184.63
+    },
+    {
+     "w": "plantes",
+     "start": 184.63,
+     "end": 185.03
+    },
+    {
+     "w": "ont",
+     "start": 185.03,
+     "end": 185.17
+    },
+    {
+     "w": "été",
+     "start": 185.17,
+     "end": 185.35
+    },
+    {
+     "w": "libérées",
+     "start": 185.35,
+     "end": 185.87
+    },
+    {
+     "w": "de",
+     "start": 185.87,
+     "end": 185.99
+    },
+    {
+     "w": "ce",
+     "start": 185.99,
+     "end": 186.15
+    },
+    {
+     "w": "monopole",
+     "start": 186.15,
+     "end": 186.59
+    },
+    {
+     "w": "des",
+     "start": 186.59,
+     "end": 186.71
+    },
+    {
+     "w": "pharmaciens.",
+     "start": 186.71,
+     "end": 187.21
+    }
+   ]
+  },
+  {
+   "start": 187.5,
+   "end": 191.75,
+   "words": [
+    {
+     "w": "Un",
+     "start": 187.5,
+     "end": 187.68
+    },
+    {
+     "w": "parc",
+     "start": 187.68,
+     "end": 187.94
+    },
+    {
+     "w": "ou",
+     "start": 187.94,
+     "end": 188.2
+    },
+    {
+     "w": "une",
+     "start": 188.2,
+     "end": 188.34
+    },
+    {
+     "w": "commune",
+     "start": 188.34,
+     "end": 188.74
+    },
+    {
+     "w": "peut",
+     "start": 188.74,
+     "end": 188.82
+    },
+    {
+     "w": "avoir",
+     "start": 188.82,
+     "end": 189.02
+    },
+    {
+     "w": "ses",
+     "start": 189.02,
+     "end": 189.24
+    },
+    {
+     "w": "propres",
+     "start": 189.24,
+     "end": 189.58
+    },
+    {
+     "w": "règles",
+     "start": 189.58,
+     "end": 189.94
+    },
+    {
+     "w": "renseigne-toi",
+     "start": 190.14,
+     "end": 190.86
+    },
+    {
+     "w": "avant",
+     "start": 190.86,
+     "end": 191.06
+    },
+    {
+     "w": "de",
+     "start": 191.06,
+     "end": 191.2
+    },
+    {
+     "w": "ramasser.",
+     "start": 191.2,
+     "end": 191.6
+    }
+   ]
+  },
+  {
+   "start": 191.93,
+   "end": 195.77,
+   "words": [
+    {
+     "w": "La",
+     "start": 191.93,
+     "end": 192.08
+    },
+    {
+     "w": "limite",
+     "start": 192.08,
+     "end": 192.38
+    },
+    {
+     "w": "tout",
+     "start": 192.6,
+     "end": 192.78
+    },
+    {
+     "w": "dépend",
+     "start": 192.78,
+     "end": 193.04
+    },
+    {
+     "w": "de",
+     "start": 193.04,
+     "end": 193.22
+    },
+    {
+     "w": "la",
+     "start": 193.22,
+     "end": 193.32
+    },
+    {
+     "w": "saison",
+     "start": 193.32,
+     "end": 193.64
+    },
+    {
+     "w": "et",
+     "start": 193.64,
+     "end": 193.74
+    },
+    {
+     "w": "du",
+     "start": 193.74,
+     "end": 193.84
+    },
+    {
+     "w": "temps,",
+     "start": 193.84,
+     "end": 194.04
+    },
+    {
+     "w": "et",
+     "start": 194.4,
+     "end": 194.46
+    },
+    {
+     "w": "un",
+     "start": 194.46,
+     "end": 194.56
+    },
+    {
+     "w": "restaurant",
+     "start": 194.56,
+     "end": 194.92
+    },
+    {
+     "w": "peut",
+     "start": 194.92,
+     "end": 195.1
+    },
+    {
+     "w": "changer",
+     "start": 195.1,
+     "end": 195.3
+    },
+    {
+     "w": "d'avis.",
+     "start": 195.3,
+     "end": 195.66
+    }
+   ]
+  },
+  {
+   "start": 197.95,
+   "end": 201.64,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 197.95,
+     "end": 198.26
+    },
+    {
+     "w": "métier",
+     "start": 198.26,
+     "end": 198.68
+    },
+    {
+     "w": "le",
+     "start": 199.02,
+     "end": 199.2
+    },
+    {
+     "w": "fauconnier,",
+     "start": 199.2,
+     "end": 199.88
+    },
+    {
+     "w": "qui",
+     "start": 200.08,
+     "end": 200.36
+    },
+    {
+     "w": "éloigne",
+     "start": 200.36,
+     "end": 200.74
+    },
+    {
+     "w": "les",
+     "start": 200.74,
+     "end": 200.88
+    },
+    {
+     "w": "oiseaux",
+     "start": 200.88,
+     "end": 201.26
+    },
+    {
+     "w": "gênants.",
+     "start": 201.26,
+     "end": 201.56
+    }
+   ]
+  },
+  {
+   "start": 201.82,
+   "end": 206.98,
+   "words": [
+    {
+     "w": "Des",
+     "start": 201.82,
+     "end": 202.01
+    },
+    {
+     "w": "pigeons",
+     "start": 202.01,
+     "end": 202.31
+    },
+    {
+     "w": "salissent",
+     "start": 202.31,
+     "end": 202.73
+    },
+    {
+     "w": "un",
+     "start": 202.73,
+     "end": 202.85
+    },
+    {
+     "w": "toit,",
+     "start": 202.85,
+     "end": 203.15
+    },
+    {
+     "w": "des",
+     "start": 203.39,
+     "end": 203.47
+    },
+    {
+     "w": "étourneaux",
+     "start": 203.47,
+     "end": 204.01
+    },
+    {
+     "w": "mangent",
+     "start": 204.01,
+     "end": 204.33
+    },
+    {
+     "w": "les",
+     "start": 204.33,
+     "end": 204.43
+    },
+    {
+     "w": "raisins",
+     "start": 204.43,
+     "end": 204.81
+    },
+    {
+     "w": "un",
+     "start": 205.07,
+     "end": 205.21
+    },
+    {
+     "w": "rapace",
+     "start": 205.21,
+     "end": 205.55
+    },
+    {
+     "w": "dressé",
+     "start": 205.55,
+     "end": 205.95
+    },
+    {
+     "w": "peut",
+     "start": 205.95,
+     "end": 206.15
+    },
+    {
+     "w": "les",
+     "start": 206.15,
+     "end": 206.27
+    },
+    {
+     "w": "faire",
+     "start": 206.27,
+     "end": 206.45
+    },
+    {
+     "w": "fuir.",
+     "start": 206.45,
+     "end": 206.87
+    }
+   ]
+  },
+  {
+   "start": 207.16,
+   "end": 210.81,
+   "words": [
+    {
+     "w": "Des",
+     "start": 207.16,
+     "end": 207.33
+    },
+    {
+     "w": "fauconniers",
+     "start": 207.33,
+     "end": 207.79
+    },
+    {
+     "w": "travaillent",
+     "start": 207.79,
+     "end": 208.19
+    },
+    {
+     "w": "déjà",
+     "start": 208.19,
+     "end": 208.37
+    },
+    {
+     "w": "ainsi",
+     "start": 208.37,
+     "end": 208.73
+    },
+    {
+     "w": "dans",
+     "start": 208.73,
+     "end": 208.89
+    },
+    {
+     "w": "les",
+     "start": 208.89,
+     "end": 209.03
+    },
+    {
+     "w": "vignes",
+     "start": 209.03,
+     "end": 209.35
+    },
+    {
+     "w": "et",
+     "start": 209.35,
+     "end": 209.4
+    },
+    {
+     "w": "autour",
+     "start": 209.37,
+     "end": 209.59
+    },
+    {
+     "w": "de",
+     "start": 209.59,
+     "end": 209.75
+    },
+    {
+     "w": "certains",
+     "start": 209.75,
+     "end": 209.95
+    },
+    {
+     "w": "aéroports.",
+     "start": 209.95,
+     "end": 210.69
+    }
+   ]
+  },
+  {
+   "start": 210.99,
+   "end": 214.17,
+   "words": [
+    {
+     "w": "Le",
+     "start": 210.99,
+     "end": 211.17
+    },
+    {
+     "w": "but",
+     "start": 211.17,
+     "end": 211.35
+    },
+    {
+     "w": "est",
+     "start": 211.35,
+     "end": 211.51
+    },
+    {
+     "w": "d'effrayer",
+     "start": 211.51,
+     "end": 211.99
+    },
+    {
+     "w": "les",
+     "start": 211.99,
+     "end": 212.09
+    },
+    {
+     "w": "oiseaux,",
+     "start": 212.09,
+     "end": 212.51
+    },
+    {
+     "w": "pas",
+     "start": 212.79,
+     "end": 212.93
+    },
+    {
+     "w": "de",
+     "start": 212.93,
+     "end": 213.01
+    },
+    {
+     "w": "les",
+     "start": 213.01,
+     "end": 213.09
+    },
+    {
+     "w": "chasser",
+     "start": 213.09,
+     "end": 213.37
+    },
+    {
+     "w": "pour",
+     "start": 213.37,
+     "end": 213.53
+    },
+    {
+     "w": "le",
+     "start": 213.53,
+     "end": 213.63
+    },
+    {
+     "w": "plaisir.",
+     "start": 213.63,
+     "end": 213.85
+    }
+   ]
+  },
+  {
+   "start": 214.35,
+   "end": 219.8,
+   "words": [
+    {
+     "w": "Premier",
+     "start": 214.35,
+     "end": 214.62
+    },
+    {
+     "w": "point",
+     "start": 214.62,
+     "end": 214.82
+    },
+    {
+     "w": "de",
+     "start": 214.82,
+     "end": 214.96
+    },
+    {
+     "w": "loi",
+     "start": 214.96,
+     "end": 215.2
+    },
+    {
+     "w": "garder",
+     "start": 215.48,
+     "end": 215.78
+    },
+    {
+     "w": "des",
+     "start": 215.78,
+     "end": 215.98
+    },
+    {
+     "w": "rapaces",
+     "start": 215.98,
+     "end": 216.36
+    },
+    {
+     "w": "demande",
+     "start": 216.36,
+     "end": 216.6
+    },
+    {
+     "w": "un",
+     "start": 216.6,
+     "end": 216.76
+    },
+    {
+     "w": "certificat",
+     "start": 216.76,
+     "end": 217.34
+    },
+    {
+     "w": "de",
+     "start": 217.34,
+     "end": 217.42
+    },
+    {
+     "w": "capacité,",
+     "start": 217.42,
+     "end": 218.06
+    },
+    {
+     "w": "une",
+     "start": 218.36,
+     "end": 218.52
+    },
+    {
+     "w": "preuve",
+     "start": 218.52,
+     "end": 218.86
+    },
+    {
+     "w": "de",
+     "start": 218.86,
+     "end": 218.96
+    },
+    {
+     "w": "compétence.",
+     "start": 218.96,
+     "end": 219.6
+    }
+   ]
+  },
+  {
+   "start": 219.98,
+   "end": 223.66,
+   "words": [
+    {
+     "w": "Un",
+     "start": 219.98,
+     "end": 220.16
+    },
+    {
+     "w": "lieu",
+     "start": 220.16,
+     "end": 220.32
+    },
+    {
+     "w": "qui",
+     "start": 220.32,
+     "end": 220.5
+    },
+    {
+     "w": "détient",
+     "start": 220.5,
+     "end": 220.86
+    },
+    {
+     "w": "ce",
+     "start": 220.86,
+     "end": 221.0
+    },
+    {
+     "w": "type",
+     "start": 221.0,
+     "end": 221.24
+    },
+    {
+     "w": "d'animaux",
+     "start": 221.24,
+     "end": 221.8
+    },
+    {
+     "w": "est",
+     "start": 221.8,
+     "end": 222.1
+    },
+    {
+     "w": "aussi",
+     "start": 222.1,
+     "end": 222.3
+    },
+    {
+     "w": "soumis",
+     "start": 222.3,
+     "end": 222.7
+    },
+    {
+     "w": "à",
+     "start": 222.7,
+     "end": 222.8
+    },
+    {
+     "w": "une",
+     "start": 222.8,
+     "end": 222.92
+    },
+    {
+     "w": "autorisation.",
+     "start": 222.92,
+     "end": 223.44
+    }
+   ]
+  },
+  {
+   "start": 223.84,
+   "end": 228.13,
+   "words": [
+    {
+     "w": "Il",
+     "start": 223.84,
+     "end": 223.98
+    },
+    {
+     "w": "faut",
+     "start": 223.98,
+     "end": 224.16
+    },
+    {
+     "w": "donc",
+     "start": 224.16,
+     "end": 224.28
+    },
+    {
+     "w": "d'abord",
+     "start": 224.28,
+     "end": 224.58
+    },
+    {
+     "w": "apprendre",
+     "start": 224.58,
+     "end": 224.86
+    },
+    {
+     "w": "ce",
+     "start": 224.86,
+     "end": 225.06
+    },
+    {
+     "w": "métier",
+     "start": 225.06,
+     "end": 225.38
+    },
+    {
+     "w": "auprès",
+     "start": 225.38,
+     "end": 225.62
+    },
+    {
+     "w": "d'un",
+     "start": 225.62,
+     "end": 225.8
+    },
+    {
+     "w": "fauconnier,",
+     "start": 225.8,
+     "end": 226.38
+    },
+    {
+     "w": "avant",
+     "start": 226.68,
+     "end": 226.84
+    },
+    {
+     "w": "de",
+     "start": 226.84,
+     "end": 227.0
+    },
+    {
+     "w": "proposer",
+     "start": 227.0,
+     "end": 227.42
+    },
+    {
+     "w": "ce",
+     "start": 227.42,
+     "end": 227.54
+    },
+    {
+     "w": "service.",
+     "start": 227.54,
+     "end": 227.82
+    }
+   ]
+  },
+  {
+   "start": 228.31,
+   "end": 233.82,
+   "words": [
+    {
+     "w": "Certains",
+     "start": 228.31,
+     "end": 228.78
+    },
+    {
+     "w": "oiseaux",
+     "start": 228.78,
+     "end": 229.06
+    },
+    {
+     "w": "sauvages",
+     "start": 229.06,
+     "end": 229.52
+    },
+    {
+     "w": "sont",
+     "start": 229.52,
+     "end": 229.8
+    },
+    {
+     "w": "protégés",
+     "start": 229.8,
+     "end": 230.38
+    },
+    {
+     "w": "renseigne-toi",
+     "start": 230.58,
+     "end": 231.26
+    },
+    {
+     "w": "auprès",
+     "start": 231.26,
+     "end": 231.64
+    },
+    {
+     "w": "de",
+     "start": 231.64,
+     "end": 231.74
+    },
+    {
+     "w": "la",
+     "start": 231.74,
+     "end": 231.84
+    },
+    {
+     "w": "préfecture",
+     "start": 231.84,
+     "end": 232.38
+    },
+    {
+     "w": "avant",
+     "start": 232.38,
+     "end": 232.86
+    },
+    {
+     "w": "d'intervenir.",
+     "start": 232.86,
+     "end": 233.54
+    }
+   ]
+  },
+  {
+   "start": 234.0,
+   "end": 238.4,
+   "words": [
+    {
+     "w": "Il",
+     "start": 234.0,
+     "end": 234.17
+    },
+    {
+     "w": "faut",
+     "start": 234.17,
+     "end": 234.33
+    },
+    {
+     "w": "aussi",
+     "start": 234.33,
+     "end": 234.57
+    },
+    {
+     "w": "de",
+     "start": 234.57,
+     "end": 234.69
+    },
+    {
+     "w": "la",
+     "start": 234.69,
+     "end": 234.81
+    },
+    {
+     "w": "place,",
+     "start": 234.81,
+     "end": 235.13
+    },
+    {
+     "w": "une",
+     "start": 235.35,
+     "end": 235.41
+    },
+    {
+     "w": "volière,",
+     "start": 235.41,
+     "end": 235.89
+    },
+    {
+     "w": "de",
+     "start": 236.03,
+     "end": 236.08
+    },
+    {
+     "w": "la",
+     "start": 236.05,
+     "end": 236.17
+    },
+    {
+     "w": "nourriture",
+     "start": 236.17,
+     "end": 236.73
+    },
+    {
+     "w": "et",
+     "start": 236.73,
+     "end": 236.83
+    },
+    {
+     "w": "des",
+     "start": 236.83,
+     "end": 236.99
+    },
+    {
+     "w": "soins",
+     "start": 236.99,
+     "end": 237.25
+    },
+    {
+     "w": "vétérinaires",
+     "start": 237.25,
+     "end": 237.81
+    },
+    {
+     "w": "toute",
+     "start": 237.81,
+     "end": 237.99
+    },
+    {
+     "w": "l'année.",
+     "start": 237.99,
+     "end": 238.21
+    }
+   ]
+  },
+  {
+   "start": 238.58,
+   "end": 243.15,
+   "words": [
+    {
+     "w": "La",
+     "start": 238.58,
+     "end": 238.73
+    },
+    {
+     "w": "limite",
+     "start": 238.73,
+     "end": 239.03
+    },
+    {
+     "w": "peu",
+     "start": 239.37,
+     "end": 239.47
+    },
+    {
+     "w": "de",
+     "start": 239.47,
+     "end": 239.57
+    },
+    {
+     "w": "clients,",
+     "start": 239.57,
+     "end": 239.87
+    },
+    {
+     "w": "des",
+     "start": 240.15,
+     "end": 240.2
+    },
+    {
+     "w": "saisons",
+     "start": 240.19,
+     "end": 240.49
+    },
+    {
+     "w": "courtes,",
+     "start": 240.49,
+     "end": 241.01
+    },
+    {
+     "w": "et",
+     "start": 241.05,
+     "end": 241.11
+    },
+    {
+     "w": "un",
+     "start": 241.11,
+     "end": 241.21
+    },
+    {
+     "w": "animal",
+     "start": 241.21,
+     "end": 241.49
+    },
+    {
+     "w": "qui",
+     "start": 241.49,
+     "end": 241.73
+    },
+    {
+     "w": "dépend",
+     "start": 241.73,
+     "end": 241.99
+    },
+    {
+     "w": "de",
+     "start": 241.99,
+     "end": 242.15
+    },
+    {
+     "w": "toi",
+     "start": 242.15,
+     "end": 242.35
+    },
+    {
+     "w": "chaque",
+     "start": 242.35,
+     "end": 242.57
+    },
+    {
+     "w": "jour.",
+     "start": 242.57,
+     "end": 242.93
+    }
+   ]
+  },
+  {
+   "start": 245.33,
+   "end": 248.16,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 245.33,
+     "end": 245.67
+    },
+    {
+     "w": "métier",
+     "start": 245.67,
+     "end": 246.09
+    },
+    {
+     "w": "détruire",
+     "start": 246.33,
+     "end": 246.75
+    },
+    {
+     "w": "les",
+     "start": 246.75,
+     "end": 246.87
+    },
+    {
+     "w": "nids",
+     "start": 246.87,
+     "end": 247.01
+    },
+    {
+     "w": "de",
+     "start": 247.01,
+     "end": 247.13
+    },
+    {
+     "w": "frelons",
+     "start": 247.13,
+     "end": 247.47
+    },
+    {
+     "w": "asiatiques.",
+     "start": 247.47,
+     "end": 248.01
+    }
+   ]
+  },
+  {
+   "start": 248.34,
+   "end": 252.7,
+   "words": [
+    {
+     "w": "Un",
+     "start": 248.34,
+     "end": 248.54
+    },
+    {
+     "w": "nid",
+     "start": 248.54,
+     "end": 248.72
+    },
+    {
+     "w": "dans",
+     "start": 248.72,
+     "end": 248.82
+    },
+    {
+     "w": "un",
+     "start": 248.82,
+     "end": 249.0
+    },
+    {
+     "w": "arbre",
+     "start": 249.0,
+     "end": 249.32
+    },
+    {
+     "w": "ou",
+     "start": 249.32,
+     "end": 249.42
+    },
+    {
+     "w": "sous",
+     "start": 249.42,
+     "end": 249.5
+    },
+    {
+     "w": "un",
+     "start": 249.5,
+     "end": 249.68
+    },
+    {
+     "w": "toit",
+     "start": 249.68,
+     "end": 249.92
+    },
+    {
+     "w": "inquiète",
+     "start": 249.92,
+     "end": 250.28
+    },
+    {
+     "w": "les",
+     "start": 250.28,
+     "end": 250.38
+    },
+    {
+     "w": "voisins,",
+     "start": 250.38,
+     "end": 250.92
+    },
+    {
+     "w": "et",
+     "start": 250.92,
+     "end": 251.18
+    },
+    {
+     "w": "personne",
+     "start": 251.18,
+     "end": 251.46
+    },
+    {
+     "w": "ne",
+     "start": 251.46,
+     "end": 251.7
+    },
+    {
+     "w": "veut",
+     "start": 251.7,
+     "end": 251.78
+    },
+    {
+     "w": "s'en",
+     "start": 251.78,
+     "end": 251.92
+    },
+    {
+     "w": "occuper",
+     "start": 251.92,
+     "end": 252.28
+    },
+    {
+     "w": "seul.",
+     "start": 252.28,
+     "end": 252.5
+    }
+   ]
+  },
+  {
+   "start": 252.88,
+   "end": 257.31,
+   "words": [
+    {
+     "w": "Détruire",
+     "start": 252.88,
+     "end": 253.41
+    },
+    {
+     "w": "un",
+     "start": 253.41,
+     "end": 253.57
+    },
+    {
+     "w": "nid",
+     "start": 253.57,
+     "end": 253.73
+    },
+    {
+     "w": "est",
+     "start": 253.73,
+     "end": 253.97
+    },
+    {
+     "w": "dangereux",
+     "start": 253.97,
+     "end": 254.55
+    },
+    {
+     "w": "le",
+     "start": 254.81,
+     "end": 254.93
+    },
+    {
+     "w": "travail",
+     "start": 254.93,
+     "end": 255.25
+    },
+    {
+     "w": "se",
+     "start": 255.25,
+     "end": 255.47
+    },
+    {
+     "w": "fait",
+     "start": 255.47,
+     "end": 255.67
+    },
+    {
+     "w": "en",
+     "start": 255.67,
+     "end": 255.77
+    },
+    {
+     "w": "hauteur,",
+     "start": 255.77,
+     "end": 256.15
+    },
+    {
+     "w": "avec",
+     "start": 256.43,
+     "end": 256.61
+    },
+    {
+     "w": "des",
+     "start": 256.61,
+     "end": 256.79
+    },
+    {
+     "w": "produits.",
+     "start": 256.79,
+     "end": 257.07
+    }
+   ]
+  },
+  {
+   "start": 257.49,
+   "end": 262.85,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 257.49,
+     "end": 257.65
+    },
+    {
+     "w": "utiliser",
+     "start": 257.65,
+     "end": 258.05
+    },
+    {
+     "w": "certains",
+     "start": 258.05,
+     "end": 258.41
+    },
+    {
+     "w": "insecticides",
+     "start": 258.41,
+     "end": 259.05
+    },
+    {
+     "w": "réservés",
+     "start": 259.05,
+     "end": 259.63
+    },
+    {
+     "w": "aux",
+     "start": 259.63,
+     "end": 259.71
+    },
+    {
+     "w": "professionnels,",
+     "start": 259.71,
+     "end": 260.45
+    },
+    {
+     "w": "il",
+     "start": 260.65,
+     "end": 260.7
+    },
+    {
+     "w": "faut",
+     "start": 260.67,
+     "end": 260.85
+    },
+    {
+     "w": "un",
+     "start": 260.85,
+     "end": 260.97
+    },
+    {
+     "w": "certificat",
+     "start": 260.97,
+     "end": 261.63
+    },
+    {
+     "w": "appelé",
+     "start": 261.63,
+     "end": 261.93
+    },
+    {
+     "w": "certibiocide.",
+     "start": 261.93,
+     "end": 262.65
+    }
+   ]
+  },
+  {
+   "start": 263.03,
+   "end": 266.55,
+   "words": [
+    {
+     "w": "Ce",
+     "start": 263.03,
+     "end": 263.2
+    },
+    {
+     "w": "certificat",
+     "start": 263.2,
+     "end": 263.82
+    },
+    {
+     "w": "est",
+     "start": 263.82,
+     "end": 263.9
+    },
+    {
+     "w": "obligatoire",
+     "start": 263.9,
+     "end": 264.42
+    },
+    {
+     "w": "depuis",
+     "start": 264.42,
+     "end": 264.66
+    },
+    {
+     "w": "le",
+     "start": 264.66,
+     "end": 264.84
+    },
+    {
+     "w": "premier",
+     "start": 264.84,
+     "end": 265.12
+    },
+    {
+     "w": "juillet",
+     "start": 265.12,
+     "end": 265.56
+    },
+    {
+     "w": "deux",
+     "start": 265.56,
+     "end": 265.84
+    },
+    {
+     "w": "mille",
+     "start": 265.84,
+     "end": 266.06
+    },
+    {
+     "w": "quinze.",
+     "start": 266.06,
+     "end": 266.44
+    }
+   ]
+  },
+  {
+   "start": 266.73,
+   "end": 268.94,
+   "words": [
+    {
+     "w": "Et",
+     "start": 266.73,
+     "end": 266.88
+    },
+    {
+     "w": "la",
+     "start": 266.88,
+     "end": 266.96
+    },
+    {
+     "w": "formation",
+     "start": 266.96,
+     "end": 267.36
+    },
+    {
+     "w": "se",
+     "start": 267.36,
+     "end": 267.64
+    },
+    {
+     "w": "renouvelle",
+     "start": 267.64,
+     "end": 268.12
+    },
+    {
+     "w": "tous",
+     "start": 268.12,
+     "end": 268.32
+    },
+    {
+     "w": "les",
+     "start": 268.32,
+     "end": 268.46
+    },
+    {
+     "w": "cinq",
+     "start": 268.46,
+     "end": 268.64
+    },
+    {
+     "w": "ans.",
+     "start": 268.64,
+     "end": 268.8
+    }
+   ]
+  },
+  {
+   "start": 269.12,
+   "end": 272.7,
+   "words": [
+    {
+     "w": "Pense",
+     "start": 269.12,
+     "end": 269.39
+    },
+    {
+     "w": "à",
+     "start": 269.39,
+     "end": 269.47
+    },
+    {
+     "w": "une",
+     "start": 269.47,
+     "end": 269.57
+    },
+    {
+     "w": "assurance",
+     "start": 269.57,
+     "end": 269.95
+    },
+    {
+     "w": "et",
+     "start": 269.95,
+     "end": 270.15
+    },
+    {
+     "w": "à",
+     "start": 270.15,
+     "end": 270.2
+    },
+    {
+     "w": "du",
+     "start": 270.19,
+     "end": 270.29
+    },
+    {
+     "w": "matériel",
+     "start": 270.29,
+     "end": 270.77
+    },
+    {
+     "w": "de",
+     "start": 270.77,
+     "end": 270.87
+    },
+    {
+     "w": "sécurité",
+     "start": 270.87,
+     "end": 271.37
+    },
+    {
+     "w": "pour",
+     "start": 271.37,
+     "end": 271.61
+    },
+    {
+     "w": "le",
+     "start": 271.61,
+     "end": 271.71
+    },
+    {
+     "w": "travail",
+     "start": 271.71,
+     "end": 272.07
+    },
+    {
+     "w": "en",
+     "start": 272.07,
+     "end": 272.17
+    },
+    {
+     "w": "hauteur.",
+     "start": 272.17,
+     "end": 272.47
+    }
+   ]
+  },
+  {
+   "start": 272.88,
+   "end": 278.62,
+   "words": [
+    {
+     "w": "Chaque",
+     "start": 272.88,
+     "end": 273.23
+    },
+    {
+     "w": "département",
+     "start": 273.23,
+     "end": 273.79
+    },
+    {
+     "w": "organise",
+     "start": 273.79,
+     "end": 274.19
+    },
+    {
+     "w": "la",
+     "start": 274.19,
+     "end": 274.37
+    },
+    {
+     "w": "lutte",
+     "start": 274.37,
+     "end": 274.65
+    },
+    {
+     "w": "à",
+     "start": 274.65,
+     "end": 274.7
+    },
+    {
+     "w": "sa",
+     "start": 274.67,
+     "end": 274.79
+    },
+    {
+     "w": "façon",
+     "start": 274.79,
+     "end": 275.19
+    },
+    {
+     "w": "demande",
+     "start": 275.49,
+     "end": 275.85
+    },
+    {
+     "w": "à",
+     "start": 275.85,
+     "end": 276.05
+    },
+    {
+     "w": "la",
+     "start": 276.05,
+     "end": 276.13
+    },
+    {
+     "w": "mairie",
+     "start": 276.13,
+     "end": 276.57
+    },
+    {
+     "w": "ou",
+     "start": 276.57,
+     "end": 276.91
+    },
+    {
+     "w": "au",
+     "start": 276.91,
+     "end": 277.03
+    },
+    {
+     "w": "groupement",
+     "start": 277.03,
+     "end": 277.43
+    },
+    {
+     "w": "de",
+     "start": 277.43,
+     "end": 277.55
+    },
+    {
+     "w": "défense",
+     "start": 277.55,
+     "end": 277.89
+    },
+    {
+     "w": "sanitaire.",
+     "start": 277.89,
+     "end": 278.39
+    }
+   ]
+  },
+  {
+   "start": 278.8,
+   "end": 284.03,
+   "words": [
+    {
+     "w": "La",
+     "start": 278.8,
+     "end": 278.95
+    },
+    {
+     "w": "limite",
+     "start": 278.95,
+     "end": 279.21
+    },
+    {
+     "w": "un",
+     "start": 279.75,
+     "end": 279.85
+    },
+    {
+     "w": "métier",
+     "start": 279.85,
+     "end": 280.21
+    },
+    {
+     "w": "dangereux,",
+     "start": 280.21,
+     "end": 280.93
+    },
+    {
+     "w": "des",
+     "start": 280.99,
+     "end": 281.07
+    },
+    {
+     "w": "piqûres",
+     "start": 281.07,
+     "end": 281.51
+    },
+    {
+     "w": "possibles,",
+     "start": 281.51,
+     "end": 282.09
+    },
+    {
+     "w": "et",
+     "start": 282.51,
+     "end": 282.56
+    },
+    {
+     "w": "un",
+     "start": 282.53,
+     "end": 282.63
+    },
+    {
+     "w": "travail",
+     "start": 282.63,
+     "end": 282.97
+    },
+    {
+     "w": "surtout",
+     "start": 282.97,
+     "end": 283.25
+    },
+    {
+     "w": "saisonnier.",
+     "start": 283.25,
+     "end": 283.89
+    }
+   ]
+  },
+  {
+   "start": 286.21,
+   "end": 289.87,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 286.21,
+     "end": 286.5
+    },
+    {
+     "w": "métier",
+     "start": 286.5,
+     "end": 286.92
+    },
+    {
+     "w": "louer",
+     "start": 287.34,
+     "end": 287.6
+    },
+    {
+     "w": "des",
+     "start": 287.6,
+     "end": 287.7
+    },
+    {
+     "w": "moutons",
+     "start": 287.7,
+     "end": 288.12
+    },
+    {
+     "w": "pour",
+     "start": 288.12,
+     "end": 288.34
+    },
+    {
+     "w": "tondre",
+     "start": 288.34,
+     "end": 288.64
+    },
+    {
+     "w": "des",
+     "start": 288.64,
+     "end": 288.74
+    },
+    {
+     "w": "pelouses",
+     "start": 288.74,
+     "end": 289.2
+    },
+    {
+     "w": "et",
+     "start": 289.2,
+     "end": 289.3
+    },
+    {
+     "w": "des",
+     "start": 289.3,
+     "end": 289.42
+    },
+    {
+     "w": "terrains.",
+     "start": 289.42,
+     "end": 289.8
+    }
+   ]
+  },
+  {
+   "start": 290.05,
+   "end": 295.59,
+   "words": [
+    {
+     "w": "Une",
+     "start": 290.05,
+     "end": 290.23
+    },
+    {
+     "w": "entreprise",
+     "start": 290.23,
+     "end": 290.75
+    },
+    {
+     "w": "ou",
+     "start": 290.75,
+     "end": 291.01
+    },
+    {
+     "w": "une",
+     "start": 291.01,
+     "end": 291.13
+    },
+    {
+     "w": "commune",
+     "start": 291.13,
+     "end": 291.59
+    },
+    {
+     "w": "veut",
+     "start": 291.59,
+     "end": 291.69
+    },
+    {
+     "w": "un",
+     "start": 291.69,
+     "end": 291.85
+    },
+    {
+     "w": "terrain",
+     "start": 291.85,
+     "end": 292.09
+    },
+    {
+     "w": "entretenu",
+     "start": 292.09,
+     "end": 292.59
+    },
+    {
+     "w": "sans",
+     "start": 292.59,
+     "end": 292.87
+    },
+    {
+     "w": "moteur",
+     "start": 292.87,
+     "end": 293.39
+    },
+    {
+     "w": "ni",
+     "start": 293.39,
+     "end": 293.61
+    },
+    {
+     "w": "bruit,",
+     "start": 293.61,
+     "end": 294.17
+    },
+    {
+     "w": "alors",
+     "start": 294.33,
+     "end": 294.39
+    },
+    {
+     "w": "des",
+     "start": 294.39,
+     "end": 294.59
+    },
+    {
+     "w": "moutons",
+     "start": 294.59,
+     "end": 294.85
+    },
+    {
+     "w": "broutent",
+     "start": 294.85,
+     "end": 295.15
+    },
+    {
+     "w": "l'herbe.",
+     "start": 295.15,
+     "end": 295.47
+    }
+   ]
+  },
+  {
+   "start": 295.77,
+   "end": 301.34,
+   "words": [
+    {
+     "w": "Le",
+     "start": 295.77,
+     "end": 295.93
+    },
+    {
+     "w": "point",
+     "start": 295.93,
+     "end": 296.11
+    },
+    {
+     "w": "de",
+     "start": 296.11,
+     "end": 296.23
+    },
+    {
+     "w": "loi",
+     "start": 296.23,
+     "end": 296.37
+    },
+    {
+     "w": "surprenant",
+     "start": 296.37,
+     "end": 296.99
+    },
+    {
+     "w": "dès",
+     "start": 297.21,
+     "end": 297.35
+    },
+    {
+     "w": "le",
+     "start": 297.35,
+     "end": 297.49
+    },
+    {
+     "w": "premier",
+     "start": 297.49,
+     "end": 297.77
+    },
+    {
+     "w": "mouton,",
+     "start": 297.77,
+     "end": 298.21
+    },
+    {
+     "w": "on",
+     "start": 298.49,
+     "end": 298.63
+    },
+    {
+     "w": "doit",
+     "start": 298.63,
+     "end": 298.75
+    },
+    {
+     "w": "se",
+     "start": 298.75,
+     "end": 298.87
+    },
+    {
+     "w": "déclarer",
+     "start": 298.87,
+     "end": 299.31
+    },
+    {
+     "w": "à",
+     "start": 299.31,
+     "end": 299.37
+    },
+    {
+     "w": "l'établissement",
+     "start": 299.37,
+     "end": 299.85
+    },
+    {
+     "w": "départemental",
+     "start": 299.85,
+     "end": 300.57
+    },
+    {
+     "w": "de",
+     "start": 300.57,
+     "end": 300.65
+    },
+    {
+     "w": "l'élevage.",
+     "start": 300.65,
+     "end": 301.21
+    }
+   ]
+  },
+  {
+   "start": 301.52,
+   "end": 305.64,
+   "words": [
+    {
+     "w": "Les",
+     "start": 301.52,
+     "end": 301.7
+    },
+    {
+     "w": "moutons",
+     "start": 301.7,
+     "end": 302.0
+    },
+    {
+     "w": "restent",
+     "start": 302.0,
+     "end": 302.38
+    },
+    {
+     "w": "des",
+     "start": 302.38,
+     "end": 302.5
+    },
+    {
+     "w": "animaux",
+     "start": 302.5,
+     "end": 302.92
+    },
+    {
+     "w": "d'élevage,",
+     "start": 302.92,
+     "end": 303.44
+    },
+    {
+     "w": "même",
+     "start": 303.68,
+     "end": 303.9
+    },
+    {
+     "w": "quand",
+     "start": 303.9,
+     "end": 304.12
+    },
+    {
+     "w": "ils",
+     "start": 304.12,
+     "end": 304.28
+    },
+    {
+     "w": "servent",
+     "start": 304.28,
+     "end": 304.92
+    },
+    {
+     "w": "seulement",
+     "start": 304.92,
+     "end": 304.97
+    },
+    {
+     "w": "à",
+     "start": 304.92,
+     "end": 305.08
+    },
+    {
+     "w": "tondre.",
+     "start": 305.08,
+     "end": 305.44
+    }
+   ]
+  },
+  {
+   "start": 305.82,
+   "end": 309.38,
+   "words": [
+    {
+     "w": "Chaque",
+     "start": 305.82,
+     "end": 306.15
+    },
+    {
+     "w": "mouton",
+     "start": 306.15,
+     "end": 306.47
+    },
+    {
+     "w": "doit",
+     "start": 306.47,
+     "end": 306.61
+    },
+    {
+     "w": "porter",
+     "start": 306.61,
+     "end": 306.85
+    },
+    {
+     "w": "des",
+     "start": 306.85,
+     "end": 307.05
+    },
+    {
+     "w": "boucles",
+     "start": 307.05,
+     "end": 307.31
+    },
+    {
+     "w": "d'oreille",
+     "start": 307.31,
+     "end": 307.71
+    },
+    {
+     "w": "officielles",
+     "start": 307.71,
+     "end": 308.11
+    },
+    {
+     "w": "pour",
+     "start": 308.11,
+     "end": 308.29
+    },
+    {
+     "w": "être",
+     "start": 308.29,
+     "end": 308.45
+    },
+    {
+     "w": "identifié.",
+     "start": 308.45,
+     "end": 309.27
+    }
+   ]
+  },
+  {
+   "start": 309.56,
+   "end": 312.69,
+   "words": [
+    {
+     "w": "Les",
+     "start": 309.56,
+     "end": 309.73
+    },
+    {
+     "w": "arrivées",
+     "start": 309.73,
+     "end": 310.33
+    },
+    {
+     "w": "et",
+     "start": 310.33,
+     "end": 310.43
+    },
+    {
+     "w": "les",
+     "start": 310.43,
+     "end": 310.53
+    },
+    {
+     "w": "départs",
+     "start": 310.53,
+     "end": 310.89
+    },
+    {
+     "w": "d'animaux",
+     "start": 310.89,
+     "end": 311.25
+    },
+    {
+     "w": "se",
+     "start": 311.25,
+     "end": 311.43
+    },
+    {
+     "w": "déclarent",
+     "start": 311.43,
+     "end": 311.89
+    },
+    {
+     "w": "dans",
+     "start": 311.89,
+     "end": 311.99
+    },
+    {
+     "w": "les",
+     "start": 311.99,
+     "end": 312.09
+    },
+    {
+     "w": "sept",
+     "start": 312.09,
+     "end": 312.25
+    },
+    {
+     "w": "jours.",
+     "start": 312.25,
+     "end": 312.49
+    }
+   ]
+  },
+  {
+   "start": 312.87,
+   "end": 318.27,
+   "words": [
+    {
+     "w": "Il",
+     "start": 312.87,
+     "end": 313.05
+    },
+    {
+     "w": "faut",
+     "start": 313.05,
+     "end": 313.21
+    },
+    {
+     "w": "aussi",
+     "start": 313.21,
+     "end": 313.37
+    },
+    {
+     "w": "des",
+     "start": 313.37,
+     "end": 313.51
+    },
+    {
+     "w": "clôtures,",
+     "start": 313.51,
+     "end": 313.99
+    },
+    {
+     "w": "de",
+     "start": 314.15,
+     "end": 314.21
+    },
+    {
+     "w": "l'eau,",
+     "start": 314.21,
+     "end": 314.45
+    },
+    {
+     "w": "de",
+     "start": 314.59,
+     "end": 314.64
+    },
+    {
+     "w": "l'ombre",
+     "start": 314.63,
+     "end": 315.03
+    },
+    {
+     "w": "et",
+     "start": 315.03,
+     "end": 315.25
+    },
+    {
+     "w": "une",
+     "start": 315.25,
+     "end": 315.37
+    },
+    {
+     "w": "visite",
+     "start": 315.37,
+     "end": 315.65
+    },
+    {
+     "w": "régulière,",
+     "start": 315.65,
+     "end": 316.27
+    },
+    {
+     "w": "parce",
+     "start": 316.45,
+     "end": 316.65
+    },
+    {
+     "w": "que",
+     "start": 316.65,
+     "end": 316.79
+    },
+    {
+     "w": "le",
+     "start": 316.79,
+     "end": 316.85
+    },
+    {
+     "w": "bien-être",
+     "start": 316.85,
+     "end": 317.19
+    },
+    {
+     "w": "des",
+     "start": 317.19,
+     "end": 317.37
+    },
+    {
+     "w": "animaux",
+     "start": 317.37,
+     "end": 317.75
+    },
+    {
+     "w": "compte.",
+     "start": 317.75,
+     "end": 318.05
+    }
+   ]
+  },
+  {
+   "start": 318.45,
+   "end": 321.78,
+   "words": [
+    {
+     "w": "Pense",
+     "start": 318.45,
+     "end": 318.73
+    },
+    {
+     "w": "à",
+     "start": 318.73,
+     "end": 318.83
+    },
+    {
+     "w": "une",
+     "start": 318.83,
+     "end": 318.93
+    },
+    {
+     "w": "assurance,",
+     "start": 318.93,
+     "end": 319.37
+    },
+    {
+     "w": "car",
+     "start": 319.53,
+     "end": 319.61
+    },
+    {
+     "w": "un",
+     "start": 319.61,
+     "end": 319.77
+    },
+    {
+     "w": "mouton",
+     "start": 319.77,
+     "end": 320.07
+    },
+    {
+     "w": "qui",
+     "start": 320.07,
+     "end": 320.21
+    },
+    {
+     "w": "s'échappe",
+     "start": 320.21,
+     "end": 320.69
+    },
+    {
+     "w": "peut",
+     "start": 320.69,
+     "end": 320.87
+    },
+    {
+     "w": "causer",
+     "start": 320.87,
+     "end": 321.19
+    },
+    {
+     "w": "un",
+     "start": 321.19,
+     "end": 321.27
+    },
+    {
+     "w": "accident.",
+     "start": 321.27,
+     "end": 321.51
+    }
+   ]
+  },
+  {
+   "start": 321.96,
+   "end": 326.13,
+   "words": [
+    {
+     "w": "La",
+     "start": 321.96,
+     "end": 322.15
+    },
+    {
+     "w": "limite",
+     "start": 322.15,
+     "end": 322.41
+    },
+    {
+     "w": "un",
+     "start": 322.87,
+     "end": 323.01
+    },
+    {
+     "w": "terrain",
+     "start": 323.01,
+     "end": 323.27
+    },
+    {
+     "w": "pollué",
+     "start": 323.27,
+     "end": 323.73
+    },
+    {
+     "w": "ou",
+     "start": 323.73,
+     "end": 323.87
+    },
+    {
+     "w": "mal",
+     "start": 323.87,
+     "end": 324.05
+    },
+    {
+     "w": "clôturé",
+     "start": 324.05,
+     "end": 324.51
+    },
+    {
+     "w": "peut",
+     "start": 324.51,
+     "end": 324.67
+    },
+    {
+     "w": "être",
+     "start": 324.67,
+     "end": 324.85
+    },
+    {
+     "w": "dangereux",
+     "start": 324.85,
+     "end": 325.35
+    },
+    {
+     "w": "pour",
+     "start": 325.35,
+     "end": 325.51
+    },
+    {
+     "w": "les",
+     "start": 325.51,
+     "end": 325.65
+    },
+    {
+     "w": "animaux.",
+     "start": 325.65,
+     "end": 326.03
+    }
+   ]
+  },
+  {
+   "start": 328.31,
+   "end": 332.36,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 328.31,
+     "end": 328.6
+    },
+    {
+     "w": "métier",
+     "start": 328.6,
+     "end": 329.0
+    },
+    {
+     "w": "récolter",
+     "start": 329.26,
+     "end": 329.68
+    },
+    {
+     "w": "les",
+     "start": 329.68,
+     "end": 329.84
+    },
+    {
+     "w": "algues",
+     "start": 329.84,
+     "end": 330.14
+    },
+    {
+     "w": "qui",
+     "start": 330.14,
+     "end": 330.22
+    },
+    {
+     "w": "poussent",
+     "start": 330.22,
+     "end": 330.48
+    },
+    {
+     "w": "sur",
+     "start": 330.48,
+     "end": 330.62
+    },
+    {
+     "w": "les",
+     "start": 330.62,
+     "end": 330.74
+    },
+    {
+     "w": "rochers,",
+     "start": 330.74,
+     "end": 331.12
+    },
+    {
+     "w": "près",
+     "start": 331.38,
+     "end": 331.52
+    },
+    {
+     "w": "du",
+     "start": 331.52,
+     "end": 331.68
+    },
+    {
+     "w": "bord",
+     "start": 331.68,
+     "end": 331.82
+    },
+    {
+     "w": "de",
+     "start": 331.82,
+     "end": 331.96
+    },
+    {
+     "w": "mer.",
+     "start": 331.96,
+     "end": 332.16
+    }
+   ]
+  },
+  {
+   "start": 332.54,
+   "end": 335.67,
+   "words": [
+    {
+     "w": "Des",
+     "start": 332.54,
+     "end": 332.72
+    },
+    {
+     "w": "cuisiniers",
+     "start": 332.72,
+     "end": 333.46
+    },
+    {
+     "w": "et",
+     "start": 333.46,
+     "end": 333.74
+    },
+    {
+     "w": "des",
+     "start": 333.74,
+     "end": 333.88
+    },
+    {
+     "w": "fabricants",
+     "start": 333.88,
+     "end": 334.36
+    },
+    {
+     "w": "cherchent",
+     "start": 334.36,
+     "end": 334.7
+    },
+    {
+     "w": "des",
+     "start": 334.7,
+     "end": 334.8
+    },
+    {
+     "w": "algues",
+     "start": 334.8,
+     "end": 335.1
+    },
+    {
+     "w": "fraîches.",
+     "start": 335.1,
+     "end": 335.52
+    }
+   ]
+  },
+  {
+   "start": 335.85,
+   "end": 341.07,
+   "words": [
+    {
+     "w": "Premier",
+     "start": 335.85,
+     "end": 336.09
+    },
+    {
+     "w": "point",
+     "start": 336.09,
+     "end": 336.31
+    },
+    {
+     "w": "de",
+     "start": 336.31,
+     "end": 336.39
+    },
+    {
+     "w": "loi",
+     "start": 336.39,
+     "end": 336.61
+    },
+    {
+     "w": "en",
+     "start": 336.97,
+     "end": 337.13
+    },
+    {
+     "w": "Bretagne,",
+     "start": 337.13,
+     "end": 337.63
+    },
+    {
+     "w": "récolter",
+     "start": 337.97,
+     "end": 338.37
+    },
+    {
+     "w": "à",
+     "start": 338.37,
+     "end": 338.47
+    },
+    {
+     "w": "titre",
+     "start": 338.47,
+     "end": 338.73
+    },
+    {
+     "w": "professionnel",
+     "start": 338.73,
+     "end": 339.51
+    },
+    {
+     "w": "demande",
+     "start": 339.51,
+     "end": 340.01
+    },
+    {
+     "w": "une",
+     "start": 340.01,
+     "end": 340.35
+    },
+    {
+     "w": "licence.",
+     "start": 340.35,
+     "end": 340.61
+    }
+   ]
+  },
+  {
+   "start": 341.25,
+   "end": 344.71,
+   "words": [
+    {
+     "w": "Cette",
+     "start": 341.25,
+     "end": 341.49
+    },
+    {
+     "w": "licence",
+     "start": 341.49,
+     "end": 341.83
+    },
+    {
+     "w": "est",
+     "start": 341.83,
+     "end": 342.09
+    },
+    {
+     "w": "donnée",
+     "start": 342.09,
+     "end": 342.37
+    },
+    {
+     "w": "chaque",
+     "start": 342.37,
+     "end": 342.55
+    },
+    {
+     "w": "année",
+     "start": 342.55,
+     "end": 342.87
+    },
+    {
+     "w": "par",
+     "start": 342.87,
+     "end": 343.05
+    },
+    {
+     "w": "le",
+     "start": 343.05,
+     "end": 343.17
+    },
+    {
+     "w": "comité",
+     "start": 343.17,
+     "end": 343.57
+    },
+    {
+     "w": "régional",
+     "start": 343.57,
+     "end": 344.01
+    },
+    {
+     "w": "des",
+     "start": 344.01,
+     "end": 344.17
+    },
+    {
+     "w": "pêches.",
+     "start": 344.17,
+     "end": 344.59
+    }
+   ]
+  },
+  {
+   "start": 344.89,
+   "end": 347.73,
+   "words": [
+    {
+     "w": "Ce",
+     "start": 344.89,
+     "end": 345.08
+    },
+    {
+     "w": "n'est",
+     "start": 345.08,
+     "end": 345.26
+    },
+    {
+     "w": "donc",
+     "start": 345.26,
+     "end": 345.36
+    },
+    {
+     "w": "pas",
+     "start": 345.36,
+     "end": 345.58
+    },
+    {
+     "w": "un",
+     "start": 345.58,
+     "end": 345.76
+    },
+    {
+     "w": "métier",
+     "start": 345.76,
+     "end": 346.16
+    },
+    {
+     "w": "où",
+     "start": 346.16,
+     "end": 346.28
+    },
+    {
+     "w": "l'on",
+     "start": 346.28,
+     "end": 346.4
+    },
+    {
+     "w": "se",
+     "start": 346.4,
+     "end": 346.52
+    },
+    {
+     "w": "lance",
+     "start": 346.52,
+     "end": 346.7
+    },
+    {
+     "w": "du",
+     "start": 346.7,
+     "end": 346.9
+    },
+    {
+     "w": "jour",
+     "start": 346.9,
+     "end": 347.12
+    },
+    {
+     "w": "au",
+     "start": 347.12,
+     "end": 347.26
+    },
+    {
+     "w": "lendemain.",
+     "start": 347.26,
+     "end": 347.62
+    }
+   ]
+  },
+  {
+   "start": 347.91,
+   "end": 353.29,
+   "words": [
+    {
+     "w": "Ailleurs",
+     "start": 347.91,
+     "end": 348.22
+    },
+    {
+     "w": "qu'en",
+     "start": 348.22,
+     "end": 348.42
+    },
+    {
+     "w": "Bretagne,",
+     "start": 348.42,
+     "end": 348.88
+    },
+    {
+     "w": "les",
+     "start": 349.08,
+     "end": 349.16
+    },
+    {
+     "w": "règles",
+     "start": 349.16,
+     "end": 349.46
+    },
+    {
+     "w": "ne",
+     "start": 349.46,
+     "end": 349.56
+    },
+    {
+     "w": "sont",
+     "start": 349.56,
+     "end": 349.74
+    },
+    {
+     "w": "pas",
+     "start": 349.74,
+     "end": 349.9
+    },
+    {
+     "w": "les",
+     "start": 349.9,
+     "end": 350.02
+    },
+    {
+     "w": "mêmes",
+     "start": 350.02,
+     "end": 350.28
+    },
+    {
+     "w": "renseigne-toi",
+     "start": 350.66,
+     "end": 351.36
+    },
+    {
+     "w": "auprès",
+     "start": 351.36,
+     "end": 351.8
+    },
+    {
+     "w": "de",
+     "start": 351.8,
+     "end": 351.9
+    },
+    {
+     "w": "la",
+     "start": 351.9,
+     "end": 352.02
+    },
+    {
+     "w": "préfecture",
+     "start": 352.02,
+     "end": 352.44
+    },
+    {
+     "w": "de",
+     "start": 352.44,
+     "end": 352.64
+    },
+    {
+     "w": "ta",
+     "start": 352.64,
+     "end": 352.76
+    },
+    {
+     "w": "région.",
+     "start": 352.76,
+     "end": 353.02
+    }
+   ]
+  },
+  {
+   "start": 353.47,
+   "end": 358.2,
+   "words": [
+    {
+     "w": "Un",
+     "start": 353.47,
+     "end": 353.66
+    },
+    {
+     "w": "outil",
+     "start": 353.66,
+     "end": 353.94
+    },
+    {
+     "w": "très",
+     "start": 353.94,
+     "end": 354.04
+    },
+    {
+     "w": "utile",
+     "start": 354.04,
+     "end": 354.54
+    },
+    {
+     "w": "les",
+     "start": 354.9,
+     "end": 355.02
+    },
+    {
+     "w": "horaires",
+     "start": 355.02,
+     "end": 355.36
+    },
+    {
+     "w": "de",
+     "start": 355.36,
+     "end": 355.5
+    },
+    {
+     "w": "marée,",
+     "start": 355.5,
+     "end": 355.88
+    },
+    {
+     "w": "publiés",
+     "start": 355.96,
+     "end": 356.3
+    },
+    {
+     "w": "par",
+     "start": 356.3,
+     "end": 356.42
+    },
+    {
+     "w": "le",
+     "start": 356.42,
+     "end": 356.54
+    },
+    {
+     "w": "service",
+     "start": 356.54,
+     "end": 356.74
+    },
+    {
+     "w": "hydrographique",
+     "start": 356.74,
+     "end": 357.48
+    },
+    {
+     "w": "de",
+     "start": 357.48,
+     "end": 357.56
+    },
+    {
+     "w": "la",
+     "start": 357.56,
+     "end": 357.68
+    },
+    {
+     "w": "marine.",
+     "start": 357.68,
+     "end": 357.9
+    }
+   ]
+  },
+  {
+   "start": 358.38,
+   "end": 361.81,
+   "words": [
+    {
+     "w": "On",
+     "start": 358.38,
+     "end": 358.52
+    },
+    {
+     "w": "respecte",
+     "start": 358.52,
+     "end": 358.92
+    },
+    {
+     "w": "la",
+     "start": 358.92,
+     "end": 359.0
+    },
+    {
+     "w": "ressource,",
+     "start": 359.0,
+     "end": 359.56
+    },
+    {
+     "w": "avec",
+     "start": 359.56,
+     "end": 359.84
+    },
+    {
+     "w": "des",
+     "start": 359.84,
+     "end": 360.04
+    },
+    {
+     "w": "outils",
+     "start": 360.04,
+     "end": 360.48
+    },
+    {
+     "w": "et",
+     "start": 360.48,
+     "end": 360.62
+    },
+    {
+     "w": "des",
+     "start": 360.62,
+     "end": 360.7
+    },
+    {
+     "w": "périodes",
+     "start": 360.7,
+     "end": 361.12
+    },
+    {
+     "w": "autorisés.",
+     "start": 361.12,
+     "end": 361.64
+    }
+   ]
+  },
+  {
+   "start": 361.99,
+   "end": 366.31,
+   "words": [
+    {
+     "w": "La",
+     "start": 361.99,
+     "end": 362.14
+    },
+    {
+     "w": "limite",
+     "start": 362.14,
+     "end": 362.36
+    },
+    {
+     "w": "un",
+     "start": 362.78,
+     "end": 362.86
+    },
+    {
+     "w": "travail",
+     "start": 362.86,
+     "end": 363.12
+    },
+    {
+     "w": "physique,",
+     "start": 363.12,
+     "end": 363.52
+    },
+    {
+     "w": "des",
+     "start": 363.8,
+     "end": 363.96
+    },
+    {
+     "w": "marées",
+     "start": 363.96,
+     "end": 364.34
+    },
+    {
+     "w": "et",
+     "start": 364.34,
+     "end": 364.56
+    },
+    {
+     "w": "des",
+     "start": 364.56,
+     "end": 364.7
+    },
+    {
+     "w": "tempêtes",
+     "start": 364.7,
+     "end": 365.14
+    },
+    {
+     "w": "qui",
+     "start": 365.14,
+     "end": 365.28
+    },
+    {
+     "w": "décident",
+     "start": 365.28,
+     "end": 365.64
+    },
+    {
+     "w": "de",
+     "start": 365.64,
+     "end": 365.76
+    },
+    {
+     "w": "tes",
+     "start": 365.76,
+     "end": 365.86
+    },
+    {
+     "w": "journées.",
+     "start": 365.86,
+     "end": 366.24
+    }
+   ]
+  },
+  {
+   "start": 368.49,
+   "end": 372.55,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 368.49,
+     "end": 368.79
+    },
+    {
+     "w": "métier",
+     "start": 368.79,
+     "end": 369.25
+    },
+    {
+     "w": "piégeur",
+     "start": 369.57,
+     "end": 370.07
+    },
+    {
+     "w": "agréé,",
+     "start": 370.07,
+     "end": 370.59
+    },
+    {
+     "w": "qui",
+     "start": 370.65,
+     "end": 370.71
+    },
+    {
+     "w": "capture",
+     "start": 370.71,
+     "end": 370.99
+    },
+    {
+     "w": "les",
+     "start": 370.99,
+     "end": 371.19
+    },
+    {
+     "w": "animaux",
+     "start": 371.19,
+     "end": 371.57
+    },
+    {
+     "w": "qui",
+     "start": 371.57,
+     "end": 371.69
+    },
+    {
+     "w": "causent",
+     "start": 371.69,
+     "end": 372.01
+    },
+    {
+     "w": "des",
+     "start": 372.01,
+     "end": 372.09
+    },
+    {
+     "w": "dégâts.",
+     "start": 372.09,
+     "end": 372.47
+    }
+   ]
+  },
+  {
+   "start": 372.73,
+   "end": 376.4,
+   "words": [
+    {
+     "w": "Des",
+     "start": 372.73,
+     "end": 372.9
+    },
+    {
+     "w": "ragondins",
+     "start": 372.9,
+     "end": 373.36
+    },
+    {
+     "w": "creusent",
+     "start": 373.36,
+     "end": 373.68
+    },
+    {
+     "w": "des",
+     "start": 373.68,
+     "end": 373.8
+    },
+    {
+     "w": "berges,",
+     "start": 373.8,
+     "end": 374.2
+    },
+    {
+     "w": "et",
+     "start": 374.38,
+     "end": 374.43
+    },
+    {
+     "w": "des",
+     "start": 374.4,
+     "end": 374.52
+    },
+    {
+     "w": "propriétaires",
+     "start": 374.52,
+     "end": 375.14
+    },
+    {
+     "w": "cherchent",
+     "start": 375.14,
+     "end": 375.44
+    },
+    {
+     "w": "quelqu'un",
+     "start": 375.44,
+     "end": 375.76
+    },
+    {
+     "w": "de",
+     "start": 375.76,
+     "end": 375.86
+    },
+    {
+     "w": "compétent.",
+     "start": 375.86,
+     "end": 376.3
+    }
+   ]
+  },
+  {
+   "start": 376.58,
+   "end": 380.87,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 376.58,
+     "end": 376.73
+    },
+    {
+     "w": "utiliser",
+     "start": 376.73,
+     "end": 377.05
+    },
+    {
+     "w": "des",
+     "start": 377.05,
+     "end": 377.29
+    },
+    {
+     "w": "pièges",
+     "start": 377.29,
+     "end": 377.65
+    },
+    {
+     "w": "contre",
+     "start": 377.65,
+     "end": 377.85
+    },
+    {
+     "w": "certaines",
+     "start": 377.85,
+     "end": 378.19
+    },
+    {
+     "w": "espèces,",
+     "start": 378.19,
+     "end": 378.79
+    },
+    {
+     "w": "il",
+     "start": 378.91,
+     "end": 378.96
+    },
+    {
+     "w": "faut",
+     "start": 378.95,
+     "end": 379.13
+    },
+    {
+     "w": "un",
+     "start": 379.13,
+     "end": 379.23
+    },
+    {
+     "w": "agrément",
+     "start": 379.23,
+     "end": 379.57
+    },
+    {
+     "w": "délivré",
+     "start": 379.57,
+     "end": 380.13
+    },
+    {
+     "w": "par",
+     "start": 380.13,
+     "end": 380.27
+    },
+    {
+     "w": "le",
+     "start": 380.27,
+     "end": 380.39
+    },
+    {
+     "w": "préfet.",
+     "start": 380.39,
+     "end": 380.77
+    }
+   ]
+  },
+  {
+   "start": 381.05,
+   "end": 384.58,
+   "words": [
+    {
+     "w": "Cet",
+     "start": 381.05,
+     "end": 381.31
+    },
+    {
+     "w": "agrément",
+     "start": 381.31,
+     "end": 381.73
+    },
+    {
+     "w": "s'obtient",
+     "start": 381.73,
+     "end": 382.43
+    },
+    {
+     "w": "après",
+     "start": 382.43,
+     "end": 382.75
+    },
+    {
+     "w": "une",
+     "start": 382.75,
+     "end": 382.91
+    },
+    {
+     "w": "formation",
+     "start": 382.91,
+     "end": 383.27
+    },
+    {
+     "w": "d'au",
+     "start": 383.27,
+     "end": 383.55
+    },
+    {
+     "w": "moins",
+     "start": 383.55,
+     "end": 383.73
+    },
+    {
+     "w": "seize",
+     "start": 383.73,
+     "end": 384.05
+    },
+    {
+     "w": "heures.",
+     "start": 384.05,
+     "end": 384.35
+    }
+   ]
+  },
+  {
+   "start": 384.76,
+   "end": 387.64,
+   "words": [
+    {
+     "w": "Ces",
+     "start": 384.76,
+     "end": 384.96
+    },
+    {
+     "w": "formations",
+     "start": 384.96,
+     "end": 385.26
+    },
+    {
+     "w": "sont",
+     "start": 385.26,
+     "end": 385.54
+    },
+    {
+     "w": "proposées",
+     "start": 385.54,
+     "end": 386.04
+    },
+    {
+     "w": "par",
+     "start": 386.04,
+     "end": 386.14
+    },
+    {
+     "w": "les",
+     "start": 386.14,
+     "end": 386.26
+    },
+    {
+     "w": "fédérations",
+     "start": 386.26,
+     "end": 386.78
+    },
+    {
+     "w": "de",
+     "start": 386.78,
+     "end": 386.94
+    },
+    {
+     "w": "chasseurs.",
+     "start": 386.94,
+     "end": 387.5
+    }
+   ]
+  },
+  {
+   "start": 387.82,
+   "end": 393.96,
+   "words": [
+    {
+     "w": "Toutes",
+     "start": 387.82,
+     "end": 388.07
+    },
+    {
+     "w": "les",
+     "start": 388.07,
+     "end": 388.19
+    },
+    {
+     "w": "bêtes",
+     "start": 388.19,
+     "end": 388.45
+    },
+    {
+     "w": "ne",
+     "start": 388.45,
+     "end": 388.61
+    },
+    {
+     "w": "relèvent",
+     "start": 388.61,
+     "end": 388.93
+    },
+    {
+     "w": "pas",
+     "start": 388.93,
+     "end": 389.07
+    },
+    {
+     "w": "de",
+     "start": 389.07,
+     "end": 389.17
+    },
+    {
+     "w": "la",
+     "start": 389.17,
+     "end": 389.25
+    },
+    {
+     "w": "même",
+     "start": 389.25,
+     "end": 389.35
+    },
+    {
+     "w": "règle",
+     "start": 389.35,
+     "end": 389.75
+    },
+    {
+     "w": "même",
+     "start": 389.99,
+     "end": 390.25
+    },
+    {
+     "w": "pour",
+     "start": 390.25,
+     "end": 390.47
+    },
+    {
+     "w": "une",
+     "start": 390.47,
+     "end": 390.63
+    },
+    {
+     "w": "taupe,",
+     "start": 390.63,
+     "end": 391.01
+    },
+    {
+     "w": "renseigne-toi,",
+     "start": 391.23,
+     "end": 391.89
+    },
+    {
+     "w": "car",
+     "start": 392.19,
+     "end": 392.35
+    },
+    {
+     "w": "la",
+     "start": 392.35,
+     "end": 392.49
+    },
+    {
+     "w": "règle",
+     "start": 392.49,
+     "end": 392.75
+    },
+    {
+     "w": "dépend",
+     "start": 392.75,
+     "end": 393.11
+    },
+    {
+     "w": "de",
+     "start": 393.11,
+     "end": 393.31
+    },
+    {
+     "w": "l'espèce.",
+     "start": 393.31,
+     "end": 393.79
+    }
+   ]
+  },
+  {
+   "start": 394.14,
+   "end": 399.02,
+   "words": [
+    {
+     "w": "Un",
+     "start": 394.14,
+     "end": 394.3
+    },
+    {
+     "w": "piège",
+     "start": 394.3,
+     "end": 394.6
+    },
+    {
+     "w": "doit",
+     "start": 394.6,
+     "end": 394.72
+    },
+    {
+     "w": "être",
+     "start": 394.72,
+     "end": 394.94
+    },
+    {
+     "w": "choisi",
+     "start": 394.94,
+     "end": 395.44
+    },
+    {
+     "w": "et",
+     "start": 395.44,
+     "end": 395.7
+    },
+    {
+     "w": "posé",
+     "start": 395.7,
+     "end": 396.08
+    },
+    {
+     "w": "selon",
+     "start": 396.08,
+     "end": 396.26
+    },
+    {
+     "w": "des",
+     "start": 396.26,
+     "end": 396.46
+    },
+    {
+     "w": "règles",
+     "start": 396.46,
+     "end": 396.72
+    },
+    {
+     "w": "précises,",
+     "start": 396.72,
+     "end": 397.36
+    },
+    {
+     "w": "pour",
+     "start": 397.56,
+     "end": 397.64
+    },
+    {
+     "w": "ne",
+     "start": 397.64,
+     "end": 397.76
+    },
+    {
+     "w": "pas",
+     "start": 397.76,
+     "end": 397.92
+    },
+    {
+     "w": "blesser",
+     "start": 397.92,
+     "end": 398.28
+    },
+    {
+     "w": "d'autres",
+     "start": 398.28,
+     "end": 398.44
+    },
+    {
+     "w": "animaux.",
+     "start": 398.44,
+     "end": 398.94
+    }
+   ]
+  },
+  {
+   "start": 399.2,
+   "end": 403.37,
+   "words": [
+    {
+     "w": "Le",
+     "start": 399.2,
+     "end": 399.37
+    },
+    {
+     "w": "terrain",
+     "start": 399.37,
+     "end": 399.59
+    },
+    {
+     "w": "compte",
+     "start": 399.59,
+     "end": 399.99
+    },
+    {
+     "w": "chaque",
+     "start": 400.19,
+     "end": 400.33
+    },
+    {
+     "w": "propriétaire",
+     "start": 400.33,
+     "end": 401.03
+    },
+    {
+     "w": "doit",
+     "start": 401.03,
+     "end": 401.13
+    },
+    {
+     "w": "donner",
+     "start": 401.13,
+     "end": 401.39
+    },
+    {
+     "w": "son",
+     "start": 401.39,
+     "end": 401.59
+    },
+    {
+     "w": "accord",
+     "start": 401.59,
+     "end": 401.89
+    },
+    {
+     "w": "avant",
+     "start": 401.89,
+     "end": 402.23
+    },
+    {
+     "w": "que",
+     "start": 402.23,
+     "end": 402.43
+    },
+    {
+     "w": "tu",
+     "start": 402.43,
+     "end": 402.53
+    },
+    {
+     "w": "poses",
+     "start": 402.53,
+     "end": 402.75
+    },
+    {
+     "w": "un",
+     "start": 402.75,
+     "end": 402.87
+    },
+    {
+     "w": "piège.",
+     "start": 402.87,
+     "end": 403.25
+    }
+   ]
+  },
+  {
+   "start": 403.55,
+   "end": 408.57,
+   "words": [
+    {
+     "w": "La",
+     "start": 403.55,
+     "end": 403.72
+    },
+    {
+     "w": "limite",
+     "start": 403.72,
+     "end": 403.96
+    },
+    {
+     "w": "un",
+     "start": 404.34,
+     "end": 404.42
+    },
+    {
+     "w": "travail",
+     "start": 404.42,
+     "end": 404.74
+    },
+    {
+     "w": "tôt",
+     "start": 404.74,
+     "end": 404.94
+    },
+    {
+     "w": "le",
+     "start": 404.94,
+     "end": 404.99
+    },
+    {
+     "w": "matin,",
+     "start": 404.98,
+     "end": 405.3
+    },
+    {
+     "w": "par",
+     "start": 405.44,
+     "end": 405.58
+    },
+    {
+     "w": "tous",
+     "start": 405.58,
+     "end": 405.74
+    },
+    {
+     "w": "les",
+     "start": 405.74,
+     "end": 405.86
+    },
+    {
+     "w": "temps,",
+     "start": 405.86,
+     "end": 406.08
+    },
+    {
+     "w": "avec",
+     "start": 406.56,
+     "end": 406.8
+    },
+    {
+     "w": "une",
+     "start": 406.8,
+     "end": 407.04
+    },
+    {
+     "w": "clientèle",
+     "start": 407.04,
+     "end": 407.66
+    },
+    {
+     "w": "très",
+     "start": 407.66,
+     "end": 407.98
+    },
+    {
+     "w": "locale.",
+     "start": 407.98,
+     "end": 408.42
+    }
+   ]
+  },
+  {
+   "start": 410.75,
+   "end": 417.3,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 410.75,
+     "end": 411.04
+    },
+    {
+     "w": "métier",
+     "start": 411.04,
+     "end": 411.44
+    },
+    {
+     "w": "garde",
+     "start": 411.82,
+     "end": 412.1
+    },
+    {
+     "w": "particulier,",
+     "start": 412.1,
+     "end": 412.72
+    },
+    {
+     "w": "la",
+     "start": 413.1,
+     "end": 413.2
+    },
+    {
+     "w": "personne",
+     "start": 413.2,
+     "end": 413.48
+    },
+    {
+     "w": "qui",
+     "start": 413.48,
+     "end": 413.66
+    },
+    {
+     "w": "surveille",
+     "start": 413.66,
+     "end": 414.06
+    },
+    {
+     "w": "un",
+     "start": 414.06,
+     "end": 414.16
+    },
+    {
+     "w": "domaine,",
+     "start": 414.16,
+     "end": 414.56
+    },
+    {
+     "w": "une",
+     "start": 414.72,
+     "end": 414.8
+    },
+    {
+     "w": "forêt",
+     "start": 414.8,
+     "end": 415.3
+    },
+    {
+     "w": "ou",
+     "start": 415.3,
+     "end": 415.54
+    },
+    {
+     "w": "un",
+     "start": 415.54,
+     "end": 415.72
+    },
+    {
+     "w": "étang",
+     "start": 415.72,
+     "end": 416.06
+    },
+    {
+     "w": "pour",
+     "start": 416.06,
+     "end": 416.36
+    },
+    {
+     "w": "son",
+     "start": 416.36,
+     "end": 416.48
+    },
+    {
+     "w": "propriétaire.",
+     "start": 416.48,
+     "end": 417.24
+    }
+   ]
+  },
+  {
+   "start": 417.48,
+   "end": 422.35,
+   "words": [
+    {
+     "w": "Elle",
+     "start": 417.48,
+     "end": 417.65
+    },
+    {
+     "w": "peut",
+     "start": 417.65,
+     "end": 417.79
+    },
+    {
+     "w": "constater",
+     "start": 417.79,
+     "end": 418.21
+    },
+    {
+     "w": "des",
+     "start": 418.21,
+     "end": 418.33
+    },
+    {
+     "w": "infractions,",
+     "start": 418.33,
+     "end": 418.89
+    },
+    {
+     "w": "par",
+     "start": 418.99,
+     "end": 419.07
+    },
+    {
+     "w": "exemple",
+     "start": 419.07,
+     "end": 419.35
+    },
+    {
+     "w": "une",
+     "start": 419.35,
+     "end": 419.59
+    },
+    {
+     "w": "pêche",
+     "start": 419.59,
+     "end": 419.91
+    },
+    {
+     "w": "sans",
+     "start": 419.91,
+     "end": 420.05
+    },
+    {
+     "w": "autorisation,",
+     "start": 420.05,
+     "end": 420.69
+    },
+    {
+     "w": "et",
+     "start": 421.07,
+     "end": 421.13
+    },
+    {
+     "w": "dresser",
+     "start": 421.13,
+     "end": 421.45
+    },
+    {
+     "w": "un",
+     "start": 421.45,
+     "end": 421.53
+    },
+    {
+     "w": "procès-verbal.",
+     "start": 421.53,
+     "end": 422.13
+    }
+   ]
+  },
+  {
+   "start": 422.53,
+   "end": 427.5,
+   "words": [
+    {
+     "w": "Premier",
+     "start": 422.53,
+     "end": 422.81
+    },
+    {
+     "w": "point",
+     "start": 422.81,
+     "end": 423.03
+    },
+    {
+     "w": "de",
+     "start": 423.03,
+     "end": 423.15
+    },
+    {
+     "w": "loi",
+     "start": 423.15,
+     "end": 423.33
+    },
+    {
+     "w": "le",
+     "start": 423.69,
+     "end": 423.85
+    },
+    {
+     "w": "garde",
+     "start": 423.85,
+     "end": 424.09
+    },
+    {
+     "w": "doit",
+     "start": 424.09,
+     "end": 424.33
+    },
+    {
+     "w": "d'abord",
+     "start": 424.33,
+     "end": 424.61
+    },
+    {
+     "w": "être",
+     "start": 424.61,
+     "end": 424.81
+    },
+    {
+     "w": "commissionné",
+     "start": 424.81,
+     "end": 425.51
+    },
+    {
+     "w": "par",
+     "start": 425.51,
+     "end": 425.63
+    },
+    {
+     "w": "le",
+     "start": 425.63,
+     "end": 425.73
+    },
+    {
+     "w": "propriétaire,",
+     "start": 425.73,
+     "end": 426.49
+    },
+    {
+     "w": "qui",
+     "start": 426.59,
+     "end": 426.73
+    },
+    {
+     "w": "le",
+     "start": 426.73,
+     "end": 426.89
+    },
+    {
+     "w": "désigne.",
+     "start": 426.89,
+     "end": 427.31
+    }
+   ]
+  },
+  {
+   "start": 427.68,
+   "end": 431.08,
+   "words": [
+    {
+     "w": "Ensuite,",
+     "start": 427.68,
+     "end": 428.01
+    },
+    {
+     "w": "le",
+     "start": 428.33,
+     "end": 428.43
+    },
+    {
+     "w": "préfet",
+     "start": 428.43,
+     "end": 428.73
+    },
+    {
+     "w": "l'agrée",
+     "start": 428.73,
+     "end": 429.07
+    },
+    {
+     "w": "pour",
+     "start": 429.07,
+     "end": 429.27
+    },
+    {
+     "w": "une",
+     "start": 429.27,
+     "end": 429.41
+    },
+    {
+     "w": "durée",
+     "start": 429.41,
+     "end": 429.65
+    },
+    {
+     "w": "de",
+     "start": 429.65,
+     "end": 429.73
+    },
+    {
+     "w": "cinq",
+     "start": 429.73,
+     "end": 430.01
+    },
+    {
+     "w": "ans,",
+     "start": 430.01,
+     "end": 430.23
+    },
+    {
+     "w": "renouvelable.",
+     "start": 430.37,
+     "end": 430.89
+    }
+   ]
+  },
+  {
+   "start": 431.26,
+   "end": 434.62,
+   "words": [
+    {
+     "w": "Avant",
+     "start": 431.26,
+     "end": 431.5
+    },
+    {
+     "w": "d'exercer,",
+     "start": 431.5,
+     "end": 432.12
+    },
+    {
+     "w": "il",
+     "start": 432.3,
+     "end": 432.38
+    },
+    {
+     "w": "prête",
+     "start": 432.38,
+     "end": 432.68
+    },
+    {
+     "w": "serment",
+     "start": 432.68,
+     "end": 433.02
+    },
+    {
+     "w": "devant",
+     "start": 433.02,
+     "end": 433.22
+    },
+    {
+     "w": "le",
+     "start": 433.22,
+     "end": 433.4
+    },
+    {
+     "w": "tribunal",
+     "start": 433.4,
+     "end": 433.82
+    },
+    {
+     "w": "judiciaire.",
+     "start": 433.82,
+     "end": 434.54
+    }
+   ]
+  },
+  {
+   "start": 434.8,
+   "end": 439.78,
+   "words": [
+    {
+     "w": "Une",
+     "start": 434.8,
+     "end": 434.96
+    },
+    {
+     "w": "formation",
+     "start": 434.96,
+     "end": 435.26
+    },
+    {
+     "w": "d'aptitude",
+     "start": 435.26,
+     "end": 435.76
+    },
+    {
+     "w": "technique",
+     "start": 435.76,
+     "end": 436.24
+    },
+    {
+     "w": "est",
+     "start": 436.24,
+     "end": 436.36
+    },
+    {
+     "w": "aussi",
+     "start": 436.36,
+     "end": 436.58
+    },
+    {
+     "w": "exigée,",
+     "start": 436.58,
+     "end": 437.38
+    },
+    {
+     "w": "et",
+     "start": 437.76,
+     "end": 437.86
+    },
+    {
+     "w": "les",
+     "start": 437.86,
+     "end": 437.94
+    },
+    {
+     "w": "fédérations",
+     "start": 437.94,
+     "end": 438.4
+    },
+    {
+     "w": "de",
+     "start": 438.4,
+     "end": 438.52
+    },
+    {
+     "w": "chasseurs",
+     "start": 438.52,
+     "end": 438.94
+    },
+    {
+     "w": "en",
+     "start": 438.94,
+     "end": 439.04
+    },
+    {
+     "w": "organisent.",
+     "start": 439.04,
+     "end": 439.66
+    }
+   ]
+  },
+  {
+   "start": 439.96,
+   "end": 444.48,
+   "words": [
+    {
+     "w": "On",
+     "start": 439.96,
+     "end": 440.14
+    },
+    {
+     "w": "est",
+     "start": 440.14,
+     "end": 440.22
+    },
+    {
+     "w": "toujours",
+     "start": 440.22,
+     "end": 440.4
+    },
+    {
+     "w": "lié",
+     "start": 440.4,
+     "end": 440.82
+    },
+    {
+     "w": "à",
+     "start": 440.82,
+     "end": 440.98
+    },
+    {
+     "w": "un",
+     "start": 440.98,
+     "end": 441.06
+    },
+    {
+     "w": "propriétaire",
+     "start": 441.06,
+     "end": 441.64
+    },
+    {
+     "w": "précis,",
+     "start": 441.64,
+     "end": 442.0
+    },
+    {
+     "w": "jamais",
+     "start": 442.46,
+     "end": 442.8
+    },
+    {
+     "w": "à",
+     "start": 442.8,
+     "end": 443.22
+    },
+    {
+     "w": "n'importe",
+     "start": 443.22,
+     "end": 443.72
+    },
+    {
+     "w": "quel",
+     "start": 443.72,
+     "end": 443.96
+    },
+    {
+     "w": "terrain.",
+     "start": 443.96,
+     "end": 444.26
+    }
+   ]
+  },
+  {
+   "start": 444.66,
+   "end": 449.26,
+   "words": [
+    {
+     "w": "Toi,",
+     "start": 444.66,
+     "end": 444.94
+    },
+    {
+     "w": "tu",
+     "start": 444.98,
+     "end": 445.06
+    },
+    {
+     "w": "proposes",
+     "start": 445.06,
+     "end": 445.42
+    },
+    {
+     "w": "ta",
+     "start": 445.42,
+     "end": 445.5
+    },
+    {
+     "w": "surveillance",
+     "start": 445.5,
+     "end": 445.88
+    },
+    {
+     "w": "à",
+     "start": 445.88,
+     "end": 446.1
+    },
+    {
+     "w": "des",
+     "start": 446.1,
+     "end": 446.2
+    },
+    {
+     "w": "propriétaires",
+     "start": 446.2,
+     "end": 446.78
+    },
+    {
+     "w": "d'étangs,",
+     "start": 446.78,
+     "end": 447.16
+    },
+    {
+     "w": "de",
+     "start": 447.3,
+     "end": 447.48
+    },
+    {
+     "w": "domaines",
+     "start": 447.48,
+     "end": 447.8
+    },
+    {
+     "w": "de",
+     "start": 447.8,
+     "end": 447.88
+    },
+    {
+     "w": "chasse",
+     "start": 447.88,
+     "end": 448.24
+    },
+    {
+     "w": "ou",
+     "start": 448.24,
+     "end": 448.46
+    },
+    {
+     "w": "de",
+     "start": 448.46,
+     "end": 448.56
+    },
+    {
+     "w": "grandes",
+     "start": 448.56,
+     "end": 448.76
+    },
+    {
+     "w": "forêts.",
+     "start": 448.76,
+     "end": 449.16
+    }
+   ]
+  },
+  {
+   "start": 449.44,
+   "end": 454.37,
+   "words": [
+    {
+     "w": "La",
+     "start": 449.44,
+     "end": 449.61
+    },
+    {
+     "w": "limite",
+     "start": 449.61,
+     "end": 449.83
+    },
+    {
+     "w": "le",
+     "start": 450.25,
+     "end": 450.33
+    },
+    {
+     "w": "garde",
+     "start": 450.33,
+     "end": 450.55
+    },
+    {
+     "w": "n'est",
+     "start": 450.55,
+     "end": 450.89
+    },
+    {
+     "w": "pas",
+     "start": 450.89,
+     "end": 451.01
+    },
+    {
+     "w": "un",
+     "start": 451.01,
+     "end": 451.17
+    },
+    {
+     "w": "policier,",
+     "start": 451.17,
+     "end": 451.69
+    },
+    {
+     "w": "et",
+     "start": 452.11,
+     "end": 452.16
+    },
+    {
+     "w": "il",
+     "start": 452.15,
+     "end": 452.29
+    },
+    {
+     "w": "agit",
+     "start": 452.29,
+     "end": 452.57
+    },
+    {
+     "w": "seulement",
+     "start": 452.57,
+     "end": 452.85
+    },
+    {
+     "w": "dans",
+     "start": 452.85,
+     "end": 453.13
+    },
+    {
+     "w": "le",
+     "start": 453.13,
+     "end": 453.25
+    },
+    {
+     "w": "cadre",
+     "start": 453.25,
+     "end": 453.47
+    },
+    {
+     "w": "de",
+     "start": 453.47,
+     "end": 453.65
+    },
+    {
+     "w": "sa",
+     "start": 453.65,
+     "end": 453.77
+    },
+    {
+     "w": "commission.",
+     "start": 453.77,
+     "end": 454.03
+    }
+   ]
+  },
+  {
+   "start": 456.55,
+   "end": 460.8,
+   "words": [
+    {
+     "w": "Dernière",
+     "start": 456.55,
+     "end": 457.04
+    },
+    {
+     "w": "idée",
+     "start": 457.04,
+     "end": 457.26
+    },
+    {
+     "w": "accueillir",
+     "start": 457.6,
+     "end": 458.08
+    },
+    {
+     "w": "chez",
+     "start": 458.08,
+     "end": 458.2
+    },
+    {
+     "w": "toi",
+     "start": 458.2,
+     "end": 458.42
+    },
+    {
+     "w": "les",
+     "start": 458.42,
+     "end": 458.54
+    },
+    {
+     "w": "chiens",
+     "start": 458.54,
+     "end": 458.88
+    },
+    {
+     "w": "et",
+     "start": 458.88,
+     "end": 458.96
+    },
+    {
+     "w": "les",
+     "start": 458.96,
+     "end": 459.08
+    },
+    {
+     "w": "chats",
+     "start": 459.08,
+     "end": 459.24
+    },
+    {
+     "w": "des",
+     "start": 459.24,
+     "end": 459.4
+    },
+    {
+     "w": "gens",
+     "start": 459.4,
+     "end": 459.58
+    },
+    {
+     "w": "qui",
+     "start": 459.58,
+     "end": 459.72
+    },
+    {
+     "w": "partent",
+     "start": 459.72,
+     "end": 460.08
+    },
+    {
+     "w": "en",
+     "start": 460.08,
+     "end": 460.13
+    },
+    {
+     "w": "vacances.",
+     "start": 460.08,
+     "end": 460.62
+    }
+   ]
+  },
+  {
+   "start": 460.98,
+   "end": 465.87,
+   "words": [
+    {
+     "w": "Les",
+     "start": 460.98,
+     "end": 461.13
+    },
+    {
+     "w": "propriétaires",
+     "start": 461.13,
+     "end": 461.71
+    },
+    {
+     "w": "veulent",
+     "start": 461.71,
+     "end": 461.89
+    },
+    {
+     "w": "une",
+     "start": 461.89,
+     "end": 462.07
+    },
+    {
+     "w": "pension",
+     "start": 462.07,
+     "end": 462.35
+    },
+    {
+     "w": "où",
+     "start": 462.35,
+     "end": 462.57
+    },
+    {
+     "w": "l'animal",
+     "start": 462.57,
+     "end": 462.97
+    },
+    {
+     "w": "vit",
+     "start": 462.97,
+     "end": 463.13
+    },
+    {
+     "w": "dans",
+     "start": 463.13,
+     "end": 463.27
+    },
+    {
+     "w": "une",
+     "start": 463.27,
+     "end": 463.43
+    },
+    {
+     "w": "vraie",
+     "start": 463.43,
+     "end": 463.63
+    },
+    {
+     "w": "maison,",
+     "start": 463.63,
+     "end": 463.91
+    },
+    {
+     "w": "plutôt",
+     "start": 464.09,
+     "end": 464.39
+    },
+    {
+     "w": "que",
+     "start": 464.39,
+     "end": 464.57
+    },
+    {
+     "w": "dans",
+     "start": 464.57,
+     "end": 464.71
+    },
+    {
+     "w": "un",
+     "start": 464.71,
+     "end": 464.93
+    },
+    {
+     "w": "grand",
+     "start": 464.93,
+     "end": 465.19
+    },
+    {
+     "w": "chenil.",
+     "start": 465.19,
+     "end": 465.67
+    }
+   ]
+  },
+  {
+   "start": 466.05,
+   "end": 471.96,
+   "words": [
+    {
+     "w": "Une",
+     "start": 466.05,
+     "end": 466.24
+    },
+    {
+     "w": "pension",
+     "start": 466.24,
+     "end": 466.58
+    },
+    {
+     "w": "qui",
+     "start": 466.58,
+     "end": 466.82
+    },
+    {
+     "w": "héberge",
+     "start": 466.82,
+     "end": 467.18
+    },
+    {
+     "w": "des",
+     "start": 467.18,
+     "end": 467.3
+    },
+    {
+     "w": "chiens",
+     "start": 467.3,
+     "end": 467.62
+    },
+    {
+     "w": "ou",
+     "start": 467.62,
+     "end": 467.74
+    },
+    {
+     "w": "des",
+     "start": 467.74,
+     "end": 467.86
+    },
+    {
+     "w": "chats",
+     "start": 467.86,
+     "end": 468.06
+    },
+    {
+     "w": "à",
+     "start": 468.06,
+     "end": 468.18
+    },
+    {
+     "w": "titre",
+     "start": 468.18,
+     "end": 468.44
+    },
+    {
+     "w": "commercial",
+     "start": 468.44,
+     "end": 468.94
+    },
+    {
+     "w": "doit",
+     "start": 468.94,
+     "end": 469.24
+    },
+    {
+     "w": "se",
+     "start": 469.24,
+     "end": 469.42
+    },
+    {
+     "w": "déclarer",
+     "start": 469.42,
+     "end": 469.9
+    },
+    {
+     "w": "à",
+     "start": 469.9,
+     "end": 469.98
+    },
+    {
+     "w": "la",
+     "start": 469.98,
+     "end": 470.06
+    },
+    {
+     "w": "direction",
+     "start": 470.06,
+     "end": 470.38
+    },
+    {
+     "w": "de",
+     "start": 470.38,
+     "end": 470.62
+    },
+    {
+     "w": "la",
+     "start": 470.62,
+     "end": 470.7
+    },
+    {
+     "w": "protection",
+     "start": 470.7,
+     "end": 471.02
+    },
+    {
+     "w": "des",
+     "start": 471.02,
+     "end": 471.24
+    },
+    {
+     "w": "populations.",
+     "start": 471.24,
+     "end": 471.48
+    }
+   ]
+  },
+  {
+   "start": 472.14,
+   "end": 478.28,
+   "words": [
+    {
+     "w": "Au",
+     "start": 472.14,
+     "end": 472.31
+    },
+    {
+     "w": "moins",
+     "start": 472.31,
+     "end": 472.47
+    },
+    {
+     "w": "une",
+     "start": 472.47,
+     "end": 472.59
+    },
+    {
+     "w": "personne",
+     "start": 472.59,
+     "end": 472.87
+    },
+    {
+     "w": "en",
+     "start": 472.87,
+     "end": 473.05
+    },
+    {
+     "w": "contact",
+     "start": 473.05,
+     "end": 473.39
+    },
+    {
+     "w": "avec",
+     "start": 473.39,
+     "end": 473.61
+    },
+    {
+     "w": "les",
+     "start": 473.61,
+     "end": 473.77
+    },
+    {
+     "w": "animaux",
+     "start": 473.77,
+     "end": 474.17
+    },
+    {
+     "w": "doit",
+     "start": 474.17,
+     "end": 474.29
+    },
+    {
+     "w": "prouver",
+     "start": 474.29,
+     "end": 474.63
+    },
+    {
+     "w": "ses",
+     "start": 474.63,
+     "end": 474.79
+    },
+    {
+     "w": "connaissances,",
+     "start": 474.79,
+     "end": 475.43
+    },
+    {
+     "w": "avec",
+     "start": 475.53,
+     "end": 475.71
+    },
+    {
+     "w": "un",
+     "start": 475.71,
+     "end": 475.89
+    },
+    {
+     "w": "diplôme",
+     "start": 475.89,
+     "end": 476.47
+    },
+    {
+     "w": "ou",
+     "start": 476.47,
+     "end": 476.63
+    },
+    {
+     "w": "avec",
+     "start": 476.63,
+     "end": 476.83
+    },
+    {
+     "w": "une",
+     "start": 476.83,
+     "end": 477.01
+    },
+    {
+     "w": "attestation",
+     "start": 477.01,
+     "end": 477.57
+    },
+    {
+     "w": "officielle.",
+     "start": 477.57,
+     "end": 478.11
+    }
+   ]
+  },
+  {
+   "start": 478.46,
+   "end": 482.17,
+   "words": [
+    {
+     "w": "Cette",
+     "start": 478.46,
+     "end": 478.7
+    },
+    {
+     "w": "attestation",
+     "start": 478.7,
+     "end": 479.36
+    },
+    {
+     "w": "s'appelle",
+     "start": 479.36,
+     "end": 479.86
+    },
+    {
+     "w": "l'attestation",
+     "start": 479.86,
+     "end": 480.36
+    },
+    {
+     "w": "de",
+     "start": 480.36,
+     "end": 480.48
+    },
+    {
+     "w": "connaissances",
+     "start": 480.48,
+     "end": 481.0
+    },
+    {
+     "w": "pour",
+     "start": 481.0,
+     "end": 481.16
+    },
+    {
+     "w": "les",
+     "start": 481.16,
+     "end": 481.26
+    },
+    {
+     "w": "animaux",
+     "start": 481.26,
+     "end": 481.62
+    },
+    {
+     "w": "de",
+     "start": 481.62,
+     "end": 481.67
+    },
+    {
+     "w": "compagnie.",
+     "start": 481.66,
+     "end": 482.06
+    }
+   ]
+  },
+  {
+   "start": 482.35,
+   "end": 486.94,
+   "words": [
+    {
+     "w": "Le",
+     "start": 482.35,
+     "end": 482.52
+    },
+    {
+     "w": "lieu",
+     "start": 482.52,
+     "end": 482.68
+    },
+    {
+     "w": "doit",
+     "start": 482.68,
+     "end": 482.84
+    },
+    {
+     "w": "être",
+     "start": 482.84,
+     "end": 483.06
+    },
+    {
+     "w": "propre,",
+     "start": 483.06,
+     "end": 483.44
+    },
+    {
+     "w": "sûr",
+     "start": 483.76,
+     "end": 483.96
+    },
+    {
+     "w": "et",
+     "start": 483.96,
+     "end": 484.22
+    },
+    {
+     "w": "adapté,",
+     "start": 484.22,
+     "end": 484.8
+    },
+    {
+     "w": "et",
+     "start": 485.1,
+     "end": 485.15
+    },
+    {
+     "w": "tu",
+     "start": 485.12,
+     "end": 485.26
+    },
+    {
+     "w": "dois",
+     "start": 485.26,
+     "end": 485.4
+    },
+    {
+     "w": "pouvoir",
+     "start": 485.4,
+     "end": 485.72
+    },
+    {
+     "w": "joindre",
+     "start": 485.72,
+     "end": 486.04
+    },
+    {
+     "w": "un",
+     "start": 486.04,
+     "end": 486.18
+    },
+    {
+     "w": "vétérinaire.",
+     "start": 486.18,
+     "end": 486.62
+    }
+   ]
+  },
+  {
+   "start": 487.12,
+   "end": 492.38,
+   "words": [
+    {
+     "w": "Les",
+     "start": 487.12,
+     "end": 487.31
+    },
+    {
+     "w": "règles",
+     "start": 487.31,
+     "end": 487.59
+    },
+    {
+     "w": "de",
+     "start": 487.59,
+     "end": 487.69
+    },
+    {
+     "w": "la",
+     "start": 487.69,
+     "end": 487.81
+    },
+    {
+     "w": "commune,",
+     "start": 487.81,
+     "end": 488.19
+    },
+    {
+     "w": "de",
+     "start": 488.21,
+     "end": 488.26
+    },
+    {
+     "w": "la",
+     "start": 488.23,
+     "end": 488.35
+    },
+    {
+     "w": "copropriété",
+     "start": 488.35,
+     "end": 489.05
+    },
+    {
+     "w": "ou",
+     "start": 489.05,
+     "end": 489.21
+    },
+    {
+     "w": "du",
+     "start": 489.21,
+     "end": 489.35
+    },
+    {
+     "w": "bail",
+     "start": 489.35,
+     "end": 489.61
+    },
+    {
+     "w": "peuvent",
+     "start": 489.61,
+     "end": 489.87
+    },
+    {
+     "w": "limiter",
+     "start": 489.87,
+     "end": 490.29
+    },
+    {
+     "w": "le",
+     "start": 490.29,
+     "end": 490.41
+    },
+    {
+     "w": "nombre",
+     "start": 490.41,
+     "end": 490.65
+    },
+    {
+     "w": "d'animaux",
+     "start": 490.65,
+     "end": 491.3
+    },
+    {
+     "w": "lis-les",
+     "start": 491.3,
+     "end": 491.95
+    },
+    {
+     "w": "avant.",
+     "start": 491.95,
+     "end": 492.21
+    }
+   ]
+  },
+  {
+   "start": 492.56,
+   "end": 499.44,
+   "words": [
+    {
+     "w": "Pense",
+     "start": 492.56,
+     "end": 492.91
+    },
+    {
+     "w": "à",
+     "start": 492.91,
+     "end": 492.99
+    },
+    {
+     "w": "une",
+     "start": 492.99,
+     "end": 493.11
+    },
+    {
+     "w": "assurance",
+     "start": 493.11,
+     "end": 493.47
+    },
+    {
+     "w": "de",
+     "start": 493.47,
+     "end": 493.75
+    },
+    {
+     "w": "responsabilité",
+     "start": 493.75,
+     "end": 494.53
+    },
+    {
+     "w": "civile",
+     "start": 494.53,
+     "end": 494.93
+    },
+    {
+     "w": "professionnelle,",
+     "start": 494.93,
+     "end": 495.65
+    },
+    {
+     "w": "car",
+     "start": 495.77,
+     "end": 495.93
+    },
+    {
+     "w": "un",
+     "start": 495.93,
+     "end": 496.09
+    },
+    {
+     "w": "animal",
+     "start": 496.09,
+     "end": 496.37
+    },
+    {
+     "w": "qui",
+     "start": 496.37,
+     "end": 496.61
+    },
+    {
+     "w": "s'échappe",
+     "start": 496.61,
+     "end": 497.11
+    },
+    {
+     "w": "ou",
+     "start": 497.11,
+     "end": 497.25
+    },
+    {
+     "w": "se",
+     "start": 497.25,
+     "end": 497.43
+    },
+    {
+     "w": "blesse",
+     "start": 497.43,
+     "end": 497.81
+    },
+    {
+     "w": "engage",
+     "start": 497.81,
+     "end": 498.19
+    },
+    {
+     "w": "ta",
+     "start": 498.19,
+     "end": 498.43
+    },
+    {
+     "w": "responsabilité.",
+     "start": 498.43,
+     "end": 499.29
+    }
+   ]
+  },
+  {
+   "start": 499.62,
+   "end": 503.71,
+   "words": [
+    {
+     "w": "La",
+     "start": 499.62,
+     "end": 499.79
+    },
+    {
+     "w": "limite",
+     "start": 499.79,
+     "end": 500.01
+    },
+    {
+     "w": "tu",
+     "start": 500.29,
+     "end": 500.41
+    },
+    {
+     "w": "es",
+     "start": 500.41,
+     "end": 500.47
+    },
+    {
+     "w": "de",
+     "start": 500.47,
+     "end": 500.57
+    },
+    {
+     "w": "garde",
+     "start": 500.57,
+     "end": 500.85
+    },
+    {
+     "w": "jour",
+     "start": 500.85,
+     "end": 501.13
+    },
+    {
+     "w": "et",
+     "start": 501.13,
+     "end": 501.23
+    },
+    {
+     "w": "nuit,",
+     "start": 501.23,
+     "end": 501.43
+    },
+    {
+     "w": "surtout",
+     "start": 501.63,
+     "end": 501.93
+    },
+    {
+     "w": "en",
+     "start": 501.93,
+     "end": 502.23
+    },
+    {
+     "w": "été",
+     "start": 502.23,
+     "end": 502.49
+    },
+    {
+     "w": "et",
+     "start": 502.49,
+     "end": 502.87
+    },
+    {
+     "w": "pendant",
+     "start": 502.87,
+     "end": 503.09
+    },
+    {
+     "w": "les",
+     "start": 503.09,
+     "end": 503.25
+    },
+    {
+     "w": "fêtes.",
+     "start": 503.25,
+     "end": 503.55
+    }
+   ]
+  },
+  {
+   "start": 505.89,
+   "end": 509.1,
+   "words": [
+    {
+     "w": "Voilà",
+     "start": 505.89,
+     "end": 506.15
+    },
+    {
+     "w": "des",
+     "start": 506.15,
+     "end": 506.37
+    },
+    {
+     "w": "métiers",
+     "start": 506.37,
+     "end": 506.65
+    },
+    {
+     "w": "qui",
+     "start": 506.65,
+     "end": 506.75
+    },
+    {
+     "w": "semblent",
+     "start": 506.75,
+     "end": 507.09
+    },
+    {
+     "w": "faux,",
+     "start": 507.09,
+     "end": 507.31
+    },
+    {
+     "w": "mais",
+     "start": 507.55,
+     "end": 507.61
+    },
+    {
+     "w": "qui",
+     "start": 507.61,
+     "end": 507.73
+    },
+    {
+     "w": "reposent",
+     "start": 507.73,
+     "end": 508.15
+    },
+    {
+     "w": "sur",
+     "start": 508.15,
+     "end": 508.27
+    },
+    {
+     "w": "de",
+     "start": 508.27,
+     "end": 508.39
+    },
+    {
+     "w": "vraies",
+     "start": 508.39,
+     "end": 508.63
+    },
+    {
+     "w": "règles.",
+     "start": 508.63,
+     "end": 508.97
+    }
+   ]
+  },
+  {
+   "start": 509.28,
+   "end": 515.38,
+   "words": [
+    {
+     "w": "Retiens",
+     "start": 509.28,
+     "end": 509.68
+    },
+    {
+     "w": "un",
+     "start": 509.68,
+     "end": 509.78
+    },
+    {
+     "w": "point",
+     "start": 509.78,
+     "end": 509.94
+    },
+    {
+     "w": "commun",
+     "start": 509.94,
+     "end": 510.28
+    },
+    {
+     "w": "dès",
+     "start": 510.64,
+     "end": 510.76
+    },
+    {
+     "w": "qu'il",
+     "start": 510.76,
+     "end": 510.94
+    },
+    {
+     "w": "y",
+     "start": 510.94,
+     "end": 511.0
+    },
+    {
+     "w": "a",
+     "start": 511.0,
+     "end": 511.08
+    },
+    {
+     "w": "un",
+     "start": 511.08,
+     "end": 511.16
+    },
+    {
+     "w": "animal,",
+     "start": 511.16,
+     "end": 511.54
+    },
+    {
+     "w": "une",
+     "start": 511.82,
+     "end": 511.92
+    },
+    {
+     "w": "plante",
+     "start": 511.92,
+     "end": 512.16
+    },
+    {
+     "w": "protégée",
+     "start": 512.16,
+     "end": 512.82
+    },
+    {
+     "w": "ou",
+     "start": 512.82,
+     "end": 513.02
+    },
+    {
+     "w": "un",
+     "start": 513.02,
+     "end": 513.14
+    },
+    {
+     "w": "produit",
+     "start": 513.14,
+     "end": 513.44
+    },
+    {
+     "w": "dangereux,",
+     "start": 513.44,
+     "end": 514.0
+    },
+    {
+     "w": "la",
+     "start": 514.28,
+     "end": 514.46
+    },
+    {
+     "w": "loi",
+     "start": 514.46,
+     "end": 514.66
+    },
+    {
+     "w": "s'en",
+     "start": 514.66,
+     "end": 515.0
+    },
+    {
+     "w": "mêle.",
+     "start": 515.0,
+     "end": 515.28
+    }
+   ]
+  },
+  {
+   "start": 515.56,
+   "end": 520.54,
+   "words": [
+    {
+     "w": "Chaque",
+     "start": 515.56,
+     "end": 515.92
+    },
+    {
+     "w": "fois,",
+     "start": 515.92,
+     "end": 516.08
+    },
+    {
+     "w": "la",
+     "start": 516.16,
+     "end": 516.22
+    },
+    {
+     "w": "bonne",
+     "start": 516.22,
+     "end": 516.4
+    },
+    {
+     "w": "question",
+     "start": 516.4,
+     "end": 516.72
+    },
+    {
+     "w": "est",
+     "start": 516.72,
+     "end": 516.9
+    },
+    {
+     "w": "la",
+     "start": 516.9,
+     "end": 517.0
+    },
+    {
+     "w": "même",
+     "start": 517.0,
+     "end": 517.18
+    },
+    {
+     "w": "qui",
+     "start": 517.56,
+     "end": 517.8
+    },
+    {
+     "w": "doit",
+     "start": 517.8,
+     "end": 517.94
+    },
+    {
+     "w": "déclarer,",
+     "start": 517.94,
+     "end": 518.44
+    },
+    {
+     "w": "qui",
+     "start": 518.74,
+     "end": 518.79
+    },
+    {
+     "w": "doit",
+     "start": 518.78,
+     "end": 518.92
+    },
+    {
+     "w": "autoriser,",
+     "start": 518.92,
+     "end": 519.46
+    },
+    {
+     "w": "qui",
+     "start": 519.62,
+     "end": 519.68
+    },
+    {
+     "w": "doit",
+     "start": 519.68,
+     "end": 519.82
+    },
+    {
+     "w": "être",
+     "start": 519.82,
+     "end": 519.98
+    },
+    {
+     "w": "formé",
+     "start": 519.98,
+     "end": 520.44
+    }
+   ]
+  },
+  {
+   "start": 520.72,
+   "end": 523.55,
+   "words": [
+    {
+     "w": "Ces",
+     "start": 520.72,
+     "end": 520.97
+    },
+    {
+     "w": "niches",
+     "start": 520.97,
+     "end": 521.33
+    },
+    {
+     "w": "sont",
+     "start": 521.33,
+     "end": 521.45
+    },
+    {
+     "w": "petites,",
+     "start": 521.45,
+     "end": 521.93
+    },
+    {
+     "w": "et",
+     "start": 522.21,
+     "end": 522.26
+    },
+    {
+     "w": "aucun",
+     "start": 522.25,
+     "end": 522.51
+    },
+    {
+     "w": "revenu",
+     "start": 522.51,
+     "end": 522.97
+    },
+    {
+     "w": "n'est",
+     "start": 522.97,
+     "end": 523.11
+    },
+    {
+     "w": "promis.",
+     "start": 523.11,
+     "end": 523.45
+    }
+   ]
+  },
+  {
+   "start": 523.73,
+   "end": 529.9,
+   "words": [
+    {
+     "w": "Avant",
+     "start": 523.73,
+     "end": 523.96
+    },
+    {
+     "w": "de",
+     "start": 523.96,
+     "end": 524.14
+    },
+    {
+     "w": "te",
+     "start": 524.14,
+     "end": 524.2
+    },
+    {
+     "w": "lancer,",
+     "start": 524.2,
+     "end": 524.6
+    },
+    {
+     "w": "appelle",
+     "start": 524.82,
+     "end": 525.0
+    },
+    {
+     "w": "la",
+     "start": 525.0,
+     "end": 525.18
+    },
+    {
+     "w": "mairie,",
+     "start": 525.18,
+     "end": 525.46
+    },
+    {
+     "w": "la",
+     "start": 525.82,
+     "end": 525.92
+    },
+    {
+     "w": "chambre",
+     "start": 525.92,
+     "end": 526.16
+    },
+    {
+     "w": "d'agriculture",
+     "start": 526.16,
+     "end": 526.88
+    },
+    {
+     "w": "ou",
+     "start": 526.88,
+     "end": 527.0
+    },
+    {
+     "w": "la",
+     "start": 527.0,
+     "end": 527.12
+    },
+    {
+     "w": "préfecture,",
+     "start": 527.12,
+     "end": 527.5
+    },
+    {
+     "w": "parce",
+     "start": 527.94,
+     "end": 528.12
+    },
+    {
+     "w": "que",
+     "start": 528.12,
+     "end": 528.26
+    },
+    {
+     "w": "les",
+     "start": 528.26,
+     "end": 528.36
+    },
+    {
+     "w": "règles",
+     "start": 528.36,
+     "end": 528.62
+    },
+    {
+     "w": "changent",
+     "start": 528.62,
+     "end": 529.0
+    },
+    {
+     "w": "d'un",
+     "start": 529.0,
+     "end": 529.14
+    },
+    {
+     "w": "endroit",
+     "start": 529.14,
+     "end": 529.4
+    },
+    {
+     "w": "à",
+     "start": 529.4,
+     "end": 529.54
+    },
+    {
+     "w": "l'autre.",
+     "start": 529.54,
+     "end": 529.78
+    }
+   ]
+  },
+  {
+   "start": 530.08,
+   "end": 534.21,
+   "words": [
+    {
+     "w": "Teste",
+     "start": 530.08,
+     "end": 530.37
+    },
+    {
+     "w": "avec",
+     "start": 530.37,
+     "end": 530.51
+    },
+    {
+     "w": "un",
+     "start": 530.51,
+     "end": 530.69
+    },
+    {
+     "w": "seul",
+     "start": 530.69,
+     "end": 530.89
+    },
+    {
+     "w": "client,",
+     "start": 530.89,
+     "end": 531.29
+    },
+    {
+     "w": "et",
+     "start": 531.63,
+     "end": 531.79
+    },
+    {
+     "w": "ne",
+     "start": 531.79,
+     "end": 531.89
+    },
+    {
+     "w": "dépense",
+     "start": 531.89,
+     "end": 532.21
+    },
+    {
+     "w": "rien",
+     "start": 532.21,
+     "end": 532.43
+    },
+    {
+     "w": "avant",
+     "start": 532.43,
+     "end": 532.63
+    },
+    {
+     "w": "d'avoir",
+     "start": 532.63,
+     "end": 532.89
+    },
+    {
+     "w": "parlé",
+     "start": 532.89,
+     "end": 533.19
+    },
+    {
+     "w": "à",
+     "start": 533.19,
+     "end": 533.31
+    },
+    {
+     "w": "de",
+     "start": 533.31,
+     "end": 533.43
+    },
+    {
+     "w": "vraies",
+     "start": 533.43,
+     "end": 533.65
+    },
+    {
+     "w": "personnes.",
+     "start": 533.65,
+     "end": 533.93
+    }
+   ]
+  },
+  {
+   "start": 534.39,
+   "end": 537.15,
+   "words": [
+    {
+     "w": "Tous",
+     "start": 534.39,
+     "end": 534.56
+    },
+    {
+     "w": "les",
+     "start": 534.56,
+     "end": 534.7
+    },
+    {
+     "w": "outils",
+     "start": 534.7,
+     "end": 535.12
+    },
+    {
+     "w": "et",
+     "start": 535.12,
+     "end": 535.26
+    },
+    {
+     "w": "leurs",
+     "start": 535.26,
+     "end": 535.4
+    },
+    {
+     "w": "adresses",
+     "start": 535.4,
+     "end": 535.88
+    },
+    {
+     "w": "sont",
+     "start": 535.88,
+     "end": 536.28
+    },
+    {
+     "w": "dans",
+     "start": 536.28,
+     "end": 536.42
+    },
+    {
+     "w": "la",
+     "start": 536.42,
+     "end": 536.52
+    },
+    {
+     "w": "description.",
+     "start": 536.52,
+     "end": 536.74
+    }
+   ]
+  },
+  {
+   "start": 537.33,
+   "end": 540.4,
+   "words": [
+    {
+     "w": "Dis-moi",
+     "start": 537.33,
+     "end": 537.78
+    },
+    {
+     "w": "en",
+     "start": 537.78,
+     "end": 537.92
+    },
+    {
+     "w": "commentaire",
+     "start": 537.92,
+     "end": 538.38
+    },
+    {
+     "w": "lequel",
+     "start": 538.38,
+     "end": 538.6
+    },
+    {
+     "w": "de",
+     "start": 538.6,
+     "end": 538.84
+    },
+    {
+     "w": "ces",
+     "start": 538.84,
+     "end": 538.98
+    },
+    {
+     "w": "métiers",
+     "start": 538.98,
+     "end": 539.36
+    },
+    {
+     "w": "t'a",
+     "start": 539.36,
+     "end": 539.52
+    },
+    {
+     "w": "le",
+     "start": 539.52,
+     "end": 539.62
+    },
+    {
+     "w": "plus",
+     "start": 539.62,
+     "end": 539.78
+    },
+    {
+     "w": "surpris.",
+     "start": 539.78,
+     "end": 540.28
+    }
+   ]
+  }
+ ]
+}
