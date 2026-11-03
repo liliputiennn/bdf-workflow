@@ -1,7 +1,7 @@
 {
- "etat": "quarantaine",
+ "etat": "pret",
  "maj": "2026-11-03T23:30:22",
- "raison": "publication impossible : description trop longue : 8544 octets (maximum 5000)",
+ "raison": null,
  "tentatives": 0,
  "youtube": {
   "video_id": null,
