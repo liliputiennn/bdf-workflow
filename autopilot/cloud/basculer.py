@@ -10,7 +10,7 @@ Règles (protection contre les doublons YouTube) :
   - vidéos `controle`/`pret` du PC : envoyées dans le stock si elles n'y sont pas.
 Nécessite `gh` connecté et GH_REPO (par défaut liliputiennn/bdf-workflow).
 """
-import argparse, json, os, shutil, subprocess, sys
+import argparse, json, os, shutil, subprocess, sys, time
 from pathlib import Path
 
 ICI = Path(__file__).resolve().parent
@@ -40,8 +40,14 @@ def stock_assets() -> set:
 
 def put(f: Path, cle: str, dry: bool) -> None:
     print(("  [dry-run] " if dry else "  ") + f"stock <- {cle} ({f.stat().st_size / 1048576:.1f} Mo)")
-    if not dry:
-        subprocess.run([sys.executable, str(ICI / "stockage.py"), "put", str(f), cle], check=True)
+    if dry:
+        return
+    for essai in range(1, 4):  # le réseau coupe parfois : trois essais
+        if subprocess.run([sys.executable, str(ICI / "stockage.py"), "put", str(f), cle]).returncode == 0:
+            return
+        print(f"  essai {essai}/3 échoué pour {cle}")
+        time.sleep(5)
+    print(f"  ABANDON : {cle} (relancer le script)")
 
 
 def main() -> int:
@@ -83,13 +89,14 @@ def main() -> int:
     print(f"épisodes ajoutés au cloud : {len(nouveaux)}", *[f"\n  + {x}" for x in nouveaux])
     print(f"états PC recopiés (anti-doublon) : {len(ecrases)}", *[f"\n  = {x}" for x in ecrases])
     print(f"vidéos envoyées dans le stock : {videos}")
-    if not a.dry_run and (nouveaux or ecrases):
+    if not a.dry_run:
         run = lambda *c: subprocess.run(["git", "-C", str(DEST), *c], check=True)
         run("add", "-A", "episodes-b")
-        run("-c", "user.name=Azur", "-c", "user.email=noreply@users.noreply.github.com", "commit", "-q", "-m", "Bascule : état des épisodes du PC")
-        run("pull", "--rebase", "-q", "origin", "main")
-        run("push", "-q", "origin", "main")
-        print("dépôt cloud à jour")
+        if subprocess.run(["git", "-C", str(DEST), "diff", "--cached", "--quiet"]).returncode != 0:
+            run("-c", "user.name=Azur", "-c", "user.email=noreply@users.noreply.github.com", "commit", "-q", "-m", "Bascule : état des épisodes du PC")
+            run("pull", "--rebase", "-q", "origin", "main")
+            run("push", "-q", "origin", "main")
+            print("dépôt cloud à jour")
     return 0
 
 

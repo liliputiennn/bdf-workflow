@@ -27,7 +27,7 @@ CFG = {
     "ref_txt": Path(_E("BDF_REF_TXT", str(HERE / "voix" / "ref.txt"))),
     "chain": Path(_E("BDF_CHAIN", str(HERE / "voix" / "chaine-nettoyage.txt"))),
     "temps": [1.05, 0.95, 1.0, 0.9],
-    "gap": 0.18,
+    "gap": 0.14,
     "lead": 0.15,
 }
 REF_ID = hashlib.sha1(Path(CFG["ref_wav"]).read_bytes()).hexdigest()[:8] if Path(CFG["ref_wav"]).exists() else "none"
@@ -242,11 +242,20 @@ def main() -> None:
     raw_path = ep_dir / "voice_raw.wav"
     sf.write(raw_path, raw, sr)
     chain = Path(CFG["chain"]).read_text(encoding="utf-8").strip()
+    # Voix plus rapide (BDF_VITESSE, 1.10 par défaut = 10 % plus vite, même hauteur de voix) : on accélère le fichier final
+    # et on ramène tous les repères de temps à la même échelle, les phrases en cache restent valables.
+    v = max(0.8, min(float(_E("BDF_VITESSE", "1.10")), 1.4))
+    rapide = f"atempo={v:.4f}," if abs(v - 1.0) > 0.001 else ""
     subprocess.run(
-        ["ffmpeg", "-y", "-v", "error", "-i", str(raw_path), "-af", f"{chain},loudnorm=I=-16:TP=-1.5:LRA=7", "-ar", "48000", "-ac", "1", str(ep_dir / "voice.wav")],
+        ["ffmpeg", "-y", "-v", "error", "-i", str(raw_path), "-af", f"{rapide}{chain},loudnorm=I=-16:TP=-1.5:LRA=7", "-ar", "48000", "-ac", "1", str(ep_dir / "voice.wav")],
         check=True,
     )
-    total = len(raw) / sr
+    if v != 1.0:
+        for ln in lines:
+            ln["start"], ln["end"] = round(ln["start"] / v, 3), round(ln["end"] / v, 3)
+            for w in ln["words"]:
+                w["start"], w["end"] = round(w["start"] / v, 3), round(w["end"] / v, 3)
+    total = len(raw) / sr / v
     (ep_dir / "timings.json").write_text(json.dumps({"total": round(total, 3), "lines": lines}, ensure_ascii=False, indent=1), encoding="utf-8")
     (ep_dir / "voice_report.json").write_text(json.dumps({"seuil": args.seuil, "a_relire": report, "duree_s": round(total, 1), "calcul_s": round(time.time() - t0)}, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"FIN voix : {total:.1f} s d'audio en {time.time() - t0:.0f} s | à relire : {len(report)} phrase(s)", flush=True)

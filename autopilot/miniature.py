@@ -20,6 +20,7 @@ Le texte principal est repéré grâce à un second rendu « masque » (texte en
 import argparse
 import hashlib
 import json
+import re
 import shutil
 import statistics
 import subprocess
@@ -295,6 +296,9 @@ def traiter(ep_id: str, sans_etat: bool = False) -> int:
             rapport.update(info)
             (d / "miniature_refusee.png").unlink(missing_ok=True)
     except Exception as e:  # une brique qui échoue ne bloque pas les autres
+        if re.search(r"ERR_NAME_NOT_RESOLVED|ERR_INTERNET_DISCONNECTED|ERR_CONNECTION_\w+|ERR_NETWORK_CHANGED|ENOTFOUND|EAI_AGAIN|ETIMEDOUT|ECONNRESET|getaddrinfo failed", str(e)):
+            print(f"{ep_id} : réseau indisponible pendant le rendu ({type(e).__name__}) : pas de quarantaine, nouvel essai au prochain passage")
+            return 1
         return quarantaine(f"erreur technique ({type(e).__name__} : {e})")
     common.write_json(d / "miniature_report.json", rapport)
     if not sans_etat:

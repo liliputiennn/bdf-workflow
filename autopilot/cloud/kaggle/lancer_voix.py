@@ -14,7 +14,7 @@ from pathlib import Path
 ICI = Path(__file__).resolve().parent
 AUTOPILOT = ICI.parent.parent
 JEUX = ["bdf-voix-modele", "bdf-voix-whisper", "bdf-voix-ref"]
-SLUG = "bdf-voix"
+SLUG = os.environ.get("BDF_KERNEL_SLUG", "bdf-voix")  # un autre nom permet de lancer un test sans gêner la fabrication
 
 
 def construire_kernel(dossier: Path, entree: bytes, options: dict, utilisateur: str, gpu: bool = True) -> Path:
@@ -73,6 +73,8 @@ def main() -> int:
     ap.add_argument("--seuil", type=float, default=0.9)
     ap.add_argument("--budget-s", type=float, default=0.0)
     ap.add_argument("--timeout-min", type=int, default=150)
+    ap.add_argument("--modele-hf", default="", help="identifiant Hugging Face d'un autre modèle (ex. Qwen/Qwen3-TTS-12Hz-1.7B-Base), téléchargé dans le kernel")
+    ap.add_argument("--vitesse", type=float, default=1.10, help="accélération de la voix finale (1.0 = vitesse d'origine)")
     ap.add_argument("--dry-run", action="store_true", help="prépare le kernel dans un dossier temporaire et s'arrête")
     a = ap.parse_args()
     ep = Path(a.episode_dir).resolve()
@@ -81,7 +83,7 @@ def main() -> int:
         print("KAGGLE_USERNAME manquant")
         return 2
     entree = (ep / a.episode_file).read_bytes()
-    options = {"essais": a.essais, "seuil": a.seuil, "budget_s": a.budget_s, "fichier": a.episode_file}
+    options = {"essais": a.essais, "seuil": a.seuil, "budget_s": a.budget_s, "fichier": a.episode_file, "modele_hf": a.modele_hf, "vitesse": a.vitesse}
     with tempfile.TemporaryDirectory(prefix="bdf-kaggle-") as tmp:
         d = construire_kernel(Path(tmp), entree, options, utilisateur)
         if a.dry_run:

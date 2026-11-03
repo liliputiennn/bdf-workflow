@@ -15,6 +15,7 @@ import ctypes
 import json
 import logging
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -30,6 +31,10 @@ RYTHME_PAR_JOUR = 1            # vidéos publiées par jour
 SEUIL_STOCK_JOURS = 3
 SEUIL_DISQUE_GO = 3.0
 MAX_TENTATIVES = 2
+# Une panne de réseau (DNS, connexion coupée : les polices Google sont chargées au rendu) n'est pas la faute de l'épisode :
+# il reste à son état et sera repris au prochain passage ; quarantaine seulement après MAX_ECHECS_RESEAU passages perdus.
+MAX_ECHECS_RESEAU = 12
+RESEAU = re.compile(r"ERR_NAME_NOT_RESOLVED|ERR_INTERNET_DISCONNECTED|ERR_CONNECTION_\w+|ERR_NETWORK_CHANGED|ERR_TIMED_OUT|ENOTFOUND|EAI_AGAIN|ETIMEDOUT|ECONNRESET|getaddrinfo failed|Temporary failure in name resolution")
 RENOTIF_H = 24
 REDACTION_MAX_H = 36
 MAX_LOGS = 20
@@ -323,7 +328,7 @@ def rafraichir_stock(alerter: bool = True, ecrire: bool = True) -> dict:
 def envoyer_alertes(stock: dict) -> None:
     jours = stock["jours_de_stock"]
     if stock["stock_bas"]:
-        notifier_si_nouveau("stock-bas", "Bureau des Faits : stock bas",
+        notifier_si_nouveau("stock-bas", "La Débrouille : stock bas",
                             f"{jours:g} jour(s) de vidéos prêtes (seuil {SEUIL_STOCK_JOURS}). "
                             f"{stock['en_preparation']} en préparation.")
     nouvelles = []
@@ -335,19 +340,19 @@ def envoyer_alertes(stock: dict) -> None:
         resume = " ; ".join(f"{q['id']} ({(q['raison'] or '?')[:90]})" for _, q in nouvelles[:5])
         if len(nouvelles) > 5:
             resume += f" … (+{len(nouvelles) - 5})"
-        envoyer_notification("Bureau des Faits : quarantaine", resume)
+        envoyer_notification("La Débrouille : quarantaine", resume)
         etat = _etat_alertes()
         for cle, _ in nouvelles:
             etat["envoyees"][cle] = common.now()
         common.write_json(common.STATE / "alertes.json", etat)
     if stock["youtube_auth_a_renouveler"]:
-        notifier_si_nouveau("youtube-auth", "Bureau des Faits : YouTube",
+        notifier_si_nouveau("youtube-auth", "La Débrouille : YouTube",
                             "Jeton YouTube à renouveler (voir autopilot/state/youtube_auth.json).")
     if stock["disque_bas"]:
-        notifier_si_nouveau("disque-bas", "Bureau des Faits : disque presque plein",
+        notifier_si_nouveau("disque-bas", "La Débrouille : disque presque plein",
                             f"{stock['disque_libre_go']:.1f} Go libres (seuil {SEUIL_DISQUE_GO:g} Go) : rendu suspendu.")
     if stock["redaction_en_retard"]:
-        notifier_si_nouveau("redaction-retard", "Bureau des Faits : rédacteur silencieux",
+        notifier_si_nouveau("redaction-retard", "La Débrouille : rédacteur silencieux",
                             f"Dernier passage du rédacteur : {stock['redaction_dernier_passage']} (plus de {REDACTION_MAX_H} h).")
     quarantaine_cles = {f"quarantaine:{q['id']}:{q['maj']}" for q in stock["quarantaines"]}
     lever_cles(lambda k: (k in quarantaine_cles) if k.startswith("quarantaine:") else (
@@ -425,6 +430,13 @@ def appeler_brique(ep: str, nom: str, cmd: list, timeout_s: float, apres_succes)
             common.set_status(ep, "quarantaine", _raison_qa(ep))
             return "quarantaine"
         _ecrire_trace(ep, nom, rc, sortie)
+        if RESEAU.search(sortie):
+            st = common.get_status(ep)
+            n = (st.get("echecs_reseau", 0) or 0) + 1
+            common.set_status(ep, st["etat"], st.get("raison"), echecs_reseau=n)
+            if n < MAX_ECHECS_RESEAU:
+                log.warning("[%s] %s : réseau indisponible (passage perdu %s/%s), l'épisode garde son état et sera repris", ep, nom, n, MAX_ECHECS_RESEAU)
+                return "ignores"
         _ecrire_tentatives(ep, faites)
         log.warning("[%s] %s : échec inattendu (code %s), essai %s/%s", ep, nom, rc, faites, MAX_TENTATIVES)
         if faites < MAX_TENTATIVES:
@@ -496,6 +508,13 @@ def fabriquer_long(ep: str, a) -> str:
     if rc == 3:
         log.info("[%s] long : à reprendre au prochain passage (voix inachevée ou GPU occupé)", ep)
         return "ignores"
+    if RESEAU.search(sortie):
+        st = common.get_status(ep)
+        n = (st.get("echecs_reseau", 0) or 0) + 1
+        common.set_status(ep, st["etat"], st.get("raison"), echecs_reseau=n)
+        if n < MAX_ECHECS_RESEAU:
+            log.warning("[%s] long : réseau indisponible (passage perdu %s/%s), repris au prochain passage", ep, n, MAX_ECHECS_RESEAU)
+            return "ignores"
     faites = (common.get_status(ep).get("tentatives", 0) or 0) + 1
     _ecrire_trace(ep, "long", rc, sortie)
     _ecrire_tentatives(ep, faites)
@@ -663,10 +682,10 @@ def cmd_tiktok(a) -> dict:
     n = len(res.get("envoyes") or [])
     bilan["envoyes"] = n
     if n:
-        envoyer_notification("Bureau des Faits : TikTok",
+        envoyer_notification("La Débrouille : TikTok",
                              f"{n} vidéo(s) t'attendent dans ta boîte de réception TikTok : ouvre l'application, colle la légende, touche Publier.")
     if rc == 3:
-        notifier_si_nouveau("tiktok-auth", "Bureau des Faits : TikTok",
+        notifier_si_nouveau("tiktok-auth", "La Débrouille : TikTok",
                             "Connexion TikTok à refaire (python autopilot/tiktok/auth.py). Les paquets à déposer à la main sont dans exports-tiktok.")
     return bilan
 

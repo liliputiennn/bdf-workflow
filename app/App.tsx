@@ -75,7 +75,7 @@ export const App = () => {
   return (
     <div className="shell">
       <header className="topbar">
-        <span className="brand">BUREAU DES FAITS</span>
+        <span className="brand">LA DÉBROUILLE</span>
         {tabs.map(([k, label]) => (
           <button key={k} className={`tab ${tab === k ? "on" : ""}`} onClick={() => setTab(k)}>
             {label}

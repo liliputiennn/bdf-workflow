@@ -92,7 +92,7 @@ export const createAutopilot = (root: string) => {
         .filter(Boolean)
         .slice(-40)
         .reverse()
-        .map((l) => ({ t: l.slice(0, 19), msg: l.slice(19).trim().replace(/^Bureau des Faits\s*:\s*/, "") }));
+        .map((l) => ({ t: l.slice(0, 19), msg: l.slice(19).trim().replace(/^(Bureau des Faits|La Débrouille)\s*:\s*/, "") }));
     } catch {
       return [];
     }

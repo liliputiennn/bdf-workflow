@@ -41,7 +41,8 @@ try:
         fin(1, "pip install a échoué (accès internet activé sur le notebook ?)")
 
     # 2. modèles et voix de référence, retrouvés quel que soit le nom des jeux de données
-    modele = trouver(lambda p: p.is_dir() and (p / "config.json").exists() and (p / "model.safetensors").exists() and (p / "speech_tokenizer").is_dir())
+    modele_hf = OPTIONS.get("modele_hf") or ""  # ex. Qwen/Qwen3-TTS-12Hz-1.7B-Base : téléchargé depuis Hugging Face au lieu du jeu de données
+    modele = modele_hf or trouver(lambda p: p.is_dir() and (p / "config.json").exists() and (p / "model.safetensors").exists() and (p / "speech_tokenizer").is_dir())
     whisper = trouver(lambda p: p.is_file() and p.name == "model.bin")
     ref_wav = trouver(lambda p: p.is_file() and p.name == "ref.wav")
     manque = [n for n, v in (("modèle Qwen3-TTS", modele), ("Whisper", whisper), ("ref.wav", ref_wav)) if v is None]
@@ -58,7 +59,8 @@ try:
     env = {**os.environ, "BDF_MODEL": str(modele), "BDF_WHISPER": str(whisper.parent), "BDF_REF_WAV": str(ref_wav),
            "BDF_REF_TXT": str(voix / "ref.txt"), "BDF_CHAIN": str(voix / "chaine-nettoyage.txt"),
            "BDF_DTYPE": os.environ.get("BDF_DTYPE", "bfloat16"), "BDF_WHISPER_DEVICE": "cpu",
-           "HF_HUB_OFFLINE": "1", "TRANSFORMERS_OFFLINE": "1", "PYTHONIOENCODING": "utf-8", "PYTHONWARNINGS": "ignore"}
+           "HF_HUB_OFFLINE": "0" if modele_hf else "1", "TRANSFORMERS_OFFLINE": "0" if modele_hf else "1",
+           "BDF_VITESSE": str(OPTIONS.get("vitesse", 1.10)), "PYTHONIOENCODING": "utf-8", "PYTHONWARNINGS": "ignore"}
     cmd = [sys.executable, str(ici / "voice.py"), str(ep), "--episode-file", OPTIONS["fichier"], "--essais", str(OPTIONS["essais"]),
            "--seuil", str(OPTIONS["seuil"])]
     if OPTIONS.get("budget_s"):

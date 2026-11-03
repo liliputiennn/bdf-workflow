@@ -1,0 +1,31 @@
+# Compare 4 réglages de voix (0.6B / 1.7B, vitesses) sur les mêmes phrases, pour choisir la plus naturelle.
+# Résultat : les fichiers voix__A.wav à voix__D.wav dans la release « stock » (page Releases du dépôt).
+name: Voix test
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  comparer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      STOCKAGE: github
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q kaggle six
+      - name: Comparaison sur Kaggle
+        run: python autopilot/cloud/kaggle/comparer_voix.py --phrases 6
+      - name: Dépôt des échantillons
+        run: |
+          for f in voix-comparaison/*.wav; do
+            python autopilot/cloud/stockage.py put "$f" "voix/$(basename "$f")"
+          done
+          cat voix-comparaison/LISEZMOI.txt

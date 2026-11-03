@@ -457,12 +457,12 @@ class StockEtAlertes(Base):
         faux_episode("p2", etat="pret")
         lancer("publier")
         lancer("publier")
-        self.assertEqual([t for t, _ in self.notifs].count("Bureau des Faits : stock bas"), 1)
+        self.assertEqual([t for t, _ in self.notifs].count("La Débrouille : stock bas"), 1)
         faux_episode("p3", etat="pret")
         lancer("publier")  # stock rétabli : l'alerte est réarmée
         faux_episode("p3", etat="publie")
         lancer("publier")
-        self.assertEqual([t for t, _ in self.notifs].count("Bureau des Faits : stock bas"), 2)
+        self.assertEqual([t for t, _ in self.notifs].count("La Débrouille : stock bas"), 2)
 
     def test_pas_d_alerte_de_stock_si_trois_jours(self):
         for i in range(3):
@@ -487,7 +487,7 @@ class StockEtAlertes(Base):
         self.assertEqual(self.notifs, [])
         common.write_json(common.STATE / "youtube_auth.json", {"etat": "a_refaire", "raison": "jeton expiré"})
         lancer("publier")
-        self.assertEqual([t for t, _ in self.notifs], ["Bureau des Faits : YouTube"])
+        self.assertEqual([t for t, _ in self.notifs], ["La Débrouille : YouTube"])
         self.assertTrue(common.read_json(common.STATE / "stock.json")["youtube_auth_a_renouveler"])
         lancer("publier")
         self.assertEqual(len(self.notifs), 1, "pas de nouvelle alerte avant 24 h")
@@ -504,7 +504,7 @@ class StockEtAlertes(Base):
         common.write_json(common.STATE / "redaction.json", {"dernier_passage": (datetime.now() - timedelta(hours=40)).isoformat()})
         lancer("publier")
         lancer("publier")
-        self.assertEqual([t for t, _ in self.notifs], ["Bureau des Faits : rédacteur silencieux"])
+        self.assertEqual([t for t, _ in self.notifs], ["La Débrouille : rédacteur silencieux"])
 
     def test_etat_n_envoie_rien_sans_option(self):
         faux_episode("q", etat="quarantaine", raison="x")

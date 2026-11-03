@@ -1,7 +1,7 @@
 {
  "id": "10-business-a-lancer-avec-moins-de-500",
  "format": "long",
- "titre": "10 business ennuyeux et peu connus, avec des outils gratuits",
+ "titre": "10 obligations de la loi qui créent des business (outils gratuits)",
  "theme": "chocolat-lait",
  "chaine": "Bureau des Faits",
  "phrases": [
@@ -677,7 +677,7 @@
  ],
  "miniature": {
   "style": "createur",
-  "texte_haut": "10 BUSINESS ENNUYEUX",
+  "texte_haut": "BUSINESS CRÉÉS PAR LA LOI",
   "gros": "10",
   "icone": "pieces"
  },
