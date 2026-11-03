@@ -1,0 +1,34 @@
+[
+ {
+  "claim": "Une plateforme comme Vinted transmet les données d'un vendeur à l'administration fiscale dès qu'il atteint 30 ventes dans l'année.",
+  "valeur": "30 ventes",
+  "phrase": 3,
+  "sources": [
+   "https://www.jechange.fr/banques/news/vinted-leboncoin-30-ventes-plateforme-transmet-fisc-3-cas-imposables",
+   "https://www.toutsurmesfinances.com/impots/declaration-revenus-ventes-internet-particuliers.html"
+  ],
+  "check": [
+   "30"
+  ],
+  "verified": [
+   "https://www.jechange.fr/banques/news/vinted-leboncoin-30-ventes-plateforme-transmet-fisc-3-cas-imposables",
+   "https://www.toutsurmesfinances.com/impots/declaration-revenus-ventes-internet-particuliers.html"
+  ]
+ },
+ {
+  "claim": "Le seuil de signalement est aussi atteint dès 2 000 euros de ventes dans l'année : l'un ou l'autre suffit.",
+  "valeur": "2 000 €",
+  "phrase": 4,
+  "sources": [
+   "https://www.jechange.fr/banques/news/vinted-leboncoin-30-ventes-plateforme-transmet-fisc-3-cas-imposables",
+   "https://bourseinside.fr/?p=6065"
+  ],
+  "check": [
+   "2 000"
+  ],
+  "verified": [
+   "https://www.jechange.fr/banques/news/vinted-leboncoin-30-ventes-plateforme-transmet-fisc-3-cas-imposables",
+   "https://bourseinside.fr/?p=6065"
+  ]
+ }
+]

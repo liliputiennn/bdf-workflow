@@ -1,0 +1,154 @@
+[
+ {
+  "text": "Cette mission a coûté 327 millions de dollars.",
+  "say": "Cette mission a coûté trois cent vingt-sept millions de dollars.",
+  "hi": "327 millions",
+  "eleven": "Cette mission a coûté 327 millions de dollars."
+ },
+ {
+  "text": "Et elle a été détruite… par une conversion d'unités.",
+  "say": "Et elle a été détruite... par une conversion d'unités.",
+  "hi": "conversion d'unités"
+ },
+ {
+  "text": "Vous pensez sûrement à un bug de génie.",
+  "hi": "génie"
+ },
+ {
+  "text": "Sauf que non. C'est une erreur de collège.",
+  "hi": "collège"
+ },
+ {
+  "text": "Décembre 1998. Floride.",
+  "say": "Décembre mille neuf cent quatre-vingt-dix-huit. Floride.",
+  "hi": "1998"
+ },
+ {
+  "text": "La NASA lance Mars Climate Orbiter.",
+  "say": "La Nasa lance Mars Climate Orbiteur.",
+  "hi": "Mars Climate Orbiter"
+ },
+ {
+  "text": "Mission : étudier le climat de Mars.",
+  "hi": "climat"
+ },
+ {
+  "text": "9 mois de voyage vers la planète rouge.",
+  "say": "Neuf mois de voyage vers la planète rouge.",
+  "hi": "9 mois"
+ },
+ {
+  "text": "Sur Terre, deux équipes la pilotent.",
+  "hi": "deux équipes"
+ },
+ {
+  "text": "Lockheed Martin, le constructeur.",
+  "say": "Lokid Martine, le constructeur.",
+  "hi": "Lockheed Martin"
+ },
+ {
+  "text": "Et le JPL, les navigateurs de la NASA.",
+  "say": "Et le ji pi elle, les navigateurs de la Nasa.",
+  "hi": "JPL",
+  "eleven": "Et le J.P.L., les navigateurs de la NASA."
+ },
+ {
+  "text": "En route, la sonde corrige sa rotation par de petits coups de propulseur.",
+  "hi": "petits coups"
+ },
+ {
+  "text": "Le logiciel du constructeur calcule leur poussée…",
+  "say": "Le logiciel du constructeur calcule leur poussée...",
+  "hi": "logiciel"
+ },
+ {
+  "text": "en livres-force. Le système impérial.",
+  "say": "en livres-force. Le système impérial.",
+  "hi": "livres-force"
+ },
+ {
+  "text": "Les navigateurs, eux, lisent des newtons. Le système métrique.",
+  "say": "Les navigateurs, eux, lisent des neutonnes. Le système métrique.",
+  "hi": "newtons"
+ },
+ {
+  "text": "Une livre-force, c'est 4,45 newtons.",
+  "say": "Une livre-force, c'est quatre virgule quarante-cinq neutonnes.",
+  "hi": "4,45"
+ },
+ {
+  "text": "Chaque petit coup est donc sous-estimé 4,45 fois.",
+  "say": "Chaque petit coup est donc sous-estimé quatre virgule quarante-cinq fois.",
+  "hi": "4,45 fois"
+ },
+ {
+  "text": "Et ces coups arrivent 10 à 14 fois plus souvent que prévu.",
+  "say": "Et ces coups arrivent dix à quatorze fois plus souvent que prévu.",
+  "hi": "10 à 14 fois"
+ },
+ {
+  "text": "Pendant 9 mois, l'erreur s'accumule. En silence.",
+  "say": "Pendant neuf mois, l'erreur s'accumule. En silence.",
+  "hi": "En silence"
+ },
+ {
+  "text": "Des navigateurs remarquent un écart.",
+  "hi": "écart"
+ },
+ {
+  "text": "Mais leurs alertes ne suivent pas la procédure officielle.",
+  "hi": "procédure"
+ },
+ {
+  "text": "Une manœuvre de correction est prévue.",
+  "hi": "correction"
+ },
+ {
+  "text": "Elle n'est jamais lancée.",
+  "hi": "jamais"
+ },
+ {
+  "text": "23 septembre 1999. Arrivée à Mars.",
+  "say": "Vingt-trois septembre mille neuf cent quatre-vingt-dix-neuf. Arrivée à Mars.",
+  "hi": "Arrivée"
+ },
+ {
+  "text": "Pour survivre, il faut passer à plus de 80 km.",
+  "say": "Pour survivre, il faut passer à plus de quatre-vingts kilomètres.",
+  "hi": "80 km",
+  "eleven": "Pour survivre, il faut passer à plus de 80 kilomètres."
+ },
+ {
+  "text": "Elle passe à 57.",
+  "say": "Elle passe à cinquante-sept.",
+  "hi": "57"
+ },
+ {
+  "text": "Elle disparaît derrière Mars, 49 secondes trop tôt.",
+  "say": "Elle disparaît derrière Mars, quarante-neuf secondes trop tôt.",
+  "hi": "49 secondes"
+ },
+ {
+  "text": "On ne l'a plus jamais entendue.",
+  "hi": "plus jamais"
+ },
+ {
+  "text": "Le plus fou, dans tout ça ?",
+  "hi": "plus fou"
+ },
+ {
+  "text": "Le document de référence exigeait des newtons. Noir sur blanc.",
+  "say": "Le document de référence exigeait des neutonnes. Noir sur blanc.",
+  "hi": "Noir sur blanc"
+ },
+ {
+  "text": "Et 10 semaines plus tard, sa sœur, Mars Polar Lander, disparaît à son tour.",
+  "say": "Et dix semaines plus tard, sa sœur, Mars Polar Lander, disparaît à son tour.",
+  "hi": "disparaît"
+ },
+ {
+  "text": "Une unité. 327 millions. Dossier classé.",
+  "say": "Une unité. Trois cent vingt-sept millions. Dossier classé.",
+  "hi": "Dossier classé"
+ }
+]

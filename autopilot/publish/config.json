@@ -1,0 +1,9 @@
+{
+ "heure_publication": "18:00",
+ "fuseau": "Europe/Paris",
+ "marge_minimale_minutes": 30,
+ "categorie_id": "27",
+ "max_envois_par_execution": 2,
+ "hashtag_shorts": true,
+ "question_dans_description": true
+}

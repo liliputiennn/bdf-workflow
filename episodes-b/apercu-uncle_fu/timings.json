@@ -1,0 +1,1186 @@
+{
+ "total": 86.97,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.83,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 0.15,
+     "end": 0.32
+    },
+    {
+     "w": "veux",
+     "start": 0.32,
+     "end": 0.5
+    },
+    {
+     "w": "lancer",
+     "start": 0.5,
+     "end": 0.86
+    },
+    {
+     "w": "un",
+     "start": 0.86,
+     "end": 1.02
+    },
+    {
+     "w": "business,",
+     "start": 1.02,
+     "end": 1.48
+    },
+    {
+     "w": "mais",
+     "start": 2.18,
+     "end": 2.3
+    },
+    {
+     "w": "tu",
+     "start": 2.3,
+     "end": 2.48
+    },
+    {
+     "w": "ne",
+     "start": 2.48,
+     "end": 2.58
+    },
+    {
+     "w": "sais",
+     "start": 2.58,
+     "end": 2.7
+    },
+    {
+     "w": "pas",
+     "start": 2.7,
+     "end": 2.88
+    },
+    {
+     "w": "lequel",
+     "start": 2.88,
+     "end": 3.08
+    },
+    {
+     "w": "choisir",
+     "start": 3.08,
+     "end": 3.74
+    }
+   ]
+  },
+  {
+   "start": 4.01,
+   "end": 7.8,
+   "words": [
+    {
+     "w": "Voici",
+     "start": 4.01,
+     "end": 4.56
+    },
+    {
+     "w": "deux",
+     "start": 4.56,
+     "end": 4.82
+    },
+    {
+     "w": "idées",
+     "start": 4.82,
+     "end": 5.28
+    },
+    {
+     "w": "simples",
+     "start": 5.28,
+     "end": 5.56
+    },
+    {
+     "w": "pour",
+     "start": 5.56,
+     "end": 5.86
+    },
+    {
+     "w": "commencer,",
+     "start": 5.86,
+     "end": 6.38
+    },
+    {
+     "w": "sans",
+     "start": 6.72,
+     "end": 7.0
+    },
+    {
+     "w": "gros",
+     "start": 7.0,
+     "end": 7.26
+    },
+    {
+     "w": "budget.",
+     "start": 7.26,
+     "end": 7.56
+    }
+   ]
+  },
+  {
+   "start": 7.98,
+   "end": 11.1,
+   "words": [
+    {
+     "w": "Mais",
+     "start": 7.98,
+     "end": 8.2
+    },
+    {
+     "w": "d'abord,",
+     "start": 8.2,
+     "end": 8.54
+    },
+    {
+     "w": "une",
+     "start": 8.96,
+     "end": 9.12
+    },
+    {
+     "w": "règle",
+     "start": 9.12,
+     "end": 9.46
+    },
+    {
+     "w": "que",
+     "start": 9.46,
+     "end": 9.64
+    },
+    {
+     "w": "presque",
+     "start": 9.64,
+     "end": 9.86
+    },
+    {
+     "w": "personne",
+     "start": 9.86,
+     "end": 10.28
+    },
+    {
+     "w": "ne",
+     "start": 10.28,
+     "end": 10.54
+    },
+    {
+     "w": "regarde.",
+     "start": 10.54,
+     "end": 10.86
+    }
+   ]
+  },
+  {
+   "start": 11.28,
+   "end": 14.48,
+   "words": [
+    {
+     "w": "C'est",
+     "start": 11.28,
+     "end": 11.63
+    },
+    {
+     "w": "la",
+     "start": 11.63,
+     "end": 11.77
+    },
+    {
+     "w": "limite",
+     "start": 11.77,
+     "end": 12.03
+    },
+    {
+     "w": "de",
+     "start": 12.03,
+     "end": 12.35
+    },
+    {
+     "w": "chiffre",
+     "start": 12.35,
+     "end": 12.71
+    },
+    {
+     "w": "d'affaires",
+     "start": 12.71,
+     "end": 13.11
+    },
+    {
+     "w": "de",
+     "start": 13.11,
+     "end": 13.23
+    },
+    {
+     "w": "la",
+     "start": 13.23,
+     "end": 13.35
+    },
+    {
+     "w": "micro-entreprise.",
+     "start": 13.35,
+     "end": 14.25
+    }
+   ]
+  },
+  {
+   "start": 16.46,
+   "end": 21.56,
+   "words": [
+    {
+     "w": "Quand",
+     "start": 16.46,
+     "end": 16.72
+    },
+    {
+     "w": "tu",
+     "start": 16.72,
+     "end": 16.88
+    },
+    {
+     "w": "démarres",
+     "start": 16.88,
+     "end": 17.32
+    },
+    {
+     "w": "en",
+     "start": 17.32,
+     "end": 17.4
+    },
+    {
+     "w": "micro-entreprise,",
+     "start": 17.4,
+     "end": 18.38
+    },
+    {
+     "w": "tu",
+     "start": 18.38,
+     "end": 19.7
+    },
+    {
+     "w": "as",
+     "start": 19.7,
+     "end": 19.84
+    },
+    {
+     "w": "un",
+     "start": 19.84,
+     "end": 20.04
+    },
+    {
+     "w": "plafond",
+     "start": 20.04,
+     "end": 20.46
+    },
+    {
+     "w": "à",
+     "start": 20.46,
+     "end": 20.58
+    },
+    {
+     "w": "ne",
+     "start": 20.58,
+     "end": 20.66
+    },
+    {
+     "w": "pas",
+     "start": 20.66,
+     "end": 20.82
+    },
+    {
+     "w": "dépasser.",
+     "start": 20.82,
+     "end": 21.44
+    }
+   ]
+  },
+  {
+   "start": 21.74,
+   "end": 25.1,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 21.74,
+     "end": 21.95
+    },
+    {
+     "w": "vendre",
+     "start": 21.95,
+     "end": 22.31
+    },
+    {
+     "w": "des",
+     "start": 22.31,
+     "end": 22.45
+    },
+    {
+     "w": "produits,",
+     "start": 22.45,
+     "end": 22.79
+    },
+    {
+     "w": "il",
+     "start": 23.07,
+     "end": 23.27
+    },
+    {
+     "w": "est",
+     "start": 23.27,
+     "end": 23.35
+    },
+    {
+     "w": "de",
+     "start": 23.35,
+     "end": 23.47
+    },
+    {
+     "w": "deux",
+     "start": 23.47,
+     "end": 23.69
+    },
+    {
+     "w": "cent",
+     "start": 23.69,
+     "end": 23.83
+    },
+    {
+     "w": "trois",
+     "start": 23.83,
+     "end": 24.09
+    },
+    {
+     "w": "mille",
+     "start": 24.09,
+     "end": 24.33
+    },
+    {
+     "w": "cent",
+     "start": 24.33,
+     "end": 24.41
+    },
+    {
+     "w": "euros",
+     "start": 24.41,
+     "end": 24.63
+    },
+    {
+     "w": "par",
+     "start": 24.63,
+     "end": 24.87
+    },
+    {
+     "w": "an.",
+     "start": 24.87,
+     "end": 25.01
+    }
+   ]
+  },
+  {
+   "start": 25.28,
+   "end": 30.09,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 25.28,
+     "end": 25.48
+    },
+    {
+     "w": "vendre",
+     "start": 25.48,
+     "end": 25.86
+    },
+    {
+     "w": "ton",
+     "start": 25.86,
+     "end": 26.0
+    },
+    {
+     "w": "temps,",
+     "start": 26.0,
+     "end": 26.32
+    },
+    {
+     "w": "comme",
+     "start": 26.6,
+     "end": 26.78
+    },
+    {
+     "w": "un",
+     "start": 26.78,
+     "end": 26.98
+    },
+    {
+     "w": "service,",
+     "start": 26.98,
+     "end": 27.44
+    },
+    {
+     "w": "il",
+     "start": 27.84,
+     "end": 27.94
+    },
+    {
+     "w": "est",
+     "start": 27.94,
+     "end": 28.06
+    },
+    {
+     "w": "de",
+     "start": 28.06,
+     "end": 28.18
+    },
+    {
+     "w": "quatre-vingt-trois",
+     "start": 28.18,
+     "end": 29.02
+    },
+    {
+     "w": "mille",
+     "start": 29.02,
+     "end": 29.26
+    },
+    {
+     "w": "six",
+     "start": 29.26,
+     "end": 29.38
+    },
+    {
+     "w": "cents",
+     "start": 29.38,
+     "end": 29.6
+    },
+    {
+     "w": "euros.",
+     "start": 29.6,
+     "end": 29.82
+    }
+   ]
+  },
+  {
+   "start": 30.27,
+   "end": 34.44,
+   "words": [
+    {
+     "w": "Ces",
+     "start": 30.27,
+     "end": 30.5
+    },
+    {
+     "w": "chiffres",
+     "start": 30.5,
+     "end": 30.9
+    },
+    {
+     "w": "sont",
+     "start": 30.9,
+     "end": 31.08
+    },
+    {
+     "w": "valables",
+     "start": 31.08,
+     "end": 31.52
+    },
+    {
+     "w": "de",
+     "start": 31.52,
+     "end": 31.82
+    },
+    {
+     "w": "deux",
+     "start": 31.82,
+     "end": 32.48
+    },
+    {
+     "w": "mille",
+     "start": 32.48,
+     "end": 32.72
+    },
+    {
+     "w": "vingt-six",
+     "start": 32.72,
+     "end": 33.06
+    },
+    {
+     "w": "à",
+     "start": 33.06,
+     "end": 33.42
+    },
+    {
+     "w": "deux",
+     "start": 33.42,
+     "end": 33.72
+    },
+    {
+     "w": "mille",
+     "start": 33.72,
+     "end": 33.92
+    },
+    {
+     "w": "vingt-huit.",
+     "start": 33.92,
+     "end": 34.2
+    }
+   ]
+  },
+  {
+   "start": 34.62,
+   "end": 38.42,
+   "words": [
+    {
+     "w": "Retiens-les",
+     "start": 34.62,
+     "end": 35.2
+    },
+    {
+     "w": "ils",
+     "start": 35.74,
+     "end": 35.88
+    },
+    {
+     "w": "changent",
+     "start": 35.88,
+     "end": 36.24
+    },
+    {
+     "w": "complètement",
+     "start": 36.24,
+     "end": 36.64
+    },
+    {
+     "w": "le",
+     "start": 36.64,
+     "end": 36.84
+    },
+    {
+     "w": "business",
+     "start": 36.84,
+     "end": 37.22
+    },
+    {
+     "w": "que",
+     "start": 37.22,
+     "end": 37.64
+    },
+    {
+     "w": "tu",
+     "start": 37.64,
+     "end": 37.76
+    },
+    {
+     "w": "peux",
+     "start": 37.76,
+     "end": 37.9
+    },
+    {
+     "w": "choisir.",
+     "start": 37.9,
+     "end": 38.32
+    }
+   ]
+  },
+  {
+   "start": 40.4,
+   "end": 43.07,
+   "words": [
+    {
+     "w": "Première",
+     "start": 40.4,
+     "end": 40.96
+    },
+    {
+     "w": "idée",
+     "start": 40.96,
+     "end": 41.18
+    },
+    {
+     "w": "un",
+     "start": 41.68,
+     "end": 41.86
+    },
+    {
+     "w": "service",
+     "start": 41.86,
+     "end": 42.2
+    },
+    {
+     "w": "près",
+     "start": 42.2,
+     "end": 42.44
+    },
+    {
+     "w": "de",
+     "start": 42.44,
+     "end": 42.56
+    },
+    {
+     "w": "chez",
+     "start": 42.56,
+     "end": 42.66
+    },
+    {
+     "w": "toi.",
+     "start": 42.66,
+     "end": 42.92
+    }
+   ]
+  },
+  {
+   "start": 43.25,
+   "end": 47.93,
+   "words": [
+    {
+     "w": "Le",
+     "start": 43.25,
+     "end": 43.62
+    },
+    {
+     "w": "ménage,",
+     "start": 43.62,
+     "end": 44.26
+    },
+    {
+     "w": "le",
+     "start": 44.64,
+     "end": 44.74
+    },
+    {
+     "w": "jardinage,",
+     "start": 44.74,
+     "end": 45.48
+    },
+    {
+     "w": "ou",
+     "start": 45.78,
+     "end": 46.16
+    },
+    {
+     "w": "l'aide",
+     "start": 46.16,
+     "end": 46.38
+    },
+    {
+     "w": "à",
+     "start": 46.38,
+     "end": 46.5
+    },
+    {
+     "w": "l'informatique",
+     "start": 46.5,
+     "end": 47.06
+    },
+    {
+     "w": "pour",
+     "start": 47.06,
+     "end": 47.3
+    },
+    {
+     "w": "les",
+     "start": 47.3,
+     "end": 47.44
+    },
+    {
+     "w": "voisins.",
+     "start": 47.44,
+     "end": 47.82
+    }
+   ]
+  },
+  {
+   "start": 48.11,
+   "end": 51.58,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 48.11,
+     "end": 48.27
+    },
+    {
+     "w": "n'as",
+     "start": 48.27,
+     "end": 48.47
+    },
+    {
+     "w": "presque",
+     "start": 48.47,
+     "end": 48.65
+    },
+    {
+     "w": "rien",
+     "start": 48.65,
+     "end": 49.11
+    },
+    {
+     "w": "à",
+     "start": 49.11,
+     "end": 49.31
+    },
+    {
+     "w": "acheter",
+     "start": 49.31,
+     "end": 49.67
+    },
+    {
+     "w": "ton",
+     "start": 49.67,
+     "end": 50.45
+    },
+    {
+     "w": "temps",
+     "start": 50.45,
+     "end": 50.71
+    },
+    {
+     "w": "est",
+     "start": 50.71,
+     "end": 50.89
+    },
+    {
+     "w": "ton",
+     "start": 50.89,
+     "end": 51.01
+    },
+    {
+     "w": "produit.",
+     "start": 51.01,
+     "end": 51.35
+    }
+   ]
+  },
+  {
+   "start": 51.76,
+   "end": 57.71,
+   "words": [
+    {
+     "w": "Mais",
+     "start": 51.76,
+     "end": 52.39
+    },
+    {
+     "w": "tu",
+     "start": 52.39,
+     "end": 53.83
+    },
+    {
+     "w": "restes",
+     "start": 53.83,
+     "end": 54.17
+    },
+    {
+     "w": "sous",
+     "start": 54.17,
+     "end": 54.35
+    },
+    {
+     "w": "le",
+     "start": 54.35,
+     "end": 54.47
+    },
+    {
+     "w": "plafond",
+     "start": 54.47,
+     "end": 54.81
+    },
+    {
+     "w": "des",
+     "start": 54.81,
+     "end": 54.93
+    },
+    {
+     "w": "services,",
+     "start": 54.93,
+     "end": 55.29
+    },
+    {
+     "w": "quatre-vingt-trois",
+     "start": 55.87,
+     "end": 56.69
+    },
+    {
+     "w": "mille",
+     "start": 56.69,
+     "end": 56.93
+    },
+    {
+     "w": "six",
+     "start": 56.93,
+     "end": 57.07
+    },
+    {
+     "w": "cents",
+     "start": 57.07,
+     "end": 57.25
+    },
+    {
+     "w": "euros.",
+     "start": 57.25,
+     "end": 57.49
+    }
+   ]
+  },
+  {
+   "start": 57.89,
+   "end": 60.23,
+   "words": [
+    {
+     "w": "Au-delà,",
+     "start": 57.89,
+     "end": 58.48
+    },
+    {
+     "w": "les",
+     "start": 59.08,
+     "end": 59.2
+    },
+    {
+     "w": "règles",
+     "start": 59.2,
+     "end": 59.54
+    },
+    {
+     "w": "changent.",
+     "start": 59.54,
+     "end": 60.16
+    }
+   ]
+  },
+  {
+   "start": 62.21,
+   "end": 66.51,
+   "words": [
+    {
+     "w": "Deuxième",
+     "start": 62.21,
+     "end": 62.64
+    },
+    {
+     "w": "idée",
+     "start": 62.64,
+     "end": 62.9
+    },
+    {
+     "w": "acheter",
+     "start": 63.58,
+     "end": 63.82
+    },
+    {
+     "w": "pour",
+     "start": 63.82,
+     "end": 64.04
+    },
+    {
+     "w": "revendre,",
+     "start": 64.04,
+     "end": 64.44
+    },
+    {
+     "w": "en",
+     "start": 64.76,
+     "end": 64.96
+    },
+    {
+     "w": "ligne",
+     "start": 64.96,
+     "end": 65.3
+    },
+    {
+     "w": "ou",
+     "start": 65.3,
+     "end": 65.76
+    },
+    {
+     "w": "sur",
+     "start": 65.76,
+     "end": 65.88
+    },
+    {
+     "w": "les",
+     "start": 65.88,
+     "end": 66.0
+    },
+    {
+     "w": "marchés.",
+     "start": 66.0,
+     "end": 66.4
+    }
+   ]
+  },
+  {
+   "start": 66.69,
+   "end": 70.82,
+   "words": [
+    {
+     "w": "Ici,",
+     "start": 66.69,
+     "end": 67.13
+    },
+    {
+     "w": "le",
+     "start": 67.47,
+     "end": 67.73
+    },
+    {
+     "w": "plafond",
+     "start": 67.73,
+     "end": 68.17
+    },
+    {
+     "w": "est",
+     "start": 68.17,
+     "end": 68.29
+    },
+    {
+     "w": "plus",
+     "start": 68.29,
+     "end": 68.45
+    },
+    {
+     "w": "haut",
+     "start": 68.45,
+     "end": 68.77
+    },
+    {
+     "w": "deux",
+     "start": 69.25,
+     "end": 69.39
+    },
+    {
+     "w": "cent",
+     "start": 69.39,
+     "end": 69.61
+    },
+    {
+     "w": "trois",
+     "start": 69.61,
+     "end": 69.91
+    },
+    {
+     "w": "mille",
+     "start": 69.91,
+     "end": 70.19
+    },
+    {
+     "w": "cent",
+     "start": 70.19,
+     "end": 70.29
+    },
+    {
+     "w": "euros.",
+     "start": 70.29,
+     "end": 70.55
+    }
+   ]
+  },
+  {
+   "start": 71.0,
+   "end": 74.55,
+   "words": [
+    {
+     "w": "Mais",
+     "start": 71.0,
+     "end": 71.22
+    },
+    {
+     "w": "attention,",
+     "start": 71.22,
+     "end": 71.54
+    },
+    {
+     "w": "il",
+     "start": 72.6,
+     "end": 72.78
+    },
+    {
+     "w": "faut",
+     "start": 72.78,
+     "end": 72.98
+    },
+    {
+     "w": "avancer",
+     "start": 72.98,
+     "end": 73.54
+    },
+    {
+     "w": "l'argent",
+     "start": 73.54,
+     "end": 73.98
+    },
+    {
+     "w": "des",
+     "start": 73.98,
+     "end": 74.14
+    },
+    {
+     "w": "produits.",
+     "start": 74.14,
+     "end": 74.46
+    }
+   ]
+  },
+  {
+   "start": 74.73,
+   "end": 77.32,
+   "words": [
+    {
+     "w": "Plus",
+     "start": 74.73,
+     "end": 74.93
+    },
+    {
+     "w": "de",
+     "start": 74.93,
+     "end": 75.17
+    },
+    {
+     "w": "ventes",
+     "start": 75.17,
+     "end": 75.49
+    },
+    {
+     "w": "ne",
+     "start": 75.49,
+     "end": 75.55
+    },
+    {
+     "w": "veut",
+     "start": 75.55,
+     "end": 75.69
+    },
+    {
+     "w": "pas",
+     "start": 75.69,
+     "end": 75.87
+    },
+    {
+     "w": "dire",
+     "start": 75.87,
+     "end": 76.03
+    },
+    {
+     "w": "plus",
+     "start": 76.03,
+     "end": 76.29
+    },
+    {
+     "w": "de",
+     "start": 76.29,
+     "end": 76.47
+    },
+    {
+     "w": "bénéfice.",
+     "start": 76.47,
+     "end": 77.11
+    }
+   ]
+  },
+  {
+   "start": 79.3,
+   "end": 81.86,
+   "words": [
+    {
+     "w": "Le",
+     "start": 79.3,
+     "end": 79.47
+    },
+    {
+     "w": "bon",
+     "start": 79.47,
+     "end": 79.71
+    },
+    {
+     "w": "choix",
+     "start": 79.71,
+     "end": 80.01
+    },
+    {
+     "w": "dépend",
+     "start": 80.01,
+     "end": 80.43
+    },
+    {
+     "w": "de",
+     "start": 80.43,
+     "end": 80.71
+    },
+    {
+     "w": "ce",
+     "start": 80.71,
+     "end": 80.79
+    },
+    {
+     "w": "que",
+     "start": 80.79,
+     "end": 80.89
+    },
+    {
+     "w": "tu",
+     "start": 80.89,
+     "end": 81.03
+    },
+    {
+     "w": "veux",
+     "start": 81.03,
+     "end": 81.17
+    },
+    {
+     "w": "vendre.",
+     "start": 81.17,
+     "end": 81.69
+    }
+   ]
+  },
+  {
+   "start": 82.04,
+   "end": 85.07,
+   "words": [
+    {
+     "w": "Ton",
+     "start": 82.04,
+     "end": 82.47
+    },
+    {
+     "w": "temps,",
+     "start": 82.47,
+     "end": 83.29
+    },
+    {
+     "w": "ou",
+     "start": 83.49,
+     "end": 84.01
+    },
+    {
+     "w": "des",
+     "start": 84.01,
+     "end": 84.35
+    },
+    {
+     "w": "produits",
+     "start": 84.35,
+     "end": 84.85
+    }
+   ]
+  },
+  {
+   "start": 85.25,
+   "end": 86.79,
+   "words": [
+    {
+     "w": "Dis-le",
+     "start": 85.25,
+     "end": 85.71
+    },
+    {
+     "w": "moi",
+     "start": 85.71,
+     "end": 85.93
+    },
+    {
+     "w": "en",
+     "start": 85.93,
+     "end": 86.07
+    },
+    {
+     "w": "commentaire.",
+     "start": 86.07,
+     "end": 86.67
+    }
+   ]
+  }
+ ]
+}

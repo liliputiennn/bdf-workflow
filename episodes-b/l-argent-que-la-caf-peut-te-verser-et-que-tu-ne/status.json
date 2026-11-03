@@ -1,0 +1,19 @@
+{
+ "etat": "programme",
+ "maj": "2026-11-03T18:00:34",
+ "raison": null,
+ "tentatives": 0,
+ "youtube": {
+  "video_id": "Zdk3r0kXCy8",
+  "url": "https://youtu.be/Zdk3r0kXCy8",
+  "visibilite": "programme",
+  "publie_a": "2026-11-04T17:00:00Z",
+  "miniature": true
+ },
+ "miniature": {
+  "source": "auto",
+  "fichier": "miniature.png",
+  "style": "telephone",
+  "octets": 581497
+ }
+}

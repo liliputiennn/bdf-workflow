@@ -1,0 +1,85 @@
+{
+ "id": "apercu-uncle_fu",
+ "titre": "Quel business lancer sans gros budget ? (aperçu)",
+ "theme": "papier-vert",
+ "chaine": "Bureau des Faits",
+ "pause_chapitre_s": 1.8,
+ "chapitres": [
+  {
+   "titre": "Par où commencer",
+   "carte": false,
+   "phrases": [
+    "Tu veux lancer un business, mais tu ne sais pas lequel choisir ?",
+    "Voici deux idées simples pour commencer, sans gros budget.",
+    "Mais d'abord, une règle que presque personne ne regarde.",
+    "C'est la limite de chiffre d'affaires de la micro-entreprise."
+   ],
+   "scenes": [
+    {"type": "titre-geant", "phrase": 1, "params": {"accents": ["business", "choisir"]}},
+    {"type": "liste", "phrase": 2, "params": {"titre": "Deux idées simples", "items": [{"texte": "Vendre un service"}, {"texte": "Revendre des produits"}]}},
+    {"type": "question", "phrase": 3, "params": {"question": "Quelle est la limite à ne pas dépasser ?", "pistes": ["Services", "Produits", "Les deux"]}}
+   ]
+  },
+  {
+   "titre": "La règle du plafond",
+   "carte": true,
+   "phrases": [
+    "Quand tu démarres en micro-entreprise, tu as un plafond à ne pas dépasser.",
+    "Pour vendre des produits, il est de deux cent trois mille cent euros par an.",
+    "Pour vendre ton temps, comme un service, il est de quatre-vingt-trois mille six cents euros.",
+    "Ces chiffres sont valables de deux mille vingt-six à deux mille vingt-huit.",
+    "Retiens-les : ils changent complètement le business que tu peux choisir."
+   ],
+   "scenes": [
+    {"type": "objet", "phrase": 1, "params": {"icone": "magasin", "titre": "Le plafond", "sous": "la limite par an"}},
+    {"type": "barres", "phrase": 2, "params": {"titre": "Plafond par an", "barres": [{"label": "Services", "valeur": 83600}, {"label": "Produits", "valeur": 203100, "accent": true}]}},
+    {"type": "chiffre", "phrase": 3, "params": {"valeur": 83600, "suffixe": " €", "etiquette": "pour un service", "sous": "par an"}},
+    {"type": "ligne-temps", "phrase": 4, "params": {"de": "2026", "a": "2028", "valeur": "mêmes plafonds", "etiquette": "trois années de suite"}},
+    {"type": "titre-geant", "phrase": 5, "params": {"accents": ["changent"]}}
+   ]
+  },
+  {
+   "titre": "Idée une : un service local",
+   "carte": true,
+   "phrases": [
+    "Première idée : un service près de chez toi.",
+    "Le ménage, le jardinage, ou l'aide à l'informatique pour les voisins.",
+    "Tu n'as presque rien à acheter : ton temps est ton produit.",
+    "Mais tu restes sous le plafond des services, quatre-vingt-trois mille six cents euros.",
+    "Au-delà, les règles changent."
+   ],
+   "scenes": [
+    {"type": "liste", "phrase": 1, "params": {"titre": "Un service près de chez toi", "items": [{"texte": "Ménage"}, {"texte": "Jardinage"}, {"texte": "Aide informatique"}]}},
+    {"type": "objet", "phrase": 3, "params": {"icone": "pieces", "titre": "Peu de matériel", "sous": "ton temps est le produit"}},
+    {"type": "anneau", "phrase": 4, "params": {"valeur": 100, "repere": 100, "centre": "83 600 €", "etiquette": "plafond des services"}}
+   ]
+  },
+  {
+   "titre": "Idée deux : revendre",
+   "carte": true,
+   "phrases": [
+    "Deuxième idée : acheter pour revendre, en ligne ou sur les marchés.",
+    "Ici, le plafond est plus haut : deux cent trois mille cent euros.",
+    "Mais attention, il faut avancer l'argent des produits.",
+    "Plus de ventes ne veut pas dire plus de bénéfice."
+   ],
+   "scenes": [
+    {"type": "objet", "phrase": 1, "params": {"icone": "panier", "titre": "Acheter pour revendre", "sous": "en ligne ou sur les marchés"}},
+    {"type": "chiffre", "phrase": 2, "params": {"valeur": 203100, "suffixe": " €", "etiquette": "plafond des produits", "sous": "par an"}},
+    {"type": "duel", "phrase": 3, "params": {"titre": "Ce que tu avances", "haut": {"titre": "Ventes", "part": 100}, "bas": {"titre": "Bénéfice", "part": 20}}}
+   ]
+  },
+  {
+   "titre": "À toi de choisir",
+   "carte": true,
+   "phrases": [
+    "Le bon choix dépend de ce que tu veux vendre.",
+    "Ton temps, ou des produits ?",
+    "Dis-le moi en commentaire."
+   ],
+   "scenes": [
+    {"type": "question", "phrase": 1, "params": {"question": "Ton temps, ou des produits ?", "pistes": ["Temps", "Produits", "Les deux"]}}
+   ]
+  }
+ ]
+}

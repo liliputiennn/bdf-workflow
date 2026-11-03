@@ -1,0 +1,6 @@
+[
+ {"claim": "Plafond annuel de la micro-entreprise pour la vente de marchandises : 203 100 € (2026-2028).", "valeur": "203 100 €", "phrase": 6,
+  "sources": ["https://tpeactu.fr/2026/02/25/micro-entrepreneurs-plafonds-chiffre-affaires-2026/", "https://www.entreprises.cci-paris-idf.fr/actualites/micro-entrepreneur-revalorisation-des-seuils-pour-2026-2028"], "check": ["203"]},
+ {"claim": "Plafond annuel de la micro-entreprise pour les prestations de services : 83 600 € (2026-2028).", "valeur": "83 600 €", "phrase": 7,
+  "sources": ["https://tpeactu.fr/2026/02/25/micro-entrepreneurs-plafonds-chiffre-affaires-2026/", "https://www.legifiscal.fr/actualites-fiscales/4436-nouveaux-seuils-micro-entreprises-annee-2026.html"], "check": ["83"]}
+]

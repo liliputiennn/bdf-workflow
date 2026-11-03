@@ -1,0 +1,666 @@
+{
+ "total": 34.47,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 2.53,
+   "words": [
+    {
+     "w": "Ton",
+     "start": 0.15,
+     "end": 0.29
+    },
+    {
+     "w": "appli",
+     "start": 0.29,
+     "end": 0.51
+    },
+    {
+     "w": "gratuite",
+     "start": 0.51,
+     "end": 0.99
+    },
+    {
+     "w": "n'est",
+     "start": 0.99,
+     "end": 1.17
+    },
+    {
+     "w": "pas",
+     "start": 1.17,
+     "end": 1.29
+    },
+    {
+     "w": "gratuite",
+     "start": 1.29,
+     "end": 1.73
+    },
+    {
+     "w": "pour",
+     "start": 1.73,
+     "end": 1.91
+    },
+    {
+     "w": "tout",
+     "start": 1.91,
+     "end": 2.07
+    },
+    {
+     "w": "le",
+     "start": 2.07,
+     "end": 2.15
+    },
+    {
+     "w": "monde.",
+     "start": 2.15,
+     "end": 2.35
+    }
+   ]
+  },
+  {
+   "start": 2.71,
+   "end": 4.86,
+   "words": [
+    {
+     "w": "Alors,",
+     "start": 2.71,
+     "end": 2.94
+    },
+    {
+     "w": "qui",
+     "start": 3.08,
+     "end": 3.16
+    },
+    {
+     "w": "paie",
+     "start": 3.16,
+     "end": 3.46
+    },
+    {
+     "w": "pour",
+     "start": 3.46,
+     "end": 3.68
+    },
+    {
+     "w": "que",
+     "start": 3.68,
+     "end": 3.84
+    },
+    {
+     "w": "tu",
+     "start": 3.84,
+     "end": 4.02
+    },
+    {
+     "w": "joues",
+     "start": 4.02,
+     "end": 4.3
+    },
+    {
+     "w": "sans",
+     "start": 4.3,
+     "end": 4.38
+    },
+    {
+     "w": "payer",
+     "start": 4.38,
+     "end": 4.66
+    }
+   ]
+  },
+  {
+   "start": 5.04,
+   "end": 10.64,
+   "words": [
+    {
+     "w": "Selon",
+     "start": 5.04,
+     "end": 5.4
+    },
+    {
+     "w": "un",
+     "start": 5.4,
+     "end": 5.5
+    },
+    {
+     "w": "rapport",
+     "start": 5.5,
+     "end": 5.74
+    },
+    {
+     "w": "de",
+     "start": 5.74,
+     "end": 5.94
+    },
+    {
+     "w": "deux",
+     "start": 5.94,
+     "end": 6.16
+    },
+    {
+     "w": "mille",
+     "start": 6.16,
+     "end": 6.4
+    },
+    {
+     "w": "quatorze,",
+     "start": 6.4,
+     "end": 6.9
+    },
+    {
+     "w": "seuls",
+     "start": 7.28,
+     "end": 7.5
+    },
+    {
+     "w": "un",
+     "start": 7.5,
+     "end": 7.66
+    },
+    {
+     "w": "virgule",
+     "start": 7.66,
+     "end": 8.0
+    },
+    {
+     "w": "cinq",
+     "start": 8.0,
+     "end": 8.24
+    },
+    {
+     "w": "pour",
+     "start": 8.24,
+     "end": 8.48
+    },
+    {
+     "w": "cent",
+     "start": 8.48,
+     "end": 8.68
+    },
+    {
+     "w": "des",
+     "start": 8.68,
+     "end": 8.84
+    },
+    {
+     "w": "joueurs",
+     "start": 8.84,
+     "end": 9.18
+    },
+    {
+     "w": "achètent",
+     "start": 9.18,
+     "end": 9.6
+    },
+    {
+     "w": "quelque",
+     "start": 9.6,
+     "end": 9.7
+    },
+    {
+     "w": "chose",
+     "start": 9.7,
+     "end": 10.04
+    },
+    {
+     "w": "dans",
+     "start": 10.04,
+     "end": 10.2
+    },
+    {
+     "w": "le",
+     "start": 10.2,
+     "end": 10.3
+    },
+    {
+     "w": "mois.",
+     "start": 10.3,
+     "end": 10.48
+    }
+   ]
+  },
+  {
+   "start": 10.82,
+   "end": 13.0,
+   "words": [
+    {
+     "w": "Presque",
+     "start": 10.82,
+     "end": 11.16
+    },
+    {
+     "w": "tous",
+     "start": 11.16,
+     "end": 11.44
+    },
+    {
+     "w": "les",
+     "start": 11.44,
+     "end": 11.56
+    },
+    {
+     "w": "joueurs",
+     "start": 11.56,
+     "end": 11.96
+    },
+    {
+     "w": "ne",
+     "start": 11.96,
+     "end": 12.2
+    },
+    {
+     "w": "dépensent",
+     "start": 12.2,
+     "end": 12.62
+    },
+    {
+     "w": "rien.",
+     "start": 12.62,
+     "end": 12.8
+    }
+   ]
+  },
+  {
+   "start": 13.18,
+   "end": 15.56,
+   "words": [
+    {
+     "w": "Et",
+     "start": 13.18,
+     "end": 13.34
+    },
+    {
+     "w": "dans",
+     "start": 13.34,
+     "end": 13.46
+    },
+    {
+     "w": "ce",
+     "start": 13.46,
+     "end": 13.62
+    },
+    {
+     "w": "petit",
+     "start": 13.62,
+     "end": 13.82
+    },
+    {
+     "w": "groupe,",
+     "start": 13.82,
+     "end": 14.2
+    },
+    {
+     "w": "il",
+     "start": 14.38,
+     "end": 14.5
+    },
+    {
+     "w": "y",
+     "start": 14.5,
+     "end": 14.6
+    },
+    {
+     "w": "a",
+     "start": 14.6,
+     "end": 14.68
+    },
+    {
+     "w": "encore",
+     "start": 14.68,
+     "end": 14.84
+    },
+    {
+     "w": "plus",
+     "start": 14.84,
+     "end": 15.08
+    },
+    {
+     "w": "petit.",
+     "start": 15.08,
+     "end": 15.36
+    }
+   ]
+  },
+  {
+   "start": 15.74,
+   "end": 19.3,
+   "words": [
+    {
+     "w": "Zéro",
+     "start": 15.74,
+     "end": 16.12
+    },
+    {
+     "w": "virgule",
+     "start": 16.12,
+     "end": 16.52
+    },
+    {
+     "w": "quinze",
+     "start": 16.52,
+     "end": 16.92
+    },
+    {
+     "w": "pour",
+     "start": 16.92,
+     "end": 17.08
+    },
+    {
+     "w": "cent",
+     "start": 17.08,
+     "end": 17.32
+    },
+    {
+     "w": "des",
+     "start": 17.32,
+     "end": 17.5
+    },
+    {
+     "w": "joueurs",
+     "start": 17.5,
+     "end": 17.92
+    },
+    {
+     "w": "apportent",
+     "start": 17.92,
+     "end": 18.42
+    },
+    {
+     "w": "la",
+     "start": 18.42,
+     "end": 18.5
+    },
+    {
+     "w": "moitié",
+     "start": 18.5,
+     "end": 18.82
+    },
+    {
+     "w": "de",
+     "start": 18.82,
+     "end": 18.92
+    },
+    {
+     "w": "l'argent.",
+     "start": 18.92,
+     "end": 19.14
+    }
+   ]
+  },
+  {
+   "start": 19.48,
+   "end": 21.44,
+   "words": [
+    {
+     "w": "Ces",
+     "start": 19.48,
+     "end": 19.73
+    },
+    {
+     "w": "gros",
+     "start": 19.73,
+     "end": 19.93
+    },
+    {
+     "w": "payeurs,",
+     "start": 19.93,
+     "end": 20.37
+    },
+    {
+     "w": "on",
+     "start": 20.43,
+     "end": 20.49
+    },
+    {
+     "w": "les",
+     "start": 20.49,
+     "end": 20.57
+    },
+    {
+     "w": "appelle",
+     "start": 20.57,
+     "end": 20.79
+    },
+    {
+     "w": "des",
+     "start": 20.79,
+     "end": 20.95
+    },
+    {
+     "w": "baleines.",
+     "start": 20.95,
+     "end": 21.27
+    }
+   ]
+  },
+  {
+   "start": 21.62,
+   "end": 25.43,
+   "words": [
+    {
+     "w": "Et",
+     "start": 21.62,
+     "end": 21.79
+    },
+    {
+     "w": "chaque",
+     "start": 21.79,
+     "end": 21.95
+    },
+    {
+     "w": "achat",
+     "start": 21.95,
+     "end": 22.39
+    },
+    {
+     "w": "a",
+     "start": 22.39,
+     "end": 22.57
+    },
+    {
+     "w": "un",
+     "start": 22.57,
+     "end": 22.67
+    },
+    {
+     "w": "coût",
+     "start": 22.67,
+     "end": 22.91
+    },
+    {
+     "w": "caché",
+     "start": 22.91,
+     "end": 23.33
+    },
+    {
+     "w": "Apple",
+     "start": 23.59,
+     "end": 23.93
+    },
+    {
+     "w": "garde",
+     "start": 23.93,
+     "end": 24.41
+    },
+    {
+     "w": "trente",
+     "start": 24.41,
+     "end": 24.85
+    },
+    {
+     "w": "pour",
+     "start": 24.85,
+     "end": 25.07
+    },
+    {
+     "w": "cent.",
+     "start": 25.07,
+     "end": 25.31
+    }
+   ]
+  },
+  {
+   "start": 25.61,
+   "end": 28.2,
+   "words": [
+    {
+     "w": "Quinze",
+     "start": 25.61,
+     "end": 25.66
+    },
+    {
+     "w": "pour",
+     "start": 25.61,
+     "end": 25.84
+    },
+    {
+     "w": "cent",
+     "start": 25.84,
+     "end": 26.1
+    },
+    {
+     "w": "seulement,",
+     "start": 26.1,
+     "end": 26.54
+    },
+    {
+     "w": "pour",
+     "start": 26.54,
+     "end": 27.08
+    },
+    {
+     "w": "les",
+     "start": 27.08,
+     "end": 27.18
+    },
+    {
+     "w": "petits",
+     "start": 27.18,
+     "end": 27.42
+    },
+    {
+     "w": "développeurs.",
+     "start": 27.42,
+     "end": 28.08
+    }
+   ]
+  },
+  {
+   "start": 28.38,
+   "end": 31.09,
+   "words": [
+    {
+     "w": "Les",
+     "start": 28.38,
+     "end": 28.55
+    },
+    {
+     "w": "achats",
+     "start": 28.55,
+     "end": 28.93
+    },
+    {
+     "w": "dans",
+     "start": 28.93,
+     "end": 28.99
+    },
+    {
+     "w": "le",
+     "start": 28.99,
+     "end": 29.11
+    },
+    {
+     "w": "jeu",
+     "start": 29.11,
+     "end": 29.29
+    },
+    {
+     "w": "viennent",
+     "start": 29.29,
+     "end": 29.51
+    },
+    {
+     "w": "donc",
+     "start": 29.51,
+     "end": 29.79
+    },
+    {
+     "w": "de",
+     "start": 29.79,
+     "end": 30.13
+    },
+    {
+     "w": "très",
+     "start": 30.13,
+     "end": 30.37
+    },
+    {
+     "w": "peu",
+     "start": 30.37,
+     "end": 30.55
+    },
+    {
+     "w": "de",
+     "start": 30.55,
+     "end": 30.67
+    },
+    {
+     "w": "monde.",
+     "start": 30.67,
+     "end": 30.83
+    }
+   ]
+  },
+  {
+   "start": 31.27,
+   "end": 34.29,
+   "words": [
+    {
+     "w": "Alors",
+     "start": 31.27,
+     "end": 31.45
+    },
+    {
+     "w": "toi,",
+     "start": 31.45,
+     "end": 31.71
+    },
+    {
+     "w": "tu",
+     "start": 32.09,
+     "end": 32.29
+    },
+    {
+     "w": "es",
+     "start": 32.29,
+     "end": 32.37
+    },
+    {
+     "w": "plutôt",
+     "start": 32.37,
+     "end": 32.55
+    },
+    {
+     "w": "joueur",
+     "start": 32.55,
+     "end": 33.05
+    },
+    {
+     "w": "gratuit",
+     "start": 33.05,
+     "end": 33.39
+    },
+    {
+     "w": "ou",
+     "start": 33.39,
+     "end": 33.71
+    },
+    {
+     "w": "baleine",
+     "start": 33.71,
+     "end": 34.09
+    }
+   ]
+  }
+ ]
+}

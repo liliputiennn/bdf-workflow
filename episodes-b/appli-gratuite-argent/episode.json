@@ -1,0 +1,117 @@
+{
+ "id": "appli-gratuite-argent",
+ "titre": "Ton appli gratuite n'est pas gratuite pour tout le monde",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "phrases": [
+  "Ton appli gratuite n'est pas gratuite pour tout le monde.",
+  "Alors, qui paie pour que tu joues sans payer ?",
+  "Selon un rapport de deux mille quatorze, seuls un virgule cinq pour cent des joueurs achètent quelque chose dans le mois.",
+  "Presque tous les joueurs ne dépensent rien.",
+  "Et dans ce petit groupe, il y a encore plus petit.",
+  "Zéro virgule quinze pour cent des joueurs apportent la moitié de l'argent.",
+  "Ces gros payeurs, on les appelle des baleines.",
+  "Et chaque achat a un coût caché : Apple garde trente pour cent.",
+  "Quinze pour cent seulement, pour les petits développeurs.",
+  "Les achats dans le jeu viennent donc de très peu de monde.",
+  "Alors toi, tu es plutôt joueur gratuit ou baleine ?"
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "gratuite"
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 2,
+   "params": {
+    "question": "Qui paie vraiment ?",
+    "pistes": [
+     "Toi",
+     "Les pubs",
+     "Quelques joueurs"
+    ]
+   }
+  },
+  {
+   "type": "anneau",
+   "phrase": 3,
+   "params": {
+    "valeur": 1.5,
+    "centre": "1,5 %",
+    "etiquette": "des joueurs achètent dans le mois"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 5,
+   "params": {
+    "valeur": 0.15,
+    "decimales": 2,
+    "suffixe": " %",
+    "etiquette": "des joueurs",
+    "sous": "apportent la moitié de l'argent"
+   }
+  },
+  {
+   "type": "objet",
+   "phrase": 7,
+   "params": {
+    "icone": "pieces",
+    "titre": "Les baleines",
+    "sous": "les très gros payeurs"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 8,
+   "params": {
+    "titre": "Commission d'Apple",
+    "barres": [
+     {
+      "label": "standard",
+      "valeur": 30,
+      "accent": true
+     },
+     {
+      "label": "petits développeurs",
+      "valeur": 15
+     }
+    ],
+    "badge": "30 % ou 15 %"
+   }
+  },
+  {
+   "type": "titre-geant",
+   "phrase": 10,
+   "params": {
+    "accents": [
+     "peu"
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 11,
+   "params": {
+    "question": "Joueur gratuit ou baleine ?",
+    "pistes": [
+     "Gratuit",
+     "Baleine"
+    ]
+   }
+  }
+ ],
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "QUI PAIE VRAIMENT ?",
+  "gros": "0,15 %",
+  "icone": "pieces"
+ },
+ "theme_accent": "chocolat-caramel"
+}

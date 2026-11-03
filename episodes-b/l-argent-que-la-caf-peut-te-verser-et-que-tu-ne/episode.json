@@ -1,0 +1,154 @@
+{
+ "id": "l-argent-que-la-caf-peut-te-verser-et-que-tu-ne",
+ "titre": "L'aide au logement étudiant de la Caf",
+ "theme": "chocolat-lait",
+ "chaine": "Bureau des Faits",
+ "phrases": [
+  "Si tu es étudiant, la Caf peut payer une partie de ton loyer.",
+  "Cette aide existe, mais il faut la demander.",
+  "Alors, combien peut-on recevoir ?",
+  "En moyenne, entre cent et trois cents euros par mois.",
+  "Le calcul dépend de la zone, du loyer et de tes ressources.",
+  "Si c'est toi qui fais la demande, seuls tes revenus comptent.",
+  "Même si tu vis encore chez tes parents.",
+  "Avant de signer le bail, fais une simulation sur le site de la Caf.",
+  "Après la signature, demande vite, car l'étude du dossier commence à ce moment.",
+  "Le vrai gain, c'est de ne pas attendre.",
+  "Alors, as-tu déjà fait ta simulation ?"
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "loyer"
+    ]
+   }
+  },
+  {
+   "type": "objet",
+   "phrase": 2,
+   "params": {
+    "icone": "carte",
+    "titre": "Aide au logement",
+    "sous": "à demander à la Caf"
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 3,
+   "params": {
+    "question": "Combien je peux recevoir ?",
+    "pistes": [
+     "Peu",
+     "Assez",
+     "Beaucoup"
+    ]
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 4,
+   "params": {
+    "titre": "Aide mensuelle moyenne",
+    "barres": [
+     {
+      "label": "bas",
+      "valeur": 100
+     },
+     {
+      "label": "haut",
+      "valeur": 300,
+      "accent": true
+     }
+    ],
+    "badge": "100 à 300 €"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "Le calcul dépend de",
+    "items": [
+     {
+      "texte": "La zone"
+     },
+     {
+      "texte": "Le loyer"
+     },
+     {
+      "texte": "Tes ressources"
+     }
+    ]
+   }
+  },
+  {
+   "type": "objet",
+   "phrase": 6,
+   "params": {
+    "icone": "pieces",
+    "titre": "Tes revenus seuls",
+    "sous": "si tu fais la demande"
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 8,
+   "params": {
+    "question": "Simuler avant de signer ?",
+    "pistes": [
+     "Caf",
+     "Bail",
+     "Aide"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 9,
+   "params": {
+    "titre": "Les deux temps",
+    "items": [
+     {
+      "texte": "Avant le bail",
+      "valeur": "simulation"
+     },
+     {
+      "texte": "Après le bail",
+      "valeur": "demande"
+     }
+    ]
+   }
+  },
+  {
+   "type": "titre-geant",
+   "phrase": 10,
+   "params": {
+    "accents": [
+     "attendre"
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 11,
+   "params": {
+    "question": "Ta simulation est faite ?",
+    "pistes": [
+     "Oui",
+     "Pas encore",
+     "C'est quoi ?"
+    ]
+   }
+  }
+ ],
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "UNE AIDE OUBLIÉE ?",
+  "gros": "300 €",
+  "icone": "pieces"
+ },
+ "theme_accent": "chocolat-caramel"
+}

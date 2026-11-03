@@ -1,0 +1,19 @@
+[
+ {
+  "claim": "L'aide au logement étudiant se situe en moyenne entre 100 et 300 euros par mois pour un étudiant seul.",
+  "valeur": "100 à 300 €",
+  "phrase": 4,
+  "sources": [
+   "https://www.aide-sociale.fr/apl-etudiant/",
+   "https://www.european-funding-guide.eu/fr/node/71525"
+  ],
+  "check": [
+   "100",
+   "300"
+  ],
+  "verified": [
+   "https://www.aide-sociale.fr/apl-etudiant/",
+   "https://www.european-funding-guide.eu/fr/node/71525"
+  ]
+ }
+]

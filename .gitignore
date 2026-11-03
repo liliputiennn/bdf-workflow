@@ -1,0 +1,52 @@
+﻿node_modules
+dist
+.DS_Store
+.env
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+
+# Audio Pixabay : non redistribuable tel quel, recrÃ©Ã© par tools/fetch-audio.sh
+public/fx/
+public/music/
+sfx-src/*.mp3
+# Anciennes maquettes sonores et extraits de voix
+public/sfx/
+public/mco/voice.wav
+voice-previews/
+
+# Mise en ligne de la Console
+dist-console/
+.firebase/
+
+# workflow YouTube Business (autopilot)
+autopilot/secrets/
+autopilot/state/
+exports-b/
+episodes-b/*/cache/
+episodes-b/*/voice_raw.wav
+episodes-b/*/*.lock
+episodes-b/*/.lock
+episodes-b/_provisoire/
+_test-comparatif/
+autopilot/logs/
+# format long : dÃ©mos et piÃ¨ces de travail (recrÃ©Ã©es par autopilot/long/make_demo.py)
+episodes-b/_demo-long*/
+exports-b/*/parts/
+exports-b/*/.bundle/
+exports-b/*/.props.json
+# fichiers gÃ©nÃ©rÃ©s, Ã©tats du workflow et audio personnel (ta voix de rÃ©fÃ©rence reste hors du dÃ©pÃ´t)
+__pycache__/
+apercus/
+episodes-b/**/cache/
+episodes-b/**/*.wav
+episodes-b/**/*.log
+episodes-b/**/*.err
+episodes-b/**/miniature*.png
+episodes-b/**/miniature_report.json
+episodes-b/**/voix.sha
+episodes-b/**/voix-entree.json
+episodes-b/**/youtube_upload.json
+episodes-b/_ecartes/
+autopilot/voix/*.wav
+exports-tiktok/

@@ -1,0 +1,62 @@
+[
+ {
+  "n": 1,
+  "titre": "Par où commencer",
+  "phrase_debut": 1,
+  "phrase_fin": 4,
+  "debut_s": 0.15,
+  "fin_s": 13.27,
+  "carte_de_s": null,
+  "borne_s": 0.0,
+  "borne_fin_s": 13.37,
+  "duree_s": 13.37
+ },
+ {
+  "n": 2,
+  "titre": "La règle du plafond",
+  "phrase_debut": 5,
+  "phrase_fin": 9,
+  "debut_s": 15.25,
+  "fin_s": 37.35,
+  "carte_de_s": 13.37,
+  "borne_s": 13.37,
+  "borne_fin_s": 37.45,
+  "duree_s": 24.08
+ },
+ {
+  "n": 3,
+  "titre": "Idée une : un service local",
+  "phrase_debut": 10,
+  "phrase_fin": 14,
+  "debut_s": 39.33,
+  "fin_s": 56.52,
+  "carte_de_s": 37.45,
+  "borne_s": 37.45,
+  "borne_fin_s": 56.62,
+  "duree_s": 19.17
+ },
+ {
+  "n": 4,
+  "titre": "Idée deux : revendre",
+  "phrase_debut": 15,
+  "phrase_fin": 18,
+  "debut_s": 58.5,
+  "fin_s": 72.91,
+  "carte_de_s": 56.62,
+  "borne_s": 56.62,
+  "borne_fin_s": 73.01,
+  "duree_s": 16.39
+ },
+ {
+  "n": 5,
+  "titre": "À toi de choisir",
+  "phrase_debut": 19,
+  "phrase_fin": 21,
+  "debut_s": 74.89,
+  "fin_s": 80.85,
+  "carte_de_s": 73.01,
+  "borne_s": 73.01,
+  "borne_fin_s": 81.03,
+  "duree_s": 8.02
+ }
+]

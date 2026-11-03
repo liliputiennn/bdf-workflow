@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "palette": "phosphore",
+  "rythme": "nerveux",
+  "dossier": "DÉMO",
+  "couverture": {
+    "haut": "LA BAGUETTE",
+    "bas": "À 1 €",
+    "heros": "boutique",
+    "etiquette": "DÉMO · CHIFFRES INVENTÉS"
+  },
+  "scenes": [
+    {
+      "type": "accroche",
+      "phrase": 1,
+      "variante": "cadre",
+      "params": {
+        "titre": "Comment une boulangerie gagne sa vie ?",
+        "icone": "boutique"
+      }
+    },
+    {
+      "type": "perso",
+      "phrase": 2,
+      "variante": "centre",
+      "params": {
+        "pose": "parle",
+        "bulle": "Voici la boulangerie de Léa !",
+        "icone": "boutique"
+      }
+    },
+    {
+      "type": "coulisses",
+      "phrase": 3,
+      "variante": "jour",
+      "params": {
+        "decor": "boutique",
+        "bulle": "Léa ouvre à 6 h, tous les matins.",
+        "icone": "horloge"
+      }
+    },
+    {
+      "type": "chiffre-choc",
+      "phrase": 4,
+      "variante": "pile",
+      "params": {
+        "valeur": 600,
+        "suffixe": " / JOUR",
+        "etiquette": "baguettes vendues",
+        "icone": "piece"
+      }
+    },
+    {
+      "type": "perso",
+      "phrase": 5,
+      "variante": "zoom",
+      "params": {
+        "pose": "reflechit",
+        "texte": "Où va l'argent ?"
+      }
+    },
+    {
+      "type": "flux-argent",
+      "phrase": 6,
+      "variante": "ticket",
+      "params": {
+        "depart": {
+          "texte": "1 baguette",
+          "icone": "piece"
+        },
+        "etapes": [
+          {
+            "texte": "Farine",
+            "part": 20,
+            "mot": "farine"
+          },
+          {
+            "texte": "Salaire",
+            "part": 40,
+            "mot": "salaire"
+          },
+          {
+            "texte": "Loyer",
+            "part": 25,
+            "mot": "loyer"
+          },
+          {
+            "texte": "Bénéfice",
+            "part": 15,
+            "mot": "bénéfice"
+          }
+        ]
+      }
+    },
+    {
+      "type": "liste",
+      "phrase": 7,
+      "variante": "podium",
+      "params": {
+        "titre": "Ce qui rapporte",
+        "items": [
+          {
+            "texte": "Gâteaux",
+            "mot": "gâteaux",
+            "icone": "cadeau"
+          },
+          {
+            "texte": "Sandwichs",
+            "mot": "sandwichs",
+            "icone": "burger"
+          },
+          {
+            "texte": "Pain",
+            "mot": "pain",
+            "icone": "carton"
+          }
+        ]
+      }
+    },
+    {
+      "type": "comparaison",
+      "phrase": 9,
+      "variante": "duel",
+      "params": {
+        "gauche": {
+          "titre": "Baguette",
+          "valeur": "0,15 €",
+          "points": [
+            "Vendue en masse"
+          ]
+        },
+        "droite": {
+          "titre": "Croissant",
+          "valeur": "0,60 €",
+          "points": [
+            "Marge plus grande"
+          ]
+        },
+        "gagnant": "droite"
+      },
+      "tampon": {
+        "texte": "x4",
+        "mot": "plus"
+      }
+    },
+    {
+      "type": "perso",
+      "phrase": 10,
+      "variante": "duo",
+      "params": {
+        "pose": "choc",
+        "icone": "cafe",
+        "texte": "x4 !"
+      }
+    },
+    {
+      "type": "frise",
+      "phrase": 11,
+      "variante": "route",
+      "params": {
+        "etapes": [
+          {
+            "date": "2015",
+            "texte": "Ouverture",
+            "mot": "ouverture"
+          },
+          {
+            "date": "2017",
+            "texte": "1er employé",
+            "mot": "employé"
+          },
+          {
+            "date": "2020",
+            "texte": "Nouveau four",
+            "mot": "four"
+          },
+          {
+            "date": "2023",
+            "texte": "2e boutique",
+            "mot": "boutique"
+          }
+        ]
+      }
+    },
+    {
+      "type": "schema-fleches",
+      "phrase": 13,
+      "variante": "ligne",
+      "params": {
+        "personnage": {
+          "nom": "Léa",
+          "icone": "femme"
+        },
+        "etapes": [
+          {
+            "texte": "Demande un prêt",
+            "mot": "prêt",
+            "icone": "billets"
+          },
+          {
+            "texte": "La banque vérifie",
+            "mot": "banque",
+            "icone": "banque"
+          },
+          {
+            "texte": "Apport + revenus",
+            "mot": "apport",
+            "icone": "tirelire"
+          }
+        ],
+        "resultat": {
+          "texte": "Prêt accordé",
+          "ton": "bon"
+        }
+      }
+    },
+    {
+      "type": "tableau",
+      "phrase": 15,
+      "variante": "lignes",
+      "params": {
+        "titre": "Bénéfice par an",
+        "colonnes": [
+          "Année",
+          "Bénéfice"
+        ],
+        "lignes": [
+          [
+            "1re année",
+            "8 000 €"
+          ],
+          [
+            "3e année",
+            "21 000 €"
+          ],
+          [
+            "5e année",
+            "34 000 €"
+          ]
+        ],
+        "surligner": 3
+      }
+    },
+    {
+      "type": "avant-apres",
+      "phrase": 17,
+      "variante": "coupe",
+      "params": {
+        "avant": {
+          "titre": "Pain seulement",
+          "icone": "carton",
+          "valeur": "1 rayon"
+        },
+        "apres": {
+          "titre": "Pain + midi",
+          "icone": "burger",
+          "valeur": "2 rayons"
+        }
+      }
+    },
+    {
+      "type": "perso",
+      "phrase": 19,
+      "variante": "centre",
+      "params": {
+        "pose": "argent",
+        "texte": "20 centimes"
+      }
+    },
+    {
+      "type": "question-finale",
+      "phrase": 20,
+      "variante": "vote",
+      "params": {
+        "question": "Tu achèterais quoi chez Léa ?",
+        "choix": [
+          "Croissant",
+          "Sandwich"
+        ]
+      }
+    }
+  ]
+}

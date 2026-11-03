@@ -1,0 +1,13 @@
+{
+ "etat": "controle",
+ "maj": "2026-11-02T19:17:49",
+ "raison": null,
+ "tentatives": 0,
+ "youtube": {
+  "video_id": null,
+  "url": null,
+  "visibilite": null,
+  "publie_a": null
+ },
+ "voix_progression": null
+}

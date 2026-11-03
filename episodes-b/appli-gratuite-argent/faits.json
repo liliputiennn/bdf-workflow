@@ -1,0 +1,64 @@
+[
+ {
+  "claim": "Selon le rapport Swrve (2014), seuls 1,5 % des joueurs actifs de jeux mobiles faisaient un achat dans l'appli au cours du mois.",
+  "valeur": "1,5 %",
+  "phrase": 3,
+  "sources": [
+   "https://www.cnbc.com/2014/02/27/a-long-tail-of-whales-half-of-mobile-games-money-comes-from-015-percent-of-players.html",
+   "https://www.tomsguide.com/uk/us/mobile-gamers-freemium-purchases,news-18389.html"
+  ],
+  "check": [
+   "1.5"
+  ],
+  "verified": [
+   "https://www.cnbc.com/2014/02/27/a-long-tail-of-whales-half-of-mobile-games-money-comes-from-015-percent-of-players.html",
+   "https://www.tomsguide.com/uk/us/mobile-gamers-freemium-purchases,news-18389.html"
+  ]
+ },
+ {
+  "claim": "Selon le même rapport, 0,15 % des joueurs apportaient la moitié des revenus des achats dans les jeux.",
+  "valeur": "0,15 %",
+  "phrase": 6,
+  "sources": [
+   "https://www.cnbc.com/2014/02/27/a-long-tail-of-whales-half-of-mobile-games-money-comes-from-015-percent-of-players.html",
+   "https://www.pocketgamer.com/articles/057729/r/"
+  ],
+  "check": [
+   "0.15"
+  ],
+  "verified": [
+   "https://www.cnbc.com/2014/02/27/a-long-tail-of-whales-half-of-mobile-games-money-comes-from-015-percent-of-players.html"
+  ]
+ },
+ {
+  "claim": "Apple prélève une commission standard de 30 % sur les achats numériques de l'App Store.",
+  "valeur": "30 %",
+  "phrase": 8,
+  "sources": [
+   "https://www.apple.com/newsroom/2020/11/apple-announces-app-store-small-business-program/",
+   "https://developer.apple.com/app-store/small-business-program/"
+  ],
+  "check": [
+   "30 percent"
+  ],
+  "verified": [
+   "https://www.apple.com/newsroom/2020/11/apple-announces-app-store-small-business-program/"
+  ]
+ },
+ {
+  "claim": "Cette commission est réduite à 15 % pour les développeurs qui gagnent jusqu'à 1 million de dollars par an.",
+  "valeur": "15 %",
+  "phrase": 9,
+  "sources": [
+   "https://www.apple.com/newsroom/2020/11/apple-announces-app-store-small-business-program/",
+   "https://developer.apple.com/app-store/small-business-program/"
+  ],
+  "check": [
+   "15 percent",
+   "1 million"
+  ],
+  "verified": [
+   "https://www.apple.com/newsroom/2020/11/apple-announces-app-store-small-business-program/"
+  ]
+ }
+]

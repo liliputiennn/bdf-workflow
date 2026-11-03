@@ -1,0 +1,1367 @@
+{
+ "total": 94.7,
+ "lines": [
+  {
+   "start": 0.0,
+   "end": 3.08,
+   "words": [
+    {
+     "w": "Cette",
+     "start": 0.0,
+     "end": 0.26
+    },
+    {
+     "w": "mission",
+     "start": 0.26,
+     "end": 0.64
+    },
+    {
+     "w": "a",
+     "start": 0.64,
+     "end": 0.92
+    },
+    {
+     "w": "coûté",
+     "start": 0.92,
+     "end": 1.24
+    },
+    {
+     "w": "327",
+     "start": 1.24,
+     "end": 2.3
+    },
+    {
+     "w": "millions",
+     "start": 2.3,
+     "end": 2.52
+    },
+    {
+     "w": "de",
+     "start": 2.52,
+     "end": 2.76
+    },
+    {
+     "w": "dollars.",
+     "start": 2.76,
+     "end": 3.08
+    }
+   ]
+  },
+  {
+   "start": 3.66,
+   "end": 6.54,
+   "words": [
+    {
+     "w": "Et",
+     "start": 3.66,
+     "end": 3.84
+    },
+    {
+     "w": "elle",
+     "start": 3.84,
+     "end": 3.96
+    },
+    {
+     "w": "a",
+     "start": 3.96,
+     "end": 4.04
+    },
+    {
+     "w": "été",
+     "start": 4.04,
+     "end": 4.24
+    },
+    {
+     "w": "détruite",
+     "start": 4.24,
+     "end": 4.8
+    },
+    {
+     "w": "par",
+     "start": 4.8,
+     "end": 5.44
+    },
+    {
+     "w": "une",
+     "start": 5.44,
+     "end": 5.6
+    },
+    {
+     "w": "conversion",
+     "start": 5.6,
+     "end": 5.96
+    },
+    {
+     "w": "d'unités.",
+     "start": 5.96,
+     "end": 6.54
+    }
+   ]
+  },
+  {
+   "start": 7.1,
+   "end": 8.88,
+   "words": [
+    {
+     "w": "Vous",
+     "start": 7.1,
+     "end": 7.28
+    },
+    {
+     "w": "pensez",
+     "start": 7.28,
+     "end": 7.62
+    },
+    {
+     "w": "sûrement",
+     "start": 7.62,
+     "end": 7.92
+    },
+    {
+     "w": "à",
+     "start": 7.92,
+     "end": 8.08
+    },
+    {
+     "w": "un",
+     "start": 8.08,
+     "end": 8.22
+    },
+    {
+     "w": "bug",
+     "start": 8.22,
+     "end": 8.36
+    },
+    {
+     "w": "de",
+     "start": 8.36,
+     "end": 8.54
+    },
+    {
+     "w": "génie.",
+     "start": 8.54,
+     "end": 8.88
+    }
+   ]
+  },
+  {
+   "start": 9.22,
+   "end": 11.4,
+   "words": [
+    {
+     "w": "Sauf",
+     "start": 9.22,
+     "end": 9.48
+    },
+    {
+     "w": "que",
+     "start": 9.48,
+     "end": 9.72
+    },
+    {
+     "w": "non.",
+     "start": 9.72,
+     "end": 9.86
+    },
+    {
+     "w": "C'est",
+     "start": 10.36,
+     "end": 10.52
+    },
+    {
+     "w": "une",
+     "start": 10.52,
+     "end": 10.68
+    },
+    {
+     "w": "erreur",
+     "start": 10.68,
+     "end": 10.94
+    },
+    {
+     "w": "de",
+     "start": 10.94,
+     "end": 11.02
+    },
+    {
+     "w": "collège.",
+     "start": 11.02,
+     "end": 11.4
+    }
+   ]
+  },
+  {
+   "start": 12.2,
+   "end": 14.8,
+   "words": [
+    {
+     "w": "Décembre",
+     "start": 12.2,
+     "end": 12.76
+    },
+    {
+     "w": "1998.",
+     "start": 12.76,
+     "end": 13.32
+    },
+    {
+     "w": "Floride.",
+     "start": 14.36,
+     "end": 14.8
+    }
+   ]
+  },
+  {
+   "start": 15.32,
+   "end": 17.26,
+   "words": [
+    {
+     "w": "La",
+     "start": 15.32,
+     "end": 15.38
+    },
+    {
+     "w": "NASA",
+     "start": 15.38,
+     "end": 15.62
+    },
+    {
+     "w": "lance",
+     "start": 15.62,
+     "end": 16.0
+    },
+    {
+     "w": "Mars",
+     "start": 16.0,
+     "end": 16.4
+    },
+    {
+     "w": "Climate",
+     "start": 16.4,
+     "end": 16.82
+    },
+    {
+     "w": "Orbiter.",
+     "start": 16.82,
+     "end": 17.26
+    }
+   ]
+  },
+  {
+   "start": 17.76,
+   "end": 19.76,
+   "words": [
+    {
+     "w": "Mission",
+     "start": 17.76,
+     "end": 18.16
+    },
+    {
+     "w": "étudier",
+     "start": 18.58,
+     "end": 18.98
+    },
+    {
+     "w": "le",
+     "start": 18.98,
+     "end": 19.1
+    },
+    {
+     "w": "climat",
+     "start": 19.1,
+     "end": 19.42
+    },
+    {
+     "w": "de",
+     "start": 19.42,
+     "end": 19.52
+    },
+    {
+     "w": "Mars.",
+     "start": 19.52,
+     "end": 19.76
+    }
+   ]
+  },
+  {
+   "start": 20.24,
+   "end": 22.04,
+   "words": [
+    {
+     "w": "9",
+     "start": 20.24,
+     "end": 20.5
+    },
+    {
+     "w": "mois",
+     "start": 20.5,
+     "end": 20.72
+    },
+    {
+     "w": "de",
+     "start": 20.72,
+     "end": 20.84
+    },
+    {
+     "w": "voyage",
+     "start": 20.84,
+     "end": 21.14
+    },
+    {
+     "w": "vers",
+     "start": 21.14,
+     "end": 21.38
+    },
+    {
+     "w": "la",
+     "start": 21.38,
+     "end": 21.54
+    },
+    {
+     "w": "planète",
+     "start": 21.54,
+     "end": 21.8
+    },
+    {
+     "w": "rouge.",
+     "start": 21.8,
+     "end": 22.04
+    }
+   ]
+  },
+  {
+   "start": 22.6,
+   "end": 24.36,
+   "words": [
+    {
+     "w": "Sur",
+     "start": 22.6,
+     "end": 22.82
+    },
+    {
+     "w": "Terre,",
+     "start": 22.82,
+     "end": 23.08
+    },
+    {
+     "w": "deux",
+     "start": 23.48,
+     "end": 23.6
+    },
+    {
+     "w": "équipes",
+     "start": 23.6,
+     "end": 23.9
+    },
+    {
+     "w": "la",
+     "start": 23.9,
+     "end": 24.04
+    },
+    {
+     "w": "pilotent.",
+     "start": 24.04,
+     "end": 24.36
+    }
+   ]
+  },
+  {
+   "start": 24.74,
+   "end": 26.54,
+   "words": [
+    {
+     "w": "Lockheed",
+     "start": 24.74,
+     "end": 25.12
+    },
+    {
+     "w": "Martin,",
+     "start": 25.12,
+     "end": 25.5
+    },
+    {
+     "w": "le",
+     "start": 25.8,
+     "end": 25.88
+    },
+    {
+     "w": "constructeur.",
+     "start": 25.88,
+     "end": 26.54
+    }
+   ]
+  },
+  {
+   "start": 26.78,
+   "end": 29.0,
+   "words": [
+    {
+     "w": "Et",
+     "start": 26.78,
+     "end": 26.9
+    },
+    {
+     "w": "le",
+     "start": 26.9,
+     "end": 27.02
+    },
+    {
+     "w": "JPL,",
+     "start": 27.02,
+     "end": 27.52
+    },
+    {
+     "w": "les",
+     "start": 27.9,
+     "end": 27.98
+    },
+    {
+     "w": "navigateurs",
+     "start": 27.98,
+     "end": 28.54
+    },
+    {
+     "w": "de",
+     "start": 28.54,
+     "end": 28.66
+    },
+    {
+     "w": "la",
+     "start": 28.66,
+     "end": 28.78
+    },
+    {
+     "w": "NASA.",
+     "start": 28.78,
+     "end": 29.0
+    }
+   ]
+  },
+  {
+   "start": 29.0,
+   "end": 33.16,
+   "words": [
+    {
+     "w": "En",
+     "start": 29.0,
+     "end": 29.72
+    },
+    {
+     "w": "route,",
+     "start": 29.72,
+     "end": 29.98
+    },
+    {
+     "w": "la",
+     "start": 30.26,
+     "end": 30.38
+    },
+    {
+     "w": "sonde",
+     "start": 30.38,
+     "end": 30.66
+    },
+    {
+     "w": "corrige",
+     "start": 30.66,
+     "end": 31.02
+    },
+    {
+     "w": "sa",
+     "start": 31.02,
+     "end": 31.18
+    },
+    {
+     "w": "rotation",
+     "start": 31.18,
+     "end": 31.56
+    },
+    {
+     "w": "par",
+     "start": 31.56,
+     "end": 31.8
+    },
+    {
+     "w": "de",
+     "start": 31.8,
+     "end": 31.96
+    },
+    {
+     "w": "petits",
+     "start": 31.96,
+     "end": 32.22
+    },
+    {
+     "w": "coups",
+     "start": 32.22,
+     "end": 32.46
+    },
+    {
+     "w": "de",
+     "start": 32.46,
+     "end": 32.5
+    },
+    {
+     "w": "propulseur.",
+     "start": 32.5,
+     "end": 33.16
+    }
+   ]
+  },
+  {
+   "start": 33.46,
+   "end": 35.78,
+   "words": [
+    {
+     "w": "Le",
+     "start": 33.46,
+     "end": 33.56
+    },
+    {
+     "w": "logiciel",
+     "start": 33.56,
+     "end": 33.98
+    },
+    {
+     "w": "du",
+     "start": 33.98,
+     "end": 34.12
+    },
+    {
+     "w": "constructeur",
+     "start": 34.12,
+     "end": 34.72
+    },
+    {
+     "w": "calcule",
+     "start": 34.72,
+     "end": 35.14
+    },
+    {
+     "w": "leur",
+     "start": 35.14,
+     "end": 35.32
+    },
+    {
+     "w": "poussée",
+     "start": 35.32,
+     "end": 35.78
+    }
+   ]
+  },
+  {
+   "start": 35.78,
+   "end": 38.92,
+   "words": [
+    {
+     "w": "en",
+     "start": 35.78,
+     "end": 36.22
+    },
+    {
+     "w": "livres-force.",
+     "start": 36.22,
+     "end": 37.08
+    },
+    {
+     "w": "Le",
+     "start": 37.72,
+     "end": 37.78
+    },
+    {
+     "w": "système",
+     "start": 37.78,
+     "end": 38.14
+    },
+    {
+     "w": "impérial.",
+     "start": 38.14,
+     "end": 38.92
+    }
+   ]
+  },
+  {
+   "start": 39.42,
+   "end": 42.9,
+   "words": [
+    {
+     "w": "Les",
+     "start": 39.42,
+     "end": 39.56
+    },
+    {
+     "w": "navigateurs,",
+     "start": 39.56,
+     "end": 40.18
+    },
+    {
+     "w": "eux,",
+     "start": 40.18,
+     "end": 40.46
+    },
+    {
+     "w": "lisent",
+     "start": 40.78,
+     "end": 41.0
+    },
+    {
+     "w": "des",
+     "start": 41.0,
+     "end": 41.1
+    },
+    {
+     "w": "newtons.",
+     "start": 41.1,
+     "end": 41.5
+    },
+    {
+     "w": "Le",
+     "start": 41.88,
+     "end": 42.02
+    },
+    {
+     "w": "système",
+     "start": 42.02,
+     "end": 42.3
+    },
+    {
+     "w": "métrique.",
+     "start": 42.3,
+     "end": 42.9
+    }
+   ]
+  },
+  {
+   "start": 43.38,
+   "end": 46.2,
+   "words": [
+    {
+     "w": "Une",
+     "start": 43.38,
+     "end": 43.5
+    },
+    {
+     "w": "livre-force,",
+     "start": 43.5,
+     "end": 44.175
+    },
+    {
+     "w": "c'est",
+     "start": 44.175,
+     "end": 44.85
+    },
+    {
+     "w": "4,45",
+     "start": 44.85,
+     "end": 45.525
+    },
+    {
+     "w": "newtons.",
+     "start": 45.525,
+     "end": 46.2
+    }
+   ]
+  },
+  {
+   "start": 46.58,
+   "end": 50.1,
+   "words": [
+    {
+     "w": "Chaque",
+     "start": 46.58,
+     "end": 46.9
+    },
+    {
+     "w": "petit",
+     "start": 46.9,
+     "end": 47.12
+    },
+    {
+     "w": "coup",
+     "start": 47.12,
+     "end": 47.4
+    },
+    {
+     "w": "est",
+     "start": 47.4,
+     "end": 47.6
+    },
+    {
+     "w": "donc",
+     "start": 47.6,
+     "end": 47.78
+    },
+    {
+     "w": "sous-estimé",
+     "start": 47.78,
+     "end": 48.79
+    },
+    {
+     "w": "4,45",
+     "start": 48.79,
+     "end": 49.8
+    },
+    {
+     "w": "fois.",
+     "start": 49.8,
+     "end": 50.1
+    }
+   ]
+  },
+  {
+   "start": 50.48,
+   "end": 53.38,
+   "words": [
+    {
+     "w": "Et",
+     "start": 50.48,
+     "end": 50.62
+    },
+    {
+     "w": "ces",
+     "start": 50.62,
+     "end": 50.72
+    },
+    {
+     "w": "coups",
+     "start": 50.72,
+     "end": 51.1
+    },
+    {
+     "w": "arrivent",
+     "start": 51.1,
+     "end": 51.4
+    },
+    {
+     "w": "10",
+     "start": 51.4,
+     "end": 51.7
+    },
+    {
+     "w": "à",
+     "start": 51.7,
+     "end": 51.9
+    },
+    {
+     "w": "14",
+     "start": 51.9,
+     "end": 52.3
+    },
+    {
+     "w": "fois",
+     "start": 52.3,
+     "end": 52.54
+    },
+    {
+     "w": "plus",
+     "start": 52.54,
+     "end": 52.7
+    },
+    {
+     "w": "souvent",
+     "start": 52.7,
+     "end": 52.94
+    },
+    {
+     "w": "que",
+     "start": 52.94,
+     "end": 53.04
+    },
+    {
+     "w": "prévu.",
+     "start": 53.04,
+     "end": 53.38
+    }
+   ]
+  },
+  {
+   "start": 53.72,
+   "end": 56.72,
+   "words": [
+    {
+     "w": "Pendant",
+     "start": 53.72,
+     "end": 54.0
+    },
+    {
+     "w": "9",
+     "start": 54.0,
+     "end": 54.28
+    },
+    {
+     "w": "mois,",
+     "start": 54.28,
+     "end": 54.56
+    },
+    {
+     "w": "l'erreur",
+     "start": 54.94,
+     "end": 55.39
+    },
+    {
+     "w": "s'accumule.",
+     "start": 55.39,
+     "end": 55.84
+    },
+    {
+     "w": "En",
+     "start": 56.24,
+     "end": 56.4
+    },
+    {
+     "w": "silence.",
+     "start": 56.4,
+     "end": 56.72
+    }
+   ]
+  },
+  {
+   "start": 56.72,
+   "end": 59.06,
+   "words": [
+    {
+     "w": "Des",
+     "start": 56.72,
+     "end": 57.62
+    },
+    {
+     "w": "navigateurs",
+     "start": 57.62,
+     "end": 58.18
+    },
+    {
+     "w": "remarquent",
+     "start": 58.18,
+     "end": 58.58
+    },
+    {
+     "w": "un",
+     "start": 58.58,
+     "end": 58.7
+    },
+    {
+     "w": "écart.",
+     "start": 58.7,
+     "end": 59.06
+    }
+   ]
+  },
+  {
+   "start": 59.48,
+   "end": 61.66,
+   "words": [
+    {
+     "w": "Mais",
+     "start": 59.48,
+     "end": 59.54
+    },
+    {
+     "w": "leurs",
+     "start": 59.54,
+     "end": 59.66
+    },
+    {
+     "w": "alertes",
+     "start": 59.66,
+     "end": 60.04
+    },
+    {
+     "w": "ne",
+     "start": 60.04,
+     "end": 60.2
+    },
+    {
+     "w": "suivent",
+     "start": 60.2,
+     "end": 60.52
+    },
+    {
+     "w": "pas",
+     "start": 60.52,
+     "end": 60.66
+    },
+    {
+     "w": "la",
+     "start": 60.66,
+     "end": 60.78
+    },
+    {
+     "w": "procédure",
+     "start": 60.78,
+     "end": 61.16
+    },
+    {
+     "w": "officielle.",
+     "start": 61.16,
+     "end": 61.66
+    }
+   ]
+  },
+  {
+   "start": 62.06,
+   "end": 63.64,
+   "words": [
+    {
+     "w": "Une",
+     "start": 62.06,
+     "end": 62.18
+    },
+    {
+     "w": "manœuvre",
+     "start": 62.18,
+     "end": 62.52
+    },
+    {
+     "w": "de",
+     "start": 62.52,
+     "end": 62.66
+    },
+    {
+     "w": "correction",
+     "start": 62.66,
+     "end": 63.04
+    },
+    {
+     "w": "est",
+     "start": 63.04,
+     "end": 63.26
+    },
+    {
+     "w": "prévue.",
+     "start": 63.26,
+     "end": 63.64
+    }
+   ]
+  },
+  {
+   "start": 64.1,
+   "end": 65.08,
+   "words": [
+    {
+     "w": "Elle",
+     "start": 64.1,
+     "end": 64.2
+    },
+    {
+     "w": "n'est",
+     "start": 64.2,
+     "end": 64.38
+    },
+    {
+     "w": "jamais",
+     "start": 64.38,
+     "end": 64.6
+    },
+    {
+     "w": "lancée.",
+     "start": 64.6,
+     "end": 65.08
+    }
+   ]
+  },
+  {
+   "start": 65.62,
+   "end": 68.94,
+   "words": [
+    {
+     "w": "23",
+     "start": 65.62,
+     "end": 65.78
+    },
+    {
+     "w": "septembre",
+     "start": 65.78,
+     "end": 66.52
+    },
+    {
+     "w": "1999.",
+     "start": 66.52,
+     "end": 67.18
+    },
+    {
+     "w": "Arrivée",
+     "start": 68.14,
+     "end": 68.58
+    },
+    {
+     "w": "à",
+     "start": 68.58,
+     "end": 68.72
+    },
+    {
+     "w": "Mars.",
+     "start": 68.72,
+     "end": 68.94
+    }
+   ]
+  },
+  {
+   "start": 69.46,
+   "end": 71.88,
+   "words": [
+    {
+     "w": "Pour",
+     "start": 69.46,
+     "end": 69.6
+    },
+    {
+     "w": "survivre,",
+     "start": 69.6,
+     "end": 70.14
+    },
+    {
+     "w": "il",
+     "start": 70.28,
+     "end": 70.34
+    },
+    {
+     "w": "faut",
+     "start": 70.34,
+     "end": 70.48
+    },
+    {
+     "w": "passer",
+     "start": 70.48,
+     "end": 70.76
+    },
+    {
+     "w": "à",
+     "start": 70.76,
+     "end": 70.9
+    },
+    {
+     "w": "plus",
+     "start": 70.9,
+     "end": 71.04
+    },
+    {
+     "w": "de",
+     "start": 71.04,
+     "end": 71.16
+    },
+    {
+     "w": "80",
+     "start": 71.16,
+     "end": 71.62
+    },
+    {
+     "w": "km.",
+     "start": 71.62,
+     "end": 71.88
+    }
+   ]
+  },
+  {
+   "start": 72.62,
+   "end": 73.72,
+   "words": [
+    {
+     "w": "Elle",
+     "start": 72.62,
+     "end": 72.76
+    },
+    {
+     "w": "passe",
+     "start": 72.76,
+     "end": 73.02
+    },
+    {
+     "w": "à",
+     "start": 73.02,
+     "end": 73.34
+    },
+    {
+     "w": "57.",
+     "start": 73.34,
+     "end": 73.72
+    }
+   ]
+  },
+  {
+   "start": 74.42,
+   "end": 77.4,
+   "words": [
+    {
+     "w": "Elle",
+     "start": 74.42,
+     "end": 74.6
+    },
+    {
+     "w": "disparaît",
+     "start": 74.6,
+     "end": 75.14
+    },
+    {
+     "w": "derrière",
+     "start": 75.14,
+     "end": 75.3
+    },
+    {
+     "w": "Mars,",
+     "start": 75.3,
+     "end": 75.78
+    },
+    {
+     "w": "49",
+     "start": 75.78,
+     "end": 76.4
+    },
+    {
+     "w": "secondes",
+     "start": 76.4,
+     "end": 76.98
+    },
+    {
+     "w": "trop",
+     "start": 76.98,
+     "end": 77.14
+    },
+    {
+     "w": "tôt.",
+     "start": 77.14,
+     "end": 77.4
+    }
+   ]
+  },
+  {
+   "start": 77.74,
+   "end": 79.02,
+   "words": [
+    {
+     "w": "On",
+     "start": 77.74,
+     "end": 77.9
+    },
+    {
+     "w": "ne",
+     "start": 77.9,
+     "end": 78.02
+    },
+    {
+     "w": "l'a",
+     "start": 78.02,
+     "end": 78.1
+    },
+    {
+     "w": "plus",
+     "start": 78.1,
+     "end": 78.3
+    },
+    {
+     "w": "jamais",
+     "start": 78.3,
+     "end": 78.52
+    },
+    {
+     "w": "entendue.",
+     "start": 78.52,
+     "end": 79.02
+    }
+   ]
+  },
+  {
+   "start": 79.5,
+   "end": 80.6,
+   "words": [
+    {
+     "w": "Le",
+     "start": 79.5,
+     "end": 79.66
+    },
+    {
+     "w": "plus",
+     "start": 79.66,
+     "end": 79.8
+    },
+    {
+     "w": "fou,",
+     "start": 79.8,
+     "end": 80.02
+    },
+    {
+     "w": "dans",
+     "start": 80.2,
+     "end": 80.26
+    },
+    {
+     "w": "tout",
+     "start": 80.26,
+     "end": 80.4
+    },
+    {
+     "w": "ça",
+     "start": 80.4,
+     "end": 80.6
+    }
+   ]
+  },
+  {
+   "start": 81.0,
+   "end": 84.2,
+   "words": [
+    {
+     "w": "Le",
+     "start": 81.0,
+     "end": 81.06
+    },
+    {
+     "w": "document",
+     "start": 81.06,
+     "end": 81.38
+    },
+    {
+     "w": "de",
+     "start": 81.38,
+     "end": 81.52
+    },
+    {
+     "w": "référence",
+     "start": 81.52,
+     "end": 81.96
+    },
+    {
+     "w": "exigeait",
+     "start": 81.96,
+     "end": 82.58
+    },
+    {
+     "w": "des",
+     "start": 82.58,
+     "end": 82.66
+    },
+    {
+     "w": "newtons.",
+     "start": 82.66,
+     "end": 83.14
+    },
+    {
+     "w": "Noir",
+     "start": 83.36,
+     "end": 83.74
+    },
+    {
+     "w": "sur",
+     "start": 83.74,
+     "end": 83.98
+    },
+    {
+     "w": "blanc.",
+     "start": 83.98,
+     "end": 84.2
+    }
+   ]
+  },
+  {
+   "start": 84.2,
+   "end": 88.62,
+   "words": [
+    {
+     "w": "Et",
+     "start": 84.2,
+     "end": 84.62
+    },
+    {
+     "w": "10",
+     "start": 84.62,
+     "end": 84.84
+    },
+    {
+     "w": "semaines",
+     "start": 84.84,
+     "end": 84.96
+    },
+    {
+     "w": "plus",
+     "start": 84.96,
+     "end": 85.16
+    },
+    {
+     "w": "tard,",
+     "start": 85.16,
+     "end": 85.48
+    },
+    {
+     "w": "sa",
+     "start": 85.64,
+     "end": 85.8
+    },
+    {
+     "w": "sœur,",
+     "start": 85.8,
+     "end": 86.3
+    },
+    {
+     "w": "Mars",
+     "start": 86.34,
+     "end": 86.6
+    },
+    {
+     "w": "Polar",
+     "start": 86.6,
+     "end": 87.0
+    },
+    {
+     "w": "Lander,",
+     "start": 87.0,
+     "end": 87.38
+    },
+    {
+     "w": "disparaît",
+     "start": 87.6,
+     "end": 88.16
+    },
+    {
+     "w": "à",
+     "start": 88.16,
+     "end": 88.18
+    },
+    {
+     "w": "son",
+     "start": 88.18,
+     "end": 88.32
+    },
+    {
+     "w": "tour.",
+     "start": 88.32,
+     "end": 88.62
+    }
+   ]
+  },
+  {
+   "start": 89.22,
+   "end": 93.3,
+   "words": [
+    {
+     "w": "Une",
+     "start": 89.22,
+     "end": 89.86
+    },
+    {
+     "w": "unité.",
+     "start": 89.86,
+     "end": 90.36
+    },
+    {
+     "w": "327",
+     "start": 90.98,
+     "end": 91.62
+    },
+    {
+     "w": "millions.",
+     "start": 91.62,
+     "end": 91.92
+    },
+    {
+     "w": "Dossier",
+     "start": 92.48,
+     "end": 92.88
+    },
+    {
+     "w": "classé.",
+     "start": 92.88,
+     "end": 93.3
+    }
+   ]
+  }
+ ]
+}

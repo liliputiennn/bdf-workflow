@@ -1,0 +1,74 @@
+# Fabrication de nuit, PC éteint : voix sur Kaggle (GPU gratuit), rendu Remotion, miniature, dépôt dans le stock.
+# Lancement à la main pour l'instant (chaque nuit à 01 h 30 UTC une fois la planification activée) ; à la main : Actions > Fabrique > Run workflow.
+# « À blanc » (par défaut à la main) : liste ce qui serait fabriqué, sans rien lancer.
+name: Fabrique
+on:
+  # Lancement automatique DÉSACTIVÉ le temps des essais : décommente ces 2 lignes une fois le test à la main réussi.
+  # schedule:
+  #   - cron: "30 1 * * *"
+  workflow_dispatch:
+    inputs:
+      a_blanc:
+        description: "À blanc (ne fabrique rien)"
+        type: boolean
+        default: true
+      id:
+        description: "Épisode précis (vide = le prochain à fabriquer)"
+        default: ""
+
+permissions:
+  contents: write
+concurrency:
+  group: fabrique
+  cancel-in-progress: false
+
+jobs:
+  fabrique:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      BDF_VOIX: kaggle
+      BDF_CONCURRENCY: "2"
+      STOCKAGE: github
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Installation
+        run: |
+          mkdir -p autopilot/state
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          npm ci --silent
+          npx remotion browser ensure > /dev/null
+          bash tools/fetch-audio.sh
+          pip install -q kaggle six
+      - name: Fabrication (voix Kaggle + rendu)
+        run: |
+          opts="--max 1"
+          [ -n "${{ inputs.id }}" ] && opts="$opts --id ${{ inputs.id }}"
+          [ "${{ github.event_name == 'workflow_dispatch' && inputs.a_blanc }}" = "true" ] && opts="$opts --dry-run"
+          python autopilot/run_daily.py fabriquer $opts
+      - name: Miniature et contrôle
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.a_blanc) }}
+        run: python autopilot/run_daily.py finaliser
+      - name: Dépôt dans le stock
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.a_blanc) }}
+        run: python autopilot/cloud/deposer.py
+      - name: Enregistrement de l'état
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.a_blanc) }}
+        run: |
+          git config user.name "bdf-fabrique"
+          git config user.email "bdf-fabrique@users.noreply.github.com"
+          git add episodes-b
+          git diff --cached --quiet || git commit -qm "Fabrique : état des épisodes ($(date -u +%F))"
+          git push
+      - name: Journal
+        if: always()
+        run: tail -n 60 autopilot/logs/*.log 2>/dev/null || true

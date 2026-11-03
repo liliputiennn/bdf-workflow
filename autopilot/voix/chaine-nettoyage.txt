@@ -1,0 +1,1 @@
+highpass=f=75,adeclick,deesser=i=0.5:m=0.5:f=0.5:s=o,equalizer=f=200:t=q:w=1.2:g=-2.5,equalizer=f=2800:t=q:w=1.0:g=2.5,equalizer=f=6500:t=q:w=1.5:g=-1.5,acompressor=threshold=-21dB:ratio=2.0:attack=15:release=160:makeup=2
