@@ -27,7 +27,8 @@ Get-ChildItem (Join-Path $src "episodes-b") -Directory | Where-Object { $_.Name 
   $st = Join-Path $_.FullName "status.json"
   if (Test-Path $st) {
     $to = Join-Path $Dest "episodes-b\$($_.Name)\status.json"
-    if (Test-Path (Split-Path $to)) { Copy-Item $st $to -Force }
+    # jamais d'écrasement : une fois dans le cloud, l'état du cloud fait foi
+    if ((Test-Path (Split-Path $to)) -and -not (Test-Path $to)) { Copy-Item $st $to }
   }
 }
 # dans le dépôt cloud, status.json doit être suivi par Git (retire la règle d'exclusion)

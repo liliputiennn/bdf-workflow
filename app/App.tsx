@@ -19,6 +19,8 @@ const TABS: [Tab, string][] = [
 ];
 
 export const App = () => {
+  // en ligne (Console sur le cloud), seul l'onglet Autopilote est utile : les autres pilotent le PC
+  const tabs = import.meta.env.VITE_CLOUD_REPO ? TABS.filter(([k]) => k === "auto") : TABS;
   const [tab, setTab] = useState<Tab>("auto");
   const [episodeId, setEpisodeId] = useState<string | null>(null);
   const [missing, setMissing] = useState<string[]>([]);
@@ -72,7 +74,7 @@ export const App = () => {
     <div className="shell">
       <header className="topbar">
         <span className="brand">BUREAU DES FAITS</span>
-        {TABS.map(([k, label]) => (
+        {tabs.map(([k, label]) => (
           <button key={k} className={`tab ${tab === k ? "on" : ""}`} onClick={() => setTab(k)}>
             {label}
           </button>
@@ -80,7 +82,7 @@ export const App = () => {
         <JobTray active={jobs.active} toast={jobs.toast} />
         {episodeId && <span className="ep">Épisode : {episodeId}</span>}
       </header>
-      {missing.length > 0 && <div className="banner">Outils introuvables : {missing.join(", ")}. Les tâches qui en ont besoin échoueront.</div>}
+      {missing.length > 0 && tab !== "auto" && <div className="banner">Outils introuvables : {missing.join(", ")}. Les tâches qui en ont besoin échoueront.</div>}
       {batch && batch.finishedAt !== seenBatch && (
         <div className={`banner ${batch.errors.length ? "" : "good"}`}>
           Lot terminé : {batch.text}
