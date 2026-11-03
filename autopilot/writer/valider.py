@@ -114,6 +114,8 @@ def controles_publication(pub) -> list[str]:
         err.append(f"publication : titre vide ou trop long ({len(t)} caractères, 70 au plus)")
     if not str(pub.get("description", "")).strip():
         err.append("publication : description vide")
+    elif len(str(pub["description"]).encode("utf-8")) > 4200:
+        err.append(f"publication : description trop longue ({len(str(pub['description']).encode('utf-8'))} octets, 4200 au plus : YouTube coupe à 5000 avec les chapitres) : garde le résumé et les sources les plus importantes")
     tags = pub.get("tags", [])
     if not isinstance(tags, list) or not 3 <= len(tags) <= 15:
         err.append("publication : de 3 à 15 tags attendus")

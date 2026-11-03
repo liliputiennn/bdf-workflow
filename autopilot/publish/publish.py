@@ -90,8 +90,8 @@ def valider(ep_id: str, cfg: dict) -> tuple[list[str], list[str], dict | None]:
     desc = pub.get("description")
     if not isinstance(desc, str) or not desc.strip():
         pb.append("description manquante")
-    elif len(desc.encode("utf-8")) > cfg["description_max_octets"]:
-        pb.append(f"description trop longue : {len(desc.encode('utf-8'))} octets (maximum {cfg['description_max_octets']})")
+    elif len(desc.encode("utf-8")) > 3 * cfg["description_max_octets"]:
+        pb.append(f"description trop longue : {len(desc.encode('utf-8'))} octets (même raccourcie, elle serait méconnaissable)")
     tags = pub.get("tags", [])
     if not isinstance(tags, list) or not all(isinstance(t, str) and t.strip() for t in tags):
         pb.append("tags : liste de textes non vides attendue")
@@ -134,22 +134,39 @@ def est_long(ep_id: str) -> bool:
     return (common.ep_dir(ep_id) / "episode-long.json").exists()
 
 
+def tenir_dans(texte: str, limite_octets: int) -> str:
+    """Raccourcit `texte` à `limite_octets` octets au plus, en coupant à une fin de paragraphe, de ligne ou de phrase."""
+    if len(texte.encode("utf-8")) <= limite_octets:
+        return texte
+    coupe = texte.encode("utf-8")[: max(0, limite_octets - 4)].decode("utf-8", "ignore")
+    for sep in ("\n\n", "\n", ". "):
+        i = coupe.rfind(sep)
+        if i > len(coupe) * 0.6:
+            coupe = coupe[: i + (1 if sep == ". " else 0)]
+            break
+    return coupe.rstrip() + " …"
+
+
 def description_finale(pub: dict, cfg: dict, ep_id: str | None = None) -> str:
+    """Description envoyée à YouTube : texte du rédacteur (raccourci si besoin) + chapitres, question, mention et hashtag, qui ne sautent jamais."""
     desc = pub["description"].strip()
     long = bool(ep_id) and est_long(ep_id)
+    ajouts = []
     if long:
         chap = chapitres_description(ep_id)
         if chap and "00:00" not in desc:
-            desc += "\n\n" + chap
+            ajouts.append(chap)
     q = (pub.get("question_commentaires") or "").strip()
     if cfg["question_dans_description"] and q and q not in desc:
-        desc += "\n\n" + q
+        ajouts.append(q)
     ia = "voix de synthèse (ia)"
     if cfg.get("mention_ia_description", True) and pub.get("contenu_ia") and ia not in desc.lower() and "synthèse" not in desc.lower():
-        desc += "\n\nVoix de synthèse (IA)."  # le badge YouTube est désactivé : on le dit ici, dans la description
+        ajouts.append("Voix de synthèse (IA).")  # le badge YouTube est désactivé : on le dit ici, dans la description
     if cfg["hashtag_shorts"] and not long and "#shorts" not in desc.lower():  # un long 16:9 n'est pas un Short
-        desc += "\n\n#Shorts"
-    return desc
+        ajouts.append("#Shorts")
+    reserve = len("".join("\n\n" + x for x in ajouts).encode("utf-8"))
+    desc = tenir_dans(desc, max(300, cfg["description_max_octets"] - reserve - 10))
+    return desc + "".join("\n\n" + x for x in ajouts)
 
 
 def creer_exemple(ep_id: str) -> Path:
