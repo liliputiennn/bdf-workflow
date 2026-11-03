@@ -1,0 +1,47 @@
+{
+ "jour_pt": "2026-11-03",
+ "unites": 102,
+ "envois": 2,
+ "epuise": false,
+ "journal": [
+  {
+   "t": "2026-11-03T23:30:16",
+   "op": "videos.insert",
+   "unites": 0,
+   "envois": 1
+  },
+  {
+   "t": "2026-11-03T23:30:22",
+   "op": "thumbnails.set",
+   "unites": 50,
+   "envois": 0
+  },
+  {
+   "t": "2026-11-03T23:30:22",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0
+  },
+  {
+   "t": "2026-11-03T23:30:23",
+   "op": "videos.insert",
+   "unites": 0,
+   "envois": 1
+  },
+  {
+   "t": "2026-11-03T23:30:29",
+   "op": "thumbnails.set",
+   "unites": 50,
+   "envois": 0
+  },
+  {
+   "t": "2026-11-03T23:30:29",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0
+  }
+ ],
+ "plafond_unites": 10000,
+ "plafond_envois": 100,
+ "maj": "2026-11-03T23:30:29"
+}
