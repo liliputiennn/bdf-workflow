@@ -1,0 +1,38 @@
+# Met à jour l'interface web toutes les 30 minutes (état, vidéos et miniatures du stock), même sans fabrication ni publication.
+# Ne fait rien (aucun commit) quand rien n'a changé.
+name: Instantané
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: snapshot
+  cancel-in-progress: true
+jobs:
+  instantane:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: npm ci --silent
+      - name: Instantané
+        run: |
+          mkdir -p autopilot/state live
+          python autopilot/run_daily.py etat --json > /dev/null || true
+          npx tsx tools/autopilot-snapshot.ts --out=live/snapshot.json
+      - name: Enregistrement si changé
+        run: |
+          git config user.name "bdf-instantane"
+          git config user.email "bdf-instantane@users.noreply.github.com"
+          git add live
+          git diff --cached --quiet || { git commit -qm "Instantané de l'interface"; git pull --rebase -q origin main || true; git push; }

@@ -30,5 +30,15 @@ if (process.env.GH_REPO) {
 const last = snap.logs[0];
 const data = { ...snap, logTail: last ? { nom: last.nom, lignes: ap.tail(last.nom, 150) } : null };
 fs.mkdirSync(path.dirname(out), { recursive: true });
+// pas de réécriture si rien n'a changé (hors date et fin de journal) : évite un commit toutes les 30 minutes
+const sansHorloge = (d: object) => JSON.stringify({ ...d, genere: "", logTail: null });
+try {
+  if (sansHorloge(JSON.parse(fs.readFileSync(out, "utf8"))) === sansHorloge(data)) {
+    console.log("snapshot inchangé, fichier conservé");
+    process.exit(0);
+  }
+} catch {
+  // pas de fichier précédent : on écrit
+}
 fs.writeFileSync(out, JSON.stringify(data));
 console.log(`snapshot écrit : ${out} (${snap.episodes.length} épisodes, ${snap.alertes.length} alertes)`);
