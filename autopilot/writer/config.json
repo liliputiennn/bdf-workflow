@@ -1,1 +1,1 @@
-{ "cible_jours_de_stock": 10, "max_par_passage": 8 }
+{"cible_jours_de_stock": 10, "max_par_passage": 8, "longs_par_semaine": 3, "semaines_de_longs_en_stock": 2}

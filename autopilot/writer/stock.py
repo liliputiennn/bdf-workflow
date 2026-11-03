@@ -19,6 +19,8 @@ from autopilot.writer import sujets  # noqa: E402
 CONFIG = read_json(Path(__file__).with_name("config.json"), {}) or {}
 CIBLE = CONFIG.get("cible_jours_de_stock", 7)
 MAX_PAR_PASSAGE = CONFIG.get("max_par_passage", 3)
+LONGS_PAR_SEMAINE = CONFIG.get("longs_par_semaine", 3)             # rythme voulu : 3 longs publiés par semaine, les autres jours un Short tiré d'un long
+SEMAINES_DE_LONGS = CONFIG.get("semaines_de_longs_en_stock", 2)    # on garde toujours 2 semaines de longs d'avance
 
 
 def compter() -> dict:
@@ -44,14 +46,21 @@ def main() -> None:
                 print(f"  {e:12s} {n}")
         return
     manque = max(0, a.cible - c["jours_de_stock"] - c["brouillons"])
-    a_ecrire = min(a.max, manque)
+    # longs d'avance (écrits, pas encore publiés, hors quarantaine) + brouillons de longs
+    longs_dispo = sum(1 for i in list_episodes() if (ep_dir(i) / "episode-long.json").exists()
+                      and get_status(i)["etat"] in ("ecrit", "voix", "rendu", "controle", "pret", "programme")) + sum(
+        1 for d in (EPISODES / "_brouillons").glob("*") if (d / "episode-long.json").exists())
+    longs_a_ecrire = max(0, LONGS_PAR_SEMAINE * SEMAINES_DE_LONGS - longs_dispo)
+    a_ecrire = min(a.max, max(manque, longs_a_ecrire))
     # un seul long à la fois dans le workflow : il demande des heures de voix (GPU) et de rendu
     longs_en_cours = sum(1 for i in list_episodes() if (ep_dir(i) / "episode-long.json").exists()
                          and get_status(i)["etat"] in ("ecrit", "voix", "rendu", "controle")) + sum(
         1 for d in (EPISODES / "_brouillons").glob("*") if (d / "episode-long.json").exists())
-    choisis = sujets.prochains(a_ecrire, max_longs=max(0, 1 - longs_en_cours)) if a_ecrire else []
+    # les Shorts viennent des longs : on écrit d'abord les longs manquants (le cloud fabrique un long par nuit)
+    choisis = sujets.prochains(a_ecrire, max_longs=min(longs_a_ecrire, a_ecrire) if longs_a_ecrire else max(0, 1 - longs_en_cours)) if a_ecrire else []
     bilan = {
         "cible": a.cible, "jours_de_stock": c["jours_de_stock"], "a_ecrire": a_ecrire,
+        "longs_disponibles": longs_dispo, "longs_a_ecrire": longs_a_ecrire,
         "longs_en_cours": longs_en_cours, "sujets": choisis, "sujets_restants_en_banque": sujets.restants(),
         "proposer_de_nouveaux_sujets": sujets.restants() < 10,
     }

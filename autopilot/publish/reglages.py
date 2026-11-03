@@ -17,6 +17,7 @@ DEFAUTS = {
     "description_max_octets": 5000,
     "tags_max_caracteres": 500,
     "miniature_max_octets": 2 * 1024 * 1024,
+    "jours_longs": [0, 2, 4],        # jours de la semaine où part un long (0 = lundi) : lundi, mercredi, vendredi ; un Short les autres jours
     "hashtag_shorts": True,
     "badge_ia_youtube": False,       # True = coche aussi l'option « contenu modifié ou synthétique » de YouTube (badge IA sur la vidéo)
     "mention_ia_description": False, # ajoute une ligne « voix de synthèse » à la description quand publication.json a contenu_ia: true

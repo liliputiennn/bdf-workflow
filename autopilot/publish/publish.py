@@ -349,6 +349,23 @@ def synchroniser(yt: YouTube, cfg: dict, maintenant=maintenant_utc, afficher=pri
 
 # --- ligne de commande ----------------------------------------------------------------------------------
 
+def ordonner_par_rythme(ids: list[str], cfg: dict, maintenant=maintenant_utc) -> list[str]:
+    """Rythme de la chaîne : un long les jours de `jours_longs`, un Short les autres jours.
+    Chaque épisode prend le prochain créneau libre : on les range donc dans l'ordre des jours à venir."""
+    jours_longs = set(cfg.get("jours_longs", [0, 2, 4]))
+    longs = [i for i in ids if est_long(i)]
+    courts = [i for i in ids if not est_long(i)]
+    pris, sortie = set(jours_pris(cfg)), []
+    while longs or courts:
+        creneau = horaire.prochain_creneau(cfg["heure_publication"], cfg["fuseau"], maintenant(), pris, cfg["marge_minimale_minutes"])
+        jour = horaire.vers_local(creneau, cfg["fuseau"]).date()
+        pris.add(jour)
+        veut_long = jour.weekday() in jours_longs
+        file = longs if (veut_long and longs) else (courts if courts else longs)
+        sortie.append(file.pop(0))
+    return sortie
+
+
 def dry_run(ids: list[str], cfg: dict) -> int:
     code = 0
     pris = jours_pris(cfg)
@@ -385,6 +402,7 @@ def main(argv: list[str]) -> int:
         seulement = os.environ.get("BDF_PUBLIER_SEULEMENT")
         if seulement is not None:
             ids = [i for i in ids if i in seulement.split(",")]
+        ids = ordonner_par_rythme(ids, cfg)
     elif not ids:
         print(__doc__)
         return 2
