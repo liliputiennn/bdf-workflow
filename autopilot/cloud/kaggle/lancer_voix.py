@@ -73,7 +73,7 @@ def main() -> int:
     ap.add_argument("--seuil", type=float, default=0.9)
     ap.add_argument("--budget-s", type=float, default=0.0)
     ap.add_argument("--timeout-min", type=int, default=150)
-    ap.add_argument("--modele-hf", default="", help="identifiant Hugging Face d'un autre modèle (ex. Qwen/Qwen3-TTS-12Hz-1.7B-Base), téléchargé dans le kernel")
+    ap.add_argument("--modele-hf", default=os.environ.get("BDF_MODELE_HF", "Qwen/Qwen3-TTS-12Hz-1.7B-Base"), help="identifiant Hugging Face d'un autre modèle (ex. Qwen/Qwen3-TTS-12Hz-1.7B-Base), téléchargé dans le kernel")
     ap.add_argument("--vitesse", type=float, default=1.10, help="accélération de la voix finale (1.0 = vitesse d'origine)")
     ap.add_argument("--dry-run", action="store_true", help="prépare le kernel dans un dossier temporaire et s'arrête")
     a = ap.parse_args()

@@ -161,7 +161,7 @@ def main() -> None:
     for i, text in enumerate(phrases):
         # la voix de référence fait partie de la clé : changer `voix/ref.wav` invalide les phrases déjà générées
         extra = f"|{args.locuteur}|{args.style}" if args.locuteur else f"|ref:{REF_ID}"
-        key = hashlib.sha1(f"{text}|{args.essais}|{CFG['temps']}{extra}".encode()).hexdigest()[:12]
+        key = hashlib.sha1(f"{text}|{args.essais}|{CFG['temps']}{extra}|{Path(str(CFG['model'])).name}".encode()).hexdigest()[:12]
         wav_path, meta_path = cache / f"{i + 1:02d}-{key}.wav", cache / f"{i + 1:02d}-{key}.json"
         meta = json.loads(meta_path.read_text(encoding="utf-8")) if wav_path.exists() and meta_path.exists() else None
         if meta is not None:
