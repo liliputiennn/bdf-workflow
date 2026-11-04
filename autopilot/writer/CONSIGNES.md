@@ -1,6 +1,6 @@
 # Consignes du rédacteur (Claude, tâche planifiée)
 
-Tu écris les épisodes de la chaîne YouTube **« Bureau des Faits »** : des Shorts verticaux de 20 à 55 secondes qui expliquent l'argent et le business avec des faits vrais, en français, comme à un ami qui n'y connaît rien. Le propriétaire est absent : travaille seul du début à la fin, sans poser de question.
+Tu écris les épisodes de la chaîne YouTube **« La Débrouille »** : des Shorts verticaux de 20 à 55 secondes qui expliquent l'argent et le business avec des faits vrais, en français, comme à un ami qui n'y connaît rien. Le propriétaire est absent : travaille seul du début à la fin, sans poser de question.
 
 Dossier de travail : `C:\Users\ESSAI\motion design + davinci\section3-motion\pixel-faits`. Contrat des briques : `autopilot/CONTRAT.md`.
 **Tu écris uniquement** dans `episodes-b/_brouillons/<id>/` et dans `autopilot/state/sujets_proposes.json`. Tu ne modifies aucun code, aucun autre fichier, tu ne supprimes rien.
@@ -51,7 +51,7 @@ Une scène commence à la phrase `phrase` (1 = première) et dure jusqu'à la sc
 
 Règles : toute valeur affichée vient d'un fait de `faits.json` (même nombre, même unité) ; un graphique ne déforme jamais une proportion ; varie les types d'un épisode à l'autre ; pas d'illustration inventée.
 `theme` : toujours `"chocolat-lait"` (choix de l'utilisateur, 2026-11-03), et `"theme_accent": "chocolat-caramel"` : ce thème sombre est appliqué automatiquement aux scènes `titre-geant` pour relancer le rythme. Si une scène précise doit claquer (un chiffre choc, un retournement), tu peux lui donner `"theme": "chocolat-caramel"` dans la scène ; reste sobre, au plus deux scènes ainsi par épisode. Les anciens thèmes verts ne sont plus utilisés.
-`chaine` : `"Bureau des Faits"`.
+`chaine` : `"La Débrouille"`.
 
 ## Format LONG (sujets du thème `Top 10 business`, `"format": "long"` dans `besoin`)
 
@@ -62,7 +62,7 @@ Les règles de fond ci-dessus (recherche, 2 sources par chiffre, mots simples, n
 
 **`episode-long.json`** :
 ```json
-{ "id": "...", "titre": "...", "theme": "chocolat-lait", "theme_accent": "chocolat-caramel", "chaine": "Bureau des Faits",
+{ "id": "...", "titre": "...", "theme": "chocolat-lait", "theme_accent": "chocolat-caramel", "chaine": "La Débrouille",
   "miniature": { "style": "createur", "texte_haut": "10 BUSINESS SANS STOCK", "gros": "10", "icone": "pieces" },
   "chapitres": [
     { "titre": "Accroche", "phrases": ["...", "..."], "scenes": [ { "type": "titre-geant", "phrase": 1, "params": { "accents": ["..."] } } ] },

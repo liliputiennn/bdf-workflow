@@ -5,7 +5,7 @@ import { loadFont as loadSilk } from "@remotion/google-fonts/Silkscreen";
 export const TITLE = loadArchivo("normal", { weights: ["400"], subsets: ["latin", "latin-ext"] }).fontFamily;
 export const PIXEL = loadSilk("normal", { weights: ["400", "700"], subsets: ["latin", "latin-ext"] }).fontFamily;
 
-/** Identité « Le Bureau des Faits » : un seul accent, vert phosphore. */
+/** Identité « La Débrouille » : un seul accent, vert phosphore. */
 export const C = {
   bg: "#07110c",
   bgHi: "#0f2219",
@@ -21,7 +21,7 @@ export const C = {
   skin: "#d9c7a3",
 };
 
-export const CHANNEL = "BUREAU DES FAITS";
+export const CHANNEL = "LA DÉBROUILLE";
 
 export const OUT = Easing.bezier(0.16, 1, 0.3, 1);
 export const INOUT = Easing.bezier(0.65, 0, 0.35, 1);
