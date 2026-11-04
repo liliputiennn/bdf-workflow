@@ -1,808 +1,808 @@
 {
- "total": 39.913,
+ "total": 39.14,
  "lines": [
   {
    "start": 0.15,
-   "end": 4.086,
+   "end": 3.545,
    "words": [
     {
      "w": "Dernier",
      "start": 0.15,
-     "end": 0.586
+     "end": 0.493
     },
     {
      "w": "service,",
-     "start": 0.586,
-     "end": 0.95
+     "start": 0.493,
+     "end": 0.773
     },
     {
      "w": "et",
-     "start": 1.259,
-     "end": 1.304
+     "start": 0.913,
+     "end": 0.957
     },
     {
      "w": "le",
-     "start": 1.295,
-     "end": 1.404
+     "start": 0.931,
+     "end": 1.019
     },
     {
      "w": "plus",
-     "start": 1.404,
-     "end": 1.532
+     "start": 1.019,
+     "end": 1.142
     },
     {
      "w": "cher",
-     "start": 1.532,
-     "end": 1.804
+     "start": 1.142,
+     "end": 1.352
     },
     {
      "w": "la",
-     "start": 2.204,
-     "end": 2.277
+     "start": 1.685,
+     "end": 1.773
     },
     {
      "w": "secrétaire",
-     "start": 2.277,
-     "end": 2.841
+     "start": 1.773,
+     "end": 2.212
     },
     {
      "w": "qui",
-     "start": 2.841,
-     "end": 2.932
+     "start": 2.212,
+     "end": 2.283
     },
     {
      "w": "prend",
-     "start": 2.932,
-     "end": 3.095
+     "start": 2.283,
+     "end": 2.423
     },
     {
      "w": "les",
-     "start": 3.095,
-     "end": 3.186
+     "start": 2.423,
+     "end": 2.528
     },
     {
      "w": "rendez-vous",
-     "start": 3.186,
-     "end": 3.513
+     "start": 2.528,
+     "end": 2.932
     },
     {
      "w": "toute",
-     "start": 3.513,
-     "end": 3.659
+     "start": 2.932,
+     "end": 3.107
     },
     {
      "w": "seule.",
-     "start": 3.659,
-     "end": 3.895
+     "start": 3.107,
+     "end": 3.335
     }
    ]
   },
   {
-   "start": 4.213,
-   "end": 8.259,
+   "start": 3.673,
+   "end": 7.634,
    "words": [
     {
      "w": "Le",
-     "start": 4.213,
-     "end": 4.368
+     "start": 3.673,
+     "end": 3.813
     },
     {
      "w": "client",
-     "start": 4.368,
-     "end": 4.586
+     "start": 3.813,
+     "end": 4.029
     },
     {
      "w": "reçoit",
-     "start": 4.586,
-     "end": 4.913
+     "start": 4.029,
+     "end": 4.326
     },
     {
      "w": "un",
-     "start": 4.913,
-     "end": 4.986
+     "start": 4.326,
+     "end": 4.393
     },
     {
      "w": "assistant",
-     "start": 4.986,
-     "end": 5.259
+     "start": 4.393,
+     "end": 4.657
     },
     {
      "w": "qui",
-     "start": 5.259,
-     "end": 5.441
+     "start": 4.657,
+     "end": 4.839
     },
     {
      "w": "décroche,",
-     "start": 5.441,
-     "end": 5.877
+     "start": 4.839,
+     "end": 5.285
     },
     {
      "w": "répond",
-     "start": 6.041,
-     "end": 6.277
+     "start": 5.517,
+     "end": 5.782
     },
     {
      "w": "aux",
-     "start": 6.277,
-     "end": 6.404
+     "start": 5.782,
+     "end": 5.914
     },
     {
      "w": "questions",
-     "start": 6.404,
-     "end": 6.695
+     "start": 5.914,
+     "end": 6.179
     },
     {
      "w": "et",
-     "start": 6.695,
-     "end": 6.877
+     "start": 6.179,
+     "end": 6.328
     },
     {
      "w": "réserve",
-     "start": 6.877,
-     "end": 7.168
+     "start": 6.328,
+     "end": 6.609
     },
     {
      "w": "un",
-     "start": 7.168,
-     "end": 7.277
+     "start": 6.609,
+     "end": 6.675
     },
     {
      "w": "créneau",
-     "start": 7.277,
-     "end": 7.586
+     "start": 6.675,
+     "end": 6.973
     },
     {
      "w": "dans",
-     "start": 7.586,
-     "end": 7.695
+     "start": 6.973,
+     "end": 7.055
     },
     {
      "w": "son",
-     "start": 7.695,
-     "end": 7.823
+     "start": 7.055,
+     "end": 7.188
     },
     {
      "w": "agenda.",
-     "start": 7.823,
-     "end": 8.023
+     "start": 7.188,
+     "end": 7.386
     }
    ]
   },
   {
-   "start": 8.386,
-   "end": 12.004,
+   "start": 7.762,
+   "end": 11.216,
    "words": [
     {
      "w": "Sur",
-     "start": 8.386,
-     "end": 8.641
+     "start": 7.762,
+     "end": 7.962
     },
     {
      "w": "ComeUp,",
-     "start": 8.641,
-     "end": 9.041
+     "start": 7.962,
+     "end": 8.362
     },
     {
      "w": "une",
-     "start": 9.241,
-     "end": 9.332
+     "start": 8.58,
+     "end": 8.689
     },
     {
      "w": "secrétaire",
-     "start": 9.332,
-     "end": 9.823
+     "start": 8.689,
+     "end": 9.125
     },
     {
      "w": "de",
-     "start": 9.823,
-     "end": 9.877
+     "start": 9.125,
+     "end": 9.18
     },
     {
      "w": "ce",
-     "start": 9.877,
-     "end": 10.023
+     "start": 9.18,
+     "end": 9.289
     },
     {
      "w": "genre",
-     "start": 10.023,
-     "end": 10.223
+     "start": 9.289,
+     "end": 9.471
     },
     {
      "w": "s'installe",
-     "start": 10.223,
-     "end": 10.641
+     "start": 9.471,
+     "end": 9.871
     },
     {
      "w": "à",
-     "start": 10.641,
-     "end": 10.713
+     "start": 9.871,
+     "end": 9.925
     },
     {
      "w": "mille",
-     "start": 10.713,
-     "end": 11.004
+     "start": 9.925,
+     "end": 10.234
     },
     {
      "w": "deux",
-     "start": 11.004,
-     "end": 11.095
+     "start": 10.234,
+     "end": 10.307
     },
     {
      "w": "cent",
-     "start": 11.095,
-     "end": 11.259
+     "start": 10.307,
+     "end": 10.434
     },
     {
      "w": "quatre-vingt-dix",
-     "start": 11.259,
-     "end": 11.768
+     "start": 10.434,
+     "end": 10.889
     },
     {
      "w": "euros.",
-     "start": 11.768,
-     "end": 11.877
+     "start": 10.889,
+     "end": 11.053
     }
    ]
   },
   {
-   "start": 12.132,
-   "end": 17.032,
+   "start": 11.343,
+   "end": 15.602,
    "words": [
     {
      "w": "L'abonnement",
-     "start": 12.132,
-     "end": 12.341
+     "start": 11.343,
+     "end": 11.618
     },
     {
      "w": "d'un",
-     "start": 12.341,
-     "end": 12.741
+     "start": 11.618,
+     "end": 11.954
     },
     {
      "w": "réceptionniste",
-     "start": 12.741,
-     "end": 13.341
+     "start": 11.954,
+     "end": 12.556
     },
     {
      "w": "de",
-     "start": 13.341,
-     "end": 13.468
+     "start": 12.556,
+     "end": 12.68
     },
     {
      "w": "ce",
-     "start": 13.468,
-     "end": 13.613
+     "start": 12.68,
+     "end": 12.804
     },
     {
      "w": "type",
-     "start": 13.613,
-     "end": 13.832
+     "start": 12.804,
+     "end": 13.016
     },
     {
      "w": "tourne",
-     "start": 13.832,
-     "end": 14.377
+     "start": 13.016,
+     "end": 13.318
     },
     {
      "w": "autour",
-     "start": 14.377,
-     "end": 14.523
+     "start": 13.318,
+     "end": 13.442
     },
     {
      "w": "de",
-     "start": 14.523,
-     "end": 14.668
+     "start": 13.442,
+     "end": 13.583
     },
     {
      "w": "quatre-vingt-dix-neuf",
-     "start": 14.668,
-     "end": 15.45
+     "start": 13.583,
+     "end": 14.344
     },
     {
      "w": "euros",
-     "start": 15.45,
-     "end": 15.577
+     "start": 14.344,
+     "end": 14.469
     },
     {
      "w": "par",
-     "start": 15.577,
-     "end": 15.777
+     "start": 14.469,
+     "end": 14.628
     },
     {
      "w": "mois",
-     "start": 15.777,
-     "end": 16.032
+     "start": 14.628,
+     "end": 14.805
     },
     {
      "w": "chez",
-     "start": 16.032,
-     "end": 16.395
+     "start": 14.805,
+     "end": 14.982
     },
     {
      "w": "CloudTalk.",
-     "start": 16.395,
-     "end": 16.886
+     "start": 14.982,
+     "end": 15.424
     }
    ]
   },
   {
-   "start": 17.159,
-   "end": 20.368,
+   "start": 15.729,
+   "end": 19.343,
    "words": [
     {
      "w": "Les",
-     "start": 17.159,
-     "end": 17.313
+     "start": 15.729,
+     "end": 15.867
     },
     {
      "w": "petites",
-     "start": 17.313,
-     "end": 17.513
+     "start": 15.867,
+     "end": 16.091
     },
     {
      "w": "entreprises",
-     "start": 17.513,
-     "end": 17.932
+     "start": 16.091,
+     "end": 16.521
     },
     {
      "w": "paient",
-     "start": 17.932,
-     "end": 18.223
+     "start": 16.521,
+     "end": 16.899
     },
     {
      "w": "en",
-     "start": 18.223,
-     "end": 18.277
+     "start": 16.899,
+     "end": 16.968
     },
     {
      "w": "général",
-     "start": 18.277,
-     "end": 18.623
+     "start": 16.968,
+     "end": 17.295
     },
     {
      "w": "entre",
-     "start": 18.623,
-     "end": 18.841
+     "start": 17.295,
+     "end": 17.571
     },
     {
      "w": "cinquante",
-     "start": 18.841,
-     "end": 19.35
+     "start": 17.571,
+     "end": 18.242
     },
     {
      "w": "et",
-     "start": 19.35,
-     "end": 19.423
+     "start": 18.242,
+     "end": 18.327
     },
     {
      "w": "deux",
-     "start": 19.423,
-     "end": 19.568
+     "start": 18.327,
+     "end": 18.483
     },
     {
      "w": "cents",
-     "start": 19.568,
-     "end": 19.677
+     "start": 18.483,
+     "end": 18.637
     },
     {
      "w": "euros",
-     "start": 19.677,
-     "end": 19.877
+     "start": 18.637,
+     "end": 18.826
     },
     {
      "w": "par",
-     "start": 19.877,
-     "end": 20.077
+     "start": 18.826,
+     "end": 19.016
     },
     {
      "w": "mois.",
-     "start": 20.077,
-     "end": 20.241
+     "start": 19.016,
+     "end": 19.188
     }
    ]
   },
   {
-   "start": 20.495,
-   "end": 24.832,
+   "start": 19.47,
+   "end": 23.995,
    "words": [
     {
      "w": "Toi,",
-     "start": 20.495,
-     "end": 20.795
+     "start": 19.47,
+     "end": 19.876
     },
     {
      "w": "tu",
-     "start": 20.832,
-     "end": 20.886
+     "start": 20.066,
+     "end": 20.36
     },
     {
      "w": "demandes",
-     "start": 20.886,
-     "end": 21.195
+     "start": 20.36,
+     "end": 20.653
     },
     {
      "w": "quatre",
-     "start": 21.195,
-     "end": 21.323
+     "start": 20.653,
+     "end": 20.757
     },
     {
      "w": "cent",
-     "start": 21.323,
-     "end": 21.559
+     "start": 20.757,
+     "end": 20.982
     },
     {
      "w": "quatre-vingt-dix",
-     "start": 21.559,
-     "end": 22.104
+     "start": 20.982,
+     "end": 21.431
     },
     {
      "w": "euros",
-     "start": 22.104,
-     "end": 22.304
+     "start": 21.431,
+     "end": 21.603
     },
     {
      "w": "de",
-     "start": 22.304,
-     "end": 22.432
+     "start": 21.603,
+     "end": 21.707
     },
     {
      "w": "mise",
-     "start": 22.432,
-     "end": 22.613
+     "start": 21.707,
+     "end": 21.811
     },
     {
      "w": "en",
-     "start": 22.613,
-     "end": 22.723
+     "start": 21.811,
+     "end": 21.914
     },
     {
      "w": "place.",
-     "start": 22.723,
-     "end": 23.05
+     "start": 21.914,
+     "end": 22.191
     },
     {
      "w": "Moins",
-     "start": 23.432,
-     "end": 23.741
+     "start": 22.588,
+     "end": 22.864
     },
     {
      "w": "de",
-     "start": 23.741,
-     "end": 23.832
+     "start": 22.864,
+     "end": 22.951
     },
     {
      "w": "la",
-     "start": 23.832,
-     "end": 23.904
+     "start": 22.951,
+     "end": 23.037
     },
     {
      "w": "moitié",
-     "start": 23.904,
-     "end": 24.141
+     "start": 23.037,
+     "end": 23.262
     },
     {
      "w": "du",
-     "start": 24.141,
-     "end": 24.25
+     "start": 23.262,
+     "end": 23.383
     },
     {
      "w": "prix",
-     "start": 24.25,
-     "end": 24.413
+     "start": 23.383,
+     "end": 23.521
     },
     {
      "w": "de",
-     "start": 24.413,
-     "end": 24.468
+     "start": 23.521,
+     "end": 23.573
     },
     {
      "w": "ComeUp.",
-     "start": 24.468,
-     "end": 24.759
+     "start": 23.573,
+     "end": 23.849
     }
    ]
   },
   {
-   "start": 24.959,
-   "end": 29.332,
+   "start": 24.123,
+   "end": 29.07,
    "words": [
     {
      "w": "Ton",
-     "start": 24.959,
-     "end": 25.113
+     "start": 24.123,
+     "end": 24.249
     },
     {
      "w": "outil",
-     "start": 25.113,
-     "end": 25.477
+     "start": 24.249,
+     "end": 24.57
     },
     {
      "w": "le",
-     "start": 25.713,
-     "end": 25.823
+     "start": 24.907,
+     "end": 25.042
     },
     {
      "w": "compte",
-     "start": 25.823,
-     "end": 26.023
+     "start": 25.042,
+     "end": 25.261
     },
     {
      "w": "du",
-     "start": 26.023,
-     "end": 26.132
+     "start": 25.261,
+     "end": 25.413
     },
     {
      "w": "client",
-     "start": 26.132,
-     "end": 26.386
+     "start": 25.413,
+     "end": 25.733
     },
     {
      "w": "chez",
-     "start": 26.386,
-     "end": 26.568
+     "start": 25.733,
+     "end": 26.086
     },
     {
      "w": "CloudTalk,",
-     "start": 26.568,
-     "end": 27.095
+     "start": 26.086,
+     "end": 26.71
     },
     {
      "w": "à",
-     "start": 27.223,
-     "end": 27.295
+     "start": 26.895,
+     "end": 27.064
     },
     {
      "w": "quatre-vingt-dix-neuf",
-     "start": 27.295,
-     "end": 28.023
+     "start": 27.064,
+     "end": 27.722
     },
     {
      "w": "euros",
-     "start": 28.023,
-     "end": 28.168
+     "start": 27.722,
+     "end": 27.823
     },
     {
      "w": "par",
-     "start": 28.168,
-     "end": 28.35
+     "start": 27.823,
+     "end": 27.974
     },
     {
      "w": "mois,",
-     "start": 28.35,
-     "end": 28.55
+     "start": 27.974,
+     "end": 28.193
     },
     {
      "w": "payé",
-     "start": 28.677,
-     "end": 28.95
+     "start": 28.48,
+     "end": 28.716
     },
     {
      "w": "par",
-     "start": 28.95,
-     "end": 29.095
+     "start": 28.716,
+     "end": 28.834
     },
     {
      "w": "lui.",
-     "start": 29.095,
-     "end": 29.241
+     "start": 28.834,
+     "end": 28.969
     }
    ]
   },
   {
-   "start": 29.459,
-   "end": 33.841,
+   "start": 29.197,
+   "end": 33.087,
    "words": [
     {
      "w": "Tu",
-     "start": 29.459,
-     "end": 29.604
+     "start": 29.197,
+     "end": 29.33
     },
     {
      "w": "branches",
-     "start": 29.604,
-     "end": 29.859
+     "start": 29.33,
+     "end": 29.563
     },
     {
      "w": "son",
-     "start": 29.859,
-     "end": 30.059
+     "start": 29.563,
+     "end": 29.746
     },
     {
      "w": "agenda,",
-     "start": 30.059,
-     "end": 30.368
+     "start": 29.746,
+     "end": 30.078
     },
     {
      "w": "tu",
-     "start": 30.732,
-     "end": 30.786
+     "start": 30.361,
+     "end": 30.411
     },
     {
      "w": "écris",
-     "start": 30.786,
-     "end": 31.041
+     "start": 30.411,
+     "end": 30.643
     },
     {
      "w": "les",
-     "start": 31.041,
-     "end": 31.132
+     "start": 30.643,
+     "end": 30.726
     },
     {
      "w": "réponses",
-     "start": 31.132,
-     "end": 31.532
+     "start": 30.726,
+     "end": 31.093
     },
     {
      "w": "aux",
-     "start": 31.532,
-     "end": 31.577
+     "start": 31.093,
+     "end": 31.134
     },
     {
      "w": "questions",
-     "start": 31.568,
-     "end": 31.804
+     "start": 31.125,
+     "end": 31.309
     },
     {
      "w": "courantes,",
-     "start": 31.804,
-     "end": 32.295
+     "start": 31.309,
+     "end": 31.724
     },
     {
      "w": "tu",
-     "start": 32.513,
-     "end": 32.623
+     "start": 31.907,
+     "end": 32.056
     },
     {
      "w": "testes",
-     "start": 32.623,
-     "end": 33.004
+     "start": 32.056,
+     "end": 32.24
     },
     {
      "w": "avec",
-     "start": 33.004,
-     "end": 33.059
+     "start": 32.24,
+     "end": 32.405
     },
     {
      "w": "de",
-     "start": 33.059,
-     "end": 33.204
+     "start": 32.405,
+     "end": 32.522
     },
     {
      "w": "vrais",
-     "start": 33.204,
-     "end": 33.423
+     "start": 32.522,
+     "end": 32.722
     },
     {
      "w": "appels.",
-     "start": 33.423,
-     "end": 33.732
+     "start": 32.722,
+     "end": 33.021
     }
    ]
   },
   {
-   "start": 33.968,
-   "end": 35.977,
+   "start": 33.214,
+   "end": 35.034,
    "words": [
     {
      "w": "Compte",
-     "start": 33.968,
-     "end": 34.241
+     "start": 33.214,
+     "end": 33.5
     },
     {
      "w": "une",
-     "start": 34.241,
-     "end": 34.295
+     "start": 33.5,
+     "end": 33.572
     },
     {
      "w": "journée",
-     "start": 34.295,
-     "end": 34.55
+     "start": 33.572,
+     "end": 33.785
     },
     {
      "w": "de",
-     "start": 34.55,
-     "end": 34.695
+     "start": 33.785,
+     "end": 33.91
     },
     {
      "w": "huit",
-     "start": 34.695,
-     "end": 34.968
+     "start": 33.91,
+     "end": 34.106
     },
     {
      "w": "heures",
-     "start": 34.968,
-     "end": 35.15
+     "start": 34.106,
+     "end": 34.232
     },
     {
      "w": "de",
-     "start": 35.15,
-     "end": 35.277
+     "start": 34.232,
+     "end": 34.338
     },
     {
      "w": "mise",
-     "start": 35.277,
-     "end": 35.441
+     "start": 34.338,
+     "end": 34.463
     },
     {
      "w": "en",
-     "start": 35.441,
-     "end": 35.532
+     "start": 34.463,
+     "end": 34.57
     },
     {
      "w": "place.",
-     "start": 35.532,
-     "end": 35.713
+     "start": 34.57,
+     "end": 34.749
     }
    ]
   },
   {
-   "start": 36.104,
-   "end": 39.613,
+   "start": 35.162,
+   "end": 38.84,
    "words": [
     {
      "w": "Il",
-     "start": 36.104,
-     "end": 36.286
+     "start": 35.162,
+     "end": 35.331
     },
     {
      "w": "paie",
-     "start": 36.286,
-     "end": 36.523
+     "start": 35.331,
+     "end": 35.563
     },
     {
      "w": "quatre",
-     "start": 36.523,
-     "end": 36.65
+     "start": 35.563,
+     "end": 35.669
     },
     {
      "w": "cent",
-     "start": 36.65,
-     "end": 36.923
+     "start": 35.669,
+     "end": 35.936
     },
     {
      "w": "quatre-vingt-dix",
-     "start": 36.923,
-     "end": 37.432
+     "start": 35.936,
+     "end": 36.453
     },
     {
      "w": "euros.",
-     "start": 37.432,
-     "end": 37.632
+     "start": 36.453,
+     "end": 36.666
     },
     {
      "w": "Il",
-     "start": 37.941,
-     "end": 38.086
+     "start": 36.952,
+     "end": 37.147
     },
     {
      "w": "te",
-     "start": 38.086,
-     "end": 38.213
+     "start": 37.147,
+     "end": 37.273
     },
     {
      "w": "reste",
-     "start": 38.213,
-     "end": 38.377
+     "start": 37.273,
+     "end": 37.433
     },
     {
      "w": "quatre",
-     "start": 38.377,
-     "end": 38.632
+     "start": 37.433,
+     "end": 37.717
     },
     {
      "w": "cent",
-     "start": 38.632,
-     "end": 38.85
+     "start": 37.717,
+     "end": 37.984
     },
     {
      "w": "quatre-vingt-dix",
-     "start": 38.85,
-     "end": 39.341
+     "start": 37.984,
+     "end": 38.537
     },
     {
      "w": "euros.",
-     "start": 39.341,
-     "end": 39.486
+     "start": 38.537,
+     "end": 38.697
     }
    ]
   }

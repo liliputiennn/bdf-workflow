@@ -1,803 +1,803 @@
 {
- "total": 39.168,
+ "total": 37.89,
  "lines": [
   {
    "start": 0.15,
-   "end": 3.794,
+   "end": 3.439,
    "words": [
     {
      "w": "Cinquième",
      "start": 0.15,
-     "end": 0.58
+     "end": 0.571
     },
     {
      "w": "machine",
-     "start": 0.58,
-     "end": 0.872
+     "start": 0.571,
+     "end": 0.88
     },
     {
      "w": "le",
-     "start": 1.319,
-     "end": 1.405
+     "start": 1.275,
+     "end": 1.327
     },
     {
      "w": "nettoyeur",
-     "start": 1.405,
-     "end": 1.903
+     "start": 1.327,
+     "end": 1.756
     },
     {
      "w": "haute",
-     "start": 1.903,
-     "end": 2.058
+     "start": 1.756,
+     "end": 1.928
     },
     {
      "w": "pression,",
-     "start": 2.058,
-     "end": 2.453
+     "start": 1.928,
+     "end": 2.339
     },
     {
      "w": "la",
-     "start": 2.591,
-     "end": 2.866
+     "start": 2.459,
+     "end": 2.631
     },
     {
      "w": "plus",
-     "start": 2.866,
-     "end": 3.037
+     "start": 2.631,
+     "end": 2.751
     },
     {
      "w": "simple",
-     "start": 3.037,
-     "end": 3.278
+     "start": 2.751,
+     "end": 2.975
     },
     {
      "w": "à",
-     "start": 3.278,
-     "end": 3.416
+     "start": 2.975,
+     "end": 3.095
     },
     {
      "w": "lancer.",
-     "start": 3.416,
-     "end": 3.673
+     "start": 3.095,
+     "end": 3.352
     }
    ]
   },
   {
-   "start": 3.921,
-   "end": 8.418,
+   "start": 3.566,
+   "end": 7.35,
    "words": [
     {
      "w": "Tout",
-     "start": 3.921,
-     "end": 4.057
+     "start": 3.566,
+     "end": 3.711
     },
     {
      "w": "le",
-     "start": 4.057,
-     "end": 4.144
+     "start": 3.711,
+     "end": 3.78
     },
     {
      "w": "monde",
-     "start": 4.144,
-     "end": 4.297
+     "start": 3.78,
+     "end": 3.9
     },
     {
      "w": "a",
-     "start": 4.297,
-     "end": 4.417
+     "start": 3.9,
+     "end": 4.02
     },
     {
      "w": "une",
-     "start": 4.417,
-     "end": 4.52
+     "start": 4.02,
+     "end": 4.089
     },
     {
      "w": "terrasse",
-     "start": 4.52,
-     "end": 5.052
+     "start": 4.089,
+     "end": 4.467
     },
     {
      "w": "ou",
-     "start": 5.052,
-     "end": 5.137
+     "start": 4.467,
+     "end": 4.519
     },
     {
      "w": "une",
-     "start": 5.137,
-     "end": 5.257
+     "start": 4.519,
+     "end": 4.621
     },
     {
      "w": "cour",
-     "start": 5.257,
-     "end": 5.395
+     "start": 4.621,
+     "end": 4.759
     },
     {
      "w": "grise",
-     "start": 5.395,
-     "end": 5.686
+     "start": 4.759,
+     "end": 5.016
     },
     {
      "w": "et",
-     "start": 5.686,
-     "end": 5.754
+     "start": 5.016,
+     "end": 5.085
     },
     {
      "w": "verte,",
-     "start": 5.754,
-     "end": 5.994
+     "start": 5.085,
+     "end": 5.308
     },
     {
      "w": "et",
-     "start": 6.148,
-     "end": 6.422
+     "start": 5.497,
+     "end": 5.549
     },
     {
      "w": "personne",
-     "start": 6.422,
-     "end": 6.731
+     "start": 5.549,
+     "end": 5.823
     },
     {
      "w": "n'a",
-     "start": 6.731,
-     "end": 6.954
+     "start": 5.823,
+     "end": 6.029
     },
     {
      "w": "envie",
-     "start": 6.954,
-     "end": 7.107
+     "start": 6.029,
+     "end": 6.166
     },
     {
      "w": "de",
-     "start": 7.107,
-     "end": 7.21
+     "start": 6.166,
+     "end": 6.287
     },
     {
      "w": "se",
-     "start": 7.21,
-     "end": 7.296
+     "start": 6.287,
+     "end": 6.389
     },
     {
      "w": "mettre",
-     "start": 7.296,
-     "end": 7.433
+     "start": 6.389,
+     "end": 6.492
     },
     {
      "w": "à",
-     "start": 7.433,
-     "end": 7.587
+     "start": 6.492,
+     "end": 6.647
     },
     {
      "w": "genoux",
-     "start": 7.587,
-     "end": 7.81
+     "start": 6.647,
+     "end": 6.801
     },
     {
      "w": "pour",
-     "start": 7.81,
-     "end": 7.913
+     "start": 6.801,
+     "end": 6.904
     },
     {
      "w": "la",
-     "start": 7.913,
-     "end": 7.998
+     "start": 6.904,
+     "end": 7.008
     },
     {
      "w": "frotter.",
-     "start": 7.998,
-     "end": 8.307
+     "start": 7.008,
+     "end": 7.333
     }
    ]
   },
   {
-   "start": 8.546,
-   "end": 13.472,
+   "start": 7.478,
+   "end": 12.497,
    "words": [
     {
      "w": "Un",
-     "start": 8.546,
-     "end": 8.672
+     "start": 7.478,
+     "end": 7.629
     },
     {
      "w": "modèle",
-     "start": 8.672,
-     "end": 8.875
+     "start": 7.629,
+     "end": 7.831
     },
     {
      "w": "professionnel",
-     "start": 8.875,
-     "end": 9.482
+     "start": 7.831,
+     "end": 8.388
     },
     {
      "w": "comme",
-     "start": 9.482,
-     "end": 9.617
+     "start": 8.388,
+     "end": 8.489
     },
     {
      "w": "le",
-     "start": 9.617,
-     "end": 9.735
+     "start": 8.489,
+     "end": 8.607
     },
     {
      "w": "Kärcher",
-     "start": 9.735,
-     "end": 10.073
+     "start": 8.607,
+     "end": 8.893
     },
     {
      "w": "HD",
-     "start": 10.073,
-     "end": 10.359
+     "start": 8.893,
+     "end": 9.179
     },
     {
      "w": "cinq",
-     "start": 10.359,
-     "end": 10.663
+     "start": 9.179,
+     "end": 9.431
     },
     {
      "w": "quinze",
-     "start": 10.663,
-     "end": 10.984
+     "start": 9.431,
+     "end": 9.718
     },
     {
      "w": "C",
-     "start": 10.984,
-     "end": 11.085
+     "start": 9.718,
+     "end": 9.802
     },
     {
      "w": "Plus",
-     "start": 11.085,
-     "end": 11.254
+     "start": 9.802,
+     "end": 10.004
     },
     {
      "w": "coûte",
-     "start": 11.254,
-     "end": 11.625
+     "start": 10.004,
+     "end": 10.543
     },
     {
      "w": "huit",
-     "start": 11.625,
-     "end": 11.81
+     "start": 10.543,
+     "end": 10.729
     },
     {
      "w": "cent",
-     "start": 11.81,
-     "end": 11.996
+     "start": 10.729,
+     "end": 10.88
     },
     {
      "w": "soixante-quatre",
-     "start": 11.996,
-     "end": 12.468
+     "start": 10.88,
+     "end": 11.402
     },
     {
      "w": "euros",
-     "start": 12.468,
-     "end": 12.687
+     "start": 11.402,
+     "end": 11.639
     },
     {
      "w": "quatre-vingt-quinze.",
-     "start": 12.687,
-     "end": 13.362
+     "start": 11.639,
+     "end": 12.413
     }
    ]
   },
   {
-   "start": 13.599,
-   "end": 16.961,
+   "start": 12.624,
+   "end": 15.578,
    "words": [
     {
      "w": "Ce",
-     "start": 13.599,
-     "end": 13.766
+     "start": 12.624,
+     "end": 12.792
     },
     {
      "w": "qu'il",
-     "start": 13.766,
-     "end": 13.926
+     "start": 12.792,
+     "end": 12.933
     },
     {
      "w": "produit",
-     "start": 13.926,
-     "end": 14.244
+     "start": 12.933,
+     "end": 13.198
     },
     {
      "w": "une",
-     "start": 14.756,
-     "end": 14.878
+     "start": 13.532,
+     "end": 13.639
     },
     {
      "w": "terrasse",
-     "start": 14.878,
-     "end": 15.337
+     "start": 13.639,
+     "end": 14.044
     },
     {
      "w": "qui",
-     "start": 15.337,
-     "end": 15.408
+     "start": 14.044,
+     "end": 14.114
     },
     {
      "w": "redevient",
-     "start": 15.408,
-     "end": 15.779
+     "start": 14.114,
+     "end": 14.449
     },
     {
      "w": "claire",
-     "start": 15.779,
-     "end": 16.167
+     "start": 14.449,
+     "end": 14.802
     },
     {
      "w": "en",
-     "start": 16.167,
-     "end": 16.308
+     "start": 14.802,
+     "end": 14.89
     },
     {
      "w": "quelques",
-     "start": 16.308,
-     "end": 16.503
+     "start": 14.89,
+     "end": 15.084
     },
     {
      "w": "heures.",
-     "start": 16.503,
-     "end": 16.785
+     "start": 15.084,
+     "end": 15.384
     }
    ]
   },
   {
-   "start": 17.088,
-   "end": 21.037,
+   "start": 15.705,
+   "end": 19.337,
    "words": [
     {
      "w": "Prix",
-     "start": 17.088,
-     "end": 17.279
+     "start": 15.705,
+     "end": 15.86
     },
     {
      "w": "de",
-     "start": 17.279,
-     "end": 17.366
+     "start": 15.86,
+     "end": 15.965
     },
     {
      "w": "vente",
-     "start": 17.366,
-     "end": 17.522
+     "start": 15.965,
+     "end": 16.189
     },
     {
      "w": "constaté",
-     "start": 17.522,
-     "end": 18.024
+     "start": 16.189,
+     "end": 16.778
     },
     {
      "w": "entre",
-     "start": 18.18,
-     "end": 18.353
+     "start": 16.881,
+     "end": 17.037
     },
     {
      "w": "trois",
-     "start": 18.353,
-     "end": 18.751
+     "start": 17.037,
+     "end": 17.366
     },
     {
      "w": "et",
-     "start": 18.751,
-     "end": 18.821
+     "start": 17.366,
+     "end": 17.418
     },
     {
      "w": "quinze",
-     "start": 18.821,
-     "end": 19.063
+     "start": 17.418,
+     "end": 17.625
     },
     {
      "w": "euros",
-     "start": 19.063,
-     "end": 19.254
+     "start": 17.625,
+     "end": 17.798
     },
     {
      "w": "le",
-     "start": 19.254,
-     "end": 19.392
+     "start": 17.798,
+     "end": 17.936
     },
     {
      "w": "mètre",
-     "start": 19.392,
-     "end": 19.6
+     "start": 17.936,
+     "end": 18.092
     },
     {
      "w": "carré",
-     "start": 19.6,
-     "end": 19.929
+     "start": 18.092,
+     "end": 18.334
     },
     {
      "w": "selon",
-     "start": 19.929,
-     "end": 20.085
+     "start": 18.334,
+     "end": 18.507
     },
     {
      "w": "la",
-     "start": 20.085,
-     "end": 20.224
+     "start": 18.507,
+     "end": 18.662
     },
     {
      "w": "surface",
-     "start": 20.224,
-     "end": 20.518
+     "start": 18.662,
+     "end": 18.87
     },
     {
      "w": "et",
-     "start": 20.518,
-     "end": 20.708
+     "start": 18.87,
+     "end": 19.06
     },
     {
      "w": "l'état.",
-     "start": 20.708,
-     "end": 20.916
+     "start": 19.06,
+     "end": 19.216
     }
    ]
   },
   {
-   "start": 21.165,
-   "end": 24.632,
+   "start": 19.464,
+   "end": 22.819,
    "words": [
     {
      "w": "Dans",
-     "start": 21.165,
-     "end": 21.316
+     "start": 19.464,
+     "end": 19.642
     },
     {
      "w": "plusieurs",
-     "start": 21.316,
-     "end": 21.584
+     "start": 19.642,
+     "end": 19.874
     },
     {
      "w": "grandes",
-     "start": 21.584,
-     "end": 21.797
+     "start": 19.874,
+     "end": 20.105
     },
     {
      "w": "villes,",
-     "start": 21.797,
-     "end": 22.457
+     "start": 20.105,
+     "end": 20.639
     },
     {
      "w": "on",
-     "start": 22.493,
-     "end": 22.582
+     "start": 20.675,
+     "end": 20.746
     },
     {
      "w": "tourne",
-     "start": 22.582,
-     "end": 22.832
+     "start": 20.746,
+     "end": 21.013
     },
     {
      "w": "plutôt",
-     "start": 22.832,
-     "end": 23.01
+     "start": 21.013,
+     "end": 21.19
     },
     {
      "w": "autour",
-     "start": 23.01,
-     "end": 23.206
+     "start": 21.19,
+     "end": 21.387
     },
     {
      "w": "de",
-     "start": 23.206,
-     "end": 23.384
+     "start": 21.387,
+     "end": 21.529
     },
     {
      "w": "quatre",
-     "start": 23.384,
-     "end": 23.58
+     "start": 21.529,
+     "end": 21.76
     },
     {
      "w": "euros",
-     "start": 23.58,
-     "end": 23.866
+     "start": 21.76,
+     "end": 22.027
     },
     {
      "w": "le",
-     "start": 23.866,
-     "end": 24.026
+     "start": 22.027,
+     "end": 22.169
     },
     {
      "w": "mètre",
-     "start": 24.026,
-     "end": 24.24
+     "start": 22.169,
+     "end": 22.365
     },
     {
      "w": "carré.",
-     "start": 24.24,
-     "end": 24.561
+     "start": 22.365,
+     "end": 22.721
     }
    ]
   },
   {
-   "start": 24.759,
-   "end": 28.153,
+   "start": 22.947,
+   "end": 26.503,
    "words": [
     {
      "w": "Le",
-     "start": 24.759,
-     "end": 24.883
+     "start": 22.947,
+     "end": 23.069
     },
     {
      "w": "calcul",
-     "start": 24.883,
-     "end": 25.129
+     "start": 23.069,
+     "end": 23.316
     },
     {
      "w": "une",
-     "start": 25.457,
-     "end": 25.655
+     "start": 23.678,
+     "end": 23.841
     },
     {
      "w": "terrasse",
-     "start": 25.655,
-     "end": 25.951
+     "start": 23.841,
+     "end": 24.17
     },
     {
      "w": "de",
-     "start": 25.951,
-     "end": 26.0
+     "start": 24.17,
+     "end": 24.219
     },
     {
      "w": "trente",
-     "start": 26.0,
-     "end": 26.246
+     "start": 24.219,
+     "end": 24.449
     },
     {
      "w": "mètres",
-     "start": 26.246,
-     "end": 26.46
+     "start": 24.449,
+     "end": 24.63
     },
     {
      "w": "carrés",
-     "start": 26.46,
-     "end": 26.739
+     "start": 24.63,
+     "end": 24.926
     },
     {
      "w": "à",
-     "start": 26.739,
-     "end": 26.781
+     "start": 24.926,
+     "end": 24.967
     },
     {
      "w": "quatre",
-     "start": 26.773,
-     "end": 26.936
+     "start": 24.959,
+     "end": 25.123
     },
     {
      "w": "euros,",
-     "start": 26.936,
-     "end": 27.183
+     "start": 25.123,
+     "end": 25.353
     },
     {
      "w": "ça",
-     "start": 27.347,
-     "end": 27.43
+     "start": 25.616,
+     "end": 25.698
     },
     {
      "w": "fait",
-     "start": 27.43,
-     "end": 27.561
+     "start": 25.698,
+     "end": 25.829
     },
     {
      "w": "cent",
-     "start": 27.561,
-     "end": 27.742
+     "start": 25.829,
+     "end": 26.027
     },
     {
      "w": "vingt",
-     "start": 27.742,
-     "end": 27.89
+     "start": 26.027,
+     "end": 26.24
     },
     {
      "w": "euros.",
-     "start": 27.89,
-     "end": 28.038
+     "start": 26.24,
+     "end": 26.404
     }
    ]
   },
   {
-   "start": 28.28,
-   "end": 31.533,
+   "start": 26.63,
+   "end": 30.217,
    "words": [
     {
      "w": "Certains",
-     "start": 28.28,
-     "end": 28.712
+     "start": 26.63,
+     "end": 27.037
     },
     {
      "w": "appliquent",
-     "start": 28.712,
-     "end": 29.022
+     "start": 27.037,
+     "end": 27.33
     },
     {
      "w": "un",
-     "start": 29.022,
-     "end": 29.091
+     "start": 27.33,
+     "end": 27.417
     },
     {
      "w": "forfait",
-     "start": 29.091,
-     "end": 29.402
+     "start": 27.417,
+     "end": 27.693
     },
     {
      "w": "minimum",
-     "start": 29.402,
-     "end": 29.678
+     "start": 27.693,
+     "end": 28.021
     },
     {
      "w": "de",
-     "start": 29.678,
-     "end": 29.885
+     "start": 28.021,
+     "end": 28.247
     },
     {
      "w": "cent",
-     "start": 29.885,
-     "end": 30.032
+     "start": 28.247,
+     "end": 28.471
     },
     {
      "w": "cinquante",
-     "start": 30.032,
-     "end": 30.178
+     "start": 28.471,
+     "end": 28.869
     },
     {
      "w": "euros",
-     "start": 30.178,
-     "end": 30.524
+     "start": 28.869,
+     "end": 29.041
     },
     {
      "w": "pour",
-     "start": 30.524,
-     "end": 30.662
+     "start": 29.041,
+     "end": 29.249
     },
     {
      "w": "les",
-     "start": 30.662,
-     "end": 30.766
+     "start": 29.249,
+     "end": 29.353
     },
     {
      "w": "petites",
-     "start": 30.766,
-     "end": 30.937
+     "start": 29.353,
+     "end": 29.543
     },
     {
      "w": "surfaces.",
-     "start": 30.937,
-     "end": 31.231
+     "start": 29.543,
+     "end": 29.871
     }
    ]
   },
   {
-   "start": 31.66,
-   "end": 35.987,
+   "start": 30.344,
+   "end": 34.902,
    "words": [
     {
      "w": "Une",
-     "start": 31.66,
-     "end": 31.816
+     "start": 30.344,
+     "end": 30.492
     },
     {
      "w": "terrasse",
-     "start": 31.816,
-     "end": 32.165
+     "start": 30.492,
+     "end": 30.804
     },
     {
      "w": "par",
-     "start": 32.165,
-     "end": 32.268
+     "start": 30.804,
+     "end": 30.909
     },
     {
      "w": "jour,",
-     "start": 32.268,
-     "end": 32.46
+     "start": 30.909,
+     "end": 31.134
     },
     {
      "w": "cent",
-     "start": 32.581,
-     "end": 32.737
+     "start": 31.412,
+     "end": 31.672
     },
     {
      "w": "vingt",
-     "start": 32.737,
-     "end": 32.929
+     "start": 31.672,
+     "end": 31.864
     },
     {
      "w": "euros.",
-     "start": 32.929,
-     "end": 33.155
+     "start": 31.864,
+     "end": 32.089
     },
     {
      "w": "Deux,",
-     "start": 33.398,
-     "end": 33.728
+     "start": 32.315,
+     "end": 32.767
     },
     {
      "w": "deux",
-     "start": 33.919,
-     "end": 33.989
+     "start": 32.836,
+     "end": 32.958
     },
     {
      "w": "cent",
-     "start": 33.989,
-     "end": 34.11
+     "start": 32.958,
+     "end": 33.097
     },
     {
      "w": "quarante.",
-     "start": 34.11,
-     "end": 34.493
+     "start": 33.097,
+     "end": 33.496
     },
     {
      "w": "Trois,",
-     "start": 34.84,
-     "end": 35.223
+     "start": 33.809,
+     "end": 34.139
     },
     {
      "w": "trois",
-     "start": 35.292,
-     "end": 35.448
+     "start": 34.139,
+     "end": 34.312
     },
     {
      "w": "cent",
-     "start": 35.448,
-     "end": 35.536
+     "start": 34.312,
+     "end": 34.451
     },
     {
      "w": "soixante.",
-     "start": 35.536,
-     "end": 35.848
+     "start": 34.451,
+     "end": 34.78
     }
    ]
   },
   {
-   "start": 36.115,
-   "end": 38.868,
+   "start": 35.029,
+   "end": 37.59,
    "words": [
     {
      "w": "Pour",
-     "start": 36.115,
-     "end": 36.283
+     "start": 35.029,
+     "end": 35.171
     },
     {
      "w": "rembourser",
-     "start": 36.283,
-     "end": 36.707
+     "start": 35.171,
+     "end": 35.542
     },
     {
      "w": "la",
-     "start": 36.707,
-     "end": 36.778
+     "start": 35.542,
+     "end": 35.612
     },
     {
      "w": "machine,",
-     "start": 36.778,
-     "end": 37.079
+     "start": 35.612,
+     "end": 35.913
     },
     {
      "w": "il",
-     "start": 37.327,
-     "end": 37.372
+     "start": 36.054,
+     "end": 36.099
     },
     {
      "w": "faut",
-     "start": 37.346,
-     "end": 37.469
+     "start": 36.071,
+     "end": 36.178
     },
     {
      "w": "nettoyer",
-     "start": 37.469,
-     "end": 37.876
+     "start": 36.178,
+     "end": 36.549
     },
     {
      "w": "environ",
-     "start": 37.876,
-     "end": 37.983
+     "start": 36.549,
+     "end": 36.689
     },
     {
      "w": "sept",
-     "start": 37.983,
-     "end": 38.319
+     "start": 36.689,
+     "end": 37.06
     },
     {
      "w": "terrasses.",
-     "start": 38.319,
-     "end": 38.779
+     "start": 37.06,
+     "end": 37.519
     }
    ]
   }

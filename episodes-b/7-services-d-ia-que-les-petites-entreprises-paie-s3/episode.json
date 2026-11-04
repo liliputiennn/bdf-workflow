@@ -47,12 +47,9 @@
    }
   },
   {
-   "type": "photo",
+   "type": "titre-geant",
    "phrase": 2,
-   "params": {
-    "recherche": "customer service chat laptop",
-    "legende": "Questions des clients"
-   }
+   "params": {}
   },
   {
    "type": "annonce",

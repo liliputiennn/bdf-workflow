@@ -47,12 +47,9 @@
    }
   },
   {
-   "type": "photo",
+   "type": "titre-geant",
    "phrase": 2,
-   "params": {
-    "recherche": "laptop social media dashboard",
-    "legende": "Planning de publications"
-   }
+   "params": {}
   },
   {
    "type": "annonce",

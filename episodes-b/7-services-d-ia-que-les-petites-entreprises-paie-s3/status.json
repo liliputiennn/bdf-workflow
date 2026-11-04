@@ -1,7 +1,7 @@
 {
- "etat": "quarantaine",
- "maj": "2026-11-04T07:39:38",
- "raison": "contrôle qualité : voix prête annoncée mais absente : voice.wav",
+ "etat": "pret",
+ "maj": "2026-11-04T22:05:49",
+ "raison": null,
  "tentatives": 0,
  "youtube": {
   "video_id": null,
@@ -9,5 +9,11 @@
   "visibilite": null,
   "publie_a": null
  },
- "origine": "7-services-d-ia-que-les-petites-entreprises-paie"
+ "origine": "7-services-d-ia-que-les-petites-entreprises-paie",
+ "miniature": {
+  "source": "auto",
+  "fichier": "miniature.png",
+  "style": "chiffre",
+  "octets": 462933
+ }
 }

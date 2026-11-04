@@ -49,12 +49,9 @@
    }
   },
   {
-   "type": "photo",
+   "type": "titre-geant",
    "phrase": 2,
-   "params": {
-    "recherche": "video editing timeline screen",
-    "legende": "Montage et sous-titres"
-   }
+   "params": {}
   },
   {
    "type": "annonce",
