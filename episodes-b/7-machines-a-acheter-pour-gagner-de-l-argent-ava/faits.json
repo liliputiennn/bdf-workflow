@@ -1,0 +1,871 @@
+[
+ {
+  "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+  "valeur": "350 à 600 €",
+  "phrase": 1,
+  "sources": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+  "valeur": "41 €",
+  "phrase": 7,
+  "sources": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+  ],
+  "check": [
+   "41"
+  ],
+  "verified": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+  ]
+ },
+ {
+  "claim": "Le graveur laser xTool D1 Pro 20 W est vendu 1 399 euros TTC par les revendeurs français.",
+  "valeur": "1 399 €",
+  "phrase": 9,
+  "sources": [
+   "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+   "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+  ],
+  "check": [
+   "1399"
+  ],
+  "verified": [
+   "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+   "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+  ]
+ },
+ {
+  "claim": "Le graveur laser xTool D1 Pro 20 W est vendu 1 399 euros TTC par les revendeurs français.",
+  "valeur": "1 399 €",
+  "phrase": 10,
+  "sources": [
+   "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+   "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+  ],
+  "check": [
+   "1399"
+  ],
+  "verified": [
+   "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+   "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+  ]
+ },
+ {
+  "claim": "Une planche à découper en bambou de 42 x 30 cm se vend 5 euros 98 chez un revendeur français.",
+  "valeur": "5,98 €",
+  "phrase": 12,
+  "sources": [
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html",
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+  ],
+  "check": [
+   "5 € 98"
+  ],
+  "verified": [
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+  ]
+ },
+ {
+  "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+  "valeur": "41 €",
+  "phrase": 13,
+  "sources": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+  ],
+  "check": [
+   "41"
+  ],
+  "verified": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+  ]
+ },
+ {
+  "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+  "valeur": "41 €",
+  "phrase": 14,
+  "sources": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+  ],
+  "check": [
+   "41"
+  ],
+  "verified": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+  ]
+ },
+ {
+  "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+  "valeur": "41 €",
+  "phrase": 15,
+  "sources": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+  ],
+  "check": [
+   "41"
+  ],
+  "verified": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+  ]
+ },
+ {
+  "claim": "Le graveur laser xTool D1 Pro 20 W est vendu 1 399 euros TTC par les revendeurs français.",
+  "valeur": "1 399 €",
+  "phrase": 16,
+  "sources": [
+   "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+   "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+  ],
+  "check": [
+   "1399"
+  ],
+  "verified": [
+   "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+   "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+  ]
+ },
+ {
+  "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+  "valeur": "41 €",
+  "phrase": 18,
+  "sources": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+  ],
+  "check": [
+   "41"
+  ],
+  "verified": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+  ]
+ },
+ {
+  "claim": "La Bambu Lab A1 mini est vendue environ 189 euros (179 euros sur la boutique de la marque, 189 euros chez un revendeur comparé).",
+  "valeur": "189 €",
+  "phrase": 21,
+  "sources": [
+   "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+   "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+  ],
+  "check": [
+   "189"
+  ],
+  "verified": [
+   "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+   "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+  ]
+ },
+ {
+  "claim": "La Bambu Lab A1 mini est vendue environ 189 euros (179 euros sur la boutique de la marque, 189 euros chez un revendeur comparé).",
+  "valeur": "189 €",
+  "phrase": 22,
+  "sources": [
+   "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+   "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+  ],
+  "check": [
+   "189"
+  ],
+  "verified": [
+   "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+   "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+  ]
+ },
+ {
+  "claim": "Un kilo de filament PLA se négocie entre 15 et 30 euros.",
+  "valeur": "15 à 30 €",
+  "phrase": 25,
+  "sources": [
+   "https://lv3dofficiel.fr/post/calculateur-prix-impression-3d",
+   "https://www.ldlc.com/en/product/PB00751012.html"
+  ],
+  "check": [
+   "15 € et 30 €"
+  ],
+  "verified": [
+   "https://lv3dofficiel.fr/post/calculateur-prix-impression-3d"
+  ]
+ },
+ {
+  "claim": "Un devis type pour un boîtier en impression 3D de 45 grammes atteint 30,85 euros.",
+  "valeur": "30,85 €",
+  "phrase": 26,
+  "sources": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+   "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+  ],
+  "check": [
+   "30,85"
+  ],
+  "verified": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+  ]
+ },
+ {
+  "claim": "Dans ce devis, la matière (45 g de PETG) coûte 1,35 euro.",
+  "valeur": "1,35 €",
+  "phrase": 27,
+  "sources": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+   "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+  ],
+  "check": [
+   "1,35"
+  ],
+  "verified": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+  ]
+ },
+ {
+  "claim": "Dans ce devis, 3 heures de machine à 4 euros de l'heure font 12 euros.",
+  "valeur": "12 €",
+  "phrase": 28,
+  "sources": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+   "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+  ],
+  "check": [
+   "12,00"
+  ],
+  "verified": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+  ]
+ },
+ {
+  "claim": "Le devis type comprend 5,50 euros d'expédition sur un total de 30,85 euros.",
+  "valeur": "5,50 €",
+  "phrase": 29,
+  "sources": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+   "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+  ],
+  "check": [
+   "5,50"
+  ],
+  "verified": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+  ]
+ },
+ {
+  "claim": "Le devis type comprend 5,50 euros d'expédition sur un total de 30,85 euros.",
+  "valeur": "5,50 €",
+  "phrase": 30,
+  "sources": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+   "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+  ],
+  "check": [
+   "5,50"
+  ],
+  "verified": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+  ]
+ },
+ {
+  "claim": "La Bambu Lab A1 mini est vendue environ 189 euros (179 euros sur la boutique de la marque, 189 euros chez un revendeur comparé).",
+  "valeur": "189 €",
+  "phrase": 31,
+  "sources": [
+   "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+   "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+  ],
+  "check": [
+   "189"
+  ],
+  "verified": [
+   "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+   "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+  ]
+ },
+ {
+  "claim": "Un mug personnalisé avec photo se vend 18 euros sur un site de cadeaux et jusqu'à 19,95 euros ailleurs.",
+  "valeur": "18 €",
+  "phrase": 34,
+  "sources": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+   "https://www.cherchons.com/maison/art-de-la-table/service-pour-le-repas/mug/mug-magique-personnalise.html"
+  ],
+  "check": [
+   "18 €"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+  ]
+ },
+ {
+  "claim": "Une presse à mug coûte entre 100 et 350 euros.",
+  "valeur": "100 à 350 €",
+  "phrase": 38,
+  "sources": [
+   "https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html",
+   "https://www.intercyprus.com/fr/products/succebuy-auto-tumbler-heat-press-machine-mug-heat-press-11-30oz-sublimation-tumblers-heat-up-fast-even-tumbler-press-with-tape"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html"
+  ]
+ },
+ {
+  "claim": "Une tasse blanche à sublimation coûte 1,38 euro pièce par lot de 36 (hors TVA).",
+  "valeur": "1,38 €",
+  "phrase": 40,
+  "sources": [
+   "https://www.brildor.com/en/white-sublimation-mug-orca",
+   "https://www.longforte.com/en-ie/products/mugs-36-x-11oz-white-sublimation-mugs-with-silver-handle"
+  ],
+  "check": [
+   "1.38"
+  ],
+  "verified": [
+   "https://www.brildor.com/en/white-sublimation-mug-orca"
+  ]
+ },
+ {
+  "claim": "Un mug personnalisé avec photo se vend 18 euros sur un site de cadeaux et jusqu'à 19,95 euros ailleurs.",
+  "valeur": "18 €",
+  "phrase": 41,
+  "sources": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+   "https://www.cherchons.com/maison/art-de-la-table/service-pour-le-repas/mug/mug-magique-personnalise.html"
+  ],
+  "check": [
+   "18 €"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+  ]
+ },
+ {
+  "claim": "Calcul : mug vendu 18 euros moins 1,38 euro de tasse = 16,62 euros restants.",
+  "valeur": "16,62 €",
+  "phrase": 42,
+  "sources": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+   "https://www.brildor.com/en/white-sublimation-mug-orca"
+  ],
+  "check": [
+   "18 €"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+  ]
+ },
+ {
+  "claim": "Calcul : mug vendu 18 euros moins 1,38 euro de tasse = 16,62 euros restants.",
+  "valeur": "16,62 €",
+  "phrase": 44,
+  "sources": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+   "https://www.brildor.com/en/white-sublimation-mug-orca"
+  ],
+  "check": [
+   "18 €"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+  ]
+ },
+ {
+  "claim": "Une presse à mug coûte entre 100 et 350 euros.",
+  "valeur": "100 à 350 €",
+  "phrase": 45,
+  "sources": [
+   "https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html",
+   "https://www.intercyprus.com/fr/products/succebuy-auto-tumbler-heat-press-machine-mug-heat-press-11-30oz-sublimation-tumblers-heat-up-fast-even-tumbler-press-with-tape"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html"
+  ]
+ },
+ {
+  "claim": "Un mug personnalisé avec photo se vend 18 euros sur un site de cadeaux et jusqu'à 19,95 euros ailleurs.",
+  "valeur": "18 €",
+  "phrase": 46,
+  "sources": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+   "https://www.cherchons.com/maison/art-de-la-table/service-pour-le-repas/mug/mug-magique-personnalise.html"
+  ],
+  "check": [
+   "18 €"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+  ]
+ },
+ {
+  "claim": "Une machine à barbe à papa professionnelle de table se trouve à partir de 187,99 euros.",
+  "valeur": "187,99 €",
+  "phrase": 51,
+  "sources": [
+   "https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa",
+   "https://www.lagrange.fr/en/groceries/214-sucre-pour-barbe-a-papa.html"
+  ],
+  "check": [
+   "187,99"
+  ],
+  "verified": [
+   "https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa"
+  ]
+ },
+ {
+  "claim": "Des prestataires facturent une animation barbe à papa à partir de 450 à 500 euros la journée.",
+  "valeur": "500 €",
+  "phrase": 54,
+  "sources": [
+   "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales",
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx"
+  ],
+  "check": [
+   "490"
+  ],
+  "verified": [
+   "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales"
+  ]
+ },
+ {
+  "claim": "Un prestataire facture le forfait sucre une journée 500 euros.",
+  "valeur": "500 €",
+  "phrase": 55,
+  "sources": [
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx",
+   "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales"
+  ],
+  "check": [
+   "500 €"
+  ],
+  "verified": [
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx"
+  ]
+ },
+ {
+  "claim": "Un prestataire facture le forfait sucre une journée 500 euros.",
+  "valeur": "500 €",
+  "phrase": 56,
+  "sources": [
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx",
+   "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales"
+  ],
+  "check": [
+   "500 €"
+  ],
+  "verified": [
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx"
+  ]
+ },
+ {
+  "claim": "Une machine à barbe à papa professionnelle de table se trouve à partir de 187,99 euros.",
+  "valeur": "187,99 €",
+  "phrase": 57,
+  "sources": [
+   "https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa",
+   "https://www.lagrange.fr/en/groceries/214-sucre-pour-barbe-a-papa.html"
+  ],
+  "check": [
+   "187,99"
+  ],
+  "verified": [
+   "https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa"
+  ]
+ },
+ {
+  "claim": "Un prestataire facture le forfait sucre une journée 500 euros.",
+  "valeur": "500 €",
+  "phrase": 58,
+  "sources": [
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx",
+   "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales"
+  ],
+  "check": [
+   "500 €"
+  ],
+  "verified": [
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx"
+  ]
+ },
+ {
+  "claim": "Le nettoyeur haute pression professionnel Kärcher HD 5/15 C+ est affiché 864,95 euros TTC.",
+  "valeur": "864,95 €",
+  "phrase": 64,
+  "sources": [
+   "https://www.bricozor.com/15C+.951.html",
+   "https://conseils.hellopro.fr/combien-coute-un-nettoyeur-haute-pression-1759.html"
+  ],
+  "check": [
+   "864,95"
+  ],
+  "verified": [
+   "https://www.bricozor.com/15C+.951.html"
+  ]
+ },
+ {
+  "claim": "Un nettoyage professionnel de terrasse coûte entre 3 et 15 euros le mètre carré.",
+  "valeur": "3 à 15 €/m²",
+  "phrase": 66,
+  "sources": [
+   "https://www.prosnettoyage.fr/nettoyage-terrasse",
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+  ],
+  "check": [
+   "15 €/m²"
+  ],
+  "verified": [
+   "https://www.prosnettoyage.fr/nettoyage-terrasse",
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+  ]
+ },
+ {
+  "claim": "Dans plusieurs grandes villes (Bordeaux, Lyon, Lille, Toulouse, Nantes), le nettoyage de terrasse revient à 4 à 4,80 euros le mètre carré.",
+  "valeur": "4 €/m²",
+  "phrase": 67,
+  "sources": [
+   "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83",
+   "https://www.prosnettoyage.fr/nettoyage-terrasse"
+  ],
+  "check": [
+   "4,00"
+  ],
+  "verified": [
+   "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83"
+  ]
+ },
+ {
+  "claim": "Dans plusieurs grandes villes (Bordeaux, Lyon, Lille, Toulouse, Nantes), le nettoyage de terrasse revient à 4 à 4,80 euros le mètre carré.",
+  "valeur": "4 €/m²",
+  "phrase": 68,
+  "sources": [
+   "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83",
+   "https://www.prosnettoyage.fr/nettoyage-terrasse"
+  ],
+  "check": [
+   "4,00"
+  ],
+  "verified": [
+   "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83"
+  ]
+ },
+ {
+  "claim": "Un forfait minimum de 150 euros est souvent appliqué aux petites surfaces.",
+  "valeur": "150 €",
+  "phrase": 69,
+  "sources": [
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/",
+   "https://www.prosnettoyage.fr/nettoyage-terrasse"
+  ],
+  "check": [
+   "150 €"
+  ],
+  "verified": [
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+  ]
+ },
+ {
+  "claim": "Dans plusieurs grandes villes (Bordeaux, Lyon, Lille, Toulouse, Nantes), le nettoyage de terrasse revient à 4 à 4,80 euros le mètre carré.",
+  "valeur": "4 €/m²",
+  "phrase": 70,
+  "sources": [
+   "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83",
+   "https://www.prosnettoyage.fr/nettoyage-terrasse"
+  ],
+  "check": [
+   "4,00"
+  ],
+  "verified": [
+   "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83"
+  ]
+ },
+ {
+  "claim": "Le nettoyeur haute pression professionnel Kärcher HD 5/15 C+ est affiché 864,95 euros TTC.",
+  "valeur": "864,95 €",
+  "phrase": 71,
+  "sources": [
+   "https://www.bricozor.com/15C+.951.html",
+   "https://conseils.hellopro.fr/combien-coute-un-nettoyeur-haute-pression-1759.html"
+  ],
+  "check": [
+   "864,95"
+  ],
+  "verified": [
+   "https://www.bricozor.com/15C+.951.html"
+  ]
+ },
+ {
+  "claim": "Un distributeur automatique neuf coûte à partir de 3 000 euros.",
+  "valeur": "3 000 €",
+  "phrase": 77,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "3000"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ]
+ },
+ {
+  "claim": "En occasion, un distributeur coûte entre 1 500 et 8 000 euros.",
+  "valeur": "1 500 à 8 000 €",
+  "phrase": 78,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "1500"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ]
+ },
+ {
+  "claim": "Un distributeur rapporte en moyenne 500 à 3 000 euros de chiffre d'affaires par mois.",
+  "valeur": "500 à 3 000 €",
+  "phrase": 80,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "500 à 3000"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ },
+ {
+  "claim": "La marge brute des produits d'un distributeur va de 40 à 70 %.",
+  "valeur": "40 à 70 %",
+  "phrase": 81,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "40 à 70%"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ },
+ {
+  "claim": "Un distributeur rapporte en moyenne 500 à 3 000 euros de chiffre d'affaires par mois.",
+  "valeur": "500 à 3 000 €",
+  "phrase": 82,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "500 à 3000"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ },
+ {
+  "claim": "La marge brute des produits d'un distributeur va de 40 à 70 %.",
+  "valeur": "40 à 70 %",
+  "phrase": 83,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "40 à 70%"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ },
+ {
+  "claim": "La marge brute des produits d'un distributeur va de 40 à 70 %.",
+  "valeur": "40 à 70 %",
+  "phrase": 84,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "40 à 70%"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ },
+ {
+  "claim": "Un distributeur rapporte en moyenne 500 à 3 000 euros de chiffre d'affaires par mois.",
+  "valeur": "500 à 3 000 €",
+  "phrase": 85,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "500 à 3000"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ },
+ {
+  "claim": "Le retour sur investissement d'un distributeur se fait en 12 à 36 mois.",
+  "valeur": "12 à 36 mois",
+  "phrase": 86,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "12 à 36 mois"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ },
+ {
+  "claim": "Il faut au moins 40 passages par jour devant un distributeur.",
+  "valeur": "40 passages",
+  "phrase": 87,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "40 passages"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ },
+ {
+  "claim": "Une borne photo et ses accessoires coûtent de 1 500 à 5 000 euros.",
+  "valeur": "1 500 à 5 000 €",
+  "phrase": 93,
+  "sources": [
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/",
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi"
+  ],
+  "check": [
+   "1500"
+  ],
+  "verified": [
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+  "valeur": "350 à 600 €",
+  "phrase": 95,
+  "sources": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "Une formule week-end en libre installation se loue de 299 à 450 euros.",
+  "valeur": "299 à 450 €",
+  "phrase": 96,
+  "sources": [
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/",
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi"
+  ],
+  "check": [
+   "299"
+  ],
+  "verified": [
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+  "valeur": "350 à 600 €",
+  "phrase": 97,
+  "sources": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+  "valeur": "350 à 600 €",
+  "phrase": 98,
+  "sources": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+  "valeur": "350 à 600 €",
+  "phrase": 99,
+  "sources": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "Une borne photo et ses accessoires coûtent de 1 500 à 5 000 euros.",
+  "valeur": "1 500 à 5 000 €",
+  "phrase": 100,
+  "sources": [
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/",
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi"
+  ],
+  "check": [
+   "1500"
+  ],
+  "verified": [
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ }
+]

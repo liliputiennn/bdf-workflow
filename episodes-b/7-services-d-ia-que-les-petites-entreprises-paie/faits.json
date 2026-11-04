@@ -1,0 +1,1104 @@
+[
+ {
+  "claim": "En 2026, 40 % des TPE et PME utilisent une solution d'intelligence artificielle (Baromètre France Num 2026).",
+  "valeur": "40 %",
+  "phrase": 1,
+  "sources": [
+   "https://www.economie.gouv.fr/node/3242215",
+   "https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence"
+  ],
+  "check": [
+   "40%"
+  ],
+  "verified": [
+   "https://www.economie.gouv.fr/node/3242215",
+   "https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence"
+  ]
+ },
+ {
+  "claim": "En 2026, 19 % des TPE et PME utilisent une solution d'intelligence artificielle payante (Baromètre France Num 2026).",
+  "valeur": "19 %",
+  "phrase": 2,
+  "sources": [
+   "https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence",
+   "https://www.blogdumoderateur.com/ia-cyber-budgets-10-chiffres-numerique-tpe-pme-2026/"
+  ],
+  "check": [
+   "19%"
+  ],
+  "verified": [
+   "https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence",
+   "https://www.blogdumoderateur.com/ia-cyber-budgets-10-chiffres-numerique-tpe-pme-2026/"
+  ]
+ },
+ {
+  "claim": "Le tarif moyen d'un community manager freelance varie de 500 € à 1 500 € par mois.",
+  "valeur": "500 à 1 500 €",
+  "phrase": 4,
+  "sources": [
+   "https://copeps.fr/actualites/tarif-community-manager-freelance-par-mois/",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ],
+  "check": [
+   "1500"
+  ],
+  "verified": [
+   "https://copeps.fr/actualites/tarif-community-manager-freelance-par-mois/",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ]
+ },
+ {
+  "claim": "En 2025, 26 % des TPE et PME utilisaient des solutions d'intelligence artificielle (Baromètre France Num 2025).",
+  "valeur": "26 %",
+  "phrase": 8,
+  "sources": [
+   "https://www.entreprises.gouv.fr/espace-presse/france-num-presente-la-6e-edition-de-son-barometre-annuel-sur-la-transformation",
+   "https://www.lemondeinformatique.fr/actualites/lire-plus-de-pme-et-tpe-francaises-adoptent-la-genai-97992.html"
+  ],
+  "check": [
+   "26%"
+  ],
+  "verified": [
+   "https://www.entreprises.gouv.fr/espace-presse/france-num-presente-la-6e-edition-de-son-barometre-annuel-sur-la-transformation",
+   "https://www.lemondeinformatique.fr/actualites/lire-plus-de-pme-et-tpe-francaises-adoptent-la-genai-97992.html"
+  ]
+ },
+ {
+  "claim": "En 2026, 40 % des TPE et PME utilisent une solution d'intelligence artificielle (Baromètre France Num 2026).",
+  "valeur": "40 %",
+  "phrase": 9,
+  "sources": [
+   "https://www.economie.gouv.fr/node/3242215",
+   "https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence"
+  ],
+  "check": [
+   "40%"
+  ],
+  "verified": [
+   "https://www.economie.gouv.fr/node/3242215",
+   "https://www.entreprises.gouv.fr/espace-presse/barometre-france-num-2026-quatre-tpe-pme-sur-dix-utilisent-desormais-lintelligence"
+  ]
+ },
+ {
+  "claim": "En 2025, 26 % des TPE et PME utilisaient des solutions d'intelligence artificielle (Baromètre France Num 2025).",
+  "valeur": "26 %",
+  "phrase": 9,
+  "sources": [
+   "https://www.entreprises.gouv.fr/espace-presse/france-num-presente-la-6e-edition-de-son-barometre-annuel-sur-la-transformation",
+   "https://www.lemondeinformatique.fr/actualites/lire-plus-de-pme-et-tpe-francaises-adoptent-la-genai-97992.html"
+  ],
+  "check": [
+   "26%"
+  ],
+  "verified": [
+   "https://www.entreprises.gouv.fr/espace-presse/france-num-presente-la-6e-edition-de-son-barometre-annuel-sur-la-transformation",
+   "https://www.lemondeinformatique.fr/actualites/lire-plus-de-pme-et-tpe-francaises-adoptent-la-genai-97992.html"
+  ]
+ },
+ {
+  "claim": "Un pack d'agence compte 2 réseaux et 8 posts par mois, modération comprise, pour environ 900 € par mois.",
+  "valeur": "8 posts",
+  "phrase": 13,
+  "sources": [
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/",
+   "https://swello.com/fr/blog/?p=16998"
+  ],
+  "check": [
+   "8 posts"
+  ],
+  "verified": [
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/",
+   "https://swello.com/fr/blog/?p=16998"
+  ]
+ },
+ {
+  "claim": "Une agence facture environ 900 € par mois pour gérer 2 réseaux sociaux.",
+  "valeur": "900 €",
+  "phrase": 14,
+  "sources": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ],
+  "check": [
+   "900"
+  ],
+  "verified": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ]
+ },
+ {
+  "claim": "Un community manager débutant coûte de 300 à 800 € HT par mois.",
+  "valeur": "300 à 800 €",
+  "phrase": 15,
+  "sources": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.plateya.fr/blog/detail/tarif-community-manager-freelance-grille-2026-tjm-forfaits-plateya"
+  ],
+  "check": [
+   "300 a 800"
+  ],
+  "verified": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.plateya.fr/blog/detail/tarif-community-manager-freelance-grille-2026-tjm-forfaits-plateya"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 450 € par mois, soit la moitié des 900 € demandés par une agence pour 2 réseaux.",
+  "valeur": "450 €",
+  "phrase": 16,
+  "sources": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ],
+  "check": [
+   "900"
+  ],
+  "verified": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ]
+ },
+ {
+  "claim": "Claude Pro coûte 20 $ par mois.",
+  "valeur": "20 $",
+  "phrase": 17,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Buffer, formule Essentials : 5 $ par mois et par réseau.",
+  "valeur": "5 $",
+  "phrase": 18,
+  "sources": [
+   "https://buffer.com/pricing",
+   "https://www.socialpilot.co/blog/buffer-pricing"
+  ],
+  "check": [
+   "$5"
+  ],
+  "verified": [
+   "https://buffer.com/pricing",
+   "https://www.socialpilot.co/blog/buffer-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 450 € facturés moins 30 € d'outils (Claude 20 $ et 2 réseaux Buffer à 5 $) = 420 € pour 8 heures de travail.",
+  "valeur": "420 €",
+  "phrase": 20,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 450 € facturés moins 30 € d'outils (Claude 20 $ et 2 réseaux Buffer à 5 $) = 420 € pour 8 heures de travail.",
+  "valeur": "420 €",
+  "phrase": 21,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 450 € par mois, soit la moitié des 900 € demandés par une agence pour 2 réseaux.",
+  "valeur": "450 €",
+  "phrase": 25,
+  "sources": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ],
+  "check": [
+   "900"
+  ],
+  "verified": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ]
+ },
+ {
+  "claim": "Sur ComeUp, un pack de 10 fiches produits se vend 100 €, soit 10 € la fiche.",
+  "valeur": "10 € la fiche",
+  "phrase": 30,
+  "sources": [
+   "https://comeup.com/fr/service/524677/rediger-10-fiches-produits-pour-boutique-en-ligne",
+   "https://www.codeur.com/projects/441026-redaction-fiches-produits-seo-site-e-commerce"
+  ],
+  "check": [
+   "10€ la fiche"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/524677/rediger-10-fiches-produits-pour-boutique-en-ligne"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 12 € la fiche, au-dessus des 10 € constatés.",
+  "valeur": "12 €",
+  "phrase": 31,
+  "sources": [
+   "https://comeup.com/fr/service/524677/rediger-10-fiches-produits-pour-boutique-en-ligne",
+   "https://www.codeur.com/projects/441026-redaction-fiches-produits-seo-site-e-commerce"
+  ],
+  "check": [
+   "10€ la fiche"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/524677/rediger-10-fiches-produits-pour-boutique-en-ligne"
+  ]
+ },
+ {
+  "claim": "Claude Pro coûte 20 $ par mois.",
+  "valeur": "20 $",
+  "phrase": 32,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 40 fiches à 12 € = 480 € ; moins 20 $ d'outil = 460 € ; 12 minutes par fiche x 40 = 8 heures.",
+  "valeur": "460 €",
+  "phrase": 35,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 12 € la fiche, au-dessus des 10 € constatés.",
+  "valeur": "12 €",
+  "phrase": 35,
+  "sources": [
+   "https://comeup.com/fr/service/524677/rediger-10-fiches-produits-pour-boutique-en-ligne",
+   "https://www.codeur.com/projects/441026-redaction-fiches-produits-seo-site-e-commerce"
+  ],
+  "check": [
+   "10€ la fiche"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/524677/rediger-10-fiches-produits-pour-boutique-en-ligne"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 40 fiches à 12 € = 480 € ; moins 20 $ d'outil = 460 € ; 12 minutes par fiche x 40 = 8 heures.",
+  "valeur": "460 €",
+  "phrase": 36,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 40 fiches à 12 € = 480 € ; moins 20 $ d'outil = 460 € ; 12 minutes par fiche x 40 = 8 heures.",
+  "valeur": "460 €",
+  "phrase": 37,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Sur ComeUp, un chatbot de questions fréquentes de base se vend 100 €.",
+  "valeur": "100 €",
+  "phrase": 45,
+  "sources": [
+   "https://comeup.com/fr/service/417057/create-an-ai-chatbot-for-your-agency-or-business",
+   "https://www.codeur.com/projects/442257-chatbot"
+  ],
+  "check": [
+   "chatbot",
+   "100"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/417057/create-an-ai-chatbot-for-your-agency-or-business",
+   "https://www.codeur.com/projects/442257-chatbot"
+  ]
+ },
+ {
+  "claim": "Sur Codeur, le montant moyen des devis proposés pour un chatbot est de 1 300 €.",
+  "valeur": "1 300 €",
+  "phrase": 46,
+  "sources": [
+   "https://www.codeur.com/projects/442257-chatbot",
+   "https://www.flowhunt.io/fr/faq/how-much-is-chatbot-ai/"
+  ],
+  "check": [
+   "1300"
+  ],
+  "verified": [
+   "https://www.codeur.com/projects/442257-chatbot"
+  ]
+ },
+ {
+  "claim": "Les solutions de chatbot pour petites entreprises coûtent de 100 à 500 $ par mois.",
+  "valeur": "100 à 500 $",
+  "phrase": 47,
+  "sources": [
+   "https://www.flowhunt.io/fr/faq/how-much-is-chatbot-ai/",
+   "https://kolonell.com/fr/blog/prix-chatbot-ia-service-client-pme-2026"
+  ],
+  "check": [
+   "100 a 500"
+  ],
+  "verified": [
+   "https://www.flowhunt.io/fr/faq/how-much-is-chatbot-ai/"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 300 € de mise en place puis 150 € par mois de suivi, soit 450 € le premier mois.",
+  "valeur": "450 €",
+  "phrase": 48,
+  "sources": [
+   "https://www.codeur.com/projects/442257-chatbot",
+   "https://comeup.com/fr/service/417057/create-an-ai-chatbot-for-your-agency-or-business"
+  ],
+  "check": [
+   "chatbot"
+  ],
+  "verified": [
+   "https://www.codeur.com/projects/442257-chatbot",
+   "https://comeup.com/fr/service/417057/create-an-ai-chatbot-for-your-agency-or-business"
+  ]
+ },
+ {
+  "claim": "Chatbase, formule Hobby : 40 $ par mois.",
+  "valeur": "40 $",
+  "phrase": 49,
+  "sources": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ],
+  "check": [
+   "$40"
+  ],
+  "verified": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 450 € moins 40 $ d'outil = 410 € pour 8 heures ; les mois suivants 150 € moins 40 $ = 110 € pour 1 heure.",
+  "valeur": "410 €",
+  "phrase": 51,
+  "sources": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ],
+  "check": [
+   "$40"
+  ],
+  "verified": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 300 € de mise en place puis 150 € par mois de suivi, soit 450 € le premier mois.",
+  "valeur": "450 €",
+  "phrase": 51,
+  "sources": [
+   "https://www.codeur.com/projects/442257-chatbot",
+   "https://comeup.com/fr/service/417057/create-an-ai-chatbot-for-your-agency-or-business"
+  ],
+  "check": [
+   "chatbot"
+  ],
+  "verified": [
+   "https://www.codeur.com/projects/442257-chatbot",
+   "https://comeup.com/fr/service/417057/create-an-ai-chatbot-for-your-agency-or-business"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 450 € moins 40 $ d'outil = 410 € pour 8 heures ; les mois suivants 150 € moins 40 $ = 110 € pour 1 heure.",
+  "valeur": "410 €",
+  "phrase": 52,
+  "sources": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ],
+  "check": [
+   "$40"
+  ],
+  "verified": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 450 € moins 40 $ d'outil = 410 € pour 8 heures ; les mois suivants 150 € moins 40 $ = 110 € pour 1 heure.",
+  "valeur": "410 €",
+  "phrase": 53,
+  "sources": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ],
+  "check": [
+   "$40"
+  ],
+  "verified": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ]
+ },
+ {
+  "claim": "Sur Malt, un sous-titreur affiche un tarif à partir de 15 € pour 10 minutes de vidéo.",
+  "valeur": "15 € les 10 minutes",
+  "phrase": 61,
+  "sources": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://copeps.fr/actualites/sous-titreur-freelance/"
+  ],
+  "check": [
+   "15 €",
+   "10 minutes"
+  ],
+  "verified": [
+   "https://www.malt.fr/profile/eddypinto"
+  ]
+ },
+ {
+  "claim": "Sur ComeUp, le sous-titrage d'une vidéo de moins de 3 minutes se vend 15 €.",
+  "valeur": "15 €",
+  "phrase": 62,
+  "sources": [
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos",
+   "https://copeps.fr/actualites/sous-titreur-freelance/"
+  ],
+  "check": [
+   "15€"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ]
+ },
+ {
+  "claim": "Cela fait de 1,50 € (15 € pour 10 minutes) à 5 € (15 € pour 3 minutes) la minute de vidéo.",
+  "valeur": "1,50 à 5 €",
+  "phrase": 63,
+  "sources": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ],
+  "check": [
+   "15"
+  ],
+  "verified": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 4 € la minute, entre les 1,50 € et les 5 € constatés.",
+  "valeur": "4 €",
+  "phrase": 64,
+  "sources": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ],
+  "check": [
+   "15"
+  ],
+  "verified": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ]
+ },
+ {
+  "claim": "Submagic, formule Pro : 39 $ par mois, 40 vidéos par mois de 5 minutes au plus.",
+  "valeur": "39 $",
+  "phrase": 65,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39",
+   "40 videos"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ },
+ {
+  "claim": "Submagic, formule Pro : 39 $ par mois, 40 vidéos par mois de 5 minutes au plus.",
+  "valeur": "39 $",
+  "phrase": 66,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39",
+   "40 videos"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 120 minutes x 4 € = 480 € ; moins 39 $ = 441 € ; en 7 heures soit 63 € de l'heure ; 504 € pour 8 heures.",
+  "valeur": "441 €",
+  "phrase": 67,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 120 minutes x 4 € = 480 € ; moins 39 $ = 441 € ; en 7 heures soit 63 € de l'heure ; 504 € pour 8 heures.",
+  "valeur": "441 €",
+  "phrase": 68,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 4 € la minute, entre les 1,50 € et les 5 € constatés.",
+  "valeur": "4 €",
+  "phrase": 68,
+  "sources": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ],
+  "check": [
+   "15"
+  ],
+  "verified": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 120 minutes x 4 € = 480 € ; moins 39 $ = 441 € ; en 7 heures soit 63 € de l'heure ; 504 € pour 8 heures.",
+  "valeur": "441 €",
+  "phrase": 69,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 120 minutes x 4 € = 480 € ; moins 39 $ = 441 € ; en 7 heures soit 63 € de l'heure ; 504 € pour 8 heures.",
+  "valeur": "441 €",
+  "phrase": 70,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 120 minutes x 4 € = 480 € ; moins 39 $ = 441 € ; en 7 heures soit 63 € de l'heure ; 504 € pour 8 heures.",
+  "valeur": "441 €",
+  "phrase": 71,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ },
+ {
+  "claim": "Sur ComeUp, un compte rendu de réunion se vend 20 € en service de base.",
+  "valeur": "20 €",
+  "phrase": 78,
+  "sources": [
+   "https://comeup.com/fr/service/537523/rediger-un-compte-rendu-professionnel-de-votre-reunion",
+   "https://copeps.fr/actualites/transcription-audio-freelance-francais/"
+  ],
+  "check": [
+   "20,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/537523/rediger-un-compte-rendu-professionnel-de-votre-reunion"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 25 € par réunion, au-dessus des 20 € de base constatés.",
+  "valeur": "25 €",
+  "phrase": 79,
+  "sources": [
+   "https://comeup.com/fr/service/537523/rediger-un-compte-rendu-professionnel-de-votre-reunion",
+   "https://copeps.fr/actualites/transcription-audio-freelance-francais/"
+  ],
+  "check": [
+   "20,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/537523/rediger-un-compte-rendu-professionnel-de-votre-reunion"
+  ]
+ },
+ {
+  "claim": "Fireflies, formule Pro : 18 $ par mois et par siège en facturation mensuelle.",
+  "valeur": "18 $",
+  "phrase": 80,
+  "sources": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ],
+  "check": [
+   "$18"
+  ],
+  "verified": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 20 réunions x 25 € = 500 € ; moins 18 $ = 482 € ; 20 x 24 minutes = 8 heures.",
+  "valeur": "482 €",
+  "phrase": 83,
+  "sources": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ],
+  "check": [
+   "$18"
+  ],
+  "verified": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 25 € par réunion, au-dessus des 20 € de base constatés.",
+  "valeur": "25 €",
+  "phrase": 83,
+  "sources": [
+   "https://comeup.com/fr/service/537523/rediger-un-compte-rendu-professionnel-de-votre-reunion",
+   "https://copeps.fr/actualites/transcription-audio-freelance-francais/"
+  ],
+  "check": [
+   "20,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/537523/rediger-un-compte-rendu-professionnel-de-votre-reunion"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 20 réunions x 25 € = 500 € ; moins 18 $ = 482 € ; 20 x 24 minutes = 8 heures.",
+  "valeur": "482 €",
+  "phrase": 84,
+  "sources": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ],
+  "check": [
+   "$18"
+  ],
+  "verified": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 20 réunions x 25 € = 500 € ; moins 18 $ = 482 € ; 20 x 24 minutes = 8 heures.",
+  "valeur": "482 €",
+  "phrase": 85,
+  "sources": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ],
+  "check": [
+   "$18"
+  ],
+  "verified": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 20 réunions x 25 € = 500 € ; moins 18 $ = 482 € ; 20 x 24 minutes = 8 heures.",
+  "valeur": "482 €",
+  "phrase": 86,
+  "sources": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ],
+  "check": [
+   "$18"
+  ],
+  "verified": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ]
+ },
+ {
+  "claim": "Sur ComeUp, une veille mensuelle sur 5 concurrents se vend 240 €.",
+  "valeur": "240 €",
+  "phrase": 94,
+  "sources": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques",
+   "https://www.lafabriquedunet.fr/tarifs-des-freelances-web-developpeurs-graphistes-et-webmarketing/"
+  ],
+  "check": [
+   "240"
+  ],
+  "verified": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques"
+  ]
+ },
+ {
+  "claim": "Sur ComeUp, une analyse de positionnement stratégique se vend 350 €.",
+  "valeur": "350 €",
+  "phrase": 95,
+  "sources": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques",
+   "https://www.lafabriquedunet.fr/tarifs-des-freelances-web-developpeurs-graphistes-et-webmarketing/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 350 € par mois pour 5 concurrents avec une alerte chaque semaine.",
+  "valeur": "350 €",
+  "phrase": 96,
+  "sources": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques",
+   "https://www.lafabriquedunet.fr/tarifs-des-freelances-web-developpeurs-graphistes-et-webmarketing/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques"
+  ]
+ },
+ {
+  "claim": "Visualping, formule Personal : 14 $ par mois en facturation mensuelle.",
+  "valeur": "14 $",
+  "phrase": 97,
+  "sources": [
+   "https://visualping.io/pricing",
+   "https://pagecrawl.io/blog/visualping-vs-pagecrawl"
+  ],
+  "check": [
+   "$14"
+  ],
+  "verified": [
+   "https://visualping.io/pricing",
+   "https://pagecrawl.io/blog/visualping-vs-pagecrawl"
+  ]
+ },
+ {
+  "claim": "Visualping propose une version gratuite pour 5 pages.",
+  "valeur": "5 pages",
+  "phrase": 98,
+  "sources": [
+   "https://visualping.io/pricing",
+   "https://pagecrawl.io/blog/visualping-vs-pagecrawl"
+  ],
+  "check": [
+   "$0/mo"
+  ],
+  "verified": [
+   "https://visualping.io/pricing"
+  ]
+ },
+ {
+  "claim": "Claude Pro coûte 20 $ par mois.",
+  "valeur": "20 $",
+  "phrase": 99,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 350 € moins (14 $ + 20 $) = 316 € pour 8 heures.",
+  "valeur": "316 €",
+  "phrase": 100,
+  "sources": [
+   "https://visualping.io/pricing",
+   "https://claude.com/pricing"
+  ],
+  "check": [
+   "$14"
+  ],
+  "verified": [
+   "https://visualping.io/pricing"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 350 € par mois pour 5 concurrents avec une alerte chaque semaine.",
+  "valeur": "350 €",
+  "phrase": 100,
+  "sources": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques",
+   "https://www.lafabriquedunet.fr/tarifs-des-freelances-web-developpeurs-graphistes-et-webmarketing/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 350 € moins (14 $ + 20 $) = 316 € pour 8 heures.",
+  "valeur": "316 €",
+  "phrase": 101,
+  "sources": [
+   "https://visualping.io/pricing",
+   "https://claude.com/pricing"
+  ],
+  "check": [
+   "$14"
+  ],
+  "verified": [
+   "https://visualping.io/pricing"
+  ]
+ },
+ {
+  "claim": "Sur ComeUp, une secrétaire IA qui prend les rendez-vous se vend 1 290 €.",
+  "valeur": "1 290 €",
+  "phrase": 110,
+  "sources": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24",
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/"
+  ],
+  "check": [
+   "1290,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ]
+ },
+ {
+  "claim": "Le réceptionniste IA sans code de CloudTalk coûte 99 € par mois.",
+  "valeur": "99 €",
+  "phrase": 111,
+  "sources": [
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/",
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ],
+  "check": [
+   "99"
+  ],
+  "verified": [
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/",
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ]
+ },
+ {
+  "claim": "La plupart des petites entreprises paient entre 50 € et 200 € par mois un secrétariat téléphonique IA.",
+  "valeur": "50 à 200 €",
+  "phrase": 112,
+  "sources": [
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/",
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ],
+  "check": [
+   "€50",
+   "€200"
+  ],
+  "verified": [
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 490 € de mise en place, contre 1 290 € chez le vendeur ComeUp cité.",
+  "valeur": "490 €",
+  "phrase": 113,
+  "sources": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24",
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/"
+  ],
+  "check": [
+   "1290,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ]
+ },
+ {
+  "claim": "Le réceptionniste IA sans code de CloudTalk coûte 99 € par mois.",
+  "valeur": "99 €",
+  "phrase": 114,
+  "sources": [
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/",
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ],
+  "check": [
+   "99"
+  ],
+  "verified": [
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/",
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 490 € facturés ; l'abonnement de 99 € par mois est payé par le client ; 8 heures de mise en place.",
+  "valeur": "490 €",
+  "phrase": 116,
+  "sources": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24",
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/"
+  ],
+  "check": [
+   "1290,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 490 € facturés ; l'abonnement de 99 € par mois est payé par le client ; 8 heures de mise en place.",
+  "valeur": "490 €",
+  "phrase": 117,
+  "sources": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24",
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/"
+  ],
+  "check": [
+   "1290,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 350 € par mois pour 5 concurrents avec une alerte chaque semaine.",
+  "valeur": "350 €",
+  "phrase": 128,
+  "sources": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques",
+   "https://www.lafabriquedunet.fr/tarifs-des-freelances-web-developpeurs-graphistes-et-webmarketing/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 20 réunions x 25 € = 500 € ; moins 18 $ = 482 € ; 20 x 24 minutes = 8 heures.",
+  "valeur": "482 €",
+  "phrase": 128,
+  "sources": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ],
+  "check": [
+   "$18"
+  ],
+  "verified": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 450 € par mois, soit la moitié des 900 € demandés par une agence pour 2 réseaux.",
+  "valeur": "450 €",
+  "phrase": 128,
+  "sources": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ],
+  "check": [
+   "900"
+  ],
+  "verified": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ]
+ }
+]

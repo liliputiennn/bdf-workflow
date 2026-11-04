@@ -1,0 +1,1022 @@
+[
+ {
+  "claim": "Selon un rapport de tendances de menus, « chinois » comme motivation de cuisine a progressé de 77,8 % en un an en France.",
+  "valeur": "77,8 %",
+  "phrase": 1,
+  "sources": [
+   "https://tastewise.io/blog/menu-trends-in-france",
+   "https://www.verdictfoodservice.com/data-insights/chinese-cuisine-price-trends-france/"
+  ],
+  "check": [
+   "77.8"
+  ],
+  "verified": [
+   "https://tastewise.io/blog/menu-trends-in-france"
+  ]
+ },
+ {
+  "claim": "Une machine professionnelle livrée avec trois moules taiyaki coûte 274,99 euros, soit moins de 300 euros.",
+  "valeur": "274,99 €",
+  "phrase": 5,
+  "sources": [
+   "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph",
+   "https://japan-avenue.com/products/taiyaki-pan"
+  ],
+  "check": [
+   "274,99"
+  ],
+  "verified": [
+   "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph"
+  ]
+ },
+ {
+  "claim": "Un taiyaki à 5,50 euros dans un stand parisien contre 180 yens (1,3 euro) au Japon : environ quatre fois plus.",
+  "valeur": "5,50 € contre 1,30 €",
+  "phrase": 6,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "5.5"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+  ]
+ },
+ {
+  "claim": "Un taiyaki se vendait 5,50 euros chez Road Trip Paris (stand fermé depuis).",
+  "valeur": "5,50 €",
+  "phrase": 10,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "5.5",
+   "taiyaki"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+  ]
+ },
+ {
+  "claim": "À Naniwaya, le taiyaki à emporter se vend 180 yens la pièce (1,3 euro).",
+  "valeur": "180 yens",
+  "phrase": 11,
+  "sources": [
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/",
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+  ],
+  "check": [
+   "180"
+  ],
+  "verified": [
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ]
+ },
+ {
+  "claim": "5,50 euros à Paris contre 1,30 euro au Japon : environ quatre fois plus.",
+  "valeur": "×4",
+  "phrase": 12,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "5.5"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+  ]
+ },
+ {
+  "claim": "Machine professionnelle 1,6 kW livrée avec 3 moules taiyaki : 274,99 euros.",
+  "valeur": "274,99 €",
+  "phrase": 13,
+  "sources": [
+   "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph",
+   "https://japan-avenue.com/products/taiyaki-pan"
+  ],
+  "check": [
+   "274,99",
+   "taiyaki"
+  ],
+  "verified": [
+   "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph"
+  ]
+ },
+ {
+  "claim": "Préparation de haricots azuki sucrés Imuraya, 1 kg : 14,80 euros.",
+  "valeur": "14,80 €/kg",
+  "phrase": 14,
+  "sources": [
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "14,80"
+  ],
+  "verified": [
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees"
+  ]
+ },
+ {
+  "claim": "35 g de garniture à 14,80 euros le kilo = 0,52 euro.",
+  "valeur": "0,52 €",
+  "phrase": 15,
+  "sources": [
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "14,80"
+  ],
+  "verified": [
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees"
+  ]
+ },
+ {
+  "claim": "Hypothèse de revient : 0,52 euro de garniture + pâte = environ 0,70 euro.",
+  "valeur": "0,70 €",
+  "phrase": 16,
+  "sources": [
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "14,80"
+  ],
+  "verified": [
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees"
+  ]
+ },
+ {
+  "claim": "Vendu 5 euros (prix constaté à Paris : 5,50 euros), il reste 4,30 euros.",
+  "valeur": "4,30 €",
+  "phrase": 17,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "5.5"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+  ]
+ },
+ {
+  "claim": "40 poissons × 4,30 euros de reste = 172 euros par jour (hypothèse de 40 ventes).",
+  "valeur": "172 €",
+  "phrase": 18,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees"
+  ],
+  "check": [
+   "5.5"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+  ]
+ },
+ {
+  "claim": "Le marché mondial des jouets en capsules a doublé depuis 2020 et représente 2 milliards d'euros.",
+  "valeur": "2 milliards €",
+  "phrase": 23,
+  "sources": [
+   "https://www.cbnews.fr/node/99992",
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+  ],
+  "check": [
+   "2 milliards"
+  ],
+  "verified": [
+   "https://www.cbnews.fr/node/99992"
+  ]
+ },
+ {
+  "claim": "Une boutique de 300 machines à capsules japonaises ouvre à Paris.",
+  "valeur": "300 machines",
+  "phrase": 24,
+  "sources": [
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris",
+   "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+  ],
+  "check": [
+   "300"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris",
+   "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+  ]
+ },
+ {
+  "claim": "Chaque capsule se vend 5 à 6 euros dans la boutique parisienne.",
+  "valeur": "5 à 6 €",
+  "phrase": 25,
+  "sources": [
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris",
+   "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+  ],
+  "check": [
+   "€5",
+   "€6"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+  ]
+ },
+ {
+  "claim": "Le chiffre d'affaires attendu de la boutique gashapon de Paris est de 1,5 million d'euros par an.",
+  "valeur": "1,5 million €",
+  "phrase": 26,
+  "sources": [
+   "https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet",
+   "https://www.cbnews.fr/node/99992"
+  ],
+  "check": [
+   "1,5 million"
+  ],
+  "verified": [
+   "https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet",
+   "https://www.cbnews.fr/node/99992"
+  ]
+ },
+ {
+  "claim": "1,5 million d'euros ÷ 300 machines ÷ 365 jours ≈ 13,70 euros par machine et par jour.",
+  "valeur": "13,70 €",
+  "phrase": 27,
+  "sources": [
+   "https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet",
+   "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+  ],
+  "check": [
+   "1,5 million"
+  ],
+  "verified": [
+   "https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet"
+  ]
+ },
+ {
+  "claim": "Distributeur de capsules vendu avec partie haute et basse : 360 euros.",
+  "valeur": "360 €",
+  "phrase": 28,
+  "sources": [
+   "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html",
+   "https://french.alibaba.com/f/distributeur-capsule.html"
+  ],
+  "check": [
+   "360"
+  ],
+  "verified": [
+   "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html",
+   "https://french.alibaba.com/f/distributeur-capsule.html"
+  ]
+ },
+ {
+  "claim": "Selon les acteurs du secteur en France, les machines gashapon peuvent espérer une marge nette supérieure à 60 %.",
+  "valeur": "60 %",
+  "phrase": 29,
+  "sources": [
+   "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/",
+   "https://www.cbnews.fr/node/99992"
+  ],
+  "check": [
+   "60%"
+  ],
+  "verified": [
+   "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/"
+  ]
+ },
+ {
+  "claim": "10 capsules à 5 euros = 50 euros de ventes par jour (hypothèse de 10 ventes).",
+  "valeur": "50 €",
+  "phrase": 30,
+  "sources": [
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris",
+   "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+  ],
+  "check": [
+   "€5"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+  ]
+ },
+ {
+  "claim": "60 % de 50 euros = 30 euros par jour.",
+  "valeur": "30 €",
+  "phrase": 31,
+  "sources": [
+   "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/",
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+  ],
+  "check": [
+   "60%"
+  ],
+  "verified": [
+   "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/",
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+  ]
+ },
+ {
+  "claim": "360 euros ÷ 30 euros par jour = 12 jours.",
+  "valeur": "12 jours",
+  "phrase": 32,
+  "sources": [
+   "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html",
+   "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/"
+  ],
+  "check": [
+   "360"
+  ],
+  "verified": [
+   "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html"
+  ]
+ },
+ {
+  "claim": "En Europe, ces onigiri ne sont vendus qu'à Paris (L'Express Franchise).",
+  "valeur": "Paris seulement",
+  "phrase": 38,
+  "sources": [
+   "https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/",
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+  ],
+  "check": [
+   "onigiri",
+   "Paris"
+  ],
+  "verified": [
+   "https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/",
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+  ]
+ },
+ {
+  "claim": "Hausse de 30 % du chiffre d'affaires d'Omusubi Gonbei entre les exercices clos en mars 2023 et mars 2025.",
+  "valeur": "30 %",
+  "phrase": 39,
+  "sources": [
+   "https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/",
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+  ],
+  "check": [
+   "30%"
+  ],
+  "verified": [
+   "https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/"
+  ]
+ },
+ {
+  "claim": "Chez Omusubi Gonbei, les omusubi vont du plus simple (1,10 euro) au plus garni (4,30 euros).",
+  "valeur": "1,10 à 4,30 €",
+  "phrase": 40,
+  "sources": [
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html",
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226"
+  ],
+  "check": [
+   "1,10",
+   "4,30"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+  ]
+ },
+ {
+  "claim": "Un comptoir à onigiri de Paris propose le poulet mayo à 2,80 euros et le saumon à 3,10 euros.",
+  "valeur": "2,80 € et 3,10 €",
+  "phrase": 41,
+  "sources": [
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226",
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+  ],
+  "check": [
+   "2,80",
+   "3,10"
+  ],
+  "verified": [
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226"
+  ]
+ },
+ {
+  "claim": "Riz à sushi Okura Minori, 5 kg : 27,20 euros, soit 5,44 euros le kilo.",
+  "valeur": "5,44 €/kg",
+  "phrase": 42,
+  "sources": [
+   "https://kioko.fr/en/products/okura-riz-sushi-minori-l",
+   "https://shop.kioko.fr/en/products/okura-riz-sushi-minori-l"
+  ],
+  "check": [
+   "5,44"
+  ],
+  "verified": [
+   "https://kioko.fr/en/products/okura-riz-sushi-minori-l",
+   "https://shop.kioko.fr/en/products/okura-riz-sushi-minori-l"
+  ]
+ },
+ {
+  "claim": "50 g de riz × 5,44 euros le kilo ≈ 0,27 euro.",
+  "valeur": "0,27 €",
+  "phrase": 43,
+  "sources": [
+   "https://kioko.fr/en/products/okura-riz-sushi-minori-l",
+   "https://shop.kioko.fr/en/products/okura-riz-sushi-minori-l"
+  ],
+  "check": [
+   "5,44"
+  ],
+  "verified": [
+   "https://kioko.fr/en/products/okura-riz-sushi-minori-l",
+   "https://shop.kioko.fr/en/products/okura-riz-sushi-minori-l"
+  ]
+ },
+ {
+  "claim": "Vendu 3 euros (prix constatés de 2,80 à 3,10 euros), avec 1 euro de revient : 2 euros restent.",
+  "valeur": "2 €",
+  "phrase": 45,
+  "sources": [
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226",
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+  ],
+  "check": [
+   "2,80",
+   "3,10"
+  ],
+  "verified": [
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226"
+  ]
+ },
+ {
+  "claim": "40 onigiri × 2 euros de reste = 80 euros par jour (hypothèse de 40 ventes).",
+  "valeur": "80 €",
+  "phrase": 46,
+  "sources": [
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226",
+   "https://kioko.fr/en/products/okura-riz-sushi-minori-l"
+  ],
+  "check": [
+   "2,80",
+   "3,10"
+  ],
+  "verified": [
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226"
+  ]
+ },
+ {
+  "claim": "Le Japon produisait 1 471 tonnes de matcha en 2010 contre 4 176 tonnes en 2023.",
+  "valeur": "1 471 tonnes",
+  "phrase": 52,
+  "sources": [
+   "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738",
+   "https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/"
+  ],
+  "check": [
+   "1471"
+  ],
+  "verified": [
+   "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738"
+  ]
+ },
+ {
+  "claim": "Le Japon produisait 4 176 tonnes de matcha en 2023.",
+  "valeur": "4 176 tonnes",
+  "phrase": 53,
+  "sources": [
+   "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738",
+   "https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/"
+  ],
+  "check": [
+   "4176"
+  ],
+  "verified": [
+   "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738"
+  ]
+ },
+ {
+  "claim": "Les exportations de matcha ont bondi de 33 % en 2023 par rapport à l'année précédente.",
+  "valeur": "33 %",
+  "phrase": 54,
+  "sources": [
+   "https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/",
+   "https://lessentieldeleco.fr/2912-matcha-japonais/"
+  ],
+  "check": [
+   "33%"
+  ],
+  "verified": [
+   "https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/"
+  ]
+ },
+ {
+  "claim": "Au Aki Café à Paris, le matcha azuki (latte matcha, azuki, chantilly) est affiché 6,90 euros.",
+  "valeur": "6,90 €",
+  "phrase": 55,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris",
+   "https://www.timeout.com/paris/en/restaurants/umami-matcha-cafe"
+  ],
+  "check": [
+   "6.9"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris"
+  ]
+ },
+ {
+  "claim": "Matcha wholesale 1 kg pour cafés et foodservice : 149,95 euros.",
+  "valeur": "149,95 €",
+  "phrase": 56,
+  "sources": [
+   "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder",
+   "https://ileauxepices.com/pro/thes-verts/649-the-matcha-bio.html"
+  ],
+  "check": [
+   "149,95"
+  ],
+  "verified": [
+   "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder"
+  ]
+ },
+ {
+  "claim": "2 g de poudre × 149,95 euros le kilo ≈ 0,30 euro.",
+  "valeur": "0,30 €",
+  "phrase": 57,
+  "sources": [
+   "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder",
+   "https://ileauxepices.com/pro/thes-verts/649-the-matcha-bio.html"
+  ],
+  "check": [
+   "149,95"
+  ],
+  "verified": [
+   "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder"
+  ]
+ },
+ {
+  "claim": "Vendu 6,90 euros avec 1 euro de revient : 5,90 euros restent.",
+  "valeur": "5,90 €",
+  "phrase": 59,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris",
+   "https://www.timeout.com/paris/en/restaurants/umami-matcha-cafe"
+  ],
+  "check": [
+   "6.9"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris"
+  ]
+ },
+ {
+  "claim": "30 lattes × 5,90 euros = 177 euros par jour (hypothèse de 30 ventes).",
+  "valeur": "177 €",
+  "phrase": 60,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris",
+   "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder"
+  ],
+  "check": [
+   "6.9"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris"
+  ]
+ },
+ {
+  "claim": "Le producteur Ippodo a limité les commandes à un seul produit par commande en décembre 2024.",
+  "valeur": "Rationnement",
+  "phrase": 63,
+  "sources": [
+   "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738",
+   "https://lessentieldeleco.fr/2912-matcha-japonais/"
+  ],
+  "check": [
+   "Ippodo"
+  ],
+  "verified": [
+   "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738"
+  ]
+ },
+ {
+  "claim": "Le marché du bubble tea en France est estimé entre 85 et 100 millions d'euros (données 2025).",
+  "valeur": "85 à 100 millions €",
+  "phrase": 66,
+  "sources": [
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/",
+   "https://propulsebyca.fr/idees-business/bubble-tea"
+  ],
+  "check": [
+   "85 et 100"
+  ],
+  "verified": [
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+  ]
+ },
+ {
+  "claim": "Bubbolitas (Paris) : petit 3,80 euros, moyen 4,80 euros, grand 5,50 euros.",
+  "valeur": "3,80 / 4,80 / 5,50 €",
+  "phrase": 67,
+  "sources": [
+   "https://www.timeout.fr/paris/restaurants/bubbolitas",
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+  ],
+  "check": [
+   "3,80",
+   "4,80",
+   "5,50"
+  ],
+  "verified": [
+   "https://www.timeout.fr/paris/restaurants/bubbolitas"
+  ]
+ },
+ {
+  "claim": "Les boutiques peuvent afficher des marges brutes comprises entre 65 % et 83 %.",
+  "valeur": "65 à 83 %",
+  "phrase": 68,
+  "sources": [
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/",
+   "https://propulsebyca.fr/idees-business/bubble-tea"
+  ],
+  "check": [
+   "65%",
+   "83%"
+  ],
+  "verified": [
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+  ]
+ },
+ {
+  "claim": "Moyenne des tarifs d'une machine à bubble tea professionnelle : 700 à 5 000 euros (novembre 2026).",
+  "valeur": "700 à 5 000 €",
+  "phrase": 69,
+  "sources": [
+   "https://conseils.hellopro.fr/combien-coute-une-machine-a-bubble-tea-professionnelle-3738.html",
+   "https://propulsebyca.fr/idees-business/bubble-tea"
+  ],
+  "check": [
+   "700",
+   "5000"
+  ],
+  "verified": [
+   "https://conseils.hellopro.fr/combien-coute-une-machine-a-bubble-tea-professionnelle-3738.html",
+   "https://propulsebyca.fr/idees-business/bubble-tea"
+  ]
+ },
+ {
+  "claim": "Un bubble tea moyen se vend 4,80 euros à Paris.",
+  "valeur": "4,80 €",
+  "phrase": 70,
+  "sources": [
+   "https://www.timeout.fr/paris/restaurants/bubbolitas",
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+  ],
+  "check": [
+   "4,80"
+  ],
+  "verified": [
+   "https://www.timeout.fr/paris/restaurants/bubbolitas"
+  ]
+ },
+ {
+  "claim": "Marge moyenne d'environ 70 % : 4,80 × 0,70 = 3,36 euros par verre.",
+  "valeur": "3,36 €",
+  "phrase": 71,
+  "sources": [
+   "https://propulsebyca.fr/idees-business/bubble-tea",
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+  ],
+  "check": [
+   "70%"
+  ],
+  "verified": [
+   "https://propulsebyca.fr/idees-business/bubble-tea",
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+  ]
+ },
+ {
+  "claim": "40 verres × 3,36 euros = 134 euros par jour (hypothèse de 40 ventes).",
+  "valeur": "134 €",
+  "phrase": 72,
+  "sources": [
+   "https://propulsebyca.fr/idees-business/bubble-tea",
+   "https://www.timeout.fr/paris/restaurants/bubbolitas"
+  ],
+  "check": [
+   "70%"
+  ],
+  "verified": [
+   "https://propulsebyca.fr/idees-business/bubble-tea"
+  ]
+ },
+ {
+  "claim": "Chaque cycle de lavage rapporte en moyenne 3 à 7 euros, chaque cycle de séchage 2 à 4 euros.",
+  "valeur": "3 à 7 €",
+  "phrase": 78,
+  "sources": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/",
+   "https://www.pagesjaunes.fr/pros/56857554"
+  ],
+  "check": [
+   "3 à 7"
+  ],
+  "verified": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ]
+ },
+ {
+  "claim": "Le tarif d'une machine Miele de 7 kg se situe entre 3,50 euros TTC et 4 euros TTC pour un cycle de lavage.",
+  "valeur": "3,50 à 4 €",
+  "phrase": 79,
+  "sources": [
+   "https://www.pagesjaunes.fr/pros/56857554",
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ],
+  "check": [
+   "3,50"
+  ],
+  "verified": [
+   "https://www.pagesjaunes.fr/pros/56857554"
+  ]
+ },
+ {
+  "claim": "La laverie automatique en France représente environ 726 millions d'euros de chiffre d'affaires et plus de 4 500 établissements.",
+  "valeur": "726 M€",
+  "phrase": 80,
+  "sources": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/",
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+  ],
+  "check": [
+   "726",
+   "4500"
+  ],
+  "verified": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ]
+ },
+ {
+  "claim": "Chiffre d'affaires moyen national de 38 000 euros par laverie.",
+  "valeur": "38 000 €",
+  "phrase": 81,
+  "sources": [
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/",
+   "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/"
+  ],
+  "check": [
+   "38000"
+  ],
+  "verified": [
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+  ]
+ },
+ {
+  "claim": "38 000 euros ÷ 365 jours ≈ 104 euros par jour.",
+  "valeur": "104 €",
+  "phrase": 82,
+  "sources": [
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/",
+   "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/"
+  ],
+  "check": [
+   "38000"
+  ],
+  "verified": [
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+  ]
+ },
+ {
+  "claim": "La marge nette du secteur se situe entre 25 et 35 % du chiffre d'affaires hors taxes.",
+  "valeur": "25 à 35 %",
+  "phrase": 83,
+  "sources": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/",
+   "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/"
+  ],
+  "check": [
+   "35%"
+  ],
+  "verified": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ]
+ },
+ {
+  "claim": "38 000 euros × 30 % = 11 400 euros par an, soit environ 31 euros par jour.",
+  "valeur": "31 €",
+  "phrase": 84,
+  "sources": [
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/",
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ],
+  "check": [
+   "38000"
+  ],
+  "verified": [
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+  ]
+ },
+ {
+  "claim": "En moyenne, une laverie génère entre 50 000 et 150 000 euros de chiffre d'affaires par an.",
+  "valeur": "150 000 €",
+  "phrase": 85,
+  "sources": [
+   "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/",
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ],
+  "check": [
+   "150000"
+  ],
+  "verified": [
+   "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/",
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ]
+ },
+ {
+  "claim": "Budget total pour ouvrir une laverie automatique : entre 50 000 et 150 000 euros.",
+  "valeur": "50 000 à 150 000 €",
+  "phrase": 86,
+  "sources": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/",
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+  ],
+  "check": [
+   "50000",
+   "150000"
+  ],
+  "verified": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ]
+ },
+ {
+  "claim": "Après l'ouverture du premier Café des Chats, la marque ouvre un second café à Bastille.",
+  "valeur": "2 adresses",
+  "phrase": 92,
+  "sources": [
+   "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille",
+   "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+  ],
+  "check": [
+   "second"
+  ],
+  "verified": [
+   "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille",
+   "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+  ]
+ },
+ {
+  "claim": "Un café à chats a ouvert ses portes en août 2025 dans le 13e arrondissement de Paris (Chat-Rivari Café).",
+  "valeur": "août 2025",
+  "phrase": 93,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/331596-cat-rivari-cafe-vegan-cozy-adopt-cat-paris-13",
+   "https://unidivers.fr/paris-bars-a-chats/"
+  ],
+  "check": [
+   "august 2025"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/331596-cat-rivari-cafe-vegan-cozy-adopt-cat-paris-13"
+  ]
+ },
+ {
+  "claim": "Au Café des Chats, les boissons démarrent à 3,5 euros.",
+  "valeur": "3,50 €",
+  "phrase": 94,
+  "sources": [
+   "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html",
+   "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille"
+  ],
+  "check": [
+   "3,5"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+  ]
+ },
+ {
+  "claim": "Pass Ronron de 5 euros par personne pour les week-ends, jours fériés et vacances.",
+  "valeur": "5 €",
+  "phrase": 95,
+  "sources": [
+   "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html",
+   "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille"
+  ],
+  "check": [
+   "ronron"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+  ]
+ },
+ {
+  "claim": "Investissement de départ d'un café à chats : 60 000 à 150 000 euros selon les sources.",
+  "valeur": "60 000 à 150 000 €",
+  "phrase": 96,
+  "sources": [
+   "https://businessornot.fr/creation-entreprise/bar-a-chat-business-or-not-ce-que-revele-la-faillite-du-premier-cafe-a-chats-de-paris",
+   "https://comdewouf.fr/ouvrir-un-bar-a-chat-budget-formation-conditions"
+  ],
+  "check": [
+   "60000",
+   "150000"
+  ],
+  "verified": [
+   "https://businessornot.fr/creation-entreprise/bar-a-chat-business-or-not-ce-que-revele-la-faillite-du-premier-cafe-a-chats-de-paris"
+  ]
+ },
+ {
+  "claim": "Aménagement et décoration d'un café à chats : 30 000 à 80 000 euros.",
+  "valeur": "30 000 à 80 000 €",
+  "phrase": 97,
+  "sources": [
+   "https://comdewouf.fr/ouvrir-un-bar-a-chat-budget-formation-conditions",
+   "https://businessornot.fr/creation-entreprise/bar-a-chat-business-or-not-ce-que-revele-la-faillite-du-premier-cafe-a-chats-de-paris"
+  ],
+  "check": [
+   "30000",
+   "80000"
+  ],
+  "verified": [
+   "https://comdewouf.fr/ouvrir-un-bar-a-chat-budget-formation-conditions"
+  ]
+ },
+ {
+  "claim": "Pass de 5 euros + boisson à 3,50 euros = 8,50 euros par client.",
+  "valeur": "8,50 €",
+  "phrase": 98,
+  "sources": [
+   "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html",
+   "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille"
+  ],
+  "check": [
+   "3,5",
+   "ronron"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+  ]
+ },
+ {
+  "claim": "50 clients × 8,50 euros = 425 euros de ventes par jour (hypothèse de 50 clients).",
+  "valeur": "425 €",
+  "phrase": 99,
+  "sources": [
+   "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html",
+   "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille"
+  ],
+  "check": [
+   "3,5",
+   "ronron"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+  ]
+ },
+ {
+  "claim": "425 euros × 26 jours = 11 050 euros de ventes par mois.",
+  "valeur": "11 050 €",
+  "phrase": 100,
+  "sources": [
+   "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html",
+   "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille"
+  ],
+  "check": [
+   "3,5",
+   "ronron"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+  ]
+ },
+ {
+  "claim": "Le premier café à chats de France, à Paris, a fermé ses portes en 2016.",
+  "valeur": "fermé",
+  "phrase": 104,
+  "sources": [
+   "https://www.sortiraparis.com/en/where-to-eat-in-paris/bars-cafes/articles/62794-cafe-des-chats-the-first-french-cat-bar-in-paris-closed",
+   "https://businessornot.fr/creation-entreprise/bar-a-chat-business-or-not-ce-que-revele-la-faillite-du-premier-cafe-a-chats-de-paris"
+  ],
+  "check": [
+   "closed"
+  ],
+  "verified": [
+   "https://www.sortiraparis.com/en/where-to-eat-in-paris/bars-cafes/articles/62794-cafe-des-chats-the-first-french-cat-bar-in-paris-closed"
+  ]
+ },
+ {
+  "claim": "Machine taiyaki à 274,99 euros et machine à capsules à 360 euros : moins de 400 euros chacune.",
+  "valeur": "< 400 €",
+  "phrase": 107,
+  "sources": [
+   "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph",
+   "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html"
+  ],
+  "check": [
+   "274,99"
+  ],
+  "verified": [
+   "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph"
+  ]
+ }
+]
