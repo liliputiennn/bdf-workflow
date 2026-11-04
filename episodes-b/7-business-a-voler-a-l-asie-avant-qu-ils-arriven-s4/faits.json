@@ -1,0 +1,122 @@
+[
+ {
+  "claim": "Le Japon produisait 1 471 tonnes de matcha en 2010 contre 4 176 tonnes en 2023.",
+  "valeur": "1 471 tonnes",
+  "phrase": 2,
+  "sources": [
+   "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738",
+   "https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/"
+  ],
+  "check": [
+   "1471"
+  ],
+  "verified": [
+   "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738"
+  ]
+ },
+ {
+  "claim": "Le Japon produisait 4 176 tonnes de matcha en 2023.",
+  "valeur": "4 176 tonnes",
+  "phrase": 3,
+  "sources": [
+   "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738",
+   "https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/"
+  ],
+  "check": [
+   "4176"
+  ],
+  "verified": [
+   "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738"
+  ]
+ },
+ {
+  "claim": "Les exportations de matcha ont bondi de 33 % en 2023 par rapport à l'année précédente.",
+  "valeur": "33 %",
+  "phrase": 4,
+  "sources": [
+   "https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/",
+   "https://lessentieldeleco.fr/2912-matcha-japonais/"
+  ],
+  "check": [
+   "33%"
+  ],
+  "verified": [
+   "https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/"
+  ]
+ },
+ {
+  "claim": "Au Aki Café à Paris, le matcha azuki (latte matcha, azuki, chantilly) est affiché 6,90 euros.",
+  "valeur": "6,90 €",
+  "phrase": 5,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris",
+   "https://www.timeout.com/paris/en/restaurants/umami-matcha-cafe"
+  ],
+  "check": [
+   "6.9"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris"
+  ]
+ },
+ {
+  "claim": "Matcha wholesale 1 kg pour cafés et foodservice : 149,95 euros.",
+  "valeur": "149,95 €",
+  "phrase": 6,
+  "sources": [
+   "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder",
+   "https://ileauxepices.com/pro/thes-verts/649-the-matcha-bio.html"
+  ],
+  "check": [
+   "149,95"
+  ],
+  "verified": [
+   "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder"
+  ]
+ },
+ {
+  "claim": "2 g de poudre × 149,95 euros le kilo ≈ 0,30 euro.",
+  "valeur": "0,30 €",
+  "phrase": 7,
+  "sources": [
+   "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder",
+   "https://ileauxepices.com/pro/thes-verts/649-the-matcha-bio.html"
+  ],
+  "check": [
+   "149,95"
+  ],
+  "verified": [
+   "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder"
+  ]
+ },
+ {
+  "claim": "Vendu 6,90 euros avec 1 euro de revient : 5,90 euros restent.",
+  "valeur": "5,90 €",
+  "phrase": 9,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris",
+   "https://www.timeout.com/paris/en/restaurants/umami-matcha-cafe"
+  ],
+  "check": [
+   "6.9"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris"
+  ]
+ },
+ {
+  "claim": "30 lattes × 5,90 euros = 177 euros par jour (hypothèse de 30 ventes).",
+  "valeur": "177 €",
+  "phrase": 10,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris",
+   "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder"
+  ],
+  "check": [
+   "6.9"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris"
+  ]
+ }
+]

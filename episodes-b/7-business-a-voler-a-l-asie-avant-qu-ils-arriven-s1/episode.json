@@ -1,0 +1,128 @@
+{
+ "id": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s1",
+ "titre": "Ce snack se vend quatre fois plus cher qu'au Japon",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "BUSINESS 1 TAIYAKI GAUFRE",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Premier business : le taiyaki, une gaufre en forme de poisson fourrée aux haricots rouges.",
+  "Dans un stand parisien, un taiyaki se vendait cinq euros cinquante.",
+  "Au Japon, dans une pâtisserie historique, le même poisson coûte cent quatre-vingts yens, soit un euro trente.",
+  "Ici, le même snack se vend plus de quatre fois plus cher.",
+  "Pour démarrer, une machine professionnelle livrée avec trois moules taiyaki coûte deux cent soixante-quatorze euros quatre-vingt-dix-neuf.",
+  "La garniture, c'est de la pâte de haricots rouges sucrée : quatorze euros quatre-vingts le kilo.",
+  "Calcul : trente-cinq grammes de garniture par poisson, ça fait cinquante-deux centimes.",
+  "Avec la pâte, compte soixante-dix centimes de revient par poisson.",
+  "Tu le vends cinq euros : il te reste quatre euros trente.",
+  "À quarante poissons par jour, ça fait cent soixante-douze euros de gain par jour."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 1,
+    "titre": "Taiyaki",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "275 €"
+     },
+     {
+      "label": "Temps par jour",
+      "valeur": "4 h"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "172 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 2,
+   "params": {
+    "titre": "PRIX D'UN TAIYAKI",
+    "barres": [
+     {
+      "label": "Paris",
+      "valeur": 5.5,
+      "accent": true
+     },
+     {
+      "label": "Japon",
+      "valeur": 1.3
+     }
+    ],
+    "badge": "prix constatés"
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 3,
+   "params": {
+    "recherche": "taiyaki fish cake",
+    "legende": "Le taiyaki"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 4,
+   "params": {
+    "titre": "Taiyaki, stand parisien",
+    "prix": "5,50 €",
+    "source": "prix constaté à Paris (Sortiraparis)",
+    "lieu": "Paris"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 5,
+   "params": {
+    "valeur": 274.99,
+    "decimales": 2,
+    "suffixe": " €",
+    "etiquette": "machine pro avec moules taiyaki"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 7,
+   "params": {
+    "titre": "CALCUL PAR POISSON",
+    "items": [
+     {
+      "texte": "Revient",
+      "valeur": "0,70 €"
+     },
+     {
+      "texte": "Vendu",
+      "valeur": "5 €"
+     },
+     {
+      "texte": "Reste",
+      "valeur": "4,30 €"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 10,
+   "params": {
+    "valeur": 172,
+    "suffixe": " €",
+    "etiquette": "de gain par jour, estimation",
+    "sous": "40 poissons à 4,30 € de reste"
+   }
+  }
+ ]
+}

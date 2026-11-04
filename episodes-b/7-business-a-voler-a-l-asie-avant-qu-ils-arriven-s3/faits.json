@@ -1,0 +1,130 @@
+[
+ {
+  "claim": "En Europe, ces onigiri ne sont vendus qu'à Paris (L'Express Franchise).",
+  "valeur": "Paris seulement",
+  "phrase": 2,
+  "sources": [
+   "https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/",
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+  ],
+  "check": [
+   "onigiri",
+   "Paris"
+  ],
+  "verified": [
+   "https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/",
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+  ]
+ },
+ {
+  "claim": "Hausse de 30 % du chiffre d'affaires d'Omusubi Gonbei entre les exercices clos en mars 2023 et mars 2025.",
+  "valeur": "30 %",
+  "phrase": 3,
+  "sources": [
+   "https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/",
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+  ],
+  "check": [
+   "30%"
+  ],
+  "verified": [
+   "https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/"
+  ]
+ },
+ {
+  "claim": "Chez Omusubi Gonbei, les omusubi vont du plus simple (1,10 euro) au plus garni (4,30 euros).",
+  "valeur": "1,10 à 4,30 €",
+  "phrase": 4,
+  "sources": [
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html",
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226"
+  ],
+  "check": [
+   "1,10",
+   "4,30"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+  ]
+ },
+ {
+  "claim": "Un comptoir à onigiri de Paris propose le poulet mayo à 2,80 euros et le saumon à 3,10 euros.",
+  "valeur": "2,80 € et 3,10 €",
+  "phrase": 5,
+  "sources": [
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226",
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+  ],
+  "check": [
+   "2,80",
+   "3,10"
+  ],
+  "verified": [
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226"
+  ]
+ },
+ {
+  "claim": "Riz à sushi Okura Minori, 5 kg : 27,20 euros, soit 5,44 euros le kilo.",
+  "valeur": "5,44 €/kg",
+  "phrase": 6,
+  "sources": [
+   "https://kioko.fr/en/products/okura-riz-sushi-minori-l",
+   "https://shop.kioko.fr/en/products/okura-riz-sushi-minori-l"
+  ],
+  "check": [
+   "5,44"
+  ],
+  "verified": [
+   "https://kioko.fr/en/products/okura-riz-sushi-minori-l",
+   "https://shop.kioko.fr/en/products/okura-riz-sushi-minori-l"
+  ]
+ },
+ {
+  "claim": "50 g de riz × 5,44 euros le kilo ≈ 0,27 euro.",
+  "valeur": "0,27 €",
+  "phrase": 7,
+  "sources": [
+   "https://kioko.fr/en/products/okura-riz-sushi-minori-l",
+   "https://shop.kioko.fr/en/products/okura-riz-sushi-minori-l"
+  ],
+  "check": [
+   "5,44"
+  ],
+  "verified": [
+   "https://kioko.fr/en/products/okura-riz-sushi-minori-l",
+   "https://shop.kioko.fr/en/products/okura-riz-sushi-minori-l"
+  ]
+ },
+ {
+  "claim": "Vendu 3 euros (prix constatés de 2,80 à 3,10 euros), avec 1 euro de revient : 2 euros restent.",
+  "valeur": "2 €",
+  "phrase": 9,
+  "sources": [
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226",
+   "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+  ],
+  "check": [
+   "2,80",
+   "3,10"
+  ],
+  "verified": [
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226"
+  ]
+ },
+ {
+  "claim": "40 onigiri × 2 euros de reste = 80 euros par jour (hypothèse de 40 ventes).",
+  "valeur": "80 €",
+  "phrase": 10,
+  "sources": [
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226",
+   "https://kioko.fr/en/products/okura-riz-sushi-minori-l"
+  ],
+  "check": [
+   "2,80",
+   "3,10"
+  ],
+  "verified": [
+   "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226"
+  ]
+ }
+]

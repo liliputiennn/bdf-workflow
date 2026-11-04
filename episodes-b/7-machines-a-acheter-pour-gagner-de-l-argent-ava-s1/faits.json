@@ -1,0 +1,125 @@
+[
+ {
+  "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+  "valeur": "41 €",
+  "phrase": 1,
+  "sources": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+  ],
+  "check": [
+   "41"
+  ],
+  "verified": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+  ]
+ },
+ {
+  "claim": "Le graveur laser xTool D1 Pro 20 W est vendu 1 399 euros TTC par les revendeurs français.",
+  "valeur": "1 399 €",
+  "phrase": 3,
+  "sources": [
+   "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+   "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+  ],
+  "check": [
+   "1399"
+  ],
+  "verified": [
+   "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+   "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+  ]
+ },
+ {
+  "claim": "Le graveur laser xTool D1 Pro 20 W est vendu 1 399 euros TTC par les revendeurs français.",
+  "valeur": "1 399 €",
+  "phrase": 4,
+  "sources": [
+   "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+   "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+  ],
+  "check": [
+   "1399"
+  ],
+  "verified": [
+   "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+   "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+  ]
+ },
+ {
+  "claim": "Une planche à découper en bambou de 42 x 30 cm se vend 5 euros 98 chez un revendeur français.",
+  "valeur": "5,98 €",
+  "phrase": 6,
+  "sources": [
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html",
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+  ],
+  "check": [
+   "5 € 98"
+  ],
+  "verified": [
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+  ]
+ },
+ {
+  "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+  "valeur": "41 €",
+  "phrase": 7,
+  "sources": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+  ],
+  "check": [
+   "41"
+  ],
+  "verified": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+  ]
+ },
+ {
+  "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+  "valeur": "41 €",
+  "phrase": 8,
+  "sources": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+  ],
+  "check": [
+   "41"
+  ],
+  "verified": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+  ]
+ },
+ {
+  "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+  "valeur": "41 €",
+  "phrase": 9,
+  "sources": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+   "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+  ],
+  "check": [
+   "41"
+  ],
+  "verified": [
+   "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+  ]
+ },
+ {
+  "claim": "Le graveur laser xTool D1 Pro 20 W est vendu 1 399 euros TTC par les revendeurs français.",
+  "valeur": "1 399 €",
+  "phrase": 10,
+  "sources": [
+   "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+   "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+  ],
+  "check": [
+   "1399"
+  ],
+  "verified": [
+   "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+   "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+  ]
+ }
+]

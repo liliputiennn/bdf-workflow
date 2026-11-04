@@ -1,0 +1,110 @@
+[
+ {
+  "n": 1,
+  "titre": "Accroche",
+  "phrase_debut": 1,
+  "phrase_fin": 8,
+  "debut_s": 0.136,
+  "fin_s": 26.873,
+  "carte_de_s": null,
+  "borne_s": 0.0,
+  "borne_fin_s": 26.973,
+  "duree_s": 26.973
+ },
+ {
+  "n": 2,
+  "titre": "Business 1 : le taiyaki, la gaufre poisson",
+  "phrase_debut": 9,
+  "phrase_fin": 21,
+  "debut_s": 28.818,
+  "fin_s": 78.218,
+  "carte_de_s": 26.973,
+  "borne_s": 26.973,
+  "borne_fin_s": 78.318,
+  "duree_s": 51.345
+ },
+ {
+  "n": 3,
+  "titre": "Business 2 : les machines à capsules",
+  "phrase_debut": 22,
+  "phrase_fin": 36,
+  "debut_s": 80.164,
+  "fin_s": 131.382,
+  "carte_de_s": 78.318,
+  "borne_s": 78.318,
+  "borne_fin_s": 131.482,
+  "duree_s": 53.164
+ },
+ {
+  "n": 4,
+  "titre": "Business 3 : les onigiri, boules de riz",
+  "phrase_debut": 37,
+  "phrase_fin": 50,
+  "debut_s": 133.327,
+  "fin_s": 186.891,
+  "carte_de_s": 131.482,
+  "borne_s": 131.482,
+  "borne_fin_s": 186.991,
+  "duree_s": 55.509
+ },
+ {
+  "n": 5,
+  "titre": "Business 4 : le latte au matcha",
+  "phrase_debut": 51,
+  "phrase_fin": 64,
+  "debut_s": 188.836,
+  "fin_s": 240.873,
+  "carte_de_s": 186.991,
+  "borne_s": 186.991,
+  "borne_fin_s": 240.973,
+  "duree_s": 53.982
+ },
+ {
+  "n": 6,
+  "titre": "Business 5 : le bubble tea",
+  "phrase_debut": 65,
+  "phrase_fin": 76,
+  "debut_s": 242.818,
+  "fin_s": 289.355,
+  "carte_de_s": 240.973,
+  "borne_s": 240.973,
+  "borne_fin_s": 289.455,
+  "duree_s": 48.482
+ },
+ {
+  "n": 7,
+  "titre": "Business 6 : la laverie libre-service",
+  "phrase_debut": 77,
+  "phrase_fin": 90,
+  "debut_s": 291.3,
+  "fin_s": 347.291,
+  "carte_de_s": 289.455,
+  "borne_s": 289.455,
+  "borne_fin_s": 347.391,
+  "duree_s": 57.936
+ },
+ {
+  "n": 8,
+  "titre": "Business 7 : le café à chats",
+  "phrase_debut": 91,
+  "phrase_fin": 105,
+  "debut_s": 349.236,
+  "fin_s": 402.764,
+  "carte_de_s": 347.391,
+  "borne_s": 347.391,
+  "borne_fin_s": 402.864,
+  "duree_s": 55.473
+ },
+ {
+  "n": 9,
+  "titre": "Lequel lancer en premier",
+  "phrase_debut": 106,
+  "phrase_fin": 112,
+  "debut_s": 404.709,
+  "fin_s": 432.627,
+  "carte_de_s": 402.864,
+  "borne_s": 402.864,
+  "borne_fin_s": 432.755,
+  "duree_s": 29.891
+ }
+]

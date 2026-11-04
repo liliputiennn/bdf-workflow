@@ -1,0 +1,55 @@
+{
+ "long": "7-machines-a-acheter-pour-gagner-de-l-argent-ava",
+ "shorts": [
+  {
+   "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s1",
+   "chapitre": 2,
+   "phrases": 10,
+   "duree_s": 44.477,
+   "notes": []
+  },
+  {
+   "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s2",
+   "chapitre": 3,
+   "phrases": 12,
+   "duree_s": 55.323,
+   "notes": []
+  },
+  {
+   "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s3",
+   "chapitre": 4,
+   "phrases": 11,
+   "duree_s": 50.932,
+   "notes": []
+  },
+  {
+   "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s4",
+   "chapitre": 5,
+   "phrases": 10,
+   "duree_s": 40.814,
+   "notes": []
+  },
+  {
+   "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s5",
+   "chapitre": 6,
+   "phrases": 10,
+   "duree_s": 40.759,
+   "notes": []
+  },
+  {
+   "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s6",
+   "chapitre": 7,
+   "phrases": 10,
+   "duree_s": 34.732,
+   "notes": []
+  },
+  {
+   "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s7",
+   "chapitre": 8,
+   "phrases": 10,
+   "duree_s": 39.595,
+   "notes": []
+  }
+ ],
+ "ignores": []
+}

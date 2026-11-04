@@ -1,0 +1,134 @@
+{
+ "id": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s2",
+ "titre": "Une machine à capsules, remboursée en douze jours",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "BUSINESS 2 MACHINES CAPSULES",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Deuxième business : les machines à capsules japonaises, qu'on appelle gashapon.",
+  "Le marché mondial de ces jouets a doublé depuis deux mille vingt et pèse deux milliards d'euros.",
+  "Une boutique de trois cents machines vient d'ouvrir à Paris.",
+  "Chaque capsule s'y vend de cinq à six euros.",
+  "Les patrons de la boutique attendent un million et demi d'euros de ventes par an.",
+  "Divise par trois cents machines et par trois cent soixante-cinq jours : treize euros soixante-dix par machine et par jour.",
+  "Pour toi, une machine avec son pied coûte trois cent soixante euros.",
+  "Selon des acteurs du secteur, la marge nette dépasse soixante pour cent.",
+  "Calcul : dix capsules à cinq euros, ça fait cinquante euros de ventes.",
+  "À soixante pour cent de marge, il te reste trente euros par jour.",
+  "Ta machine à trois cent soixante euros est remboursée en douze jours."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 2,
+    "titre": "Machines à capsules",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "360 €"
+     },
+     {
+      "label": "Temps par jour",
+      "valeur": "2 h"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "30 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 2,
+   "params": {
+    "valeur": 2,
+    "suffixe": " milliards €",
+    "etiquette": "le marché mondial des jouets en capsule",
+    "sous": "doublé depuis 2020"
+   }
+  },
+  {
+   "type": "duel",
+   "phrase": 3,
+   "params": {
+    "titre": "UNE CAPSULE À PARIS",
+    "haut": {
+     "titre": "Prix de vente 5 à 6 €",
+     "part": 100
+    },
+    "bas": {
+     "titre": "Japon : 1 à 3 €",
+     "part": 40
+    }
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 5,
+   "params": {
+    "recherche": "capsule toy vending machine",
+    "legende": "Une machine à capsules"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 6,
+   "params": {
+    "valeur": 13.7,
+    "decimales": 2,
+    "suffixe": " €",
+    "etiquette": "de ventes par machine et par jour",
+    "sous": "1,5 million € ÷ 300 machines ÷ 365 jours"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 7,
+   "params": {
+    "titre": "Distributeur de capsules, pied inclus",
+    "prix": "360 €",
+    "source": "annonce B2B Destockplus"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 9,
+   "params": {
+    "titre": "CALCUL D'UNE MACHINE",
+    "items": [
+     {
+      "texte": "Machine",
+      "valeur": "360 €"
+     },
+     {
+      "texte": "10 capsules à 5 €",
+      "valeur": "50 €"
+     },
+     {
+      "texte": "Marge à 60 %",
+      "valeur": "30 €"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 11,
+   "params": {
+    "valeur": 12,
+    "suffixe": " jours",
+    "etiquette": "pour rembourser la machine, estimation"
+   }
+  }
+ ]
+}

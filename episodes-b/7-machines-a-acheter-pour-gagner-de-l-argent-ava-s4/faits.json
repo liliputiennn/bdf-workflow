@@ -1,0 +1,92 @@
+[
+ {
+  "claim": "Une machine à barbe à papa professionnelle de table se trouve à partir de 187,99 euros.",
+  "valeur": "187,99 €",
+  "phrase": 3,
+  "sources": [
+   "https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa",
+   "https://www.lagrange.fr/en/groceries/214-sucre-pour-barbe-a-papa.html"
+  ],
+  "check": [
+   "187,99"
+  ],
+  "verified": [
+   "https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa"
+  ]
+ },
+ {
+  "claim": "Des prestataires facturent une animation barbe à papa à partir de 450 à 500 euros la journée.",
+  "valeur": "500 €",
+  "phrase": 6,
+  "sources": [
+   "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales",
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx"
+  ],
+  "check": [
+   "490"
+  ],
+  "verified": [
+   "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales"
+  ]
+ },
+ {
+  "claim": "Un prestataire facture le forfait sucre une journée 500 euros.",
+  "valeur": "500 €",
+  "phrase": 7,
+  "sources": [
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx",
+   "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales"
+  ],
+  "check": [
+   "500 €"
+  ],
+  "verified": [
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx"
+  ]
+ },
+ {
+  "claim": "Un prestataire facture le forfait sucre une journée 500 euros.",
+  "valeur": "500 €",
+  "phrase": 8,
+  "sources": [
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx",
+   "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales"
+  ],
+  "check": [
+   "500 €"
+  ],
+  "verified": [
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx"
+  ]
+ },
+ {
+  "claim": "Une machine à barbe à papa professionnelle de table se trouve à partir de 187,99 euros.",
+  "valeur": "187,99 €",
+  "phrase": 9,
+  "sources": [
+   "https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa",
+   "https://www.lagrange.fr/en/groceries/214-sucre-pour-barbe-a-papa.html"
+  ],
+  "check": [
+   "187,99"
+  ],
+  "verified": [
+   "https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa"
+  ]
+ },
+ {
+  "claim": "Un prestataire facture le forfait sucre une journée 500 euros.",
+  "valeur": "500 €",
+  "phrase": 10,
+  "sources": [
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx",
+   "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales"
+  ],
+  "check": [
+   "500 €"
+  ],
+  "verified": [
+   "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx"
+  ]
+ }
+]

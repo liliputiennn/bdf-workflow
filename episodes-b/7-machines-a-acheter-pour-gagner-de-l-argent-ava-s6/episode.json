@@ -1,0 +1,104 @@
+{
+ "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s6",
+ "titre": "Un distributeur automatique : 20 à 35 € de marge par jour",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "DISTRIBUTEUR AUTOMATIQUE VENDRE PRÉSENCE",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Sixième machine : le distributeur automatique, celle qui vend pendant que tu fais autre chose.",
+  "Pourquoi ça marche : des gens ont faim ou soif à toute heure, et il n'y a personne pour les servir.",
+  "Un distributeur neuf coûte à partir de trois mille euros.",
+  "En occasion, on en trouve de mille cinq cents à huit mille euros.",
+  "Ce qu'il produit : des canettes, des snacks, du café, vendus un par un.",
+  "Une machine bien placée fait entre cinq cents et trois mille euros de ventes par mois.",
+  "La marge sur les produits va de quarante à soixante-dix pour cent.",
+  "Le calcul : mille cinq cents euros de ventes par mois, ça fait cinquante euros par jour.",
+  "Avec quarante pour cent de marge, il reste vingt euros par jour.",
+  "Avec soixante-dix pour cent de marge, trente-cinq euros par jour."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 6,
+    "titre": "Distributeur automatique",
+    "badge": "Machine",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "dès 3 000 €"
+     },
+     {
+      "label": "Temps par jour (estimation)",
+      "valeur": "15 min de réassort"
+     },
+     {
+      "label": "Gain par jour (estimation)",
+      "valeur": "20 à 35 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 2,
+   "params": {
+    "recherche": "vending machine snacks",
+    "legende": "La machine au travail"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 3,
+   "params": {
+    "valeur": 3000,
+    "prefixe": "dès ",
+    "suffixe": " €",
+    "etiquette": "distributeur neuf : prix d'achat"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 4,
+   "params": {
+    "titre": "Distributeur d'occasion",
+    "prix": "1 500 à 8 000 €",
+    "source": "prix constaté : comdewouf.fr",
+    "etat": "Occasion"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 6,
+   "params": {
+    "titre": "UNE MACHINE PAR MOIS",
+    "items": [
+     {
+      "texte": "Ventes",
+      "valeur": "500 à 3 000 €"
+     },
+     {
+      "texte": "Marge brute",
+      "valeur": "40 à 70 %"
+     }
+    ]
+   }
+  },
+  {
+   "type": "anneau",
+   "phrase": 9,
+   "params": {
+    "valeur": 40,
+    "centre": "40 %",
+    "etiquette": "marge prudente"
+   }
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+[
+ {
+  "claim": "Un distributeur automatique neuf coûte à partir de 3 000 euros.",
+  "valeur": "3 000 €",
+  "phrase": 3,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "3000"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ]
+ },
+ {
+  "claim": "En occasion, un distributeur coûte entre 1 500 et 8 000 euros.",
+  "valeur": "1 500 à 8 000 €",
+  "phrase": 4,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "1500"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ]
+ },
+ {
+  "claim": "Un distributeur rapporte en moyenne 500 à 3 000 euros de chiffre d'affaires par mois.",
+  "valeur": "500 à 3 000 €",
+  "phrase": 6,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "500 à 3000"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ },
+ {
+  "claim": "La marge brute des produits d'un distributeur va de 40 à 70 %.",
+  "valeur": "40 à 70 %",
+  "phrase": 7,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "40 à 70%"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ },
+ {
+  "claim": "Un distributeur rapporte en moyenne 500 à 3 000 euros de chiffre d'affaires par mois.",
+  "valeur": "500 à 3 000 €",
+  "phrase": 8,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "500 à 3000"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ },
+ {
+  "claim": "La marge brute des produits d'un distributeur va de 40 à 70 %.",
+  "valeur": "40 à 70 %",
+  "phrase": 9,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "40 à 70%"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ },
+ {
+  "claim": "La marge brute des produits d'un distributeur va de 40 à 70 %.",
+  "valeur": "40 à 70 %",
+  "phrase": 10,
+  "sources": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+   "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+  ],
+  "check": [
+   "40 à 70%"
+  ],
+  "verified": [
+   "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+  ]
+ }
+]

@@ -1,0 +1,124 @@
+{
+ "id": "7-services-d-ia-que-les-petites-entreprises-paie-s6",
+ "titre": "Surveiller des concurrents : 316 € de reste par mois",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "SERVICE 6 VEILLE CONCURRENTS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Sixième service : surveiller les concurrents d'un client.",
+  "Chaque semaine, le client reçoit les changements de prix, d'offres et de publications de ses rivaux.",
+  "Sur ComeUp, une veille mensuelle sur cinq concurrents se vend deux cent quarante euros.",
+  "Une analyse de positionnement monte à trois cent cinquante euros.",
+  "Toi, tu demandes trois cent cinquante euros par mois, avec une alerte chaque semaine.",
+  "Ton outil : Visualping, qui te prévient quand une page change, quatorze dollars par mois.",
+  "Il existe même une version gratuite, pour cinq pages.",
+  "Et Claude, à vingt dollars, pour résumer ce qui a changé.",
+  "Le client paie trois cent cinquante euros. Tes outils coûtent trente-quatre euros.",
+  "Il te reste trois cent seize euros pour une journée de huit heures."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 6,
+    "titre": "Veille concurrents",
+    "badge": "Service",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "34 $ par mois"
+     },
+     {
+      "label": "Temps",
+      "valeur": "8 h au départ"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "316 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 2,
+   "params": {
+    "recherche": "bakery storefront street",
+    "legende": "Un commerce local"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 3,
+   "params": {
+    "titre": "Veille sur 5 concurrents",
+    "prix": "240 €",
+    "lieu": "ComeUp",
+    "source": "prix constaté sur ComeUp"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 4,
+   "params": {
+    "titre": "PRIX SUR COMEUP",
+    "barres": [
+     {
+      "label": "Veille mensuelle",
+      "valeur": 240
+     },
+     {
+      "label": "Positionnement",
+      "valeur": 350,
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 6,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "Visualping"
+     },
+     {
+      "texte": "Claude"
+     }
+    ]
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 9,
+   "params": {
+    "titre": "UN MOIS · ESTIMATION",
+    "barres": [
+     {
+      "label": "Facturé",
+      "valeur": 350
+     },
+     {
+      "label": "Outils",
+      "valeur": 34
+     },
+     {
+      "label": "Il te reste",
+      "valeur": 316,
+      "accent": true
+     }
+    ],
+    "badge": "estimation"
+   }
+  }
+ ]
+}

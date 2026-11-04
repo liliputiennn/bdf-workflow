@@ -1,0 +1,134 @@
+{
+ "id": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s7",
+ "titre": "Un café à chats : le calcul des ventes par jour",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "BUSINESS 7 CAFÉ CHATS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Septième business : le café à chats, où les clients caressent des chats en buvant un café.",
+  "À Paris, le Café des Chats a ouvert une deuxième adresse à Bastille.",
+  "Un autre café à chats s'est ouvert dans le treizième arrondissement en août deux mille vingt-cinq.",
+  "Au Café des Chats, une boisson démarre à trois euros cinquante.",
+  "Le week-end, un pass Ronron de cinq euros s'ajoute par personne.",
+  "Le ticket d'entrée est lourd : de soixante mille à cent cinquante mille euros.",
+  "Rien que l'aménagement, les meubles et les parcours pour chats, coûte de trente mille à quatre-vingt mille euros.",
+  "Calcul : un pass de cinq euros et une boisson à trois euros cinquante, ça fait huit euros cinquante par client.",
+  "Cinquante clients par jour, ça fait quatre cent vingt-cinq euros de ventes par jour."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 7,
+    "titre": "Café à chats",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "60 000 €"
+     },
+     {
+      "label": "Temps par jour",
+      "valeur": "7 h"
+     },
+     {
+      "label": "Ventes par jour",
+      "valeur": "425 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 2,
+   "params": {
+    "recherche": "cat cafe interior",
+    "legende": "Un café à chats"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 4,
+   "params": {
+    "titre": "CAFÉ DES CHATS, PARIS",
+    "items": [
+     {
+      "texte": "Boisson dès",
+      "valeur": "3,50 €"
+     },
+     {
+      "texte": "Pass Ronron week-end",
+      "valeur": "5 €"
+     }
+    ]
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 5,
+   "params": {
+    "titre": "Pass Ronron, week-end",
+    "prix": "5 €",
+    "source": "tarif du Café des Chats, Paris (Paris Friendly)",
+    "lieu": "Paris"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 6,
+   "params": {
+    "titre": "TICKET D'ENTRÉE",
+    "barres": [
+     {
+      "label": "Minimum",
+      "valeur": 60000
+     },
+     {
+      "label": "Maximum",
+      "valeur": 150000,
+      "accent": true
+     }
+    ],
+    "badge": "€"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 8,
+   "params": {
+    "titre": "CALCUL PAR CLIENT",
+    "items": [
+     {
+      "texte": "Pass",
+      "valeur": "5 €"
+     },
+     {
+      "texte": "Boisson",
+      "valeur": "3,50 €"
+     },
+     {
+      "texte": "Total",
+      "valeur": "8,50 €"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 9,
+   "params": {
+    "valeur": 425,
+    "suffixe": " €",
+    "etiquette": "de ventes par jour, estimation",
+    "sous": "50 clients à 8,50 €"
+   }
+  }
+ ]
+}

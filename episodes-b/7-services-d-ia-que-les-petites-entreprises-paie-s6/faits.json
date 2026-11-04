@@ -1,0 +1,139 @@
+[
+ {
+  "claim": "Sur ComeUp, une veille mensuelle sur 5 concurrents se vend 240 €.",
+  "valeur": "240 €",
+  "phrase": 3,
+  "sources": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques",
+   "https://www.lafabriquedunet.fr/tarifs-des-freelances-web-developpeurs-graphistes-et-webmarketing/"
+  ],
+  "check": [
+   "240"
+  ],
+  "verified": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques"
+  ]
+ },
+ {
+  "claim": "Sur ComeUp, une analyse de positionnement stratégique se vend 350 €.",
+  "valeur": "350 €",
+  "phrase": 4,
+  "sources": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques",
+   "https://www.lafabriquedunet.fr/tarifs-des-freelances-web-developpeurs-graphistes-et-webmarketing/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 350 € par mois pour 5 concurrents avec une alerte chaque semaine.",
+  "valeur": "350 €",
+  "phrase": 5,
+  "sources": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques",
+   "https://www.lafabriquedunet.fr/tarifs-des-freelances-web-developpeurs-graphistes-et-webmarketing/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques"
+  ]
+ },
+ {
+  "claim": "Visualping, formule Personal : 14 $ par mois en facturation mensuelle.",
+  "valeur": "14 $",
+  "phrase": 6,
+  "sources": [
+   "https://visualping.io/pricing",
+   "https://pagecrawl.io/blog/visualping-vs-pagecrawl"
+  ],
+  "check": [
+   "$14"
+  ],
+  "verified": [
+   "https://visualping.io/pricing",
+   "https://pagecrawl.io/blog/visualping-vs-pagecrawl"
+  ]
+ },
+ {
+  "claim": "Visualping propose une version gratuite pour 5 pages.",
+  "valeur": "5 pages",
+  "phrase": 7,
+  "sources": [
+   "https://visualping.io/pricing",
+   "https://pagecrawl.io/blog/visualping-vs-pagecrawl"
+  ],
+  "check": [
+   "$0/mo"
+  ],
+  "verified": [
+   "https://visualping.io/pricing"
+  ]
+ },
+ {
+  "claim": "Claude Pro coûte 20 $ par mois.",
+  "valeur": "20 $",
+  "phrase": 8,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 350 € moins (14 $ + 20 $) = 316 € pour 8 heures.",
+  "valeur": "316 €",
+  "phrase": 9,
+  "sources": [
+   "https://visualping.io/pricing",
+   "https://claude.com/pricing"
+  ],
+  "check": [
+   "$14"
+  ],
+  "verified": [
+   "https://visualping.io/pricing"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 350 € par mois pour 5 concurrents avec une alerte chaque semaine.",
+  "valeur": "350 €",
+  "phrase": 9,
+  "sources": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques",
+   "https://www.lafabriquedunet.fr/tarifs-des-freelances-web-developpeurs-graphistes-et-webmarketing/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://comeup.com/en/service/486282/realiser-la-veille-concurrentielle-de-votre-entreprise-pour-orienter-vos-decisions-strategiques"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 350 € moins (14 $ + 20 $) = 316 € pour 8 heures.",
+  "valeur": "316 €",
+  "phrase": 10,
+  "sources": [
+   "https://visualping.io/pricing",
+   "https://claude.com/pricing"
+  ],
+  "check": [
+   "$14"
+  ],
+  "verified": [
+   "https://visualping.io/pricing"
+  ]
+ }
+]

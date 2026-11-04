@@ -1,0 +1,120 @@
+{
+ "id": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s5",
+ "titre": "Le bubble tea : trois euros trente-six de reste par verre",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "BUSINESS 5 BUBBLE TEA",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Cinquième business : le bubble tea, le thé au lait avec des perles à croquer.",
+  "En France, le marché du bubble tea pèse entre quatre-vingt-cinq et cent millions d'euros.",
+  "Dans une boutique de Paris, un petit coûte trois euros quatre-vingts, un moyen quatre euros quatre-vingts, un grand cinq euros cinquante.",
+  "La marge brute annoncée va de soixante-cinq à quatre-vingt-trois pour cent.",
+  "Pour te lancer sans boutique, une machine professionnelle coûte de sept cents à cinq mille euros.",
+  "Calcul : tu vends un moyen quatre euros quatre-vingts.",
+  "À soixante-dix pour cent de marge, il te reste trois euros trente-six par verre.",
+  "À quarante verres par jour, ça fait cent trente-quatre euros de gain par jour."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 5,
+    "titre": "Bubble tea",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "700 €"
+     },
+     {
+      "label": "Temps par jour",
+      "valeur": "4 h"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "134 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 2,
+   "params": {
+    "valeur": 100,
+    "prefixe": "85 à ",
+    "suffixe": " millions €",
+    "etiquette": "le marché du bubble tea en France",
+    "sous": "estimation 2025"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 3,
+   "params": {
+    "titre": "PRIX D'UN BUBBLE TEA À PARIS",
+    "barres": [
+     {
+      "label": "Petit",
+      "valeur": 3.8
+     },
+     {
+      "label": "Moyen",
+      "valeur": 4.8
+     },
+     {
+      "label": "Grand",
+      "valeur": 5.5,
+      "accent": true
+     }
+    ],
+    "badge": "prix constatés"
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 4,
+   "params": {
+    "recherche": "bubble tea tapioca pearls",
+    "legende": "Les perles de tapioca"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 6,
+   "params": {
+    "titre": "Bubble tea moyen",
+    "prix": "4,80 €",
+    "source": "prix affiché à Paris (Time Out)",
+    "lieu": "Paris"
+   }
+  },
+  {
+   "type": "anneau",
+   "phrase": 7,
+   "params": {
+    "valeur": 70,
+    "repere": 100,
+    "centre": "70 %",
+    "etiquette": "de marge par verre, moyenne annoncée"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 8,
+   "params": {
+    "valeur": 134,
+    "suffixe": " €",
+    "etiquette": "de gain par jour, estimation",
+    "sous": "40 verres à 3,36 € de reste"
+   }
+  }
+ ]
+}

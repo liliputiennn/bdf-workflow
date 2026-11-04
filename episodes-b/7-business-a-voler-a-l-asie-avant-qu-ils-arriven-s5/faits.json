@@ -1,0 +1,113 @@
+[
+ {
+  "claim": "Le marché du bubble tea en France est estimé entre 85 et 100 millions d'euros (données 2025).",
+  "valeur": "85 à 100 millions €",
+  "phrase": 2,
+  "sources": [
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/",
+   "https://propulsebyca.fr/idees-business/bubble-tea"
+  ],
+  "check": [
+   "85 et 100"
+  ],
+  "verified": [
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+  ]
+ },
+ {
+  "claim": "Bubbolitas (Paris) : petit 3,80 euros, moyen 4,80 euros, grand 5,50 euros.",
+  "valeur": "3,80 / 4,80 / 5,50 €",
+  "phrase": 3,
+  "sources": [
+   "https://www.timeout.fr/paris/restaurants/bubbolitas",
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+  ],
+  "check": [
+   "3,80",
+   "4,80",
+   "5,50"
+  ],
+  "verified": [
+   "https://www.timeout.fr/paris/restaurants/bubbolitas"
+  ]
+ },
+ {
+  "claim": "Les boutiques peuvent afficher des marges brutes comprises entre 65 % et 83 %.",
+  "valeur": "65 à 83 %",
+  "phrase": 4,
+  "sources": [
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/",
+   "https://propulsebyca.fr/idees-business/bubble-tea"
+  ],
+  "check": [
+   "65%",
+   "83%"
+  ],
+  "verified": [
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+  ]
+ },
+ {
+  "claim": "Moyenne des tarifs d'une machine à bubble tea professionnelle : 700 à 5 000 euros (novembre 2026).",
+  "valeur": "700 à 5 000 €",
+  "phrase": 5,
+  "sources": [
+   "https://conseils.hellopro.fr/combien-coute-une-machine-a-bubble-tea-professionnelle-3738.html",
+   "https://propulsebyca.fr/idees-business/bubble-tea"
+  ],
+  "check": [
+   "700",
+   "5000"
+  ],
+  "verified": [
+   "https://conseils.hellopro.fr/combien-coute-une-machine-a-bubble-tea-professionnelle-3738.html",
+   "https://propulsebyca.fr/idees-business/bubble-tea"
+  ]
+ },
+ {
+  "claim": "Un bubble tea moyen se vend 4,80 euros à Paris.",
+  "valeur": "4,80 €",
+  "phrase": 6,
+  "sources": [
+   "https://www.timeout.fr/paris/restaurants/bubbolitas",
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+  ],
+  "check": [
+   "4,80"
+  ],
+  "verified": [
+   "https://www.timeout.fr/paris/restaurants/bubbolitas"
+  ]
+ },
+ {
+  "claim": "Marge moyenne d'environ 70 % : 4,80 × 0,70 = 3,36 euros par verre.",
+  "valeur": "3,36 €",
+  "phrase": 7,
+  "sources": [
+   "https://propulsebyca.fr/idees-business/bubble-tea",
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+  ],
+  "check": [
+   "70%"
+  ],
+  "verified": [
+   "https://propulsebyca.fr/idees-business/bubble-tea",
+   "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+  ]
+ },
+ {
+  "claim": "40 verres × 3,36 euros = 134 euros par jour (hypothèse de 40 ventes).",
+  "valeur": "134 €",
+  "phrase": 8,
+  "sources": [
+   "https://propulsebyca.fr/idees-business/bubble-tea",
+   "https://www.timeout.fr/paris/restaurants/bubbolitas"
+  ],
+  "check": [
+   "70%"
+  ],
+  "verified": [
+   "https://propulsebyca.fr/idees-business/bubble-tea"
+  ]
+ }
+]

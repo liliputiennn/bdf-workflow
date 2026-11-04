@@ -1,0 +1,133 @@
+{
+ "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s7",
+ "titre": "La borne photo se loue 350 à 600 € la soirée",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "PHOTOBOOTH BORNE PHOTO LOUER",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Septième machine, la meilleure : la borne photo, ou photobooth.",
+  "Pourquoi ça marche : mariages, anniversaires, soirées d'entreprise, tout le monde veut sa photo imprimée sur place.",
+  "Une borne et ses accessoires coûtent de mille cinq cents à cinq mille euros.",
+  "Ce qu'elle produit : des souvenirs, avec une borne que tu déposes et que tu récupères.",
+  "Prix de location constaté : de trois cent cinquante à six cents euros pour une demi-journée de quatre heures.",
+  "Une formule week-end sans animateur se loue de deux cent quatre-vingt-dix-neuf à quatre cent cinquante euros.",
+  "Le calcul : une soirée à trois cent cinquante euros, c'est le tarif bas.",
+  "Quatre soirées par mois, ça fait mille quatre cents euros.",
+  "Au tarif haut de six cents euros, quatre soirées te rapportent deux mille quatre cents euros.",
+  "Une borne à mille cinq cents euros est remboursée à la cinquième location."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 7,
+    "titre": "Borne photo",
+    "badge": "Machine",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "dès 1 500 €"
+     },
+     {
+      "label": "Temps par jour (estimation)",
+      "valeur": "4 h par soirée"
+     },
+     {
+      "label": "Gain par jour (estimation)",
+      "valeur": "350 à 600 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 2,
+   "params": {
+    "recherche": "photo booth party",
+    "legende": "La machine au travail"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 3,
+   "params": {
+    "valeur": 1500,
+    "prefixe": "dès ",
+    "suffixe": " €",
+    "etiquette": "borne photo : prix d'achat"
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 4,
+   "params": {
+    "recherche": "photo booth wedding guests",
+    "legende": "Une borne photo en soirée"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 5,
+   "params": {
+    "titre": "Location photobooth, 4 h",
+    "prix": "350 à 600 €",
+    "source": "prix constaté : plateya.fr",
+    "lieu": "Demi-journée"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 6,
+   "params": {
+    "titre": "UNE SOIRÉE (€)",
+    "barres": [
+     {
+      "label": "Prudent",
+      "valeur": 350
+     },
+     {
+      "label": "Haut",
+      "valeur": 600,
+      "accent": true
+     }
+    ],
+    "badge": "estimation"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 7,
+   "params": {
+    "valeur": 350,
+    "suffixe": " €",
+    "etiquette": "une soirée, tarif bas"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 9,
+   "params": {
+    "titre": "QUATRE SOIRÉES PAR MOIS (€)",
+    "barres": [
+     {
+      "label": "Prudent",
+      "valeur": 1400
+     },
+     {
+      "label": "Haut",
+      "valeur": 2400,
+      "accent": true
+     }
+    ],
+    "badge": "estimation"
+   }
+  }
+ ]
+}

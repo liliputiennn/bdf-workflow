@@ -1,0 +1,140 @@
+[
+ {
+  "claim": "La Bambu Lab A1 mini est vendue environ 189 euros (179 euros sur la boutique de la marque, 189 euros chez un revendeur comparé).",
+  "valeur": "189 €",
+  "phrase": 1,
+  "sources": [
+   "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+   "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+  ],
+  "check": [
+   "189"
+  ],
+  "verified": [
+   "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+   "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+  ]
+ },
+ {
+  "claim": "La Bambu Lab A1 mini est vendue environ 189 euros (179 euros sur la boutique de la marque, 189 euros chez un revendeur comparé).",
+  "valeur": "189 €",
+  "phrase": 2,
+  "sources": [
+   "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+   "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+  ],
+  "check": [
+   "189"
+  ],
+  "verified": [
+   "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+   "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+  ]
+ },
+ {
+  "claim": "Un kilo de filament PLA se négocie entre 15 et 30 euros.",
+  "valeur": "15 à 30 €",
+  "phrase": 5,
+  "sources": [
+   "https://lv3dofficiel.fr/post/calculateur-prix-impression-3d",
+   "https://www.ldlc.com/en/product/PB00751012.html"
+  ],
+  "check": [
+   "15 € et 30 €"
+  ],
+  "verified": [
+   "https://lv3dofficiel.fr/post/calculateur-prix-impression-3d"
+  ]
+ },
+ {
+  "claim": "Un devis type pour un boîtier en impression 3D de 45 grammes atteint 30,85 euros.",
+  "valeur": "30,85 €",
+  "phrase": 6,
+  "sources": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+   "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+  ],
+  "check": [
+   "30,85"
+  ],
+  "verified": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+  ]
+ },
+ {
+  "claim": "Dans ce devis, la matière (45 g de PETG) coûte 1,35 euro.",
+  "valeur": "1,35 €",
+  "phrase": 7,
+  "sources": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+   "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+  ],
+  "check": [
+   "1,35"
+  ],
+  "verified": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+  ]
+ },
+ {
+  "claim": "Dans ce devis, 3 heures de machine à 4 euros de l'heure font 12 euros.",
+  "valeur": "12 €",
+  "phrase": 8,
+  "sources": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+   "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+  ],
+  "check": [
+   "12,00"
+  ],
+  "verified": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+  ]
+ },
+ {
+  "claim": "Le devis type comprend 5,50 euros d'expédition sur un total de 30,85 euros.",
+  "valeur": "5,50 €",
+  "phrase": 9,
+  "sources": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+   "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+  ],
+  "check": [
+   "5,50"
+  ],
+  "verified": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+  ]
+ },
+ {
+  "claim": "Le devis type comprend 5,50 euros d'expédition sur un total de 30,85 euros.",
+  "valeur": "5,50 €",
+  "phrase": 10,
+  "sources": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+   "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+  ],
+  "check": [
+   "5,50"
+  ],
+  "verified": [
+   "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+  ]
+ },
+ {
+  "claim": "La Bambu Lab A1 mini est vendue environ 189 euros (179 euros sur la boutique de la marque, 189 euros chez un revendeur comparé).",
+  "valeur": "189 €",
+  "phrase": 11,
+  "sources": [
+   "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+   "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+  ],
+  "check": [
+   "189"
+  ],
+  "verified": [
+   "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+   "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+  ]
+ }
+]

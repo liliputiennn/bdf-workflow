@@ -1,0 +1,111 @@
+[
+ {
+  "claim": "Sur ComeUp, un pack de 10 fiches produits se vend 100 €, soit 10 € la fiche.",
+  "valeur": "10 € la fiche",
+  "phrase": 3,
+  "sources": [
+   "https://comeup.com/fr/service/524677/rediger-10-fiches-produits-pour-boutique-en-ligne",
+   "https://www.codeur.com/projects/441026-redaction-fiches-produits-seo-site-e-commerce"
+  ],
+  "check": [
+   "10€ la fiche"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/524677/rediger-10-fiches-produits-pour-boutique-en-ligne"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 12 € la fiche, au-dessus des 10 € constatés.",
+  "valeur": "12 €",
+  "phrase": 4,
+  "sources": [
+   "https://comeup.com/fr/service/524677/rediger-10-fiches-produits-pour-boutique-en-ligne",
+   "https://www.codeur.com/projects/441026-redaction-fiches-produits-seo-site-e-commerce"
+  ],
+  "check": [
+   "10€ la fiche"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/524677/rediger-10-fiches-produits-pour-boutique-en-ligne"
+  ]
+ },
+ {
+  "claim": "Claude Pro coûte 20 $ par mois.",
+  "valeur": "20 $",
+  "phrase": 5,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 40 fiches à 12 € = 480 € ; moins 20 $ d'outil = 460 € ; 12 minutes par fiche x 40 = 8 heures.",
+  "valeur": "460 €",
+  "phrase": 8,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 12 € la fiche, au-dessus des 10 € constatés.",
+  "valeur": "12 €",
+  "phrase": 8,
+  "sources": [
+   "https://comeup.com/fr/service/524677/rediger-10-fiches-produits-pour-boutique-en-ligne",
+   "https://www.codeur.com/projects/441026-redaction-fiches-produits-seo-site-e-commerce"
+  ],
+  "check": [
+   "10€ la fiche"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/524677/rediger-10-fiches-produits-pour-boutique-en-ligne"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 40 fiches à 12 € = 480 € ; moins 20 $ d'outil = 460 € ; 12 minutes par fiche x 40 = 8 heures.",
+  "valeur": "460 €",
+  "phrase": 9,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 40 fiches à 12 € = 480 € ; moins 20 $ d'outil = 460 € ; 12 minutes par fiche x 40 = 8 heures.",
+  "valeur": "460 €",
+  "phrase": 10,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ }
+]

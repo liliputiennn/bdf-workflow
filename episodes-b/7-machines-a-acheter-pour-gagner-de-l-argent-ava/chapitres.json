@@ -1,0 +1,110 @@
+[
+ {
+  "n": 1,
+  "titre": "Accroche : six cents euros en une soirée",
+  "phrase_debut": 1,
+  "phrase_fin": 6,
+  "debut_s": 0.136,
+  "fin_s": 23.627,
+  "carte_de_s": null,
+  "borne_s": 0.0,
+  "borne_fin_s": 23.727,
+  "duree_s": 23.727
+ },
+ {
+  "n": 2,
+  "titre": "Graveuse laser : planches gravées",
+  "phrase_debut": 7,
+  "phrase_fin": 20,
+  "debut_s": 25.573,
+  "fin_s": 84.845,
+  "carte_de_s": 23.727,
+  "borne_s": 23.727,
+  "borne_fin_s": 84.945,
+  "duree_s": 61.218
+ },
+ {
+  "n": 3,
+  "titre": "Imprimante 3D : pièces à la commande",
+  "phrase_debut": 21,
+  "phrase_fin": 34,
+  "debut_s": 86.791,
+  "fin_s": 149.0,
+  "carte_de_s": 84.945,
+  "borne_s": 84.945,
+  "borne_fin_s": 149.1,
+  "duree_s": 64.155
+ },
+ {
+  "n": 4,
+  "titre": "Presse à mug : tasses personnalisées",
+  "phrase_debut": 35,
+  "phrase_fin": 48,
+  "debut_s": 150.945,
+  "fin_s": 213.564,
+  "carte_de_s": 149.1,
+  "borne_s": 149.1,
+  "borne_fin_s": 213.664,
+  "duree_s": 64.564
+ },
+ {
+  "n": 5,
+  "titre": "Barbe à papa : le stand de sucre",
+  "phrase_debut": 49,
+  "phrase_fin": 61,
+  "debut_s": 215.509,
+  "fin_s": 270.455,
+  "carte_de_s": 213.664,
+  "borne_s": 213.664,
+  "borne_fin_s": 270.555,
+  "duree_s": 56.891
+ },
+ {
+  "n": 6,
+  "titre": "Nettoyeur haute pression : terrasses",
+  "phrase_debut": 62,
+  "phrase_fin": 74,
+  "debut_s": 272.4,
+  "fin_s": 324.973,
+  "carte_de_s": 270.555,
+  "borne_s": 270.555,
+  "borne_fin_s": 325.073,
+  "duree_s": 54.518
+ },
+ {
+  "n": 7,
+  "titre": "Distributeur automatique : vendre sans présence",
+  "phrase_debut": 75,
+  "phrase_fin": 90,
+  "debut_s": 326.918,
+  "fin_s": 383.445,
+  "carte_de_s": 325.073,
+  "borne_s": 325.073,
+  "borne_fin_s": 383.545,
+  "duree_s": 58.472
+ },
+ {
+  "n": 8,
+  "titre": "Photobooth : la borne photo à louer",
+  "phrase_debut": 91,
+  "phrase_fin": 103,
+  "debut_s": 385.391,
+  "fin_s": 436.418,
+  "carte_de_s": 383.545,
+  "borne_s": 383.545,
+  "borne_fin_s": 436.518,
+  "duree_s": 52.973
+ },
+ {
+  "n": 9,
+  "titre": "Laquelle acheter en premier",
+  "phrase_debut": 104,
+  "phrase_fin": 109,
+  "debut_s": 438.364,
+  "fin_s": 460.209,
+  "carte_de_s": 436.518,
+  "borne_s": 436.518,
+  "borne_fin_s": 460.336,
+  "duree_s": 23.818
+ }
+]

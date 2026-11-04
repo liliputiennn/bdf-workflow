@@ -1,0 +1,127 @@
+[
+ {
+  "claim": "Sur ComeUp, un compte rendu de réunion se vend 20 € en service de base.",
+  "valeur": "20 €",
+  "phrase": 3,
+  "sources": [
+   "https://comeup.com/fr/service/537523/rediger-un-compte-rendu-professionnel-de-votre-reunion",
+   "https://copeps.fr/actualites/transcription-audio-freelance-francais/"
+  ],
+  "check": [
+   "20,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/537523/rediger-un-compte-rendu-professionnel-de-votre-reunion"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 25 € par réunion, au-dessus des 20 € de base constatés.",
+  "valeur": "25 €",
+  "phrase": 4,
+  "sources": [
+   "https://comeup.com/fr/service/537523/rediger-un-compte-rendu-professionnel-de-votre-reunion",
+   "https://copeps.fr/actualites/transcription-audio-freelance-francais/"
+  ],
+  "check": [
+   "20,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/537523/rediger-un-compte-rendu-professionnel-de-votre-reunion"
+  ]
+ },
+ {
+  "claim": "Fireflies, formule Pro : 18 $ par mois et par siège en facturation mensuelle.",
+  "valeur": "18 $",
+  "phrase": 5,
+  "sources": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ],
+  "check": [
+   "$18"
+  ],
+  "verified": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 20 réunions x 25 € = 500 € ; moins 18 $ = 482 € ; 20 x 24 minutes = 8 heures.",
+  "valeur": "482 €",
+  "phrase": 8,
+  "sources": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ],
+  "check": [
+   "$18"
+  ],
+  "verified": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 25 € par réunion, au-dessus des 20 € de base constatés.",
+  "valeur": "25 €",
+  "phrase": 8,
+  "sources": [
+   "https://comeup.com/fr/service/537523/rediger-un-compte-rendu-professionnel-de-votre-reunion",
+   "https://copeps.fr/actualites/transcription-audio-freelance-francais/"
+  ],
+  "check": [
+   "20,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/537523/rediger-un-compte-rendu-professionnel-de-votre-reunion"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 20 réunions x 25 € = 500 € ; moins 18 $ = 482 € ; 20 x 24 minutes = 8 heures.",
+  "valeur": "482 €",
+  "phrase": 9,
+  "sources": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ],
+  "check": [
+   "$18"
+  ],
+  "verified": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 20 réunions x 25 € = 500 € ; moins 18 $ = 482 € ; 20 x 24 minutes = 8 heures.",
+  "valeur": "482 €",
+  "phrase": 10,
+  "sources": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ],
+  "check": [
+   "$18"
+  ],
+  "verified": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 20 réunions x 25 € = 500 € ; moins 18 $ = 482 € ; 20 x 24 minutes = 8 heures.",
+  "valeur": "482 €",
+  "phrase": 11,
+  "sources": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ],
+  "check": [
+   "$18"
+  ],
+  "verified": [
+   "https://fireflies.ai/pricing",
+   "https://www.lindy.ai/blog/fireflies-ai-pricing"
+  ]
+ }
+]

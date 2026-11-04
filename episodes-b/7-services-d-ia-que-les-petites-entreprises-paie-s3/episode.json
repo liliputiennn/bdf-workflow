@@ -1,0 +1,133 @@
+{
+ "id": "7-services-d-ia-que-les-petites-entreprises-paie-s3",
+ "titre": "Un assistant qui répond aux clients : 410 € le premier mois",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "SERVICE 3 RÉPONSES AUTOMATIQUES",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Troisième service : un assistant qui répond aux questions des clients, jour et nuit.",
+  "Le client reçoit une fenêtre de discussion sur son site, nourrie avec ses propres réponses.",
+  "Sur ComeUp, un robot de questions fréquentes se vend à partir de cent euros.",
+  "Sur Codeur, les devis moyens pour ce type de projet montent à mille trois cents euros.",
+  "Les solutions pour petites entreprises se facturent de cent à cinq cents dollars par mois.",
+  "Toi, tu demandes trois cents euros de mise en place, puis cent cinquante euros par mois.",
+  "Ton outil : Chatbase, formule Hobby à quarante dollars par mois.",
+  "Tu lui donnes les textes du site et les réponses aux questions qu'on pose le plus souvent.",
+  "Le premier mois, il paie quatre cent cinquante euros. Ton outil coûte quarante euros.",
+  "Il te reste quatre cent dix euros pour une journée de huit heures de réglages."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 3,
+    "titre": "Réponses aux clients",
+    "badge": "Service",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "40 $ par mois"
+     },
+     {
+      "label": "Temps",
+      "valeur": "8 h au départ"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "410 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 2,
+   "params": {
+    "recherche": "customer service chat laptop",
+    "legende": "Questions des clients"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 3,
+   "params": {
+    "titre": "Chatbot de questions fréquentes",
+    "prix": "100 €",
+    "lieu": "ComeUp",
+    "source": "prix constaté sur ComeUp"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 4,
+   "params": {
+    "titre": "PRIX CONSTATÉS",
+    "barres": [
+     {
+      "label": "Robot de base",
+      "valeur": 100
+     },
+     {
+      "label": "Devis moyen",
+      "valeur": 1300
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 6,
+   "params": {
+    "valeur": 450,
+    "suffixe": " €",
+    "etiquette": "le premier mois",
+    "sous": "300 € + 150 €"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 7,
+   "params": {
+    "titre": "TON OUTIL",
+    "items": [
+     {
+      "texte": "Chatbase Hobby"
+     },
+     {
+      "texte": "Les textes du site"
+     }
+    ]
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 9,
+   "params": {
+    "titre": "PREMIER MOIS · ESTIMATION",
+    "barres": [
+     {
+      "label": "Facturé",
+      "valeur": 450
+     },
+     {
+      "label": "Outil",
+      "valeur": 40
+     },
+     {
+      "label": "Il te reste",
+      "valeur": 410,
+      "accent": true
+     }
+    ],
+    "badge": "estimation"
+   }
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+[
+ {
+  "claim": "Le nettoyeur haute pression professionnel Kärcher HD 5/15 C+ est affiché 864,95 euros TTC.",
+  "valeur": "864,95 €",
+  "phrase": 3,
+  "sources": [
+   "https://www.bricozor.com/15C+.951.html",
+   "https://conseils.hellopro.fr/combien-coute-un-nettoyeur-haute-pression-1759.html"
+  ],
+  "check": [
+   "864,95"
+  ],
+  "verified": [
+   "https://www.bricozor.com/15C+.951.html"
+  ]
+ },
+ {
+  "claim": "Un nettoyage professionnel de terrasse coûte entre 3 et 15 euros le mètre carré.",
+  "valeur": "3 à 15 €/m²",
+  "phrase": 5,
+  "sources": [
+   "https://www.prosnettoyage.fr/nettoyage-terrasse",
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+  ],
+  "check": [
+   "15 €/m²"
+  ],
+  "verified": [
+   "https://www.prosnettoyage.fr/nettoyage-terrasse",
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+  ]
+ },
+ {
+  "claim": "Dans plusieurs grandes villes (Bordeaux, Lyon, Lille, Toulouse, Nantes), le nettoyage de terrasse revient à 4 à 4,80 euros le mètre carré.",
+  "valeur": "4 €/m²",
+  "phrase": 6,
+  "sources": [
+   "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83",
+   "https://www.prosnettoyage.fr/nettoyage-terrasse"
+  ],
+  "check": [
+   "4,00"
+  ],
+  "verified": [
+   "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83"
+  ]
+ },
+ {
+  "claim": "Dans plusieurs grandes villes (Bordeaux, Lyon, Lille, Toulouse, Nantes), le nettoyage de terrasse revient à 4 à 4,80 euros le mètre carré.",
+  "valeur": "4 €/m²",
+  "phrase": 7,
+  "sources": [
+   "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83",
+   "https://www.prosnettoyage.fr/nettoyage-terrasse"
+  ],
+  "check": [
+   "4,00"
+  ],
+  "verified": [
+   "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83"
+  ]
+ },
+ {
+  "claim": "Un forfait minimum de 150 euros est souvent appliqué aux petites surfaces.",
+  "valeur": "150 €",
+  "phrase": 8,
+  "sources": [
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/",
+   "https://www.prosnettoyage.fr/nettoyage-terrasse"
+  ],
+  "check": [
+   "150 €"
+  ],
+  "verified": [
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+  ]
+ },
+ {
+  "claim": "Dans plusieurs grandes villes (Bordeaux, Lyon, Lille, Toulouse, Nantes), le nettoyage de terrasse revient à 4 à 4,80 euros le mètre carré.",
+  "valeur": "4 €/m²",
+  "phrase": 9,
+  "sources": [
+   "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83",
+   "https://www.prosnettoyage.fr/nettoyage-terrasse"
+  ],
+  "check": [
+   "4,00"
+  ],
+  "verified": [
+   "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83"
+  ]
+ },
+ {
+  "claim": "Le nettoyeur haute pression professionnel Kärcher HD 5/15 C+ est affiché 864,95 euros TTC.",
+  "valeur": "864,95 €",
+  "phrase": 10,
+  "sources": [
+   "https://www.bricozor.com/15C+.951.html",
+   "https://conseils.hellopro.fr/combien-coute-un-nettoyeur-haute-pression-1759.html"
+  ],
+  "check": [
+   "864,95"
+  ],
+  "verified": [
+   "https://www.bricozor.com/15C+.951.html"
+  ]
+ }
+]

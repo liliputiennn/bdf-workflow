@@ -1,0 +1,140 @@
+{
+ "id": "7-services-d-ia-que-les-petites-entreprises-paie-s4",
+ "titre": "Sous-titrer des vidéos : 63 € de l'heure, le calcul",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "SERVICE 4 TITRES VIDÉOS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Quatrième service : les sous-titres des vidéos de réseaux sociaux.",
+  "Le client te donne ses vidéos. Tu lui rends les mêmes, avec des sous-titres animés.",
+  "Sur Malt, un sous-titreur affiche quinze euros pour dix minutes de vidéo.",
+  "Sur ComeUp, quinze euros aussi, mais pour une vidéo de moins de trois minutes.",
+  "Ça fait de un euro cinquante à cinq euros la minute.",
+  "Toi, tu demandes quatre euros la minute pour des sous-titres animés et relus.",
+  "Ton outil : Submagic, formule Pro à trente-neuf dollars par mois.",
+  "Elle traite quarante vidéos par mois, de cinq minutes chacune au plus.",
+  "Un client qui publie trente vidéos de quatre minutes te donne cent vingt minutes.",
+  "À quatre euros la minute, il paie quatre cent quatre-vingts euros.",
+  "Ton outil coûte trente-neuf euros. Il te reste quatre cent quarante et un euros.",
+  "Sept heures de travail, relecture comprise : soixante-trois euros de l'heure."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 4,
+    "titre": "Sous-titres vidéo",
+    "badge": "Service",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "39 $ par mois"
+     },
+     {
+      "label": "Temps",
+      "valeur": "7 h par mois"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "504 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 2,
+   "params": {
+    "recherche": "video editing timeline screen",
+    "legende": "Montage et sous-titres"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 3,
+   "params": {
+    "titre": "Sous-titres, 10 minutes de vidéo",
+    "prix": "15 €",
+    "lieu": "Malt",
+    "source": "prix constaté sur Malt"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 5,
+   "params": {
+    "titre": "PRIX À LA MINUTE (€)",
+    "barres": [
+     {
+      "label": "Malt",
+      "valeur": 1.5
+     },
+     {
+      "label": "Toi",
+      "valeur": 4,
+      "accent": true
+     },
+     {
+      "label": "ComeUp",
+      "valeur": 5
+     }
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 7,
+   "params": {
+    "titre": "TON OUTIL",
+    "items": [
+     {
+      "texte": "Submagic Pro"
+     },
+     {
+      "texte": "Vidéos du client"
+     }
+    ]
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 9,
+   "params": {
+    "titre": "UN MOIS · ESTIMATION",
+    "barres": [
+     {
+      "label": "Facturé",
+      "valeur": 480
+     },
+     {
+      "label": "Outil",
+      "valeur": 39
+     },
+     {
+      "label": "Il te reste",
+      "valeur": 441,
+      "accent": true
+     }
+    ],
+    "badge": "estimation"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 12,
+   "params": {
+    "valeur": 63,
+    "suffixe": " €",
+    "etiquette": "de l'heure",
+    "sous": "estimation"
+   }
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s2",
+ "titre": "Une imprimante 3D à 189 € : 72 € par jour avec 3 pièces",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "IMPRIMANTE 3D PIÈCES COMMANDE",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Deuxième machine : l'imprimante trois D, dès cent quatre-vingt-neuf euros.",
+  "Le modèle de départ : la petite Bambu Lab, le modèle A un mini, au prix relevé chez la marque et sur un comparateur.",
+  "Pourquoi maintenant ? Des gens cherchent une pièce cassée, un support sur mesure, un boîtier, et personne près d'eux ne sait la faire.",
+  "Ce qu'elle produit : des pièces en plastique, une par une, à partir d'un fichier.",
+  "Le plastique, c'est du filament : un kilo coûte de quinze à trente euros.",
+  "Prix de vente constaté : un devis type, pour un petit boîtier de quarante-cinq grammes, tombe à trente euros quatre-vingt-cinq.",
+  "Dans ce devis, le plastique pèse seulement un euro trente-cinq.",
+  "L'impression dure trois heures, facturées quatre euros de l'heure, donc douze euros de machine.",
+  "Le calcul : trente euros quatre-vingt-cinq, moins cinq euros cinquante de port, moins le plastique, il reste vingt-quatre euros.",
+  "À une pièce par jour, vingt-quatre euros. À trois, soixante-douze. À cinq, cent vingt.",
+  "Pour rembourser la machine, il faut en vendre huit.",
+  "Première action aujourd'hui : cherche sur les sites d'annonces des gens qui demandent une pièce introuvable, et propose-leur un prix."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 2,
+    "titre": "Imprimante 3D",
+    "badge": "Machine",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "189 €"
+     },
+     {
+      "label": "Temps par jour (estimation)",
+      "valeur": "3 h par pièce"
+     },
+     {
+      "label": "Gain par jour (estimation)",
+      "valeur": "72 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 2,
+   "params": {
+    "valeur": 189,
+    "suffixe": " €",
+    "etiquette": "Bambu Lab A1 mini : prix d'achat"
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 3,
+   "params": {
+    "recherche": "3d printer printing",
+    "legende": "La machine au travail"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 4,
+   "params": {
+    "titre": "CE QU'ELLE FABRIQUE",
+    "items": [
+     {
+      "texte": "Pièces cassées"
+     },
+     {
+      "texte": "Supports sur mesure"
+     },
+     {
+      "texte": "Boîtiers"
+     }
+    ]
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 6,
+   "params": {
+    "titre": "Devis type : boîtier de 45 g",
+    "prix": "30,85 €",
+    "source": "devis type : lv3dofficiel.fr",
+    "etat": "Sur mesure",
+    "lieu": "Port inclus"
+   }
+  },
+  {
+   "type": "duel",
+   "phrase": 9,
+   "params": {
+    "titre": "PAR PIÈCE (€)",
+    "haut": {
+     "titre": "Devis 30,85 €",
+     "part": 100
+    },
+    "bas": {
+     "titre": "Port 5,50 €",
+     "part": 18
+    }
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 10,
+   "params": {
+    "titre": "GAIN PAR JOUR (€)",
+    "barres": [
+     {
+      "label": "1 pièce",
+      "valeur": 24
+     },
+     {
+      "label": "3 pièces",
+      "valeur": 72,
+      "accent": true
+     },
+     {
+      "label": "5 pièces",
+      "valeur": 120
+     }
+    ],
+    "badge": "estimation"
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 12,
+   "params": {
+    "question": "Quelle pièce manque autour de toi ?",
+    "pistes": [
+     "Support",
+     "Boîtier",
+     "Pièce cassée"
+    ]
+   }
+  }
+ ]
+}

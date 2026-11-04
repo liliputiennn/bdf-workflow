@@ -1,0 +1,126 @@
+{
+ "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s5",
+ "titre": "Un nettoyeur haute pression : 120 € par terrasse nettoyée",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "NETTOYEUR HAUTE PRESSION TERRASSES",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Cinquième machine : le nettoyeur haute pression, la plus simple à lancer.",
+  "Tout le monde a une terrasse ou une cour grise et verte, et personne n'a envie de se mettre à genoux pour la frotter.",
+  "Un modèle professionnel comme le Kärcher HD cinq quinze C Plus coûte huit cent soixante-quatre euros quatre-vingt-quinze.",
+  "Ce qu'il produit : une terrasse qui redevient claire en quelques heures.",
+  "Prix de vente constaté : entre trois et quinze euros le mètre carré selon la surface et l'état.",
+  "Dans plusieurs grandes villes, on tourne plutôt autour de quatre euros le mètre carré.",
+  "Le calcul : une terrasse de trente mètres carrés à quatre euros, ça fait cent vingt euros.",
+  "Certains appliquent un forfait minimum de cent cinquante euros pour les petites surfaces.",
+  "Une terrasse par jour, cent vingt euros. Deux, deux cent quarante. Trois, trois cent soixante.",
+  "Pour rembourser la machine, il faut nettoyer environ sept terrasses."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 5,
+    "titre": "Nettoyeur haute pression",
+    "badge": "Machine",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "864,95 €"
+     },
+     {
+      "label": "Temps par jour (estimation)",
+      "valeur": "2 h par terrasse"
+     },
+     {
+      "label": "Gain par jour (estimation)",
+      "valeur": "240 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 2,
+   "params": {
+    "recherche": "pressure washing patio cleaning",
+    "legende": "La machine au travail"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 3,
+   "params": {
+    "valeur": 864.95,
+    "decimales": 2,
+    "suffixe": " €",
+    "etiquette": "Kärcher HD 5/15 C+ : prix d'achat"
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 4,
+   "params": {
+    "recherche": "pressure washer terrace cleaning",
+    "legende": "Une terrasse avant nettoyage"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 5,
+   "params": {
+    "titre": "Nettoyage de terrasse",
+    "prix": "4 €/m²",
+    "source": "prix constaté : yoojo.fr",
+    "lieu": "Grandes villes"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 6,
+   "params": {
+    "titre": "PRIX AU m²",
+    "items": [
+     {
+      "texte": "Fourchette",
+      "valeur": "3 à 15 €"
+     },
+     {
+      "texte": "Grandes villes",
+      "valeur": "4 €"
+     }
+    ]
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 9,
+   "params": {
+    "titre": "GAIN PAR JOUR (€)",
+    "barres": [
+     {
+      "label": "1 terrasse",
+      "valeur": 120
+     },
+     {
+      "label": "2 terrasses",
+      "valeur": 240,
+      "accent": true
+     },
+     {
+      "label": "3 terrasses",
+      "valeur": 360
+     }
+    ],
+    "badge": "estimation"
+   }
+  }
+ ]
+}

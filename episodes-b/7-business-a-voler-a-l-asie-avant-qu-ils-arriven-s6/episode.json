@@ -1,0 +1,117 @@
+{
+ "id": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s6",
+ "titre": "La laverie libre-service : ce qu'il reste par jour",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "BUSINESS 6 LAVERIE LIBRE",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Sixième business : la laverie libre-service, la boutique où les machines travaillent seules.",
+  "Un cycle de lavage rapporte en moyenne de trois à sept euros, selon la taille de la machine.",
+  "Dans une laverie de Paris, une machine de sept kilos facture trois euros cinquante à quatre euros.",
+  "Selon un guide du secteur, ça pèse sept cent vingt-six millions d'euros, avec plus de quatre mille cinq cents laveries.",
+  "Selon un autre guide, le chiffre d'affaires moyen est de trente-huit mille euros par laverie.",
+  "Ça fait environ cent quatre euros par jour.",
+  "La marge nette du secteur tourne autour de vingt-cinq à trente-cinq pour cent.",
+  "À trente pour cent, il te reste environ onze mille quatre cents euros par an, soit trente et un euros par jour."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 6,
+    "titre": "Laverie libre-service",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "50 000 €"
+     },
+     {
+      "label": "Temps par jour",
+      "valeur": "2 h"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "31 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 2,
+   "params": {
+    "valeur": 7,
+    "prefixe": "3 à ",
+    "suffixe": " €",
+    "etiquette": "par cycle de lavage, en moyenne"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 3,
+   "params": {
+    "titre": "Lavage 7 kg",
+    "prix": "3,50 €",
+    "source": "tarif relevé dans une laverie de Paris (Pages Jaunes)",
+    "lieu": "Paris"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 4,
+   "params": {
+    "titre": "LE SECTEUR EN FRANCE",
+    "items": [
+     {
+      "texte": "Chiffre d'affaires",
+      "valeur": "726 M€"
+     },
+     {
+      "texte": "Laveries",
+      "valeur": "4 500"
+     },
+     {
+      "texte": "CA moyen par laverie",
+      "valeur": "38 000 €"
+     }
+    ]
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 6,
+   "params": {
+    "recherche": "laundromat washing machines",
+    "legende": "Une laverie libre-service"
+   }
+  },
+  {
+   "type": "anneau",
+   "phrase": 7,
+   "params": {
+    "valeur": 30,
+    "repere": 100,
+    "centre": "25–35 %",
+    "etiquette": "de marge nette selon un guide"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 8,
+   "params": {
+    "valeur": 31,
+    "suffixe": " €",
+    "etiquette": "de gain par jour, estimation",
+    "sous": "38 000 € × 30 % ÷ 365 jours"
+   }
+  }
+ ]
+}

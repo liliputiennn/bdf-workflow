@@ -1,0 +1,120 @@
+{
+ "id": "7-services-d-ia-que-les-petites-entreprises-paie-s7",
+ "titre": "Une secrétaire qui prend les rendez-vous : 490 € la mise en place",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "SERVICE 7 SECRÉTAIRE PREND",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Dernier service, et le plus cher : la secrétaire qui prend les rendez-vous toute seule.",
+  "Le client reçoit un assistant qui décroche, répond aux questions et réserve un créneau dans son agenda.",
+  "Sur ComeUp, une secrétaire de ce genre s'installe à mille deux cent quatre-vingt-dix euros.",
+  "L'abonnement d'un réceptionniste de ce type tourne autour de quatre-vingt-dix-neuf euros par mois chez CloudTalk.",
+  "Les petites entreprises paient en général entre cinquante et deux cents euros par mois.",
+  "Toi, tu demandes quatre cent quatre-vingt-dix euros de mise en place. Moins de la moitié du prix de ComeUp.",
+  "Ton outil : le compte du client chez CloudTalk, à quatre-vingt-dix-neuf euros par mois, payé par lui.",
+  "Tu branches son agenda, tu écris les réponses aux questions courantes, tu testes avec de vrais appels.",
+  "Compte une journée de huit heures de mise en place.",
+  "Il paie quatre cent quatre-vingt-dix euros. Il te reste quatre cent quatre-vingt-dix euros."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 7,
+    "titre": "Rendez-vous automatiques",
+    "badge": "Service",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "0 € (abonnement client)"
+     },
+     {
+      "label": "Temps",
+      "valeur": "8 h de mise en place"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "490 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 2,
+   "params": {
+    "recherche": "hairdresser salon reception desk",
+    "legende": "Salon de coiffure"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 3,
+   "params": {
+    "titre": "Secrétaire pour rendez-vous",
+    "prix": "1 290 €",
+    "lieu": "ComeUp",
+    "source": "prix constaté sur ComeUp"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 4,
+   "params": {
+    "valeur": 99,
+    "suffixe": " €",
+    "etiquette": "par mois, l'abonnement CloudTalk"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 6,
+   "params": {
+    "titre": "MISE EN PLACE (€)",
+    "barres": [
+     {
+      "label": "ComeUp",
+      "valeur": 1290
+     },
+     {
+      "label": "Toi",
+      "valeur": 490,
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 7,
+   "params": {
+    "titre": "TON OUTIL",
+    "items": [
+     {
+      "texte": "CloudTalk (payé par le client)"
+     },
+     {
+      "texte": "Son agenda"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 10,
+   "params": {
+    "valeur": 490,
+    "suffixe": " €",
+    "etiquette": "pour une journée",
+    "sous": "estimation"
+   }
+  }
+ ]
+}

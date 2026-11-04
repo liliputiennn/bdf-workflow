@@ -1,0 +1,110 @@
+[
+ {
+  "claim": "Sur ComeUp, une secrétaire IA qui prend les rendez-vous se vend 1 290 €.",
+  "valeur": "1 290 €",
+  "phrase": 3,
+  "sources": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24",
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/"
+  ],
+  "check": [
+   "1290,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ]
+ },
+ {
+  "claim": "Le réceptionniste IA sans code de CloudTalk coûte 99 € par mois.",
+  "valeur": "99 €",
+  "phrase": 4,
+  "sources": [
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/",
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ],
+  "check": [
+   "99"
+  ],
+  "verified": [
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/",
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ]
+ },
+ {
+  "claim": "La plupart des petites entreprises paient entre 50 € et 200 € par mois un secrétariat téléphonique IA.",
+  "valeur": "50 à 200 €",
+  "phrase": 5,
+  "sources": [
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/",
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ],
+  "check": [
+   "€50",
+   "€200"
+  ],
+  "verified": [
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 490 € de mise en place, contre 1 290 € chez le vendeur ComeUp cité.",
+  "valeur": "490 €",
+  "phrase": 6,
+  "sources": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24",
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/"
+  ],
+  "check": [
+   "1290,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ]
+ },
+ {
+  "claim": "Le réceptionniste IA sans code de CloudTalk coûte 99 € par mois.",
+  "valeur": "99 €",
+  "phrase": 7,
+  "sources": [
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/",
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ],
+  "check": [
+   "99"
+  ],
+  "verified": [
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/",
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 490 € facturés ; l'abonnement de 99 € par mois est payé par le client ; 8 heures de mise en place.",
+  "valeur": "490 €",
+  "phrase": 9,
+  "sources": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24",
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/"
+  ],
+  "check": [
+   "1290,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 490 € facturés ; l'abonnement de 99 € par mois est payé par le client ; 8 heures de mise en place.",
+  "valeur": "490 €",
+  "phrase": 10,
+  "sources": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24",
+   "https://www.cloudtalk.io/fr/blog/combien-coute-un-service-de-secretariat-telephonique-ia/"
+  ],
+  "check": [
+   "1290,00"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/521027/installer-votre-secretaire-ia-qui-decroche-qualifie-chaque-appel-et-prend-vos-rdv-24h-24"
+  ]
+ }
+]

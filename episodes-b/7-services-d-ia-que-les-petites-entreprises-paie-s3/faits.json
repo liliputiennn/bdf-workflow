@@ -1,0 +1,129 @@
+[
+ {
+  "claim": "Sur ComeUp, un chatbot de questions fréquentes de base se vend 100 €.",
+  "valeur": "100 €",
+  "phrase": 3,
+  "sources": [
+   "https://comeup.com/fr/service/417057/create-an-ai-chatbot-for-your-agency-or-business",
+   "https://www.codeur.com/projects/442257-chatbot"
+  ],
+  "check": [
+   "chatbot",
+   "100"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/417057/create-an-ai-chatbot-for-your-agency-or-business",
+   "https://www.codeur.com/projects/442257-chatbot"
+  ]
+ },
+ {
+  "claim": "Sur Codeur, le montant moyen des devis proposés pour un chatbot est de 1 300 €.",
+  "valeur": "1 300 €",
+  "phrase": 4,
+  "sources": [
+   "https://www.codeur.com/projects/442257-chatbot",
+   "https://www.flowhunt.io/fr/faq/how-much-is-chatbot-ai/"
+  ],
+  "check": [
+   "1300"
+  ],
+  "verified": [
+   "https://www.codeur.com/projects/442257-chatbot"
+  ]
+ },
+ {
+  "claim": "Les solutions de chatbot pour petites entreprises coûtent de 100 à 500 $ par mois.",
+  "valeur": "100 à 500 $",
+  "phrase": 5,
+  "sources": [
+   "https://www.flowhunt.io/fr/faq/how-much-is-chatbot-ai/",
+   "https://kolonell.com/fr/blog/prix-chatbot-ia-service-client-pme-2026"
+  ],
+  "check": [
+   "100 a 500"
+  ],
+  "verified": [
+   "https://www.flowhunt.io/fr/faq/how-much-is-chatbot-ai/"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 300 € de mise en place puis 150 € par mois de suivi, soit 450 € le premier mois.",
+  "valeur": "450 €",
+  "phrase": 6,
+  "sources": [
+   "https://www.codeur.com/projects/442257-chatbot",
+   "https://comeup.com/fr/service/417057/create-an-ai-chatbot-for-your-agency-or-business"
+  ],
+  "check": [
+   "chatbot"
+  ],
+  "verified": [
+   "https://www.codeur.com/projects/442257-chatbot",
+   "https://comeup.com/fr/service/417057/create-an-ai-chatbot-for-your-agency-or-business"
+  ]
+ },
+ {
+  "claim": "Chatbase, formule Hobby : 40 $ par mois.",
+  "valeur": "40 $",
+  "phrase": 7,
+  "sources": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ],
+  "check": [
+   "$40"
+  ],
+  "verified": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 450 € moins 40 $ d'outil = 410 € pour 8 heures ; les mois suivants 150 € moins 40 $ = 110 € pour 1 heure.",
+  "valeur": "410 €",
+  "phrase": 9,
+  "sources": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ],
+  "check": [
+   "$40"
+  ],
+  "verified": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 300 € de mise en place puis 150 € par mois de suivi, soit 450 € le premier mois.",
+  "valeur": "450 €",
+  "phrase": 9,
+  "sources": [
+   "https://www.codeur.com/projects/442257-chatbot",
+   "https://comeup.com/fr/service/417057/create-an-ai-chatbot-for-your-agency-or-business"
+  ],
+  "check": [
+   "chatbot"
+  ],
+  "verified": [
+   "https://www.codeur.com/projects/442257-chatbot",
+   "https://comeup.com/fr/service/417057/create-an-ai-chatbot-for-your-agency-or-business"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 450 € moins 40 $ d'outil = 410 € pour 8 heures ; les mois suivants 150 € moins 40 $ = 110 € pour 1 heure.",
+  "valeur": "410 €",
+  "phrase": 10,
+  "sources": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ],
+  "check": [
+   "$40"
+  ],
+  "verified": [
+   "https://www.chatbase.co/pricing",
+   "https://www.featurebase.app/blog/chatbase-pricing"
+  ]
+ }
+]

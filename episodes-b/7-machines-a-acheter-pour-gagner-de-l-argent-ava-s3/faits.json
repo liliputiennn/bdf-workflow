@@ -1,0 +1,92 @@
+[
+ {
+  "claim": "Une presse à mug coûte entre 100 et 350 euros.",
+  "valeur": "100 à 350 €",
+  "phrase": 4,
+  "sources": [
+   "https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html",
+   "https://www.intercyprus.com/fr/products/succebuy-auto-tumbler-heat-press-machine-mug-heat-press-11-30oz-sublimation-tumblers-heat-up-fast-even-tumbler-press-with-tape"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html"
+  ]
+ },
+ {
+  "claim": "Une tasse blanche à sublimation coûte 1,38 euro pièce par lot de 36 (hors TVA).",
+  "valeur": "1,38 €",
+  "phrase": 6,
+  "sources": [
+   "https://www.brildor.com/en/white-sublimation-mug-orca",
+   "https://www.longforte.com/en-ie/products/mugs-36-x-11oz-white-sublimation-mugs-with-silver-handle"
+  ],
+  "check": [
+   "1.38"
+  ],
+  "verified": [
+   "https://www.brildor.com/en/white-sublimation-mug-orca"
+  ]
+ },
+ {
+  "claim": "Un mug personnalisé avec photo se vend 18 euros sur un site de cadeaux et jusqu'à 19,95 euros ailleurs.",
+  "valeur": "18 €",
+  "phrase": 7,
+  "sources": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+   "https://www.cherchons.com/maison/art-de-la-table/service-pour-le-repas/mug/mug-magique-personnalise.html"
+  ],
+  "check": [
+   "18 €"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+  ]
+ },
+ {
+  "claim": "Calcul : mug vendu 18 euros moins 1,38 euro de tasse = 16,62 euros restants.",
+  "valeur": "16,62 €",
+  "phrase": 8,
+  "sources": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+   "https://www.brildor.com/en/white-sublimation-mug-orca"
+  ],
+  "check": [
+   "18 €"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+  ]
+ },
+ {
+  "claim": "Calcul : mug vendu 18 euros moins 1,38 euro de tasse = 16,62 euros restants.",
+  "valeur": "16,62 €",
+  "phrase": 10,
+  "sources": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+   "https://www.brildor.com/en/white-sublimation-mug-orca"
+  ],
+  "check": [
+   "18 €"
+  ],
+  "verified": [
+   "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+  ]
+ },
+ {
+  "claim": "Une presse à mug coûte entre 100 et 350 euros.",
+  "valeur": "100 à 350 €",
+  "phrase": 11,
+  "sources": [
+   "https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html",
+   "https://www.intercyprus.com/fr/products/succebuy-auto-tumbler-heat-press-machine-mug-heat-press-11-30oz-sublimation-tumblers-heat-up-fast-even-tumbler-press-with-tape"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html"
+  ]
+ }
+]

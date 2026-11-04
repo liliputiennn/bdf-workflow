@@ -1,0 +1,147 @@
+{
+ "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s1",
+ "titre": "Une graveuse laser transforme une planche en cadeau à 41 €",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "GRAVEUSE LASER PLANCHES GRAVÉES",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Première machine : la graveuse laser, celle qui transforme un bout de bois en cadeau à quarante euros.",
+  "Pourquoi maintenant ? Chaque cadeau de Noël, de mariage ou de naissance se vend mieux avec un prénom dessus.",
+  "Le modèle de départ : l'xTool D1 Pro, la version de vingt watts.",
+  "Prix d'achat : mille trois cent quatre-vingt-dix-neuf euros, et parfois mille cent quatre-vingt-dix-neuf en promotion.",
+  "Ce qu'elle produit : des planches à découper, des plateaux, des porte-clés, des sous-verres gravés au prénom.",
+  "Une planche de bambou nue coûte cinq euros quatre-vingt-dix-huit dans un magasin.",
+  "Les artisans vendent une planche gravée entre quarante et un et cinquante-huit euros.",
+  "Le calcul : achat six euros environ, vente quarante et un euros, il te reste trente-cinq euros par planche.",
+  "À deux planches par jour, soixante-dix euros. À cinq, cent soixante-quinze. À dix, trois cent cinquante.",
+  "Pour rembourser la machine, il faut en vendre quarante."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 1,
+    "titre": "Graveuse laser",
+    "badge": "Machine",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "1 399 €"
+     },
+     {
+      "label": "Temps par jour (estimation)",
+      "valeur": "1 h"
+     },
+     {
+      "label": "Gain par jour (estimation)",
+      "valeur": "175 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 2,
+   "params": {
+    "recherche": "laser engraving machine wood",
+    "legende": "La machine au travail"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 4,
+   "params": {
+    "valeur": 1399,
+    "suffixe": " €",
+    "etiquette": "xTool D1 Pro : prix d'achat"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "CE QU'ELLE GRAVE",
+    "items": [
+     {
+      "texte": "Planches à découper"
+     },
+     {
+      "texte": "Plateaux"
+     },
+     {
+      "texte": "Porte-clés"
+     },
+     {
+      "texte": "Sous-verres"
+     }
+    ]
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 7,
+   "params": {
+    "titre": "Planche à découper gravée (chêne)",
+    "prix": "41 €",
+    "source": "prix constaté : marques-de-france.fr",
+    "etat": "Neuf",
+    "lieu": "Livraison",
+    "recherche": "engraved wooden cutting board"
+   }
+  },
+  {
+   "type": "duel",
+   "phrase": 8,
+   "params": {
+    "titre": "PAR PLANCHE (€)",
+    "haut": {
+     "titre": "Vente 41 €",
+     "part": 100
+    },
+    "bas": {
+     "titre": "Achat 6 €",
+     "part": 15
+    }
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 9,
+   "params": {
+    "titre": "GAIN PAR JOUR (€)",
+    "barres": [
+     {
+      "label": "2 planches",
+      "valeur": 70
+     },
+     {
+      "label": "5 planches",
+      "valeur": 175,
+      "accent": true
+     },
+     {
+      "label": "10 planches",
+      "valeur": 350
+     }
+    ],
+    "badge": "estimation"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 10,
+   "params": {
+    "valeur": 40,
+    "suffixe": " planches",
+    "etiquette": "pour rembourser la machine"
+   }
+  }
+ ]
+}

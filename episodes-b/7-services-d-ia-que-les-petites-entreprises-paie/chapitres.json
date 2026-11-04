@@ -1,0 +1,110 @@
+[
+ {
+  "n": 1,
+  "titre": "Accroche",
+  "phrase_debut": 1,
+  "phrase_fin": 11,
+  "debut_s": 0.136,
+  "fin_s": 37.4,
+  "carte_de_s": null,
+  "borne_s": 0.0,
+  "borne_fin_s": 37.5,
+  "duree_s": 37.5
+ },
+ {
+  "n": 2,
+  "titre": "Service 1 : posts pour les réseaux sociaux",
+  "phrase_debut": 12,
+  "phrase_fin": 27,
+  "debut_s": 39.345,
+  "fin_s": 92.555,
+  "carte_de_s": 37.5,
+  "borne_s": 37.5,
+  "borne_fin_s": 92.655,
+  "duree_s": 55.155
+ },
+ {
+  "n": 3,
+  "titre": "Service 2 : fiches produit pour boutiques en ligne",
+  "phrase_debut": 28,
+  "phrase_fin": 42,
+  "debut_s": 94.5,
+  "fin_s": 147.009,
+  "carte_de_s": 92.655,
+  "borne_s": 92.655,
+  "borne_fin_s": 147.109,
+  "duree_s": 54.454
+ },
+ {
+  "n": 4,
+  "titre": "Service 3 : réponses automatiques aux clients",
+  "phrase_debut": 43,
+  "phrase_fin": 58,
+  "debut_s": 148.955,
+  "fin_s": 205.755,
+  "carte_de_s": 147.109,
+  "borne_s": 147.109,
+  "borne_fin_s": 205.855,
+  "duree_s": 58.746
+ },
+ {
+  "n": 5,
+  "titre": "Service 4 : sous-titres pour les vidéos",
+  "phrase_debut": 59,
+  "phrase_fin": 75,
+  "debut_s": 207.7,
+  "fin_s": 265.318,
+  "carte_de_s": 205.855,
+  "borne_s": 205.855,
+  "borne_fin_s": 265.418,
+  "duree_s": 59.563
+ },
+ {
+  "n": 6,
+  "titre": "Service 5 : comptes rendus de réunion",
+  "phrase_debut": 76,
+  "phrase_fin": 91,
+  "debut_s": 267.264,
+  "fin_s": 321.382,
+  "carte_de_s": 265.418,
+  "borne_s": 265.418,
+  "borne_fin_s": 321.482,
+  "duree_s": 56.064
+ },
+ {
+  "n": 7,
+  "titre": "Service 6 : veille sur les concurrents",
+  "phrase_debut": 92,
+  "phrase_fin": 107,
+  "debut_s": 323.327,
+  "fin_s": 376.436,
+  "carte_de_s": 321.482,
+  "borne_s": 321.482,
+  "borne_fin_s": 376.536,
+  "duree_s": 55.054
+ },
+ {
+  "n": 8,
+  "titre": "Service 7 : secrétaire qui prend les rendez-vous",
+  "phrase_debut": 108,
+  "phrase_fin": 121,
+  "debut_s": 378.382,
+  "fin_s": 436.936,
+  "carte_de_s": 376.536,
+  "borne_s": 376.536,
+  "borne_fin_s": 437.036,
+  "duree_s": 60.5
+ },
+ {
+  "n": 9,
+  "titre": "Lequel tester en premier",
+  "phrase_debut": 122,
+  "phrase_fin": 132,
+  "debut_s": 438.882,
+  "fin_s": 471.927,
+  "carte_de_s": 437.036,
+  "borne_s": 437.036,
+  "borne_fin_s": 472.055,
+  "duree_s": 35.019
+ }
+]

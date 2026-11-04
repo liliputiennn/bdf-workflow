@@ -1,0 +1,112 @@
+{
+ "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s4",
+ "titre": "La machine à barbe à papa se rembourse dès le premier événement",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "BARBE PAPA STAND SUCRE",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Quatrième machine : la machine à barbe à papa, le stand qui ne désemplit jamais.",
+  "Pourquoi ça marche : kermesses, mariages, anniversaires, comités d'entreprise, tout le monde veut son stand de sucre.",
+  "Une machine professionnelle de table se trouve à partir de cent quatre-vingt-sept euros.",
+  "Ce qu'elle produit : un nuage de sucre en quelques instants, avec presque rien comme matière.",
+  "Le sucre coûte quelques centimes par barbe à papa.",
+  "Côté prix de vente : des prestataires facturent une animation barbe à papa de quatre cent cinquante à cinq cents euros la journée.",
+  "Ils apportent la machine, le sucre et l'installation, et ils repartent le soir.",
+  "Le calcul : cinq cents euros de forfait, moins quelques euros de sucre, il te reste presque tout.",
+  "Une machine à cent quatre-vingt-sept euros est remboursée dès le premier événement.",
+  "Un événement par week-end, ça fait environ cinq cents euros la journée."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 4,
+    "titre": "Machine à barbe à papa",
+    "badge": "Machine",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "dès 187,99 €"
+     },
+     {
+      "label": "Temps par jour (estimation)",
+      "valeur": "1 journée d'événement"
+     },
+     {
+      "label": "Gain par jour (estimation)",
+      "valeur": "500 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 2,
+   "params": {
+    "recherche": "cotton candy machine spinning",
+    "legende": "La machine au travail"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 3,
+   "params": {
+    "valeur": 187.99,
+    "decimales": 2,
+    "suffixe": " €",
+    "etiquette": "machine pro de table : dès"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 6,
+   "params": {
+    "titre": "Animation barbe à papa, 1 jour",
+    "prix": "500 €",
+    "source": "prix constaté : 1001salles.com",
+    "lieu": "Livré et installé"
+   }
+  },
+  {
+   "type": "duel",
+   "phrase": 8,
+   "params": {
+    "titre": "UNE JOURNÉE (€)",
+    "haut": {
+     "titre": "Forfait 500 €",
+     "part": 100
+    },
+    "bas": {
+     "titre": "Sucre : quelques €",
+     "part": 3
+    }
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 10,
+   "params": {
+    "titre": "UNE JOURNÉE (€)",
+    "barres": [
+     {
+      "label": "Prudent",
+      "valeur": 450
+     },
+     {
+      "label": "Haut",
+      "valeur": 500,
+      "accent": true
+     }
+    ],
+    "badge": "estimation"
+   }
+  }
+ ]
+}

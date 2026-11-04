@@ -1,0 +1,157 @@
+[
+ {
+  "claim": "Le marché mondial des jouets en capsules a doublé depuis 2020 et représente 2 milliards d'euros.",
+  "valeur": "2 milliards €",
+  "phrase": 2,
+  "sources": [
+   "https://www.cbnews.fr/node/99992",
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+  ],
+  "check": [
+   "2 milliards"
+  ],
+  "verified": [
+   "https://www.cbnews.fr/node/99992"
+  ]
+ },
+ {
+  "claim": "Une boutique de 300 machines à capsules japonaises ouvre à Paris.",
+  "valeur": "300 machines",
+  "phrase": 3,
+  "sources": [
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris",
+   "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+  ],
+  "check": [
+   "300"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris",
+   "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+  ]
+ },
+ {
+  "claim": "Chaque capsule se vend 5 à 6 euros dans la boutique parisienne.",
+  "valeur": "5 à 6 €",
+  "phrase": 4,
+  "sources": [
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris",
+   "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+  ],
+  "check": [
+   "€5",
+   "€6"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+  ]
+ },
+ {
+  "claim": "Le chiffre d'affaires attendu de la boutique gashapon de Paris est de 1,5 million d'euros par an.",
+  "valeur": "1,5 million €",
+  "phrase": 5,
+  "sources": [
+   "https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet",
+   "https://www.cbnews.fr/node/99992"
+  ],
+  "check": [
+   "1,5 million"
+  ],
+  "verified": [
+   "https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet",
+   "https://www.cbnews.fr/node/99992"
+  ]
+ },
+ {
+  "claim": "1,5 million d'euros ÷ 300 machines ÷ 365 jours ≈ 13,70 euros par machine et par jour.",
+  "valeur": "13,70 €",
+  "phrase": 6,
+  "sources": [
+   "https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet",
+   "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+  ],
+  "check": [
+   "1,5 million"
+  ],
+  "verified": [
+   "https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet"
+  ]
+ },
+ {
+  "claim": "Distributeur de capsules vendu avec partie haute et basse : 360 euros.",
+  "valeur": "360 €",
+  "phrase": 7,
+  "sources": [
+   "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html",
+   "https://french.alibaba.com/f/distributeur-capsule.html"
+  ],
+  "check": [
+   "360"
+  ],
+  "verified": [
+   "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html",
+   "https://french.alibaba.com/f/distributeur-capsule.html"
+  ]
+ },
+ {
+  "claim": "Selon les acteurs du secteur en France, les machines gashapon peuvent espérer une marge nette supérieure à 60 %.",
+  "valeur": "60 %",
+  "phrase": 8,
+  "sources": [
+   "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/",
+   "https://www.cbnews.fr/node/99992"
+  ],
+  "check": [
+   "60%"
+  ],
+  "verified": [
+   "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/"
+  ]
+ },
+ {
+  "claim": "10 capsules à 5 euros = 50 euros de ventes par jour (hypothèse de 10 ventes).",
+  "valeur": "50 €",
+  "phrase": 9,
+  "sources": [
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris",
+   "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+  ],
+  "check": [
+   "€5"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+  ]
+ },
+ {
+  "claim": "60 % de 50 euros = 30 euros par jour.",
+  "valeur": "30 €",
+  "phrase": 10,
+  "sources": [
+   "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/",
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+  ],
+  "check": [
+   "60%"
+  ],
+  "verified": [
+   "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/",
+   "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+  ]
+ },
+ {
+  "claim": "360 euros ÷ 30 euros par jour = 12 jours.",
+  "valeur": "12 jours",
+  "phrase": 11,
+  "sources": [
+   "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html",
+   "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/"
+  ],
+  "check": [
+   "360"
+  ],
+  "verified": [
+   "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html"
+  ]
+ }
+]

@@ -1,0 +1,119 @@
+{
+ "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s3",
+ "titre": "Un mug à 1,38 € revendu 18 € : le calcul de la presse à mug",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "PRESSE MUG TASSES PERSONNALISÉES",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Troisième machine : la presse à mugs, pour imprimer photos et prénoms sur des tasses.",
+  "Ça s'appelle la sublimation : l'encre entre dans la tasse, donc le dessin résiste au lavage.",
+  "Pourquoi ça marche : fête des mères, anniversaire, équipe de foot, tout le monde offre un mug avec sa photo.",
+  "Une presse à mugs coûte de cent à trois cent cinquante euros.",
+  "Il te faut aussi une imprimante à réservoirs d'encre, avec de l'encre de sublimation : des packs prêts à l'emploi existent.",
+  "Une tasse blanche prête à sublimer coûte un euro trente-huit pièce, par lot de trente-six.",
+  "Le prix de vente constaté : dix-huit euros sur un site de cadeaux, jusqu'à dix-neuf euros quatre-vingt-quinze ailleurs.",
+  "Le calcul : tasse un euro trente-huit, vente dix-huit euros, il reste seize euros soixante-deux avant l'encre.",
+  "L'encre et le papier, c'est quelques centimes par tasse.",
+  "Cinq mugs par jour, quatre-vingt-trois euros. Dix, cent soixante-six. Vingt, trois cent trente-deux.",
+  "Pour rembourser une presse à trois cent cinquante euros, il faut vendre vingt et un mugs."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 3,
+    "titre": "Presse à mugs",
+    "badge": "Machine",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "100 à 350 €"
+     },
+     {
+      "label": "Temps par jour (estimation)",
+      "valeur": "1 h"
+     },
+     {
+      "label": "Gain par jour (estimation)",
+      "valeur": "166 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 2,
+   "params": {
+    "recherche": "mug heat press sublimation",
+    "legende": "La machine au travail"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 4,
+   "params": {
+    "valeur": 350,
+    "prefixe": "jusqu'à ",
+    "suffixe": " €",
+    "etiquette": "presse à mugs : prix d'achat"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 7,
+   "params": {
+    "titre": "Mug personnalisé avec photo",
+    "prix": "18 €",
+    "source": "prix constaté : paris-friendly.fr",
+    "etat": "Neuf",
+    "lieu": "Livraison",
+    "recherche": "personalized photo mug"
+   }
+  },
+  {
+   "type": "duel",
+   "phrase": 8,
+   "params": {
+    "titre": "UN MUG (€)",
+    "haut": {
+     "titre": "Vente 18 €",
+     "part": 100
+    },
+    "bas": {
+     "titre": "Tasse 1,38 €",
+     "part": 8
+    }
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 10,
+   "params": {
+    "titre": "GAIN PAR JOUR (€)",
+    "barres": [
+     {
+      "label": "5 mugs",
+      "valeur": 83
+     },
+     {
+      "label": "10 mugs",
+      "valeur": 166,
+      "accent": true
+     },
+     {
+      "label": "20 mugs",
+      "valeur": 332
+     }
+    ],
+    "badge": "estimation"
+   }
+  }
+ ]
+}

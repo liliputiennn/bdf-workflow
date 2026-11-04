@@ -1,0 +1,130 @@
+[
+ {
+  "claim": "Un pack d'agence compte 2 réseaux et 8 posts par mois, modération comprise, pour environ 900 € par mois.",
+  "valeur": "8 posts",
+  "phrase": 2,
+  "sources": [
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/",
+   "https://swello.com/fr/blog/?p=16998"
+  ],
+  "check": [
+   "8 posts"
+  ],
+  "verified": [
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/",
+   "https://swello.com/fr/blog/?p=16998"
+  ]
+ },
+ {
+  "claim": "Une agence facture environ 900 € par mois pour gérer 2 réseaux sociaux.",
+  "valeur": "900 €",
+  "phrase": 3,
+  "sources": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ],
+  "check": [
+   "900"
+  ],
+  "verified": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ]
+ },
+ {
+  "claim": "Un community manager débutant coûte de 300 à 800 € HT par mois.",
+  "valeur": "300 à 800 €",
+  "phrase": 4,
+  "sources": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.plateya.fr/blog/detail/tarif-community-manager-freelance-grille-2026-tjm-forfaits-plateya"
+  ],
+  "check": [
+   "300 a 800"
+  ],
+  "verified": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.plateya.fr/blog/detail/tarif-community-manager-freelance-grille-2026-tjm-forfaits-plateya"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 450 € par mois, soit la moitié des 900 € demandés par une agence pour 2 réseaux.",
+  "valeur": "450 €",
+  "phrase": 5,
+  "sources": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ],
+  "check": [
+   "900"
+  ],
+  "verified": [
+   "https://swello.com/fr/blog/?p=16998",
+   "https://www.lafabriquedunet.fr/blog/tarif-community-manager/"
+  ]
+ },
+ {
+  "claim": "Claude Pro coûte 20 $ par mois.",
+  "valeur": "20 $",
+  "phrase": 6,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Buffer, formule Essentials : 5 $ par mois et par réseau.",
+  "valeur": "5 $",
+  "phrase": 7,
+  "sources": [
+   "https://buffer.com/pricing",
+   "https://www.socialpilot.co/blog/buffer-pricing"
+  ],
+  "check": [
+   "$5"
+  ],
+  "verified": [
+   "https://buffer.com/pricing",
+   "https://www.socialpilot.co/blog/buffer-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 450 € facturés moins 30 € d'outils (Claude 20 $ et 2 réseaux Buffer à 5 $) = 420 € pour 8 heures de travail.",
+  "valeur": "420 €",
+  "phrase": 9,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 450 € facturés moins 30 € d'outils (Claude 20 $ et 2 réseaux Buffer à 5 $) = 420 € pour 8 heures de travail.",
+  "valeur": "420 €",
+  "phrase": 10,
+  "sources": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ],
+  "check": [
+   "$20"
+  ],
+  "verified": [
+   "https://claude.com/pricing",
+   "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan"
+  ]
+ }
+]

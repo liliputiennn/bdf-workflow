@@ -1,0 +1,127 @@
+{
+ "id": "7-services-d-ia-que-les-petites-entreprises-paie-s1",
+ "titre": "Un mois de posts pour les réseaux sociaux : 420 € de reste",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "SERVICE 1 POSTS RÉSEAUX",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Premier service : un mois de publications toutes prêtes pour les réseaux sociaux.",
+  "Le client reçoit huit publications écrites, illustrées et programmées sur deux réseaux.",
+  "Une agence demande environ neuf cents euros par mois pour ça.",
+  "Un freelance débutant, entre trois cents et huit cents euros.",
+  "Toi, tu proposes quatre cent cinquante euros. La moitié du prix agence.",
+  "Tes outils : Claude pour écrire, vingt dollars par mois.",
+  "Buffer pour programmer, cinq dollars par mois et par réseau.",
+  "Et Canva pour les visuels.",
+  "Le client paie quatre cent cinquante euros. Tes outils coûtent trente euros.",
+  "Il te reste quatre cent vingt euros pour une journée de huit heures de travail."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 1,
+    "titre": "Posts réseaux sociaux",
+    "badge": "Service",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "30 € par mois"
+     },
+     {
+      "label": "Temps",
+      "valeur": "8 h par mois"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "420 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 2,
+   "params": {
+    "recherche": "laptop social media dashboard",
+    "legende": "Planning de publications"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 3,
+   "params": {
+    "titre": "Gestion de 2 réseaux sociaux",
+    "prix": "900 €/mois",
+    "lieu": "Agence",
+    "source": "prix constaté (La Fabrique du Net, Swello)"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 5,
+   "params": {
+    "titre": "PRIX PAR MOIS",
+    "barres": [
+     {
+      "label": "Agence",
+      "valeur": 900
+     },
+     {
+      "label": "Toi",
+      "valeur": 450,
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 6,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "Claude"
+     },
+     {
+      "texte": "Buffer"
+     },
+     {
+      "texte": "Canva"
+     }
+    ]
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 9,
+   "params": {
+    "titre": "UN MOIS · ESTIMATION",
+    "barres": [
+     {
+      "label": "Facturé",
+      "valeur": 450
+     },
+     {
+      "label": "Outils",
+      "valeur": 30
+     },
+     {
+      "label": "Il te reste",
+      "valeur": 420,
+      "accent": true
+     }
+    ],
+    "badge": "estimation"
+   }
+  }
+ ]
+}

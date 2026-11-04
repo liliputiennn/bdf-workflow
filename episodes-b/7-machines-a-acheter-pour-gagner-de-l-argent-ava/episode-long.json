@@ -112,11 +112,13 @@
      }
     },
     {
-     "type": "clip",
+     "type": "photo",
      "phrase": 2,
      "params": {
       "recherche": "laser engraving machine wood",
-      "legende": "La machine au travail"
+      "legende": "La machine au travail",
+      "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/laser-engraving-machine-wood.jpg",
+      "credit": "Photo : Kalender Laser Machine, CC BY-SA 4.0"
      }
     },
     {
@@ -284,7 +286,9 @@
      "phrase": 3,
      "params": {
       "recherche": "3d printer printing",
-      "legende": "La machine au travail"
+      "legende": "La machine au travail",
+      "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/3d-printer-printing.webm",
+      "credit": "Vidéo : BoardGamesN3Dprint, Wikimedia Commons"
      }
     },
     {
@@ -417,12 +421,9 @@
      }
     },
     {
-     "type": "clip",
+     "type": "titre-geant",
      "phrase": 2,
-     "params": {
-      "recherche": "mug heat press sublimation",
-      "legende": "La machine au travail"
-     }
+     "params": {}
     },
     {
      "type": "chiffre",
@@ -443,7 +444,9 @@
       "source": "prix constaté : paris-friendly.fr",
       "etat": "Neuf",
       "lieu": "Livraison",
-      "recherche": "personalized photo mug"
+      "recherche": "personalized photo mug",
+      "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/personalized-photo-mug.jpg",
+      "credit": "Photo : Personal Creations, CC BY 2.0"
      }
     },
     {
@@ -546,11 +549,13 @@
      }
     },
     {
-     "type": "clip",
+     "type": "photo",
      "phrase": 2,
      "params": {
       "recherche": "cotton candy machine spinning",
-      "legende": "La machine au travail"
+      "legende": "La machine au travail",
+      "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/cotton-candy-machine-spinning.jpg",
+      "credit": "Photo : No machine-readable author provided. Mat, CC BY-SA 3.0"
      }
     },
     {
@@ -657,12 +662,9 @@
      }
     },
     {
-     "type": "clip",
+     "type": "titre-geant",
      "phrase": 2,
-     "params": {
-      "recherche": "pressure washing patio cleaning",
-      "legende": "La machine au travail"
-     }
+     "params": {}
     },
     {
      "type": "chiffre",
@@ -675,12 +677,9 @@
      }
     },
     {
-     "type": "photo",
+     "type": "titre-geant",
      "phrase": 4,
-     "params": {
-      "recherche": "pressure washer terrace cleaning",
-      "legende": "Une terrasse avant nettoyage"
-     }
+     "params": {}
     },
     {
      "type": "annonce",
@@ -785,11 +784,13 @@
      }
     },
     {
-     "type": "clip",
+     "type": "photo",
      "phrase": 2,
      "params": {
       "recherche": "vending machine snacks",
-      "legende": "La machine au travail"
+      "legende": "La machine au travail",
+      "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/vending-machine-snacks.jpg",
+      "credit": "Photo : Eugenio Hansen, OFS, CC BY-SA 3.0"
      }
     },
     {
@@ -923,11 +924,13 @@
      }
     },
     {
-     "type": "clip",
+     "type": "photo",
      "phrase": 2,
      "params": {
       "recherche": "photo booth party",
-      "legende": "La machine au travail"
+      "legende": "La machine au travail",
+      "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/photo-booth-party.jpg",
+      "credit": "Photo : Vyacheslav Argenberg, CC BY 4.0"
      }
     },
     {
@@ -945,7 +948,9 @@
      "phrase": 4,
      "params": {
       "recherche": "photo booth wedding guests",
-      "legende": "Une borne photo en soirée"
+      "legende": "Une borne photo en soirée",
+      "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/photo-booth-wedding-guests.jpg",
+      "credit": "Photo : USFWS Mountain Prairie, Public domain"
      }
     },
     {

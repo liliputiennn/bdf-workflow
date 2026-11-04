@@ -1,0 +1,132 @@
+{
+ "id": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s3",
+ "titre": "Cet onigiri coûte un euro et se vend trois euros",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "BUSINESS 3 ONIGIRI BOULES",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Troisième business : l'onigiri, la boule de riz japonaise fourrée.",
+  "Selon un magazine de franchise, ces onigiri ne sont vendus qu'à Paris en Europe.",
+  "Une enseigne japonaise installée là-bas a vu ses ventes grimper de trente pour cent en deux ans.",
+  "Dans les boutiques parisiennes, un onigiri coûte de un euro dix à quatre euros trente.",
+  "Un comptoir du quartier vend le poulet mayonnaise deux euros quatre-vingts, et le saumon trois euros dix.",
+  "Côté achat, le riz à sushi se trouve à cinq euros quarante-quatre le kilo.",
+  "Calcul : cinquante grammes de riz sec par onigiri, ça fait vingt-sept centimes.",
+  "Avec l'algue et la garniture, compte un euro de revient.",
+  "Tu le vends trois euros : il te reste deux euros par onigiri.",
+  "À quarante onigiri par jour, ça fait quatre-vingts euros de gain par jour."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 3,
+    "titre": "Onigiri",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "27 € de riz"
+     },
+     {
+      "label": "Temps par jour",
+      "valeur": "3 h"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "80 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 3,
+   "params": {
+    "valeur": 30,
+    "suffixe": " %",
+    "etiquette": "de ventes en plus en deux ans",
+    "sous": "enseigne japonaise à Paris"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 4,
+   "params": {
+    "titre": "PRIX D'UN ONIGIRI À PARIS",
+    "barres": [
+     {
+      "label": "Poulet mayo",
+      "valeur": 2.8
+     },
+     {
+      "label": "Saumon",
+      "valeur": 3.1
+     },
+     {
+      "label": "Le plus garni",
+      "valeur": 4.3,
+      "accent": true
+     }
+    ],
+    "badge": "prix constatés"
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 5,
+   "params": {
+    "recherche": "making onigiri rice balls",
+    "legende": "Des onigiri faits main"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 6,
+   "params": {
+    "titre": "Onigiri poulet mayonnaise",
+    "prix": "2,80 €",
+    "source": "prix constaté, comptoir à onigiri de Paris (Time Out)",
+    "lieu": "Paris"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 7,
+   "params": {
+    "titre": "CALCUL PAR ONIGIRI",
+    "items": [
+     {
+      "texte": "Revient",
+      "valeur": "1 €"
+     },
+     {
+      "texte": "Vendu",
+      "valeur": "3 €"
+     },
+     {
+      "texte": "Reste",
+      "valeur": "2 €"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 10,
+   "params": {
+    "valeur": 80,
+    "suffixe": " €",
+    "etiquette": "de gain par jour, estimation",
+    "sous": "40 onigiri à 2 € de reste"
+   }
+  }
+ ]
+}

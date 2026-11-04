@@ -1,0 +1,142 @@
+{
+ "id": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s4",
+ "titre": "Un latte vert à un euro, vendu presque sept euros",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "BUSINESS 4 LATTE MATCHA",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Quatrième business : le latte au matcha, la boisson verte venue du Japon.",
+  "En deux mille dix, le Japon produisait mille quatre cent soixante et onze tonnes de matcha.",
+  "En deux mille vingt-trois, quatre mille cent soixante-seize tonnes.",
+  "Et ça ne suffit pas : les exportations ont bondi de trente-trois pour cent en deux mille vingt-trois.",
+  "À Paris, un café japonais vend son latte matcha azuki six euros quatre-vingt-dix.",
+  "Côté achat, un kilo de matcha en poudre pour les cafés coûte cent quarante-neuf euros quatre-vingt-quinze.",
+  "Pour un latte, compte deux grammes de poudre : ça fait trente centimes.",
+  "Avec le lait et le gobelet, compte un euro de revient.",
+  "Tu le vends six euros quatre-vingt-dix : il te reste cinq euros quatre-vingt-dix.",
+  "À trente lattes par jour, ça fait cent soixante-dix-sept euros de gain par jour."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 4,
+    "titre": "Latte au matcha",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "150 € de poudre"
+     },
+     {
+      "label": "Temps par jour",
+      "valeur": "4 h"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "177 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 2,
+   "params": {
+    "titre": "PRODUCTION JAPONAISE DE MATCHA",
+    "barres": [
+     {
+      "label": "2010",
+      "valeur": 1471
+     },
+     {
+      "label": "2023",
+      "valeur": 4176,
+      "accent": true
+     }
+    ],
+    "badge": "tonnes"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 4,
+   "params": {
+    "valeur": 33,
+    "suffixe": " %",
+    "etiquette": "d'exportations en plus en 2023"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 5,
+   "params": {
+    "titre": "Latte matcha azuki",
+    "prix": "6,90 €",
+    "source": "prix affiché, café japonais de Paris (Sortiraparis)",
+    "lieu": "Paris"
+   }
+  },
+  {
+   "type": "duel",
+   "phrase": 6,
+   "params": {
+    "titre": "UN LATTE",
+    "haut": {
+     "titre": "Vente 6,90 €",
+     "part": 100
+    },
+    "bas": {
+     "titre": "Revient 1 €",
+     "part": 14.5
+    }
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 7,
+   "params": {
+    "titre": "CALCUL PAR LATTE",
+    "items": [
+     {
+      "texte": "Poudre 2 g",
+      "valeur": "0,30 €"
+     },
+     {
+      "texte": "Revient total",
+      "valeur": "1 €"
+     },
+     {
+      "texte": "Reste",
+      "valeur": "5,90 €"
+     }
+    ]
+   }
+  },
+  {
+   "type": "clip",
+   "phrase": 8,
+   "params": {
+    "recherche": "whisking matcha tea",
+    "legende": "Le matcha fouetté"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 10,
+   "params": {
+    "valeur": 177,
+    "suffixe": " €",
+    "etiquette": "de gain par jour, estimation",
+    "sous": "30 lattes à 5,90 € de reste"
+   }
+  }
+ ]
+}

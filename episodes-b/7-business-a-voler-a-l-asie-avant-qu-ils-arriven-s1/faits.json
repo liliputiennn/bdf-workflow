@@ -1,0 +1,139 @@
+[
+ {
+  "claim": "Un taiyaki se vendait 5,50 euros chez Road Trip Paris (stand fermé depuis).",
+  "valeur": "5,50 €",
+  "phrase": 2,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "5.5",
+   "taiyaki"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+  ]
+ },
+ {
+  "claim": "À Naniwaya, le taiyaki à emporter se vend 180 yens la pièce (1,3 euro).",
+  "valeur": "180 yens",
+  "phrase": 3,
+  "sources": [
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/",
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+  ],
+  "check": [
+   "180"
+  ],
+  "verified": [
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ]
+ },
+ {
+  "claim": "5,50 euros à Paris contre 1,30 euro au Japon : environ quatre fois plus.",
+  "valeur": "×4",
+  "phrase": 4,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "5.5"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+  ]
+ },
+ {
+  "claim": "Machine professionnelle 1,6 kW livrée avec 3 moules taiyaki : 274,99 euros.",
+  "valeur": "274,99 €",
+  "phrase": 5,
+  "sources": [
+   "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph",
+   "https://japan-avenue.com/products/taiyaki-pan"
+  ],
+  "check": [
+   "274,99",
+   "taiyaki"
+  ],
+  "verified": [
+   "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph"
+  ]
+ },
+ {
+  "claim": "Préparation de haricots azuki sucrés Imuraya, 1 kg : 14,80 euros.",
+  "valeur": "14,80 €/kg",
+  "phrase": 6,
+  "sources": [
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "14,80"
+  ],
+  "verified": [
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees"
+  ]
+ },
+ {
+  "claim": "35 g de garniture à 14,80 euros le kilo = 0,52 euro.",
+  "valeur": "0,52 €",
+  "phrase": 7,
+  "sources": [
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "14,80"
+  ],
+  "verified": [
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees"
+  ]
+ },
+ {
+  "claim": "Hypothèse de revient : 0,52 euro de garniture + pâte = environ 0,70 euro.",
+  "valeur": "0,70 €",
+  "phrase": 8,
+  "sources": [
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "14,80"
+  ],
+  "verified": [
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees"
+  ]
+ },
+ {
+  "claim": "Vendu 5 euros (prix constaté à Paris : 5,50 euros), il reste 4,30 euros.",
+  "valeur": "4,30 €",
+  "phrase": 9,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+   "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+  ],
+  "check": [
+   "5.5"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+  ]
+ },
+ {
+  "claim": "40 poissons × 4,30 euros de reste = 172 euros par jour (hypothèse de 40 ventes).",
+  "valeur": "172 €",
+  "phrase": 10,
+  "sources": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+   "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees"
+  ],
+  "check": [
+   "5.5"
+  ],
+  "verified": [
+   "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+  ]
+ }
+]

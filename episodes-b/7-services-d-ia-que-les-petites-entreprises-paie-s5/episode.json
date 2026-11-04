@@ -1,0 +1,135 @@
+{
+ "id": "7-services-d-ia-que-les-petites-entreprises-paie-s5",
+ "titre": "Résumer des réunions : 482 € pour une journée",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "SERVICE 5 COMPTES RENDUS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Cinquième service : le compte rendu de réunion, rendu le jour même.",
+  "Le client enregistre sa réunion. Tu lui rends une page : décisions, tâches, responsables.",
+  "Sur ComeUp, un compte rendu se vend vingt euros.",
+  "Toi, tu demandes vingt-cinq euros par réunion, résumée en une page.",
+  "Ton outil : Fireflies, formule Pro à dix-huit dollars par mois.",
+  "Il écoute la réunion, la transcrit et en fait un résumé.",
+  "Tu relis, tu corriges les noms, et tu envoies la page.",
+  "Une équipe qui fait vingt réunions par mois te paie cinq cents euros.",
+  "Ton outil coûte dix-huit euros. Il te reste quatre cent quatre-vingt-deux euros.",
+  "Vingt-quatre minutes par réunion, relecture comprise : une journée de huit heures.",
+  "Donc quatre cent quatre-vingt-deux euros pour la journée."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 5,
+    "titre": "Comptes rendus",
+    "badge": "Service",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "18 $ par mois"
+     },
+     {
+      "label": "Temps",
+      "valeur": "8 h par mois"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "482 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 2,
+   "params": {
+    "recherche": "business meeting table laptop",
+    "legende": "Réunion d'équipe"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 3,
+   "params": {
+    "titre": "Compte rendu de réunion",
+    "prix": "20 €",
+    "lieu": "ComeUp",
+    "source": "prix constaté sur ComeUp"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 4,
+   "params": {
+    "titre": "PRIX D'UN COMPTE RENDU",
+    "barres": [
+     {
+      "label": "Constaté",
+      "valeur": 20
+     },
+     {
+      "label": "Toi",
+      "valeur": 25,
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "TON OUTIL",
+    "items": [
+     {
+      "texte": "Fireflies Pro"
+     },
+     {
+      "texte": "Une page de résumé"
+     }
+    ]
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 8,
+   "params": {
+    "titre": "UN MOIS · ESTIMATION",
+    "barres": [
+     {
+      "label": "Facturé",
+      "valeur": 500
+     },
+     {
+      "label": "Outil",
+      "valeur": 18
+     },
+     {
+      "label": "Il te reste",
+      "valeur": 482,
+      "accent": true
+     }
+    ],
+    "badge": "estimation"
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 11,
+   "params": {
+    "valeur": 482,
+    "suffixe": " €",
+    "etiquette": "pour la journée",
+    "sous": "estimation"
+   }
+  }
+ ]
+}

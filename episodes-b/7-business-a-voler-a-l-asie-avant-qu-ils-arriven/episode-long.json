@@ -145,7 +145,9 @@
      "phrase": 3,
      "params": {
       "recherche": "taiyaki fish cake",
-      "legende": "Le taiyaki"
+      "legende": "Le taiyaki",
+      "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/taiyaki-fish-cake.webm",
+      "credit": "Vidéo : Nesnad, Wikimedia Commons"
      }
     },
     {
@@ -288,11 +290,13 @@
      }
     },
     {
-     "type": "clip",
+     "type": "photo",
      "phrase": 5,
      "params": {
       "recherche": "capsule toy vending machine",
-      "legende": "Une machine à capsules"
+      "legende": "Une machine à capsules",
+      "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/capsule-toy-vending-machine.jpg",
+      "credit": "Photo : Ka23 13, CC BY 4.0"
      }
     },
     {
@@ -441,11 +445,13 @@
      }
     },
     {
-     "type": "clip",
+     "type": "photo",
      "phrase": 5,
      "params": {
       "recherche": "making onigiri rice balls",
-      "legende": "Des onigiri faits main"
+      "legende": "Des onigiri faits main",
+      "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/making-onigiri-rice-balls.jpg",
+      "credit": "Photo : Maria from McLean, Virginia, USA, CC BY 2.0"
      }
     },
     {
@@ -626,11 +632,13 @@
      }
     },
     {
-     "type": "clip",
+     "type": "photo",
      "phrase": 8,
      "params": {
       "recherche": "whisking matcha tea",
-      "legende": "Le matcha fouetté"
+      "legende": "Le matcha fouetté",
+      "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/whisking-matcha-tea.jpg",
+      "credit": "Photo : Andy Li, CC0"
      }
     },
     {
@@ -738,11 +746,13 @@
      }
     },
     {
-     "type": "clip",
+     "type": "photo",
      "phrase": 4,
      "params": {
       "recherche": "bubble tea tapioca pearls",
-      "legende": "Les perles de tapioca"
+      "legende": "Les perles de tapioca",
+      "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/bubble-tea-tapioca-pearls.jpg",
+      "credit": "Photo : Battlesnake1, CC0"
      }
     },
     {
@@ -883,7 +893,9 @@
      "phrase": 6,
      "params": {
       "recherche": "laundromat washing machines",
-      "legende": "Une laverie libre-service"
+      "legende": "Une laverie libre-service",
+      "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/laundromat-washing-machines.webm",
+      "credit": "Vidéo : Boot Hill, Wikimedia Commons"
      }
     },
     {
@@ -993,11 +1005,13 @@
      }
     },
     {
-     "type": "clip",
+     "type": "photo",
      "phrase": 2,
      "params": {
       "recherche": "cat cafe interior",
-      "legende": "Un café à chats"
+      "legende": "Un café à chats",
+      "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/cat-cafe-interior.jpg",
+      "credit": "Photo : Santiago Rusiñol i Prats, Public domain"
      }
     },
     {
@@ -1082,7 +1096,9 @@
      "phrase": 12,
      "params": {
       "recherche": "cat cafe cats",
-      "legende": "Des chats en liberté"
+      "legende": "Des chats en liberté",
+      "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/cat-cafe-cats.jpg",
+      "credit": "Photo : Petar Milošević, CC BY-SA 4.0"
      }
     },
     {

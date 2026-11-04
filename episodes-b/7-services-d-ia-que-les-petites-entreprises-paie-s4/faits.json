@@ -1,0 +1,179 @@
+[
+ {
+  "claim": "Sur Malt, un sous-titreur affiche un tarif à partir de 15 € pour 10 minutes de vidéo.",
+  "valeur": "15 € les 10 minutes",
+  "phrase": 3,
+  "sources": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://copeps.fr/actualites/sous-titreur-freelance/"
+  ],
+  "check": [
+   "15 €",
+   "10 minutes"
+  ],
+  "verified": [
+   "https://www.malt.fr/profile/eddypinto"
+  ]
+ },
+ {
+  "claim": "Sur ComeUp, le sous-titrage d'une vidéo de moins de 3 minutes se vend 15 €.",
+  "valeur": "15 €",
+  "phrase": 4,
+  "sources": [
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos",
+   "https://copeps.fr/actualites/sous-titreur-freelance/"
+  ],
+  "check": [
+   "15€"
+  ],
+  "verified": [
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ]
+ },
+ {
+  "claim": "Cela fait de 1,50 € (15 € pour 10 minutes) à 5 € (15 € pour 3 minutes) la minute de vidéo.",
+  "valeur": "1,50 à 5 €",
+  "phrase": 5,
+  "sources": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ],
+  "check": [
+   "15"
+  ],
+  "verified": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 4 € la minute, entre les 1,50 € et les 5 € constatés.",
+  "valeur": "4 €",
+  "phrase": 6,
+  "sources": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ],
+  "check": [
+   "15"
+  ],
+  "verified": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ]
+ },
+ {
+  "claim": "Submagic, formule Pro : 39 $ par mois, 40 vidéos par mois de 5 minutes au plus.",
+  "valeur": "39 $",
+  "phrase": 7,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39",
+   "40 videos"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ },
+ {
+  "claim": "Submagic, formule Pro : 39 $ par mois, 40 vidéos par mois de 5 minutes au plus.",
+  "valeur": "39 $",
+  "phrase": 8,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39",
+   "40 videos"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 120 minutes x 4 € = 480 € ; moins 39 $ = 441 € ; en 7 heures soit 63 € de l'heure ; 504 € pour 8 heures.",
+  "valeur": "441 €",
+  "phrase": 9,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 120 minutes x 4 € = 480 € ; moins 39 $ = 441 € ; en 7 heures soit 63 € de l'heure ; 504 € pour 8 heures.",
+  "valeur": "441 €",
+  "phrase": 10,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ },
+ {
+  "claim": "Prix choisi pour l'exemple : 4 € la minute, entre les 1,50 € et les 5 € constatés.",
+  "valeur": "4 €",
+  "phrase": 10,
+  "sources": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ],
+  "check": [
+   "15"
+  ],
+  "verified": [
+   "https://www.malt.fr/profile/eddypinto",
+   "https://comeup.com/fr/service/58313/sous-titrer-traduire-vos-videos"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 120 minutes x 4 € = 480 € ; moins 39 $ = 441 € ; en 7 heures soit 63 € de l'heure ; 504 € pour 8 heures.",
+  "valeur": "441 €",
+  "phrase": 11,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ },
+ {
+  "claim": "Calcul de l'exemple : 120 minutes x 4 € = 480 € ; moins 39 $ = 441 € ; en 7 heures soit 63 € de l'heure ; 504 € pour 8 heures.",
+  "valeur": "441 €",
+  "phrase": 12,
+  "sources": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ],
+  "check": [
+   "$39"
+  ],
+  "verified": [
+   "https://submagic.co/pricing",
+   "https://www.hooked.so/compare/submagic-pricing"
+  ]
+ }
+]

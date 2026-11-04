@@ -1,0 +1,108 @@
+[
+ {
+  "claim": "Chaque cycle de lavage rapporte en moyenne 3 à 7 euros, chaque cycle de séchage 2 à 4 euros.",
+  "valeur": "3 à 7 €",
+  "phrase": 2,
+  "sources": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/",
+   "https://www.pagesjaunes.fr/pros/56857554"
+  ],
+  "check": [
+   "3 à 7"
+  ],
+  "verified": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ]
+ },
+ {
+  "claim": "Le tarif d'une machine Miele de 7 kg se situe entre 3,50 euros TTC et 4 euros TTC pour un cycle de lavage.",
+  "valeur": "3,50 à 4 €",
+  "phrase": 3,
+  "sources": [
+   "https://www.pagesjaunes.fr/pros/56857554",
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ],
+  "check": [
+   "3,50"
+  ],
+  "verified": [
+   "https://www.pagesjaunes.fr/pros/56857554"
+  ]
+ },
+ {
+  "claim": "La laverie automatique en France représente environ 726 millions d'euros de chiffre d'affaires et plus de 4 500 établissements.",
+  "valeur": "726 M€",
+  "phrase": 4,
+  "sources": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/",
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+  ],
+  "check": [
+   "726",
+   "4500"
+  ],
+  "verified": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ]
+ },
+ {
+  "claim": "Chiffre d'affaires moyen national de 38 000 euros par laverie.",
+  "valeur": "38 000 €",
+  "phrase": 5,
+  "sources": [
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/",
+   "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/"
+  ],
+  "check": [
+   "38000"
+  ],
+  "verified": [
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+  ]
+ },
+ {
+  "claim": "38 000 euros ÷ 365 jours ≈ 104 euros par jour.",
+  "valeur": "104 €",
+  "phrase": 6,
+  "sources": [
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/",
+   "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/"
+  ],
+  "check": [
+   "38000"
+  ],
+  "verified": [
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+  ]
+ },
+ {
+  "claim": "La marge nette du secteur se situe entre 25 et 35 % du chiffre d'affaires hors taxes.",
+  "valeur": "25 à 35 %",
+  "phrase": 7,
+  "sources": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/",
+   "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/"
+  ],
+  "check": [
+   "35%"
+  ],
+  "verified": [
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ]
+ },
+ {
+  "claim": "38 000 euros × 30 % = 11 400 euros par an, soit environ 31 euros par jour.",
+  "valeur": "31 €",
+  "phrase": 8,
+  "sources": [
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/",
+   "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+  ],
+  "check": [
+   "38000"
+  ],
+  "verified": [
+   "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+  ]
+ }
+]

@@ -1,0 +1,124 @@
+{
+ "id": "7-services-d-ia-que-les-petites-entreprises-paie-s2",
+ "titre": "Écrire les fiches produit d'une boutique : 460 € de reste",
+ "theme": "chocolat-lait",
+ "chaine": "La Débrouille",
+ "theme_accent": "chocolat-caramel",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "SERVICE 2 FICHES PRODUIT",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Deuxième service : les fiches produit des boutiques en ligne.",
+  "Le client te donne la liste de ses produits. Tu lui rends des fiches prêtes à copier.",
+  "Sur ComeUp, un pack de dix fiches se vend cent euros, soit dix euros la fiche.",
+  "Toi, tu demandes douze euros la fiche, avec le ton de la marque.",
+  "Ton outil : Claude, vingt dollars par mois.",
+  "Tu lui donnes le nom du produit, ses caractéristiques et quelques fiches que le client aime.",
+  "Il te donne le fichier de sa boutique. Tu lui rends le fichier rempli.",
+  "Une boutique qui ajoute quarante produits par mois paie quatre cent quatre-vingts euros.",
+  "Ton outil coûte vingt euros. Il te reste quatre cent soixante euros.",
+  "Douze minutes par fiche, relecture comprise : une journée de huit heures, quatre cent soixante euros."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 2,
+    "titre": "Fiches produit",
+    "badge": "Service",
+    "lignes": [
+     {
+      "label": "Coût de lancement",
+      "valeur": "20 $ par mois"
+     },
+     {
+      "label": "Temps",
+      "valeur": "8 h par mois"
+     },
+     {
+      "label": "Gain par jour",
+      "valeur": "460 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 2,
+   "params": {
+    "recherche": "online shop product packaging",
+    "legende": "Boutique en ligne"
+   }
+  },
+  {
+   "type": "annonce",
+   "phrase": 3,
+   "params": {
+    "titre": "10 fiches produit",
+    "prix": "100 €",
+    "lieu": "ComeUp",
+    "source": "prix constaté sur ComeUp"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 4,
+   "params": {
+    "titre": "PRIX D'UNE FICHE",
+    "barres": [
+     {
+      "label": "Constaté",
+      "valeur": 10
+     },
+     {
+      "label": "Toi",
+      "valeur": 12,
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "Claude"
+     },
+     {
+      "texte": "Fichier de la boutique"
+     }
+    ]
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 8,
+   "params": {
+    "titre": "UN MOIS · ESTIMATION",
+    "barres": [
+     {
+      "label": "Facturé",
+      "valeur": 480
+     },
+     {
+      "label": "Outil",
+      "valeur": 20
+     },
+     {
+      "label": "Il te reste",
+      "valeur": 460,
+      "accent": true
+     }
+    ],
+    "badge": "estimation"
+   }
+  }
+ ]
+}

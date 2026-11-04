@@ -1,0 +1,111 @@
+[
+ {
+  "claim": "Une borne photo et ses accessoires coûtent de 1 500 à 5 000 euros.",
+  "valeur": "1 500 à 5 000 €",
+  "phrase": 3,
+  "sources": [
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/",
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi"
+  ],
+  "check": [
+   "1500"
+  ],
+  "verified": [
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+  "valeur": "350 à 600 €",
+  "phrase": 5,
+  "sources": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "Une formule week-end en libre installation se loue de 299 à 450 euros.",
+  "valeur": "299 à 450 €",
+  "phrase": 6,
+  "sources": [
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/",
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi"
+  ],
+  "check": [
+   "299"
+  ],
+  "verified": [
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+  "valeur": "350 à 600 €",
+  "phrase": 7,
+  "sources": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+  "valeur": "350 à 600 €",
+  "phrase": 8,
+  "sources": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+  "valeur": "350 à 600 €",
+  "phrase": 9,
+  "sources": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ],
+  "check": [
+   "350"
+  ],
+  "verified": [
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ },
+ {
+  "claim": "Une borne photo et ses accessoires coûtent de 1 500 à 5 000 euros.",
+  "valeur": "1 500 à 5 000 €",
+  "phrase": 10,
+  "sources": [
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/",
+   "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi"
+  ],
+  "check": [
+   "1500"
+  ],
+  "verified": [
+   "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+  ]
+ }
+]
