@@ -17,6 +17,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: fabrique
   cancel-in-progress: false
@@ -51,7 +52,9 @@ jobs:
           bash tools/fetch-audio.sh
           pip install -q kaggle six
       - name: Fabrication (voix Kaggle + rendu)
+        id: fab
         run: |
+          echo "avant=$(python autopilot/cloud/restant.py)" >> "$GITHUB_OUTPUT"
           opts="--max 12 --budget-min 290"
           [ -n "${{ inputs.id }}" ] && opts="--max 1 --id ${{ inputs.id }}"
           [ "${{ github.event_name == 'workflow_dispatch' && inputs.a_blanc }}" = "true" ] && opts="$opts --dry-run"
@@ -77,6 +80,16 @@ jobs:
           # à blanc : seul l'instantané de l'interface est enregistré
           [ "${{ github.event_name == 'workflow_dispatch' && inputs.a_blanc }}" = "true" ] || git add episodes-b
           bash autopilot/cloud/enregistrer.sh "Fabrique : état des épisodes ($(date -u +%F))"
+      - name: Enchaîner s'il reste des épisodes à fabriquer
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.a_blanc) && inputs.id == '' }}
+        run: |
+          apres=$(python autopilot/cloud/restant.py)
+          echo "à fabriquer : avant=${{ steps.fab.outputs.avant }} après=$apres"
+          # on relance seulement si cette exécution a fait avancer les choses (évite de tourner en boucle sur une panne)
+          if [ "$apres" -gt 0 ] && [ "$apres" -lt "${{ steps.fab.outputs.avant }}" ]; then
+            gh workflow run fabrique.yml --repo "$GH_REPO" -f a_blanc=false
+            echo "nouvelle fabrication lancée"
+          fi
       - name: Journal
         if: always()
         run: tail -n 60 autopilot/logs/*.log 2>/dev/null || true

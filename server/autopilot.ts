@@ -61,6 +61,8 @@ export const createAutopilot = (root: string) => {
     const d = path.join(eps, id);
     if (!exists(path.join(d, "episode.json"))) return null;
     const st = readJson<Partial<AutoEp>>(path.join(d, "status.json")) ?? {};
+    // anciennes vidéos retirées de YouTube lors de la refonte (archivées) : on ne les montre plus dans l'interface
+    if (String(st.raison ?? "").startsWith("retiré de YouTube")) return null;
     const pub = readJson<{ titre?: string }>(path.join(d, "publication.json"));
     const qa = readJson<{ duree_s?: number; publiable?: boolean }>(path.join(exp, id, "qa.json"));
     const long = exists(path.join(d, "episode-long.json"));
