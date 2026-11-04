@@ -1,0 +1,229 @@
+[
+ {
+  "claim": "Un nettoyage de terrasse se paie de 3 à 15 € le mètre carré selon le sol (fourchette constatée).",
+  "valeur": "3 à 15 €/m²",
+  "phrase": 9,
+  "sources": [
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/",
+   "https://ynspir.com/conseils-decoration/renovation/prix-renovation/prix-nettoyage-de-terrasse/"
+  ],
+  "check": [
+   "3 et 15"
+  ],
+  "verified": [
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 50 m² à 5 € le mètre carré (dans la fourchette de 3 à 15 €) = 250 €.",
+  "valeur": "250 €",
+  "phrase": 11,
+  "sources": [
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/",
+   "https://ynspir.com/conseils-decoration/renovation/prix-renovation/prix-nettoyage-de-terrasse/"
+  ],
+  "check": [
+   "3 et 15"
+  ],
+  "verified": [
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+  ]
+ },
+ {
+  "claim": "Un nettoyage de gouttières coûte de 10 à 25 € le mètre linéaire (10 à 20 € HT selon un guide, 12 à 25 € TTC selon un autre).",
+  "valeur": "10 à 25 €/m",
+  "phrase": 24,
+  "sources": [
+   "https://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php",
+   "https://mesdepanneurs.fr/cas/nettoyage-gouttiere"
+  ],
+  "check": [
+   "10 euros",
+   "20 euros"
+  ],
+  "verified": [
+   "https://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 15 mètres à 10 € le mètre = 150 €.",
+  "valeur": "150 €",
+  "phrase": 26,
+  "sources": [
+   "https://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php",
+   "https://mesdepanneurs.fr/cas/nettoyage-gouttiere"
+  ],
+  "check": [
+   "10 euros",
+   "20 euros"
+  ],
+  "verified": [
+   "https://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php"
+  ]
+ },
+ {
+  "claim": "Un laveur de vitres auto-entrepreneur facture de 25 à 45 € de l'heure hors taxes.",
+  "valeur": "25 à 45 €/h",
+  "phrase": 39,
+  "sources": [
+   "https://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/",
+   "https://businessornot.fr/creation-entreprise/nettoyage-de-vitres-a-domicile-jusqua-45-eur-de-lheure-un-tarif-qui-grimpe-vite-avec-la-hauteur"
+  ],
+  "check": [
+   "25€ et 45€ de l'heure"
+  ],
+  "verified": [
+   "https://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 2 heures à 30 € de l'heure (dans la fourchette de 25 à 45 €) = 60 €.",
+  "valeur": "60 €",
+  "phrase": 41,
+  "sources": [
+   "https://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/",
+   "https://businessornot.fr/creation-entreprise/nettoyage-de-vitres-a-domicile-jusqua-45-eur-de-lheure-un-tarif-qui-grimpe-vite-avec-la-hauteur"
+  ],
+  "check": [
+   "25€ et 45€ de l'heure"
+  ],
+  "verified": [
+   "https://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/"
+  ]
+ },
+ {
+  "claim": "Un bricoleur à domicile facture environ 44 € en moyenne par intervention en 2026.",
+  "valeur": "44 €",
+  "phrase": 54,
+  "sources": [
+   "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant",
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+  ],
+  "check": [
+   "44 € en moyenne"
+  ],
+  "verified": [
+   "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant"
+  ]
+ },
+ {
+  "claim": "Le montage d'un meuble en kit se paie environ 63 €.",
+  "valeur": "63 €",
+  "phrase": 55,
+  "sources": [
+   "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant",
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+  ],
+  "check": [
+   "63 € pour un meuble en kit"
+  ],
+  "verified": [
+   "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 3 meubles en kit à 63 € = 189 €, soit environ 190 €.",
+  "valeur": "190 €",
+  "phrase": 56,
+  "sources": [
+   "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant",
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+  ],
+  "check": [
+   "63 € pour un meuble en kit"
+  ],
+  "verified": [
+   "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant"
+  ]
+ },
+ {
+  "claim": "À Paris, une promenade de chien de 45 minutes est affichée 17 € (individuelle).",
+  "valeur": "17 €",
+  "phrase": 69,
+  "sources": [
+   "https://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e",
+   "https://conseils-animaux.fr/garde-animaux/petsitter/prix/"
+  ],
+  "check": [
+   "45 minutes = 17 euros"
+  ],
+  "verified": [
+   "https://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 4 promenades à 17 € = 68 €.",
+  "valeur": "68 €",
+  "phrase": 71,
+  "sources": [
+   "https://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e",
+   "https://conseils-animaux.fr/garde-animaux/petsitter/prix/"
+  ],
+  "check": [
+   "45 minutes = 17 euros"
+  ],
+  "verified": [
+   "https://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e"
+  ]
+ },
+ {
+  "claim": "Le coût horaire d'un jardinier se situe en moyenne entre 25 et 45 € de l'heure.",
+  "valeur": "25 à 45 €/h",
+  "phrase": 84,
+  "sources": [
+   "https://travaux.obat.fr/guides/prix-entretien-jardin/",
+   "https://copeps.fr/actualites/entreprise-individuel-jardinier-tarif/"
+  ],
+  "check": [
+   "entre 25 € et 45 €"
+  ],
+  "verified": [
+   "https://travaux.obat.fr/guides/prix-entretien-jardin/"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 3 heures à 30 € de l'heure (dans la fourchette de 25 à 45 €) = 90 €.",
+  "valeur": "90 €",
+  "phrase": 86,
+  "sources": [
+   "https://travaux.obat.fr/guides/prix-entretien-jardin/",
+   "https://copeps.fr/actualites/entreprise-individuel-jardinier-tarif/"
+  ],
+  "check": [
+   "entre 25 € et 45 €"
+  ],
+  "verified": [
+   "https://travaux.obat.fr/guides/prix-entretien-jardin/"
+  ]
+ },
+ {
+  "claim": "L'assistance informatique à domicile se facture entre 25 et 60 € de l'heure selon les sources (25 à 50 € en moyenne, 40 à 60 € en services à la personne).",
+  "valeur": "25 à 60 €/h",
+  "phrase": 99,
+  "sources": [
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/",
+   "https://www.creerentreprise.fr/creer-une-entreprise-informatique-depannage-maintenance/"
+  ],
+  "check": [
+   "40€ a 60€ de l'heure"
+  ],
+  "verified": [
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 2 heures à 40 € de l'heure (dans la fourchette de 40 à 60 €) = 80 €.",
+  "valeur": "80 €",
+  "phrase": 101,
+  "sources": [
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/",
+   "https://www.creerentreprise.fr/creer-une-entreprise-informatique-depannage-maintenance/"
+  ],
+  "check": [
+   "40€ a 60€ de l'heure"
+  ],
+  "verified": [
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+  ]
+ }
+]

@@ -20,6 +20,7 @@ for _p in (ICI, ICI.parent):
     if str(_p) not in sys.path:
         sys.path.insert(0, str(_p))
 
+import commentaire  # noqa: E402
 import common  # noqa: E402
 import horaire  # noqa: E402
 import reglages  # noqa: E402
@@ -207,6 +208,33 @@ def _maj_youtube(ep_id: str, **champs) -> dict:
     return yt
 
 
+def commenter(ep_id: str, yt: YouTube, cfg: dict, afficher=print) -> str | None:
+    """Poste le commentaire du cadeau sous un long devenu public (une seule fois). Ne lève jamais : la vidéo prime.
+    Renvoie 'poste', 'echec' ou None (rien à faire). Le texte est aussi écrit dans `commentaire-epingle.txt` pour le coller à la main."""
+    if not cfg.get("commentaire_auto", True):
+        return None
+    yt_st = common.get_status(ep_id).get("youtube") or {}
+    if not yt_st.get("video_id") or yt_st.get("commentaire_id"):
+        return None
+    texte = commentaire.texte(common.read_json(common.ep_dir(ep_id) / "publication.json", {}) or {})
+    if not texte:
+        return None
+    (common.ep_dir(ep_id) / "commentaire-epingle.txt").write_text(texte, encoding="utf-8")
+    try:
+        cid = yt.poster_commentaire(yt_st["video_id"], texte)
+    except (ErreurQuota, ErreurReseau) as err:
+        afficher(f"  commentaire reporté : {err}")
+        return "echec"
+    except (ErreurAuth, ErreurContenu) as err:
+        afficher(f"  commentaire non posté ({err}) : refais la connexion YouTube (auth.py) pour l'autoriser, ou colle commentaire-epingle.txt à la main")
+        common.set_status(ep_id, common.get_status(ep_id)["etat"], None, youtube=_maj_youtube(ep_id, commentaire_erreur=str(err)))
+        return "echec"
+    common.set_status(ep_id, common.get_status(ep_id)["etat"], None,
+                      youtube=_maj_youtube(ep_id, commentaire_id=cid, commentaire_a_epingler=True, commentaire_erreur=None))
+    afficher("  commentaire du cadeau posté : reste à l'épingler dans YouTube Studio (un clic, l'API ne le permet pas)")
+    return "poste"
+
+
 def noter_audit(ep_id: str, video_id: str) -> None:
     """Note que YouTube a verrouillé la vidéo en privé (projet API non audité) dans state/youtube_audit.json."""
     chemin = common.STATE / "youtube_audit.json"
@@ -327,6 +355,7 @@ def publier(ep_id: str, yt: YouTube, cfg: dict, maintenant=maintenant_utc, affic
         yt_etat = _maj_youtube(ep_id, visibilite=visibilite)
         if visibilite == "public":
             common.set_status(ep_id, "publie", None, youtube=yt_etat, tentatives=0)
+            commenter(ep_id, yt, cfg, afficher)
             return {"id": ep_id, "resultat": "publie", "detail": yt_etat["url"]}
         common.set_status(ep_id, "programme", None, youtube=yt_etat, tentatives=0)
         return {"id": ep_id, "resultat": "programme", "detail": f"{yt_etat['url']} ({visibilite}, {yt_etat.get('publie_a')})"}
@@ -355,12 +384,21 @@ def synchroniser(yt: YouTube, cfg: dict, maintenant=maintenant_utc, afficher=pri
         if vis == "public":
             with common.episode_lock(ep_id):
                 common.set_status(ep_id, "publie", None, youtube=_maj_youtube(ep_id, visibilite="public"))
+                commenter(ep_id, yt, cfg, afficher)
             sortie.append({"id": ep_id, "resultat": "publie", "detail": yt_st.get("url")})
         elif vis == "prive_force":
             noter_audit(ep_id, yt_st["video_id"])
             with common.episode_lock(ep_id):
                 common.set_status(ep_id, "programme", None, youtube=_maj_youtube(ep_id, visibilite="prive_force"))
             sortie.append({"id": ep_id, "resultat": "toujours_prive", "detail": "audit YouTube requis"})
+    # commentaire du cadeau qui n'a pas pu être posté (autorisation à refaire, quota) : nouvel essai à chaque passage
+    for ep_id in common.list_episodes("publie"):
+        yt_st = common.get_status(ep_id).get("youtube") or {}
+        if yt_st.get("commentaire_id") or not commentaire.texte(common.read_json(common.ep_dir(ep_id) / "publication.json", {}) or {}):
+            continue
+        with common.episode_lock(ep_id):
+            if commenter(ep_id, yt, cfg, afficher) == "poste":
+                sortie.append({"id": ep_id, "resultat": "commentaire_poste", "detail": "à épingler dans YouTube Studio"})
     return sortie
 
 

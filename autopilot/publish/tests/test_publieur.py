@@ -318,6 +318,66 @@ class TestAudit(Base):
         self.assertEqual(common.get_status(ep)["etat"], "programme")
 
 
+class TestCommentaire(Base):
+    CADEAU = {"titre": "Messages prêts à envoyer", "messages": ["Bonjour, je lave les voitures à domicile.", "Salut, je monte vos meubles."],
+              "suite": "Mardi : le pack entreprises. Abonne-toi pour ne pas le rater."}
+
+    def long(self):
+        return self.episode(pub={"titre": "7 business à copier", "description": "Résumé.", "tags": ["a", "b", "c"], "langue": "fr",
+                                 "contenu_ia": True, "cadeau": self.CADEAU, "question_commentaires": "Lequel tu testes ?"})
+
+    def synchro(self):
+        apres = datetime(2026, 11, 2, 17, 5, tzinfo=timezone.utc)
+        return publish.synchroniser(self.yt, self.cfg, maintenant=lambda: apres, afficher=lambda *a: None)
+
+    def test_commentaire_poste_quand_la_video_devient_publique_une_seule_fois(self):
+        ep = self.long()
+        self.publier(ep)
+        self.assertEqual(self.faux.commentaires, [])  # vidéo encore programmée : rien
+        self.faux.deja_public = True
+        self.synchro()
+        self.assertEqual(len(self.faux.commentaires), 1)
+        c = self.faux.commentaires[0]
+        self.assertEqual(c["video"], "vids1")
+        self.assertIn("1. Bonjour, je lave les voitures à domicile.", c["texte"])
+        self.assertIn("Abonne-toi pour ne pas le rater.", c["texte"])
+        yt = common.get_status(ep)["youtube"]
+        self.assertEqual((yt["commentaire_id"], yt["commentaire_a_epingler"]), ("c1", True))
+        self.synchro()
+        self.assertEqual(len(self.faux.commentaires), 1)  # jamais deux fois
+
+    def test_sans_cadeau_aucun_commentaire(self):
+        ep = self.episode()
+        self.publier(ep)
+        self.faux.deja_public = True
+        self.synchro()
+        self.assertEqual(self.faux.commentaires, [])
+        self.assertNotIn("commentaire_id", common.get_status(ep)["youtube"])
+
+    def test_commentaire_refuse_ne_gene_pas_la_video_puis_nouvel_essai(self):
+        ep = self.long()
+        self.publier(ep)
+        self.faux.deja_public = True
+        self.faux.commentaires_refuses = True
+        self.synchro()
+        st = common.get_status(ep)
+        self.assertEqual(st["etat"], "publie")
+        self.assertIn("insufficientPermissions", st["youtube"]["commentaire_erreur"])
+        self.assertTrue((common.ep_dir(ep) / "commentaire-epingle.txt").exists())  # secours : à coller à la main
+        self.faux.commentaires_refuses = False  # connexion refaite
+        self.assertTrue(any(r["resultat"] == "commentaire_poste" for r in self.synchro()))
+        self.assertEqual(len(self.faux.commentaires), 1)
+        self.assertIsNone(common.get_status(ep)["youtube"]["commentaire_erreur"])
+
+    def test_option_desactivee(self):
+        ep = self.long()
+        self.cfg["commentaire_auto"] = False
+        self.publier(ep)
+        self.faux.deja_public = True
+        self.synchro()
+        self.assertEqual(self.faux.commentaires, [])
+
+
 class TestValidation(Base):
     def test_dry_run_valide_sans_reseau(self):
         ep = self.episode()

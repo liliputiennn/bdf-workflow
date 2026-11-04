@@ -227,6 +227,14 @@ class YouTube:
             raise
         self.quota.depenser("thumbnails.set", unites=self.cfg["quota"]["cout_miniature"])
 
+    def poster_commentaire(self, video_id: str, texte: str) -> str:
+        """`commentThreads.insert` : poste un commentaire de la chaîne sous la vidéo. Renvoie son identifiant.
+        L'API ne permet pas de l'épingler : le propriétaire clique « Épingler » dans YouTube Studio."""
+        corps = {"snippet": {"videoId": video_id, "topLevelComment": {"snippet": {"textOriginal": texte}}}}
+        res = self._json("POST", f"{self.api}/commentThreads?part=snippet", corps, operation="commentThreads.insert",
+                         unites=self.cfg["quota"].get("cout_commentaire", 50))
+        return str(res.get("id", ""))
+
     def lire_videos(self, ids: list[str], parts: str = "status") -> list[dict]:
         """`videos.list` (1 unité par appel, 50 identifiants au plus)."""
         sortie: list[dict] = []
