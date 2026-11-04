@@ -1,5 +1,6 @@
 import React from "react";
 import { Img, staticFile } from "remotion";
+import { Video } from "@remotion/media";
 import { Icon } from "../infographie/icons";
 import { ease, FPS, SceneClock } from "../infographie/scenes";
 import { GIANT, UI, type Theme } from "../infographie/themes";
@@ -308,7 +309,22 @@ export const Annonce: React.FC<Ctx<"annonce">> = ({ p, l, th }) => (
 export const Photo: React.FC<Ctx<"photo">> = ({ p, l, th }) => (
   <Stage>
     <div style={{ position: "relative", width: 1740, height: 665, borderRadius: 40, overflow: "hidden", border: `2px solid ${th.line}`, opacity: ease(l, 0, 10) }}>
-      <Img src={staticFile(p.fichier)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.1 * ease(l, 0, 160)})` }} />
+      {p.fichier && <Img src={staticFile(p.fichier)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.1 * ease(l, 0, 160)})` }} />}
+      {p.legende && (
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, padding: "80px 50px 34px", background: "linear-gradient(transparent, rgba(0,0,0,0.78))", opacity: ease(l, 10, 22) }}>
+          <div style={{ fontFamily: GIANT, fontSize: 88, color: "#FFFFFF", textTransform: "uppercase", lineHeight: 1.05 }}>{p.legende}</div>
+        </div>
+      )}
+      {p.credit && <div style={{ position: "absolute", right: 18, bottom: 8, fontFamily: UI, fontSize: 22, color: "rgba(255,255,255,0.7)" }}>{p.credit}</div>}
+    </div>
+  </Stage>
+);
+
+/* ─────────── Clip (extrait vidéo libre de droits en boucle, sans son) ─────────── */
+export const Clip: React.FC<Ctx<"clip">> = ({ p, l, th }) => (
+  <Stage>
+    <div style={{ position: "relative", width: 1740, height: 665, borderRadius: 40, overflow: "hidden", border: `2px solid ${th.line}`, background: th.card, opacity: ease(l, 0, 10) }}>
+      {p.fichier && <Video src={staticFile(p.fichier)} muted loop objectFit="cover" style={{ width: "100%", height: "100%" }} />}
       {p.legende && (
         <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, padding: "80px 50px 34px", background: "linear-gradient(transparent, rgba(0,0,0,0.78))", opacity: ease(l, 10, 22) }}>
           <div style={{ fontFamily: GIANT, fontSize: 88, color: "#FFFFFF", textTransform: "uppercase", lineHeight: 1.05 }}>{p.legende}</div>

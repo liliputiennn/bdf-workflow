@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 VENV_PY = r"C:\VoiceStudio\tts-direct\venv\Scripts\python.exe"
-SCENE_TYPES = {"titre-geant", "chiffre", "barres", "courbe", "ligne-temps", "anneau", "duel", "objet", "question", "liste", "fiche", "annonce", "photo"}
+SCENE_TYPES = {"titre-geant", "chiffre", "barres", "courbe", "ligne-temps", "anneau", "duel", "objet", "question", "liste", "fiche", "annonce", "photo", "clip"}
 def _themes() -> set[str]:
     """Les thèmes connus sont ceux de src/infographie/themes.ts : une seule source de vérité."""
     try:

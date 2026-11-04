@@ -50,3 +50,6 @@ episodes-b/**/youtube_upload.json
 episodes-b/_ecartes/
 autopilot/voix/*.wav
 exports-tiktok/
+
+# images et clips tÃ©lÃ©chargÃ©s Ã  la fabrication (jamais dans Git)
+episodes-b/*/visuels/

@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, staticFile, useCurrentFrame, type CalculateMetadataFunction } from "remotion";
 import { Audio } from "@remotion/media";
-import { Annonce, Anneau, Barres, Chiffre, Courbe, Duel, ease, FPS, Fiche, H, Liste, LigneTemps, Objet, Photo, Question, SceneClock, TitreGeant, W } from "./scenes";
+import { Annonce, Anneau, Barres, Chiffre, Clip, Courbe, Duel, ease, FPS, Fiche, H, Liste, LigneTemps, Objet, Photo, Question, SceneClock, TitreGeant, W } from "./scenes";
 import { Backdrop } from "./fx";
 import { affiche, decoupe } from "./nombres";
 import { getTheme, UI } from "./themes";
@@ -41,6 +41,7 @@ const SceneView: React.FC<{ s: Scene; l: number; th: ReturnType<typeof getTheme>
           case "fiche": return <Fiche {...c} p={s.params as never} />;
           case "annonce": return <Annonce {...c} p={s.params as never} />;
           case "photo": return <Photo {...c} p={s.params as never} />;
+          case "clip": return <Clip {...c} p={s.params as never} />;
         }
       })()}
     </SceneClock.Provider>

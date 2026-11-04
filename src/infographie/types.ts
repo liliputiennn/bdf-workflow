@@ -20,9 +20,11 @@ export type SceneParams = {
   /** Panneau « business n°X » : lignes label / valeur (coût de lancement, temps, gain par jour…), `accent` met une ligne en avant. */
   fiche: { numero: number | string; titre: string; badge?: string; lignes: { label: string; valeur: string; accent?: boolean }[] };
   /** Carte de prix de marketplace dessinée par nous avec les prix réellement constatés ; `fichier` = photo facultative (chemin sous episodes-b). */
-  annonce: { titre: string; prix: string; ancien?: string; etat?: string; lieu?: string; source?: string; vendu?: boolean; fichier?: string };
+  annonce: { titre: string; prix: string; ancien?: string; etat?: string; lieu?: string; source?: string; vendu?: boolean; fichier?: string; recherche?: string; credit?: string };
   /** Photo plein cadre (réelle ou générée) qui montre de quoi on parle ; `fichier` = chemin sous episodes-b, ex. « mon-episode/visuels/laser.jpg ». */
-  photo: { fichier: string; legende?: string; credit?: string };
+  photo: { fichier?: string; recherche?: string; legende?: string; credit?: string };
+  /** Extrait vidéo libre de droits en boucle (sans son) ; `recherche` : mots-clés (anglais), la fabrication renseigne `fichier`. */
+  clip: { fichier?: string; recherche?: string; legende?: string; credit?: string };
 };
 export type SceneType = keyof SceneParams;
 

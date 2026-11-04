@@ -34,6 +34,8 @@ jobs:
       KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
       KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
       PYTHONIOENCODING: utf-8
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}      # facultatif : banque de vidéos libres (clé gratuite)
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}    # facultatif
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

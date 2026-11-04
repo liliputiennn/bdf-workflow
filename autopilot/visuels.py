@@ -2,7 +2,7 @@
 
 Usage : python autopilot/visuels.py episodes-b/<id> [--dry-run]
 
-Les scènes `photo` et `annonce` d'un épisode (Short : episode.json, long : episode-long.json, dans les chapitres) peuvent porter
+Les scènes `photo`, `annonce` et `clip` (extrait vidéo libre : Pexels et Pixabay si une clé gratuite est fournie, sinon Wikimedia Commons ; sans clip trouvé, la scène devient une photo) d'un épisode (Short : episode.json, long : episode-long.json, dans les chapitres) peuvent porter
 `params.recherche` (mots-clés, de préférence en anglais, ex. « laser engraver wooden board »). Ce programme :
   1. cherche sur Wikimedia Commons puis Openverse, sans compte ni clé, des photos à licence commerciale (CC BY, CC BY-SA, CC0, domaine public ;
      jamais « NonCommercial » ni « NoDerivatives »), assez grandes ;
@@ -88,12 +88,79 @@ def trouver(q: str) -> dict | None:
     return None
 
 
+def http_get_cle(url: str, entetes: dict) -> dict:
+    """GET JSON avec en-têtes (clé d'API) ; curl en secours si le certificat est refusé."""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, **entetes})
+        return json.loads(urllib.request.urlopen(req, timeout=40).read().decode("utf-8"))
+    except Exception:  # noqa: BLE001
+        cmd = ["curl", "-sL", "-m", "60", "-A", UA] + [x for k, v in entetes.items() for x in ("-H", f"{k}: {v}")] + [url]
+        return json.loads(subprocess.run(cmd, capture_output=True, check=True).stdout.decode("utf-8"))
+
+
+def clips_pexels(q: str, cle: str, portrait: bool) -> list[dict]:
+    """Banque de vidéos libres Pexels (clé gratuite PEXELS_API_KEY ; lien vers Pexels exigé : ajouté à la description)."""
+    u = "https://api.pexels.com/videos/search?" + urllib.parse.urlencode({"query": q, "per_page": 8, "orientation": "portrait" if portrait else "landscape"})
+    out = []
+    for v in http_get_cle(u, {"Authorization": cle}).get("videos", []):
+        fichiers = [f for f in v.get("video_files", []) if f.get("file_type") == "video/mp4" and 720 <= (f.get("width") or 0) <= 1920]
+        if fichiers and 4 <= (v.get("duration") or 0) <= 60:
+            f = sorted(fichiers, key=lambda x: abs((x.get("width") or 0) - 1280))[0]
+            out.append({"url": f["link"], "auteur": (v.get("user") or {}).get("name", "auteur inconnu"), "licence": "licence Pexels", "source": "Pexels",
+                        "titre": v.get("url", "")})
+    return out
+
+
+def clips_pixabay(q: str, cle: str) -> list[dict]:
+    """Banque de vidéos libres Pixabay (clé gratuite PIXABAY_API_KEY ; licence Pixabay : usage commercial sans attribution)."""
+    u = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode({"key": cle, "q": q, "per_page": 8, "safesearch": "true"})
+    out = []
+    for h in http_get(u).get("hits", []):
+        v = (h.get("videos") or {}).get("medium") or (h.get("videos") or {}).get("small") or {}
+        if v.get("url") and 4 <= (h.get("duration") or 0) <= 60:
+            out.append({"url": v["url"], "auteur": h.get("user", "auteur inconnu"), "licence": "licence Pixabay", "source": "Pixabay", "titre": h.get("tags", "")})
+    return out
+
+
+def clips_commons(q: str) -> list[dict]:
+    """Vidéos libres de Wikimedia Commons (sans clé) : moins nombreuses, mais utilisables."""
+    u = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({
+        "action": "query", "generator": "search", "gsrsearch": f"{q} filetype:video", "gsrnamespace": 6, "gsrlimit": 10,
+        "prop": "imageinfo", "iiprop": "url|size|mime|extmetadata", "format": "json"})
+    out = []
+    for p in sorted(((http_get(u).get("query") or {}).get("pages") or {}).values(), key=lambda x: x.get("index", 99)):
+        ii = (p.get("imageinfo") or [{}])[0]
+        em = ii.get("extmetadata") or {}
+        lic = (em.get("LicenseShortName") or {}).get("value", "")
+        if ii.get("mime") in ("video/webm", "video/mp4") and 0 < (ii.get("size") or 0) < 60_000_000 and licence_ok(lic) and pertinent(q, p.get("title", "")):
+            out.append({"url": ii["url"], "auteur": re.sub(r"^(auteur|author)\s*:\s*", "", nettoie((em.get("Artist") or {}).get("value", "")), flags=re.I) or "auteur inconnu",
+                        "licence": lic, "source": "Wikimedia Commons", "titre": p.get("title", "")})
+    return out
+
+
+def trouver_clip(q: str, portrait: bool) -> dict | None:
+    import os
+    sources = []
+    if os.environ.get("PEXELS_API_KEY"):
+        sources.append(lambda: clips_pexels(q, os.environ["PEXELS_API_KEY"], portrait))
+    if os.environ.get("PIXABAY_API_KEY"):
+        sources.append(lambda: clips_pixabay(q, os.environ["PIXABAY_API_KEY"]))
+    sources.append(lambda: clips_commons(q))
+    for chercher in sources:
+        try:
+            for c in chercher():
+                return c
+        except Exception as e:  # noqa: BLE001
+            print(f"  recherche de clip impossible : {e}")
+    return None
+
+
 def scenes_a_resoudre(doc: dict):
     """Toutes les scènes photo/annonce avec une recherche, dans un Short (`scenes`) ou un long (`chapitres[*].scenes`)."""
     listes = [doc.get("scenes") or []] + [c.get("scenes") or [] for c in doc.get("chapitres") or []]
     for lst in listes:
         for s in lst:
-            if s.get("type") in ("photo", "annonce") and (s.get("params") or {}).get("recherche"):
+            if s.get("type") in ("photo", "annonce", "clip") and (s.get("params") or {}).get("recherche"):
                 yield lst, s
 
 
@@ -111,6 +178,20 @@ def main(argv: list[str]) -> int:
         if p.get("fichier") and (common.EPISODES / p["fichier"]).exists():
             continue
         q = p["recherche"]
+        if s["type"] == "clip":
+            c = trouver_clip(q, portrait="chapitres" not in doc)
+            if c:
+                nom = f"{re.sub(r'[^a-z0-9]+', '-', q.lower()).strip('-')[:40]}.mp4" if c["url"].lower().split("?")[0].endswith(".mp4") else f"{re.sub(r'[^a-z0-9]+', '-', q.lower()).strip('-')[:40]}.webm"
+                print(f"  clip « {q} » -> {c['source']} ({c['licence']}, {c['auteur'][:30]})")
+                if not dry:
+                    (dossier / "visuels" / nom).write_bytes(http_get(c["url"], binaire=True))
+                    p["fichier"] = f"{ep_id}/visuels/{nom}"
+                p["credit"] = f"Vidéo : {c['auteur'][:40]}, {c['source']}"
+                credits.append(f"vidéo {c['auteur'][:60]} ({c['licence']}, {c['source']})")
+                n_ok += 1
+                continue
+            print(f"  aucun clip libre pour « {q} » : essai en photo")
+            s["type"] = "photo"
         c = trouver(q)
         if not c:
             print(f"  « {q} » : aucune photo libre trouvée")
