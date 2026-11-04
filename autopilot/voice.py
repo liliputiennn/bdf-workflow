@@ -104,6 +104,48 @@ def align_words(sentence: str, heard_words, duration: float):
     return [(w, max(0.0, s), min(duration, max(s + 0.05, e))) for w, (s, e) in zip(words, times)]
 
 
+# ─────────── nuances : un rythme et une insistance différents d'une phrase à l'autre ───────────
+# Le clone de voix n'a pas de réglage d'émotion : on varie après coup, phrase par phrase (le cache reste valable).
+# BDF_NUANCES = intensité (1 par défaut, 0 = voix uniforme, 1.5 = plus marqué). `vitesses` dans l'entrée = {"n": 0.9} force la vitesse de la phrase n.
+def nuance(texte: str, intensite: float = 1.0) -> tuple[float, float, float]:
+    """(vitesse, gain en dB, pause ajoutée après en secondes) pour une phrase, selon sa forme. Déterministe : même texte, même résultat."""
+    mots = len(texte.split())
+    fin = texte.rstrip()[-1:] if texte.strip() else ""
+    vit, gain, pause = 1.0, 0.0, 0.0
+    if mots <= 5:                      # phrase choc : on appuie, plus lent, un temps après
+        vit, gain, pause = 0.90, 1.2, 0.16
+    elif mots >= 16:                   # phrase longue : on déroule, plus vite
+        vit, gain = 1.08, -0.5
+    elif mots >= 11:
+        vit = 1.03
+    if fin == "?":                     # question : plus posée, laisse respirer
+        vit, gain, pause = vit * 0.95, gain + 0.5, pause + 0.12
+    elif fin == "!":                   # exclamation : plus énergique
+        vit, gain = vit * 1.04, gain + 1.0
+    elif fin == "…":                   # suspense
+        vit, pause = vit * 0.93, pause + 0.2
+    # petite variation propre à chaque phrase, pour que deux phrases voisines ne sonnent pas pareil
+    alea = (int(hashlib.sha1(texte.encode("utf-8")).hexdigest()[:4], 16) / 0xFFFF - 0.5) * 0.06  # ±0.03
+    vit += alea
+    k = max(0.0, intensite)
+    return (max(0.8, min(1.0 + (vit - 1.0) * k, 1.25)), max(-3.0, min(gain * k, 3.0)), max(0.0, pause * k))
+
+
+def etirer(wav, sr: int, facteur: float):
+    """Change la vitesse d'une phrase sans toucher à la hauteur (ffmpeg atempo). facteur > 1 = plus rapide."""
+    import tempfile
+    if abs(facteur - 1.0) < 0.005:
+        return wav
+    with tempfile.TemporaryDirectory(prefix="bdf-nu-") as d:
+        a, b = Path(d) / "a.wav", Path(d) / "b.wav"
+        sf.write(a, wav, sr)
+        r = subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(a), "-af", f"atempo={facteur:.4f}", str(b)], capture_output=True)
+        if r.returncode or not b.exists():
+            return wav  # mieux vaut une phrase au rythme d'origine qu'un échec
+        out, _ = sf.read(b, dtype="float32")
+        return out if out.ndim == 1 else out[:, 0]
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("episode_dir")
@@ -118,6 +160,8 @@ def main() -> None:
     episode = json.loads((ep_dir / args.episode_file).read_text(encoding="utf-8"))
     phrases = episode["phrases"]
     pauses = {int(k): float(v) for k, v in (episode.get("pauses") or {}).items()}  # secondes de silence avant la phrase n (1 = première)
+    vitesses = {int(k): float(v) for k, v in (episode.get("vitesses") or {}).items()}  # vitesse imposée pour la phrase n (1 = première)
+    intensite = float(_E("BDF_NUANCES", "1"))
     cache = ep_dir / "cache"
     cache.mkdir(exist_ok=True)
 
@@ -223,20 +267,29 @@ def main() -> None:
             print(f"[{i + 1}/{len(phrases)}] {scores} -> {best[0]:.2f} | {text[:50]}", flush=True)
         wav, lead = trim_silence(wav.astype(np.float32), sr)
         dur = len(wav) / sr
+        vit, gain_db, pause_apres = nuance(text, intensite) if intensite > 0 else (1.0, 0.0, 0.0)
+        if i + 1 in vitesses:
+            vit = max(0.8, min(vitesses[i + 1], 1.25))
+        if abs(vit - 1.0) >= 0.005 and dur > 0:
+            wav = etirer(wav, sr, vit)
+        if abs(gain_db) > 0.01:
+            wav = np.clip(wav * (10 ** (gain_db / 20)), -1.0, 1.0)
+        ech = (len(wav) / sr) / dur if dur > 0 else 1.0  # les repères de mots suivent le changement de vitesse
+        dur = len(wav) / sr
         if pauses.get(i + 1, 0) > 0 and i > 0:
             chunks.append(np.zeros(int(pauses[i + 1] * sr), dtype=np.float32))
             t_cursor += pauses[i + 1]
         lines.append({
             "start": round(t_cursor, 3), "end": round(t_cursor + dur, 3),
             "words": [
-                {"w": w, "start": round(t_cursor + max(0.0, s - lead), 3), "end": round(t_cursor + min(dur, max(0.05, e - lead)), 3)}
+                {"w": w, "start": round(t_cursor + max(0.0, s - lead) * ech, 3), "end": round(t_cursor + min(dur, max(0.05, (e - lead) * ech)), 3)}
                 for w, s, e in meta["mots"]
             ],
         })
         if meta["score"] < args.seuil:
             report.append({"phrase": i + 1, "texte": text, "score": round(meta["score"], 2), "entendu": meta["entendu"]})
-        chunks += [wav.astype(np.float32), np.zeros(int(CFG["gap"] * sr), dtype=np.float32)]
-        t_cursor += dur + CFG["gap"]
+        chunks += [wav.astype(np.float32), np.zeros(int((CFG["gap"] + pause_apres) * sr), dtype=np.float32)]
+        t_cursor += dur + CFG["gap"] + pause_apres
 
     raw = np.concatenate(chunks)
     raw_path = ep_dir / "voice_raw.wav"
