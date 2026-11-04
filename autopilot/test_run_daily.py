@@ -330,6 +330,40 @@ class FabriquerLong(Base):
         self.assertTrue(any(x.startswith("make_short c") for x in a), a)
         self.assertEqual(self.etat("l"), "controle")
 
+    def court_derive(self, long_id, n, voix=True):
+        sid = f"{long_id}-s{n}"
+        faux_episode(sid)
+        common.write_json(common.ep_dir(sid) / "origine.json", {"long": long_id})
+        if voix:
+            (common.ep_dir(sid) / "voice.wav").write_bytes(b"w")
+        return sid
+
+    def test_les_shorts_d_un_long_sont_rendus_dans_le_meme_passage(self):
+        """Régression : sur le cloud leur voice.wav n'est pas enregistré, un Short laissé au passage suivant partait en quarantaine."""
+        self.long("l")
+        s1, s2 = self.court_derive("l", 1), self.court_derive("l", 2)
+        lancer("fabriquer", "--max", "1")  # même avec --max 1 : les Shorts du long ne comptent pas
+        a = appels()
+        for s in (s1, s2):
+            self.assertEqual(a.count(f"make_short {s} --voix-prete"), 1, a)
+            self.assertEqual(self.etat(s), "controle")
+
+    def test_un_short_derive_sans_voix_est_laisse_de_cote(self):
+        self.long("l")
+        sans = self.court_derive("l", 1, voix=False)
+        autre = self.court_derive("autre", 1)  # Short d'un autre long : pas touché par celui-ci
+        lancer("fabriquer", "--id", "l")
+        a = appels()
+        self.assertFalse(any(x.startswith(f"make_short {sans}") for x in a), a)
+        self.assertFalse(any(x.startswith(f"make_short {autre}") for x in a), a)
+        self.assertEqual(self.etat(sans), "ecrit")
+
+    def test_un_short_n_est_pas_rendu_deux_fois(self):
+        self.long("l")
+        s1 = self.court_derive("l", 1)
+        lancer("fabriquer")
+        self.assertEqual(sum(x.startswith(f"make_short {s1} ") for x in appels()), 1, appels())
+
     def test_code_3_est_une_reprise_pas_un_echec(self):
         self.long("l", mode="reprise")
         for _ in range(4):

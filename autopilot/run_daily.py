@@ -526,6 +526,33 @@ def fabriquer_long(ep: str, a) -> str:
     return "erreurs"
 
 
+def shorts_du_long(long_id: str, a, bilan: dict) -> None:
+    """Rend tout de suite les Shorts qu'un long vient de découper.
+    Leur voice.wav n'existe que dans ce dossier de travail : sur le cloud il n'est pas enregistré dans le dépôt (les .wav sont exclus),
+    donc un Short laissé pour un prochain passage perdrait sa voix et partirait en quarantaine. La voix est prête, le GPU n'est pas utilisé :
+    ni la limite `--max` ni le budget de temps ne s'appliquent."""
+    brique = autopilot_dir() / "make_short.py"
+    if not brique.exists():
+        return
+    for ep in common.list_episodes():
+        d = common.ep_dir(ep)
+        origine = common.read_json(d / "origine.json", None) or {}
+        if origine.get("long") != long_id or common.get_status(ep)["etat"] not in ETATS_FABRIQUE:
+            continue
+        if not (d / "voice.wav").exists():
+            log.warning("[%s] Short du long %s sans voice.wav : laissé de côté", ep, long_id)
+            continue
+        try:
+            with verrou(d / ".lock", wait_s=0):
+                bilan[appeler_brique(ep, "fabrique", [python_exe(), str(brique), ep, "--voix-prete"], a.timeout_min * 60, _apres_fabrique)] += 1
+        except TimeoutError:
+            log.info("[%s] verrou d'épisode occupé : ignoré pour ce passage", ep)
+            bilan["ignores"] += 1
+        except Exception:
+            log.error("[%s] erreur inattendue de l'orchestrateur :\n%s", ep, traceback.format_exc())
+            bilan["erreurs"] += 1
+
+
 def cmd_fabriquer(a) -> dict:
     brique = autopilot_dir() / "make_short.py"
     bilan = {"ok": 0, "quarantaine": 0, "ignores": 0, "erreurs": 0}
@@ -546,6 +573,8 @@ def cmd_fabriquer(a) -> dict:
     debut = time.time()
     traites = 0
     for ep in todo:
+        if common.get_status(ep)["etat"] not in ETATS_FABRIQUE:
+            continue  # déjà fabriqué plus haut dans ce passage (Short rendu juste après son long)
         if a.max is not None and traites >= a.max:
             log.info("fabriquer : limite de %s épisode(s) atteinte", a.max)
             break
@@ -560,6 +589,7 @@ def cmd_fabriquer(a) -> dict:
                 with verrou(common.ep_dir(ep) / ".lock", wait_s=0):
                     traites += 1
                     bilan[fabriquer_long(ep, a)] += 1
+                    shorts_du_long(ep, a, bilan)
             except TimeoutError:
                 log.info("[%s] verrou d'épisode occupé : ignoré pour ce passage", ep)
                 bilan["ignores"] += 1
