@@ -1,0 +1,436 @@
+[
+ {
+  "claim": "Un mineur non émancipé ne peut pas créer d'entreprise individuelle, y compris en micro-entreprise ; la création d'entreprise est possible à partir de 16 ans.",
+  "valeur": "16 ans",
+  "phrase": 1,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ],
+  "check": [
+   "16 ans"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ]
+ },
+ {
+  "claim": "Un mineur non émancipé ne peut pas être commerçant.",
+  "valeur": "commerçant",
+  "phrase": 3,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ],
+  "check": [
+   "commerçant"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ]
+ },
+ {
+  "claim": "Avec l'autorisation écrite de ses parents, un mineur non émancipé peut créer une EURL ou une SASU, sociétés à associé unique.",
+  "valeur": "EURL SASU",
+  "phrase": 5,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ],
+  "check": [
+   "EURL",
+   "SASU"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ]
+ },
+ {
+  "claim": "Un mineur émancipé peut être micro-entrepreneur ; l'émancipation se demande à partir de 16 ans, par les parents, auprès du juge des tutelles, et le mineur ne peut pas la demander lui-même.",
+  "valeur": "16 ans",
+  "phrase": 6,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F1194",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627"
+  ],
+  "check": [
+   "16 ans",
+   "émancipation"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F1194",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627"
+  ]
+ },
+ {
+  "claim": "Les actes de naissance et de mariage sont librement consultables après un délai de 75 ans.",
+  "valeur": "75 ans",
+  "phrase": 19,
+  "sources": [
+   "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033155652",
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F1427"
+  ],
+  "check": [
+   "soixante-quinze"
+  ],
+  "verified": [
+   "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033155652"
+  ]
+ },
+ {
+  "claim": "La publication de l'image d'une personne identifiable demande son autorisation, car ce droit découle du respect de la vie privée.",
+  "valeur": "vie privée",
+  "phrase": 20,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F32103",
+   "https://www.economie.gouv.fr/apie/propriete-intellectuelle-exploitation-de-limage-des-personnes"
+  ],
+  "check": [
+   "vie privée"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F32103",
+   "https://www.economie.gouv.fr/apie/propriete-intellectuelle-exploitation-de-limage-des-personnes"
+  ]
+ },
+ {
+  "claim": "Le droit à l'image découle du droit au respect de la vie privée (article 9 du Code civil) et la personne doit donner son accord.",
+  "valeur": "vie privée",
+  "phrase": 29,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F32103",
+   "https://www.economie.gouv.fr/apie/propriete-intellectuelle-exploitation-de-limage-des-personnes"
+  ],
+  "check": [
+   "vie privée"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F32103",
+   "https://www.economie.gouv.fr/apie/propriete-intellectuelle-exploitation-de-limage-des-personnes"
+  ]
+ },
+ {
+  "claim": "L'accord de la personne doit préciser le support, la finalité et la durée de l'utilisation de son image.",
+  "valeur": "accord écrit",
+  "phrase": 30,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F32103",
+   "https://www.economie.gouv.fr/apie/propriete-intellectuelle-exploitation-de-limage-des-personnes"
+  ],
+  "check": [
+   "durée"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F32103"
+  ]
+ },
+ {
+  "claim": "La loi du 4 août 1994 impose l'emploi du français dans le mode d'emploi d'un produit vendu en France.",
+  "valeur": "mode d'emploi",
+  "phrase": 36,
+  "sources": [
+   "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006421210",
+   "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/lemploi-de-la-langue-francaise"
+  ],
+  "check": [
+   "mode d'emploi"
+  ],
+  "verified": [
+   "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/lemploi-de-la-langue-francaise"
+  ]
+ },
+ {
+  "claim": "L'obligation d'employer le français s'applique aussi au commerce électronique.",
+  "valeur": "commerce électronique",
+  "phrase": 37,
+  "sources": [
+   "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/lemploi-de-la-langue-francaise",
+   "https://www.culture.gouv.fr/thematiques/langue-francaise-et-langues-de-france/agir-pour-les-langues/garantir-l-emploi-du-francais"
+  ],
+  "check": [
+   "internet"
+  ],
+  "verified": [
+   "https://www.culture.gouv.fr/thematiques/langue-francaise-et-langues-de-france/agir-pour-les-langues/garantir-l-emploi-du-francais"
+  ]
+ },
+ {
+  "claim": "Pour un mode d'emploi, la version française doit être aussi compréhensible que l'original.",
+  "valeur": "compréhensible",
+  "phrase": 38,
+  "sources": [
+   "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/lemploi-de-la-langue-francaise",
+   "https://www.culture.gouv.fr/thematiques/langue-francaise-et-langues-de-france/agir-pour-les-langues/garantir-l-emploi-du-francais"
+  ],
+  "check": [
+   "mode d'emploi"
+  ],
+  "verified": [
+   "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/lemploi-de-la-langue-francaise"
+  ]
+ },
+ {
+  "claim": "Les distributeurs doivent retirer du marché tout produit dont ils savent qu'il présente un risque.",
+  "valeur": "retirer",
+  "phrase": 50,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/actualites/A18561",
+   "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032222739/"
+  ],
+  "check": [
+   "retir"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/actualites/A18561",
+   "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069565/LEGISCTA000032222739/"
+  ]
+ },
+ {
+  "claim": "Les entreprises qui mettent en œuvre un rappel de produit doivent le déclarer sur le site RappelConso.",
+  "valeur": "RappelConso",
+  "phrase": 51,
+  "sources": [
+   "https://www.economie.gouv.fr/entreprises/gerer-son-entreprise-au-quotidien/gerer-un-commerce/rappels-de-produits-vous-devez-les-declarer-sur-le-site-rappelconso",
+   "https://entreprendre.service-public.gouv.fr/actualites/A18842"
+  ],
+  "check": [
+   "RappelConso"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/actualites/A18842"
+  ]
+ },
+ {
+  "claim": "L'assistance informatique à domicile figure parmi les activités de services à la personne (article D7231-1 du Code du travail).",
+  "valeur": "assistance informatique",
+  "phrase": 60,
+  "sources": [
+   "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033747429",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F23633"
+  ],
+  "check": [
+   "assistance informatique"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F23633"
+  ]
+ },
+ {
+  "claim": "L'assistance informatique à domicile relève du régime de la déclaration et non de l'agrément.",
+  "valeur": "déclaration",
+  "phrase": 61,
+  "sources": [
+   "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033747429",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F23633"
+  ],
+  "check": [
+   "déclaration"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F23633"
+  ]
+ },
+ {
+  "claim": "Dans la méthode du facile à lire et à comprendre, la participation de personnes en situation de handicap intellectuel à la relecture est la règle à laquelle on ne peut déroger.",
+  "valeur": "relecture",
+  "phrase": 70,
+  "sources": [
+   "https://falc.unapei.org/quest-ce-que-le-falc/les-regles-du-falc/",
+   "https://www.unapei.org/article/de-nouvelles-fiches-en-facile-a-lire-et-a-comprendre-falc-realisees-par-la-cnsa/"
+  ],
+  "check": [
+   "relecture"
+  ],
+  "verified": [
+   "https://falc.unapei.org/quest-ce-que-le-falc/les-regles-du-falc/"
+  ]
+ },
+ {
+  "claim": "Le pictogramme du facile à lire et à comprendre appartient à Inclusion Europe.",
+  "valeur": "Inclusion Europe",
+  "phrase": 71,
+  "sources": [
+   "https://falc.unapei.org/quest-ce-que-le-falc/le-falc-cest-quoi/",
+   "https://www.inclusion-europe.eu/easy-to-read/"
+  ],
+  "check": [
+   "Inclusion Europe"
+  ],
+  "verified": [
+   "https://falc.unapei.org/quest-ce-que-le-falc/le-falc-cest-quoi/",
+   "https://www.inclusion-europe.eu/easy-to-read/"
+  ]
+ },
+ {
+  "claim": "Traduire ou adapter une œuvre sans le consentement de l'auteur est illicite (article L122-4 du Code de la propriété intellectuelle).",
+  "valeur": "L122-4",
+  "phrase": 80,
+  "sources": [
+   "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006278911",
+   "https://www.economie.gouv.fr/apie/les-contenus-concernes-par-le-droit-dauteur"
+  ],
+  "check": [
+   "traduction"
+  ],
+  "verified": [
+   "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006278911"
+  ]
+ },
+ {
+  "claim": "Les coopératives jeunesse de services s'adressent aux jeunes de 16 à 18 ans.",
+  "valeur": "16 à 18 ans",
+  "phrase": 87,
+  "sources": [
+   "https://media.anct.gouv.fr/ressources/2025-03/ess_comprendre_complet_26-fevrier.pdf",
+   "https://cooperer.coop/?page_id=1629"
+  ],
+  "check": [
+   "16 à 18 ans"
+  ],
+  "verified": [
+   "https://cooperer.coop/?page_id=1629"
+  ]
+ },
+ {
+  "claim": "Les coopératives jeunesse de services sont des projets d'éducation à l'entrepreneuriat coopératif.",
+  "valeur": "entrepreneuriat",
+  "phrase": 91,
+  "sources": [
+   "https://media.anct.gouv.fr/ressources/2025-03/ess_comprendre_complet_26-fevrier.pdf",
+   "https://cooperer.coop/?page_id=1629"
+  ],
+  "check": [
+   "entrepreneuriat"
+  ],
+  "verified": [
+   "https://cooperer.coop/?page_id=1629"
+  ]
+ },
+ {
+  "claim": "L'association Entreprendre pour apprendre est agréée par le ministère de l'Éducation nationale.",
+  "valeur": "agréée",
+  "phrase": 97,
+  "sources": [
+   "https://www.entreprendre-pour-apprendre.fr/",
+   "https://cache.media.education.gouv.fr/file/Actions_ecole_entreprise/46/7/EPA_presentation_du_dispositif-mini-entreprise1_552467.pdf"
+  ],
+  "check": [
+   "Entreprendre pour apprendre"
+  ],
+  "verified": [
+   "https://www.entreprendre-pour-apprendre.fr/"
+  ]
+ },
+ {
+  "claim": "La junior association est un label réservé aux jeunes de moins de 18 ans.",
+  "valeur": "label",
+  "phrase": 106,
+  "sources": [
+   "https://associations.gouv.fr/la-junior-association",
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F34101"
+  ],
+  "check": [
+   "junior"
+  ],
+  "verified": [
+   "https://associations.gouv.fr/la-junior-association"
+  ]
+ },
+ {
+  "claim": "La junior association est un label : la majorité des membres a moins de 18 ans et des mineurs y ont des responsabilités.",
+  "valeur": "18 ans",
+  "phrase": 107,
+  "sources": [
+   "https://associations.gouv.fr/la-junior-association",
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F34101"
+  ],
+  "check": [
+   "18 ans"
+  ],
+  "verified": [
+   "https://associations.gouv.fr/la-junior-association"
+  ]
+ },
+ {
+  "claim": "À partir de 16 ans, un mineur peut participer à la création et à la direction d'une association, en informant ses représentants légaux qui peuvent s'y opposer.",
+  "valeur": "16 ans",
+  "phrase": 110,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F34101",
+   "https://associations.gouv.fr/sites/default/files/2025-10/engagement_associatif_des_mineur_es.pdf"
+  ],
+  "check": [
+   "16 ans"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F34101"
+  ]
+ },
+ {
+  "claim": "Un mineur non émancipé ne peut pas créer d'entreprise individuelle, y compris en micro-entreprise.",
+  "valeur": "émancipation",
+  "phrase": 116,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ],
+  "check": [
+   "émancip"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ]
+ },
+ {
+  "claim": "À partir de 16 ans, une banque peut ouvrir un compte avec l'autorisation des parents, mais elle est libre de refuser.",
+  "valeur": "16 ans",
+  "phrase": 117,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F21035",
+   "https://www.banque-france.fr/fr/compte-bancaire-individuel-de-lenfant-mineur"
+  ],
+  "check": [
+   "16 ans"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F21035",
+   "https://www.banque-france.fr/fr/compte-bancaire-individuel-de-lenfant-mineur"
+  ]
+ },
+ {
+  "claim": "Un mineur émancipé déclare lui-même ses revenus aux impôts et ses parents font une déclaration de non-rattachement.",
+  "valeur": "non-rattachement",
+  "phrase": 118,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F1194",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ],
+  "check": [
+   "impôt"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F1194",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ]
+ },
+ {
+  "claim": "Un salarié de 16 à 18 ans travaille 8 heures par jour et 35 heures par semaine au plus, et le travail de nuit est interdit.",
+  "valeur": "35 heures",
+  "phrase": 119,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F2216",
+   "https://code.travail.gouv.fr/fiche-ministere-travail/le-temps-de-travail-des-jeunes-de-moins-de-18-ans"
+  ],
+  "check": [
+   "35 heures"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F2216",
+   "https://code.travail.gouv.fr/fiche-ministere-travail/le-temps-de-travail-des-jeunes-de-moins-de-18-ans"
+  ]
+ }
+]
