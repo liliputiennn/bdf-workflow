@@ -27,7 +27,7 @@ for _p in (ICI, ICI.parent):
 import common  # noqa: E402
 from erreurs import ErreurAuth, ErreurReseau  # noqa: E402
 
-PORTEE = "https://www.googleapis.com/auth/youtube"
+PORTEE = "https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.force-ssl"  # force-ssl : poster le commentaire du cadeau
 AUTH_URI = "https://accounts.google.com/o/oauth2/v2/auth"
 TOKEN_URI = "https://oauth2.googleapis.com/token"
 MARGE_EXPIRATION_S = 120

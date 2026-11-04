@@ -22,6 +22,7 @@ DEFAUTS = {
     "badge_ia_youtube": False,       # True = coche aussi l'option « contenu modifié ou synthétique » de YouTube (badge IA sur la vidéo)
     "mention_ia_description": False, # ajoute une ligne « voix de synthèse » à la description quand publication.json a contenu_ia: true
     "question_dans_description": True,
+    "commentaire_auto": True,        # poste sous chaque long le commentaire du cadeau (messages à copier, suite, abonnement) dès que la vidéo est publique ; YouTube ne permet pas de l'épingler par programme
     "tentatives_max_avant_quarantaine": 6,
     "reseau": {"tentatives_max": 8, "attente_initiale_s": 2.0, "attente_max_s": 120.0, "timeout_s": 120.0},
     "quota": {
@@ -32,6 +33,7 @@ DEFAUTS = {
         "cout_miniature": 50,
         "cout_lecture": 1,
         "cout_mise_a_jour": 50,
+        "cout_commentaire": 50,
     },
     "urls": {
         "api": "https://www.googleapis.com/youtube/v3",

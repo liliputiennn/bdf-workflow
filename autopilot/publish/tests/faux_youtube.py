@@ -22,6 +22,8 @@ class FauxYouTube:
         self.force_prive = False          # relecture : privé sans publishAt (projet non audité)
         self.deja_public = False          # relecture : public
         self.miniature_refusee = False
+        self.commentaires: list[dict] = []
+        self.commentaires_refuses = False  # commentThreads.insert -> 403 (autorisation « force-ssl » absente)
         self.maj_ignoree = False          # videos.update sans effet (projet non audité)
         self.exiger_jeton_recent = False  # 401 si le jeton n'est pas le dernier émis
         self.morceaux_recus = 0
@@ -103,6 +105,12 @@ class FauxYouTube:
                     faux.sessions[sid] = {"meta": meta, "data": bytearray(), "taille": int(self.headers["X-Upload-Content-Length"]),
                                           "ouverture_requete": dict(self.headers)}
                     return self._rep(200, None, {"Location": f"{faux.base}/session/{sid}"})
+                if chemin.path == "/youtube/v3/commentThreads":
+                    if faux.commentaires_refuses:
+                        return self._erreur(403, "insufficientPermissions", "scope manquant")
+                    snip = json.loads(corps)["snippet"]
+                    faux.commentaires.append({"video": snip["videoId"], "texte": snip["topLevelComment"]["snippet"]["textOriginal"]})
+                    return self._rep(200, {"id": f"c{len(faux.commentaires)}"})
                 if chemin.path == "/upload/youtube/v3/thumbnails/set":
                     if faux.miniature_refusee:
                         return self._erreur(403, "forbidden", "custom thumbnails need verification")
