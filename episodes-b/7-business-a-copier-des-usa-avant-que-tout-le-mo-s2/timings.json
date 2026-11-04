@@ -1,703 +1,703 @@
 {
- "total": 33.89,
+ "total": 32.814,
  "lines": [
   {
    "start": 0.15,
-   "end": 2.775,
+   "end": 2.699,
    "words": [
     {
      "w": "Des",
      "start": 0.15,
-     "end": 0.315
+     "end": 0.297
     },
     {
      "w": "gouttières",
-     "start": 0.315,
-     "end": 0.665
+     "start": 0.297,
+     "end": 0.667
     },
     {
      "w": "bouchées,",
-     "start": 0.665,
-     "end": 1.034
+     "start": 0.667,
+     "end": 1.074
     },
     {
      "w": "c'est",
-     "start": 1.218,
-     "end": 1.513
+     "start": 1.24,
+     "end": 1.48
     },
     {
      "w": "de",
-     "start": 1.513,
-     "end": 1.605
+     "start": 1.48,
+     "end": 1.554
     },
     {
      "w": "l'argent",
-     "start": 1.605,
-     "end": 1.882
+     "start": 1.554,
+     "end": 1.867
     },
     {
      "w": "qui",
-     "start": 1.882,
-     "end": 2.047
+     "start": 1.867,
+     "end": 2.034
     },
     {
      "w": "tombe",
-     "start": 2.047,
-     "end": 2.268
+     "start": 2.034,
+     "end": 2.255
     },
     {
      "w": "du",
-     "start": 2.268,
-     "end": 2.36
+     "start": 2.255,
+     "end": 2.348
     },
     {
      "w": "ciel.",
-     "start": 2.36,
-     "end": 2.563
+     "start": 2.348,
+     "end": 2.533
     }
    ]
   },
   {
-   "start": 2.902,
-   "end": 5.114,
+   "start": 2.826,
+   "end": 4.857,
    "words": [
     {
      "w": "Aux",
-     "start": 2.902,
-     "end": 3.1
+     "start": 2.826,
+     "end": 3.042
     },
     {
      "w": "États-Unis,",
-     "start": 3.1,
-     "end": 3.567
+     "start": 3.042,
+     "end": 3.509
     },
     {
      "w": "des",
-     "start": 3.873,
-     "end": 4.071
+     "start": 3.581,
+     "end": 3.653
     },
     {
      "w": "entreprises",
-     "start": 4.071,
-     "end": 4.466
+     "start": 3.653,
+     "end": 4.066
     },
     {
      "w": "ne",
-     "start": 4.466,
-     "end": 4.665
+     "start": 4.066,
+     "end": 4.264
     },
     {
      "w": "font",
-     "start": 4.665,
-     "end": 4.808
+     "start": 4.264,
+     "end": 4.408
     },
     {
      "w": "que",
-     "start": 4.808,
-     "end": 4.862
+     "start": 4.408,
+     "end": 4.57
     },
     {
      "w": "ça.",
-     "start": 4.862,
-     "end": 5.006
+     "start": 4.57,
+     "end": 4.75
     }
    ]
   },
   {
-   "start": 5.241,
-   "end": 8.595,
+   "start": 4.984,
+   "end": 8.266,
    "words": [
     {
      "w": "Ici,",
-     "start": 5.241,
-     "end": 5.541
+     "start": 4.984,
+     "end": 5.284
     },
     {
      "w": "un",
-     "start": 5.977,
-     "end": 6.068
+     "start": 5.503,
+     "end": 5.721
     },
     {
      "w": "nettoyage",
-     "start": 6.068,
-     "end": 6.45
+     "start": 5.721,
+     "end": 6.103
     },
     {
      "w": "de",
-     "start": 6.45,
-     "end": 6.541
+     "start": 6.103,
+     "end": 6.194
     },
     {
      "w": "gouttières",
-     "start": 6.541,
-     "end": 6.923
+     "start": 6.194,
+     "end": 6.539
     },
     {
      "w": "coûte",
-     "start": 6.923,
-     "end": 7.141
+     "start": 6.539,
+     "end": 6.757
     },
     {
      "w": "entre",
-     "start": 7.141,
-     "end": 7.286
+     "start": 6.757,
+     "end": 6.884
     },
     {
      "w": "dix",
-     "start": 7.286,
-     "end": 7.577
+     "start": 6.884,
+     "end": 7.157
     },
     {
      "w": "et",
-     "start": 7.577,
-     "end": 7.686
+     "start": 7.157,
+     "end": 7.303
     },
     {
      "w": "vingt-cinq",
-     "start": 7.686,
-     "end": 8.05
+     "start": 7.303,
+     "end": 7.648
     },
     {
      "w": "euros",
-     "start": 8.05,
-     "end": 8.159
+     "start": 7.648,
+     "end": 7.757
     },
     {
      "w": "le",
-     "start": 8.159,
-     "end": 8.305
+     "start": 7.757,
+     "end": 7.903
     },
     {
      "w": "mètre.",
-     "start": 8.305,
-     "end": 8.577
+     "start": 7.903,
+     "end": 8.175
     }
    ]
   },
   {
-   "start": 8.723,
-   "end": 13.123,
+   "start": 8.394,
+   "end": 11.7,
    "words": [
     {
      "w": "Ton",
-     "start": 8.723,
-     "end": 8.838
+     "start": 8.394,
+     "end": 8.518
     },
     {
      "w": "matériel",
-     "start": 8.838,
-     "end": 9.388
+     "start": 8.518,
+     "end": 9.085
     },
     {
      "w": "une",
-     "start": 9.672,
-     "end": 9.815
+     "start": 9.209,
+     "end": 9.316
     },
     {
      "w": "échelle,",
-     "start": 9.815,
-     "end": 10.24
+     "start": 9.316,
+     "end": 9.671
     },
     {
      "w": "des",
-     "start": 10.648,
-     "end": 10.772
+     "start": 9.777,
+     "end": 9.848
     },
     {
      "w": "gants",
-     "start": 10.772,
-     "end": 11.126
+     "start": 9.848,
+     "end": 10.096
     },
     {
      "w": "et",
-     "start": 11.126,
-     "end": 11.553
+     "start": 10.096,
+     "end": 10.238
     },
     {
      "w": "un",
-     "start": 11.553,
-     "end": 11.676
+     "start": 10.238,
+     "end": 10.362
     },
     {
      "w": "seau,",
-     "start": 11.676,
-     "end": 12.049
+     "start": 10.362,
+     "end": 10.681
     },
     {
      "w": "que",
-     "start": 12.067,
-     "end": 12.245
+     "start": 10.77,
+     "end": 10.814
     },
     {
      "w": "tu",
-     "start": 12.245,
-     "end": 12.368
+     "start": 10.805,
+     "end": 10.929
     },
     {
      "w": "as",
-     "start": 12.368,
-     "end": 12.422
+     "start": 10.929,
+     "end": 11.0
     },
     {
      "w": "peut-être",
-     "start": 12.422,
-     "end": 12.688
+     "start": 11.0,
+     "end": 11.284
     },
     {
      "w": "déjà.",
-     "start": 12.688,
-     "end": 12.936
+     "start": 11.284,
+     "end": 11.496
     }
    ]
   },
   {
-   "start": 13.25,
-   "end": 15.281,
+   "start": 11.827,
+   "end": 13.925,
    "words": [
     {
      "w": "Pour",
-     "start": 13.25,
-     "end": 13.395
+     "start": 11.827,
+     "end": 11.974
     },
     {
      "w": "une",
-     "start": 13.395,
-     "end": 13.498
+     "start": 11.974,
+     "end": 12.061
     },
     {
      "w": "maison",
-     "start": 13.498,
-     "end": 13.67
+     "start": 12.061,
+     "end": 12.234
     },
     {
      "w": "de",
-     "start": 13.67,
-     "end": 13.773
+     "start": 12.234,
+     "end": 12.372
     },
     {
      "w": "quinze",
-     "start": 13.773,
-     "end": 14.03
+     "start": 12.372,
+     "end": 12.614
     },
     {
      "w": "mètres,",
-     "start": 14.03,
-     "end": 14.27
+     "start": 12.614,
+     "end": 12.854
     },
     {
      "w": "ça",
-     "start": 14.373,
-     "end": 14.441
+     "start": 12.906,
+     "end": 12.993
     },
     {
      "w": "fait",
-     "start": 14.441,
-     "end": 14.561
+     "start": 12.993,
+     "end": 13.131
     },
     {
      "w": "cent",
-     "start": 14.561,
-     "end": 14.698
+     "start": 13.131,
+     "end": 13.321
     },
     {
      "w": "cinquante",
-     "start": 14.698,
-     "end": 15.024
+     "start": 13.321,
+     "end": 13.684
     },
     {
      "w": "euros.",
-     "start": 15.024,
-     "end": 15.161
+     "start": 13.684,
+     "end": 13.822
     }
    ]
   },
   {
-   "start": 15.408,
-   "end": 18.579,
+   "start": 14.053,
+   "end": 17.295,
    "words": [
     {
      "w": "Cherche",
-     "start": 15.408,
-     "end": 15.74
+     "start": 14.053,
+     "end": 14.401
     },
     {
      "w": "les",
-     "start": 15.74,
-     "end": 15.825
+     "start": 14.401,
+     "end": 14.485
     },
     {
      "w": "maisons",
-     "start": 15.825,
-     "end": 16.08
+     "start": 14.485,
+     "end": 14.774
     },
     {
      "w": "entourées",
-     "start": 16.08,
-     "end": 16.488
+     "start": 14.774,
+     "end": 15.164
     },
     {
      "w": "d'arbres",
-     "start": 16.488,
-     "end": 16.947
+     "start": 15.164,
+     "end": 15.538
     },
     {
      "w": "ce",
-     "start": 16.998,
-     "end": 17.065
+     "start": 15.674,
+     "end": 15.81
     },
     {
      "w": "sont",
-     "start": 17.065,
-     "end": 17.27
+     "start": 15.81,
+     "end": 16.014
     },
     {
      "w": "elles",
-     "start": 17.27,
-     "end": 17.423
+     "start": 16.014,
+     "end": 16.166
     },
     {
      "w": "qui",
-     "start": 17.423,
-     "end": 17.559
+     "start": 16.166,
+     "end": 16.285
     },
     {
      "w": "ont",
-     "start": 17.559,
-     "end": 17.61
+     "start": 16.285,
+     "end": 16.354
     },
     {
      "w": "le",
-     "start": 17.61,
-     "end": 17.695
+     "start": 16.354,
+     "end": 16.421
     },
     {
      "w": "plus",
-     "start": 17.695,
-     "end": 17.865
+     "start": 16.421,
+     "end": 16.591
     },
     {
      "w": "besoin",
-     "start": 17.865,
-     "end": 18.137
+     "start": 16.591,
+     "end": 16.863
     },
     {
      "w": "de",
-     "start": 18.137,
-     "end": 18.255
+     "start": 16.863,
+     "end": 16.982
     },
     {
      "w": "toi.",
-     "start": 18.255,
-     "end": 18.425
+     "start": 16.982,
+     "end": 17.134
     }
    ]
   },
   {
-   "start": 18.706,
-   "end": 22.052,
+   "start": 17.423,
+   "end": 20.941,
    "words": [
     {
      "w": "Tape",
-     "start": 18.706,
-     "end": 19.052
+     "start": 17.423,
+     "end": 17.741
     },
     {
      "w": "nettoyage",
-     "start": 19.197,
-     "end": 19.615
+     "start": 17.959,
+     "end": 18.359
     },
     {
      "w": "gouttière",
-     "start": 19.615,
-     "end": 20.034
+     "start": 18.359,
+     "end": 18.832
     },
     {
      "w": "dans",
-     "start": 20.125,
-     "end": 20.17
+     "start": 18.995,
+     "end": 19.05
     },
     {
      "w": "les",
-     "start": 20.161,
-     "end": 20.288
+     "start": 19.05,
+     "end": 19.159
     },
     {
      "w": "groupes",
-     "start": 20.288,
-     "end": 20.506
+     "start": 19.159,
+     "end": 19.377
     },
     {
      "w": "de",
-     "start": 20.506,
-     "end": 20.561
+     "start": 19.377,
+     "end": 19.423
     },
     {
      "w": "quartier",
-     "start": 20.561,
-     "end": 20.943
+     "start": 19.414,
+     "end": 19.814
     },
     {
      "w": "et",
-     "start": 20.943,
-     "end": 21.106
+     "start": 19.814,
+     "end": 19.995
     },
     {
      "w": "regarde",
-     "start": 21.106,
-     "end": 21.379
+     "start": 19.995,
+     "end": 20.25
     },
     {
      "w": "qui",
-     "start": 21.379,
-     "end": 21.579
+     "start": 20.25,
+     "end": 20.504
     },
     {
      "w": "demande.",
-     "start": 21.579,
-     "end": 21.834
+     "start": 20.504,
+     "end": 20.741
     }
    ]
   },
   {
-   "start": 22.179,
-   "end": 26.433,
+   "start": 21.068,
+   "end": 25.006,
    "words": [
     {
      "w": "Passe",
-     "start": 22.179,
-     "end": 22.397
+     "start": 21.068,
+     "end": 21.303
     },
     {
      "w": "aussi",
-     "start": 22.397,
-     "end": 22.531
+     "start": 21.303,
+     "end": 21.454
     },
     {
      "w": "voir",
-     "start": 22.531,
-     "end": 22.715
+     "start": 21.454,
+     "end": 21.638
     },
     {
      "w": "les",
-     "start": 22.715,
-     "end": 22.85
+     "start": 21.638,
+     "end": 21.755
     },
     {
      "w": "petites",
-     "start": 22.85,
-     "end": 23.018
+     "start": 21.755,
+     "end": 21.923
     },
     {
      "w": "agences",
-     "start": 23.018,
-     "end": 23.404
+     "start": 21.923,
+     "end": 22.274
     },
     {
      "w": "immobilières,",
-     "start": 23.404,
-     "end": 24.008
+     "start": 22.274,
+     "end": 22.894
     },
     {
      "w": "et",
-     "start": 24.142,
-     "end": 24.411
+     "start": 22.945,
+     "end": 23.264
     },
     {
      "w": "écris",
-     "start": 24.411,
-     "end": 24.746
+     "start": 23.264,
+     "end": 23.532
     },
     {
      "w": "à",
-     "start": 24.746,
-     "end": 24.897
+     "start": 23.532,
+     "end": 23.598
     },
     {
      "w": "une",
-     "start": 24.897,
-     "end": 24.998
+     "start": 23.598,
+     "end": 23.699
     },
     {
      "w": "dizaine",
-     "start": 24.998,
-     "end": 25.317
+     "start": 23.699,
+     "end": 23.967
     },
     {
      "w": "de",
-     "start": 25.317,
-     "end": 25.417
+     "start": 23.967,
+     "end": 24.067
     },
     {
      "w": "propriétaires",
-     "start": 25.417,
-     "end": 25.905
+     "start": 24.067,
+     "end": 24.537
     },
     {
      "w": "par",
-     "start": 25.905,
-     "end": 26.022
+     "start": 24.537,
+     "end": 24.654
     },
     {
      "w": "jour.",
-     "start": 26.022,
-     "end": 26.223
+     "start": 24.654,
+     "end": 24.855
     }
    ]
   },
   {
-   "start": 26.56,
-   "end": 30.935,
+   "start": 25.134,
+   "end": 29.306,
    "words": [
     {
      "w": "Voici",
-     "start": 26.56,
-     "end": 26.842
+     "start": 25.134,
+     "end": 25.44
     },
     {
      "w": "le",
-     "start": 26.842,
-     "end": 26.91
+     "start": 25.44,
+     "end": 25.525
     },
     {
      "w": "message",
-     "start": 26.91,
-     "end": 27.234
+     "start": 25.525,
+     "end": 25.797
     },
     {
      "w": "tu",
-     "start": 27.524,
-     "end": 27.592
+     "start": 26.189,
+     "end": 26.241
     },
     {
      "w": "parles",
-     "start": 27.592,
-     "end": 27.814
+     "start": 26.241,
+     "end": 26.444
     },
     {
      "w": "des",
-     "start": 27.814,
-     "end": 27.95
+     "start": 26.444,
+     "end": 26.564
     },
     {
      "w": "feuilles,",
-     "start": 27.95,
-     "end": 28.257
+     "start": 26.564,
+     "end": 26.854
     },
     {
      "w": "tu",
-     "start": 28.462,
-     "end": 28.564
+     "start": 26.956,
+     "end": 27.007
     },
     {
      "w": "proposes",
-     "start": 28.564,
-     "end": 28.871
+     "start": 27.007,
+     "end": 27.348
     },
     {
      "w": "des",
-     "start": 28.871,
-     "end": 28.99
+     "start": 27.348,
+     "end": 27.433
     },
     {
      "w": "photos",
-     "start": 28.99,
-     "end": 29.144
+     "start": 27.433,
+     "end": 27.672
     },
     {
      "w": "avant-après,",
-     "start": 29.144,
-     "end": 29.638
+     "start": 27.672,
+     "end": 28.183
     },
     {
      "w": "et",
-     "start": 29.809,
-     "end": 29.98
+     "start": 28.37,
+     "end": 28.421
     },
     {
      "w": "un",
-     "start": 29.98,
-     "end": 30.082
+     "start": 28.421,
+     "end": 28.524
     },
     {
      "w": "passage",
-     "start": 30.082,
-     "end": 30.321
+     "start": 28.524,
+     "end": 28.762
     },
     {
      "w": "cette",
-     "start": 30.321,
-     "end": 30.491
+     "start": 28.762,
+     "end": 28.932
     },
     {
      "w": "semaine.",
-     "start": 30.491,
-     "end": 30.781
+     "start": 28.932,
+     "end": 29.154
     }
    ]
   },
   {
-   "start": 31.062,
-   "end": 33.59,
+   "start": 29.434,
+   "end": 32.514,
    "words": [
     {
      "w": "Le",
-     "start": 31.062,
-     "end": 31.205
+     "start": 29.434,
+     "end": 29.74
     },
     {
      "w": "message",
-     "start": 31.205,
-     "end": 31.438
+     "start": 29.74,
+     "end": 29.993
     },
     {
      "w": "complet",
-     "start": 31.438,
-     "end": 31.779
+     "start": 29.993,
+     "end": 30.353
     },
     {
      "w": "à",
-     "start": 31.779,
-     "end": 31.958
+     "start": 30.353,
+     "end": 30.533
     },
     {
      "w": "copier",
-     "start": 31.958,
-     "end": 32.317
+     "start": 30.533,
+     "end": 30.894
     },
     {
      "w": "est",
-     "start": 32.317,
-     "end": 32.425
+     "start": 30.894,
+     "end": 31.308
     },
     {
      "w": "dans",
-     "start": 32.425,
-     "end": 32.532
+     "start": 31.308,
+     "end": 31.416
     },
     {
      "w": "la",
-     "start": 32.532,
-     "end": 32.622
+     "start": 31.416,
+     "end": 31.488
     },
     {
      "w": "description",
-     "start": 32.622,
-     "end": 32.963
+     "start": 31.488,
+     "end": 31.813
     },
     {
      "w": "de",
-     "start": 32.963,
-     "end": 33.159
+     "start": 31.813,
+     "end": 32.011
     },
     {
      "w": "la",
-     "start": 33.159,
-     "end": 33.249
+     "start": 32.011,
+     "end": 32.101
     },
     {
      "w": "vidéo.",
-     "start": 33.249,
-     "end": 33.411
+     "start": 32.101,
+     "end": 32.263
     }
    ]
   }

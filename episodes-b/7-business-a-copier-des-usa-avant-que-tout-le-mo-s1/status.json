@@ -1,7 +1,7 @@
 {
- "etat": "quarantaine",
- "maj": "2026-11-04T16:22:08",
- "raison": "rendu perdu au timeout du 04/11 (vidéo absente du stock) : sera redécoupé quand son long sera refabriqué",
+ "etat": "pret",
+ "maj": "2026-11-04T17:53:54",
+ "raison": null,
  "tentatives": 0,
  "youtube": {
   "video_id": null,
@@ -9,5 +9,11 @@
   "visibilite": null,
   "publie_a": null
  },
- "origine": "7-business-a-copier-des-usa-avant-que-tout-le-mo"
+ "origine": "7-business-a-copier-des-usa-avant-que-tout-le-mo",
+ "miniature": {
+  "source": "auto",
+  "fichier": "miniature.png",
+  "style": "createur",
+  "octets": 738334
+ }
 }

@@ -1,6 +1,6 @@
 {
- "etat": "ecrit",
- "maj": "2026-11-04T16:23:07",
+ "etat": "pret",
+ "maj": "2026-11-04T17:53:48",
  "raison": null,
  "tentatives": 0,
  "youtube": {
@@ -9,5 +9,11 @@
   "visibilite": null,
   "publie_a": null
  },
- "voix_progression": null
+ "voix_progression": null,
+ "miniature": {
+  "source": "auto",
+  "fichier": "miniature.png",
+  "style": "createur",
+  "octets": 740902
+ }
 }

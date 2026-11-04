@@ -1,733 +1,733 @@
 {
- "total": 34.452,
+ "total": 35.215,
  "lines": [
   {
    "start": 0.15,
-   "end": 2.804,
+   "end": 2.693,
    "words": [
     {
      "w": "Ton",
      "start": 0.15,
-     "end": 0.283
+     "end": 0.265
     },
     {
      "w": "voisin",
-     "start": 0.283,
-     "end": 0.637
+     "start": 0.265,
+     "end": 0.584
     },
     {
      "w": "n'arrive",
-     "start": 0.637,
-     "end": 0.796
+     "start": 0.584,
+     "end": 0.726
     },
     {
      "w": "pas",
-     "start": 0.796,
-     "end": 0.99
+     "start": 0.726,
+     "end": 0.92
     },
     {
      "w": "à",
-     "start": 0.99,
-     "end": 1.061
+     "start": 0.92,
+     "end": 0.991
     },
     {
      "w": "imprimer,",
-     "start": 1.061,
-     "end": 1.486
+     "start": 0.991,
+     "end": 1.4
     },
     {
      "w": "et",
-     "start": 1.68,
-     "end": 1.734
+     "start": 1.577,
+     "end": 1.62
     },
     {
      "w": "il",
-     "start": 1.734,
-     "end": 1.822
+     "start": 1.594,
+     "end": 1.7
     },
     {
      "w": "paiera",
-     "start": 1.822,
-     "end": 2.087
+     "start": 1.7,
+     "end": 1.949
     },
     {
      "w": "pour",
-     "start": 2.087,
-     "end": 2.211
+     "start": 1.949,
+     "end": 2.09
     },
     {
      "w": "que",
-     "start": 2.211,
-     "end": 2.317
+     "start": 2.09,
+     "end": 2.214
     },
     {
      "w": "tu",
-     "start": 2.317,
-     "end": 2.424
+     "start": 2.214,
+     "end": 2.32
     },
     {
      "w": "l'aides.",
-     "start": 2.424,
-     "end": 2.689
+     "start": 2.32,
+     "end": 2.569
     }
    ]
   },
   {
-   "start": 2.931,
-   "end": 5.883,
+   "start": 2.82,
+   "end": 6.04,
    "words": [
     {
      "w": "Aux",
-     "start": 2.931,
-     "end": 3.117
+     "start": 2.82,
+     "end": 3.016
     },
     {
      "w": "États-Unis,",
-     "start": 3.117,
-     "end": 3.543
+     "start": 3.016,
+     "end": 3.568
     },
     {
      "w": "des",
-     "start": 3.631,
-     "end": 3.702
+     "start": 3.763,
+     "end": 3.834
     },
     {
      "w": "entreprises",
-     "start": 3.702,
-     "end": 4.092
+     "start": 3.834,
+     "end": 4.226
     },
     {
      "w": "vivent",
-     "start": 4.092,
-     "end": 4.536
+     "start": 4.226,
+     "end": 4.6
     },
     {
      "w": "de",
-     "start": 4.536,
-     "end": 4.624
+     "start": 4.6,
+     "end": 4.67
     },
     {
      "w": "l'aide",
-     "start": 4.624,
-     "end": 4.766
+     "start": 4.67,
+     "end": 4.849
     },
     {
      "w": "informatique",
-     "start": 4.766,
-     "end": 5.227
+     "start": 4.849,
+     "end": 5.418
     },
     {
      "w": "à",
-     "start": 5.227,
-     "end": 5.333
+     "start": 5.418,
+     "end": 5.525
     },
     {
      "w": "domicile.",
-     "start": 5.333,
-     "end": 5.794
+     "start": 5.525,
+     "end": 5.951
     }
    ]
   },
   {
-   "start": 6.01,
-   "end": 9.655,
+   "start": 6.168,
+   "end": 9.38,
    "words": [
     {
      "w": "Ici,",
-     "start": 6.01,
-     "end": 6.274
+     "start": 6.168,
+     "end": 6.433
     },
     {
      "w": "l'aide",
-     "start": 6.538,
-     "end": 6.679
+     "start": 6.556,
+     "end": 6.662
     },
     {
      "w": "informatique",
-     "start": 6.679,
-     "end": 7.137
+     "start": 6.662,
+     "end": 7.121
     },
     {
      "w": "à",
-     "start": 7.137,
-     "end": 7.26
+     "start": 7.121,
+     "end": 7.244
     },
     {
      "w": "domicile",
-     "start": 7.26,
-     "end": 7.63
+     "start": 7.244,
+     "end": 7.598
     },
     {
      "w": "se",
-     "start": 7.63,
-     "end": 7.806
+     "start": 7.598,
+     "end": 7.739
     },
     {
      "w": "paie",
-     "start": 7.806,
-     "end": 8.017
+     "start": 7.739,
+     "end": 7.932
     },
     {
      "w": "entre",
-     "start": 8.017,
-     "end": 8.14
+     "start": 7.932,
+     "end": 8.056
     },
     {
      "w": "vingt-cinq",
-     "start": 8.14,
-     "end": 8.721
+     "start": 8.056,
+     "end": 8.515
     },
     {
      "w": "et",
-     "start": 8.721,
-     "end": 8.766
+     "start": 8.515,
+     "end": 8.568
     },
     {
      "w": "soixante",
-     "start": 8.757,
-     "end": 9.056
+     "start": 8.568,
+     "end": 8.868
     },
     {
      "w": "euros",
-     "start": 9.056,
-     "end": 9.179
+     "start": 8.868,
+     "end": 9.01
     },
     {
      "w": "de",
-     "start": 9.179,
-     "end": 9.32
+     "start": 9.01,
+     "end": 9.132
     },
     {
      "w": "l'heure.",
-     "start": 9.32,
-     "end": 9.497
+     "start": 9.132,
+     "end": 9.274
     }
    ]
   },
   {
-   "start": 9.782,
-   "end": 13.467,
+   "start": 9.507,
+   "end": 13.433,
    "words": [
     {
      "w": "Ton",
-     "start": 9.782,
-     "end": 9.92
+     "start": 9.507,
+     "end": 9.637
     },
     {
      "w": "seul",
-     "start": 9.92,
-     "end": 10.111
+     "start": 9.637,
+     "end": 9.81
     },
     {
      "w": "matériel",
-     "start": 10.111,
-     "end": 10.647
+     "start": 9.81,
+     "end": 10.348
     },
     {
      "w": "ton",
-     "start": 10.907,
-     "end": 10.993
+     "start": 10.47,
+     "end": 10.712
     },
     {
      "w": "ordinateur,",
-     "start": 10.993,
-     "end": 11.667
+     "start": 10.712,
+     "end": 11.422
     },
     {
      "w": "ton",
-     "start": 11.788,
-     "end": 11.875
+     "start": 11.63,
+     "end": 11.752
     },
     {
      "w": "téléphone,",
-     "start": 11.875,
-     "end": 12.204
+     "start": 11.752,
+     "end": 12.099
     },
     {
      "w": "et",
-     "start": 12.618,
-     "end": 12.688
+     "start": 12.619,
+     "end": 12.662
     },
     {
      "w": "de",
-     "start": 12.688,
-     "end": 12.775
+     "start": 12.653,
+     "end": 12.74
     },
     {
      "w": "la",
-     "start": 12.775,
-     "end": 12.861
+     "start": 12.74,
+     "end": 12.827
     },
     {
      "w": "patience.",
-     "start": 12.861,
-     "end": 13.068
+     "start": 12.827,
+     "end": 13.052
     }
    ]
   },
   {
-   "start": 13.594,
-   "end": 16.363,
+   "start": 13.56,
+   "end": 16.676,
    "words": [
     {
      "w": "Deux",
-     "start": 13.594,
-     "end": 13.906
+     "start": 13.56,
+     "end": 13.9
     },
     {
      "w": "heures",
-     "start": 13.906,
-     "end": 14.044
+     "start": 13.9,
+     "end": 14.073
     },
     {
      "w": "chez",
-     "start": 14.044,
-     "end": 14.165
+     "start": 14.073,
+     "end": 14.211
     },
     {
      "w": "un",
-     "start": 14.165,
-     "end": 14.303
+     "start": 14.211,
+     "end": 14.299
     },
     {
      "w": "voisin",
-     "start": 14.303,
-     "end": 14.58
+     "start": 14.299,
+     "end": 14.593
     },
     {
      "w": "à",
-     "start": 14.58,
-     "end": 14.649
+     "start": 14.593,
+     "end": 14.663
     },
     {
      "w": "quarante",
-     "start": 14.649,
-     "end": 14.927
+     "start": 14.663,
+     "end": 14.958
     },
     {
      "w": "euros",
-     "start": 14.927,
-     "end": 15.047
+     "start": 14.958,
+     "end": 15.097
     },
     {
      "w": "de",
-     "start": 15.047,
-     "end": 15.151
+     "start": 15.097,
+     "end": 15.218
     },
     {
      "w": "l'heure,",
-     "start": 15.151,
-     "end": 15.342
+     "start": 15.218,
+     "end": 15.461
     },
     {
      "w": "ça",
-     "start": 15.428,
-     "end": 15.48
+     "start": 15.53,
+     "end": 15.617
     },
     {
      "w": "fait",
-     "start": 15.48,
-     "end": 15.618
+     "start": 15.617,
+     "end": 15.79
     },
     {
      "w": "quatre-vingts",
-     "start": 15.618,
-     "end": 16.051
+     "start": 15.79,
+     "end": 16.363
     },
     {
      "w": "euros.",
-     "start": 16.051,
-     "end": 16.19
+     "start": 16.363,
+     "end": 16.52
     }
    ]
   },
   {
-   "start": 16.49,
-   "end": 19.499,
+   "start": 16.803,
+   "end": 19.867,
    "words": [
     {
      "w": "Cherche",
-     "start": 16.49,
-     "end": 16.845
+     "start": 16.803,
+     "end": 17.176
     },
     {
      "w": "les",
-     "start": 16.845,
-     "end": 16.954
+     "start": 17.176,
+     "end": 17.267
     },
     {
      "w": "personnes",
-     "start": 16.954,
-     "end": 17.19
+     "start": 17.267,
+     "end": 17.485
     },
     {
      "w": "âgées,",
-     "start": 17.19,
-     "end": 17.627
+     "start": 17.485,
+     "end": 17.903
     },
     {
      "w": "les",
-     "start": 17.717,
-     "end": 17.79
+     "start": 18.14,
+     "end": 18.212
     },
     {
      "w": "petits",
-     "start": 17.79,
-     "end": 17.972
+     "start": 18.212,
+     "end": 18.376
     },
     {
      "w": "commerces",
-     "start": 17.972,
-     "end": 18.427
+     "start": 18.376,
+     "end": 18.867
     },
     {
      "w": "et",
-     "start": 18.427,
-     "end": 18.554
+     "start": 18.867,
+     "end": 18.958
     },
     {
      "w": "les",
-     "start": 18.554,
-     "end": 18.663
+     "start": 18.958,
+     "end": 19.049
     },
     {
      "w": "familles",
-     "start": 18.663,
-     "end": 18.954
+     "start": 19.049,
+     "end": 19.321
     },
     {
      "w": "débordées.",
-     "start": 18.954,
-     "end": 19.39
+     "start": 19.321,
+     "end": 19.758
     }
    ]
   },
   {
-   "start": 19.627,
-   "end": 22.707,
+   "start": 19.994,
+   "end": 23.119,
    "words": [
     {
      "w": "Repère",
-     "start": 19.627,
-     "end": 19.961
+     "start": 19.994,
+     "end": 20.432
     },
     {
      "w": "ceux",
-     "start": 19.961,
-     "end": 20.155
+     "start": 20.432,
+     "end": 20.573
     },
     {
      "w": "qui",
-     "start": 20.155,
-     "end": 20.296
+     "start": 20.573,
+     "end": 20.731
     },
     {
      "w": "disent",
-     "start": 20.296,
-     "end": 20.524
+     "start": 20.731,
+     "end": 20.907
     },
     {
      "w": "qu'ils",
-     "start": 20.524,
-     "end": 20.762
+     "start": 20.907,
+     "end": 21.144
     },
     {
      "w": "n'arrivent",
-     "start": 20.762,
-     "end": 20.999
+     "start": 21.144,
+     "end": 21.38
     },
     {
      "w": "pas",
-     "start": 20.999,
-     "end": 21.105
+     "start": 21.38,
+     "end": 21.521
     },
     {
      "w": "à",
-     "start": 21.105,
-     "end": 21.193
+     "start": 21.521,
+     "end": 21.609
     },
     {
      "w": "régler",
-     "start": 21.193,
-     "end": 21.457
+     "start": 21.609,
+     "end": 21.872
     },
     {
      "w": "leur",
-     "start": 21.457,
-     "end": 21.563
+     "start": 21.872,
+     "end": 21.978
     },
     {
      "w": "box",
-     "start": 21.563,
-     "end": 21.809
+     "start": 21.978,
+     "end": 22.259
     },
     {
      "w": "ou",
-     "start": 21.809,
-     "end": 22.003
+     "start": 22.259,
+     "end": 22.434
     },
     {
      "w": "leur",
-     "start": 22.003,
-     "end": 22.126
+     "start": 22.434,
+     "end": 22.557
     },
     {
      "w": "imprimante.",
-     "start": 22.126,
-     "end": 22.566
+     "start": 22.557,
+     "end": 23.013
     }
    ]
   },
   {
-   "start": 22.834,
-   "end": 27.546,
+   "start": 23.246,
+   "end": 27.866,
    "words": [
     {
      "w": "Les",
-     "start": 22.834,
-     "end": 22.988
+     "start": 23.246,
+     "end": 23.391
     },
     {
      "w": "groupes",
-     "start": 22.988,
-     "end": 23.211
+     "start": 23.391,
+     "end": 23.613
     },
     {
      "w": "de",
-     "start": 23.211,
-     "end": 23.262
+     "start": 23.613,
+     "end": 23.664
     },
     {
      "w": "quartier",
-     "start": 23.262,
-     "end": 23.707
+     "start": 23.664,
+     "end": 24.023
     },
     {
      "w": "et",
-     "start": 23.707,
-     "end": 23.93
+     "start": 24.023,
+     "end": 24.109
     },
     {
      "w": "les",
-     "start": 23.93,
-     "end": 24.016
+     "start": 24.109,
+     "end": 24.194
     },
     {
      "w": "associations",
-     "start": 24.016,
-     "end": 24.358
+     "start": 24.194,
+     "end": 24.519
     },
     {
      "w": "de",
-     "start": 24.358,
-     "end": 24.581
+     "start": 24.519,
+     "end": 24.758
     },
     {
      "w": "seniors",
-     "start": 24.581,
-     "end": 24.821
+     "start": 24.758,
+     "end": 25.065
     },
     {
      "w": "sont",
-     "start": 24.821,
-     "end": 25.027
+     "start": 25.065,
+     "end": 25.321
     },
     {
      "w": "ton",
-     "start": 25.027,
-     "end": 25.181
+     "start": 25.321,
+     "end": 25.543
     },
     {
      "w": "terrain",
-     "start": 25.181,
-     "end": 25.455
+     "start": 25.543,
+     "end": 25.85
     },
     {
      "w": "écris",
-     "start": 25.712,
-     "end": 26.055
+     "start": 26.141,
+     "end": 26.5
     },
     {
      "w": "à",
-     "start": 26.055,
-     "end": 26.26
+     "start": 26.5,
+     "end": 26.653
     },
     {
      "w": "une",
-     "start": 26.26,
-     "end": 26.38
+     "start": 26.653,
+     "end": 26.739
     },
     {
      "w": "dizaine",
-     "start": 26.38,
-     "end": 26.671
+     "start": 26.739,
+     "end": 27.012
     },
     {
      "w": "de",
-     "start": 26.671,
-     "end": 26.775
+     "start": 27.012,
+     "end": 27.098
     },
     {
      "w": "personnes",
-     "start": 26.775,
-     "end": 26.997
+     "start": 27.098,
+     "end": 27.302
     },
     {
      "w": "par",
-     "start": 26.997,
-     "end": 27.22
+     "start": 27.302,
+     "end": 27.524
     },
     {
      "w": "jour.",
-     "start": 27.22,
-     "end": 27.408
+     "start": 27.524,
+     "end": 27.712
     }
    ]
   },
   {
-   "start": 27.673,
-   "end": 31.486,
+   "start": 27.993,
+   "end": 32.227,
    "words": [
     {
      "w": "Voici",
-     "start": 27.673,
-     "end": 27.995
+     "start": 27.993,
+     "end": 28.3
     },
     {
      "w": "le",
-     "start": 27.995,
-     "end": 28.046
+     "start": 28.3,
+     "end": 28.368
     },
     {
      "w": "message",
-     "start": 28.046,
-     "end": 28.299
+     "start": 28.368,
+     "end": 28.622
     },
     {
      "w": "tu",
-     "start": 28.638,
-     "end": 28.689
+     "start": 29.013,
+     "end": 29.099
     },
     {
      "w": "proposes",
-     "start": 28.689,
-     "end": 29.062
+     "start": 29.099,
+     "end": 29.439
     },
     {
      "w": "de",
-     "start": 29.062,
-     "end": 29.164
+     "start": 29.439,
+     "end": 29.54
     },
     {
      "w": "régler",
-     "start": 29.164,
-     "end": 29.401
+     "start": 29.54,
+     "end": 29.796
     },
     {
      "w": "un",
-     "start": 29.401,
-     "end": 29.486
+     "start": 29.796,
+     "end": 29.88
     },
     {
      "w": "problème",
-     "start": 29.486,
-     "end": 29.689
+     "start": 29.88,
+     "end": 30.101
     },
     {
      "w": "précis,",
-     "start": 29.689,
-     "end": 30.046
+     "start": 30.101,
+     "end": 30.476
     },
     {
      "w": "avec",
-     "start": 30.164,
-     "end": 30.266
+     "start": 30.748,
+     "end": 30.952
     },
     {
      "w": "une",
-     "start": 30.266,
-     "end": 30.435
+     "start": 30.952,
+     "end": 31.105
     },
     {
      "w": "première",
-     "start": 30.435,
-     "end": 30.689
+     "start": 31.105,
+     "end": 31.36
     },
     {
      "w": "demi-heure",
-     "start": 30.689,
-     "end": 31.045
+     "start": 31.36,
+     "end": 31.734
     },
     {
      "w": "offerte.",
-     "start": 31.045,
-     "end": 31.401
+     "start": 31.734,
+     "end": 32.159
     }
    ]
   },
   {
-   "start": 31.613,
-   "end": 34.152,
+   "start": 32.354,
+   "end": 34.915,
    "words": [
     {
      "w": "Le",
-     "start": 31.613,
-     "end": 31.748
+     "start": 32.354,
+     "end": 32.499
     },
     {
      "w": "message",
-     "start": 31.748,
-     "end": 31.984
+     "start": 32.499,
+     "end": 32.715
     },
     {
      "w": "complet",
-     "start": 31.984,
-     "end": 32.29
+     "start": 32.715,
+     "end": 33.003
     },
     {
      "w": "à",
-     "start": 32.29,
-     "end": 32.453
+     "start": 33.003,
+     "end": 33.148
     },
     {
      "w": "copier",
-     "start": 32.453,
-     "end": 32.778
+     "start": 33.148,
+     "end": 33.436
     },
     {
      "w": "est",
-     "start": 32.778,
-     "end": 32.923
+     "start": 33.436,
+     "end": 33.652
     },
     {
      "w": "dans",
-     "start": 32.923,
-     "end": 33.031
+     "start": 33.652,
+     "end": 33.76
     },
     {
      "w": "la",
-     "start": 33.031,
-     "end": 33.14
+     "start": 33.76,
+     "end": 33.85
     },
     {
      "w": "description",
-     "start": 33.14,
-     "end": 33.483
+     "start": 33.85,
+     "end": 34.193
     },
     {
      "w": "de",
-     "start": 33.483,
-     "end": 33.682
+     "start": 34.193,
+     "end": 34.428
     },
     {
      "w": "la",
-     "start": 33.682,
-     "end": 33.772
+     "start": 34.428,
+     "end": 34.518
     },
     {
      "w": "vidéo.",
-     "start": 33.772,
-     "end": 33.935
+     "start": 34.518,
+     "end": 34.699
     }
    ]
   }
