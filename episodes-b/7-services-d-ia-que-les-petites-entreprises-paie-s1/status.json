@@ -1,7 +1,7 @@
 {
- "etat": "ecrit",
- "maj": "2026-11-04T04:09:54",
- "raison": null,
+ "etat": "quarantaine",
+ "maj": "2026-11-04T07:39:38",
+ "raison": "contrôle qualité : voix prête annoncée mais absente : voice.wav",
  "tentatives": 0,
  "youtube": {
   "video_id": null,
