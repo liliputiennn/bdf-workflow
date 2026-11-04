@@ -1,7 +1,7 @@
 {
- "etat": "pret",
- "maj": "2026-11-04T16:07:14",
- "raison": null,
+ "etat": "quarantaine",
+ "maj": "2026-11-04T16:22:08",
+ "raison": "rendu perdu au timeout du 04/11 (vidéo absente du stock) : sera redécoupé quand son long sera refabriqué",
  "tentatives": 0,
  "youtube": {
   "video_id": null,
