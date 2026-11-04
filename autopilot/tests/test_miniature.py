@@ -214,6 +214,49 @@ class Transitions(unittest.TestCase):
         self.assertTrue((self.d / "miniature.png").exists())
 
 
+class Variantes(unittest.TestCase):
+    """Un long reçoit jusqu'à deux autres miniatures pour le test A/B de YouTube ; un Short n'en reçoit pas."""
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.d = self.tmp / "ep"
+        (self.d).mkdir()
+        self.n = 0
+
+    def faux_essayer(self, base, style, work):
+        self.n += 1
+        img = self.tmp / f"{style}.png"
+        img.write_bytes(png(1280, 720, (10 * self.n, 20, 30)))
+        return {"style": style, "image": img, "hash": style, "ok": style != "question", "raisons": []}
+
+    def res(self):
+        return {"essais": [{"style": "createur", "hash": "retenue"}]}
+
+    def test_un_short_n_a_pas_de_variantes(self):
+        with mock.patch.object(mini, "essayer", side_effect=AssertionError("ne doit pas rendre")):
+            self.assertEqual(mini.ecrire_variantes("ep", self.res(), self.d), [])
+
+    def test_un_long_recoit_deux_variantes_differentes_qui_passent_le_controle(self):
+        (self.d / "episode-long.json").write_text("{}", encoding="utf-8")
+        with mock.patch.object(mini, "essayer", side_effect=self.faux_essayer):
+            v = mini.ecrire_variantes("ep", self.res(), self.d)
+        self.assertEqual([x["fichier"] for x in v], ["miniature_b.png", "miniature_c.png"])
+        self.assertEqual([x["style"] for x in v], ["chiffre", "contraste"])  # « question » a échoué au contrôle : sautée
+        self.assertTrue((self.d / "miniature_b.png").exists() and (self.d / "miniature_c.png").exists())
+
+    def test_une_variante_identique_ou_en_erreur_est_ignoree(self):
+        (self.d / "episode-long.json").write_text("{}", encoding="utf-8")
+        res = {"essais": [{"style": "createur", "hash": "chiffre"}]}  # « chiffre » ressemble à la retenue
+        def essayer(base, style, work):
+            if style == "contraste":
+                raise RuntimeError("remotion")
+            return self.faux_essayer(base, style, work)
+        with mock.patch.object(mini, "essayer", side_effect=essayer):
+            v = mini.ecrire_variantes("ep", res, self.d)
+        self.assertNotIn("chiffre", [x["style"] for x in v])
+        self.assertNotIn("contraste", [x["style"] for x in v])
+
+
 class Compression(unittest.TestCase):
     def test_trop_lourd_donne_un_jpeg_sous_la_limite(self):
         tmp = Path(tempfile.mkdtemp())

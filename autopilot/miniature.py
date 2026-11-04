@@ -205,9 +205,9 @@ def essayer(props_base: dict, style: str, work: Path) -> dict:
     return {"style": style, "image": img, "hash": sha(img), **verdict}
 
 
-def ecrire_finale(src_png: Path, dest_dir: Path) -> Path:
-    """Copie la miniature : miniature.png si ≤ 2 Mo, sinon JPEG de qualité décroissante nommé miniature.jpg."""
-    png, jpg = dest_dir / "miniature.png", dest_dir / "miniature.jpg"
+def ecrire_finale(src_png: Path, dest_dir: Path, nom: str = "miniature") -> Path:
+    """Copie la miniature : <nom>.png si ≤ 2 Mo, sinon JPEG de qualité décroissante nommé <nom>.jpg."""
+    png, jpg = dest_dir / f"{nom}.png", dest_dir / f"{nom}.jpg"
     if src_png.stat().st_size <= MAX_OCTETS:
         shutil.copyfile(src_png, png)
         jpg.unlink(missing_ok=True)
@@ -249,6 +249,40 @@ def fabriquer(ep_id: str, style: str | None = None, theme: str | None = None, mi
     reels = [e for e in essais if not e.get("doublon")]
     meilleur = max(reels, key=lambda e: (e["canaux"]["principal"].get("contraste") or 0))
     return {"ok": False, "essais": essais, "meilleur": meilleur, "raison": "; ".join(f"{e['style']} : {' / '.join(e['raisons'])}" for e in reels)}
+
+
+# Variantes pour le test « Test et comparaison » de YouTube (Studio > Contenu > la vidéo > Miniature > Test et comparaison) :
+# l'API YouTube ne sait pas lancer ce test, on prépare donc les images et le propriétaire les envoie en un clic.
+# Idées différentes : un gros chiffre, une question, un contraste, puis les mises en page « créateur ».
+ORDRE_VARIANTES = ["chiffre", "question", "contraste", "telephone", "pile", "createur"]
+
+
+def ecrire_variantes(ep_id: str, res: dict, dest_dir: Path, nombre: int = 2) -> list[dict]:
+    """Pour un long : jusqu'à `nombre` autres miniatures (miniature_b, miniature_c) qui passent le même contrôle de lisibilité
+    et ne ressemblent pas à la retenue. Un échec ici ne gêne jamais l'épisode (liste vide)."""
+    if not (dest_dir / "episode-long.json").exists():
+        return []
+    vus = {e["hash"] for e in res.get("essais", []) if e.get("hash")}
+    deja = {e["style"] for e in res.get("essais", [])}
+    work = dest_dir / "cache" / "miniature"
+    sorties: list[dict] = []
+    for st in ORDRE_VARIANTES:
+        if len(sorties) >= nombre:
+            break
+        if st in deja:
+            continue
+        try:
+            e = essayer({"id": ep_id}, st, work)
+            if not e["ok"] or e["hash"] in vus:
+                continue
+            nom = "miniature_" + "bc"[len(sorties)]
+            fin = ecrire_finale(e["image"], dest_dir, nom)
+        except Exception as exc:  # une variante ratée est simplement ignorée
+            print(f"{ep_id} : variante {st} ignorée ({type(exc).__name__})")
+            continue
+        vus.add(e["hash"])
+        sorties.append({"style": st, "fichier": fin.name, "octets": fin.stat().st_size})
+    return sorties
 
 
 def resume(e: dict) -> dict:
@@ -295,6 +329,7 @@ def traiter(ep_id: str, sans_etat: bool = False) -> int:
             info = {"source": "auto", "fichier": fin.name, "style": res["retenu"]["style"], "octets": fin.stat().st_size}
             rapport.update(info)
             (d / "miniature_refusee.png").unlink(missing_ok=True)
+            rapport["variantes"] = ecrire_variantes(ep_id, res, d)
     except Exception as e:  # une brique qui échoue ne bloque pas les autres
         if re.search(r"ERR_NAME_NOT_RESOLVED|ERR_INTERNET_DISCONNECTED|ERR_CONNECTION_\w+|ERR_NETWORK_CHANGED|ENOTFOUND|EAI_AGAIN|ETIMEDOUT|ECONNRESET|getaddrinfo failed", str(e)):
             print(f"{ep_id} : réseau indisponible pendant le rendu ({type(e).__name__}) : pas de quarantaine, nouvel essai au prochain passage")
