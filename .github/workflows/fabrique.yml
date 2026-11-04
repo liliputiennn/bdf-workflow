@@ -51,23 +51,27 @@ jobs:
           npx remotion browser ensure > /dev/null
           bash tools/fetch-audio.sh
           pip install -q kaggle six
-      - name: Musiques de fond (jeu Kaggle privé, facultatif)
-        run: |
-          kaggle datasets download -d "$KAGGLE_USERNAME/bdf-musique" -p autopilot/musique --unzip || echo "pas de jeu de musiques : les vidéos sortent sans musique"
-          ls autopilot/musique | grep -v LISEZ-MOI || true
+      # Garde-fou : la fabrication s'arrête d'elle-même à 270 min, ce qui laisse ~60 min (sur les 330 du job) pour la miniature,
+      # le contrôle et le dépôt dans le stock. Sans cela, un timeout du job faisait sauter ces étapes et tous les rendus étaient perdus
+      # (le stock n'est alimenté qu'à la fin). Le budget de 200 min empêche de commencer un nouvel épisode trop tard.
       - name: Fabrication (voix Kaggle + rendu)
         id: fab
+        timeout-minutes: 270
         run: |
           echo "avant=$(python autopilot/cloud/restant.py)" >> "$GITHUB_OUTPUT"
-          opts="--max 12 --budget-min 290"
+          opts="--max 12 --budget-min 200"
           [ -n "${{ inputs.id }}" ] && opts="--max 1 --id ${{ inputs.id }}"
           [ "${{ github.event_name == 'workflow_dispatch' && inputs.a_blanc }}" = "true" ] && opts="$opts --dry-run"
           python autopilot/run_daily.py fabriquer $opts
+      # `!cancelled()` : ces étapes s'exécutent aussi quand la fabrication a échoué ou a atteint sa limite de temps,
+      # pour sauver ce qui est déjà rendu ; elles sautent seulement si on annule le run à la main.
       - name: Miniature et contrôle
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.a_blanc) }}
+        if: ${{ !cancelled() && !(github.event_name == 'workflow_dispatch' && inputs.a_blanc) }}
+        timeout-minutes: 30
         run: python autopilot/run_daily.py finaliser
       - name: Dépôt dans le stock
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.a_blanc) }}
+        if: ${{ !cancelled() && !(github.event_name == 'workflow_dispatch' && inputs.a_blanc) }}
+        timeout-minutes: 25
         run: python autopilot/cloud/deposer.py
       - name: Instantané pour l'interface web
         if: always()
@@ -85,7 +89,7 @@ jobs:
           [ "${{ github.event_name == 'workflow_dispatch' && inputs.a_blanc }}" = "true" ] || git add episodes-b
           bash autopilot/cloud/enregistrer.sh "Fabrique : état des épisodes ($(date -u +%F))"
       - name: Enchaîner s'il reste des épisodes à fabriquer
-        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.a_blanc) && inputs.id == '' }}
+        if: ${{ !cancelled() && !(github.event_name == 'workflow_dispatch' && inputs.a_blanc) && inputs.id == '' }}
         run: |
           apres=$(python autopilot/cloud/restant.py)
           echo "à fabriquer : avant=${{ steps.fab.outputs.avant }} après=$apres"
