@@ -23,6 +23,7 @@ sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE / "long"))
 
 import common  # noqa: E402
+import musique  # noqa: E402
 import cut_shorts  # noqa: E402
 import longlib as L  # noqa: E402
 
@@ -119,15 +120,29 @@ def _part_ok(parts: Path, i: int, signature: str, a: int, b: int) -> bool:
     return bool(meta) and meta == {"sig": signature, "a": a, "b": b} and (parts / f"ch{i + 1:02d}.mp4").exists()
 
 
-def assembler(fichiers: list[Path], voix: Path, final: Path, total_frames: int) -> None:
-    """Concatène les chapitres sans recompression, ajoute la voix normalisée à -14 LUFS (deux passes)."""
+def assembler(fichiers: list[Path], voix: Path, final: Path, total_frames: int, ep_id: str = "", voulu: str | None = None) -> list[str]:
+    """Concatène les chapitres sans recompression, ajoute la voix (et la musique de fond si des pistes existent) normalisée à -14 LUFS.
+
+    Renvoie les noms des pistes de musique utilisées ([] sans musique). La musique ne bloque jamais l'assemblage.
+    """
     liste = fichiers[0].parent / "liste.txt"
     liste.write_text("".join(f"file '{f.name}'\n" for f in fichiers), encoding="utf-8")
-    m = L.mesure(voix, -14.0, -1.5, 9.0)
     dur = total_frames / FPS
+    pistes, source, mixage = [], voix, final.parent / "mixage.wav"
+    try:
+        info = musique.mixer(voix, mixage, ep_id or final.stem, longueur=dur, voulu=voulu)
+        if info:
+            source, pistes = mixage, info["pistes"]
+    except Exception as e:  # noqa: BLE001
+        print(f"musique ignorée : {e}", flush=True)
+    m = L.mesure(source, -14.0, -1.5, 9.0)
     af = L.filtre_loudnorm(m, -14.0, -1.5, 9.0) + f",apad=whole_dur={dur:.3f}"
-    run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(liste), "-i", str(voix), "-map", "0:v", "-map", "1:a",
-         "-c:v", "copy", "-af", af, "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-t", f"{dur:.3f}", "-movflags", "+faststart", str(final)])
+    try:
+        run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(liste), "-i", str(source), "-map", "0:v", "-map", "1:a",
+             "-c:v", "copy", "-af", af, "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-t", f"{dur:.3f}", "-movflags", "+faststart", str(final)])
+    finally:
+        mixage.unlink(missing_ok=True)
+    return pistes
 
 
 # ─────────── principal ───────────
@@ -231,7 +246,7 @@ def _fabriquer(a, ep: dict, ep_dir: Path, out_dir: Path, qa: dict, t0: float) ->
         subprocess.run([sys.executable, str(HERE / "visuels.py"), str(ep_dir)], check=False)
         fichiers = rendre_chapitres(a.id, ep_dir, out_dir, plages, a.concurrence)
         final = out_dir / f"{a.id}.mp4"
-        assembler(fichiers, ep_dir / "voice.wav", final, total_f)
+        qa["musique"] = assembler(fichiers, ep_dir / "voice.wav", final, total_f, a.id, ep.get("musique"))
     except subprocess.CalledProcessError as e:
         n = common.get_status(a.id).get("tentatives", 0) + 1
         common.set_status(a.id, "ecrit", None, tentatives=n)

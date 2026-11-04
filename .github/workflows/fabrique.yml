@@ -51,6 +51,10 @@ jobs:
           npx remotion browser ensure > /dev/null
           bash tools/fetch-audio.sh
           pip install -q kaggle six
+      - name: Musiques de fond (jeu Kaggle privé, facultatif)
+        run: |
+          kaggle datasets download -d "$KAGGLE_USERNAME/bdf-musique" -p autopilot/musique --unzip || echo "pas de jeu de musiques : les vidéos sortent sans musique"
+          ls autopilot/musique | grep -v LISEZ-MOI || true
       - name: Fabrication (voix Kaggle + rendu)
         id: fab
         run: |

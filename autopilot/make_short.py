@@ -8,6 +8,8 @@ import argparse, json, os, re, subprocess, sys, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import musique  # noqa: E402
 VENV_PY = r"C:\VoiceStudio\tts-direct\venv\Scripts\python.exe"
 SCENE_TYPES = {"titre-geant", "chiffre", "barres", "courbe", "ligne-temps", "anneau", "duel", "objet", "question", "liste", "fiche", "annonce", "photo", "clip"}
 def _themes() -> set[str]:
@@ -129,12 +131,26 @@ def main() -> int:
     run(f'npx remotion render src/infographie/index.ts Short "{silent}" --props="{{\\"id\\":\\"{a.id}\\"}}" --public-dir=episodes-b --concurrency={os.environ.get("BDF_CONCURRENCY", "4")}', cwd=ROOT, shell=True)
 
     # mixage final : voix déjà à -16 LUFS, on normalise l'ensemble à -14 LUFS (deux passes) et on remux
-    m = loudness(silent)
+    # musique de fond (facultative, jamais bloquante) : mixée sous la voix avant la normalisation
+    source_audio, mixage = silent, out_dir / "mixage.wav"
+    try:
+        voix_rendu = out_dir / "voix-rendu.wav"
+        run(["ffmpeg", "-y", "-v", "error", "-i", str(silent), "-vn", "-c:a", "pcm_s16le", str(voix_rendu)])
+        info = musique.mixer(voix_rendu, mixage, a.id, voulu=ep.get("musique"))
+        voix_rendu.unlink(missing_ok=True)
+        if info:
+            source_audio = mixage
+            qa["musique"] = info["pistes"]
+    except Exception as e:  # noqa: BLE001 — la musique ne doit jamais empêcher une vidéo de sortir
+        qa.setdefault("notes", []).append(f"musique ignorée : {e}")
+    m = loudness(source_audio)
     final = out_dir / f"{a.id}.mp4"
-    run(["ffmpeg", "-y", "-v", "error", "-i", str(silent), "-af",
+    entrees = ["-i", str(silent)] + (["-i", str(mixage), "-map", "0:v", "-map", "1:a"] if source_audio == mixage else [])
+    run(["ffmpeg", "-y", "-v", "error", *entrees, "-af",
          f"loudnorm=I=-14:TP=-1.5:LRA=9:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true",
-         "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-ar", "48000", str(final)])
+         "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-shortest", str(final)])
     silent.unlink()
+    mixage.unlink(missing_ok=True)
 
     # contrôles qualité
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(final)], capture_output=True, text=True).stdout)
