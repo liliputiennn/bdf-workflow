@@ -135,9 +135,12 @@
      }
     },
     {
-     "type": "titre-geant",
+     "type": "photo",
      "phrase": 8,
-     "params": {}
+     "params": {
+      "recherche": "pressure washing patio",
+      "legende": "Nettoyage de terrasses"
+     }
     },
     {
      "type": "liste",
@@ -161,9 +164,12 @@
      }
     },
     {
-     "type": "titre-geant",
+     "type": "clip",
      "phrase": 11,
-     "params": {}
+     "params": {
+      "recherche": "pressure washer cleaning patio",
+      "legende": "Ton premier jour"
+     }
     },
     {
      "type": "titre-geant",
@@ -253,9 +259,12 @@
      }
     },
     {
-     "type": "titre-geant",
+     "type": "photo",
      "phrase": 8,
-     "params": {}
+     "params": {
+      "recherche": "cleaning gutter ladder",
+      "legende": "Nettoyage de gouttières"
+     }
     },
     {
      "type": "liste",
@@ -279,9 +288,12 @@
      }
     },
     {
-     "type": "titre-geant",
+     "type": "clip",
      "phrase": 11,
-     "params": {}
+     "params": {
+      "recherche": "cleaning gutter leaves",
+      "legende": "Ton premier jour"
+     }
     },
     {
      "type": "titre-geant",
@@ -375,9 +387,7 @@
      "phrase": 8,
      "params": {
       "recherche": "window cleaning squeegee",
-      "legende": "Nettoyage de vitres",
-      "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo/visuels/window-cleaning-squeegee.jpg",
-      "credit": "Photo : It's No Game, CC BY 2.0"
+      "legende": "Nettoyage de vitres"
      }
     },
     {
@@ -402,9 +412,12 @@
      }
     },
     {
-     "type": "titre-geant",
+     "type": "clip",
      "phrase": 11,
-     "params": {}
+     "params": {
+      "recherche": "window cleaning squeegee storefront",
+      "legende": "Ton premier jour"
+     }
     },
     {
      "type": "titre-geant",
@@ -498,9 +511,7 @@
      "phrase": 8,
      "params": {
       "recherche": "assembling flat pack furniture",
-      "legende": "Montage de meubles",
-      "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo/visuels/assembling-flat-pack-furniture.jpg",
-      "credit": "Photo : Bruce Szalwinski, CC BY 2.0"
+      "legende": "Montage de meubles"
      }
     },
     {
@@ -525,9 +536,12 @@
      }
     },
     {
-     "type": "titre-geant",
+     "type": "clip",
      "phrase": 11,
-     "params": {}
+     "params": {
+      "recherche": "assembling furniture screwdriver",
+      "legende": "Ton premier jour"
+     }
     },
     {
      "type": "titre-geant",
@@ -621,9 +635,7 @@
      "phrase": 8,
      "params": {
       "recherche": "dog walking park",
-      "legende": "Promenade de chiens",
-      "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo/visuels/dog-walking-park.jpg",
-      "credit": "Photo : David Adam Kess, CC BY-SA 4.0"
+      "legende": "Promenade de chiens"
      }
     },
     {
@@ -648,13 +660,11 @@
      }
     },
     {
-     "type": "photo",
+     "type": "clip",
      "phrase": 11,
      "params": {
       "recherche": "dog walking leash park",
-      "legende": "Ton premier jour",
-      "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo/visuels/dog-walking-leash-park.jpg",
-      "credit": "Photo : Lovemedead, CC BY-SA 4.0"
+      "legende": "Ton premier jour"
      }
     },
     {
@@ -749,9 +759,7 @@
      "phrase": 8,
      "params": {
       "recherche": "lawn mowing garden",
-      "legende": "Entretien de jardins",
-      "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo/visuels/lawn-mowing-garden.jpg",
-      "credit": "Photo : Shixart1985, CC BY 2.0"
+      "legende": "Entretien de jardins"
      }
     },
     {
@@ -776,13 +784,11 @@
      }
     },
     {
-     "type": "photo",
+     "type": "clip",
      "phrase": 11,
      "params": {
       "recherche": "lawn mowing garden",
-      "legende": "Ton premier jour",
-      "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo/visuels/lawn-mowing-garden.jpg",
-      "credit": "Photo : Shixart1985, CC BY 2.0"
+      "legende": "Ton premier jour"
      }
     },
     {
@@ -873,9 +879,12 @@
      }
     },
     {
-     "type": "titre-geant",
+     "type": "photo",
      "phrase": 8,
-     "params": {}
+     "params": {
+      "recherche": "helping senior laptop",
+      "legende": "Aide informatique à domicile"
+     }
     },
     {
      "type": "liste",
@@ -899,9 +908,12 @@
      }
     },
     {
-     "type": "titre-geant",
+     "type": "clip",
      "phrase": 11,
-     "params": {}
+     "params": {
+      "recherche": "helping senior laptop",
+      "legende": "Ton premier jour"
+     }
     },
     {
      "type": "titre-geant",

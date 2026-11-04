@@ -1,7 +1,7 @@
 {
- "etat": "quarantaine",
- "maj": "2026-11-04T16:06:02",
- "raison": "épisode long invalide : chapitre 2, scène 7 : deux « titre-geant » de suite ; chapitre 3, scène 7 : deux « titre-geant » de suite ; chapitre 4, scène 7 : deux « titre-geant » de suite",
+ "etat": "ecrit",
+ "maj": "2026-11-04T16:23:07",
+ "raison": null,
  "tentatives": 0,
  "youtube": {
   "video_id": null,
