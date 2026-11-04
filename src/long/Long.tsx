@@ -7,7 +7,7 @@ import { ease, FPS, SceneClock } from "../infographie/scenes";
 import { getTheme, GIANT, UI, type Theme } from "../infographie/themes";
 import type { Scene, Timings, Word } from "../infographie/types";
 import { chapitresTemps, flatten, type ChapitreTemps } from "./plan";
-import { Anneau, Barres, Chiffre, Courbe, Duel, LH, Liste, LigneTemps, LW, Objet, Question, TitreGeant } from "./scenes";
+import { Annonce, Anneau, Barres, Chiffre, Courbe, Duel, Fiche, LH, Liste, LigneTemps, LW, Objet, Photo, Question, TitreGeant } from "./scenes";
 import type { EpisodeLong, LongProps } from "./types";
 
 /** Pause laissée après la dernière parole (fin de vidéo). */
@@ -42,6 +42,9 @@ const vue = (s: Scene, c: { l: number; th: Theme; words: Word[]; t: number }) =>
     case "objet": return <Objet {...c} p={s.params as never} />;
     case "question": return <Question {...c} p={s.params as never} />;
     case "liste": return <Liste {...c} p={s.params as never} />;
+    case "fiche": return <Fiche {...c} p={s.params as never} />;
+    case "annonce": return <Annonce {...c} p={s.params as never} />;
+    case "photo": return <Photo {...c} p={s.params as never} />;
   }
 };
 

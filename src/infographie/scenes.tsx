@@ -1,5 +1,5 @@
 import React from "react";
-import { Easing, interpolate } from "remotion";
+import { Easing, Img, interpolate, staticFile } from "remotion";
 import { Icon } from "./icons";
 import { GIANT, UI, type Theme } from "./themes";
 import type { SceneParams, Word } from "./types";
@@ -250,5 +250,66 @@ export const Liste: React.FC<Ctx<"liste">> = ({ p, l, th }) => (
         </div>
       ))}
     </Card>
+  </Stage>
+);
+
+/* ─────────── Fiche business (panneau « business n°X » : coût, temps, gain par jour) ─────────── */
+export const Fiche: React.FC<Ctx<"fiche">> = ({ p, l, th }) => (
+  <Stage>
+    <Card th={th} style={{ width: 940 }}>
+      <div style={{ display: "flex", alignItems: "baseline", gap: 26, opacity: ease(l, 0, 12), transform: `translateY(${ease(l, 0, 12, 30, 0)}px)` }}>
+        <div style={{ fontFamily: GIANT, fontSize: 190, color: th.accent, lineHeight: 0.95 }}>{String(p.numero).padStart(2, "0")}</div>
+        <Kicker th={th}>{p.badge ?? "Business"}</Kicker>
+      </div>
+      <div style={{ fontFamily: GIANT, fontSize: 100, color: th.ink, textTransform: "uppercase", lineHeight: 1.04, margin: "6px 0 30px", opacity: ease(l, 4, 16), transform: `translateX(${ease(l, 4, 16, -50, 0)}px)` }}>{p.titre}</div>
+      {p.lignes.map((r, i) => (
+        <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "26px 26px", marginBottom: 12, borderRadius: 26, background: r.accent ? th.accent : "transparent", border: r.accent ? "none" : `2px solid ${th.line}`, opacity: ease(l, 12 + i * 8, 24 + i * 8), transform: `translateX(${ease(l, 12 + i * 8, 24 + i * 8, 60, 0)}px)` }}>
+          <div style={{ fontFamily: UI, fontSize: 46, fontWeight: 500, color: r.accent ? th.onAccent : th.muted }}>{r.label}</div>
+          <div style={{ fontFamily: UI, fontSize: 62, fontWeight: 700, color: r.accent ? th.onAccent : th.ink }}>{r.valeur}</div>
+        </div>
+      ))}
+    </Card>
+  </Stage>
+);
+
+/* ─────────── Annonce (carte de prix de marketplace, dessinée par nous, avec les prix constatés) ─────────── */
+export const Annonce: React.FC<Ctx<"annonce">> = ({ p, l, th }) => (
+  <Stage>
+    <Card th={th} style={{ width: 940, padding: 0 }}>
+      <div style={{ height: 540, background: `linear-gradient(135deg, ${th.accent}33, ${th.deep}55)`, display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
+        {p.fichier ? (
+          <Img src={staticFile(p.fichier)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1 + 0.1 * ease(l, 0, 150)})` }} />
+        ) : (
+          <div style={{ fontFamily: GIANT, fontSize: 220, color: th.accent, opacity: 0.55 }}>€</div>
+        )}
+      </div>
+      <div style={{ padding: "40px 48px 48px", position: "relative" }}>
+        <div style={{ fontFamily: UI, fontSize: 56, fontWeight: 700, color: th.ink, lineHeight: 1.12, opacity: ease(l, 6, 18) }}>{p.titre}</div>
+        <div style={{ display: "flex", alignItems: "baseline", gap: 26, marginTop: 14, opacity: ease(l, 12, 26), transform: `scale(${ease(l, 12, 26, 0.85, 1)})`, transformOrigin: "left center" }}>
+          <div style={{ fontFamily: GIANT, fontSize: 150, color: th.accent, lineHeight: 1 }}>{p.prix}</div>
+          {p.ancien && <div style={{ fontFamily: UI, fontSize: 56, color: th.muted, textDecoration: "line-through" }}>{p.ancien}</div>}
+        </div>
+        <div style={{ fontFamily: UI, fontSize: 38, color: th.muted, marginTop: 10, opacity: ease(l, 18, 30) }}>{[p.etat, p.lieu].filter(Boolean).join("  ·  ")}</div>
+        {p.source && <div style={{ fontFamily: UI, fontSize: 32, color: th.muted, marginTop: 6, opacity: ease(l, 22, 34) }}>Source : {p.source}</div>}
+        {p.vendu && (
+          <div style={{ position: "absolute", right: 40, top: 28, fontFamily: GIANT, fontSize: 84, color: th.alert, border: `8px solid ${th.alert}`, borderRadius: 18, padding: "4px 26px", textTransform: "uppercase", transform: `rotate(-9deg) scale(${ease(l, 34, 44, 1.8, 1)})`, opacity: ease(l, 34, 42) }}>Vendu</div>
+        )}
+      </div>
+    </Card>
+  </Stage>
+);
+
+/* ─────────── Photo (image réelle ou générée qui montre de quoi on parle, avec légende) ─────────── */
+export const Photo: React.FC<Ctx<"photo">> = ({ p, l, th }) => (
+  <Stage>
+    <div style={{ position: "relative", width: 940, height: 1100, borderRadius: 48, overflow: "hidden", border: `2px solid ${th.line}`, opacity: ease(l, 0, 10) }}>
+      <Img src={staticFile(p.fichier)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.12 * ease(l, 0, 160)})` }} />
+      {p.legende && (
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, padding: "90px 44px 40px", background: "linear-gradient(transparent, rgba(0,0,0,0.78))", opacity: ease(l, 10, 22) }}>
+          <div style={{ fontFamily: GIANT, fontSize: 84, color: "#FFFFFF", textTransform: "uppercase", lineHeight: 1.05 }}>{p.legende}</div>
+        </div>
+      )}
+      {p.credit && <div style={{ position: "absolute", right: 18, bottom: 10, fontFamily: UI, fontSize: 22, color: "rgba(255,255,255,0.7)" }}>{p.credit}</div>}
+    </div>
   </Stage>
 );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Img, staticFile } from "remotion";
 import { Icon } from "../infographie/icons";
 import { ease, FPS, SceneClock } from "../infographie/scenes";
 import { GIANT, UI, type Theme } from "../infographie/themes";
@@ -258,3 +259,62 @@ export const Liste: React.FC<Ctx<"liste">> = ({ p, l, th }) => {
     </Stage>
   );
 };
+
+/* ─────────── Fiche business (panneau « business n°X ») ─────────── */
+export const Fiche: React.FC<Ctx<"fiche">> = ({ p, l, th }) => (
+  <Stage row>
+    <div style={{ width: 640, flex: "none", opacity: ease(l, 0, 12), transform: `translateX(${ease(l, 0, 12, -50, 0)}px)` }}>
+      <div style={{ fontFamily: GIANT, fontSize: 300, color: th.accent, lineHeight: 0.9 }}>{String(p.numero).padStart(2, "0")}</div>
+      <Kicker th={th}>{p.badge ?? "Business"}</Kicker>
+      <div style={{ fontFamily: GIANT, fontSize: 84, color: th.ink, textTransform: "uppercase", lineHeight: 1.05, marginTop: 14 }}>{p.titre}</div>
+    </div>
+    <div style={{ width: 1000, flex: "none" }}>
+      {p.lignes.map((r, i) => (
+        <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "22px 30px", marginBottom: 14, borderRadius: 26, background: r.accent ? th.accent : th.card, border: r.accent ? "none" : `2px solid ${th.line}`, opacity: ease(l, 10 + i * 8, 22 + i * 8), transform: `translateX(${ease(l, 10 + i * 8, 22 + i * 8, 70, 0)}px)` }}>
+          <div style={{ fontFamily: UI, fontSize: 40, fontWeight: 500, color: r.accent ? th.onAccent : th.muted }}>{r.label}</div>
+          <div style={{ fontFamily: UI, fontSize: 54, fontWeight: 700, color: r.accent ? th.onAccent : th.ink }}>{r.valeur}</div>
+        </div>
+      ))}
+    </div>
+  </Stage>
+);
+
+/* ─────────── Annonce (carte de prix dessinée par nous) ─────────── */
+export const Annonce: React.FC<Ctx<"annonce">> = ({ p, l, th }) => (
+  <Stage row>
+    <div style={{ width: 760, height: 640, flex: "none", borderRadius: 36, overflow: "hidden", background: `linear-gradient(135deg, ${th.accent}33, ${th.deep}55)`, display: "flex", alignItems: "center", justifyContent: "center", border: `2px solid ${th.line}` }}>
+      {p.fichier ? (
+        <Img src={staticFile(p.fichier)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1 + 0.1 * ease(l, 0, 150)})` }} />
+      ) : (
+        <div style={{ fontFamily: GIANT, fontSize: 260, color: th.accent, opacity: 0.55 }}>€</div>
+      )}
+    </div>
+    <div style={{ width: 900, position: "relative", flex: "none" }}>
+      <div style={{ fontFamily: UI, fontSize: 56, fontWeight: 700, color: th.ink, lineHeight: 1.12, opacity: ease(l, 6, 18) }}>{p.titre}</div>
+      <div style={{ display: "flex", alignItems: "baseline", gap: 26, marginTop: 18, opacity: ease(l, 12, 26), transform: `scale(${ease(l, 12, 26, 0.85, 1)})`, transformOrigin: "left center" }}>
+        <div style={{ fontFamily: GIANT, fontSize: 190, color: th.accent, lineHeight: 1 }}>{p.prix}</div>
+        {p.ancien && <div style={{ fontFamily: UI, fontSize: 60, color: th.muted, textDecoration: "line-through" }}>{p.ancien}</div>}
+      </div>
+      <div style={{ fontFamily: UI, fontSize: 40, color: th.muted, marginTop: 12, opacity: ease(l, 18, 30) }}>{[p.etat, p.lieu].filter(Boolean).join("  ·  ")}</div>
+      {p.source && <div style={{ fontFamily: UI, fontSize: 32, color: th.muted, marginTop: 8, opacity: ease(l, 22, 34) }}>Source : {p.source}</div>}
+      {p.vendu && (
+        <div style={{ position: "absolute", right: 10, top: 0, fontFamily: GIANT, fontSize: 90, color: th.alert, border: `8px solid ${th.alert}`, borderRadius: 18, padding: "4px 28px", textTransform: "uppercase", transform: `rotate(-9deg) scale(${ease(l, 34, 44, 1.8, 1)})`, opacity: ease(l, 34, 42) }}>Vendu</div>
+      )}
+    </div>
+  </Stage>
+);
+
+/* ─────────── Photo (image réelle ou générée qui montre de quoi on parle) ─────────── */
+export const Photo: React.FC<Ctx<"photo">> = ({ p, l, th }) => (
+  <Stage>
+    <div style={{ position: "relative", width: 1740, height: 665, borderRadius: 40, overflow: "hidden", border: `2px solid ${th.line}`, opacity: ease(l, 0, 10) }}>
+      <Img src={staticFile(p.fichier)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.1 * ease(l, 0, 160)})` }} />
+      {p.legende && (
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, padding: "80px 50px 34px", background: "linear-gradient(transparent, rgba(0,0,0,0.78))", opacity: ease(l, 10, 22) }}>
+          <div style={{ fontFamily: GIANT, fontSize: 88, color: "#FFFFFF", textTransform: "uppercase", lineHeight: 1.05 }}>{p.legende}</div>
+        </div>
+      )}
+      {p.credit && <div style={{ position: "absolute", right: 18, bottom: 8, fontFamily: UI, fontSize: 22, color: "rgba(255,255,255,0.7)" }}>{p.credit}</div>}
+    </div>
+  </Stage>
+);

@@ -227,6 +227,8 @@ def _fabriquer(a, ep: dict, ep_dir: Path, out_dir: Path, qa: dict, t0: float) ->
     total_f = plages[-1][1] + 1
     t_rendu = time.time()
     try:
+        # images automatiques (scènes photo/annonce avec « recherche ») : un échec n'empêche jamais le rendu
+        subprocess.run([sys.executable, str(HERE / "visuels.py"), str(ep_dir)], check=False)
         fichiers = rendre_chapitres(a.id, ep_dir, out_dir, plages, a.concurrence)
         final = out_dir / f"{a.id}.mp4"
         assembler(fichiers, ep_dir / "voice.wav", final, total_f)

@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 VENV_PY = r"C:\VoiceStudio\tts-direct\venv\Scripts\python.exe"
-SCENE_TYPES = {"titre-geant", "chiffre", "barres", "courbe", "ligne-temps", "anneau", "duel", "objet", "question", "liste"}
+SCENE_TYPES = {"titre-geant", "chiffre", "barres", "courbe", "ligne-temps", "anneau", "duel", "objet", "question", "liste", "fiche", "annonce", "photo"}
 def _themes() -> set[str]:
     """Les thèmes connus sont ceux de src/infographie/themes.ts : une seule source de vérité."""
     try:
@@ -123,6 +123,8 @@ def main() -> int:
     for r in rep["a_relire"]:
         qa["alertes"].append(f"phrase {r['phrase']} : lecture douteuse (score {r['score']}) : entendu « {r['entendu']} »")
 
+    # images automatiques (scènes photo/annonce avec « recherche ») : un échec n'empêche jamais le rendu
+    subprocess.run([sys.executable, str(ROOT / "autopilot" / "visuels.py"), str(ep_dir)], check=False)
     silent = out_dir / "rendu.mp4"
     run(f'npx remotion render src/infographie/index.ts Short "{silent}" --props="{{\\"id\\":\\"{a.id}\\"}}" --public-dir=episodes-b --concurrency={os.environ.get("BDF_CONCURRENCY", "4")}', cwd=ROOT, shell=True)
 
