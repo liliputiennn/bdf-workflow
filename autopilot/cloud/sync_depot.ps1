@@ -18,7 +18,7 @@ foreach ($f in $files) {
   Copy-Item $from $to -Force
 }
 # fichiers du cloud pas encore suivis par Git dans le dépôt principal
-foreach ($d in "autopilot\cloud", "server\autopilot.ts", "tools\autopilot-snapshot.ts", "autopilot\episode_action.py") {
+foreach ($d in "autopilot\cloud", "server\autopilot.ts", "tools\autopilot-snapshot.ts", "autopilot\episode_action.py", "autopilot\visuels.py") {
   $p = Join-Path $src $d
   if (Test-Path $p) { Copy-Item $p (Join-Path $Dest (Split-Path $d)) -Recurse -Force }
 }
