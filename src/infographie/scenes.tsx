@@ -209,16 +209,16 @@ export const Duel: React.FC<Ctx<"duel">> = ({ p, l, th }) => {
 /* ─────────── Objet : une icône qui rebondit ─────────── */
 export const Objet: React.FC<Ctx<"objet">> = ({ p, l, th }) => (
   <Stage>
-    <div style={{ position: "relative", width: 640, height: 640, display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <div style={{ position: "relative", width: 560, height: 560, display: "flex", alignItems: "center", justifyContent: "center" }}>
       {[0, 1, 2].map((k) => (
         <div key={k} style={{ position: "absolute", inset: -k * 70, borderRadius: "50%", border: `4px solid ${th.accent}`, opacity: Math.max(0, 0.35 - k * 0.1) * ease(l, 0, 20), transform: `scale(${1 + 0.03 * Math.sin(l / 8 + k)})` }} />
       ))}
       <div style={{ transform: `scale(${ease(l, 0, 14, 0.4, 1)}) rotate(${Math.sin(l / 9) * 3}deg) translateY(${Math.sin(l / 7) * 12}px)` }}>
-        <Icon nom={p.icone} th={th} size={520} />
+        <Icon nom={p.icone} th={th} size={460} />
       </div>
     </div>
     <div style={{ textAlign: "center", opacity: ease(l, 8, 20) }}>
-      <div style={{ fontFamily: GIANT, fontSize: 130, color: th.ink, textTransform: "uppercase", lineHeight: 1.05 }}>{p.titre}</div>
+      <div style={{ fontFamily: GIANT, fontSize: p.titre.length > 30 ? 92 : p.titre.length > 18 ? 110 : 130, color: th.ink, textTransform: "uppercase", lineHeight: 1.05 }}>{p.titre}</div>
       {p.sous && <div style={{ fontFamily: UI, fontSize: 48, color: th.muted, marginTop: 14 }}>{p.sous}</div>}
     </div>
   </Stage>
@@ -246,8 +246,8 @@ export const Liste: React.FC<Ctx<"liste">> = ({ p, l, th }) => (
       {p.titre && <Kicker th={th}>{p.titre}</Kicker>}
       {p.items.map((it, i) => (
         <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "30px 0", borderBottom: i < p.items.length - 1 ? `2px solid ${th.line}` : "none", opacity: ease(l, 6 + i * 9, 18 + i * 9), transform: `translateX(${ease(l, 6 + i * 9, 18 + i * 9, 50, 0)}px)` }}>
-          <div style={{ fontFamily: UI, fontSize: 54, fontWeight: 700, color: th.ink }}>{it.texte}</div>
-          {it.valeur && <div style={{ fontFamily: UI, fontSize: 54, fontWeight: 700, color: th.accent }}>{it.valeur}</div>}
+          <div style={{ fontFamily: UI, fontSize: 54, fontWeight: 700, color: th.ink, flex: 1, minWidth: 0 }}>{it.texte}</div>
+          {it.valeur && <div style={{ fontFamily: UI, fontSize: 54, fontWeight: 700, color: th.accent, whiteSpace: "nowrap", flexShrink: 0, marginLeft: 28 }}>{it.valeur}</div>}
         </div>
       ))}
     </Card>

@@ -11,6 +11,11 @@ import type { Episode, Scene, ShortProps, Timings } from "./types";
 const TAIL = 36;
 /** Durée de la transition poussée entre deux scènes, en images. */
 const TR = 10;
+/** Zones de sécurité Shorts (1080×1920) : YouTube et TikTok recouvrent le haut (~200 px), le bas (~400 px) et le côté droit (~120 px, colonne de boutons).
+ *  Tout le contenu des scènes est réduit pour rester dans [120 ; 960] en largeur ; l'en-tête reste sous la barre du haut ; les sous-titres s'arrêtent au-dessus du bas. */
+const SAFE_SCALE = 0.89;
+const CAPTION_BOTTOM = 400;
+const CAPTION_SIDE = 120;
 
 export const calculateMetadata: CalculateMetadataFunction<ShortProps> = async ({ props }) => {
   const [episode, timings] = await Promise.all([
@@ -90,7 +95,7 @@ export const Short: React.FC<ShortProps> = ({ id, episode, timings }) => {
   const showPrev = si > 0 && l < TR + 2;
   const prevT = (startF(si) - 1) / FPS;
   const prevLine = timings.lines[lineAt(prevT)];
-  const camera = 1 + Math.min(l, 150) * 0.0005;
+  const camera = SAFE_SCALE * (1 + Math.min(l, 150) * 0.00017); // respiration lente, plafonnée pour ne jamais sortir de la zone sûre
 
   return (
     <AbsoluteFill style={{ background: th.bg[0], fontFamily: UI, overflow: "hidden" }}>
@@ -99,11 +104,11 @@ export const Short: React.FC<ShortProps> = ({ id, episode, timings }) => {
       {showPrev && prevTh.id !== th.id && <Backdrop th={prevTh} f={f} w={W} h={H} opacity={1 - enter} />}
 
       {/* en-tête : chaîne + progression par scène */}
-      <div style={{ position: "absolute", left: 60, top: 78, display: "flex", alignItems: "center", gap: 18 }}>
+      <div style={{ position: "absolute", left: 90, top: 160, display: "flex", alignItems: "center", gap: 18 }}>
         <div style={{ width: 26, height: 26, borderRadius: 8, background: th.accent, boxShadow: `0 0 ${18 + 10 * Math.sin(f / 9)}px ${th.accent}` }} />
         <div style={{ fontSize: 34, fontWeight: 700, letterSpacing: 6, color: th.ink, textTransform: "uppercase" }}>{episode.chaine}</div>
       </div>
-      <div style={{ position: "absolute", left: 60, right: 60, top: 150, display: "flex", gap: 8 }}>
+      <div style={{ position: "absolute", left: 90, right: 120, top: 226, display: "flex", gap: 8 }}>
         {episode.scenes.map((_, k) => (
           <div key={k} style={{ flex: 1, height: 8, borderRadius: 4, background: th.line, overflow: "hidden" }}>
             <div style={{ width: k < si ? "100%" : k === si ? `${ease(l, 0, 24) * 100}%` : "0%", height: "100%", background: th.accent, boxShadow: `0 0 12px ${th.accent}` }} />
@@ -130,7 +135,7 @@ export const Short: React.FC<ShortProps> = ({ id, episode, timings }) => {
 
       {/* sous-titres : bandeau sauf quand les gros mots font office de sous-titres */}
       {!giant && (
-        <div style={{ position: "absolute", left: 50, right: 50, bottom: 330, display: "flex", justifyContent: "center", opacity: ease(morceauF, 0, 4), transform: `translateY(${ease(morceauF, 0, 8, 30, 0)}px)` }}>
+        <div style={{ position: "absolute", left: CAPTION_SIDE, right: CAPTION_SIDE, bottom: CAPTION_BOTTOM, display: "flex", justifyContent: "center", opacity: ease(morceauF, 0, 4), transform: `translateY(${ease(morceauF, 0, 8, 30, 0)}px)` }}>
           <div style={{ background: th.dark ? `${th.card}dd` : "rgba(255,255,255,.9)", backdropFilter: "blur(14px)", border: `2px solid ${th.line}`, borderRadius: 40, padding: "26px 40px", display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "4px 18px", boxShadow: `0 20px 50px rgba(0,0,0,.14), 0 0 60px ${th.accent}22` }}>
             {morceau.map((w, k) => {
               const act = t >= w.start && t < w.end;
