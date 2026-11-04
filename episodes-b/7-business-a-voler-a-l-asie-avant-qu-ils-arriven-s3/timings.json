@@ -1,728 +1,728 @@
 {
- "total": 38.778,
+ "total": 36.009,
  "lines": [
   {
    "start": 0.15,
-   "end": 3.223,
+   "end": 3.376,
    "words": [
     {
      "w": "Troisième",
      "start": 0.15,
-     "end": 0.532
+     "end": 0.49
     },
     {
      "w": "business",
-     "start": 0.532,
-     "end": 0.878
+     "start": 0.49,
+     "end": 0.803
     },
     {
      "w": "l'onigiri,",
-     "start": 1.187,
-     "end": 1.714
+     "start": 1.098,
+     "end": 1.612
     },
     {
      "w": "la",
-     "start": 1.968,
-     "end": 2.078
+     "start": 1.869,
+     "end": 1.979
     },
     {
      "w": "boule",
-     "start": 2.078,
-     "end": 2.278
+     "start": 1.979,
+     "end": 2.273
     },
     {
      "w": "de",
-     "start": 2.278,
-     "end": 2.35
+     "start": 2.273,
+     "end": 2.366
     },
     {
      "w": "riz",
-     "start": 2.35,
-     "end": 2.478
+     "start": 2.366,
+     "end": 2.549
     },
     {
      "w": "japonaise",
-     "start": 2.478,
-     "end": 2.859
+     "start": 2.549,
+     "end": 3.008
     },
     {
      "w": "fourrée.",
-     "start": 2.859,
-     "end": 3.114
+     "start": 3.008,
+     "end": 3.321
     }
    ]
   },
   {
-   "start": 3.35,
-   "end": 7.205,
+   "start": 3.503,
+   "end": 6.872,
    "words": [
     {
      "w": "Selon",
-     "start": 3.35,
-     "end": 3.705
+     "start": 3.503,
+     "end": 3.826
     },
     {
      "w": "un",
-     "start": 3.705,
-     "end": 3.778
+     "start": 3.826,
+     "end": 3.895
     },
     {
      "w": "magazine",
-     "start": 3.778,
-     "end": 4.068
+     "start": 3.895,
+     "end": 4.191
     },
     {
      "w": "de",
-     "start": 4.068,
-     "end": 4.232
+     "start": 4.191,
+     "end": 4.33
     },
     {
      "w": "franchise,",
-     "start": 4.232,
-     "end": 4.559
+     "start": 4.33,
+     "end": 4.661
     },
     {
      "w": "ces",
-     "start": 4.941,
-     "end": 5.014
+     "start": 4.992,
+     "end": 5.044
     },
     {
      "w": "onigiri",
-     "start": 5.014,
-     "end": 5.541
+     "start": 5.044,
+     "end": 5.479
     },
     {
      "w": "ne",
-     "start": 5.541,
-     "end": 5.705
+     "start": 5.479,
+     "end": 5.618
     },
     {
      "w": "sont",
-     "start": 5.705,
-     "end": 5.85
+     "start": 5.618,
+     "end": 5.74
     },
     {
      "w": "vendus",
-     "start": 5.85,
-     "end": 6.141
+     "start": 5.74,
+     "end": 6.002
     },
     {
      "w": "qu'à",
-     "start": 6.141,
-     "end": 6.323
+     "start": 6.002,
+     "end": 6.193
     },
     {
      "w": "Paris",
-     "start": 6.323,
-     "end": 6.578
+     "start": 6.193,
+     "end": 6.368
     },
     {
      "w": "en",
-     "start": 6.578,
-     "end": 6.868
+     "start": 6.368,
+     "end": 6.507
     },
     {
      "w": "Europe.",
-     "start": 6.868,
-     "end": 7.087
+     "start": 6.507,
+     "end": 6.716
     }
    ]
   },
   {
-   "start": 7.332,
-   "end": 11.868,
+   "start": 6.999,
+   "end": 10.996,
    "words": [
     {
      "w": "Une",
-     "start": 7.332,
-     "end": 7.532
+     "start": 6.999,
+     "end": 7.148
     },
     {
      "w": "enseigne",
-     "start": 7.532,
-     "end": 7.841
+     "start": 7.148,
+     "end": 7.414
     },
     {
      "w": "japonaise",
-     "start": 7.841,
-     "end": 8.387
+     "start": 7.414,
+     "end": 7.911
     },
     {
      "w": "installée",
-     "start": 8.387,
-     "end": 8.823
+     "start": 7.911,
+     "end": 8.309
     },
     {
      "w": "là-bas",
-     "start": 8.823,
-     "end": 9.132
+     "start": 8.309,
+     "end": 8.591
     },
     {
      "w": "a",
-     "start": 9.132,
-     "end": 9.514
+     "start": 8.591,
+     "end": 8.79
     },
     {
      "w": "vu",
-     "start": 9.514,
-     "end": 9.641
+     "start": 8.79,
+     "end": 8.907
     },
     {
      "w": "ses",
-     "start": 9.641,
-     "end": 9.768
+     "start": 8.907,
+     "end": 9.056
     },
     {
      "w": "ventes",
-     "start": 9.768,
-     "end": 10.023
+     "start": 9.056,
+     "end": 9.321
     },
     {
      "w": "grimper",
-     "start": 10.023,
-     "end": 10.332
+     "start": 9.321,
+     "end": 9.652
     },
     {
      "w": "de",
-     "start": 10.332,
-     "end": 10.441
+     "start": 9.652,
+     "end": 9.752
     },
     {
      "w": "trente",
-     "start": 10.441,
-     "end": 10.659
+     "start": 9.752,
+     "end": 9.984
     },
     {
      "w": "pour",
-     "start": 10.659,
-     "end": 10.841
+     "start": 9.984,
+     "end": 10.133
     },
     {
      "w": "cent",
-     "start": 10.841,
-     "end": 11.059
+     "start": 10.133,
+     "end": 10.366
     },
     {
      "w": "en",
-     "start": 11.059,
-     "end": 11.423
+     "start": 10.366,
+     "end": 10.598
     },
     {
      "w": "deux",
-     "start": 11.423,
-     "end": 11.623
+     "start": 10.598,
+     "end": 10.747
     },
     {
      "w": "ans.",
-     "start": 11.623,
-     "end": 11.768
+     "start": 10.747,
+     "end": 10.913
     }
    ]
   },
   {
-   "start": 11.996,
-   "end": 16.259,
+   "start": 11.123,
+   "end": 15.152,
    "words": [
     {
      "w": "Dans",
-     "start": 11.996,
-     "end": 12.132
+     "start": 11.123,
+     "end": 11.248
     },
     {
      "w": "les",
-     "start": 12.132,
-     "end": 12.241
+     "start": 11.248,
+     "end": 11.337
     },
     {
      "w": "boutiques",
-     "start": 12.241,
-     "end": 12.514
+     "start": 11.337,
+     "end": 11.568
     },
     {
      "w": "parisiennes,",
-     "start": 12.514,
-     "end": 13.15
+     "start": 11.568,
+     "end": 12.175
     },
     {
      "w": "un",
-     "start": 13.205,
-     "end": 13.278
+     "start": 12.192,
+     "end": 12.264
     },
     {
      "w": "onigiri",
-     "start": 13.278,
-     "end": 13.841
+     "start": 12.264,
+     "end": 12.728
     },
     {
      "w": "coûte",
-     "start": 13.841,
-     "end": 14.259
+     "start": 12.728,
+     "end": 13.138
     },
     {
      "w": "de",
-     "start": 14.259,
-     "end": 14.368
+     "start": 13.138,
+     "end": 13.262
     },
     {
      "w": "un",
-     "start": 14.368,
-     "end": 14.623
+     "start": 13.262,
+     "end": 13.512
     },
     {
      "w": "euro",
-     "start": 14.623,
-     "end": 14.841
+     "start": 13.512,
+     "end": 13.69
     },
     {
      "w": "dix",
-     "start": 14.841,
-     "end": 15.187
+     "start": 13.69,
+     "end": 14.028
     },
     {
      "w": "à",
-     "start": 15.187,
-     "end": 15.387
+     "start": 14.028,
+     "end": 14.243
     },
     {
      "w": "quatre",
-     "start": 15.387,
-     "end": 15.568
+     "start": 14.243,
+     "end": 14.457
     },
     {
      "w": "euros",
-     "start": 15.568,
-     "end": 15.841
+     "start": 14.457,
+     "end": 14.707
     },
     {
      "w": "trente.",
-     "start": 15.841,
-     "end": 16.096
+     "start": 14.707,
+     "end": 14.956
     }
    ]
   },
   {
-   "start": 16.387,
-   "end": 21.059,
+   "start": 15.279,
+   "end": 19.332,
    "words": [
     {
      "w": "Un",
-     "start": 16.387,
-     "end": 16.532
+     "start": 15.279,
+     "end": 15.425
     },
     {
      "w": "comptoir",
-     "start": 16.532,
-     "end": 16.859
+     "start": 15.425,
+     "end": 15.699
     },
     {
      "w": "du",
-     "start": 16.859,
-     "end": 16.968
+     "start": 15.699,
+     "end": 15.785
     },
     {
      "w": "quartier",
-     "start": 16.968,
-     "end": 17.332
+     "start": 15.785,
+     "end": 16.076
     },
     {
      "w": "vend",
-     "start": 17.332,
-     "end": 17.478
+     "start": 16.076,
+     "end": 16.23
     },
     {
      "w": "le",
-     "start": 17.478,
-     "end": 17.605
+     "start": 16.23,
+     "end": 16.333
     },
     {
      "w": "poulet",
-     "start": 17.605,
-     "end": 17.914
+     "start": 16.333,
+     "end": 16.556
     },
     {
      "w": "mayonnaise",
-     "start": 17.914,
-     "end": 18.423
+     "start": 16.556,
+     "end": 16.881
     },
     {
      "w": "deux",
-     "start": 18.423,
-     "end": 18.696
+     "start": 16.881,
+     "end": 17.189
     },
     {
      "w": "euros",
-     "start": 18.696,
-     "end": 18.896
+     "start": 17.189,
+     "end": 17.396
     },
     {
      "w": "quatre-vingts,",
-     "start": 18.896,
-     "end": 19.659
+     "start": 17.396,
+     "end": 18.064
     },
     {
      "w": "et",
-     "start": 19.732,
-     "end": 19.778
+     "start": 18.098,
+     "end": 18.149
     },
     {
      "w": "le",
-     "start": 19.768,
-     "end": 19.878
+     "start": 18.149,
+     "end": 18.235
     },
     {
      "w": "saumon",
-     "start": 19.878,
-     "end": 20.187
+     "start": 18.235,
+     "end": 18.56
     },
     {
      "w": "trois",
-     "start": 20.187,
-     "end": 20.459
+     "start": 18.56,
+     "end": 18.835
     },
     {
      "w": "euros",
-     "start": 20.459,
-     "end": 20.587
+     "start": 18.835,
+     "end": 18.955
     },
     {
      "w": "dix.",
-     "start": 20.587,
-     "end": 20.878
+     "start": 18.955,
+     "end": 19.212
     }
    ]
   },
   {
-   "start": 21.187,
-   "end": 24.823,
+   "start": 19.459,
+   "end": 22.778,
    "words": [
     {
      "w": "Côté",
-     "start": 21.187,
-     "end": 21.496
+     "start": 19.459,
+     "end": 19.736
     },
     {
      "w": "achat,",
-     "start": 21.496,
-     "end": 21.805
+     "start": 19.736,
+     "end": 20.029
     },
     {
      "w": "le",
-     "start": 22.096,
-     "end": 22.259
+     "start": 20.375,
+     "end": 20.461
     },
     {
      "w": "riz",
-     "start": 22.259,
-     "end": 22.441
+     "start": 20.461,
+     "end": 20.635
     },
     {
      "w": "à",
-     "start": 22.441,
-     "end": 22.532
+     "start": 20.635,
+     "end": 20.704
     },
     {
      "w": "sushi",
-     "start": 22.532,
-     "end": 22.732
+     "start": 20.704,
+     "end": 20.877
     },
     {
      "w": "se",
-     "start": 22.732,
-     "end": 22.95
+     "start": 20.877,
+     "end": 21.084
     },
     {
      "w": "trouve",
-     "start": 22.95,
-     "end": 23.205
+     "start": 21.084,
+     "end": 21.291
     },
     {
      "w": "à",
-     "start": 23.205,
-     "end": 23.259
+     "start": 21.291,
+     "end": 21.395
     },
     {
      "w": "cinq",
-     "start": 23.259,
-     "end": 23.478
+     "start": 21.395,
+     "end": 21.585
     },
     {
      "w": "euros",
-     "start": 23.478,
-     "end": 23.696
+     "start": 21.585,
+     "end": 21.827
     },
     {
      "w": "quarante-quatre",
-     "start": 23.696,
-     "end": 24.296
+     "start": 21.827,
+     "end": 22.294
     },
     {
      "w": "le",
-     "start": 24.296,
-     "end": 24.441
+     "start": 22.294,
+     "end": 22.449
     },
     {
      "w": "kilo.",
-     "start": 24.441,
-     "end": 24.605
+     "start": 22.449,
+     "end": 22.622
     }
    ]
   },
   {
-   "start": 24.95,
-   "end": 28.732,
+   "start": 22.905,
+   "end": 26.748,
    "words": [
     {
      "w": "Calcul",
-     "start": 24.95,
-     "end": 25.341
+     "start": 22.905,
+     "end": 23.246
     },
     {
      "w": "cinquante",
-     "start": 25.541,
-     "end": 26.032
+     "start": 23.462,
+     "end": 23.928
     },
     {
      "w": "grammes",
-     "start": 26.032,
-     "end": 26.287
+     "start": 23.928,
+     "end": 24.198
     },
     {
      "w": "de",
-     "start": 26.287,
-     "end": 26.359
+     "start": 24.198,
+     "end": 24.27
     },
     {
      "w": "riz",
-     "start": 26.359,
-     "end": 26.578
+     "start": 24.27,
+     "end": 24.449
     },
     {
      "w": "sec",
-     "start": 26.578,
-     "end": 26.723
+     "start": 24.449,
+     "end": 24.629
     },
     {
      "w": "par",
-     "start": 26.723,
-     "end": 26.923
+     "start": 24.629,
+     "end": 24.845
     },
     {
      "w": "onigiri,",
-     "start": 26.923,
-     "end": 27.414
+     "start": 24.845,
+     "end": 25.311
     },
     {
      "w": "ça",
-     "start": 27.541,
-     "end": 27.65
+     "start": 25.599,
+     "end": 25.76
     },
     {
      "w": "fait",
-     "start": 27.65,
-     "end": 27.778
+     "start": 25.76,
+     "end": 25.904
     },
     {
      "w": "vingt-sept",
-     "start": 27.778,
-     "end": 28.159
+     "start": 25.904,
+     "end": 26.246
     },
     {
      "w": "centimes.",
-     "start": 28.159,
-     "end": 28.578
+     "start": 26.246,
+     "end": 26.658
     }
    ]
   },
   {
-   "start": 28.859,
-   "end": 31.732,
+   "start": 26.876,
+   "end": 29.589,
    "words": [
     {
      "w": "Avec",
-     "start": 28.859,
-     "end": 29.078
+     "start": 26.876,
+     "end": 27.106
     },
     {
      "w": "l'algue",
-     "start": 29.078,
-     "end": 29.568
+     "start": 27.106,
+     "end": 27.51
     },
     {
      "w": "et",
-     "start": 29.568,
-     "end": 29.623
+     "start": 27.51,
+     "end": 27.676
     },
     {
      "w": "la",
-     "start": 29.623,
-     "end": 29.732
+     "start": 27.676,
+     "end": 27.768
     },
     {
      "w": "garniture,",
-     "start": 29.732,
-     "end": 30.187
+     "start": 27.768,
+     "end": 28.265
     },
     {
      "w": "compte",
-     "start": 30.387,
-     "end": 30.696
+     "start": 28.448,
+     "end": 28.651
     },
     {
      "w": "un",
-     "start": 30.696,
-     "end": 30.932
+     "start": 28.651,
+     "end": 28.853
     },
     {
      "w": "euro",
-     "start": 30.932,
-     "end": 31.168
+     "start": 28.853,
+     "end": 29.056
     },
     {
      "w": "de",
-     "start": 31.168,
-     "end": 31.314
+     "start": 29.056,
+     "end": 29.185
     },
     {
      "w": "revient.",
-     "start": 31.314,
-     "end": 31.641
+     "start": 29.185,
+     "end": 29.442
     }
    ]
   },
   {
-   "start": 31.859,
-   "end": 34.85,
+   "start": 29.717,
+   "end": 32.299,
    "words": [
     {
      "w": "Tu",
-     "start": 31.859,
-     "end": 32.014
+     "start": 29.717,
+     "end": 29.864
     },
     {
      "w": "le",
-     "start": 32.014,
-     "end": 32.087
+     "start": 29.864,
+     "end": 29.916
     },
     {
      "w": "vends",
-     "start": 32.087,
-     "end": 32.232
+     "start": 29.916,
+     "end": 30.055
     },
     {
      "w": "trois",
-     "start": 32.232,
-     "end": 32.541
+     "start": 30.055,
+     "end": 30.28
     },
     {
      "w": "euros",
-     "start": 32.541,
-     "end": 32.741
+     "start": 30.28,
+     "end": 30.453
     },
     {
      "w": "il",
-     "start": 32.996,
-     "end": 33.068
+     "start": 30.73,
+     "end": 30.8
     },
     {
      "w": "te",
-     "start": 33.068,
-     "end": 33.178
+     "start": 30.8,
+     "end": 30.904
     },
     {
      "w": "reste",
-     "start": 33.178,
-     "end": 33.323
+     "start": 30.904,
+     "end": 31.095
     },
     {
      "w": "deux",
-     "start": 33.323,
-     "end": 33.65
+     "start": 31.095,
+     "end": 31.338
     },
     {
      "w": "euros",
-     "start": 33.65,
-     "end": 33.959
+     "start": 31.338,
+     "end": 31.598
     },
     {
      "w": "par",
-     "start": 33.959,
-     "end": 34.123
+     "start": 31.598,
+     "end": 31.754
     },
     {
      "w": "onigiri.",
-     "start": 34.123,
-     "end": 34.705
+     "start": 31.754,
+     "end": 32.135
     }
    ]
   },
   {
-   "start": 34.978,
-   "end": 38.478,
+   "start": 32.427,
+   "end": 35.709,
    "words": [
     {
      "w": "À",
-     "start": 34.978,
-     "end": 35.114
+     "start": 32.427,
+     "end": 32.571
     },
     {
      "w": "quarante",
-     "start": 35.114,
-     "end": 35.441
+     "start": 32.571,
+     "end": 32.859
     },
     {
      "w": "onigiri",
-     "start": 35.441,
-     "end": 35.823
+     "start": 32.859,
+     "end": 33.275
     },
     {
      "w": "par",
-     "start": 35.823,
-     "end": 36.023
+     "start": 33.275,
+     "end": 33.437
     },
     {
      "w": "jour,",
-     "start": 36.023,
-     "end": 36.296
+     "start": 33.437,
+     "end": 33.671
     },
     {
      "w": "ça",
-     "start": 36.568,
-     "end": 36.75
+     "start": 33.779,
+     "end": 33.852
     },
     {
      "w": "fait",
-     "start": 36.75,
-     "end": 36.932
+     "start": 33.852,
+     "end": 33.996
     },
     {
      "w": "quatre-vingts",
-     "start": 36.932,
-     "end": 37.478
+     "start": 33.996,
+     "end": 34.591
     },
     {
      "w": "euros",
-     "start": 37.478,
-     "end": 37.623
+     "start": 34.591,
+     "end": 34.772
     },
     {
      "w": "de",
-     "start": 37.623,
-     "end": 37.768
+     "start": 34.772,
+     "end": 34.916
     },
     {
      "w": "gain",
-     "start": 37.768,
-     "end": 37.914
+     "start": 34.916,
+     "end": 35.097
     },
     {
      "w": "par",
-     "start": 37.914,
-     "end": 38.096
+     "start": 35.097,
+     "end": 35.277
     },
     {
      "w": "jour.",
-     "start": 38.096,
-     "end": 38.332
+     "start": 35.277,
+     "end": 35.511
     }
    ]
   }

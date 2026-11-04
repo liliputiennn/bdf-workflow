@@ -73,11 +73,13 @@
    }
   },
   {
-   "type": "clip",
+   "type": "photo",
    "phrase": 5,
    "params": {
     "recherche": "capsule toy vending machine",
-    "legende": "Une machine à capsules"
+    "legende": "Une machine à capsules",
+    "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/capsule-toy-vending-machine.jpg",
+    "credit": "Photo : Ka23 13, CC BY 4.0"
    }
   },
   {

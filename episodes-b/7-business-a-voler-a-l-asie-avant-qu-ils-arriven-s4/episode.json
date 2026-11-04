@@ -121,11 +121,13 @@
    }
   },
   {
-   "type": "clip",
+   "type": "photo",
    "phrase": 8,
    "params": {
     "recherche": "whisking matcha tea",
-    "legende": "Le matcha fouetté"
+    "legende": "Le matcha fouetté",
+    "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/whisking-matcha-tea.jpg",
+    "credit": "Photo : Andy Li, CC0"
    }
   },
   {

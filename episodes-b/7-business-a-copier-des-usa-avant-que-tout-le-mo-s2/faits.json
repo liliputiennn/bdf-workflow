@@ -1,0 +1,34 @@
+[
+ {
+  "claim": "Un nettoyage de gouttières coûte de 10 à 25 € le mètre linéaire (10 à 20 € HT selon un guide, 12 à 25 € TTC selon un autre).",
+  "valeur": "10 à 25 €/m",
+  "phrase": 3,
+  "sources": [
+   "https://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php",
+   "https://mesdepanneurs.fr/cas/nettoyage-gouttiere"
+  ],
+  "check": [
+   "10 euros",
+   "20 euros"
+  ],
+  "verified": [
+   "https://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 15 mètres à 10 € le mètre = 150 €.",
+  "valeur": "150 €",
+  "phrase": 5,
+  "sources": [
+   "https://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php",
+   "https://mesdepanneurs.fr/cas/nettoyage-gouttiere"
+  ],
+  "check": [
+   "10 euros",
+   "20 euros"
+  ],
+  "verified": [
+   "https://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php"
+  ]
+ }
+]

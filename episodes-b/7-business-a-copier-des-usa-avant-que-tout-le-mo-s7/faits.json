@@ -1,0 +1,32 @@
+[
+ {
+  "claim": "L'assistance informatique à domicile se facture entre 25 et 60 € de l'heure selon les sources (25 à 50 € en moyenne, 40 à 60 € en services à la personne).",
+  "valeur": "25 à 60 €/h",
+  "phrase": 3,
+  "sources": [
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/",
+   "https://www.creerentreprise.fr/creer-une-entreprise-informatique-depannage-maintenance/"
+  ],
+  "check": [
+   "40€ a 60€ de l'heure"
+  ],
+  "verified": [
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 2 heures à 40 € de l'heure (dans la fourchette de 40 à 60 €) = 80 €.",
+  "valeur": "80 €",
+  "phrase": 5,
+  "sources": [
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/",
+   "https://www.creerentreprise.fr/creer-une-entreprise-informatique-depannage-maintenance/"
+  ],
+  "check": [
+   "40€ a 60€ de l'heure"
+  ],
+  "verified": [
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+  ]
+ }
+]

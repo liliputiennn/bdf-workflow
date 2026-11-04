@@ -79,11 +79,13 @@
    }
   },
   {
-   "type": "clip",
+   "type": "photo",
    "phrase": 4,
    "params": {
     "recherche": "bubble tea tapioca pearls",
-    "legende": "Les perles de tapioca"
+    "legende": "Les perles de tapioca",
+    "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/bubble-tea-tapioca-pearls.jpg",
+    "credit": "Photo : Battlesnake1, CC0"
    }
   },
   {

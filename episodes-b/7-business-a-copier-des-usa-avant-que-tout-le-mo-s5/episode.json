@@ -1,0 +1,108 @@
+{
+ "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s5",
+ "titre": "Des chiens qui s'ennuient, des maîtres qui travaillent.",
+ "theme": "pelouse",
+ "chaine": "La Débrouille",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "PROMENADE CHIENS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Des chiens qui s'ennuient, des maîtres qui travaillent : voilà ton marché.",
+  "Aux États-Unis, la promenade de chiens fait vivre des plateformes entières.",
+  "À Paris, une promenade de quarante-cinq minutes est affichée dix-sept euros.",
+  "Ton matériel : une laisse solide, des sacs, et ton téléphone pour les photos.",
+  "Quatre promenades dans l'après-midi, ça fait soixante-huit euros.",
+  "Cherche les maîtres qui travaillent toute la journée : leurs chiens attendent seuls.",
+  "Les groupes de quartier et les panneaux des petits commerces sont ton terrain.",
+  "Va dans les parcs, parle aux maîtres, puis écris à une dizaine de personnes par jour.",
+  "Voici le message : tu proposes une première promenade d'essai, avec une photo du chien.",
+  "Le message complet à copier est dans la description de la vidéo."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 5,
+    "titre": "Promenade de chiens",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Prix constaté",
+      "valeur": "17 € / 45 min"
+     },
+     {
+      "label": "Départ",
+      "valeur": "Une laisse"
+     },
+     {
+      "label": "Gain estimé",
+      "valeur": "68 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 5,
+   "params": {
+    "valeur": 68,
+    "suffixe": " €",
+    "etiquette": "ESTIMATION : 4 PROMENADES À 17 €"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 6,
+   "params": {
+    "titre": "Où trouver ton client",
+    "items": [
+     {
+      "texte": "Maîtres qui travaillent"
+     },
+     {
+      "texte": "Parcs du quartier"
+     },
+     {
+      "texte": "Petits commerces"
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 8,
+   "params": {
+    "recherche": "dog walking park",
+    "legende": "Promenade de chiens",
+    "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s5/visuels/dog-walking-park.jpg",
+    "credit": "Photo : David Adam Kess, CC BY-SA 4.0"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 9,
+   "params": {
+    "titre": "Message à copier",
+    "items": [
+     {
+      "texte": "Un bonjour naturel"
+     },
+     {
+      "texte": "Une phrase sur leur situation"
+     },
+     {
+      "texte": "Un essai gratuit ou un prix d'essai"
+     },
+     {
+      "texte": "Une question facile"
+     }
+    ]
+   }
+  }
+ ]
+}

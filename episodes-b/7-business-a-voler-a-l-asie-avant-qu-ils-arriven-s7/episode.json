@@ -46,11 +46,13 @@
    }
   },
   {
-   "type": "clip",
+   "type": "photo",
    "phrase": 2,
    "params": {
     "recherche": "cat cafe interior",
-    "legende": "Un café à chats"
+    "legende": "Un café à chats",
+    "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/cat-cafe-interior.jpg",
+    "credit": "Photo : Santiago Rusiñol i Prats, Public domain"
    }
   },
   {

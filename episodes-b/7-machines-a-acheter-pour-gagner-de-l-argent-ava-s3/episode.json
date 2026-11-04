@@ -48,12 +48,9 @@
    }
   },
   {
-   "type": "clip",
+   "type": "titre-geant",
    "phrase": 2,
-   "params": {
-    "recherche": "mug heat press sublimation",
-    "legende": "La machine au travail"
-   }
+   "params": {}
   },
   {
    "type": "chiffre",
@@ -74,7 +71,9 @@
     "source": "prix constaté : paris-friendly.fr",
     "etat": "Neuf",
     "lieu": "Livraison",
-    "recherche": "personalized photo mug"
+    "recherche": "personalized photo mug",
+    "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/personalized-photo-mug.jpg",
+    "credit": "Photo : Personal Creations, CC BY 2.0"
    }
   },
   {

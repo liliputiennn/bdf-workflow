@@ -1,0 +1,108 @@
+{
+ "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s6",
+ "titre": "Un jardin qui pousse, c'est un client qui revient.",
+ "theme": "pelouse",
+ "chaine": "La Débrouille",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "ENTRETIEN JARDINS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Un jardin qui pousse, c'est un client qui revient chaque mois.",
+  "Aux États-Unis, des gens vivent de la tonte de pelouses.",
+  "Selon un guide de prix, un jardinier se paie entre vingt-cinq et quarante-cinq euros de l'heure.",
+  "Ton matériel : une tondeuse et un taille-haie, qu'on loue ou qu'on trouve d'occasion.",
+  "Trois heures à trente euros de l'heure, ça fait quatre-vingt-dix euros.",
+  "Cherche les maisons dont la pelouse est haute ou la haie déborde sur le trottoir.",
+  "Les retraités et les gens qui travaillent beaucoup sont tes meilleurs clients.",
+  "Écris à une dizaine de personnes par jour dans les groupes de ton quartier.",
+  "Voici le message : tu parles de leur jardin et tu proposes un premier passage au prix d'essai.",
+  "Le message complet à copier est dans la description de la vidéo."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 6,
+    "titre": "Entretien de jardins",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Prix constaté",
+      "valeur": "25 à 45 €/h"
+     },
+     {
+      "label": "Départ",
+      "valeur": "Une tondeuse"
+     },
+     {
+      "label": "Gain estimé",
+      "valeur": "90 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 5,
+   "params": {
+    "valeur": 90,
+    "suffixe": " €",
+    "etiquette": "ESTIMATION : 3 H À 30 €"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 6,
+   "params": {
+    "titre": "Où trouver ton client",
+    "items": [
+     {
+      "texte": "Pelouses hautes"
+     },
+     {
+      "texte": "Retraités du quartier"
+     },
+     {
+      "texte": "Groupes de quartier"
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 8,
+   "params": {
+    "recherche": "lawn mowing garden",
+    "legende": "Entretien de jardins",
+    "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s6/visuels/lawn-mowing-garden.jpg",
+    "credit": "Photo : Shixart1985, CC BY 2.0"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 9,
+   "params": {
+    "titre": "Message à copier",
+    "items": [
+     {
+      "texte": "Un bonjour naturel"
+     },
+     {
+      "texte": "Une phrase sur leur situation"
+     },
+     {
+      "texte": "Un essai gratuit ou un prix d'essai"
+     },
+     {
+      "texte": "Une question facile"
+     }
+    ]
+   }
+  }
+ ]
+}

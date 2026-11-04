@@ -1,0 +1,32 @@
+[
+ {
+  "claim": "Un nettoyage de terrasse se paie de 3 à 15 € le mètre carré selon le sol (fourchette constatée).",
+  "valeur": "3 à 15 €/m²",
+  "phrase": 3,
+  "sources": [
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/",
+   "https://ynspir.com/conseils-decoration/renovation/prix-renovation/prix-nettoyage-de-terrasse/"
+  ],
+  "check": [
+   "3 et 15"
+  ],
+  "verified": [
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 50 m² à 5 € le mètre carré (dans la fourchette de 3 à 15 €) = 250 €.",
+  "valeur": "250 €",
+  "phrase": 5,
+  "sources": [
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/",
+   "https://ynspir.com/conseils-decoration/renovation/prix-renovation/prix-nettoyage-de-terrasse/"
+  ],
+  "check": [
+   "3 et 15"
+  ],
+  "verified": [
+   "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+  ]
+ }
+]

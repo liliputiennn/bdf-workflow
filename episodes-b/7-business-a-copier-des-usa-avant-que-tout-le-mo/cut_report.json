@@ -1,0 +1,55 @@
+{
+ "long": "7-business-a-copier-des-usa-avant-que-tout-le-mo",
+ "shorts": [
+  {
+   "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s1",
+   "chapitre": 2,
+   "phrases": 10,
+   "duree_s": 35.409,
+   "notes": []
+  },
+  {
+   "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s2",
+   "chapitre": 3,
+   "phrases": 10,
+   "duree_s": 33.89,
+   "notes": []
+  },
+  {
+   "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s3",
+   "chapitre": 4,
+   "phrases": 10,
+   "duree_s": 33.377,
+   "notes": []
+  },
+  {
+   "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s4",
+   "chapitre": 5,
+   "phrases": 10,
+   "duree_s": 31.489,
+   "notes": []
+  },
+  {
+   "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s5",
+   "chapitre": 6,
+   "phrases": 10,
+   "duree_s": 33.204,
+   "notes": []
+  },
+  {
+   "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s6",
+   "chapitre": 7,
+   "phrases": 10,
+   "duree_s": 32.02,
+   "notes": []
+  },
+  {
+   "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s7",
+   "chapitre": 8,
+   "phrases": 10,
+   "duree_s": 34.452,
+   "notes": []
+  }
+ ],
+ "ignores": []
+}

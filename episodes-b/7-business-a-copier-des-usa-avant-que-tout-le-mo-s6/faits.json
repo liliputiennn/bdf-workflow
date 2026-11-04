@@ -1,0 +1,32 @@
+[
+ {
+  "claim": "Le coût horaire d'un jardinier se situe en moyenne entre 25 et 45 € de l'heure.",
+  "valeur": "25 à 45 €/h",
+  "phrase": 3,
+  "sources": [
+   "https://travaux.obat.fr/guides/prix-entretien-jardin/",
+   "https://copeps.fr/actualites/entreprise-individuel-jardinier-tarif/"
+  ],
+  "check": [
+   "entre 25 € et 45 €"
+  ],
+  "verified": [
+   "https://travaux.obat.fr/guides/prix-entretien-jardin/"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 3 heures à 30 € de l'heure (dans la fourchette de 25 à 45 €) = 90 €.",
+  "valeur": "90 €",
+  "phrase": 5,
+  "sources": [
+   "https://travaux.obat.fr/guides/prix-entretien-jardin/",
+   "https://copeps.fr/actualites/entreprise-individuel-jardinier-tarif/"
+  ],
+  "check": [
+   "entre 25 € et 45 €"
+  ],
+  "verified": [
+   "https://travaux.obat.fr/guides/prix-entretien-jardin/"
+  ]
+ }
+]

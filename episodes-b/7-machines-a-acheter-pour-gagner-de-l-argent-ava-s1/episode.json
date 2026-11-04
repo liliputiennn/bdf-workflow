@@ -47,11 +47,13 @@
    }
   },
   {
-   "type": "clip",
+   "type": "photo",
    "phrase": 2,
    "params": {
     "recherche": "laser engraving machine wood",
-    "legende": "La machine au travail"
+    "legende": "La machine au travail",
+    "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/laser-engraving-machine-wood.jpg",
+    "credit": "Photo : Kalender Laser Machine, CC BY-SA 4.0"
    }
   },
   {

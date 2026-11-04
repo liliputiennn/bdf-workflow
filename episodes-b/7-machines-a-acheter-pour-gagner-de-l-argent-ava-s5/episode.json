@@ -47,12 +47,9 @@
    }
   },
   {
-   "type": "clip",
+   "type": "titre-geant",
    "phrase": 2,
-   "params": {
-    "recherche": "pressure washing patio cleaning",
-    "legende": "La machine au travail"
-   }
+   "params": {}
   },
   {
    "type": "chiffre",
@@ -65,12 +62,9 @@
    }
   },
   {
-   "type": "photo",
+   "type": "titre-geant",
    "phrase": 4,
-   "params": {
-    "recherche": "pressure washer terrace cleaning",
-    "legende": "Une terrasse avant nettoyage"
-   }
+   "params": {}
   },
   {
    "type": "annonce",

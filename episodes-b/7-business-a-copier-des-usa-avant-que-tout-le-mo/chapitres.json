@@ -1,0 +1,110 @@
+[
+ {
+  "n": 1,
+  "titre": "Accroche",
+  "phrase_debut": 1,
+  "phrase_fin": 6,
+  "debut_s": 0.136,
+  "fin_s": 17.558,
+  "carte_de_s": null,
+  "borne_s": 0.0,
+  "borne_fin_s": 17.658,
+  "duree_s": 17.658
+ },
+ {
+  "n": 2,
+  "titre": "Nettoyage de terrasses",
+  "phrase_debut": 7,
+  "phrase_fin": 21,
+  "debut_s": 19.504,
+  "fin_s": 70.395,
+  "carte_de_s": 17.658,
+  "borne_s": 17.658,
+  "borne_fin_s": 70.495,
+  "duree_s": 52.837
+ },
+ {
+  "n": 3,
+  "titre": "Nettoyage de gouttières",
+  "phrase_debut": 22,
+  "phrase_fin": 36,
+  "debut_s": 72.34,
+  "fin_s": 120.643,
+  "carte_de_s": 70.495,
+  "borne_s": 70.495,
+  "borne_fin_s": 120.743,
+  "duree_s": 50.248
+ },
+ {
+  "n": 4,
+  "titre": "Nettoyage de vitres",
+  "phrase_debut": 37,
+  "phrase_fin": 51,
+  "debut_s": 122.588,
+  "fin_s": 172.075,
+  "carte_de_s": 120.743,
+  "borne_s": 120.743,
+  "borne_fin_s": 172.175,
+  "duree_s": 51.432
+ },
+ {
+  "n": 5,
+  "titre": "Montage de meubles",
+  "phrase_debut": 52,
+  "phrase_fin": 66,
+  "debut_s": 174.02,
+  "fin_s": 219.581,
+  "carte_de_s": 172.175,
+  "borne_s": 172.175,
+  "borne_fin_s": 219.681,
+  "duree_s": 47.506
+ },
+ {
+  "n": 6,
+  "titre": "Promenade de chiens",
+  "phrase_debut": 67,
+  "phrase_fin": 81,
+  "debut_s": 221.526,
+  "fin_s": 269.671,
+  "carte_de_s": 219.681,
+  "borne_s": 219.681,
+  "borne_fin_s": 269.771,
+  "duree_s": 50.09
+ },
+ {
+  "n": 7,
+  "titre": "Entretien de jardins",
+  "phrase_debut": 82,
+  "phrase_fin": 96,
+  "debut_s": 271.616,
+  "fin_s": 320.563,
+  "carte_de_s": 269.771,
+  "borne_s": 269.771,
+  "borne_fin_s": 320.663,
+  "duree_s": 50.892
+ },
+ {
+  "n": 8,
+  "titre": "Aide informatique à domicile",
+  "phrase_debut": 97,
+  "phrase_fin": 111,
+  "debut_s": 322.508,
+  "fin_s": 370.814,
+  "carte_de_s": 320.663,
+  "borne_s": 320.663,
+  "borne_fin_s": 370.914,
+  "duree_s": 50.251
+ },
+ {
+  "n": 9,
+  "titre": "Par où commencer",
+  "phrase_debut": 112,
+  "phrase_fin": 117,
+  "debut_s": 372.759,
+  "fin_s": 391.105,
+  "carte_de_s": 370.914,
+  "borne_s": 370.914,
+  "borne_fin_s": 391.232,
+  "duree_s": 20.318
+ }
+]

@@ -1,0 +1,103 @@
+{
+ "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s2",
+ "titre": "Les gouttières bouchées : de l'argent qui tombe du ciel.",
+ "theme": "pelouse",
+ "chaine": "La Débrouille",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "NETTOYAGE GOUTTIÈRES",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Des gouttières bouchées, c'est de l'argent qui tombe du ciel.",
+  "Aux États-Unis, des entreprises ne font que ça.",
+  "Ici, un nettoyage de gouttières coûte entre dix et vingt-cinq euros le mètre.",
+  "Ton matériel : une échelle, des gants et un seau, que tu as peut-être déjà.",
+  "Pour une maison de quinze mètres, ça fait cent cinquante euros.",
+  "Cherche les maisons entourées d'arbres : ce sont elles qui ont le plus besoin de toi.",
+  "Tape « nettoyage gouttière » dans les groupes de quartier et regarde qui demande.",
+  "Passe aussi voir les petites agences immobilières, et écris à une dizaine de propriétaires par jour.",
+  "Voici le message : tu parles des feuilles, tu proposes des photos avant-après, et un passage cette semaine.",
+  "Le message complet à copier est dans la description de la vidéo."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 2,
+    "titre": "Nettoyage de gouttières",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Prix constaté",
+      "valeur": "10 à 25 €/m"
+     },
+     {
+      "label": "Départ",
+      "valeur": "Une échelle"
+     },
+     {
+      "label": "Gain estimé",
+      "valeur": "150 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 5,
+   "params": {
+    "valeur": 150,
+    "suffixe": " €",
+    "etiquette": "ESTIMATION : 15 M À 10 €"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 6,
+   "params": {
+    "titre": "Où trouver ton client",
+    "items": [
+     {
+      "texte": "Maisons avec arbres"
+     },
+     {
+      "texte": "Groupes de quartier"
+     },
+     {
+      "texte": "Petites agences"
+     }
+    ]
+   }
+  },
+  {
+   "type": "titre-geant",
+   "phrase": 8,
+   "params": {}
+  },
+  {
+   "type": "liste",
+   "phrase": 9,
+   "params": {
+    "titre": "Message à copier",
+    "items": [
+     {
+      "texte": "Un bonjour naturel"
+     },
+     {
+      "texte": "Une phrase sur leur situation"
+     },
+     {
+      "texte": "Un essai gratuit ou un prix d'essai"
+     },
+     {
+      "texte": "Une question facile"
+     }
+    ]
+   }
+  }
+ ]
+}

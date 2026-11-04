@@ -80,11 +80,13 @@
    }
   },
   {
-   "type": "clip",
+   "type": "photo",
    "phrase": 5,
    "params": {
     "recherche": "making onigiri rice balls",
-    "legende": "Des onigiri faits main"
+    "legende": "Des onigiri faits main",
+    "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/making-onigiri-rice-balls.jpg",
+    "credit": "Photo : Maria from McLean, Virginia, USA, CC BY 2.0"
    }
   },
   {

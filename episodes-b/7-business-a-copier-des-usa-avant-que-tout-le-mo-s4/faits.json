@@ -1,0 +1,47 @@
+[
+ {
+  "claim": "Un bricoleur à domicile facture environ 44 € en moyenne par intervention en 2026.",
+  "valeur": "44 €",
+  "phrase": 3,
+  "sources": [
+   "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant",
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+  ],
+  "check": [
+   "44 € en moyenne"
+  ],
+  "verified": [
+   "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant"
+  ]
+ },
+ {
+  "claim": "Le montage d'un meuble en kit se paie environ 63 €.",
+  "valeur": "63 €",
+  "phrase": 4,
+  "sources": [
+   "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant",
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+  ],
+  "check": [
+   "63 € pour un meuble en kit"
+  ],
+  "verified": [
+   "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 3 meubles en kit à 63 € = 189 €, soit environ 190 €.",
+  "valeur": "190 €",
+  "phrase": 5,
+  "sources": [
+   "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant",
+   "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+  ],
+  "check": [
+   "63 € pour un meuble en kit"
+  ],
+  "verified": [
+   "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant"
+  ]
+ }
+]

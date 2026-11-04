@@ -1,0 +1,108 @@
+{
+ "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s4",
+ "titre": "Un meuble en kit monté : le calcul qui fait envie.",
+ "theme": "pelouse",
+ "chaine": "La Débrouille",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "MONTAGE MEUBLES",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Un meuble en kit, c'est des heures de galère pour les autres.",
+  "Aux États-Unis, des gens vivent du montage de meubles pour leurs voisins.",
+  "Ici, un bricoleur à domicile facture en moyenne quarante-quatre euros par intervention.",
+  "Un meuble en kit monté se paie environ soixante-trois euros.",
+  "Trois meubles dans la journée, ça fait environ cent quatre-vingt-dix euros.",
+  "Ton matériel : un tournevis, une perceuse, et de la patience.",
+  "Cherche les gens qui viennent d'emménager : ils ont toujours des cartons et des meubles à monter.",
+  "Les groupes du quartier sont pleins de ces gens : écris à une dizaine de personnes par jour.",
+  "Voici le message : tu proposes un prix clair par meuble et un passage dès demain.",
+  "Le message complet à copier est dans la description de la vidéo."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 4,
+    "titre": "Montage de meubles",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Prix constaté",
+      "valeur": "63 € / meuble"
+     },
+     {
+      "label": "Départ",
+      "valeur": "Un tournevis"
+     },
+     {
+      "label": "Gain estimé",
+      "valeur": "190 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 5,
+   "params": {
+    "valeur": 190,
+    "suffixe": " €",
+    "etiquette": "ESTIMATION : 3 MEUBLES À 63 €"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 6,
+   "params": {
+    "titre": "Où trouver ton client",
+    "items": [
+     {
+      "texte": "Gens qui emménagent"
+     },
+     {
+      "texte": "Groupes du quartier"
+     },
+     {
+      "texte": "Prix clair par meuble"
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 8,
+   "params": {
+    "recherche": "assembling flat pack furniture",
+    "legende": "Montage de meubles",
+    "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s4/visuels/assembling-flat-pack-furniture.jpg",
+    "credit": "Photo : Bruce Szalwinski, CC BY 2.0"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 9,
+   "params": {
+    "titre": "Message à copier",
+    "items": [
+     {
+      "texte": "Un bonjour naturel"
+     },
+     {
+      "texte": "Une phrase sur leur situation"
+     },
+     {
+      "texte": "Un essai gratuit ou un prix d'essai"
+     },
+     {
+      "texte": "Une question facile"
+     }
+    ]
+   }
+  }
+ ]
+}

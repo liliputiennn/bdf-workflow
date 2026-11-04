@@ -1,0 +1,32 @@
+[
+ {
+  "claim": "À Paris, une promenade de chien de 45 minutes est affichée 17 € (individuelle).",
+  "valeur": "17 €",
+  "phrase": 3,
+  "sources": [
+   "https://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e",
+   "https://conseils-animaux.fr/garde-animaux/petsitter/prix/"
+  ],
+  "check": [
+   "45 minutes = 17 euros"
+  ],
+  "verified": [
+   "https://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 4 promenades à 17 € = 68 €.",
+  "valeur": "68 €",
+  "phrase": 5,
+  "sources": [
+   "https://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e",
+   "https://conseils-animaux.fr/garde-animaux/petsitter/prix/"
+  ],
+  "check": [
+   "45 minutes = 17 euros"
+  ],
+  "verified": [
+   "https://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e"
+  ]
+ }
+]

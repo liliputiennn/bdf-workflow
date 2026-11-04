@@ -1,6 +1,6 @@
 {
- "etat": "ecrit",
- "maj": "2026-11-04T10:26:08",
+ "etat": "controle",
+ "maj": "2026-11-04T11:40:36",
  "raison": null,
  "tentatives": 0,
  "youtube": {
@@ -8,5 +8,6 @@
   "url": null,
   "visibilite": null,
   "publie_a": null
- }
+ },
+ "voix_progression": null
 }

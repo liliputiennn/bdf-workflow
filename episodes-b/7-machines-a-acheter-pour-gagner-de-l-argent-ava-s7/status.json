@@ -1,7 +1,7 @@
 {
- "etat": "quarantaine",
- "maj": "2026-11-04T07:39:38",
- "raison": "contrôle qualité : voix prête annoncée mais absente : voice.wav",
+ "etat": "controle",
+ "maj": "2026-11-04T15:15:37",
+ "raison": null,
  "tentatives": 0,
  "youtube": {
   "video_id": null,

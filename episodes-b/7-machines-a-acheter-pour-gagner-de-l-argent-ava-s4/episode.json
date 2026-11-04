@@ -47,11 +47,13 @@
    }
   },
   {
-   "type": "clip",
+   "type": "photo",
    "phrase": 2,
    "params": {
     "recherche": "cotton candy machine spinning",
-    "legende": "La machine au travail"
+    "legende": "La machine au travail",
+    "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/cotton-candy-machine-spinning.jpg",
+    "credit": "Photo : No machine-readable author provided. Mat, CC BY-SA 3.0"
    }
   },
   {

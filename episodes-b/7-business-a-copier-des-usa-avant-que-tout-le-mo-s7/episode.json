@@ -1,0 +1,103 @@
+{
+ "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s7",
+ "titre": "Ton voisin n'arrive pas à imprimer, et il paiera.",
+ "theme": "pelouse",
+ "chaine": "La Débrouille",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "AIDE INFORMATIQUE DOMICILE",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Ton voisin n'arrive pas à imprimer, et il paiera pour que tu l'aides.",
+  "Aux États-Unis, des entreprises vivent de l'aide informatique à domicile.",
+  "Ici, l'aide informatique à domicile se paie entre vingt-cinq et soixante euros de l'heure.",
+  "Ton seul matériel : ton ordinateur, ton téléphone, et de la patience.",
+  "Deux heures chez un voisin à quarante euros de l'heure, ça fait quatre-vingts euros.",
+  "Cherche les personnes âgées, les petits commerces et les familles débordées.",
+  "Repère ceux qui disent qu'ils n'arrivent pas à régler leur box ou leur imprimante.",
+  "Les groupes de quartier et les associations de seniors sont ton terrain : écris à une dizaine de personnes par jour.",
+  "Voici le message : tu proposes de régler un problème précis, avec une première demi-heure offerte.",
+  "Le message complet à copier est dans la description de la vidéo."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 7,
+    "titre": "Aide informatique à domicile",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Prix constaté",
+      "valeur": "25 à 60 €/h"
+     },
+     {
+      "label": "Départ",
+      "valeur": "Ton ordinateur"
+     },
+     {
+      "label": "Gain estimé",
+      "valeur": "80 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 5,
+   "params": {
+    "valeur": 80,
+    "suffixe": " €",
+    "etiquette": "ESTIMATION : 2 H À 40 €"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 6,
+   "params": {
+    "titre": "Où trouver ton client",
+    "items": [
+     {
+      "texte": "Personnes âgées"
+     },
+     {
+      "texte": "Petits commerces"
+     },
+     {
+      "texte": "Associations de seniors"
+     }
+    ]
+   }
+  },
+  {
+   "type": "titre-geant",
+   "phrase": 8,
+   "params": {}
+  },
+  {
+   "type": "liste",
+   "phrase": 9,
+   "params": {
+    "titre": "Message à copier",
+    "items": [
+     {
+      "texte": "Un bonjour naturel"
+     },
+     {
+      "texte": "Une phrase sur leur situation"
+     },
+     {
+      "texte": "Un essai gratuit ou un prix d'essai"
+     },
+     {
+      "texte": "Une question facile"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+[
+ {
+  "claim": "Un laveur de vitres auto-entrepreneur facture de 25 à 45 € de l'heure hors taxes.",
+  "valeur": "25 à 45 €/h",
+  "phrase": 3,
+  "sources": [
+   "https://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/",
+   "https://businessornot.fr/creation-entreprise/nettoyage-de-vitres-a-domicile-jusqua-45-eur-de-lheure-un-tarif-qui-grimpe-vite-avec-la-hauteur"
+  ],
+  "check": [
+   "25€ et 45€ de l'heure"
+  ],
+  "verified": [
+   "https://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/"
+  ]
+ },
+ {
+  "claim": "Calcul d'hypothèse : 2 heures à 30 € de l'heure (dans la fourchette de 25 à 45 €) = 60 €.",
+  "valeur": "60 €",
+  "phrase": 5,
+  "sources": [
+   "https://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/",
+   "https://businessornot.fr/creation-entreprise/nettoyage-de-vitres-a-domicile-jusqua-45-eur-de-lheure-un-tarif-qui-grimpe-vite-avec-la-hauteur"
+  ],
+  "check": [
+   "25€ et 45€ de l'heure"
+  ],
+  "verified": [
+   "https://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/"
+  ]
+ }
+]

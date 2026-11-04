@@ -1,0 +1,103 @@
+{
+ "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s1",
+ "titre": "Une terrasse verte, c'est un client qui attend.",
+ "theme": "pelouse",
+ "chaine": "La Débrouille",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "NETTOYAGE TERRASSES",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Une terrasse verte, c'est un client qui attend.",
+  "Aux États-Unis, nettoyer à haute pression est un métier à part entière.",
+  "Ici, un nettoyage de terrasse se paie de trois à quinze euros le mètre carré, selon le sol.",
+  "Il te faut un nettoyeur haute pression : tu peux le louer à la journée dans un magasin de bricolage.",
+  "Prends une petite terrasse chez un voisin : cinquante mètres carrés à cinq euros, ça fait déjà deux cent cinquante euros.",
+  "Où trouver ce client ? Dans les groupes de ton quartier et les annonces de services de Leboncoin.",
+  "Cherche les gens qui se plaignent d'une terrasse sale ou d'un portail verdi.",
+  "Écris à une dizaine de personnes par jour : les premières réponses arrivent vite.",
+  "Voici le message : tu dis bonjour, tu parles de leur terrasse, et tu proposes un devis gratuit.",
+  "Le message complet à copier est dans la description de la vidéo."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 1,
+    "titre": "Nettoyage de terrasses",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Prix constaté",
+      "valeur": "3 à 15 €/m²"
+     },
+     {
+      "label": "Départ",
+      "valeur": "Une location"
+     },
+     {
+      "label": "Gain estimé",
+      "valeur": "250 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 5,
+   "params": {
+    "valeur": 250,
+    "suffixe": " €",
+    "etiquette": "ESTIMATION : 50 M² À 5 €"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 6,
+   "params": {
+    "titre": "Où trouver ton client",
+    "items": [
+     {
+      "texte": "Groupes du quartier"
+     },
+     {
+      "texte": "Services de Leboncoin"
+     },
+     {
+      "texte": "Terrasses vertes"
+     }
+    ]
+   }
+  },
+  {
+   "type": "titre-geant",
+   "phrase": 8,
+   "params": {}
+  },
+  {
+   "type": "liste",
+   "phrase": 9,
+   "params": {
+    "titre": "Message à copier",
+    "items": [
+     {
+      "texte": "Un bonjour naturel"
+     },
+     {
+      "texte": "Une phrase sur leur situation"
+     },
+     {
+      "texte": "Un essai gratuit ou un prix d'essai"
+     },
+     {
+      "texte": "Une question facile"
+     }
+    ]
+   }
+  }
+ ]
+}

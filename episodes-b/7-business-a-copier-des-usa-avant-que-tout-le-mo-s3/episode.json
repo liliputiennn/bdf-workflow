@@ -1,0 +1,108 @@
+{
+ "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s3",
+ "titre": "Des vitres propres, ça se voit tout de suite, et ça se paie.",
+ "theme": "pelouse",
+ "chaine": "La Débrouille",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "NETTOYAGE VITRES",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Des vitres propres, ça se voit tout de suite, et ça se paie.",
+  "Aux États-Unis, laver des vitres est une industrie à part entière.",
+  "Ici, un laveur de vitres facture de vingt-cinq à quarante-cinq euros de l'heure.",
+  "Ton matériel : une raclette, un seau, et un chiffon propre.",
+  "Deux heures chez un voisin à trente euros de l'heure, ça fait soixante euros.",
+  "Cherche les commerces de ta rue : boulangeries, coiffeurs, petites boutiques.",
+  "Regarde leurs vitrines : si elles sont sales, ils ont besoin de toi.",
+  "Passe en personne avec un petit mot, puis écris à une dizaine de commerces par jour.",
+  "Voici le message : tu complimentes la boutique et tu proposes un premier nettoyage à prix d'essai.",
+  "Le message complet à copier est dans la description de la vidéo."
+ ],
+ "scenes": [
+  {
+   "type": "fiche",
+   "phrase": 1,
+   "params": {
+    "numero": 3,
+    "titre": "Nettoyage de vitres",
+    "badge": "Business",
+    "lignes": [
+     {
+      "label": "Prix constaté",
+      "valeur": "25 à 45 €/h"
+     },
+     {
+      "label": "Départ",
+      "valeur": "Une raclette"
+     },
+     {
+      "label": "Gain estimé",
+      "valeur": "60 €",
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 5,
+   "params": {
+    "valeur": 60,
+    "suffixe": " €",
+    "etiquette": "ESTIMATION : 2 H À 30 €"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 6,
+   "params": {
+    "titre": "Où trouver ton client",
+    "items": [
+     {
+      "texte": "Commerces de ta rue"
+     },
+     {
+      "texte": "Vitrines sales"
+     },
+     {
+      "texte": "Passage en personne"
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "phrase": 8,
+   "params": {
+    "recherche": "window cleaning squeegee",
+    "legende": "Nettoyage de vitres",
+    "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo-s3/visuels/window-cleaning-squeegee.jpg",
+    "credit": "Photo : It's No Game, CC BY 2.0"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 9,
+   "params": {
+    "titre": "Message à copier",
+    "items": [
+     {
+      "texte": "Un bonjour naturel"
+     },
+     {
+      "texte": "Une phrase sur leur situation"
+     },
+     {
+      "texte": "Un essai gratuit ou un prix d'essai"
+     },
+     {
+      "texte": "Une question facile"
+     }
+    ]
+   }
+  }
+ ]
+}

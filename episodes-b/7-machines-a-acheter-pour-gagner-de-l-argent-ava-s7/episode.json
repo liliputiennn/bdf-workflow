@@ -47,11 +47,13 @@
    }
   },
   {
-   "type": "clip",
+   "type": "photo",
    "phrase": 2,
    "params": {
     "recherche": "photo booth party",
-    "legende": "La machine au travail"
+    "legende": "La machine au travail",
+    "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/photo-booth-party.jpg",
+    "credit": "Photo : Vyacheslav Argenberg, CC BY 4.0"
    }
   },
   {
@@ -69,7 +71,9 @@
    "phrase": 4,
    "params": {
     "recherche": "photo booth wedding guests",
-    "legende": "Une borne photo en soirée"
+    "legende": "Une borne photo en soirée",
+    "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/photo-booth-wedding-guests.jpg",
+    "credit": "Photo : USFWS Mountain Prairie, Public domain"
    }
   },
   {
