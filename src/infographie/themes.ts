@@ -83,6 +83,15 @@ export const THEMES: Record<string, Theme> = {
     id: "chocolat-lait", bg: ["#F6E6D4", "#E4C6A6"], card: "#FFF9F2", line: "#D3AE8C", ink: "#3B1C10", muted: "#8A5E45",
     accent: "#7B3F1D", onAccent: "#FFF9F2", deep: "#4E2410", hot: "#E8A317", alert: "#C2362B", dark: false,
   },
+  // Vert pelouse (bannière « La débrouille ») : même moteur, mêmes cartes, seules les couleurs changent.
+  "pelouse": {
+    id: "pelouse", bg: ["#EAF6DF", "#C9E5B5"], card: "#FCFFF8", line: "#AFD39A", ink: "#10341A", muted: "#587A55",
+    accent: "#2F8F3C", onAccent: "#FFFFFF", deep: "#1B5E26", hot: "#F6B73C", alert: "#D9483B", dark: false,
+  },
+  "pelouse-nuit": {
+    id: "pelouse-nuit", bg: ["#0C2612", "#1B4A25"], card: "#12361B", line: "#2E6B3A", ink: "#F2FBEA", muted: "#A6CBA0",
+    accent: "#7ED957", onAccent: "#0C2612", deep: "#3FA34D", hot: "#FFE08A", alert: "#FF7A6B", dark: true,
+  },
   "chocolat-framboise": {
     id: "chocolat-framboise", bg: ["#3A1A12", "#6B2F20"], card: "#2C130D", line: "#8A4A38", ink: "#FFF1EA", muted: "#E0B3A3",
     accent: "#FF5C8A", onAccent: "#2C130D", deep: "#D23A6A", hot: "#FFC857", alert: "#FFB020", dark: true,
