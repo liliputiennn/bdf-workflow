@@ -27,6 +27,8 @@ export type AutoEp = {
   video: boolean;
   youtube: { video_id: string | null; url: string | null; visibilite: string | null; publie_a: string | null };
   tiktok: string | null;
+  /** Légende prête à coller dans TikTok : titre + hashtags tirés de publication.json. */
+  legende: string | null;
 };
 
 export type Snapshot = {
@@ -63,7 +65,7 @@ export const createAutopilot = (root: string) => {
     const st = readJson<Partial<AutoEp>>(path.join(d, "status.json")) ?? {};
     // anciennes vidéos retirées de YouTube lors de la refonte (archivées) : on ne les montre plus dans l'interface
     if (String(st.raison ?? "").startsWith("retiré de YouTube")) return null;
-    const pub = readJson<{ titre?: string }>(path.join(d, "publication.json"));
+    const pub = readJson<{ titre?: string; tags?: string[] }>(path.join(d, "publication.json"));
     const qa = readJson<{ duree_s?: number; publiable?: boolean }>(path.join(exp, id, "qa.json"));
     const long = exists(path.join(d, "episode-long.json"));
     const m = /^(.+)-s\d+$/.exec(id);
@@ -83,6 +85,7 @@ export const createAutopilot = (root: string) => {
       video: exists(path.join(exp, id, `${id}.mp4`)),
       youtube: { video_id: null, url: null, visibilite: null, publie_a: null, ...(st.youtube ?? {}) },
       tiktok: tiktok[id]?.statut ?? null,
+      legende: pub?.titre ? `${pub.titre} ${(pub.tags ?? []).slice(0, 4).map((t) => "#" + t.replace(/[^\p{L}\p{N}]+/gu, "")).filter((t) => t.length > 1).join(" ")}`.trim() : null,
     };
   };
 
