@@ -1,6 +1,6 @@
 {
- "etat": "controle",
- "maj": "2026-11-04T13:17:09",
+ "etat": "pret",
+ "maj": "2026-11-04T16:06:41",
  "raison": null,
  "tentatives": 0,
  "youtube": {
@@ -9,5 +9,11 @@
   "visibilite": null,
   "publie_a": null
  },
- "origine": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven"
+ "origine": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven",
+ "miniature": {
+  "source": "auto",
+  "fichier": "miniature.png",
+  "style": "createur",
+  "octets": 698277
+ }
 }

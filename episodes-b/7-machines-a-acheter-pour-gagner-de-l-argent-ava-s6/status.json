@@ -1,6 +1,6 @@
 {
- "etat": "controle",
- "maj": "2026-11-04T15:12:19",
+ "etat": "pret",
+ "maj": "2026-11-04T16:08:07",
  "raison": null,
  "tentatives": 0,
  "youtube": {
@@ -9,5 +9,11 @@
   "visibilite": null,
   "publie_a": null
  },
- "origine": "7-machines-a-acheter-pour-gagner-de-l-argent-ava"
+ "origine": "7-machines-a-acheter-pour-gagner-de-l-argent-ava",
+ "miniature": {
+  "source": "auto",
+  "fichier": "miniature.png",
+  "style": "createur",
+  "octets": 721992
+ }
 }

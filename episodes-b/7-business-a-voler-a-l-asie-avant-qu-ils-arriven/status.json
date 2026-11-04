@@ -1,6 +1,6 @@
 {
- "etat": "controle",
- "maj": "2026-11-04T13:13:47",
+ "etat": "pret",
+ "maj": "2026-11-04T16:06:35",
  "raison": null,
  "tentatives": 0,
  "youtube": {
@@ -14,6 +14,6 @@
   "source": "auto",
   "fichier": "miniature.png",
   "style": "createur",
-  "octets": 699758
+  "octets": 700377
  }
 }
