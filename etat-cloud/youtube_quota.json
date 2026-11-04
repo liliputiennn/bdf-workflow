@@ -1,77 +1,41 @@
 {
- "jour_pt": "2026-11-03",
- "unites": 204,
- "envois": 4,
+ "jour_pt": "2026-11-04",
+ "unites": 102,
+ "envois": 2,
  "epuise": false,
  "journal": [
   {
-   "t": "2026-11-03T23:30:16",
+   "t": "2026-11-04T17:58:15",
    "op": "videos.insert",
    "unites": 0,
    "envois": 1
   },
   {
-   "t": "2026-11-03T23:30:22",
+   "t": "2026-11-04T17:58:20",
    "op": "thumbnails.set",
    "unites": 50,
    "envois": 0
   },
   {
-   "t": "2026-11-03T23:30:22",
+   "t": "2026-11-04T17:58:20",
    "op": "videos.list",
    "unites": 1,
    "envois": 0
   },
   {
-   "t": "2026-11-03T23:30:23",
+   "t": "2026-11-04T17:58:22",
    "op": "videos.insert",
    "unites": 0,
    "envois": 1
   },
   {
-   "t": "2026-11-03T23:30:29",
+   "t": "2026-11-04T17:58:31",
    "op": "thumbnails.set",
    "unites": 50,
    "envois": 0
   },
   {
-   "t": "2026-11-03T23:30:29",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-03T23:33:38",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1
-  },
-  {
-   "t": "2026-11-03T23:33:43",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-03T23:33:43",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-03T23:33:45",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1
-  },
-  {
-   "t": "2026-11-03T23:33:50",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-03T23:33:50",
+   "t": "2026-11-04T17:58:31",
    "op": "videos.list",
    "unites": 1,
    "envois": 0
@@ -79,5 +43,5 @@
  ],
  "plafond_unites": 10000,
  "plafond_envois": 100,
- "maj": "2026-11-03T23:33:50"
+ "maj": "2026-11-04T17:58:31"
 }
