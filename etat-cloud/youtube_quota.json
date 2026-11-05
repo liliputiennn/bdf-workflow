@@ -1,155 +1,41 @@
 {
- "jour_pt": "2026-11-04",
- "unites": 458,
- "envois": 8,
+ "jour_pt": "2026-11-05",
+ "unites": 102,
+ "envois": 2,
  "epuise": false,
  "journal": [
   {
-   "t": "2026-11-04T17:58:15",
+   "t": "2026-11-05T13:39:16",
    "op": "videos.insert",
    "unites": 0,
    "envois": 1
   },
   {
-   "t": "2026-11-04T17:58:20",
+   "t": "2026-11-05T13:39:21",
    "op": "thumbnails.set",
    "unites": 50,
    "envois": 0
   },
   {
-   "t": "2026-11-04T17:58:20",
+   "t": "2026-11-05T13:39:21",
    "op": "videos.list",
    "unites": 1,
    "envois": 0
   },
   {
-   "t": "2026-11-04T17:58:22",
+   "t": "2026-11-05T13:39:23",
    "op": "videos.insert",
    "unites": 0,
    "envois": 1
   },
   {
-   "t": "2026-11-04T17:58:31",
+   "t": "2026-11-05T13:39:35",
    "op": "thumbnails.set",
    "unites": 50,
    "envois": 0
   },
   {
-   "t": "2026-11-04T17:58:31",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:01:23",
-   "op": "commentThreads.insert",
-   "unites": 50,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:01:25",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1
-  },
-  {
-   "t": "2026-11-04T19:01:28",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:01:28",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:01:29",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1
-  },
-  {
-   "t": "2026-11-04T19:01:35",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:01:35",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:03:00",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1
-  },
-  {
-   "t": "2026-11-04T19:03:07",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:03:07",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:03:09",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1
-  },
-  {
-   "t": "2026-11-04T19:03:18",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:03:18",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:04:35",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1
-  },
-  {
-   "t": "2026-11-04T19:04:41",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:04:41",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:04:43",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1
-  },
-  {
-   "t": "2026-11-04T19:04:49",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0
-  },
-  {
-   "t": "2026-11-04T19:04:49",
+   "t": "2026-11-05T13:39:35",
    "op": "videos.list",
    "unites": 1,
    "envois": 0
@@ -157,5 +43,5 @@
  ],
  "plafond_unites": 10000,
  "plafond_envois": 100,
- "maj": "2026-11-04T19:04:49"
+ "maj": "2026-11-05T13:39:35"
 }
