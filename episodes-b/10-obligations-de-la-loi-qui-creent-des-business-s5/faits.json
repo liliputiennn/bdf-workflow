@@ -1,0 +1,18 @@
+[
+ {
+  "claim": "Chaque établissement recevant du public doit mettre à disposition un registre public d'accessibilité, consultable au principal point d'accueil.",
+  "valeur": "registre",
+  "phrase": 2,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F32873",
+   "https://www.ecologie.gouv.fr/politiques-publiques/laccessibilite-etablissements-recevant-du-public-erp"
+  ],
+  "check": [
+   "registre public d'accessibilité"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F32873",
+   "https://www.ecologie.gouv.fr/politiques-publiques/laccessibilite-etablissements-recevant-du-public-erp"
+  ]
+ }
+]

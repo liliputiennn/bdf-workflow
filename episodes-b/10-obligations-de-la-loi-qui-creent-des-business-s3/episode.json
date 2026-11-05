@@ -1,0 +1,51 @@
+{
+ "id": "10-obligations-de-la-loi-qui-creent-des-business-s3",
+ "titre": "Qualiopi : qui doit avoir cette certification ?",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "CERTIFICATION QUALIOPI PETITS FORMATEURS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Une idée : aider les petits organismes de formation à préparer la certification Qualiopi.",
+  "Un formateur indépendant qui veut des financements publics ou mutualisés doit avoir cette certification.",
+  "Elle est délivrée par un organisme certificateur reconnu, pas par toi.",
+  "Toi, tu prépares les preuves : programmes, évaluations, suivi des stagiaires, traitement des réclamations.",
+  "L'État et France compétences publient le référentiel officiel, que tu peux lire en ligne.",
+  "Pour démarrer, un organisme déclare son activité en ligne sur Mon Activité Formation.",
+  "Il reçoit alors un numéro de déclaration d'activité, à mettre sur ses documents."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "certification",
+     "Qualiopi"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "Référentiel officiel Qualiopi"
+     },
+     {
+      "texte": "Mon Activité Formation"
+     },
+     {
+      "texte": "Fiche service-public"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+[
+ {
+  "claim": "Les organismes de formation doivent détenir la certification Qualiopi pour bénéficier de fonds publics ou mutualisés ; elle est délivrée par des organismes accrédités par le Cofrac.",
+  "valeur": "Qualiopi",
+  "phrase": 2,
+  "sources": [
+   "https://www.francecompetences.fr/fiche/qualiopi-lobligation-qualite-en-vigueur-depuis-le-1er-janvier-2022/",
+   "https://travail-emploi.gouv.fr/la-qualite-des-organismes-de-formation-professionnelle"
+  ],
+  "check": [
+   "Qualiopi"
+  ],
+  "verified": [
+   "https://www.francecompetences.fr/fiche/qualiopi-lobligation-qualite-en-vigueur-depuis-le-1er-janvier-2022/"
+  ]
+ },
+ {
+  "claim": "Un organisme de formation fait sa déclaration d'activité en ligne sur Mon Activité Formation.",
+  "valeur": "Mon Activité Formation",
+  "phrase": 6,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F19087",
+   "https://info.monactiviteformation.emploi.gouv.fr/"
+  ],
+  "check": [
+   "Mon Activité Formation"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F19087",
+   "https://info.monactiviteformation.emploi.gouv.fr/"
+  ]
+ }
+]

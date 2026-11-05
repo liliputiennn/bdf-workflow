@@ -1,0 +1,59 @@
+{
+ "id": "10-obligations-de-la-loi-qui-creent-des-business-s7",
+ "titre": "Subvention d'association : quand une convention est-elle exigée ?",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "DOSSIERS SUBVENTION PETITES ASSOCIATIONS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Une idée : écrire les dossiers de subvention des petites associations.",
+  "Une association de quartier a de bonnes idées, mais pas toujours le temps de remplir des dossiers.",
+  "Aides-territoires est un site public qui aide à trouver des aides, et il oriente aussi les associations.",
+  "Le Compte Asso permet de déposer en ligne une demande de subvention à l'État.",
+  "Quand une subvention dépasse vingt-trois mille euros, une convention écrite est obligatoire.",
+  "Toi, tu aides à préparer le budget et à lire cette convention, sans signer à la place du président."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "dossiers",
+     "subvention"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 3,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "Aides-territoires"
+     },
+     {
+      "texte": "Le Compte Asso"
+     },
+     {
+      "texte": "Fiche service-public"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 5,
+   "params": {
+    "valeur": 23000,
+    "suffixe": " €",
+    "etiquette": "au-dessus, une convention est obligatoire"
+   }
+  }
+ ]
+}

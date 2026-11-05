@@ -1,0 +1,17 @@
+[
+ {
+  "claim": "La Licence Ouverte 2.0 autorise la réutilisation libre et gratuite des données publiques, y compris commerciale, en citant la source.",
+  "valeur": "Licence Ouverte",
+  "phrase": 10,
+  "sources": [
+   "https://www.data.gouv.fr/pages/legal/licences/etalab-2-0",
+   "https://api.gouv.fr/les-api/sirene_v3"
+  ],
+  "check": [
+   "Licence Ouverte"
+  ],
+  "verified": [
+   "https://www.data.gouv.fr/pages/legal/licences/etalab-2-0"
+  ]
+ }
+]

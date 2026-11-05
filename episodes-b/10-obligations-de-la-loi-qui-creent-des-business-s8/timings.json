@@ -1,0 +1,355 @@
+{
+ "total": 18.945,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.628,
+   "words": [
+    {
+     "w": "Une",
+     "start": 0.15,
+     "end": 0.322
+    },
+    {
+     "w": "idée",
+     "start": 0.322,
+     "end": 0.549
+    },
+    {
+     "w": "aider",
+     "start": 0.86,
+     "end": 1.017
+    },
+    {
+     "w": "les",
+     "start": 1.017,
+     "end": 1.155
+    },
+    {
+     "w": "artisans",
+     "start": 1.155,
+     "end": 1.659
+    },
+    {
+     "w": "à",
+     "start": 1.659,
+     "end": 1.798
+    },
+    {
+     "w": "automatiser",
+     "start": 1.798,
+     "end": 2.335
+    },
+    {
+     "w": "leurs",
+     "start": 2.335,
+     "end": 2.457
+    },
+    {
+     "w": "devis",
+     "start": 2.457,
+     "end": 2.873
+    },
+    {
+     "w": "et",
+     "start": 2.873,
+     "end": 2.977
+    },
+    {
+     "w": "leurs",
+     "start": 2.977,
+     "end": 3.064
+    },
+    {
+     "w": "factures.",
+     "start": 3.064,
+     "end": 3.463
+    }
+   ]
+  },
+  {
+   "start": 3.755,
+   "end": 8.12,
+   "words": [
+    {
+     "w": "Depuis",
+     "start": 3.755,
+     "end": 4.026
+    },
+    {
+     "w": "le",
+     "start": 4.026,
+     "end": 4.093
+    },
+    {
+     "w": "premier",
+     "start": 4.093,
+     "end": 4.263
+    },
+    {
+     "w": "septembre",
+     "start": 4.263,
+     "end": 4.686
+    },
+    {
+     "w": "deux",
+     "start": 4.686,
+     "end": 4.821
+    },
+    {
+     "w": "mille",
+     "start": 4.821,
+     "end": 4.99
+    },
+    {
+     "w": "vingt-six,",
+     "start": 4.99,
+     "end": 5.244
+    },
+    {
+     "w": "toutes",
+     "start": 5.633,
+     "end": 5.802
+    },
+    {
+     "w": "les",
+     "start": 5.802,
+     "end": 5.87
+    },
+    {
+     "w": "entreprises",
+     "start": 5.87,
+     "end": 6.26
+    },
+    {
+     "w": "doivent",
+     "start": 6.26,
+     "end": 6.411
+    },
+    {
+     "w": "pouvoir",
+     "start": 6.411,
+     "end": 6.7
+    },
+    {
+     "w": "recevoir",
+     "start": 6.7,
+     "end": 7.054
+    },
+    {
+     "w": "des",
+     "start": 7.054,
+     "end": 7.19
+    },
+    {
+     "w": "factures",
+     "start": 7.19,
+     "end": 7.478
+    },
+    {
+     "w": "électroniques.",
+     "start": 7.478,
+     "end": 8.053
+    }
+   ]
+  },
+  {
+   "start": 8.248,
+   "end": 13.04,
+   "words": [
+    {
+     "w": "À",
+     "start": 8.248,
+     "end": 8.385
+    },
+    {
+     "w": "partir",
+     "start": 8.385,
+     "end": 8.556
+    },
+    {
+     "w": "du",
+     "start": 8.556,
+     "end": 8.728
+    },
+    {
+     "w": "premier",
+     "start": 8.728,
+     "end": 8.9
+    },
+    {
+     "w": "septembre",
+     "start": 8.9,
+     "end": 9.345
+    },
+    {
+     "w": "deux",
+     "start": 9.345,
+     "end": 9.561
+    },
+    {
+     "w": "mille",
+     "start": 9.561,
+     "end": 9.78
+    },
+    {
+     "w": "vingt-sept,",
+     "start": 9.78,
+     "end": 9.997
+    },
+    {
+     "w": "les",
+     "start": 10.27,
+     "end": 10.373
+    },
+    {
+     "w": "petites",
+     "start": 10.373,
+     "end": 10.613
+    },
+    {
+     "w": "entreprises",
+     "start": 10.613,
+     "end": 11.11
+    },
+    {
+     "w": "et",
+     "start": 11.11,
+     "end": 11.35
+    },
+    {
+     "w": "les",
+     "start": 11.35,
+     "end": 11.454
+    },
+    {
+     "w": "micro-entreprises",
+     "start": 11.454,
+     "end": 12.174
+    },
+    {
+     "w": "devront",
+     "start": 12.174,
+     "end": 12.465
+    },
+    {
+     "w": "en",
+     "start": 12.465,
+     "end": 12.62
+    },
+    {
+     "w": "émettre.",
+     "start": 12.62,
+     "end": 12.894
+    }
+   ]
+  },
+  {
+   "start": 13.167,
+   "end": 15.93,
+   "words": [
+    {
+     "w": "Un",
+     "start": 13.167,
+     "end": 13.34
+    },
+    {
+     "w": "artisan",
+     "start": 13.34,
+     "end": 13.685
+    },
+    {
+     "w": "préfère",
+     "start": 13.685,
+     "end": 14.03
+    },
+    {
+     "w": "souvent",
+     "start": 14.03,
+     "end": 14.23
+    },
+    {
+     "w": "travailler",
+     "start": 14.23,
+     "end": 14.649
+    },
+    {
+     "w": "plutôt",
+     "start": 14.649,
+     "end": 14.903
+    },
+    {
+     "w": "que",
+     "start": 14.903,
+     "end": 15.103
+    },
+    {
+     "w": "remplir",
+     "start": 15.103,
+     "end": 15.43
+    },
+    {
+     "w": "des",
+     "start": 15.43,
+     "end": 15.503
+    },
+    {
+     "w": "papiers.",
+     "start": 15.503,
+     "end": 15.812
+    }
+   ]
+  },
+  {
+   "start": 16.058,
+   "end": 18.645,
+   "words": [
+    {
+     "w": "Les",
+     "start": 16.058,
+     "end": 16.201
+    },
+    {
+     "w": "factures",
+     "start": 16.201,
+     "end": 16.507
+    },
+    {
+     "w": "passent",
+     "start": 16.507,
+     "end": 16.759
+    },
+    {
+     "w": "par",
+     "start": 16.759,
+     "end": 16.849
+    },
+    {
+     "w": "une",
+     "start": 16.849,
+     "end": 16.956
+    },
+    {
+     "w": "plateforme",
+     "start": 16.956,
+     "end": 17.351
+    },
+    {
+     "w": "agréée",
+     "start": 17.351,
+     "end": 17.836
+    },
+    {
+     "w": "par",
+     "start": 17.836,
+     "end": 17.944
+    },
+    {
+     "w": "l'administration.",
+     "start": 17.944,
+     "end": 18.537
+    }
+   ]
+  }
+ ]
+}

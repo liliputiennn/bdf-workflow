@@ -1,0 +1,17 @@
+[
+ {
+  "claim": "Une micro-entreprise peut répondre à un marché public ; la candidature passe par le DUME ou par les formulaires DC1 et DC2.",
+  "valeur": "DUME",
+  "phrase": 6,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F32144",
+   "https://www.economie.gouv.fr/files/2021-05/Guide-Marches-publics-2021-entreprises.pdf"
+  ],
+  "check": [
+   "DUME"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F32144"
+  ]
+ }
+]

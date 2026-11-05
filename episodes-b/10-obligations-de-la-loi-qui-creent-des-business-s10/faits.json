@@ -1,0 +1,18 @@
+[
+ {
+  "claim": "La loi permet à chacun de laisser des directives sur la conservation, l'effacement et la communication de ses données personnelles après son décès.",
+  "valeur": "directives",
+  "phrase": 3,
+  "sources": [
+   "https://cnil.fr/fr/mort-numerique-effacement-informations-personne-decedee",
+   "https://www.service-public.gouv.fr/particuliers/actualites/A19081"
+  ],
+  "check": [
+   "directives"
+  ],
+  "verified": [
+   "https://cnil.fr/fr/mort-numerique-effacement-informations-personne-decedee",
+   "https://www.service-public.gouv.fr/particuliers/actualites/A19081"
+  ]
+ }
+]

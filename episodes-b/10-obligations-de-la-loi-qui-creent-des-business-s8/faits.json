@@ -1,0 +1,50 @@
+[
+ {
+  "claim": "Depuis le 1er septembre 2026, toutes les entreprises doivent pouvoir recevoir des factures électroniques.",
+  "valeur": "septembre 2026",
+  "phrase": 2,
+  "sources": [
+   "https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises",
+   "https://entreprendre.service-public.gouv.fr/actualites/A18953"
+  ],
+  "check": [
+   "septembre 2026"
+  ],
+  "verified": [
+   "https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises",
+   "https://entreprendre.service-public.gouv.fr/actualites/A18953"
+  ]
+ },
+ {
+  "claim": "À partir du 1er septembre 2027, les petites entreprises et les micro-entreprises doivent pouvoir émettre des factures électroniques.",
+  "valeur": "septembre 2027",
+  "phrase": 3,
+  "sources": [
+   "https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F39785"
+  ],
+  "check": [
+   "septembre 2027"
+  ],
+  "verified": [
+   "https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F39785"
+  ]
+ },
+ {
+  "claim": "Les factures électroniques passent par une plateforme agréée par l'administration.",
+  "valeur": "plateforme agréée",
+  "phrase": 5,
+  "sources": [
+   "https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F39785"
+  ],
+  "check": [
+   "plateforme agréée"
+  ],
+  "verified": [
+   "https://www.economie.gouv.fr/tout-savoir-sur-la-facturation-electronique-pour-les-entreprises",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F39785"
+  ]
+ }
+]

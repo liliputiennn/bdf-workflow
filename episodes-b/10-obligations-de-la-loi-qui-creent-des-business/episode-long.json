@@ -1,816 +1,816 @@
 {
-  "id": "10-obligations-de-la-loi-qui-creent-des-business",
-  "titre": "10 obligations de la loi qui créent des business (outils gratuits)",
-  "theme": "pelouse",
-  "theme_accent": "pelouse-nuit",
-  "chaine": "Bureau des Faits",
-  "miniature": {
-    "style": "createur",
-    "texte_haut": "BUSINESS CRÉÉS PAR LA LOI",
-    "gros": "10",
-    "icone": "pieces"
-  },
-  "chapitres": [
+ "id": "10-obligations-de-la-loi-qui-creent-des-business",
+ "titre": "10 obligations de la loi qui créent des business (outils gratuits)",
+ "theme": "pelouse",
+ "theme_accent": "pelouse-nuit",
+ "chaine": "Bureau des Faits",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "BUSINESS CRÉÉS PAR LA LOI",
+  "gros": "10",
+  "icone": "pieces"
+ },
+ "chapitres": [
+  {
+   "titre": "Accroche",
+   "phrases": [
+    "Chaque nouvelle règle de loi oblige des gens à remplir des papiers, et ça crée des business.",
+    "Voici des petits business qui existent parce qu'une loi l'impose.",
+    "Leur point commun : le client doit remplir une obligation, et il n'a pas le temps.",
+    "Autre point commun : tu peux démarrer avec des outils gratuits, sans acheter de matériel.",
+    "Pour chaque idée, tu auras les outils les plus utiles, la règle de loi qui compte et le piège à éviter.",
+    "Toutes les adresses sont dans la description de la vidéo.",
+    "Un point d'honnêteté : aucun revenu n'est promis.",
+    "Ces idées demandent du sérieux, et certaines n'auront peut-être aucun client près de chez toi.",
+    "Et tu n'es ni avocat ni comptable : tu aides à préparer, c'est le client qui décide."
+   ],
+   "scenes": [
     {
-      "titre": "Accroche",
-      "phrases": [
-        "Chaque nouvelle règle de loi oblige des gens à remplir des papiers, et ça crée des business.",
-        "Voici des petits business qui existent parce qu'une loi l'impose.",
-        "Leur point commun : le client doit remplir une obligation, et il n'a pas le temps.",
-        "Autre point commun : tu peux démarrer avec des outils gratuits, sans acheter de matériel.",
-        "Pour chaque idée, tu auras les outils les plus utiles, la règle de loi qui compte et le piège à éviter.",
-        "Toutes les adresses sont dans la description de la vidéo.",
-        "Un point d'honnêteté : aucun revenu n'est promis.",
-        "Ces idées demandent du sérieux, et certaines n'auront peut-être aucun client près de chez toi.",
-        "Et tu n'es ni avocat ni comptable : tu aides à préparer, c'est le client qui décide."
-      ],
-      "scenes": [
-        {
-          "type": "titre-geant",
-          "phrase": 1,
-          "params": {
-            "accents": [
-              "règle",
-              "loi"
-            ]
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 3,
-          "params": {
-            "titre": "POINTS COMMUNS",
-            "items": [
-              {
-                "texte": "Une obligation de la loi"
-              },
-              {
-                "texte": "Un client sans temps"
-              },
-              {
-                "texte": "Des outils gratuits"
-              }
-            ]
-          }
-        },
-        {
-          "type": "question",
-          "phrase": 7,
-          "params": {
-            "question": "Combien ça rapporte ?",
-            "pistes": [
-              "Aucune promesse",
-              "Du sérieux",
-              "Des tests"
-            ]
-          }
-        }
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "règle",
+       "loi"
       ]
+     }
     },
     {
-      "titre": "Étude de marché de quartier avec l'open data",
-      "phrases": [
-        "Une idée : l'étude de marché de quartier.",
-        "Quelqu'un veut ouvrir une boulangerie ou un salon de coiffure, et se demande s'il y a déjà trop de concurrents autour.",
-        "Les réponses existent, mais elles sont éparpillées dans des fichiers publics que personne ne regroupe.",
-        "Toi, tu les rassembles en un petit dossier clair, avec une carte.",
-        "L'Annuaire des entreprises et la base Sirene de l'Insee listent les commerces déjà installés dans la rue.",
-        "Le fichier des ventes immobilières, appelé DVF, montre les prix des logements autour.",
-        "Le comparateur de territoires de l'Insee donne l'âge, les revenus et les familles de la commune.",
-        "Overpass Turbo compte les écoles, les arrêts de bus et les concurrents à partir des données d'OpenStreetMap.",
-        "Le logiciel QGIS est libre et gratuit, et il dessine les cartes de ton dossier.",
-        "La règle de loi : ces données sont sous Licence Ouverte, donc tu peux les réutiliser, même pour vendre ton travail, en citant la source.",
-        "Le piège : les fichiers sont lourds, alors commence par une seule commune.",
-        "Et respecte la vie privée : certaines personnes ont demandé à ne pas être contactées pour de la prospection."
-      ],
-      "scenes": [
-        {
-          "type": "titre-geant",
-          "phrase": 1,
-          "params": {
-            "accents": [
-              "étude",
-              "marché"
-            ]
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 5,
-          "params": {
-            "titre": "TES OUTILS",
-            "items": [
-              {
-                "texte": "Annuaire des entreprises"
-              },
-              {
-                "texte": "Base Sirene"
-              },
-              {
-                "texte": "DVF"
-              },
-              {
-                "texte": "Overpass Turbo"
-              },
-              {
-                "texte": "QGIS"
-              }
-            ]
-          }
-        },
-        {
-          "type": "question",
-          "phrase": 10,
-          "params": {
-            "question": "Peut-on réutiliser ces données ?",
-            "pistes": [
-              "Oui",
-              "Source citée",
-              "Vie privée"
-            ]
-          }
-        }
-      ],
-      "short": {
-        "debut_phrase": 1,
-        "fin_phrase": 10,
-        "accroche": "Une étude de marché de quartier avec les données de l'État"
-      }
-    },
-    {
-      "titre": "Les marchés publics pour les petits artisans",
-      "phrases": [
-        "Une idée : aider les petits artisans à répondre aux marchés publics.",
-        "Une mairie ou une école cherche un peintre, un jardinier, un informaticien, et elle doit publier son besoin.",
-        "Un petit artisan n'ose pas toujours répondre, car les dossiers font peur.",
-        "Toi, tu surveilles les annonces et tu prépares le dossier avec lui.",
-        "Le BOAMP, le bulletin officiel des annonces des marchés publics, et le portail des marchés publics de l'État listent les offres.",
-        "Même une micro-entreprise peut répondre à un marché public.",
-        "Pour la candidature, il existe le DUME, un formulaire européen en ligne qui évite de redonner ce que l'administration connaît déjà.",
-        "Pour certains marchés, le numéro SIRET suffit pour candidater.",
-        "Mais chaque marché a son règlement : lis-le toujours en entier.",
-        "Le piège : une offre qui ne respecte pas le règlement à la lettre peut être refusée.",
-        "Et tu ne promets jamais qu'un artisan va gagner un marché."
-      ],
-      "scenes": [
-        {
-          "type": "titre-geant",
-          "phrase": 1,
-          "params": {
-            "accents": [
-              "petits",
-              "artisans"
-            ]
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 5,
-          "params": {
-            "titre": "TES OUTILS",
-            "items": [
-              {
-                "texte": "BOAMP"
-              },
-              {
-                "texte": "Portail des marchés publics"
-              },
-              {
-                "texte": "DUME (formulaire en ligne)"
-              },
-              {
-                "texte": "Fiche service-public"
-              }
-            ]
-          }
-        },
-        {
-          "type": "question",
-          "phrase": 9,
-          "params": {
-            "question": "Le SIRET suffit-il ?",
-            "pistes": [
-              "Parfois",
-              "Lis le règlement"
-            ]
-          }
-        }
-      ],
-      "short": {
-        "debut_phrase": 1,
-        "fin_phrase": 8,
-        "accroche": "Marchés publics : une micro-entreprise peut-elle répondre ?"
-      }
-    },
-    {
-      "titre": "La certification Qualiopi pour petits formateurs",
-      "phrases": [
-        "Une idée : aider les petits organismes de formation à préparer la certification Qualiopi.",
-        "Un formateur indépendant qui veut des financements publics ou mutualisés doit avoir cette certification.",
-        "Elle est délivrée par un organisme certificateur reconnu, pas par toi.",
-        "Toi, tu prépares les preuves : programmes, évaluations, suivi des stagiaires, traitement des réclamations.",
-        "L'État et France compétences publient le référentiel officiel, que tu peux lire en ligne.",
-        "Pour démarrer, un organisme déclare son activité en ligne sur Mon Activité Formation.",
-        "Il reçoit alors un numéro de déclaration d'activité, à mettre sur ses documents.",
-        "Le piège : tu prépares l'audit, mais tu ne peux pas le passer à la place du formateur.",
-        "Le client choisit lui-même son organisme certificateur dans la liste officielle.",
-        "Aucun résultat n'est promis : l'audit reste une décision du certificateur."
-      ],
-      "scenes": [
-        {
-          "type": "titre-geant",
-          "phrase": 1,
-          "params": {
-            "accents": [
-              "certification",
-              "Qualiopi"
-            ]
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 5,
-          "params": {
-            "titre": "TES OUTILS",
-            "items": [
-              {
-                "texte": "Référentiel officiel Qualiopi"
-              },
-              {
-                "texte": "Mon Activité Formation"
-              },
-              {
-                "texte": "Fiche service-public"
-              }
-            ]
-          }
-        },
-        {
-          "type": "question",
-          "phrase": 8,
-          "params": {
-            "question": "Qui passe l'audit ?",
-            "pistes": [
-              "Le formateur",
-              "Pas toi"
-            ]
-          }
-        }
-      ],
-      "short": {
-        "debut_phrase": 1,
-        "fin_phrase": 7,
-        "accroche": "Qualiopi : qui doit avoir cette certification ?"
-      }
-    },
-    {
-      "titre": "Le pack du premier salarié",
-      "phrases": [
-        "Une idée : le pack du premier salarié, pour les petits patrons.",
-        "Quand on embauche pour la première fois, on découvre une pile de papiers à remplir.",
-        "Le premier, c'est le registre unique du personnel, ouvert dès l'embauche du premier salarié.",
-        "Des mentions oubliées peuvent coûter jusqu'à sept cent cinquante euros d'amende par salarié concerné.",
-        "Ensuite vient le document unique des risques, obligatoire dès le premier salarié.",
-        "Le patron doit le garder pendant quarante ans, avec toutes ses versions.",
-        "Sans document, l'amende peut aller jusqu'à mille cinq cents euros pour une personne.",
-        "OiRA propose des outils en ligne par métier, qui se téléchargent gratuitement, pour le remplir.",
-        "Il faut aussi afficher ou communiquer certaines informations, comme les coordonnées de l'inspection du travail.",
-        "Toi, tu fais le tour des papiers avec le patron et tu les ranges dans un dossier clair.",
-        "Ta limite : le patron reste responsable, et tu ne donnes pas de conseil juridique."
-      ],
-      "scenes": [
-        {
-          "type": "titre-geant",
-          "phrase": 1,
-          "params": {
-            "accents": [
-              "pack",
-              "salarié"
-            ]
-          }
-        },
-        {
-          "type": "chiffre",
-          "phrase": 4,
-          "params": {
-            "valeur": 750,
-            "suffixe": " €",
-            "etiquette": "amende maximale par salarié concerné"
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 8,
-          "params": {
-            "titre": "TES OUTILS",
-            "items": [
-              {
-                "texte": "OiRA (par métier)"
-              },
-              {
-                "texte": "Fiche INRS"
-              },
-              {
-                "texte": "Fiche service-public"
-              }
-            ]
-          }
-        },
-        {
-          "type": "question",
-          "phrase": 11,
-          "params": {
-            "question": "Qui reste responsable ?",
-            "pistes": [
-              "Le patron"
-            ]
-          }
-        }
-      ],
-      "short": {
-        "debut_phrase": 1,
-        "fin_phrase": 7,
-        "accroche": "Premier salarié : les papiers obligatoires et leurs amendes"
-      }
-    },
-    {
-      "titre": "Registre d'accessibilité des commerces",
-      "phrases": [
-        "Une idée : le registre d'accessibilité des petits commerces.",
-        "Tout lieu qui reçoit du public doit mettre à disposition un registre public d'accessibilité.",
-        "Il dit au public ce qui est accessible : l'entrée, la caisse, les toilettes, le personnel formé.",
-        "Un petit commerçant n'a pas toujours le temps de le remplir.",
-        "Toi, tu passes une heure sur place, tu mesures la porte et la rampe, tu prends des photos.",
-        "Ensuite, tu décris le lieu sur Acceslibre, la plateforme publique où chacun peut renseigner l'accessibilité d'un lieu.",
-        "Un simple ruban de mesure suffit, et le guide du ministère de la Transition écologique explique le contenu du registre.",
-        "Le registre doit pouvoir être consulté à l'accueil, sur papier ou en version numérique.",
-        "Attention aux faux courriers : certaines sociétés démarchent les commerçants avec des lettres qui ressemblent à du courrier officiel.",
-        "Toi, tu restes simple : tu aides à remplir, tu ne certifies pas qu'un lieu respecte la loi.",
-        "En cas de doute sur des travaux, le commerçant demande l'avis d'un professionnel du bâtiment."
-      ],
-      "scenes": [
-        {
-          "type": "titre-geant",
-          "phrase": 1,
-          "params": {
-            "accents": [
-              "registre",
-              "accessibilité"
-            ]
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 5,
-          "params": {
-            "titre": "TES OUTILS",
-            "items": [
-              {
-                "texte": "Acceslibre"
-              },
-              {
-                "texte": "Guide du registre (ministère)"
-              },
-              {
-                "texte": "Un ruban de mesure"
-              },
-              {
-                "texte": "Ton téléphone"
-              }
-            ]
-          }
-        },
-        {
-          "type": "question",
-          "phrase": 9,
-          "params": {
-            "question": "Qui certifie le lieu ?",
-            "pistes": [
-              "Pas toi",
-              "Un professionnel"
-            ]
-          }
-        }
-      ],
-      "short": {
-        "debut_phrase": 1,
-        "fin_phrase": 8,
-        "accroche": "Le registre d'accessibilité : une obligation pour tout lieu public"
-      }
-    },
-    {
-      "titre": "Protection des données des clubs et associations",
-      "phrases": [
-        "Une idée : mettre en règle les petits clubs avec la protection des données.",
-        "Un club de sport garde des noms, des adresses et parfois des certificats médicaux.",
-        "Ce sont des données personnelles, et la loi demande de les protéger.",
-        "La CNIL, le gendarme des données, propose sur son site un modèle de registre pour noter ce que le club en fait.",
-        "Toi, tu remplis ce registre avec le bureau de l'association, activité par activité.",
-        "Tu vérifies aussi les formulaires d'inscription, les photos publiées et les mots de passe du tableur.",
-        "Le logiciel PIA de la CNIL, ouvert à tous, aide à analyser les risques.",
-        "Pour un site, tarteaucitron est un outil ouvert qui gère le bandeau de cookies, avec une version gratuite.",
-        "Les plus lourdes sanctions peuvent atteindre vingt millions d'euros ou quatre pour cent du chiffre d'affaires mondial.",
-        "Pour un petit club, le but est surtout d'éviter les erreurs simples.",
-        "Et tu ne donnes pas de conseil juridique : tu aides à organiser, un avocat tranche."
-      ],
-      "scenes": [
-        {
-          "type": "titre-geant",
-          "phrase": 1,
-          "params": {
-            "accents": [
-              "protection",
-              "données"
-            ]
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 4,
-          "params": {
-            "titre": "TES OUTILS",
-            "items": [
-              {
-                "texte": "Modèle de registre CNIL"
-              },
-              {
-                "texte": "Logiciel PIA"
-              },
-              {
-                "texte": "tarteaucitron"
-              }
-            ]
-          }
-        },
-        {
-          "type": "chiffre",
-          "phrase": 9,
-          "params": {
-            "valeur": 20,
-            "suffixe": " M€",
-            "etiquette": "plafond des plus lourdes sanctions"
-          }
-        }
-      ],
-      "short": {
-        "debut_phrase": 1,
-        "fin_phrase": 9,
-        "accroche": "Protection des données : ce que doit savoir un petit club"
-      }
-    },
-    {
-      "titre": "Dossiers de subvention pour petites associations",
-      "phrases": [
-        "Une idée : écrire les dossiers de subvention des petites associations.",
-        "Une association de quartier a de bonnes idées, mais pas toujours le temps de remplir des dossiers.",
-        "Aides-territoires est un site public qui aide à trouver des aides, et il oriente aussi les associations.",
-        "Le Compte Asso permet de déposer en ligne une demande de subvention à l'État.",
-        "Quand une subvention dépasse vingt-trois mille euros, une convention écrite est obligatoire.",
-        "Toi, tu aides à préparer le budget et à lire cette convention, sans signer à la place du président.",
-        "Le guide d'usage de la subvention, publié sur associations point gouv point fr, explique les règles.",
-        "Un dossier accepté n'est jamais certain, et tu dois le dire dès le premier rendez-vous.",
-        "Mieux vaut facturer ton temps de travail à un prix clair, annoncé avant de commencer."
-      ],
-      "scenes": [
-        {
-          "type": "titre-geant",
-          "phrase": 1,
-          "params": {
-            "accents": [
-              "dossiers",
-              "subvention"
-            ]
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 3,
-          "params": {
-            "titre": "TES OUTILS",
-            "items": [
-              {
-                "texte": "Aides-territoires"
-              },
-              {
-                "texte": "Le Compte Asso"
-              },
-              {
-                "texte": "Fiche service-public"
-              }
-            ]
-          }
-        },
-        {
-          "type": "chiffre",
-          "phrase": 5,
-          "params": {
-            "valeur": 23000,
-            "suffixe": " €",
-            "etiquette": "au-dessus, une convention est obligatoire"
-          }
-        },
-        {
-          "type": "question",
-          "phrase": 8,
-          "params": {
-            "question": "Un dossier est-il sûr d'être accepté ?",
-            "pistes": [
-              "Jamais sûr",
-              "À dire d'avance"
-            ]
-          }
-        }
-      ],
-      "short": {
-        "debut_phrase": 1,
-        "fin_phrase": 6,
-        "accroche": "Subvention d'association : quand une convention est-elle exigée ?"
-      }
-    },
-    {
-      "titre": "Automatiser devis et factures des artisans",
-      "phrases": [
-        "Une idée : aider les artisans à automatiser leurs devis et leurs factures.",
-        "Depuis le premier septembre deux mille vingt-six, toutes les entreprises doivent pouvoir recevoir des factures électroniques.",
-        "À partir du premier septembre deux mille vingt-sept, les petites entreprises et les micro-entreprises devront en émettre.",
-        "Un artisan préfère souvent travailler plutôt que remplir des papiers.",
-        "Les factures passent par une plateforme agréée par l'administration.",
-        "Toi, tu aides à choisir dans la liste officielle et à ranger les documents.",
-        "Make relie un devis accepté à une facture et à un rappel de paiement.",
-        "Make a une offre gratuite pour commencer, et l'outil libre de la description peut tourner chez toi.",
-        "L'IA peut lire un PDF et en sortir les montants, mais tu vérifies toujours les chiffres.",
-        "Ta limite : tu n'es pas comptable, tu ne donnes pas de conseil fiscal."
-      ],
-      "scenes": [
-        {
-          "type": "titre-geant",
-          "phrase": 1,
-          "params": {
-            "accents": [
-              "devis",
-              "factures"
-            ]
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 2,
-          "params": {
-            "titre": "CALENDRIER",
-            "items": [
-              {
-                "texte": "Sept. 2026 : recevoir"
-              },
-              {
-                "texte": "Sept. 2027 : émettre (petites entreprises)"
-              }
-            ]
-          }
-        },
-        {
-          "type": "question",
-          "phrase": 5,
-          "params": {
-            "question": "Par où passe la facture ?",
-            "pistes": [
-              "Une plateforme agréée"
-            ]
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 7,
-          "params": {
-            "titre": "TES OUTILS",
-            "items": [
-              {
-                "texte": "Liste des plateformes agréées"
-              },
-              {
-                "texte": "Make"
-              },
-              {
-                "texte": "n8n"
-              }
-            ]
-          }
-        },
-        {
-          "type": "question",
-          "phrase": 10,
-          "params": {
-            "question": "Conseil fiscal ?",
-            "pistes": [
-              "Pas toi"
-            ]
-          }
-        }
-      ],
-      "short": {
-        "debut_phrase": 1,
-        "fin_phrase": 5,
-        "accroche": "Facture électronique : ce qui change pour les artisans"
-      }
-    },
-    {
-      "titre": "Audit d'accessibilité express pour boutiques en ligne",
-      "phrases": [
-        "Une idée : l'audit d'accessibilité express pour les boutiques en ligne.",
-        "Depuis le vingt-huit juin deux mille vingt-cinq, une directive européenne s'applique aussi au commerce en ligne.",
-        "Cela veut dire qu'une personne aveugle doit pouvoir commander avec un lecteur d'écran.",
-        "Les toutes petites entreprises sont dispensées dans certains cas : moins de dix salariés et moins de deux millions d'euros de chiffre d'affaires.",
-        "Tes clients possibles sont donc les boutiques un peu plus grandes.",
-        "Pour auditer, WAVE est un outil en ligne qui repère des erreurs sur une page.",
-        "Lighthouse est déjà dans Chrome et donne une note d'accessibilité.",
-        "NVDA est un lecteur d'écran gratuit : tu écoutes la page comme le ferait une personne aveugle.",
-        "Le site officiel du référentiel RGAA explique les critères, même s'il vise d'abord le secteur public.",
-        "Limite : un outil automatique ne voit qu'une partie des défauts, il faut aussi tester à la main.",
-        "Et tu ne peux jamais promettre qu'un site sera en règle."
-      ],
-      "scenes": [
-        {
-          "type": "titre-geant",
-          "phrase": 1,
-          "params": {
-            "accents": [
-              "audit",
-              "accessibilité"
-            ]
-          }
-        },
-        {
-          "type": "chiffre",
-          "phrase": 4,
-          "params": {
-            "valeur": 10,
-            "suffixe": " salariés",
-            "etiquette": "en dessous, et moins de 2 M€ : dispensé dans certains cas"
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 6,
-          "params": {
-            "titre": "TES OUTILS",
-            "items": [
-              {
-                "texte": "WAVE"
-              },
-              {
-                "texte": "Lighthouse (Chrome)"
-              },
-              {
-                "texte": "NVDA"
-              },
-              {
-                "texte": "Site du RGAA"
-              }
-            ]
-          }
-        },
-        {
-          "type": "question",
-          "phrase": 10,
-          "params": {
-            "question": "Un outil voit-il tout ?",
-            "pistes": [
-              "Non",
-              "Test à la main"
-            ]
-          }
-        }
-      ],
-      "short": {
-        "debut_phrase": 1,
-        "fin_phrase": 6,
-        "accroche": "Boutiques en ligne : la règle d'accessibilité depuis juin 2025"
-      }
-    },
-    {
-      "titre": "Dossier numérique d'urgence pour les familles",
-      "phrases": [
-        "Une idée : préparer le dossier numérique d'urgence d'une famille.",
-        "Que deviennent ta messagerie, tes photos et tes mots de passe si tu disparais ?",
-        "La loi française permet de laisser des directives sur le sort de tes données après ta mort.",
-        "Google et Apple proposent aussi un réglage pour désigner quelqu'un de confiance.",
-        "Chez Google, il s'appelle le gestionnaire de compte inactif.",
-        "Chez Apple, c'est le contact légataire.",
-        "Un gestionnaire de mots de passe comme Bitwarden propose un accès d'urgence, mais il demande l'offre payante.",
-        "KeePassXC est un coffre libre et gratuit qui reste sur ton ordinateur.",
-        "Toi, tu fais l'inventaire avec la famille : quels comptes, quels appareils, qui sait quoi.",
-        "Règle d'or : tu ne gardes jamais les mots de passe des autres.",
-        "Et tu ne rédiges pas de testament : pour cela, il faut un notaire."
-      ],
-      "scenes": [
-        {
-          "type": "titre-geant",
-          "phrase": 1,
-          "params": {
-            "accents": [
-              "dossier",
-              "urgence"
-            ]
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 5,
-          "params": {
-            "titre": "TES OUTILS",
-            "items": [
-              {
-                "texte": "Gestionnaire de compte inactif"
-              },
-              {
-                "texte": "Contact légataire (Apple)"
-              },
-              {
-                "texte": "Bitwarden (accès d'urgence)"
-              },
-              {
-                "texte": "KeePassXC"
-              }
-            ]
-          }
-        },
-        {
-          "type": "question",
-          "phrase": 10,
-          "params": {
-            "question": "Qui garde les mots de passe ?",
-            "pistes": [
-              "La famille",
-              "Jamais toi"
-            ]
-          }
-        }
-      ],
-      "short": {
-        "debut_phrase": 1,
-        "fin_phrase": 8,
-        "accroche": "Que deviennent tes comptes en ligne si tu disparais ?"
-      }
-    },
-    {
-      "titre": "Bilan : les points communs",
-      "phrases": [
-        "Voilà des business nés d'une obligation, et c'est pour ça qu'on les propose rarement.",
-        "Dès que tu factures un client, tu as une activité indépendante.",
-        "Depuis le premier janvier deux mille vingt-trois, les formalités d'entreprise passent par un guichet unique en ligne.",
-        "Pour des prestations de services, le plafond de la micro-entreprise est de quatre-vingt-trois mille six cents euros en deux mille vingt-six.",
-        "Ces règles changent, alors relis toujours la page officielle.",
-        "Choisis une seule idée et teste-la avec une personne que tu connais, avant d'acheter quoi que ce soit.",
-        "Tous les outils et leurs adresses sont dans la description.",
-        "Dis-moi en commentaire quel thème tu veux ensuite."
-      ],
-      "scenes": [
-        {
-          "type": "titre-geant",
-          "phrase": 1,
-          "params": {
-            "accents": [
-              "business",
-              "obligation"
-            ]
-          }
-        },
-        {
-          "type": "liste",
-          "phrase": 3,
-          "params": {
-            "titre": "À RETENIR",
-            "items": [
-              {
-                "texte": "Guichet unique des formalités"
-              },
-              {
-                "texte": "Plafonds de la micro-entreprise"
-              }
-            ]
-          }
-        },
-        {
-          "type": "chiffre",
-          "phrase": 4,
-          "params": {
-            "valeur": 83600,
-            "suffixe": " €",
-            "etiquette": "plafond des prestations de services"
-          }
-        },
-        {
-          "type": "question",
-          "phrase": 8,
-          "params": {
-            "question": "Quel thème ensuite ?",
-            "pistes": [
-              "Cuisine",
-              "Maison",
-              "Argent"
-            ]
-          }
-        }
+     "type": "liste",
+     "phrase": 3,
+     "params": {
+      "titre": "POINTS COMMUNS",
+      "items": [
+       {
+        "texte": "Une obligation de la loi"
+       },
+       {
+        "texte": "Un client sans temps"
+       },
+       {
+        "texte": "Des outils gratuits"
+       }
       ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 7,
+     "params": {
+      "question": "Combien ça rapporte ?",
+      "pistes": [
+       "Aucune promesse",
+       "Du sérieux",
+       "Des tests"
+      ]
+     }
     }
-  ]
+   ]
+  },
+  {
+   "titre": "Étude de marché de quartier avec l'open data",
+   "phrases": [
+    "Une idée : l'étude de marché de quartier.",
+    "Quelqu'un veut ouvrir une boulangerie ou un salon de coiffure, et se demande s'il y a déjà trop de concurrents autour.",
+    "Les réponses existent, mais elles sont éparpillées dans des fichiers publics que personne ne regroupe.",
+    "Toi, tu les rassembles en un petit dossier clair, avec une carte.",
+    "L'Annuaire des entreprises et la base Sirene de l'Insee listent les commerces déjà installés dans la rue.",
+    "Le fichier des ventes immobilières, appelé DVF, montre les prix des logements autour.",
+    "Le comparateur de territoires de l'Insee donne l'âge, les revenus et les familles de la commune.",
+    "Overpass Turbo compte les écoles, les arrêts de bus et les concurrents à partir des données d'OpenStreetMap.",
+    "Le logiciel QGIS est libre et gratuit, et il dessine les cartes de ton dossier.",
+    "La règle de loi : ces données sont sous Licence Ouverte, donc tu peux les réutiliser, même pour vendre ton travail, en citant la source.",
+    "Le piège : les fichiers sont lourds, alors commence par une seule commune.",
+    "Et respecte la vie privée : certaines personnes ont demandé à ne pas être contactées pour de la prospection."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "étude",
+       "marché"
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 5,
+     "params": {
+      "titre": "TES OUTILS",
+      "items": [
+       {
+        "texte": "Annuaire des entreprises"
+       },
+       {
+        "texte": "Base Sirene"
+       },
+       {
+        "texte": "DVF"
+       },
+       {
+        "texte": "Overpass Turbo"
+       },
+       {
+        "texte": "QGIS"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 10,
+     "params": {
+      "question": "Peut-on réutiliser ces données ?",
+      "pistes": [
+       "Oui",
+       "Source citée",
+       "Vie privée"
+      ]
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 1,
+    "fin_phrase": 10,
+    "accroche": "Une étude de marché de quartier avec les données de l'État"
+   }
+  },
+  {
+   "titre": "Les marchés publics pour les petits artisans",
+   "phrases": [
+    "Une idée : aider les petits artisans à répondre aux marchés publics.",
+    "Une mairie ou une école cherche un peintre, un jardinier, un informaticien, et elle doit publier son besoin.",
+    "Un petit artisan n'ose pas toujours répondre, car les dossiers font peur.",
+    "Toi, tu surveilles les annonces et tu prépares le dossier avec lui.",
+    "Le BOAMP, le bulletin officiel des annonces des marchés publics, et le portail des marchés publics de l'État listent les offres.",
+    "Même une micro-entreprise peut répondre à un marché public.",
+    "Pour la candidature, il existe le DUME, un formulaire européen en ligne qui évite de redonner ce que l'administration connaît déjà.",
+    "Pour certains marchés, le numéro SIRET suffit pour candidater.",
+    "Mais chaque marché a son règlement : lis-le toujours en entier.",
+    "Le piège : une offre qui ne respecte pas le règlement à la lettre peut être refusée.",
+    "Et tu ne promets jamais qu'un artisan va gagner un marché."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "petits",
+       "artisans"
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 5,
+     "params": {
+      "titre": "TES OUTILS",
+      "items": [
+       {
+        "texte": "BOAMP"
+       },
+       {
+        "texte": "Portail des marchés publics"
+       },
+       {
+        "texte": "DUME (formulaire en ligne)"
+       },
+       {
+        "texte": "Fiche service-public"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 9,
+     "params": {
+      "question": "Le SIRET suffit-il ?",
+      "pistes": [
+       "Parfois",
+       "Lis le règlement"
+      ]
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 1,
+    "fin_phrase": 8,
+    "accroche": "Marchés publics : une micro-entreprise peut-elle répondre ?"
+   }
+  },
+  {
+   "titre": "La certification Qualiopi pour petits formateurs",
+   "phrases": [
+    "Une idée : aider les petits organismes de formation à préparer la certification Qualiopi.",
+    "Un formateur indépendant qui veut des financements publics ou mutualisés doit avoir cette certification.",
+    "Elle est délivrée par un organisme certificateur reconnu, pas par toi.",
+    "Toi, tu prépares les preuves : programmes, évaluations, suivi des stagiaires, traitement des réclamations.",
+    "L'État et France compétences publient le référentiel officiel, que tu peux lire en ligne.",
+    "Pour démarrer, un organisme déclare son activité en ligne sur Mon Activité Formation.",
+    "Il reçoit alors un numéro de déclaration d'activité, à mettre sur ses documents.",
+    "Le piège : tu prépares l'audit, mais tu ne peux pas le passer à la place du formateur.",
+    "Le client choisit lui-même son organisme certificateur dans la liste officielle.",
+    "Aucun résultat n'est promis : l'audit reste une décision du certificateur."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "certification",
+       "Qualiopi"
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 5,
+     "params": {
+      "titre": "TES OUTILS",
+      "items": [
+       {
+        "texte": "Référentiel officiel Qualiopi"
+       },
+       {
+        "texte": "Mon Activité Formation"
+       },
+       {
+        "texte": "Fiche service-public"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 8,
+     "params": {
+      "question": "Qui passe l'audit ?",
+      "pistes": [
+       "Le formateur",
+       "Pas toi"
+      ]
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 1,
+    "fin_phrase": 7,
+    "accroche": "Qualiopi : qui doit avoir cette certification ?"
+   }
+  },
+  {
+   "titre": "Le pack du premier salarié",
+   "phrases": [
+    "Une idée : le pack du premier salarié, pour les petits patrons.",
+    "Quand on embauche pour la première fois, on découvre une pile de papiers à remplir.",
+    "Le premier, c'est le registre unique du personnel, ouvert dès l'embauche du premier salarié.",
+    "Des mentions oubliées peuvent coûter jusqu'à sept cent cinquante euros d'amende par salarié concerné.",
+    "Ensuite vient le document unique des risques, obligatoire dès le premier salarié.",
+    "Le patron doit le garder pendant quarante ans, avec toutes ses versions.",
+    "Sans document, l'amende peut aller jusqu'à mille cinq cents euros pour une personne.",
+    "OiRA propose des outils en ligne par métier, qui se téléchargent gratuitement, pour le remplir.",
+    "Il faut aussi afficher ou communiquer certaines informations, comme les coordonnées de l'inspection du travail.",
+    "Toi, tu fais le tour des papiers avec le patron et tu les ranges dans un dossier clair.",
+    "Ta limite : le patron reste responsable, et tu ne donnes pas de conseil juridique."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "pack",
+       "salarié"
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 4,
+     "params": {
+      "valeur": 750,
+      "suffixe": " €",
+      "etiquette": "amende maximale par salarié concerné"
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 8,
+     "params": {
+      "titre": "TES OUTILS",
+      "items": [
+       {
+        "texte": "OiRA (par métier)"
+       },
+       {
+        "texte": "Fiche INRS"
+       },
+       {
+        "texte": "Fiche service-public"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 11,
+     "params": {
+      "question": "Qui reste responsable ?",
+      "pistes": [
+       "Le patron"
+      ]
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 1,
+    "fin_phrase": 7,
+    "accroche": "Premier salarié : les papiers obligatoires et leurs amendes"
+   }
+  },
+  {
+   "titre": "Registre d'accessibilité des commerces",
+   "phrases": [
+    "Une idée : le registre d'accessibilité des petits commerces.",
+    "Tout lieu qui reçoit du public doit mettre à disposition un registre public d'accessibilité.",
+    "Il dit au public ce qui est accessible : l'entrée, la caisse, les toilettes, le personnel formé.",
+    "Un petit commerçant n'a pas toujours le temps de le remplir.",
+    "Toi, tu passes une heure sur place, tu mesures la porte et la rampe, tu prends des photos.",
+    "Ensuite, tu décris le lieu sur Acceslibre, la plateforme publique où chacun peut renseigner l'accessibilité d'un lieu.",
+    "Un simple ruban de mesure suffit, et le guide du ministère de la Transition écologique explique le contenu du registre.",
+    "Le registre doit pouvoir être consulté à l'accueil, sur papier ou en version numérique.",
+    "Attention aux faux courriers : certaines sociétés démarchent les commerçants avec des lettres qui ressemblent à du courrier officiel.",
+    "Toi, tu restes simple : tu aides à remplir, tu ne certifies pas qu'un lieu respecte la loi.",
+    "En cas de doute sur des travaux, le commerçant demande l'avis d'un professionnel du bâtiment."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "registre",
+       "accessibilité"
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 5,
+     "params": {
+      "titre": "TES OUTILS",
+      "items": [
+       {
+        "texte": "Acceslibre"
+       },
+       {
+        "texte": "Guide du registre (ministère)"
+       },
+       {
+        "texte": "Un ruban de mesure"
+       },
+       {
+        "texte": "Ton téléphone"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 9,
+     "params": {
+      "question": "Qui certifie le lieu ?",
+      "pistes": [
+       "Pas toi",
+       "Un professionnel"
+      ]
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 1,
+    "fin_phrase": 8,
+    "accroche": "Le registre d'accessibilité : une obligation pour tout lieu public"
+   }
+  },
+  {
+   "titre": "Protection des données des clubs et associations",
+   "phrases": [
+    "Une idée : mettre en règle les petits clubs avec la protection des données.",
+    "Un club de sport garde des noms, des adresses et parfois des certificats médicaux.",
+    "Ce sont des données personnelles, et la loi demande de les protéger.",
+    "La CNIL, le gendarme des données, propose sur son site un modèle de registre pour noter ce que le club en fait.",
+    "Toi, tu remplis ce registre avec le bureau de l'association, activité par activité.",
+    "Tu vérifies aussi les formulaires d'inscription, les photos publiées et les mots de passe du tableur.",
+    "Le logiciel PIA de la CNIL, ouvert à tous, aide à analyser les risques.",
+    "Pour un site, tarteaucitron est un outil ouvert qui gère le bandeau de cookies, avec une version gratuite.",
+    "Les plus lourdes sanctions peuvent atteindre vingt millions d'euros ou quatre pour cent du chiffre d'affaires mondial.",
+    "Pour un petit club, le but est surtout d'éviter les erreurs simples.",
+    "Et tu ne donnes pas de conseil juridique : tu aides à organiser, un avocat tranche."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "protection",
+       "données"
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 4,
+     "params": {
+      "titre": "TES OUTILS",
+      "items": [
+       {
+        "texte": "Modèle de registre CNIL"
+       },
+       {
+        "texte": "Logiciel PIA"
+       },
+       {
+        "texte": "tarteaucitron"
+       }
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 9,
+     "params": {
+      "valeur": 20,
+      "suffixe": " M€",
+      "etiquette": "plafond des plus lourdes sanctions"
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 1,
+    "fin_phrase": 9,
+    "accroche": "Protection des données : ce que doit savoir un petit club"
+   }
+  },
+  {
+   "titre": "Dossiers de subvention pour petites associations",
+   "phrases": [
+    "Une idée : écrire les dossiers de subvention des petites associations.",
+    "Une association de quartier a de bonnes idées, mais pas toujours le temps de remplir des dossiers.",
+    "Aides-territoires est un site public qui aide à trouver des aides, et il oriente aussi les associations.",
+    "Le Compte Asso permet de déposer en ligne une demande de subvention à l'État.",
+    "Quand une subvention dépasse vingt-trois mille euros, une convention écrite est obligatoire.",
+    "Toi, tu aides à préparer le budget et à lire cette convention, sans signer à la place du président.",
+    "Le guide d'usage de la subvention, publié sur associations point gouv point fr, explique les règles.",
+    "Un dossier accepté n'est jamais certain, et tu dois le dire dès le premier rendez-vous.",
+    "Mieux vaut facturer ton temps de travail à un prix clair, annoncé avant de commencer."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "dossiers",
+       "subvention"
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 3,
+     "params": {
+      "titre": "TES OUTILS",
+      "items": [
+       {
+        "texte": "Aides-territoires"
+       },
+       {
+        "texte": "Le Compte Asso"
+       },
+       {
+        "texte": "Fiche service-public"
+       }
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 5,
+     "params": {
+      "valeur": 23000,
+      "suffixe": " €",
+      "etiquette": "au-dessus, une convention est obligatoire"
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 8,
+     "params": {
+      "question": "Un dossier est-il sûr d'être accepté ?",
+      "pistes": [
+       "Jamais sûr",
+       "À dire d'avance"
+      ]
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 1,
+    "fin_phrase": 6,
+    "accroche": "Subvention d'association : quand une convention est-elle exigée ?"
+   }
+  },
+  {
+   "titre": "Automatiser devis et factures des artisans",
+   "phrases": [
+    "Une idée : aider les artisans à automatiser leurs devis et leurs factures.",
+    "Depuis le premier septembre deux mille vingt-six, toutes les entreprises doivent pouvoir recevoir des factures électroniques.",
+    "À partir du premier septembre deux mille vingt-sept, les petites entreprises et les micro-entreprises devront en émettre.",
+    "Un artisan préfère souvent travailler plutôt que remplir des papiers.",
+    "Les factures passent par une plateforme agréée par l'administration.",
+    "Toi, tu aides à choisir dans la liste officielle et à ranger les documents.",
+    "Make relie un devis accepté à une facture et à un rappel de paiement.",
+    "Make a une offre gratuite pour commencer, et l'outil libre de la description peut tourner chez toi.",
+    "L'IA peut lire un PDF et en sortir les montants, mais tu vérifies toujours les chiffres.",
+    "Ta limite : tu n'es pas comptable, tu ne donnes pas de conseil fiscal."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "devis",
+       "factures"
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 2,
+     "params": {
+      "titre": "CALENDRIER",
+      "items": [
+       {
+        "texte": "Sept. 2026 : recevoir"
+       },
+       {
+        "texte": "Sept. 2027 : émettre (petites entreprises)"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 5,
+     "params": {
+      "question": "Par où passe la facture ?",
+      "pistes": [
+       "Une plateforme agréée"
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 7,
+     "params": {
+      "titre": "TES OUTILS",
+      "items": [
+       {
+        "texte": "Liste des plateformes agréées"
+       },
+       {
+        "texte": "Make"
+       },
+       {
+        "texte": "n8n"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 10,
+     "params": {
+      "question": "Conseil fiscal ?",
+      "pistes": [
+       "Pas toi"
+      ]
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 1,
+    "fin_phrase": 5,
+    "accroche": "Facture électronique : ce qui change pour les artisans"
+   }
+  },
+  {
+   "titre": "Audit d'accessibilité express pour boutiques en ligne",
+   "phrases": [
+    "Une idée : l'audit d'accessibilité express pour les boutiques en ligne.",
+    "Depuis le vingt-huit juin deux mille vingt-cinq, une directive européenne s'applique aussi au commerce en ligne.",
+    "Cela veut dire qu'une personne aveugle doit pouvoir commander avec un lecteur d'écran.",
+    "Les toutes petites entreprises sont dispensées dans certains cas : moins de dix salariés et moins de deux millions d'euros de chiffre d'affaires.",
+    "Tes clients possibles sont donc les boutiques un peu plus grandes.",
+    "Pour auditer, WAVE est un outil en ligne qui repère des erreurs sur une page.",
+    "Lighthouse est déjà dans Chrome et donne une note d'accessibilité.",
+    "NVDA est un lecteur d'écran gratuit : tu écoutes la page comme le ferait une personne aveugle.",
+    "Le site officiel du référentiel RGAA explique les critères, même s'il vise d'abord le secteur public.",
+    "Limite : un outil automatique ne voit qu'une partie des défauts, il faut aussi tester à la main.",
+    "Et tu ne peux jamais promettre qu'un site sera en règle."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "audit",
+       "accessibilité"
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 4,
+     "params": {
+      "valeur": 10,
+      "suffixe": " salariés",
+      "etiquette": "en dessous, et moins de 2 M€ : dispensé dans certains cas"
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 6,
+     "params": {
+      "titre": "TES OUTILS",
+      "items": [
+       {
+        "texte": "WAVE"
+       },
+       {
+        "texte": "Lighthouse (Chrome)"
+       },
+       {
+        "texte": "NVDA"
+       },
+       {
+        "texte": "Site du RGAA"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 10,
+     "params": {
+      "question": "Un outil voit-il tout ?",
+      "pistes": [
+       "Non",
+       "Test à la main"
+      ]
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 1,
+    "fin_phrase": 6,
+    "accroche": "Boutiques en ligne : la règle d'accessibilité depuis juin 2025"
+   }
+  },
+  {
+   "titre": "Dossier numérique d'urgence pour les familles",
+   "phrases": [
+    "Une idée : préparer le dossier numérique d'urgence d'une famille.",
+    "Que deviennent ta messagerie, tes photos et tes mots de passe si tu disparais ?",
+    "La loi française permet de laisser des directives sur le sort de tes données après ta mort.",
+    "Google et Apple proposent aussi un réglage pour désigner quelqu'un de confiance.",
+    "Chez Google, il s'appelle le gestionnaire de compte inactif.",
+    "Chez Apple, c'est le contact légataire.",
+    "Un gestionnaire de mots de passe comme Bitwarden propose un accès d'urgence, mais il demande l'offre payante.",
+    "KeePassXC est un coffre libre et gratuit qui reste sur ton ordinateur.",
+    "Toi, tu fais l'inventaire avec la famille : quels comptes, quels appareils, qui sait quoi.",
+    "Règle d'or : tu ne gardes jamais les mots de passe des autres.",
+    "Et tu ne rédiges pas de testament : pour cela, il faut un notaire."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "dossier",
+       "urgence"
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 5,
+     "params": {
+      "titre": "TES OUTILS",
+      "items": [
+       {
+        "texte": "Gestionnaire de compte inactif"
+       },
+       {
+        "texte": "Contact légataire (Apple)"
+       },
+       {
+        "texte": "Bitwarden (accès d'urgence)"
+       },
+       {
+        "texte": "KeePassXC"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 10,
+     "params": {
+      "question": "Qui garde les mots de passe ?",
+      "pistes": [
+       "La famille",
+       "Jamais toi"
+      ]
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 1,
+    "fin_phrase": 8,
+    "accroche": "Que deviennent tes comptes en ligne si tu disparais ?"
+   }
+  },
+  {
+   "titre": "Bilan : les points communs",
+   "phrases": [
+    "Voilà des business nés d'une obligation, et c'est pour ça qu'on les propose rarement.",
+    "Dès que tu factures un client, tu as une activité indépendante.",
+    "Depuis le premier janvier deux mille vingt-trois, les formalités d'entreprise passent par un guichet unique en ligne.",
+    "Pour des prestations de services, le plafond de la micro-entreprise est de quatre-vingt-trois mille six cents euros en deux mille vingt-six.",
+    "Ces règles changent, alors relis toujours la page officielle.",
+    "Choisis une seule idée et teste-la avec une personne que tu connais, avant d'acheter quoi que ce soit.",
+    "Tous les outils et leurs adresses sont dans la description.",
+    "Dis-moi en commentaire quel thème tu veux ensuite."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "business",
+       "obligation"
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 3,
+     "params": {
+      "titre": "À RETENIR",
+      "items": [
+       {
+        "texte": "Guichet unique des formalités"
+       },
+       {
+        "texte": "Plafonds de la micro-entreprise"
+       }
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 4,
+     "params": {
+      "valeur": 83600,
+      "suffixe": " €",
+      "etiquette": "plafond des prestations de services"
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 8,
+     "params": {
+      "question": "Quel thème ensuite ?",
+      "pistes": [
+       "Cuisine",
+       "Maison",
+       "Argent"
+      ]
+     }
+    }
+   ]
+  }
+ ]
 }

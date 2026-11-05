@@ -1,0 +1,56 @@
+{
+ "id": "10-obligations-de-la-loi-qui-creent-des-business-s8",
+ "titre": "Facture électronique : ce qui change pour les artisans",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "AUTOMATISER DEVIS FACTURES ARTISANS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Une idée : aider les artisans à automatiser leurs devis et leurs factures.",
+  "Depuis le premier septembre deux mille vingt-six, toutes les entreprises doivent pouvoir recevoir des factures électroniques.",
+  "À partir du premier septembre deux mille vingt-sept, les petites entreprises et les micro-entreprises devront en émettre.",
+  "Un artisan préfère souvent travailler plutôt que remplir des papiers.",
+  "Les factures passent par une plateforme agréée par l'administration."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "devis",
+     "factures"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 2,
+   "params": {
+    "titre": "CALENDRIER",
+    "items": [
+     {
+      "texte": "Sept. 2026 : recevoir"
+     },
+     {
+      "texte": "Sept. 2027 : émettre (petites entreprises)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 5,
+   "params": {
+    "question": "Par où passe la facture ?",
+    "pistes": [
+     "Une plateforme agréée"
+    ]
+   }
+  }
+ ]
+}

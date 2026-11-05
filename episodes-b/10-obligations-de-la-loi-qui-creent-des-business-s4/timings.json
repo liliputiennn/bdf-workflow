@@ -1,0 +1,502 @@
+{
+ "total": 25.544,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.123,
+   "words": [
+    {
+     "w": "Une",
+     "start": 0.15,
+     "end": 0.341
+    },
+    {
+     "w": "idée",
+     "start": 0.341,
+     "end": 0.577
+    },
+    {
+     "w": "le",
+     "start": 0.85,
+     "end": 0.923
+    },
+    {
+     "w": "pack",
+     "start": 0.923,
+     "end": 1.141
+    },
+    {
+     "w": "du",
+     "start": 1.141,
+     "end": 1.286
+    },
+    {
+     "w": "premier",
+     "start": 1.286,
+     "end": 1.486
+    },
+    {
+     "w": "salarié,",
+     "start": 1.486,
+     "end": 2.014
+    },
+    {
+     "w": "pour",
+     "start": 2.25,
+     "end": 2.377
+    },
+    {
+     "w": "les",
+     "start": 2.377,
+     "end": 2.468
+    },
+    {
+     "w": "petits",
+     "start": 2.468,
+     "end": 2.65
+    },
+    {
+     "w": "patrons.",
+     "start": 2.65,
+     "end": 2.941
+    }
+   ]
+  },
+  {
+   "start": 3.25,
+   "end": 6.72,
+   "words": [
+    {
+     "w": "Quand",
+     "start": 3.25,
+     "end": 3.392
+    },
+    {
+     "w": "on",
+     "start": 3.392,
+     "end": 3.533
+    },
+    {
+     "w": "embauche",
+     "start": 3.533,
+     "end": 3.852
+    },
+    {
+     "w": "pour",
+     "start": 3.852,
+     "end": 3.958
+    },
+    {
+     "w": "la",
+     "start": 3.958,
+     "end": 4.064
+    },
+    {
+     "w": "première",
+     "start": 4.064,
+     "end": 4.241
+    },
+    {
+     "w": "fois,",
+     "start": 4.241,
+     "end": 4.524
+    },
+    {
+     "w": "on",
+     "start": 4.861,
+     "end": 4.932
+    },
+    {
+     "w": "découvre",
+     "start": 4.932,
+     "end": 5.268
+    },
+    {
+     "w": "une",
+     "start": 5.268,
+     "end": 5.356
+    },
+    {
+     "w": "pile",
+     "start": 5.356,
+     "end": 5.516
+    },
+    {
+     "w": "de",
+     "start": 5.516,
+     "end": 5.64
+    },
+    {
+     "w": "papiers",
+     "start": 5.64,
+     "end": 5.924
+    },
+    {
+     "w": "à",
+     "start": 5.924,
+     "end": 6.154
+    },
+    {
+     "w": "remplir.",
+     "start": 6.154,
+     "end": 6.649
+    }
+   ]
+  },
+  {
+   "start": 6.847,
+   "end": 10.802,
+   "words": [
+    {
+     "w": "Le",
+     "start": 6.847,
+     "end": 7.002
+    },
+    {
+     "w": "premier,",
+     "start": 7.002,
+     "end": 7.256
+    },
+    {
+     "w": "c'est",
+     "start": 7.474,
+     "end": 7.565
+    },
+    {
+     "w": "le",
+     "start": 7.565,
+     "end": 7.638
+    },
+    {
+     "w": "registre",
+     "start": 7.638,
+     "end": 8.02
+    },
+    {
+     "w": "unique",
+     "start": 8.02,
+     "end": 8.147
+    },
+    {
+     "w": "du",
+     "start": 8.147,
+     "end": 8.293
+    },
+    {
+     "w": "personnel,",
+     "start": 8.293,
+     "end": 8.711
+    },
+    {
+     "w": "ouvert",
+     "start": 8.984,
+     "end": 9.274
+    },
+    {
+     "w": "dès",
+     "start": 9.274,
+     "end": 9.565
+    },
+    {
+     "w": "l'embauche",
+     "start": 9.565,
+     "end": 9.965
+    },
+    {
+     "w": "du",
+     "start": 9.965,
+     "end": 10.074
+    },
+    {
+     "w": "premier",
+     "start": 10.074,
+     "end": 10.311
+    },
+    {
+     "w": "salarié.",
+     "start": 10.311,
+     "end": 10.784
+    }
+   ]
+  },
+  {
+   "start": 10.929,
+   "end": 14.624,
+   "words": [
+    {
+     "w": "Des",
+     "start": 10.929,
+     "end": 11.094
+    },
+    {
+     "w": "mentions",
+     "start": 11.094,
+     "end": 11.337
+    },
+    {
+     "w": "oubliées",
+     "start": 11.337,
+     "end": 11.824
+    },
+    {
+     "w": "peuvent",
+     "start": 11.824,
+     "end": 11.964
+    },
+    {
+     "w": "coûter",
+     "start": 11.964,
+     "end": 12.242
+    },
+    {
+     "w": "jusqu'à",
+     "start": 12.242,
+     "end": 12.537
+    },
+    {
+     "w": "sept",
+     "start": 12.537,
+     "end": 12.676
+    },
+    {
+     "w": "cent",
+     "start": 12.676,
+     "end": 12.834
+    },
+    {
+     "w": "cinquante",
+     "start": 12.834,
+     "end": 13.181
+    },
+    {
+     "w": "euros",
+     "start": 13.181,
+     "end": 13.303
+    },
+    {
+     "w": "d'amende",
+     "start": 13.303,
+     "end": 13.651
+    },
+    {
+     "w": "par",
+     "start": 13.651,
+     "end": 13.807
+    },
+    {
+     "w": "salarié",
+     "start": 13.807,
+     "end": 14.154
+    },
+    {
+     "w": "concerné.",
+     "start": 14.154,
+     "end": 14.607
+    }
+   ]
+  },
+  {
+   "start": 14.752,
+   "end": 18.694,
+   "words": [
+    {
+     "w": "Ensuite",
+     "start": 14.752,
+     "end": 15.056
+    },
+    {
+     "w": "vient",
+     "start": 15.254,
+     "end": 15.397
+    },
+    {
+     "w": "le",
+     "start": 15.397,
+     "end": 15.523
+    },
+    {
+     "w": "document",
+     "start": 15.523,
+     "end": 15.863
+    },
+    {
+     "w": "unique",
+     "start": 15.863,
+     "end": 16.221
+    },
+    {
+     "w": "des",
+     "start": 16.221,
+     "end": 16.436
+    },
+    {
+     "w": "risques,",
+     "start": 16.436,
+     "end": 16.813
+    },
+    {
+     "w": "obligatoire",
+     "start": 16.813,
+     "end": 17.619
+    },
+    {
+     "w": "dès",
+     "start": 17.619,
+     "end": 17.834
+    },
+    {
+     "w": "le",
+     "start": 17.834,
+     "end": 17.96
+    },
+    {
+     "w": "premier",
+     "start": 17.96,
+     "end": 18.139
+    },
+    {
+     "w": "salarié.",
+     "start": 18.139,
+     "end": 18.623
+    }
+   ]
+  },
+  {
+   "start": 18.822,
+   "end": 21.753,
+   "words": [
+    {
+     "w": "Le",
+     "start": 18.822,
+     "end": 18.98
+    },
+    {
+     "w": "patron",
+     "start": 18.98,
+     "end": 19.225
+    },
+    {
+     "w": "doit",
+     "start": 19.225,
+     "end": 19.401
+    },
+    {
+     "w": "le",
+     "start": 19.401,
+     "end": 19.524
+    },
+    {
+     "w": "garder",
+     "start": 19.524,
+     "end": 19.769
+    },
+    {
+     "w": "pendant",
+     "start": 19.769,
+     "end": 19.98
+    },
+    {
+     "w": "quarante",
+     "start": 19.98,
+     "end": 20.419
+    },
+    {
+     "w": "ans,",
+     "start": 20.419,
+     "end": 20.577
+    },
+    {
+     "w": "avec",
+     "start": 20.7,
+     "end": 20.945
+    },
+    {
+     "w": "toutes",
+     "start": 20.945,
+     "end": 21.226
+    },
+    {
+     "w": "ses",
+     "start": 21.226,
+     "end": 21.314
+    },
+    {
+     "w": "versions.",
+     "start": 21.314,
+     "end": 21.542
+    }
+   ]
+  },
+  {
+   "start": 21.88,
+   "end": 25.244,
+   "words": [
+    {
+     "w": "Sans",
+     "start": 21.88,
+     "end": 22.105
+    },
+    {
+     "w": "document,",
+     "start": 22.105,
+     "end": 22.434
+    },
+    {
+     "w": "l'amende",
+     "start": 22.694,
+     "end": 22.955
+    },
+    {
+     "w": "peut",
+     "start": 22.955,
+     "end": 23.094
+    },
+    {
+     "w": "aller",
+     "start": 23.094,
+     "end": 23.25
+    },
+    {
+     "w": "jusqu'à",
+     "start": 23.25,
+     "end": 23.614
+    },
+    {
+     "w": "mille",
+     "start": 23.614,
+     "end": 23.891
+    },
+    {
+     "w": "cinq",
+     "start": 23.891,
+     "end": 24.013
+    },
+    {
+     "w": "cents",
+     "start": 24.013,
+     "end": 24.204
+    },
+    {
+     "w": "euros",
+     "start": 24.204,
+     "end": 24.464
+    },
+    {
+     "w": "pour",
+     "start": 24.464,
+     "end": 24.637
+    },
+    {
+     "w": "une",
+     "start": 24.637,
+     "end": 24.758
+    },
+    {
+     "w": "personne.",
+     "start": 24.758,
+     "end": 25.001
+    }
+   ]
+  }
+ ]
+}

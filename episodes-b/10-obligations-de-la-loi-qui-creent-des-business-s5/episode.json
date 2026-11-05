@@ -1,0 +1,55 @@
+{
+ "id": "10-obligations-de-la-loi-qui-creent-des-business-s5",
+ "titre": "Le registre d'accessibilité : une obligation pour tout lieu public",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "REGISTRE ACCESSIBILITÉ COMMERCES",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Une idée : le registre d'accessibilité des petits commerces.",
+  "Tout lieu qui reçoit du public doit mettre à disposition un registre public d'accessibilité.",
+  "Il dit au public ce qui est accessible : l'entrée, la caisse, les toilettes, le personnel formé.",
+  "Un petit commerçant n'a pas toujours le temps de le remplir.",
+  "Toi, tu passes une heure sur place, tu mesures la porte et la rampe, tu prends des photos.",
+  "Ensuite, tu décris le lieu sur Acceslibre, la plateforme publique où chacun peut renseigner l'accessibilité d'un lieu.",
+  "Un simple ruban de mesure suffit, et le guide du ministère de la Transition écologique explique le contenu du registre.",
+  "Le registre doit pouvoir être consulté à l'accueil, sur papier ou en version numérique."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "registre",
+     "accessibilité"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "Acceslibre"
+     },
+     {
+      "texte": "Guide du registre (ministère)"
+     },
+     {
+      "texte": "Un ruban de mesure"
+     },
+     {
+      "texte": "Ton téléphone"
+     }
+    ]
+   }
+  }
+ ]
+}

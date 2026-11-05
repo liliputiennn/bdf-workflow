@@ -1,0 +1,77 @@
+{
+ "long": "10-obligations-de-la-loi-qui-creent-des-business",
+ "shorts": [
+  {
+   "id": "10-obligations-de-la-loi-qui-creent-des-business-s1",
+   "chapitre": 2,
+   "phrases": 10,
+   "duree_s": 40.732,
+   "notes": []
+  },
+  {
+   "id": "10-obligations-de-la-loi-qui-creent-des-business-s2",
+   "chapitre": 3,
+   "phrases": 8,
+   "duree_s": 30.504,
+   "notes": []
+  },
+  {
+   "id": "10-obligations-de-la-loi-qui-creent-des-business-s3",
+   "chapitre": 4,
+   "phrases": 7,
+   "duree_s": 28.664,
+   "notes": []
+  },
+  {
+   "id": "10-obligations-de-la-loi-qui-creent-des-business-s4",
+   "chapitre": 5,
+   "phrases": 7,
+   "duree_s": 25.544,
+   "notes": []
+  },
+  {
+   "id": "10-obligations-de-la-loi-qui-creent-des-business-s5",
+   "chapitre": 6,
+   "phrases": 8,
+   "duree_s": 32.191,
+   "notes": []
+  },
+  {
+   "id": "10-obligations-de-la-loi-qui-creent-des-business-s6",
+   "chapitre": 7,
+   "phrases": 9,
+   "duree_s": 35.598,
+   "notes": []
+  },
+  {
+   "id": "10-obligations-de-la-loi-qui-creent-des-business-s7",
+   "chapitre": 8,
+   "phrases": 6,
+   "duree_s": 21.839,
+   "notes": []
+  },
+  {
+   "id": "10-obligations-de-la-loi-qui-creent-des-business-s8",
+   "chapitre": 9,
+   "phrases": 5,
+   "duree_s": 18.945,
+   "notes": []
+  },
+  {
+   "id": "10-obligations-de-la-loi-qui-creent-des-business-s10",
+   "chapitre": 11,
+   "phrases": 8,
+   "duree_s": 27.076,
+   "notes": []
+  }
+ ],
+ "ignores": [
+  {
+   "id": "10-obligations-de-la-loi-qui-creent-des-business-s9",
+   "chapitre": 10,
+   "raison": [
+    "phrase 4 : trop longue (145 caractères)"
+   ]
+  }
+ ]
+}

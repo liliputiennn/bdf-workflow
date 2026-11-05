@@ -1,0 +1,18 @@
+[
+ {
+  "claim": "Quand une subvention dépasse 23 000 euros, l'organisme qui l'attribue doit conclure une convention avec l'association.",
+  "valeur": "23 000 €",
+  "phrase": 5,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F3180",
+   "https://associations.gouv.fr/faq/thematiques/subventions/seuil"
+  ],
+  "check": [
+   "23 000"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F3180",
+   "https://associations.gouv.fr/faq/thematiques/subventions/seuil"
+  ]
+ }
+]
