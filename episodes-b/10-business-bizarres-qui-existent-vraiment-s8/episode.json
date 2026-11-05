@@ -1,0 +1,68 @@
+{
+ "id": "10-business-bizarres-qui-existent-vraiment-s8",
+ "titre": "Piégeur agréé : la formation et l'agrément exigés",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "PIÉGEUR AGRÉÉ",
+  "icone": "panier"
+ },
+ "phrases": [
+  "Autre métier : piégeur agréé, qui capture les animaux qui causent des dégâts.",
+  "Des ragondins creusent des berges, et des propriétaires cherchent quelqu'un de compétent.",
+  "Pour utiliser des pièges contre certaines espèces, il faut un agrément délivré par le préfet.",
+  "Cet agrément s'obtient après une formation d'au moins seize heures.",
+  "Ces formations sont proposées par les fédérations de chasseurs.",
+  "Toutes les bêtes ne relèvent pas de la même règle : même pour une taupe, renseigne-toi, car la règle dépend de l'espèce.",
+  "Un piège doit être choisi et posé selon des règles précises, pour ne pas blesser d'autres animaux.",
+  "Le terrain compte : chaque propriétaire doit donner son accord avant que tu poses un piège."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "piégeur",
+     "agréé"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 3,
+   "params": {
+    "titre": "LES ÉTAPES",
+    "items": [
+     {
+      "texte": "Une formation"
+     },
+     {
+      "texte": "Un agrément du préfet"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 4,
+   "params": {
+    "valeur": 16,
+    "suffixe": " heures",
+    "etiquette": "de formation au minimum"
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 6,
+   "params": {
+    "question": "Et la taupe ?",
+    "pistes": [
+     "Selon l'espèce"
+    ]
+   }
+  }
+ ]
+}

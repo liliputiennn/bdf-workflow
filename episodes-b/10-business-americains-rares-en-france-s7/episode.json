@@ -1,0 +1,64 @@
+{
+ "id": "10-business-americains-rares-en-france-s7",
+ "titre": "Réparer les vélos chez le client : et la loi du marquage.",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "RÉPARER VÉLOS DOMICILE",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Un vélo qui grince ou dont le frein ne marche plus finit souvent au fond du garage.",
+  "Aux États-Unis, des mécaniciens viennent en camionnette réparer les vélos devant chez le client.",
+  "Tu règles les freins, tu changes une chaîne, tu répares un pneu, et tu repars.",
+  "Le point de loi surprenant : le marquage antivol des vélos vendus par des professionnels.",
+  "Il est obligatoire depuis le premier janvier deux mille vingt et un pour les vélos neufs.",
+  "Pour les vélos d'occasion, c'est depuis le premier juillet deux mille vingt et un.",
+  "Donc si tu revends des vélos remis en état, tu dois les faire marquer.",
+  "Des organismes agréés réalisent ce marquage.",
+  "Un bon mécanicien sait aussi refuser de réparer un vélo trop dangereux.",
+  "Matériel : un pied d'atelier pliant, des clés, une pompe, des rustines et des pièces courantes.",
+  "Le piège : chaque vélo a ses pièces, et un stock complet coûte cher."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "vélo",
+     "frein"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "MARQUAGE ANTIVOL",
+    "items": [
+     {
+      "texte": "1er janvier 2021 : vélos neufs"
+     },
+     {
+      "texte": "1er juillet 2021 : vélos d'occasion"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 10,
+   "params": {
+    "question": "Quel stock ?",
+    "pistes": [
+     "Pièces courantes",
+     "Outils",
+     "Prix clair"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "long": "10-business-des-16-ans",
+ "shorts": [
+  {
+   "id": "10-business-des-16-ans-s1",
+   "chapitre": 1,
+   "phrases": 7,
+   "duree_s": 26.895,
+   "notes": []
+  },
+  {
+   "id": "10-business-des-16-ans-s2",
+   "chapitre": 2,
+   "phrases": 8,
+   "duree_s": 32.012,
+   "notes": []
+  },
+  {
+   "id": "10-business-des-16-ans-s3",
+   "chapitre": 3,
+   "phrases": 7,
+   "duree_s": 28.606,
+   "notes": []
+  },
+  {
+   "id": "10-business-des-16-ans-s4",
+   "chapitre": 4,
+   "phrases": 8,
+   "duree_s": 27.196,
+   "notes": []
+  },
+  {
+   "id": "10-business-des-16-ans-s5",
+   "chapitre": 5,
+   "phrases": 8,
+   "duree_s": 29.491,
+   "notes": []
+  },
+  {
+   "id": "10-business-des-16-ans-s6",
+   "chapitre": 6,
+   "phrases": 8,
+   "duree_s": 31.266,
+   "notes": []
+  },
+  {
+   "id": "10-business-des-16-ans-s7",
+   "chapitre": 7,
+   "phrases": 8,
+   "duree_s": 28.049,
+   "notes": []
+  },
+  {
+   "id": "10-business-des-16-ans-s8",
+   "chapitre": 8,
+   "phrases": 8,
+   "duree_s": 30.012,
+   "notes": []
+  },
+  {
+   "id": "10-business-des-16-ans-s9",
+   "chapitre": 9,
+   "phrases": 7,
+   "duree_s": 23.327,
+   "notes": []
+  },
+  {
+   "id": "10-business-des-16-ans-s10",
+   "chapitre": 10,
+   "phrases": 7,
+   "duree_s": 26.662,
+   "notes": []
+  },
+  {
+   "id": "10-business-des-16-ans-s11",
+   "chapitre": 11,
+   "phrases": 8,
+   "duree_s": 30.064,
+   "notes": []
+  }
+ ],
+ "ignores": []
+}

@@ -1,0 +1,65 @@
+{
+ "id": "10-business-des-16-ans-s10",
+ "titre": "Une mini-entreprise au lycée : un vrai test, sans risque pour toi",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "MINI ENTREPRISE LYCÉE",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Idée suivante : créer une mini-entreprise avec ta classe.",
+  "Des élèves de collège et de lycée montent une entreprise pour une année, avec un parrain du monde professionnel.",
+  "Le programme est proposé par l'association Entreprendre pour apprendre, agréée par l'Éducation nationale.",
+  "Les élèves se partagent des postes : direction, communication, relation client, finances et technique.",
+  "Tu apprends à vendre un produit ou un service pour de vrai, avec un petit budget.",
+  "C'est un projet pédagogique, pas une entreprise ouverte à ton nom.",
+  "C'est souvent ton lycée qui inscrit la classe : parles-en à un professeur."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "mini-entreprise"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 4,
+   "params": {
+    "titre": "LES POSTES",
+    "items": [
+     {
+      "texte": "Direction"
+     },
+     {
+      "texte": "Communication"
+     },
+     {
+      "texte": "Relation client"
+     },
+     {
+      "texte": "Finances"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 7,
+   "params": {
+    "question": "Qui inscrit la classe ?",
+    "pistes": [
+     "Souvent le lycée",
+     "Un professeur",
+     "Toi aussi"
+    ]
+   }
+  }
+ ]
+}

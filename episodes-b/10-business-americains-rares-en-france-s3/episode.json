@@ -1,0 +1,69 @@
+{
+ "id": "10-business-americains-rares-en-france-s3",
+ "titre": "Nettoyer les poubelles des autres : l'idée américaine qui sent bon.",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "NETTOYER POUBELLES DOMICILE",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Une poubelle sale sent mauvais, attire les mouches, et personne n'aime la laver.",
+  "Aux États-Unis, des camionnettes passent dans la rue et nettoient les bacs devant chaque maison.",
+  "Le client s'abonne, et ses bacs sont lavés après le passage des éboueurs.",
+  "Ce qui compte vraiment, c'est l'eau sale qui reste après le lavage.",
+  "Les eaux de nettoyage extérieur suivent le même chemin que les eaux de pluie, et peuvent rejoindre la rivière sans traitement.",
+  "Donc tu ne la verses ni dans la rue, ni dans une grille d'eau de pluie.",
+  "Une solution est de la récupérer avec un aspirateur à eau, puis de demander à ta commune où la vider.",
+  "Côté matériel : eau chaude, brosse, produit adapté, et jamais de mélange de produits.",
+  "Ajoute des gants, des lunettes et une tenue qui se lave.",
+  "Le piège : la camionnette et le matériel coûtent cher, alors commence avec quelques voisins et un petit nettoyeur."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "poubelle",
+     "sale"
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 4,
+   "params": {
+    "question": "Où va l'eau sale ?",
+    "pistes": [
+     "Pas la rue",
+     "Pas la grille",
+     "Récupérer"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 8,
+   "params": {
+    "titre": "MATÉRIEL",
+    "items": [
+     {
+      "texte": "Eau chaude"
+     },
+     {
+      "texte": "Brosse"
+     },
+     {
+      "texte": "Produit adapté"
+     },
+     {
+      "texte": "Gants et lunettes"
+     }
+    ]
+   }
+  }
+ ]
+}

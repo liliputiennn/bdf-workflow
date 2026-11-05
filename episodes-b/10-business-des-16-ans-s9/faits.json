@@ -1,0 +1,32 @@
+[
+ {
+  "claim": "Les coopératives jeunesse de services s'adressent aux jeunes de 16 à 18 ans.",
+  "valeur": "16 à 18 ans",
+  "phrase": 3,
+  "sources": [
+   "https://media.anct.gouv.fr/ressources/2025-03/ess_comprendre_complet_26-fevrier.pdf",
+   "https://cooperer.coop/?page_id=1629"
+  ],
+  "check": [
+   "16 à 18 ans"
+  ],
+  "verified": [
+   "https://cooperer.coop/?page_id=1629"
+  ]
+ },
+ {
+  "claim": "Les coopératives jeunesse de services sont des projets d'éducation à l'entrepreneuriat coopératif.",
+  "valeur": "entrepreneuriat",
+  "phrase": 7,
+  "sources": [
+   "https://media.anct.gouv.fr/ressources/2025-03/ess_comprendre_complet_26-fevrier.pdf",
+   "https://cooperer.coop/?page_id=1629"
+  ],
+  "check": [
+   "entrepreneuriat"
+  ],
+  "verified": [
+   "https://cooperer.coop/?page_id=1629"
+  ]
+ }
+]

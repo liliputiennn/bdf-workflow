@@ -1,0 +1,37 @@
+[
+ {
+  "claim": "Des entreprises françaises parrainent des ruches, par exemple avec l'association Un toit pour les abeilles.",
+  "valeur": "parrainage de ruches",
+  "phrase": 3,
+  "sources": [
+   "https://www.untoitpourlesabeilles.fr/",
+   "https://www.editions-tissot.fr/un-toit-pour-les-abeilles/"
+  ],
+  "check": [
+   "ruche",
+   "entreprise"
+  ],
+  "verified": [
+   "https://www.untoitpourlesabeilles.fr/",
+   "https://www.editions-tissot.fr/un-toit-pour-les-abeilles/"
+  ]
+ },
+ {
+  "claim": "Chaque année, du 1er septembre au 31 décembre, tout apiculteur doit déclarer ses colonies d'abeilles, dès la première colonie détenue.",
+  "valeur": "1er septembre - 31 décembre",
+  "phrase": 6,
+  "sources": [
+   "https://agriculture.gouv.fr/la-declaration-de-ruches-du-1er-septembre-au-31-decembre",
+   "https://draaf.auvergne-rhone-alpes.agriculture.gouv.fr/apiculteurs-professionnels-ou-amateurs-la-declaration-des-ruches-est-a2150.html"
+  ],
+  "check": [
+   "1er septembre",
+   "31 décembre",
+   "première colonie"
+  ],
+  "verified": [
+   "https://agriculture.gouv.fr/la-declaration-de-ruches-du-1er-septembre-au-31-decembre",
+   "https://draaf.auvergne-rhone-alpes.agriculture.gouv.fr/apiculteurs-professionnels-ou-amateurs-la-declaration-des-ruches-est-a2150.html"
+  ]
+ }
+]

@@ -1,0 +1,71 @@
+{
+ "id": "10-business-bizarres-qui-existent-vraiment-s9",
+ "titre": "Garde particulier : comment le devenir, étape par étape",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "GARDE PARTICULIER",
+  "icone": "panier"
+ },
+ "phrases": [
+  "Autre métier : garde particulier, la personne qui surveille un domaine, une forêt ou un étang pour son propriétaire.",
+  "Elle peut constater des infractions, par exemple une pêche sans autorisation, et dresser un procès-verbal.",
+  "Premier point de loi : le garde doit d'abord être commissionné par le propriétaire, qui le désigne.",
+  "Ensuite, le préfet l'agrée pour une durée de cinq ans, renouvelable.",
+  "Avant d'exercer, il prête serment devant le tribunal judiciaire.",
+  "Une formation d'aptitude technique est aussi exigée, et les fédérations de chasseurs en organisent.",
+  "On est toujours lié à un propriétaire précis, jamais à n'importe quel terrain.",
+  "Toi, tu proposes ta surveillance à des propriétaires d'étangs, de domaines de chasse ou de grandes forêts."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "garde",
+     "particulier"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 3,
+   "params": {
+    "titre": "LES ÉTAPES",
+    "items": [
+     {
+      "texte": "Commission du propriétaire"
+     },
+     {
+      "texte": "Agrément du préfet"
+     },
+     {
+      "texte": "Serment"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 4,
+   "params": {
+    "valeur": 5,
+    "suffixe": " ans",
+    "etiquette": "durée de l'agrément, renouvelable"
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 8,
+   "params": {
+    "question": "Qui t'engage ?",
+    "pistes": [
+     "Un propriétaire"
+    ]
+   }
+  }
+ ]
+}

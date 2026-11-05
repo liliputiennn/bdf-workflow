@@ -1,0 +1,507 @@
+{
+ "total": 26.662,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.166,
+   "words": [
+    {
+     "w": "Idée",
+     "start": 0.15,
+     "end": 0.462
+    },
+    {
+     "w": "suivante",
+     "start": 0.462,
+     "end": 0.92
+    },
+    {
+     "w": "créer",
+     "start": 1.177,
+     "end": 1.433
+    },
+    {
+     "w": "une",
+     "start": 1.433,
+     "end": 1.727
+    },
+    {
+     "w": "mini-entreprise",
+     "start": 1.727,
+     "end": 2.387
+    },
+    {
+     "w": "avec",
+     "start": 2.387,
+     "end": 2.515
+    },
+    {
+     "w": "ta",
+     "start": 2.515,
+     "end": 2.717
+    },
+    {
+     "w": "classe.",
+     "start": 2.717,
+     "end": 2.845
+    }
+   ]
+  },
+  {
+   "start": 3.293,
+   "end": 7.635,
+   "words": [
+    {
+     "w": "Des",
+     "start": 3.293,
+     "end": 3.446
+    },
+    {
+     "w": "élèves",
+     "start": 3.446,
+     "end": 3.701
+    },
+    {
+     "w": "de",
+     "start": 3.701,
+     "end": 3.769
+    },
+    {
+     "w": "collège",
+     "start": 3.769,
+     "end": 4.091
+    },
+    {
+     "w": "et",
+     "start": 4.091,
+     "end": 4.175
+    },
+    {
+     "w": "de",
+     "start": 4.175,
+     "end": 4.277
+    },
+    {
+     "w": "lycée",
+     "start": 4.277,
+     "end": 4.582
+    },
+    {
+     "w": "montent",
+     "start": 4.582,
+     "end": 4.922
+    },
+    {
+     "w": "une",
+     "start": 4.922,
+     "end": 4.99
+    },
+    {
+     "w": "entreprise",
+     "start": 4.99,
+     "end": 5.413
+    },
+    {
+     "w": "pour",
+     "start": 5.413,
+     "end": 5.55
+    },
+    {
+     "w": "une",
+     "start": 5.55,
+     "end": 5.668
+    },
+    {
+     "w": "année,",
+     "start": 5.668,
+     "end": 5.905
+    },
+    {
+     "w": "avec",
+     "start": 6.143,
+     "end": 6.295
+    },
+    {
+     "w": "un",
+     "start": 6.295,
+     "end": 6.432
+    },
+    {
+     "w": "parrain",
+     "start": 6.432,
+     "end": 6.686
+    },
+    {
+     "w": "du",
+     "start": 6.686,
+     "end": 6.788
+    },
+    {
+     "w": "monde",
+     "start": 6.788,
+     "end": 6.923
+    },
+    {
+     "w": "professionnel.",
+     "start": 6.923,
+     "end": 7.517
+    }
+   ]
+  },
+  {
+   "start": 7.762,
+   "end": 12.314,
+   "words": [
+    {
+     "w": "Le",
+     "start": 7.762,
+     "end": 7.887
+    },
+    {
+     "w": "programme",
+     "start": 7.887,
+     "end": 8.225
+    },
+    {
+     "w": "est",
+     "start": 8.225,
+     "end": 8.402
+    },
+    {
+     "w": "proposé",
+     "start": 8.402,
+     "end": 8.776
+    },
+    {
+     "w": "par",
+     "start": 8.776,
+     "end": 8.882
+    },
+    {
+     "w": "l'association",
+     "start": 8.882,
+     "end": 9.381
+    },
+    {
+     "w": "Entreprendre",
+     "start": 9.381,
+     "end": 10.021
+    },
+    {
+     "w": "pour",
+     "start": 10.021,
+     "end": 10.216
+    },
+    {
+     "w": "apprendre,",
+     "start": 10.216,
+     "end": 10.519
+    },
+    {
+     "w": "agréée",
+     "start": 10.785,
+     "end": 11.212
+    },
+    {
+     "w": "par",
+     "start": 11.212,
+     "end": 11.354
+    },
+    {
+     "w": "l'Éducation",
+     "start": 11.354,
+     "end": 11.799
+    },
+    {
+     "w": "nationale.",
+     "start": 11.799,
+     "end": 12.101
+    }
+   ]
+  },
+  {
+   "start": 12.442,
+   "end": 16.642,
+   "words": [
+    {
+     "w": "Les",
+     "start": 12.442,
+     "end": 12.58
+    },
+    {
+     "w": "élèves",
+     "start": 12.58,
+     "end": 12.822
+    },
+    {
+     "w": "se",
+     "start": 12.822,
+     "end": 12.909
+    },
+    {
+     "w": "partagent",
+     "start": 12.909,
+     "end": 13.255
+    },
+    {
+     "w": "des",
+     "start": 13.255,
+     "end": 13.325
+    },
+    {
+     "w": "postes",
+     "start": 13.325,
+     "end": 13.689
+    },
+    {
+     "w": "direction,",
+     "start": 13.723,
+     "end": 14.104
+    },
+    {
+     "w": "communication,",
+     "start": 14.33,
+     "end": 14.745
+    },
+    {
+     "w": "relation",
+     "start": 14.952,
+     "end": 15.178
+    },
+    {
+     "w": "client,",
+     "start": 15.178,
+     "end": 15.403
+    },
+    {
+     "w": "finances",
+     "start": 15.681,
+     "end": 15.975
+    },
+    {
+     "w": "et",
+     "start": 15.975,
+     "end": 16.182
+    },
+    {
+     "w": "technique.",
+     "start": 16.182,
+     "end": 16.546
+    }
+   ]
+  },
+  {
+   "start": 16.769,
+   "end": 20.011,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 16.769,
+     "end": 16.893
+    },
+    {
+     "w": "apprends",
+     "start": 16.893,
+     "end": 17.177
+    },
+    {
+     "w": "à",
+     "start": 17.177,
+     "end": 17.219
+    },
+    {
+     "w": "vendre",
+     "start": 17.193,
+     "end": 17.411
+    },
+    {
+     "w": "un",
+     "start": 17.411,
+     "end": 17.452
+    },
+    {
+     "w": "produit",
+     "start": 17.427,
+     "end": 17.693
+    },
+    {
+     "w": "ou",
+     "start": 17.693,
+     "end": 18.093
+    },
+    {
+     "w": "un",
+     "start": 18.093,
+     "end": 18.193
+    },
+    {
+     "w": "service",
+     "start": 18.193,
+     "end": 18.443
+    },
+    {
+     "w": "pour",
+     "start": 18.443,
+     "end": 18.627
+    },
+    {
+     "w": "de",
+     "start": 18.627,
+     "end": 18.727
+    },
+    {
+     "w": "vrai,",
+     "start": 18.727,
+     "end": 18.911
+    },
+    {
+     "w": "avec",
+     "start": 19.093,
+     "end": 19.311
+    },
+    {
+     "w": "un",
+     "start": 19.311,
+     "end": 19.461
+    },
+    {
+     "w": "petit",
+     "start": 19.461,
+     "end": 19.593
+    },
+    {
+     "w": "budget.",
+     "start": 19.593,
+     "end": 19.811
+    }
+   ]
+  },
+  {
+   "start": 20.138,
+   "end": 22.746,
+   "words": [
+    {
+     "w": "C'est",
+     "start": 20.138,
+     "end": 20.327
+    },
+    {
+     "w": "un",
+     "start": 20.327,
+     "end": 20.435
+    },
+    {
+     "w": "projet",
+     "start": 20.435,
+     "end": 20.652
+    },
+    {
+     "w": "pédagogique,",
+     "start": 20.652,
+     "end": 21.32
+    },
+    {
+     "w": "pas",
+     "start": 21.501,
+     "end": 21.591
+    },
+    {
+     "w": "une",
+     "start": 21.591,
+     "end": 21.699
+    },
+    {
+     "w": "entreprise",
+     "start": 21.699,
+     "end": 22.078
+    },
+    {
+     "w": "ouverte",
+     "start": 22.078,
+     "end": 22.384
+    },
+    {
+     "w": "à",
+     "start": 22.384,
+     "end": 22.475
+    },
+    {
+     "w": "ton",
+     "start": 22.475,
+     "end": 22.583
+    },
+    {
+     "w": "nom.",
+     "start": 22.583,
+     "end": 22.692
+    }
+   ]
+  },
+  {
+   "start": 22.873,
+   "end": 26.362,
+   "words": [
+    {
+     "w": "C'est",
+     "start": 22.873,
+     "end": 23.07
+    },
+    {
+     "w": "souvent",
+     "start": 23.07,
+     "end": 23.231
+    },
+    {
+     "w": "ton",
+     "start": 23.231,
+     "end": 23.446
+    },
+    {
+     "w": "lycée",
+     "start": 23.446,
+     "end": 23.75
+    },
+    {
+     "w": "qui",
+     "start": 23.75,
+     "end": 23.875
+    },
+    {
+     "w": "inscrit",
+     "start": 23.875,
+     "end": 24.18
+    },
+    {
+     "w": "la",
+     "start": 24.18,
+     "end": 24.287
+    },
+    {
+     "w": "classe",
+     "start": 24.287,
+     "end": 24.609
+    },
+    {
+     "w": "parles-en",
+     "start": 24.609,
+     "end": 25.342
+    },
+    {
+     "w": "à",
+     "start": 25.342,
+     "end": 25.629
+    },
+    {
+     "w": "un",
+     "start": 25.629,
+     "end": 25.701
+    },
+    {
+     "w": "professeur.",
+     "start": 25.701,
+     "end": 26.292
+    }
+   ]
+  }
+ ]
+}

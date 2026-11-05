@@ -1,0 +1,19 @@
+{
+ "etat": "pret",
+ "maj": "2026-11-05T12:28:34",
+ "raison": null,
+ "tentatives": 0,
+ "youtube": {
+  "video_id": null,
+  "url": null,
+  "visibilite": null,
+  "publie_a": null
+ },
+ "origine": "10-business-bizarres-qui-existent-vraiment",
+ "miniature": {
+  "source": "auto",
+  "fichier": "miniature.png",
+  "style": "telephone",
+  "octets": 670679
+ }
+}

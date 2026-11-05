@@ -1,0 +1,13 @@
+{
+ "etat": "quarantaine",
+ "maj": "2026-11-05T12:29:59",
+ "raison": "miniature : contrôle de lisibilité échoué sur toutes les mises en page (createur : contraste texte/fond trop faible : 1.32 (minimum 4.5))",
+ "tentatives": 1,
+ "youtube": {
+  "video_id": null,
+  "url": null,
+  "visibilite": null,
+  "publie_a": null
+ },
+ "origine": "10-business-des-16-ans"
+}

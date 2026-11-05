@@ -1,0 +1,66 @@
+{
+ "id": "10-business-des-16-ans-s2",
+ "titre": "Retrouver l'histoire d'une famille : un métier méconnu",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "GÉNÉALOGISTE FAMILIAL",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Première idée : retrouver l'histoire d'une famille, c'est le métier de généalogiste familial.",
+  "Quelqu'un veut savoir d'où viennent ses ancêtres, mais il n'a ni le temps ni les bons réflexes.",
+  "Toi, tu cherches dans les registres, tu recoupes les dates et tu dessines l'arbre.",
+  "Le site FranceArchives et les archives des départements donnent accès à des registres numérisés.",
+  "FamilySearch est un site gratuit qui propose des actes numérisés du monde entier.",
+  "Geneanet permet de construire un arbre en ligne, avec une offre gratuite et des offres payantes.",
+  "La règle de loi : un acte de naissance ou de mariage devient librement consultable après soixante-quinze ans.",
+  "Pour une famille vivante, demande l'accord de chacun avant de publier son nom ou sa photo."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "généalogiste"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 4,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "FranceArchives"
+     },
+     {
+      "texte": "Archives des départements"
+     },
+     {
+      "texte": "FamilySearch"
+     },
+     {
+      "texte": "Geneanet"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 7,
+   "params": {
+    "question": "Quand peut-on lire un acte ?",
+    "pistes": [
+     "Naissance",
+     "Mariage",
+     "Après la limite"
+    ]
+   }
+  }
+ ]
+}

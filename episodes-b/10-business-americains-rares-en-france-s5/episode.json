@@ -1,0 +1,73 @@
+{
+ "id": "10-business-americains-rares-en-france-s5",
+ "titre": "Vider la maison d'un proche décédé : un métier qui existe.",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "ORGANISER VIDE MAISON APRÈS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Quand un proche meurt, la famille doit vider sa maison, et personne n'a la force de le faire.",
+  "Aux États-Unis, des entreprises organisent des ventes à l'intérieur de la maison, pour le compte des héritiers.",
+  "Tu tries, tu ranges, tu fixes les prix, tu reçois les acheteurs, puis tu rends des comptes à la famille.",
+  "Le temps presse : les héritiers doivent en général déposer la déclaration de succession dans les six mois après le décès.",
+  "Mais toi, tu n'es pas notaire : tu ne dis jamais qui hérite de quoi.",
+  "Tu travailles avec un accord écrit de tous les héritiers, et tu listes ce qui sort de la maison.",
+  "Si tu revends des objets d'occasion de façon habituelle, la loi demande un registre et une déclaration à la préfecture.",
+  "Le registre se tient jour après jour, sans rature, et il peut être contrôlé.",
+  "Ce métier demande du tact : tu entres dans la vie intime d'une famille en deuil.",
+  "Le piège : ne jette jamais un papier ou un objet de valeur sans l'accord de la famille."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "proche",
+     "maison"
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 4,
+   "params": {
+    "valeur": 6,
+    "suffixe": " mois",
+    "etiquette": "pour déposer la déclaration de succession",
+    "sous": "en général, si le décès a lieu en France"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 7,
+   "params": {
+    "titre": "SI TU REVENDS",
+    "items": [
+     {
+      "texte": "Un registre tenu au jour le jour"
+     },
+     {
+      "texte": "Une déclaration à la préfecture"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 9,
+   "params": {
+    "question": "Qui décide ?",
+    "pistes": [
+     "La famille",
+     "Pas toi",
+     "Accord écrit"
+    ]
+   }
+  }
+ ]
+}

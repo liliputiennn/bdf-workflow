@@ -1,0 +1,593 @@
+{
+ "total": 31.241,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.187,
+   "words": [
+    {
+     "w": "Autre",
+     "start": 0.15,
+     "end": 0.428
+    },
+    {
+     "w": "métier",
+     "start": 0.428,
+     "end": 0.837
+    },
+    {
+     "w": "le",
+     "start": 1.153,
+     "end": 1.338
+    },
+    {
+     "w": "fauconnier,",
+     "start": 1.338,
+     "end": 1.84
+    },
+    {
+     "w": "qui",
+     "start": 1.896,
+     "end": 1.988
+    },
+    {
+     "w": "éloigne",
+     "start": 1.988,
+     "end": 2.323
+    },
+    {
+     "w": "les",
+     "start": 2.323,
+     "end": 2.453
+    },
+    {
+     "w": "oiseaux",
+     "start": 2.453,
+     "end": 2.787
+    },
+    {
+     "w": "gênants.",
+     "start": 2.787,
+     "end": 3.103
+    }
+   ]
+  },
+  {
+   "start": 3.314,
+   "end": 7.797,
+   "words": [
+    {
+     "w": "Des",
+     "start": 3.314,
+     "end": 3.484
+    },
+    {
+     "w": "pigeons",
+     "start": 3.484,
+     "end": 3.721
+    },
+    {
+     "w": "salissent",
+     "start": 3.721,
+     "end": 4.078
+    },
+    {
+     "w": "un",
+     "start": 4.078,
+     "end": 4.197
+    },
+    {
+     "w": "toit,",
+     "start": 4.197,
+     "end": 4.451
+    },
+    {
+     "w": "des",
+     "start": 4.757,
+     "end": 4.893
+    },
+    {
+     "w": "étourneaux",
+     "start": 4.893,
+     "end": 5.284
+    },
+    {
+     "w": "mangent",
+     "start": 5.284,
+     "end": 5.504
+    },
+    {
+     "w": "les",
+     "start": 5.504,
+     "end": 5.589
+    },
+    {
+     "w": "raisins",
+     "start": 5.589,
+     "end": 5.928
+    },
+    {
+     "w": "un",
+     "start": 6.2,
+     "end": 6.286
+    },
+    {
+     "w": "rapace",
+     "start": 6.286,
+     "end": 6.625
+    },
+    {
+     "w": "dressé",
+     "start": 6.625,
+     "end": 6.998
+    },
+    {
+     "w": "peut",
+     "start": 6.998,
+     "end": 7.185
+    },
+    {
+     "w": "les",
+     "start": 7.185,
+     "end": 7.287
+    },
+    {
+     "w": "faire",
+     "start": 7.287,
+     "end": 7.423
+    },
+    {
+     "w": "fuir.",
+     "start": 7.423,
+     "end": 7.779
+    }
+   ]
+  },
+  {
+   "start": 7.924,
+   "end": 11.385,
+   "words": [
+    {
+     "w": "Des",
+     "start": 7.924,
+     "end": 8.089
+    },
+    {
+     "w": "fauconniers",
+     "start": 8.089,
+     "end": 8.543
+    },
+    {
+     "w": "travaillent",
+     "start": 8.543,
+     "end": 8.822
+    },
+    {
+     "w": "déjà",
+     "start": 8.822,
+     "end": 9.031
+    },
+    {
+     "w": "ainsi",
+     "start": 9.031,
+     "end": 9.345
+    },
+    {
+     "w": "dans",
+     "start": 9.345,
+     "end": 9.502
+    },
+    {
+     "w": "les",
+     "start": 9.502,
+     "end": 9.658
+    },
+    {
+     "w": "vignes",
+     "start": 9.658,
+     "end": 10.077
+    },
+    {
+     "w": "et",
+     "start": 10.077,
+     "end": 10.165
+    },
+    {
+     "w": "autour",
+     "start": 10.165,
+     "end": 10.338
+    },
+    {
+     "w": "de",
+     "start": 10.338,
+     "end": 10.478
+    },
+    {
+     "w": "certains",
+     "start": 10.478,
+     "end": 10.653
+    },
+    {
+     "w": "aéroports.",
+     "start": 10.653,
+     "end": 11.28
+    }
+   ]
+  },
+  {
+   "start": 11.512,
+   "end": 14.5,
+   "words": [
+    {
+     "w": "Le",
+     "start": 11.512,
+     "end": 11.682
+    },
+    {
+     "w": "but",
+     "start": 11.682,
+     "end": 11.878
+    },
+    {
+     "w": "est",
+     "start": 11.878,
+     "end": 12.127
+    },
+    {
+     "w": "d'effrayer",
+     "start": 12.127,
+     "end": 12.52
+    },
+    {
+     "w": "les",
+     "start": 12.52,
+     "end": 12.609
+    },
+    {
+     "w": "oiseaux,",
+     "start": 12.609,
+     "end": 12.984
+    },
+    {
+     "w": "pas",
+     "start": 13.162,
+     "end": 13.323
+    },
+    {
+     "w": "de",
+     "start": 13.323,
+     "end": 13.466
+    },
+    {
+     "w": "les",
+     "start": 13.466,
+     "end": 13.555
+    },
+    {
+     "w": "chasser",
+     "start": 13.555,
+     "end": 13.84
+    },
+    {
+     "w": "pour",
+     "start": 13.84,
+     "end": 13.983
+    },
+    {
+     "w": "le",
+     "start": 13.983,
+     "end": 14.054
+    },
+    {
+     "w": "plaisir.",
+     "start": 14.054,
+     "end": 14.233
+    }
+   ]
+  },
+  {
+   "start": 14.627,
+   "end": 19.043,
+   "words": [
+    {
+     "w": "Premier",
+     "start": 14.627,
+     "end": 14.866
+    },
+    {
+     "w": "point",
+     "start": 14.866,
+     "end": 15.054
+    },
+    {
+     "w": "de",
+     "start": 15.054,
+     "end": 15.173
+    },
+    {
+     "w": "loi",
+     "start": 15.173,
+     "end": 15.343
+    },
+    {
+     "w": "garder",
+     "start": 15.684,
+     "end": 15.957
+    },
+    {
+     "w": "des",
+     "start": 15.957,
+     "end": 16.127
+    },
+    {
+     "w": "rapaces",
+     "start": 16.127,
+     "end": 16.417
+    },
+    {
+     "w": "demande",
+     "start": 16.417,
+     "end": 16.605
+    },
+    {
+     "w": "un",
+     "start": 16.605,
+     "end": 16.741
+    },
+    {
+     "w": "certificat",
+     "start": 16.741,
+     "end": 17.218
+    },
+    {
+     "w": "de",
+     "start": 17.218,
+     "end": 17.261
+    },
+    {
+     "w": "capacité,",
+     "start": 17.253,
+     "end": 17.73
+    },
+    {
+     "w": "une",
+     "start": 17.968,
+     "end": 18.071
+    },
+    {
+     "w": "preuve",
+     "start": 18.071,
+     "end": 18.36
+    },
+    {
+     "w": "de",
+     "start": 18.36,
+     "end": 18.428
+    },
+    {
+     "w": "compétence.",
+     "start": 18.428,
+     "end": 18.923
+    }
+   ]
+  },
+  {
+   "start": 19.17,
+   "end": 22.08,
+   "words": [
+    {
+     "w": "Un",
+     "start": 19.17,
+     "end": 19.318
+    },
+    {
+     "w": "lieu",
+     "start": 19.318,
+     "end": 19.493
+    },
+    {
+     "w": "qui",
+     "start": 19.493,
+     "end": 19.65
+    },
+    {
+     "w": "détient",
+     "start": 19.65,
+     "end": 19.93
+    },
+    {
+     "w": "ce",
+     "start": 19.93,
+     "end": 20.053
+    },
+    {
+     "w": "type",
+     "start": 20.053,
+     "end": 20.21
+    },
+    {
+     "w": "d'animaux",
+     "start": 20.21,
+     "end": 20.595
+    },
+    {
+     "w": "est",
+     "start": 20.595,
+     "end": 20.682
+    },
+    {
+     "w": "aussi",
+     "start": 20.682,
+     "end": 20.857
+    },
+    {
+     "w": "soumis",
+     "start": 20.857,
+     "end": 21.189
+    },
+    {
+     "w": "à",
+     "start": 21.189,
+     "end": 21.294
+    },
+    {
+     "w": "une",
+     "start": 21.294,
+     "end": 21.398
+    },
+    {
+     "w": "autorisation.",
+     "start": 21.398,
+     "end": 21.871
+    }
+   ]
+  },
+  {
+   "start": 22.207,
+   "end": 26.25,
+   "words": [
+    {
+     "w": "Il",
+     "start": 22.207,
+     "end": 22.348
+    },
+    {
+     "w": "faut",
+     "start": 22.348,
+     "end": 22.507
+    },
+    {
+     "w": "donc",
+     "start": 22.507,
+     "end": 22.666
+    },
+    {
+     "w": "d'abord",
+     "start": 22.666,
+     "end": 23.0
+    },
+    {
+     "w": "apprendre",
+     "start": 23.0,
+     "end": 23.282
+    },
+    {
+     "w": "ce",
+     "start": 23.282,
+     "end": 23.547
+    },
+    {
+     "w": "métier",
+     "start": 23.547,
+     "end": 23.828
+    },
+    {
+     "w": "auprès",
+     "start": 23.828,
+     "end": 24.04
+    },
+    {
+     "w": "d'un",
+     "start": 24.04,
+     "end": 24.163
+    },
+    {
+     "w": "fauconnier,",
+     "start": 24.163,
+     "end": 24.621
+    },
+    {
+     "w": "avant",
+     "start": 24.974,
+     "end": 25.115
+    },
+    {
+     "w": "de",
+     "start": 25.115,
+     "end": 25.237
+    },
+    {
+     "w": "proposer",
+     "start": 25.237,
+     "end": 25.607
+    },
+    {
+     "w": "ce",
+     "start": 25.607,
+     "end": 25.696
+    },
+    {
+     "w": "service.",
+     "start": 25.696,
+     "end": 25.925
+    }
+   ]
+  },
+  {
+   "start": 26.377,
+   "end": 30.941,
+   "words": [
+    {
+     "w": "Certains",
+     "start": 26.377,
+     "end": 26.814
+    },
+    {
+     "w": "oiseaux",
+     "start": 26.814,
+     "end": 27.05
+    },
+    {
+     "w": "sauvages",
+     "start": 27.05,
+     "end": 27.396
+    },
+    {
+     "w": "sont",
+     "start": 27.396,
+     "end": 27.523
+    },
+    {
+     "w": "protégés",
+     "start": 27.523,
+     "end": 27.996
+    },
+    {
+     "w": "renseigne-toi",
+     "start": 28.305,
+     "end": 28.887
+    },
+    {
+     "w": "auprès",
+     "start": 28.887,
+     "end": 29.177
+    },
+    {
+     "w": "de",
+     "start": 29.177,
+     "end": 29.268
+    },
+    {
+     "w": "la",
+     "start": 29.268,
+     "end": 29.359
+    },
+    {
+     "w": "préfecture",
+     "start": 29.359,
+     "end": 29.759
+    },
+    {
+     "w": "avant",
+     "start": 29.759,
+     "end": 30.177
+    },
+    {
+     "w": "d'intervenir.",
+     "start": 30.177,
+     "end": 30.741
+    }
+   ]
+  }
+ ]
+}

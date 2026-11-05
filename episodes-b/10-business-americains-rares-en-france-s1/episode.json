@@ -1,0 +1,69 @@
+{
+ "id": "10-business-americains-rares-en-france-s1",
+ "titre": "Poser des guirlandes de Noël chez les gens, ça existe.",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "POSER GUIRLANDES NOËL CHEZ",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Aux États-Unis, des entreprises installent les guirlandes de Noël sur les maisons des autres.",
+  "Elles viennent en novembre, posent tout, vérifient le soir que ça brille, puis reviennent en janvier pour tout retirer.",
+  "Le client n'a ni le temps, ni l'envie de monter sur une échelle.",
+  "En France, on en parle encore peu.",
+  "Ton travail : mesurer, choisir le matériel, poser, vérifier, puis déposer et ranger après les fêtes.",
+  "La répression des fraudes rappelle de ne jamais laisser des guirlandes branchées sans surveillance.",
+  "Elle demande aussi de vérifier que le matériel est prévu pour l'extérieur, et pas seulement pour l'intérieur.",
+  "Dès que tu factures, tu es indépendant, et la micro-entreprise est un statut courant pour tester.",
+  "Le piège : le travail est saisonnier, quelques semaines par an, et une chute d'échelle arrive vite.",
+  "Reste le plus bas possible, ne monte jamais seul sur un toit, et demande à un assureur ce qui est couvert."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "guirlandes",
+     "Noël"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "TON TRAVAIL",
+    "items": [
+     {
+      "texte": "Mesurer"
+     },
+     {
+      "texte": "Poser"
+     },
+     {
+      "texte": "Vérifier"
+     },
+     {
+      "texte": "Déposer en janvier"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 9,
+   "params": {
+    "question": "Qui monte sur le toit ?",
+    "pistes": [
+     "Jamais seul",
+     "Matériel bas",
+     "Assurance"
+    ]
+   }
+  }
+ ]
+}

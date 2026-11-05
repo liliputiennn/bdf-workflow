@@ -1,0 +1,19 @@
+[
+ {
+  "claim": "En Bretagne, la récolte professionnelle d'algues de rive demande une licence délivrée chaque année par le comité régional des pêches.",
+  "valeur": "licence annuelle",
+  "phrase": 4,
+  "sources": [
+   "https://cdpmem22.fr/pecher-en-cotes-darmor/recolte-dalgues/",
+   "https://www.cdpmem35.fr/fr/peche-professionelle-ille-et-vilaine/elevage-recolte-des-algues/metier-11-algoculture-et-recolte-des-algues.html"
+  ],
+  "check": [
+   "licence",
+   "crpmem"
+  ],
+  "verified": [
+   "https://cdpmem22.fr/pecher-en-cotes-darmor/recolte-dalgues/",
+   "https://www.cdpmem35.fr/fr/peche-professionelle-ille-et-vilaine/elevage-recolte-des-algues/metier-11-algoculture-et-recolte-des-algues.html"
+  ]
+ }
+]

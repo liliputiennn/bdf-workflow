@@ -1,0 +1,62 @@
+{
+ "id": "10-business-bizarres-qui-existent-vraiment-s10",
+ "titre": "Pension pour animaux chez soi : déclaration et attestation",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "PENSION CHIENS CHATS MAISON",
+  "icone": "panier"
+ },
+ "phrases": [
+  "Dernière idée : accueillir chez toi les chiens et les chats des gens qui partent en vacances.",
+  "Les propriétaires veulent une pension où l'animal vit dans une vraie maison, plutôt que dans un grand chenil.",
+  "Une pension qui héberge des chiens ou des chats à titre commercial doit se déclarer à la direction de la protection des populations.",
+  "Au moins une personne en contact avec les animaux doit prouver ses connaissances, avec un diplôme ou avec une attestation officielle.",
+  "Cette attestation s'appelle l'attestation de connaissances pour les animaux de compagnie.",
+  "Le lieu doit être propre, sûr et adapté, et tu dois pouvoir joindre un vétérinaire.",
+  "Les règles de la commune, de la copropriété ou du bail peuvent limiter le nombre d'animaux : lis-les avant.",
+  "Pense à une assurance de responsabilité civile professionnelle, car un animal qui s'échappe ou se blesse engage ta responsabilité."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "accueillir",
+     "chiens"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 3,
+   "params": {
+    "titre": "À PRÉVOIR",
+    "items": [
+     {
+      "texte": "La déclaration"
+     },
+     {
+      "texte": "Un diplôme ou une attestation"
+     },
+     {
+      "texte": "Une assurance"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 6,
+   "params": {
+    "question": "Qui doit être formé ?",
+    "pistes": [
+     "Une personne au contact"
+    ]
+   }
+  }
+ ]
+}

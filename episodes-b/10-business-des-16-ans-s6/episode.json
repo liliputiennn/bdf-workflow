@@ -1,0 +1,63 @@
+{
+ "id": "10-business-des-16-ans-s6",
+ "titre": "Aider les seniors avec le numérique : ce que dit la loi",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "PREMIERS NUMÉRIQUES SENIORS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Idée suivante : initier des personnes âgées au numérique, un pas après l'autre.",
+  "Beaucoup de démarches passent par internet, et certaines personnes ne savent pas par où commencer.",
+  "Tu leur montres comment envoyer un message, faire un appel vidéo ou reconnaître un faux courriel.",
+  "Pix est un service public gratuit : il propose des tests pour mesurer ses compétences numériques.",
+  "Le site Cybermalveillance propose une sensibilisation gratuite aux risques en ligne.",
+  "La règle de loi : l'assistance informatique à domicile fait partie des services à la personne.",
+  "Elle relève du régime de la déclaration, pas de celui de l'agrément.",
+  "Pour un mineur, c'est une idée à tester avec un adulte de la famille ou une association, plutôt que seul chez des inconnus."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "numérique"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 4,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "Pix pour s'entraîner"
+     },
+     {
+      "texte": "Cybermalveillance"
+     },
+     {
+      "texte": "Un adulte avec toi"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 8,
+   "params": {
+    "question": "Seul chez des inconnus ?",
+    "pistes": [
+     "Non",
+     "Avec un adulte",
+     "En association"
+    ]
+   }
+  }
+ ]
+}

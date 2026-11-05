@@ -1,0 +1,19 @@
+{
+ "etat": "pret",
+ "maj": "2026-11-05T12:26:57",
+ "raison": null,
+ "tentatives": 0,
+ "youtube": {
+  "video_id": null,
+  "url": null,
+  "visibilite": null,
+  "publie_a": null
+ },
+ "origine": "10-business-americains-rares-en-france",
+ "miniature": {
+  "source": "auto",
+  "fichier": "miniature.png",
+  "style": "createur",
+  "octets": 750918
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "id": "10-business-bizarres-qui-existent-vraiment-s5",
+ "titre": "Détruire des nids de frelons : le certificat obligatoire",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "DÉTRUIRE NIDS FRELONS ASIATIQUES",
+  "icone": "panier"
+ },
+ "phrases": [
+  "Autre métier : détruire les nids de frelons asiatiques.",
+  "Un nid dans un arbre ou sous un toit inquiète les voisins, et personne ne veut s'en occuper seul.",
+  "Détruire un nid est dangereux : le travail se fait en hauteur, avec des produits.",
+  "Pour utiliser certains insecticides réservés aux professionnels, il faut un certificat appelé certibiocide.",
+  "Ce certificat est obligatoire depuis le premier juillet deux mille quinze.",
+  "Et la formation se renouvelle tous les cinq ans.",
+  "Pense à une assurance et à du matériel de sécurité pour le travail en hauteur."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "nids",
+     "frelons"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 4,
+   "params": {
+    "titre": "LE CERTIFICAT",
+    "items": [
+     {
+      "texte": "Il s'appelle certibiocide"
+     },
+     {
+      "texte": "Obligatoire pour les produits pros"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 6,
+   "params": {
+    "valeur": 5,
+    "suffixe": " ans",
+    "etiquette": "avant de renouveler la formation certibiocide"
+   }
+  }
+ ]
+}

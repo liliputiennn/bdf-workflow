@@ -1,0 +1,50 @@
+[
+ {
+  "claim": "Des fauconniers utilisent des rapaces pour effrayer les oiseaux dans les vignes et autour de certains aéroports.",
+  "valeur": "fauconnerie de lutte",
+  "phrase": 3,
+  "sources": [
+   "https://ac-franchise.com/article/as-de-pic-nouveau-service-de-fauconnerie-pour-lutter-contre-les-volatiles-indesirables",
+   "https://www.slate.fr/story/81393/avec-les-faucons-armee-francaise"
+  ],
+  "check": [
+   "faucon"
+  ],
+  "verified": [
+   "https://ac-franchise.com/article/as-de-pic-nouveau-service-de-fauconnerie-pour-lutter-contre-les-volatiles-indesirables",
+   "https://www.slate.fr/story/81393/avec-les-faucons-armee-francaise"
+  ]
+ },
+ {
+  "claim": "Détenir des rapaces demande un certificat de capacité.",
+  "valeur": "certificat de capacité",
+  "phrase": 5,
+  "sources": [
+   "https://www.ecologie.gouv.fr/faune-sauvage-captive",
+   "https://aida.ineris.fr/reglementation/circulaire-dnpcff-ndeg-2005-03-170505-detention-transport-utilisation-rapaces-chasse"
+  ],
+  "check": [
+   "certificat de capacité"
+  ],
+  "verified": [
+   "https://www.ecologie.gouv.fr/faune-sauvage-captive",
+   "https://aida.ineris.fr/reglementation/circulaire-dnpcff-ndeg-2005-03-170505-detention-transport-utilisation-rapaces-chasse"
+  ]
+ },
+ {
+  "claim": "Un établissement qui détient des animaux d'espèces non domestiques est soumis à autorisation.",
+  "valeur": "autorisation d'ouverture",
+  "phrase": 6,
+  "sources": [
+   "https://www.ecologie.gouv.fr/faune-sauvage-captive",
+   "https://aida.ineris.fr/reglementation/circulaire-dnpcff-ndeg-2005-03-170505-detention-transport-utilisation-rapaces-chasse"
+  ],
+  "check": [
+   "autorisation"
+  ],
+  "verified": [
+   "https://www.ecologie.gouv.fr/faune-sauvage-captive",
+   "https://aida.ineris.fr/reglementation/circulaire-dnpcff-ndeg-2005-03-170505-detention-transport-utilisation-rapaces-chasse"
+  ]
+ }
+]

@@ -1,0 +1,77 @@
+{
+ "long": "10-business-bizarres-qui-existent-vraiment",
+ "shorts": [
+  {
+   "id": "10-business-bizarres-qui-existent-vraiment-s2",
+   "chapitre": 3,
+   "phrases": 8,
+   "duree_s": 31.771,
+   "notes": []
+  },
+  {
+   "id": "10-business-bizarres-qui-existent-vraiment-s3",
+   "chapitre": 4,
+   "phrases": 9,
+   "duree_s": 34.623,
+   "notes": []
+  },
+  {
+   "id": "10-business-bizarres-qui-existent-vraiment-s4",
+   "chapitre": 5,
+   "phrases": 8,
+   "duree_s": 31.241,
+   "notes": []
+  },
+  {
+   "id": "10-business-bizarres-qui-existent-vraiment-s5",
+   "chapitre": 6,
+   "phrases": 7,
+   "duree_s": 24.22,
+   "notes": []
+  },
+  {
+   "id": "10-business-bizarres-qui-existent-vraiment-s6",
+   "chapitre": 7,
+   "phrases": 7,
+   "duree_s": 27.821,
+   "notes": []
+  },
+  {
+   "id": "10-business-bizarres-qui-existent-vraiment-s7",
+   "chapitre": 8,
+   "phrases": 6,
+   "duree_s": 21.256,
+   "notes": []
+  },
+  {
+   "id": "10-business-bizarres-qui-existent-vraiment-s8",
+   "chapitre": 9,
+   "phrases": 8,
+   "duree_s": 29.327,
+   "notes": []
+  },
+  {
+   "id": "10-business-bizarres-qui-existent-vraiment-s9",
+   "chapitre": 10,
+   "phrases": 8,
+   "duree_s": 32.888,
+   "notes": []
+  },
+  {
+   "id": "10-business-bizarres-qui-existent-vraiment-s10",
+   "chapitre": 11,
+   "phrases": 8,
+   "duree_s": 36.18,
+   "notes": []
+  }
+ ],
+ "ignores": [
+  {
+   "id": "10-business-bizarres-qui-existent-vraiment-s1",
+   "chapitre": 2,
+   "raison": [
+    "phrase 7 : trop longue (142 caractères)"
+   ]
+  }
+ ]
+}

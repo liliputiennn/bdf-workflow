@@ -1,0 +1,447 @@
+{
+ "total": 23.327,
+ "lines": [
+  {
+   "start": 0.15,
+   "end": 3.698,
+   "words": [
+    {
+     "w": "Idée",
+     "start": 0.15,
+     "end": 0.487
+    },
+    {
+     "w": "suivante",
+     "start": 0.487,
+     "end": 0.984
+    },
+    {
+     "w": "monter",
+     "start": 1.215,
+     "end": 1.409
+    },
+    {
+     "w": "une",
+     "start": 1.409,
+     "end": 1.605
+    },
+    {
+     "w": "coopérative",
+     "start": 1.605,
+     "end": 2.19
+    },
+    {
+     "w": "jeunesse",
+     "start": 2.19,
+     "end": 2.617
+    },
+    {
+     "w": "de",
+     "start": 2.617,
+     "end": 2.723
+    },
+    {
+     "w": "services",
+     "start": 2.723,
+     "end": 3.024
+    },
+    {
+     "w": "pendant",
+     "start": 3.024,
+     "end": 3.29
+    },
+    {
+     "w": "l'été.",
+     "start": 3.29,
+     "end": 3.592
+    }
+   ]
+  },
+  {
+   "start": 3.826,
+   "end": 7.22,
+   "words": [
+    {
+     "w": "Un",
+     "start": 3.826,
+     "end": 3.982
+    },
+    {
+     "w": "groupe",
+     "start": 3.982,
+     "end": 4.155
+    },
+    {
+     "w": "de",
+     "start": 4.155,
+     "end": 4.276
+    },
+    {
+     "w": "jeunes",
+     "start": 4.276,
+     "end": 4.432
+    },
+    {
+     "w": "crée",
+     "start": 4.432,
+     "end": 4.727
+    },
+    {
+     "w": "une",
+     "start": 4.727,
+     "end": 4.83
+    },
+    {
+     "w": "vraie",
+     "start": 4.83,
+     "end": 5.056
+    },
+    {
+     "w": "petite",
+     "start": 5.056,
+     "end": 5.194
+    },
+    {
+     "w": "entreprise",
+     "start": 5.194,
+     "end": 5.645
+    },
+    {
+     "w": "pour",
+     "start": 5.645,
+     "end": 5.766
+    },
+    {
+     "w": "quelques",
+     "start": 5.766,
+     "end": 5.904
+    },
+    {
+     "w": "mois,",
+     "start": 5.904,
+     "end": 6.233
+    },
+    {
+     "w": "avec",
+     "start": 6.51,
+     "end": 6.684
+    },
+    {
+     "w": "ses",
+     "start": 6.684,
+     "end": 6.822
+    },
+    {
+     "w": "clients.",
+     "start": 6.822,
+     "end": 6.996
+    }
+   ]
+  },
+  {
+   "start": 7.348,
+   "end": 9.926,
+   "words": [
+    {
+     "w": "Ce",
+     "start": 7.348,
+     "end": 7.525
+    },
+    {
+     "w": "dispositif",
+     "start": 7.525,
+     "end": 8.158
+    },
+    {
+     "w": "s'adresse",
+     "start": 8.158,
+     "end": 8.474
+    },
+    {
+     "w": "aux",
+     "start": 8.474,
+     "end": 8.641
+    },
+    {
+     "w": "jeunes",
+     "start": 8.641,
+     "end": 8.828
+    },
+    {
+     "w": "de",
+     "start": 8.828,
+     "end": 8.995
+    },
+    {
+     "w": "seize",
+     "start": 8.995,
+     "end": 9.218
+    },
+    {
+     "w": "à",
+     "start": 9.218,
+     "end": 9.368
+    },
+    {
+     "w": "dix-huit",
+     "start": 9.368,
+     "end": 9.702
+    },
+    {
+     "w": "ans.",
+     "start": 9.702,
+     "end": 9.814
+    }
+   ]
+  },
+  {
+   "start": 10.053,
+   "end": 13.847,
+   "words": [
+    {
+     "w": "La",
+     "start": 10.053,
+     "end": 10.213
+    },
+    {
+     "w": "coopérative",
+     "start": 10.213,
+     "end": 10.798
+    },
+    {
+     "w": "dure",
+     "start": 10.798,
+     "end": 10.992
+    },
+    {
+     "w": "le",
+     "start": 10.992,
+     "end": 11.098
+    },
+    {
+     "w": "temps",
+     "start": 11.098,
+     "end": 11.276
+    },
+    {
+     "w": "d'un",
+     "start": 11.276,
+     "end": 11.436
+    },
+    {
+     "w": "été,",
+     "start": 11.436,
+     "end": 11.666
+    },
+    {
+     "w": "avec",
+     "start": 11.878,
+     "end": 12.198
+    },
+    {
+     "w": "des",
+     "start": 12.198,
+     "end": 12.358
+    },
+    {
+     "w": "animateurs",
+     "start": 12.358,
+     "end": 12.854
+    },
+    {
+     "w": "qui",
+     "start": 12.854,
+     "end": 13.031
+    },
+    {
+     "w": "accompagnent",
+     "start": 13.031,
+     "end": 13.438
+    },
+    {
+     "w": "le",
+     "start": 13.438,
+     "end": 13.509
+    },
+    {
+     "w": "groupe.",
+     "start": 13.509,
+     "end": 13.669
+    }
+   ]
+  },
+  {
+   "start": 13.974,
+   "end": 15.966,
+   "words": [
+    {
+     "w": "Les",
+     "start": 13.974,
+     "end": 14.129
+    },
+    {
+     "w": "jeunes",
+     "start": 14.129,
+     "end": 14.277
+    },
+    {
+     "w": "décident",
+     "start": 14.277,
+     "end": 14.644
+    },
+    {
+     "w": "ensemble",
+     "start": 14.644,
+     "end": 14.901
+    },
+    {
+     "w": "des",
+     "start": 14.901,
+     "end": 15.048
+    },
+    {
+     "w": "services",
+     "start": 15.048,
+     "end": 15.323
+    },
+    {
+     "w": "à",
+     "start": 15.323,
+     "end": 15.47
+    },
+    {
+     "w": "proposer.",
+     "start": 15.47,
+     "end": 15.874
+    }
+   ]
+  },
+  {
+   "start": 16.093,
+   "end": 18.963,
+   "words": [
+    {
+     "w": "Les",
+     "start": 16.093,
+     "end": 16.24
+    },
+    {
+     "w": "services",
+     "start": 16.24,
+     "end": 16.431
+    },
+    {
+     "w": "varient",
+     "start": 16.431,
+     "end": 16.813
+    },
+    {
+     "w": "selon",
+     "start": 16.813,
+     "end": 16.986
+    },
+    {
+     "w": "les",
+     "start": 16.986,
+     "end": 17.177
+    },
+    {
+     "w": "villes",
+     "start": 17.177,
+     "end": 17.714
+    },
+    {
+     "w": "et",
+     "start": 17.714,
+     "end": 17.818
+    },
+    {
+     "w": "selon",
+     "start": 17.818,
+     "end": 17.992
+    },
+    {
+     "w": "les",
+     "start": 17.992,
+     "end": 18.13
+    },
+    {
+     "w": "besoins",
+     "start": 18.13,
+     "end": 18.39
+    },
+    {
+     "w": "des",
+     "start": 18.39,
+     "end": 18.478
+    },
+    {
+     "w": "habitants.",
+     "start": 18.478,
+     "end": 18.858
+    }
+   ]
+  },
+  {
+   "start": 19.09,
+   "end": 23.027,
+   "words": [
+    {
+     "w": "C'est",
+     "start": 19.09,
+     "end": 19.438
+    },
+    {
+     "w": "un",
+     "start": 19.438,
+     "end": 19.547
+    },
+    {
+     "w": "projet",
+     "start": 19.547,
+     "end": 19.725
+    },
+    {
+     "w": "d'éducation",
+     "start": 19.725,
+     "end": 20.262
+    },
+    {
+     "w": "à",
+     "start": 20.262,
+     "end": 20.369
+    },
+    {
+     "w": "l'entrepreneuriat",
+     "start": 20.369,
+     "end": 20.942
+    },
+    {
+     "w": "coopératif,",
+     "start": 20.942,
+     "end": 21.568
+    },
+    {
+     "w": "encadré",
+     "start": 21.837,
+     "end": 22.284
+    },
+    {
+     "w": "par",
+     "start": 22.284,
+     "end": 22.428
+    },
+    {
+     "w": "des",
+     "start": 22.428,
+     "end": 22.57
+    },
+    {
+     "w": "adultes.",
+     "start": 22.57,
+     "end": 22.964
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+[
+ {
+  "claim": "Quand la sécheresse s'installe, des restrictions touchent le lavage des véhicules.",
+  "valeur": "restrictions lavage",
+  "phrase": 4,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/actualites/A18382",
+   "https://www.ecologie.gouv.fr/secheresse"
+  ],
+  "check": [
+   "lavage"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/actualites/A18382",
+   "https://www.ecologie.gouv.fr/secheresse"
+  ]
+ },
+ {
+  "claim": "Les préfets utilisent quatre niveaux de sécheresse : vigilance, alerte, alerte renforcée et crise.",
+  "valeur": "4 niveaux",
+  "phrase": 5,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/actualites/A18382",
+   "https://www.ecologie.gouv.fr/secheresse"
+  ],
+  "check": [
+   "alerte renforcée"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/actualites/A18382",
+   "https://www.ecologie.gouv.fr/secheresse"
+  ]
+ }
+]

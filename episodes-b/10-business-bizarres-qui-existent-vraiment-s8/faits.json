@@ -1,0 +1,35 @@
+[
+ {
+  "claim": "Pour utiliser des pièges contre certaines espèces, une personne doit être agréée par le préfet.",
+  "valeur": "agrément du préfet",
+  "phrase": 3,
+  "sources": [
+   "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000648027",
+   "https://aida.ineris.fr/reglementation/arrete-290107-fixant-dispositions-relatives-piegeage-animaux-classes-nuisibles"
+  ],
+  "check": [
+   "agrément",
+   "préfet"
+  ],
+  "verified": [
+   "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000648027",
+   "https://aida.ineris.fr/reglementation/arrete-290107-fixant-dispositions-relatives-piegeage-animaux-classes-nuisibles"
+  ]
+ },
+ {
+  "claim": "L'agrément de piégeur suppose une formation d'au moins 16 heures.",
+  "valeur": "16 heures",
+  "phrase": 4,
+  "sources": [
+   "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000648027",
+   "https://aida.ineris.fr/reglementation/arrete-290107-fixant-dispositions-relatives-piegeage-animaux-classes-nuisibles"
+  ],
+  "check": [
+   "seize heures"
+  ],
+  "verified": [
+   "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000648027",
+   "https://aida.ineris.fr/reglementation/arrete-290107-fixant-dispositions-relatives-piegeage-animaux-classes-nuisibles"
+  ]
+ }
+]

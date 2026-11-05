@@ -1,0 +1,68 @@
+[
+ {
+  "claim": "Un mineur non émancipé ne peut pas créer d'entreprise individuelle, y compris en micro-entreprise ; la création d'entreprise est possible à partir de 16 ans.",
+  "valeur": "16 ans",
+  "phrase": 1,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ],
+  "check": [
+   "16 ans"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ]
+ },
+ {
+  "claim": "Un mineur non émancipé ne peut pas être commerçant.",
+  "valeur": "commerçant",
+  "phrase": 3,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ],
+  "check": [
+   "commerçant"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ]
+ },
+ {
+  "claim": "Avec l'autorisation écrite de ses parents, un mineur non émancipé peut créer une EURL ou une SASU, sociétés à associé unique.",
+  "valeur": "EURL SASU",
+  "phrase": 5,
+  "sources": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ],
+  "check": [
+   "EURL",
+   "SASU"
+  ],
+  "verified": [
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627",
+   "https://bpifrance-creation.fr/moment-de-vie/je-suis-mineur-ai-je-droit-creer-ma-propre-entreprise"
+  ]
+ },
+ {
+  "claim": "Un mineur émancipé peut être micro-entrepreneur ; l'émancipation se demande à partir de 16 ans, par les parents, auprès du juge des tutelles, et le mineur ne peut pas la demander lui-même.",
+  "valeur": "16 ans",
+  "phrase": 6,
+  "sources": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F1194",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627"
+  ],
+  "check": [
+   "16 ans",
+   "émancipation"
+  ],
+  "verified": [
+   "https://www.service-public.gouv.fr/particuliers/vosdroits/F1194",
+   "https://entreprendre.service-public.gouv.fr/vosdroits/F31627"
+  ]
+ }
+]

@@ -1,0 +1,63 @@
+{
+ "id": "10-business-des-16-ans-s8",
+ "titre": "Sous-titrer des vidéos : l'accord de l'auteur est obligatoire",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "TITRAGE VIDÉOS",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Idée suivante : sous-titrer des vidéos pour des créateurs et des associations.",
+  "Beaucoup de gens regardent sans le son, et des personnes sourdes ont besoin de textes.",
+  "Toi, tu écoutes, tu écris, puis tu règles le moment où chaque phrase apparaît.",
+  "Subtitle Edit est un logiciel libre pour écrire, caler et exporter des sous-titres.",
+  "Il travaille sur ton ordinateur, sans envoyer tes fichiers ailleurs.",
+  "La règle de loi : traduire ou adapter une vidéo sans l'accord de son auteur est interdit.",
+  "Demande donc un accord écrit, ou choisis des vidéos dont la licence le permet.",
+  "Garde une trace écrite de cet accord, et précise qui peut publier les sous-titres."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "sous-titrer"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 4,
+   "params": {
+    "titre": "TES OUTILS",
+    "items": [
+     {
+      "texte": "Subtitle Edit"
+     },
+     {
+      "texte": "Un accord écrit"
+     },
+     {
+      "texte": "Ta relecture"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 6,
+   "params": {
+    "question": "Peut-on traduire sans accord ?",
+    "pistes": [
+     "Non",
+     "Demande l'auteur",
+     "Garde la trace"
+    ]
+   }
+  }
+ ]
+}

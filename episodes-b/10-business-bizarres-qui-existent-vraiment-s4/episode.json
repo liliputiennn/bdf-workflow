@@ -1,0 +1,59 @@
+{
+ "id": "10-business-bizarres-qui-existent-vraiment-s4",
+ "titre": "Fauconnier : un métier qui existe, et ce que la loi demande",
+ "theme": "pelouse",
+ "chaine": "Bureau des Faits",
+ "theme_accent": "pelouse-nuit",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "FAUCONNIER ÉLOIGNE OISEAUX",
+  "icone": "panier"
+ },
+ "phrases": [
+  "Autre métier : le fauconnier, qui éloigne les oiseaux gênants.",
+  "Des pigeons salissent un toit, des étourneaux mangent les raisins : un rapace dressé peut les faire fuir.",
+  "Des fauconniers travaillent déjà ainsi dans les vignes et autour de certains aéroports.",
+  "Le but est d'effrayer les oiseaux, pas de les chasser pour le plaisir.",
+  "Premier point de loi : garder des rapaces demande un certificat de capacité, une preuve de compétence.",
+  "Un lieu qui détient ce type d'animaux est aussi soumis à une autorisation.",
+  "Il faut donc d'abord apprendre ce métier auprès d'un fauconnier, avant de proposer ce service.",
+  "Certains oiseaux sauvages sont protégés : renseigne-toi auprès de la préfecture avant d'intervenir."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "fauconnier",
+     "oiseaux"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "À OBTENIR",
+    "items": [
+     {
+      "texte": "Un certificat de capacité"
+     },
+     {
+      "texte": "Une autorisation du lieu"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 8,
+   "params": {
+    "question": "Où intervenir ?",
+    "pistes": [
+     "Demande à la préfecture"
+    ]
+   }
+  }
+ ]
+}

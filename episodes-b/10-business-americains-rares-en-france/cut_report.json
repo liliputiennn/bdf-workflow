@@ -1,0 +1,77 @@
+{
+ "long": "10-business-americains-rares-en-france",
+ "shorts": [
+  {
+   "id": "10-business-americains-rares-en-france-s1",
+   "chapitre": 2,
+   "phrases": 10,
+   "duree_s": 38.771,
+   "notes": []
+  },
+  {
+   "id": "10-business-americains-rares-en-france-s2",
+   "chapitre": 3,
+   "phrases": 9,
+   "duree_s": 34.948,
+   "notes": []
+  },
+  {
+   "id": "10-business-americains-rares-en-france-s3",
+   "chapitre": 4,
+   "phrases": 10,
+   "duree_s": 38.392,
+   "notes": []
+  },
+  {
+   "id": "10-business-americains-rares-en-france-s4",
+   "chapitre": 5,
+   "phrases": 10,
+   "duree_s": 39.733,
+   "notes": []
+  },
+  {
+   "id": "10-business-americains-rares-en-france-s5",
+   "chapitre": 6,
+   "phrases": 10,
+   "duree_s": 39.454,
+   "notes": []
+  },
+  {
+   "id": "10-business-americains-rares-en-france-s6",
+   "chapitre": 7,
+   "phrases": 10,
+   "duree_s": 38.481,
+   "notes": []
+  },
+  {
+   "id": "10-business-americains-rares-en-france-s7",
+   "chapitre": 8,
+   "phrases": 11,
+   "duree_s": 38.19,
+   "notes": []
+  },
+  {
+   "id": "10-business-americains-rares-en-france-s8",
+   "chapitre": 9,
+   "phrases": 10,
+   "duree_s": 42.114,
+   "notes": []
+  },
+  {
+   "id": "10-business-americains-rares-en-france-s10",
+   "chapitre": 11,
+   "phrases": 10,
+   "duree_s": 43.426,
+   "notes": []
+  }
+ ],
+ "ignores": [
+  {
+   "id": "10-business-americains-rares-en-france-s9",
+   "chapitre": 10,
+   "raison": [
+    "phrase 5 : trop longue (150 caractères)"
+   ]
+  }
+ ]
+}
