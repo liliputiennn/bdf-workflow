@@ -1,12 +1,12 @@
 {
- "etat": "programme",
- "maj": "2026-11-04T19:01:28",
+ "etat": "publie",
+ "maj": "2026-11-06T21:13:08",
  "raison": null,
  "tentatives": 0,
  "youtube": {
   "video_id": "DlDBEzddww8",
   "url": "https://youtu.be/DlDBEzddww8",
-  "visibilite": "programme",
+  "visibilite": "public",
   "publie_a": "2026-11-06T17:00:00Z",
   "miniature": true
  },
