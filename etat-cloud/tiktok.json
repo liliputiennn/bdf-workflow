@@ -32,30 +32,30 @@
    "publish_id": "v_inbox_file~v2.7704806065401366550",
    "envoye_a": "2026-11-05T21:43:52",
    "envoye_ts": 1793915032.9605038,
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "SEND_TO_USER_INBOX",
    "legende": "Ce snack se vend quatre fois plus cher qu'au Japon\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
   },
   "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s2": {
    "publish_id": "v_inbox_file~v2.7704805658109872150",
    "envoye_a": "2026-11-05T21:43:55",
    "envoye_ts": 1793915035.1125655,
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "SEND_TO_USER_INBOX",
    "legende": "Une machine à capsules, remboursée en douze jours\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
   },
   "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s3": {
    "publish_id": "v_inbox_file~v2.7704806119620773910",
    "envoye_a": "2026-11-05T21:43:57",
    "envoye_ts": 1793915037.3417282,
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "SEND_TO_USER_INBOX",
    "legende": "Cet onigiri coûte un euro et se vend trois euros\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
   },
   "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s4": {
    "publish_id": "v_inbox_file~v2.7704806065401432086",
    "envoye_a": "2026-11-05T21:43:59",
    "envoye_ts": 1793915039.4487264,
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "SEND_TO_USER_INBOX",
    "legende": "Un latte vert à un euro, vendu presque sept euros\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
   }
  },
- "maj": "2026-11-05T21:43:59"
+ "maj": "2026-11-06T13:24:30"
 }
