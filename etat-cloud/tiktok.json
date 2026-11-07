@@ -60,30 +60,30 @@
    "publish_id": "v_inbox_file~v2.7705398906695387158",
    "envoye_a": "2026-11-07T12:03:18",
    "envoye_ts": 1794052998.2628994,
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "SEND_TO_USER_INBOX",
    "legende": "Le bubble tea : trois euros trente-six de reste par verre\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
   },
   "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s6": {
    "publish_id": "v_inbox_file~v2.7705398905864964118",
    "envoye_a": "2026-11-07T12:03:20",
    "envoye_ts": 1794053000.5915802,
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "SEND_TO_USER_INBOX",
    "legende": "La laverie libre-service : ce qu'il reste par jour\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
   },
   "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s7": {
    "publish_id": "v_inbox_file~v2.7705398913024903190",
    "envoye_a": "2026-11-07T12:03:22",
    "envoye_ts": 1794053002.9889321,
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "SEND_TO_USER_INBOX",
    "legende": "Un café à chats : le calcul des ventes par jour\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
   },
   "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s1": {
    "publish_id": "v_inbox_file~v2.7705398923657086998",
    "envoye_a": "2026-11-07T12:03:25",
    "envoye_ts": 1794053005.039052,
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "SEND_TO_USER_INBOX",
    "legende": "Une graveuse laser transforme une planche en cadeau à 41 €\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
   }
  },
- "maj": "2026-11-07T12:03:25"
+ "maj": "2026-11-07T19:45:45"
 }
