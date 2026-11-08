@@ -1,13 +1,14 @@
 {
- "etat": "pret",
- "maj": "2026-11-05T12:27:02",
+ "etat": "programme",
+ "maj": "2026-11-08T20:04:30",
  "raison": null,
  "tentatives": 0,
  "youtube": {
-  "video_id": null,
-  "url": null,
-  "visibilite": null,
-  "publie_a": null
+  "video_id": "J5RMVJGJp4w",
+  "url": "https://youtu.be/J5RMVJGJp4w",
+  "visibilite": "programme",
+  "publie_a": "2026-11-26T17:00:00Z",
+  "miniature": true
  },
  "origine": "10-business-americains-rares-en-france",
  "miniature": {

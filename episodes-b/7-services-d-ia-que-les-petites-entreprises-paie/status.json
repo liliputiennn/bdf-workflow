@@ -1,13 +1,14 @@
 {
- "etat": "pret",
- "maj": "2026-11-04T22:05:21",
+ "etat": "programme",
+ "maj": "2026-11-08T20:04:36",
  "raison": null,
  "tentatives": 0,
  "youtube": {
-  "video_id": null,
-  "url": null,
-  "visibilite": null,
-  "publie_a": null
+  "video_id": "MBTcOJm3M1g",
+  "url": "https://youtu.be/MBTcOJm3M1g",
+  "visibilite": "programme",
+  "publie_a": "2026-11-27T17:00:00Z",
+  "miniature": true
  },
  "voix_progression": null,
  "miniature": {

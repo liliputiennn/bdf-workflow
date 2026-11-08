@@ -88,30 +88,30 @@
    "publish_id": "v_inbox_file~v2.7705774682028984342",
    "envoye_a": "2026-11-08T12:23:07",
    "envoye_ts": 1794140587.5750704,
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "SEND_TO_USER_INBOX",
    "legende": "Une imprimante 3D à 189 € : 72 € par jour avec 3 pièces\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
   },
   "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s3": {
    "publish_id": "v_inbox_file~v2.7705774955946182678",
    "envoye_a": "2026-11-08T12:23:09",
    "envoye_ts": 1794140589.7816262,
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "SEND_TO_USER_INBOX",
    "legende": "Un mug à 1,38 € revendu 18 € : le calcul de la presse à mug\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
   },
   "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s4": {
    "publish_id": "v_inbox_file~v2.7705775002754238486",
    "envoye_a": "2026-11-08T12:23:12",
    "envoye_ts": 1794140592.0060847,
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "SEND_TO_USER_INBOX",
    "legende": "La machine à barbe à papa se rembourse dès le premier événement\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
   },
   "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s5": {
    "publish_id": "v_inbox_file~v2.7705774955946248214",
    "envoye_a": "2026-11-08T12:23:14",
    "envoye_ts": 1794140594.9595516,
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "SEND_TO_USER_INBOX",
    "legende": "Un nettoyeur haute pression : 120 € par terrasse nettoyée\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
   }
  },
- "maj": "2026-11-08T12:23:14"
+ "maj": "2026-11-08T20:04:43"
 }
