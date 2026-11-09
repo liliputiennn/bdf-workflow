@@ -31,7 +31,16 @@ CFG = {
     "lead": 0.15,
 }
 REF_ID = hashlib.sha1(Path(CFG["ref_wav"]).read_bytes()).hexdigest()[:8] if Path(CFG["ref_wav"]).exists() else "none"
-NUMWORDS = set("zero un une deux trois quatre cinq six sept huit neuf dix onze douze treize quatorze quinze seize vingt trente quarante cinquante soixante cent cents mille dollar dollars pour virgule et".split())
+# Langue de la chaîne (BDF_LANGUE, posée par l'orchestrateur) : langue de synthèse, de Whisper et mots-nombres du contrôle de fidélité.
+# Sans variable (ou « fr ») : comportement français historique, caches compris.
+LANGUE = (_E("BDF_LANGUE", "fr") or "fr").lower().split("-")[0]
+TTS_LANGUES = {"fr": "French", "en": "English", "es": "Spanish", "pt": "Portuguese", "de": "German", "it": "Italian"}
+TTS_LANGUE = TTS_LANGUES.get(LANGUE, "French")
+WHISPER_LANGUE = LANGUE if LANGUE in TTS_LANGUES else "fr"
+NUMWORDS_FR = set("zero un une deux trois quatre cinq six sept huit neuf dix onze douze treize quatorze quinze seize vingt trente quarante cinquante soixante cent cents mille dollar dollars pour virgule et".split())
+NUMWORDS_EN = set("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty "
+                  "thirty forty fifty sixty seventy eighty ninety hundred thousand million billion dollar dollars euro euros percent point and a".split())
+NUMWORDS = NUMWORDS_EN if LANGUE == "en" else NUMWORDS_FR
 
 
 def norm(w: str) -> str:
@@ -49,7 +58,7 @@ HOMOPHONES = {"ces": "ce", "ses": "se", "mes": "me", "tes": "te", "les": "le", "
 
 def phonetique(mot: str) -> str:
     """Mot sans marque de pluriel (« payeurs » = « payeur ») et homophones courants ramenés à une même forme."""
-    if mot in HOMOPHONES:
+    if LANGUE == "fr" and mot in HOMOPHONES:
         return HOMOPHONES[mot]
     return mot[:-1] if len(mot) > 3 and mot[-1] in "sx" else mot
 
@@ -153,14 +162,15 @@ def main() -> None:
     ap.add_argument("--seuil", type=float, default=0.9)
     ap.add_argument("--episode-file", default="episode.json", help="fichier d'entrée du dossier (format long : voix-entree.json)")
     ap.add_argument("--budget-s", type=float, default=0.0, help="s'arrêter proprement (code 3) avant une nouvelle phrase une fois ce temps écoulé ; 0 = sans limite")
-    ap.add_argument("--locuteur", default="", help="voix intégrée de Qwen3-TTS CustomVoice (ex. Ryan) au lieu du clone de la voix du propriétaire")
-    ap.add_argument("--style", default="", help="consigne de ton pour la voix intégrée (ex. « voix de narrateur calme »)")
+    ap.add_argument("--locuteur", default=_E("BDF_LOCUTEUR", ""), help="voix intégrée de Qwen3-TTS CustomVoice (ex. Ryan) au lieu du clone de la voix du propriétaire")
+    ap.add_argument("--style", default=_E("BDF_STYLE", ""), help="consigne de ton pour la voix intégrée (ex. « voix de narrateur calme »)")
     args = ap.parse_args()
     ep_dir = Path(args.episode_dir).resolve()
     episode = json.loads((ep_dir / args.episode_file).read_text(encoding="utf-8"))
     phrases = episode["phrases"]
     pauses = {int(k): float(v) for k, v in (episode.get("pauses") or {}).items()}  # secondes de silence avant la phrase n (1 = première)
     vitesses = {int(k): float(v) for k, v in (episode.get("vitesses") or {}).items()}  # vitesse imposée pour la phrase n (1 = première)
+    langues_ph = {int(k): str(v).lower().split("-")[0] for k, v in (episode.get("langues") or {}).items()}  # langue de synthèse imposée à la phrase n (leçons de langue : la phrase étrangère)
     intensite = float(_E("BDF_NUANCES", "1"))
     cache = ep_dir / "cache"
     cache.mkdir(exist_ok=True)
@@ -177,17 +187,17 @@ def main() -> None:
     from qwen_tts import Qwen3TTSModel
 
     asr = WhisperModel(CFG["whisper"], device=_E("BDF_WHISPER_DEVICE", "cpu"), compute_type="int8" if _E("BDF_WHISPER_DEVICE", "cpu") == "cpu" else "float16")
-    ref_text = Path(CFG["ref_txt"]).read_text(encoding="utf-8").strip()
+    ref_text = Path(CFG["ref_txt"]).read_text(encoding="utf-8").strip() if Path(CFG["ref_txt"]).exists() else ""
     model = None
     prompt = None
 
-    def hear(wav, sr, text):
+    def hear(wav, sr, text, wl=None):
         tmp = cache / "_tmp.wav"
         sf.write(tmp, wav, sr)
         best = (-1.0, "", [])
         # Avec l'amorce du texte, puis sans : sur certaines phrases l'amorce fait halluciner Whisper (« Sous-titres … Amara.org ») alors que la voix est bonne.
         for prompt_txt in (text, None):
-            segs, _ = asr.transcribe(str(tmp), language="fr", beam_size=3, word_timestamps=True, initial_prompt=prompt_txt)
+            segs, _ = asr.transcribe(str(tmp), language=wl or WHISPER_LANGUE, beam_size=3, word_timestamps=True, initial_prompt=prompt_txt)
             segs = list(segs)
             heard = " ".join(s.text.strip() for s in segs)
             sc = fidelity(text, heard)
@@ -205,6 +215,13 @@ def main() -> None:
     for i, text in enumerate(phrases):
         # la voix de référence fait partie de la clé : changer `voix/ref.wav` invalide les phrases déjà générées
         extra = f"|{args.locuteur}|{args.style}" if args.locuteur else f"|ref:{REF_ID}"
+        if LANGUE != "fr":
+            extra += f"|{LANGUE}"  # le français garde ses clés de cache d'avant
+        lg_code = langues_ph.get(i + 1, LANGUE)
+        tts_l = TTS_LANGUES.get(lg_code, TTS_LANGUE)
+        wh_l = lg_code if lg_code in TTS_LANGUES else WHISPER_LANGUE
+        if lg_code != LANGUE:
+            extra += f"|ph:{lg_code}"
         key = hashlib.sha1(f"{text}|{args.essais}|{CFG['temps']}{extra}|{Path(str(CFG['model'])).name}".encode()).hexdigest()[:12]
         wav_path, meta_path = cache / f"{i + 1:02d}-{key}.wav", cache / f"{i + 1:02d}-{key}.json"
         meta = json.loads(meta_path.read_text(encoding="utf-8")) if wav_path.exists() and meta_path.exists() else None
@@ -228,16 +245,16 @@ def main() -> None:
             for temp in CFG["temps"][: args.essais]:
                 if args.locuteur:
                     wavs, sr = model.generate_custom_voice(
-                        text=text, language="French", speaker=args.locuteur, instruct=args.style or None,
+                        text=text, language=tts_l, speaker=args.locuteur, instruct=args.style or None,
                         temperature=temp, top_p=0.95, top_k=60, repetition_penalty=1.1,
                     )
                 else:
                     wavs, sr = model.generate_voice_clone(
-                        text=text, language="French", voice_clone_prompt=prompt,
+                        text=text, language=tts_l, voice_clone_prompt=prompt,
                         temperature=temp, top_p=0.95, top_k=60, repetition_penalty=1.1,
                     )
                 w = wavs[0].astype(np.float32)
-                heard, hw = hear(w, sr, text)
+                heard, hw = hear(w, sr, text, wh_l)
                 sc = fidelity(text, heard)
                 scores.append(round(sc, 2))
                 if sc > best[0]:
@@ -248,11 +265,11 @@ def main() -> None:
                 # Sauvetage : certaines phrases ressortent illisibles à chaque essai ; sans point final (ou avec une autre température) elles passent.
                 for var, temp in [(text.rstrip(" .!?…"), 1.0), (text.rstrip(" .!?…"), 0.9), (text.rstrip(" .!?…"), 1.1), (text, 0.8)]:
                     wavs, sr = model.generate_voice_clone(
-                        text=var, language="French", voice_clone_prompt=prompt,
+                        text=var, language=tts_l, voice_clone_prompt=prompt,
                         temperature=temp, top_p=0.95, top_k=60, repetition_penalty=1.1,
                     )
                     w = wavs[0].astype(np.float32)
-                    heard, hw = hear(w, sr, text)
+                    heard, hw = hear(w, sr, text, wh_l)
                     sc = fidelity(text, heard)
                     scores.append(round(sc, 2))
                     if sc > best[0]:

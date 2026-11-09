@@ -190,8 +190,34 @@ class ExtractionShort(unittest.TestCase):
     def test_publication_du_short(self):
         p = L.publication_du_short({"tags": ["a"]}, demo(), "x" * 90, None)
         self.assertLessEqual(len(p["titre"]), 70)
-        self.assertEqual(p["tags"], ["a"])
+        self.assertEqual(p["tags"][0], "a")  # les tags du long d'abord, puis les mots utiles de l'accroche
         self.assertTrue(p["contenu_ia"])
+
+    def test_publication_du_short_reference_au_maximum(self):
+        pub_long = {"tags": ["business", "graveuse laser", "argent"], "question_commentaires": "Tu en as déjà une ?",
+                    "description": "Résumé. #Business #Argent #IdéesBusiness"}
+        p = L.publication_du_short(pub_long, demo(), "Graveuse laser : le calcul du gain par jour", None)
+        d = p["description"]
+        self.assertTrue(d.startswith("Graveuse laser : le calcul du gain par jour"))  # mot-clé en tête
+        self.assertIn("▶ Vidéo complète :", d)
+        self.assertIn("Mots-clés :", d)
+        tags = [w for w in d.split() if w.startswith("#")]
+        self.assertGreaterEqual(len(tags), 6)
+        self.assertLessEqual(len(tags), 15)
+        self.assertIn("#Shorts", tags)
+        self.assertEqual(tags[:3], ["#Business", "#Argent", "#IdéesBusiness"])  # ceux du long, en tête
+        self.assertLessEqual(len(d.encode("utf-8")), 4200)
+        self.assertNotIn("synthèse", d.lower())
+
+    def test_lien_du_long_quand_il_existe(self):
+        p = L.publication_du_short({"tags": ["a"]}, demo(), "Accroche du Short", "https://youtu.be/XYZ")
+        self.assertIn("▶ Vidéo complète : https://youtu.be/XYZ", p["description"])
+
+    def test_miniatures_des_shorts_d_un_meme_long_tournent(self):
+        ep = demo()
+        styles = [L.style_miniature_du_short(ep, k) for k in range(4)]
+        self.assertEqual(len(set(styles)), 4, styles)
+        self.assertEqual(L.style_miniature_du_short(ep, 0), L.style_miniature_du_short(ep, 4))
 
 
 @unittest.skipUnless(shutil.which("ffmpeg"), "ffmpeg absent")

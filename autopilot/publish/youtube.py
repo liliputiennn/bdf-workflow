@@ -263,6 +263,15 @@ class YouTube:
             if not page:
                 return ids
 
+    def ma_chaine(self) -> dict:
+        """Chaîne YouTube liée au jeton : {"id", "titre"} (informations publiques ; 1 unité de quota)."""
+        rep = self._json("GET", f"{self.api}/channels?" + urllib.parse.urlencode({"part": "snippet", "mine": "true"}),
+                         operation="channels.list", unites=self.cfg["quota"]["cout_lecture"])
+        if not rep.get("items"):
+            raise ErreurAuth("aucune chaîne YouTube trouvée pour ce compte : choisis la chaîne (compte de marque) pendant l'autorisation")
+        it = rep["items"][0]
+        return {"id": it.get("id", ""), "titre": (it.get("snippet") or {}).get("title", "")}
+
     def mettre_a_jour_statut(self, video_id: str, statut: dict) -> dict:
         """`videos.update` sur la partie `status` : il faut renvoyer le statut complet, pas seulement un champ."""
         url = f"{self.api}/videos?" + urllib.parse.urlencode({"part": "status"})
@@ -281,7 +290,7 @@ def construire_ressource(pub: dict, cfg: dict, publie_a_iso: str) -> dict:
         },
         "status": {
             "privacyStatus": "private", "publishAt": publie_a_iso,
-            "selfDeclaredMadeForKids": False, "embeddable": True, "publicStatsViewable": True,
+            "selfDeclaredMadeForKids": bool(cfg.get("pour_enfants", False)), "embeddable": True, "publicStatsViewable": True,
             "containsSyntheticMedia": bool(cfg.get("badge_ia_youtube", False)) and bool(pub.get("contenu_ia", False)),
         },
     }

@@ -48,7 +48,7 @@ try:
     manque = [n for n, v in (("modèle Qwen3-TTS", modele), ("Whisper", whisper), ("ref.wav", ref_wav)) if v is None]
     if manque:
         fin(1, "introuvable dans les jeux de données Kaggle : " + ", ".join(manque))
-    voix = ref_wav.parent
+    voix = ref_wav.parent  # le jeu de données de voix fournit aussi la chaîne de nettoyage (même avec une voix intégrée)
 
     # 3. dépôt du code de voix : voice.py est embarqué dans ce script
     ici = W
@@ -61,6 +61,10 @@ try:
            "BDF_DTYPE": os.environ.get("BDF_DTYPE", "bfloat16"), "BDF_WHISPER_DEVICE": "cpu",
            "HF_HUB_OFFLINE": "0" if modele_hf else "1", "TRANSFORMERS_OFFLINE": "0" if modele_hf else "1",
            "BDF_VITESSE": str(OPTIONS.get("vitesse", 1.10)), "PYTHONIOENCODING": "utf-8", "PYTHONWARNINGS": "ignore"}
+    if OPTIONS.get("langue"):
+        env["BDF_LANGUE"] = OPTIONS["langue"]
+    if OPTIONS.get("locuteur"):  # voix intégrée : le modèle CustomVoice est téléchargé (modele_hf), pas de clonage
+        env.update({"BDF_LOCUTEUR": OPTIONS["locuteur"], "BDF_STYLE": OPTIONS.get("style") or "", "BDF_MODEL_CUSTOM": modele_hf})
     cmd = [sys.executable, str(ici / "voice.py"), str(ep), "--episode-file", OPTIONS["fichier"], "--essais", str(OPTIONS["essais"]),
            "--seuil", str(OPTIONS["seuil"])]
     if OPTIONS.get("budget_s"):

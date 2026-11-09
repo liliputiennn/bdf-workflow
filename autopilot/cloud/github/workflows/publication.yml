@@ -1,4 +1,4 @@
-# Publication, PC éteint : récupère dans le stock les vidéos prêtes, les envoie sur YouTube (programmées à l'heure de la chaîne),
+# Publication, PC éteint : récupère dans le stock les vidéos prêtes, les envoie sur YouTube (programmées sur les créneaux de la chaîne : 8 Shorts par jour + un long les lundi, mercredi, vendredi),
 # envoie les Shorts dans la boîte de réception TikTok, nettoie le stock et met l'état à jour pour l'interface.
 # Lancement à la main au début (Actions > Publication > Run workflow, « à blanc » par défaut) ; la planification 2 fois par jour
 # se décommente quand le premier essai réel a réussi.
@@ -6,7 +6,7 @@
 name: Publication
 on:
   schedule:
-    - cron: "0 6,16 * * *"   # 07 h et 17 h à Paris en hiver : programme les envois avant l'heure de mise en ligne (18 h)
+    - cron: "30 4,14 * * *"  # 05 h 30 et 15 h 30 à Paris en hiver : programme les créneaux à venir (08:00, 12:00, 17:00 long, 18:00, 21:00 ; 10 envois par passage au plus)
   workflow_dispatch:
     inputs:
       a_blanc:

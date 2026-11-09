@@ -92,10 +92,21 @@ En attendant, tu peux aussi passer les vidéos en public à la main dans YouTube
 
 | Clé | Rôle | Valeur actuelle |
 |---|---|---|
-| `heure_publication` | heure de mise en ligne, une vidéo par jour | `18:00` |
-| `fuseau` | fuseau de cette heure (`Europe/Paris`, `America/Los_Angeles`, `UTC`) | `Europe/Paris` |
+| `heures_shorts` | créneaux de mise en ligne des Shorts (heure locale) | `08:00`, `12:00`, `18:00`, `21:00` |
+| `shorts_par_creneau` | Shorts par créneau (4 x 2 = **8 Shorts par jour**) | `2` |
+| `ecart_creneau_minutes` | écart entre deux Shorts du même créneau (08:00 et 08:15) | `15` |
+| `heure_long` | heure de mise en ligne d'un long | `17:00` |
+| `jours_longs` | jours des longs (0 = lundi) : lundi, mercredi, vendredi | `[0, 2, 4]` |
+| `heure_publication` | repli : heure unique si `heures_shorts` est vide | `18:00` |
+| `fuseau` | fuseau de ces heures (`Europe/Paris`, `America/Los_Angeles`, `UTC`) | `Europe/Paris` |
 | `categorie_id` | catégorie YouTube (27 = Éducation, 25 = Actualités, 26 = Conseils et style) | `27` |
-| `max_envois_par_execution` | nombre de vidéos envoyées par lancement | `2` |
+| `max_envois_par_execution` | nombre de vidéos envoyées par lancement (2 lancements par jour) | `10` |
+| `hashtags_cible` / `hashtags_max` | hashtags visés dans chaque description / maximum (au-delà de 15, YouTube les ignore tous) | `12` / `15` |
+| `hashtags_chaine` | hashtags de la chaîne, utilisés pour compléter une description trop pauvre | voir `reglages.py` |
+| `mots_cles_dans_description` | ajoute « Mots-clés : … » (tags du rédacteur) s'il manque | `true` |
+
+**Planification** : un créneau = une heure précise, pas un jour. Chaque vidéo prend le premier créneau libre de son format (Shorts : tous les jours ; longs : les `jours_longs`), à plus de `marge_minimale_minutes` de maintenant. Les Shorts découpés dans un long passent d'abord, en alternant les longs d'origine ; la file n'enchaîne jamais deux titres de même forme ni deux gabarits visuels identiques (`publish.diversifier`).
+**Quota** : 8 Shorts + 1 long par jour = au plus 9 envois (plafond 100 par jour) et 9 miniatures + 9 relectures = 459 unités sur 10 000. Le garde-fou de quota est inchangé : au premier refus de YouTube, tout est reporté au lendemain.
 | `quota.*` | coûts et plafonds de quota (voir ci-dessous) | valeurs officielles |
 
 Les vidéos sont envoyées en **privé** avec une date de mise en ligne programmée (`publishAt`) : YouTube les rend publiques à l'heure dite.

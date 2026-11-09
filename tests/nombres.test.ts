@@ -52,3 +52,36 @@ describe("sous-titres : morceaux courts", () => {
     expect(decoupe(mots("Alors, qui paie pour que"))).toHaveLength(1);
   });
 });
+
+describe("sous-titres anglais : nombres en chiffres", () => {
+  const en = (phrase: string) => affiche(mots(phrase), "en").map((w) => w.w).join(" ");
+  it("entiers, composés, années", () => {
+    expect(en("Only twelve thousand five hundred people")).toBe("Only 12,500 people");
+    expect(en("sixty-six and seventy-three")).toBe("66 and 73");
+    expect(en("three hundred twenty-seven")).toBe("327");
+    expect(en("one hundred percent sure")).toBe("100% sure");
+    expect(en("in twenty twenty-four we saw")).toBe("in 2024 we saw");
+    expect(en("since nineteen ninety-nine")).toBe("since 1999");
+    expect(en("two thousand five hundred")).toBe("2500");
+  });
+  it("décimales, pourcentages et monnaies", () => {
+    expect(en("one point five percent of players")).toBe("1.5% of players");
+    expect(en("zero point zero five")).toBe("0.05");
+    expect(en("thirty euros a month")).toBe("€30 a month");
+    expect(en("twenty thousand dollars")).toBe("$20,000");
+    expect(en("three million dollars")).toBe("$3 million");
+    expect(en("ten to fourteen times")).toBe("10 to 14 times");
+  });
+  it("ne touche pas les mots courants et le français reste intact sans langue", () => {
+    expect(en("one of them said that")).toBe("one of them said that");
+    expect(en("a second look at the first one")).toBe("a second look at the first one");
+    expect(texte("vingt mille euros")).toBe(`20${N}000${N}€`);
+    expect(affiche(mots("deux équipes"), "fr").map((w) => w.w).join(" ")).toBe("2 équipes");
+  });
+  it("garde la ponctuation et fusionne le calage", () => {
+    const r = affiche(mots("of two thousand fourteen, only"), "en");
+    expect(r.map((w) => w.w)).toEqual(["of", "2014,", "only"]);
+    expect(r[1].start).toBeCloseTo(0.4);
+    expect(r[1].end).toBeCloseTo(1.2 + 0.35);
+  });
+});

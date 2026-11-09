@@ -16,7 +16,7 @@ export const Particles: React.FC<{ th: Theme; f: number; w: number; h: number }>
       const x = r("x") * w + Math.sin(f / (40 + r("w") * 40) + i) * 34 * depth;
       const col = r("c") > 0.5 ? th.accent : th.hot;
       if (r("g") > 0.6) {
-        return <div key={i} style={{ position: "absolute", left: x, top: y, fontFamily: GIANT, fontSize: size * 2, color: col, opacity: 0.1 + depth * 0.12, filter: `blur(${(1.4 - depth) * 3}px)` }}>{GLYPHS[Math.floor(r("t") * GLYPHS.length)]}</div>;
+        return <div key={i} style={{ position: "absolute", left: x, top: y, fontFamily: GIANT, fontSize: size * 2, color: col, opacity: 0.1 + depth * 0.12, filter: `blur(${(1.4 - depth) * 3}px)` }}>{(th.glyphs ?? GLYPHS)[Math.floor(r("t") * (th.glyphs ?? GLYPHS).length)]}</div>;
       }
       return <div key={i} style={{ position: "absolute", left: x, top: y, width: size, height: size, borderRadius: "50%", background: col, opacity: 0.14 + depth * 0.16, filter: `blur(${(1.5 - depth) * 4}px)`, boxShadow: `0 0 ${size * 2}px ${col}` }} />;
     })}

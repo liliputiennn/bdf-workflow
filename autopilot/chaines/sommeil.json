@@ -1,0 +1,69 @@
+{
+  "id": "sommeil",
+  "nom": "Sommeil (nom à choisir)",
+  "langue": "fr",
+  "format": "sommeil",
+  "niche": "Longues vidéos calmes pour s'endormir",
+  "active": false,
+  "vague": 4,
+  "jeton_fichier": "token-sommeil.json",
+  "voix": {
+    "dossier": "voix/sommeil"
+  },
+  "musique": {
+    "dossier": null
+  },
+  "style": {
+    "theme": "sommeil",
+    "miniature": "sommeil"
+  },
+  "publication": {
+    "heures_shorts": [
+      "20:00"
+    ],
+    "shorts_par_creneau": 1,
+    "heure_long": "20:30",
+    "jours_longs": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "commentaire_auto": false,
+    "question_dans_description": false,
+    "mention_ia_description": true
+  },
+  "frequence": {
+    "shorts_par_jour": 0,
+    "longs_par_semaine": 4
+  },
+  "dossiers": {
+    "sujets": "subjects/sommeil"
+  },
+  "source": null,
+  "format_module": "autopilot.formats.sommeil",
+  "format_options": {},
+  "format_pret": true,
+  "briques": {
+    "fabrique": "formats/fabrique.py",
+    "miniature": "formats/miniature_formats.py"
+  },
+  "notes": "Chantier 3, format 4. Longs de 30 à 180 min : histoire douce (voix Qwen3-TTS, Apache-2.0) puis ambiance synthétisée par du code (aucune licence à vérifier) sur un décor sombre en boucle ; rendu léger (boucle de 30 s bouclée par ffmpeg sans réencodage). Aucun Short. Aucune promesse de santé.",
+  "preparation": true,
+  "format_statut": {
+    "verifie": "2026-11-09",
+    "test": "sommeil-essai : histoire + ambiance de 30 min, rendu léger, pret, faux YouTube au créneau des longs. Voix simulée.",
+    "manque": [
+      "Écouter et confirmer la voix (Serena) et le volume",
+      "Créer la chaîne YouTube, connecter son jeton, choisir quand activer"
+    ],
+    "licences": [
+      "Voix : Qwen3-TTS CustomVoice, Apache-2.0",
+      "Ambiances et décors : générés par le code, rien à créditer"
+    ],
+    "risques": [
+      "Vidéos longues similaires : histoire inédite, graines et décors différents obligatoires",
+      "Aucune promesse de santé ; phrase d'honnêteté obligatoire"
+    ]
+  }
+}

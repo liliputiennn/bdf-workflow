@@ -1,0 +1,7 @@
+{
+ "locuteur": "Ryan",
+ "style": "A steady, clear and friendly documentary narrator. Even pace, natural intonation, calm and confident, no dramatic emotion.",
+ "vitesse": 1.0,
+ "licence": "Qwen3-TTS-12Hz-0.6B-CustomVoice, Apache-2.0 (voix intégrée Ryan, anglais natif)",
+ "note": "Pour une voix clonée à la place : déposer ref.wav (10 à 20 s de voix propre) et ref.txt (sa transcription exacte) dans ce dossier ; le clonage prend alors le dessus."
+}

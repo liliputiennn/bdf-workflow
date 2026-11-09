@@ -11,7 +11,7 @@ ICI = Path(__file__).resolve().parent
 sys.path.insert(0, str(ICI.parent))
 import common  # noqa: E402
 
-FICHIERS = ["youtube_quota.json", "youtube_auth.json", "youtube_audit.json", "tiktok.json"]
+FICHIERS = ["youtube_quota.json", "youtube_auth.json", "youtube_audit.json", "tiktok.json", "chaines_youtube.json", "jetons.json"]  # + youtube_auth-<chaine>.json (une par chaîne)
 DEPOT = common.ROOT / "etat-cloud"
 
 
@@ -19,7 +19,7 @@ def main(mode: str) -> int:
     common.STATE.mkdir(parents=True, exist_ok=True)
     src, dst = (DEPOT, common.STATE) if mode == "restore" else (common.STATE, DEPOT)
     dst.mkdir(parents=True, exist_ok=True)
-    for f in FICHIERS:
+    for f in FICHIERS + sorted(q.name for q in src.glob("youtube_auth-*.json")):
         if (src / f).exists():
             shutil.copy(src / f, dst / f)
             print(f"{mode} : {f}")

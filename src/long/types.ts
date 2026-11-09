@@ -21,6 +21,8 @@ export type EpisodeLong = {
   /** Thème de contraste (ex. chocolat-caramel) appliqué aux scènes de gros sous-titres. */
   theme_accent?: string;
   chaine: string;
+  /** Langue du texte parlé et affiché (« en »…) ; sans valeur : le français. */
+  langue?: string;
   pause_chapitre_s?: number;
   chapitres: Chapitre[];
 };

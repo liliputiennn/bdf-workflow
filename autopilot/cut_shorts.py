@@ -73,7 +73,7 @@ def cut(long_id: str, *, maximum: int = L.SHORTS_MAX, force: bool = False) -> di
             common.write_json(pub_path, L.publication_du_short(pub_long, ep, ch["short"]["accroche"], url_long))
         common.write_json(sdir / "origine.json", {"long": long_id, "chapitre": k + 1, "phrases_chapitre": [d, f], "phrases_globales": [g0, g1],
                                                    "de_s": round(t0, 3), "a_s": round(t1, 3), "notes": notes})
-        common.set_status(sid, "ecrit", None, origine=long_id)
+        common.set_status(sid, "ecrit", None, origine=long_id, chaine_id=common.chaine_de(long_id))  # le Short reste dans la chaîne de son long
         rapport["shorts"].append({"id": sid, "chapitre": k + 1, "phrases": f - d + 1, "duree_s": rt["total"], "notes": notes})
     for k, ch in marques[maximum:]:
         rapport["ignores"].append({"id": None, "chapitre": k + 1, "raison": [f"plus de {maximum} Shorts : segment ignoré"]})

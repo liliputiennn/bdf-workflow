@@ -1,0 +1,69 @@
+{
+  "id": "langues",
+  "nom": "Apprendre les langues (nom à choisir)",
+  "langue": "fr",
+  "format": "langues",
+  "niche": "Mots et phrases utiles, par petites leçons",
+  "active": false,
+  "vague": 5,
+  "jeton_fichier": "token-langues.json",
+  "voix": {
+    "dossier": "voix/langues"
+  },
+  "musique": {
+    "dossier": null
+  },
+  "style": {
+    "theme": "langues",
+    "miniature": "langues"
+  },
+  "publication": {
+    "heures_shorts": [
+      "07:30",
+      "18:30"
+    ],
+    "shorts_par_creneau": 1,
+    "heure_long": "17:30",
+    "jours_longs": [
+      5
+    ],
+    "commentaire_auto": false,
+    "question_dans_description": false,
+    "mention_ia_description": true
+  },
+  "frequence": {
+    "shorts_par_jour": 2,
+    "longs_par_semaine": 1
+  },
+  "dossiers": {
+    "sujets": "subjects/langues"
+  },
+  "source": null,
+  "format_module": "autopilot.formats.apprendre",
+  "format_options": {
+    "langue_cible": "en"
+  },
+  "format_pret": true,
+  "briques": {
+    "fabrique": "formats/fabrique.py",
+    "miniature": "formats/miniature_formats.py"
+  },
+  "notes": "Chantier 3, format 3. Francophones qui apprennent l'ANGLAIS (langue_cible dans format_options ; es/pt/de/it prêtes côté voix). Leçons de 3 à 4 phrases, seconde passe automatique (retraduction, confiance, sources), voix multilingue Qwen3-TTS (Apache-2.0). Le profil reste en français : le public parle français.",
+  "preparation": true,
+  "format_statut": {
+    "verifie": "2026-11-09",
+    "test": "langues-essai : brouillon, validation (retraduction, confiance, sources), fabrique, miniature, pret, faux YouTube. Voix simulée.",
+    "manque": [
+      "Écouter la prononciation anglaise de la voix intégrée (Serena) et confirmer",
+      "Créer la chaîne YouTube, connecter son jeton, choisir quand activer"
+    ],
+    "licences": [
+      "Voix : Qwen3-TTS CustomVoice, Apache-2.0 (multilingue)",
+      "Phrases : écrites par le rédacteur, sources citées dans la description"
+    ],
+    "risques": [
+      "La seconde passe est une relecture du rédacteur, pas un autre traducteur : relire les premières leçons",
+      "Voix de synthèse : contenu_ia déclaré"
+    ]
+  }
+}

@@ -3,11 +3,12 @@ import { AbsoluteFill, staticFile, useCurrentFrame, type CalculateMetadataFuncti
 import { Audio } from "@remotion/media";
 import { Backdrop } from "../infographie/fx";
 import { affiche, decoupe } from "../infographie/nombres";
+import { LangueCtx } from "../infographie/langue";
 import { ease, FPS, SceneClock } from "../infographie/scenes";
 import { getTheme, GIANT, UI, type Theme } from "../infographie/themes";
 import type { Scene, Timings, Word } from "../infographie/types";
 import { chapitresTemps, flatten, type ChapitreTemps } from "./plan";
-import { Annonce, Anneau, Barres, Chiffre, Clip, Courbe, Duel, Fiche, LH, Liste, LigneTemps, LW, Objet, Photo, Question, TitreGeant } from "./scenes";
+import { Annonce, Anneau, Barres, Carte, Chiffre, Citation, Clip, Courbe, Duel, Fiche, Frise, LH, Liste, LigneTemps, LW, Objet, Photo, Question, TitreGeant } from "./scenes";
 import type { EpisodeLong, LongProps } from "./types";
 
 /** Pause laissée après la dernière parole (fin de vidéo). */
@@ -41,6 +42,9 @@ const vue = (s: Scene, c: { l: number; th: Theme; words: Word[]; t: number }) =>
     case "duel": return <Duel {...c} p={s.params as never} />;
     case "objet": return <Objet {...c} p={s.params as never} />;
     case "question": return <Question {...c} p={s.params as never} />;
+    case "frise": return <Frise {...c} p={s.params as never} />;
+    case "carte": return <Carte {...c} p={s.params as never} />;
+    case "citation": return <Citation {...c} p={s.params as never} />;
     case "liste": return <Liste {...c} p={s.params as never} />;
     case "fiche": return <Fiche {...c} p={s.params as never} />;
     case "annonce": return <Annonce {...c} p={s.params as never} />;
@@ -112,7 +116,7 @@ export const Long: React.FC<LongProps> = ({ id, episode, timings }) => {
   const l = f - startF(si);
   const line = timings.lines[lineAt(t)];
   // à l'écran : nombres en chiffres, puis morceaux courts (un seul affiché à la fois, celui qu'on entend)
-  const mots = affiche(line.words);
+  const mots = affiche(line.words, episode.langue);
   const morceaux = decoupe(mots, 9, 52);
   const ck = morceaux.reduce((acc, c, k) => (t >= c[0].start - 0.02 ? k : acc), 0);
   const morceau = morceaux[ck];
@@ -128,10 +132,11 @@ export const Long: React.FC<LongProps> = ({ id, episode, timings }) => {
   const enter = ease(l, 0, TR);
   const showPrev = si > 0 && l < TR + 2;
   const prevT = (startF(si) - 1) / FPS;
-  const prevMots = affiche(timings.lines[lineAt(prevT)].words);
+  const prevMots = affiche(timings.lines[lineAt(prevT)].words, episode.langue);
   const camera = 1 + Math.min(l, 240) * 0.0002;
 
   return (
+    <LangueCtx.Provider value={episode.langue}>
     <AbsoluteFill style={{ background: th.bg[0], fontFamily: UI, overflow: "hidden" }}>
       <Fond th={th} f={f} />
       {showPrev && prevTh.id !== th.id && <Backdrop th={prevTh} f={f} w={LW} h={LH} opacity={1 - enter} />}
@@ -197,5 +202,6 @@ export const Long: React.FC<LongProps> = ({ id, episode, timings }) => {
       <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 45%, transparent 58%, rgba(0,0,0,${th.dark ? 0.3 : 0.08}) 100%)`, pointerEvents: "none" }} />
       <Audio src={staticFile(`${id}/voice.wav`)} />
     </AbsoluteFill>
+    </LangueCtx.Provider>
   );
 };

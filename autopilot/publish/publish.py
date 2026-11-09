@@ -1,17 +1,23 @@
 """Publieur YouTube : `pret` -> `programme` -> `publie` (voir autopilot/CONTRAT.md).
 
     python autopilot/publish/publish.py <id> [--dry-run]
-    python autopilot/publish/publish.py --en-attente [--dry-run]
+    python autopilot/publish/publish.py --en-attente [--chaine ID] [--dry-run]   # toutes les chaînes ACTIVES (ou une seule)
     python autopilot/publish/publish.py --exemple <id>      # crée un publication.json d'exemple s'il n'existe pas
 
 Codes de sortie : 0 tout va bien (y compris « reporté pour cause de quota »), 1 au moins un épisode en
 quarantaine ou un échec de validation, 3 authentification à refaire (rien n'est mis en quarantaine).
 La dernière ligne imprimée est un résumé JSON pour l'orchestrateur.
+
+Plusieurs chaînes : chacune a son jeton, ses créneaux et ses réglages (profil `autopilot/chaines/<id>.json`) ; le quota est celui du projet,
+partagé. Une chaîne dont le jeton est refusé est signalée (`state/youtube_auth-<id>.json`) sans empêcher les autres de publier ;
+un quota épuisé arrête tout le monde (c'est le même pour toutes).
 """
+import contextlib
 import json
 import os
 import struct
 import sys
+import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -20,11 +26,15 @@ for _p in (ICI, ICI.parent):
     if str(_p) not in sys.path:
         sys.path.insert(0, str(_p))
 
+import chaines  # noqa: E402
 import commentaire  # noqa: E402
+from traduction import decalage  # noqa: E402
 import common  # noqa: E402
 import horaire  # noqa: E402
+import langues  # noqa: E402
 import reglages  # noqa: E402
-from auth import Jeton, noter_etat_auth  # noqa: E402
+import seo  # noqa: E402
+from auth import Jeton, ecrire_etat_jetons, noter_etat_auth  # noqa: E402
 from erreurs import ErreurAuth, ErreurContenu, ErreurQuota, ErreurReseau  # noqa: E402
 from quota import RegistreQuota, maintenant_utc  # noqa: E402
 from youtube import YouTube, construire_ressource  # noqa: E402
@@ -103,8 +113,9 @@ def valider(ep_id: str, cfg: dict) -> tuple[list[str], list[str], dict | None]:
     for nom, valeur in (("titre", titre), ("description", desc), ("tags", " ".join(tags) if isinstance(tags, list) else "")):
         if isinstance(valeur, str) and any(a in valeur for a in ANGLES):
             pb.append(f"{nom} : les signes < et > sont refusés par YouTube")
-    if pub.get("langue", "fr") != "fr":
-        av.append(f"langue « {pub.get('langue')} » (attendu fr)")
+    langue = cfg.get("langue", "fr")  # langue de la chaîne (son profil)
+    if pub.get("langue", langue) != langue:
+        av.append(f"langue « {pub.get('langue')} » (attendu {langue})")
     if not isinstance(pub.get("contenu_ia", False), bool):
         pb.append("contenu_ia doit être true ou false")
     return pb, av, pub
@@ -117,7 +128,7 @@ def _horodatage(s: float) -> str:
     return f"{h}:{m:02d}:{sec:02d}" if h else f"{m:02d}:{sec:02d}"
 
 
-def chapitres_description(ep_id: str) -> str:
+def chapitres_description(ep_id: str, langue: str = "fr") -> str:
     """Chapitres d'un long au format YouTube (« 00:00 Titre », le premier à 00:00, au moins 3, chacun d'au moins 10 s), ou ''."""
     chaps = common.read_json(common.ep_dir(ep_id) / "chapitres.json", None)
     if not isinstance(chaps, list) or len(chaps) < 3:
@@ -128,11 +139,13 @@ def chapitres_description(ep_id: str) -> str:
         if lignes and debut - lignes[-1][0] < 10:
             return ""  # YouTube ignore tous les chapitres si l'un dure moins de 10 secondes
         lignes.append((debut, str(c.get("titre", "")).strip()))
-    return "Chapitres :\n" + "\n".join(f"{_horodatage(d)} {t}" for d, t in lignes)
+    return langues.libelle(langue, "chapitres") + (" :\n" if langues.langue_de(langue) == "fr" else ":\n") + "\n".join(f"{_horodatage(d)} {t}" for d, t in lignes)
 
 
 def est_long(ep_id: str) -> bool:
-    return (common.ep_dir(ep_id) / "episode-long.json").exists()
+    """Vidéo 16:9 hors Short : un long à chapitres (`episode-long.json`) ou une vidéo d'un format maison marquée `"video": "long"` dans son episode.json (sommeil, quiz long, chansons)."""
+    d = common.ep_dir(ep_id)
+    return (d / "episode-long.json").exists() or (common.read_json(d / "episode.json", {}) or {}).get("video") == "long"
 
 
 def tenir_dans(texte: str, limite_octets: int) -> str:
@@ -148,23 +161,50 @@ def tenir_dans(texte: str, limite_octets: int) -> str:
     return coupe.rstrip() + " …"
 
 
+def origine_du_short(ep_id: str) -> dict:
+    """`origine.json` d'un Short découpé dans un long ({} pour un Short écrit seul)."""
+    return common.read_json(common.ep_dir(ep_id) / "origine.json", None) or {}
+
+
+def url_du_long(ep_id: str) -> str | None:
+    """Adresse YouTube du long d'où vient ce Short, si le long a déjà été envoyé."""
+    long_id = origine_du_short(ep_id).get("long")
+    if not long_id or not common.ep_dir(long_id).exists():
+        return None
+    return (common.get_status(long_id).get("youtube") or {}).get("url")
+
+
 def description_finale(pub: dict, cfg: dict, ep_id: str | None = None) -> str:
-    """Description envoyée à YouTube : texte du rédacteur (raccourci si besoin) + chapitres, question, mention et hashtag, qui ne sautent jamais."""
+    """Description envoyée à YouTube : texte du rédacteur (raccourci si besoin) + chapitres, question, mots-clés et hashtags, qui ne sautent jamais.
+    Référencement : une dizaine de hashtags (15 au plus, sinon YouTube les ignore tous) et un bloc « Mots-clés » sont COMPLÉTÉS s'ils manquent."""
     desc = pub["description"].strip()
+    lang = pub.get("langue") or cfg.get("langue") or "fr"  # langue de la vidéo : libellés ajoutés par le publieur (chapitres, mots-clés, mention)
     long = bool(ep_id) and est_long(ep_id)
+    if ep_id and not long:
+        desc = seo.relier_au_long(desc, url_du_long(ep_id))  # le Short renvoie vers l'adresse du long dès qu'elle existe
+    reserves = ["#Shorts"] if (cfg["hashtag_shorts"] and not long and "#shorts" not in desc.lower()) else []  # un long 16:9 n'est pas un Short
+    desc = seo.limiter_hashtags(desc, cfg.get("hashtags_max", seo.HASHTAGS_MAX) - len(reserves))
     ajouts = []
     if long:
-        chap = chapitres_description(ep_id)
+        chap = chapitres_description(ep_id, lang)
         if chap and "00:00" not in desc:
             ajouts.append(chap)
     q = (pub.get("question_commentaires") or "").strip()
     if cfg["question_dans_description"] and q and q not in desc:
         ajouts.append(q)
     ia = "voix de synthèse (ia)"
-    if cfg.get("mention_ia_description", True) and pub.get("contenu_ia") and ia not in desc.lower() and "synthèse" not in desc.lower():
-        ajouts.append("Voix de synthèse (IA).")  # le badge YouTube est désactivé : on le dit ici, dans la description
-    if cfg["hashtag_shorts"] and not long and "#shorts" not in desc.lower():  # un long 16:9 n'est pas un Short
-        ajouts.append("#Shorts")
+    mention = langues.libelle(lang, "mention_ia")
+    deja_dit = ia in desc.lower() or "synthèse" in desc.lower() or mention.lower() in desc.lower() or "synthetic voice" in desc.lower()
+    if cfg.get("mention_ia_description", True) and pub.get("contenu_ia") and not deja_dit:
+        ajouts.append(mention)  # le badge YouTube est désactivé : on le dit ici, dans la description
+    tags = [t for t in (pub.get("tags") or []) if isinstance(t, str)]
+    if cfg.get("mots_cles_dans_description", True) and tags and not seo.a_bloc_mots_cles(desc):
+        ajouts.append(seo.bloc_mots_cles(pub.get("titre", ""), tags, lang))
+    ligne = seo.completer_hashtags(desc + "\n" + "\n".join(ajouts), tags, pub.get("titre", ""), chaine=cfg.get("hashtags_chaine") or [],
+                                   reserves=reserves, cible=cfg.get("hashtags_cible", seo.HASHTAGS_CIBLE),
+                                   maximum=cfg.get("hashtags_max", seo.HASHTAGS_MAX))
+    if ligne:
+        ajouts.append(ligne)
     reserve = len("".join("\n\n" + x for x in ajouts).encode("utf-8"))
     desc = tenir_dans(desc, max(300, cfg["description_max_octets"] - reserve - 10))
     return desc + "".join("\n\n" + x for x in ajouts)
@@ -192,14 +232,29 @@ def creer_exemple(ep_id: str) -> Path:
 
 # --- planification ---------------------------------------------------------------------------------------
 
-def jours_pris(cfg: dict) -> set:
+def creneaux_pris(cfg: dict, chaine: str | None = None) -> set:
+    """Instants (UTC) déjà réservés par une vidéo envoyée ou programmée : plusieurs vidéos par jour, une par créneau.
+    Chaque chaîne a sa propre grille de créneaux : avec `chaine`, seules ses vidéos comptent."""
     pris = set()
-    for ep in common.list_episodes():
+    for ep in common.list_episodes(chaine=chaine):
         st = common.get_status(ep)
         yt = st.get("youtube") or {}
         if st["etat"] != "quarantaine" and yt.get("video_id") and yt.get("publie_a"):
-            pris.add(horaire.vers_local(horaire.lire_iso(st["youtube"]["publie_a"]), cfg["fuseau"]).date())
+            pris.add(horaire.lire_iso(yt["publie_a"]))
     return pris
+
+
+def heures_du_format(long: bool, cfg: dict) -> tuple[list[str], set | None]:
+    """(heures locales de mise en ligne, jours de la semaine autorisés ou None) pour un long ou un Short."""
+    if long:
+        return [cfg.get("heure_long") or cfg["heure_publication"]], set(cfg.get("jours_longs", [0, 2, 4]))
+    base = cfg.get("heures_shorts") or [cfg["heure_publication"]]
+    return horaire.etaler_heures(base, cfg.get("shorts_par_creneau", 1), cfg.get("ecart_creneau_minutes", 15)), None
+
+
+def prochain_creneau_pour(long: bool, cfg: dict, maintenant_utc, pris: set):
+    heures, jours = heures_du_format(long, cfg)
+    return horaire.prochain_creneau_libre(heures, cfg["fuseau"], maintenant_utc, pris, cfg["marge_minimale_minutes"], jours)
 
 
 def _maj_youtube(ep_id: str, **champs) -> dict:
@@ -273,6 +328,10 @@ def publier(ep_id: str, yt: YouTube, cfg: dict, maintenant=maintenant_utc, affic
         st = common.get_status(ep_id)
         if st["etat"] != "pret":
             return {"id": ep_id, "resultat": "ignore", "detail": f"état {st['etat']}"}
+        if not (st.get("youtube") or {}).get("video_id"):  # adaptation : jamais avant la version source (décalage du profil)
+            ok_decalage, raison_decalage = decalage.pret_a_sortir(ep_id, maintenant())
+            if not ok_decalage:
+                return {"id": ep_id, "resultat": "ignore", "detail": raison_decalage}
         pb, av, pub = valider(ep_id, cfg)
         for a in av:
             afficher(f"  avertissement : {a}")
@@ -293,8 +352,7 @@ def publier(ep_id: str, yt: YouTube, cfg: dict, maintenant=maintenant_utc, affic
         try:
             if not deja:
                 ancien = (common.read_json(memo, {}) or {}).get("publie_a")
-                publie_a = ancien or horaire.iso_utc(horaire.prochain_creneau(
-                    cfg["heure_publication"], cfg["fuseau"], maintenant(), jours_pris(cfg), cfg["marge_minimale_minutes"]))
+                publie_a = ancien or horaire.iso_utc(prochain_creneau_pour(est_long(ep_id), cfg, maintenant(), creneaux_pris(cfg, common.chaine_de(ep_id))))
                 ressource = construire_ressource({**pub, "description": description_finale(pub, cfg, ep_id)}, cfg, publie_a)
                 afficher(f"  envoi de {chemin_video(ep_id).name} (mise en ligne prévue {publie_a})")
                 memo_data = common.read_json(memo, {}) or {}
@@ -363,10 +421,10 @@ def publier(ep_id: str, yt: YouTube, cfg: dict, maintenant=maintenant_utc, affic
         verrou.__exit__(None, None, None)
 
 
-def synchroniser(yt: YouTube, cfg: dict, maintenant=maintenant_utc, afficher=print) -> list[dict]:
+def synchroniser(yt: YouTube, cfg: dict, maintenant=maintenant_utc, afficher=print, chaine: str | None = None) -> list[dict]:
     """Fait passer `programme` -> `publie` quand la vidéo est devenue publique (1 unité de quota par vidéo échue)."""
     sortie = []
-    for ep_id in common.list_episodes("programme"):
+    for ep_id in common.list_episodes("programme", chaine=chaine):
         yt_st = common.get_status(ep_id).get("youtube") or {}
         if not yt_st.get("video_id") or not yt_st.get("publie_a"):
             continue
@@ -392,7 +450,7 @@ def synchroniser(yt: YouTube, cfg: dict, maintenant=maintenant_utc, afficher=pri
                 common.set_status(ep_id, "programme", None, youtube=_maj_youtube(ep_id, visibilite="prive_force"))
             sortie.append({"id": ep_id, "resultat": "toujours_prive", "detail": "audit YouTube requis"})
     # commentaire du cadeau qui n'a pas pu être posté (autorisation à refaire, quota) : nouvel essai à chaque passage
-    for ep_id in common.list_episodes("publie"):
+    for ep_id in common.list_episodes("publie", chaine=chaine):
         yt_st = common.get_status(ep_id).get("youtube") or {}
         if yt_st.get("commentaire_id") or not commentaire.texte(common.read_json(common.ep_dir(ep_id) / "publication.json", {}) or {}):
             continue
@@ -404,26 +462,70 @@ def synchroniser(yt: YouTube, cfg: dict, maintenant=maintenant_utc, afficher=pri
 
 # --- ligne de commande ----------------------------------------------------------------------------------
 
-def ordonner_par_rythme(ids: list[str], cfg: dict, maintenant=maintenant_utc) -> list[str]:
-    """Rythme de la chaîne : un long les jours de `jours_longs`, un Short les autres jours.
-    Chaque épisode prend le prochain créneau libre : on les range donc dans l'ordre des jours à venir."""
-    jours_longs = set(cfg.get("jours_longs", [0, 2, 4]))
-    longs = [i for i in ids if est_long(i)]
-    courts = [i for i in ids if not est_long(i)]
-    pris, sortie = set(jours_pris(cfg)), []
-    while longs or courts:
-        creneau = horaire.prochain_creneau(cfg["heure_publication"], cfg["fuseau"], maintenant(), pris, cfg["marge_minimale_minutes"])
-        jour = horaire.vers_local(creneau, cfg["fuseau"]).date()
-        pris.add(jour)
-        veut_long = jour.weekday() in jours_longs
-        file = longs if (veut_long and longs) else (courts if courts else longs)
-        sortie.append(file.pop(0))
+def _ordre_des_shorts(courts: list[str]) -> list[str]:
+    """Les Shorts découpés dans un long passent d'abord (ils ne coûtent ni écriture ni voix en plus), en alternant les longs d'origine
+    pour ne pas enchaîner dix Shorts du même sujet ; puis les Shorts écrits seuls. Un Short dont le long est déjà envoyé précède les autres."""
+    derives: dict[str, list[str]] = {}
+    seuls = []
+    for i in courts:
+        o = origine_du_short(i).get("long")
+        (derives.setdefault(o, []) if o else seuls).append(i)
+    # long déjà envoyé (adresse connue) en premier : le Short peut y renvoyer
+    envoyes = sorted(derives, key=lambda o: 0 if (common.get_status(o).get("youtube") or {}).get("video_id") else 1)
+    sortie = []
+    while any(derives[o] for o in envoyes):
+        for o in envoyes:
+            if derives[o]:
+                sortie.append(derives[o].pop(0))
+    return sortie + seuls
+
+
+def _signature(ep_id: str) -> tuple[str, str | None]:
+    """(forme du titre, gabarit visuel) d'un épisode : sert à ne jamais publier deux vidéos de même forme l'une après l'autre."""
+    pub = common.read_json(common.ep_dir(ep_id) / "publication.json", None) or {}
+    ep = common.read_json(common.ep_dir(ep_id) / "episode.json", None) or {}
+    return seo.forme_du_titre(str(pub.get("titre", ""))), ep.get("gabarit")
+
+
+def _conflit(a: tuple, b: tuple) -> bool:
+    """Même forme de titre (hors « autre », la forme fourre-tout) ou même gabarit visuel."""
+    return (a[0] == b[0] and a[0] != "autre") or (a[1] is not None and a[1] == b[1])
+
+
+def diversifier(ids: list[str], fenetre: int = 6) -> list[str]:
+    """Règle « jamais deux titres de la même forme (ni deux gabarits identiques) de suite » : à chaque place, on prend la première vidéo
+    de la file (dans les `fenetre` suivantes) qui ne ressemble pas à la précédente ; sans alternative, l'ordre d'origine est gardé."""
+    restants, sortie = list(ids), []
+    while restants:
+        prec = _signature(sortie[-1]) if sortie else None
+        choix = next((i for i in restants[:fenetre] if prec is None or not _conflit(_signature(i), prec)), restants[0])
+        restants.remove(choix)
+        sortie.append(choix)
     return sortie
 
 
-def dry_run(ids: list[str], cfg: dict) -> int:
+def ordonner_par_rythme(ids: list[str], cfg: dict, maintenant=maintenant_utc, chaine: str | None = None) -> list[str]:
+    """Rythme de la chaîne : 8 Shorts par jour (4 créneaux de 2) et un long les `jours_longs`.
+    Chaque format a ses propres créneaux ; on range les épisodes dans l'ordre chronologique des créneaux qu'ils vont prendre,
+    pour que la limite d'envois par passage serve d'abord les créneaux les plus proches (longs et Shorts mêlés)."""
+    longs = [i for i in ids if est_long(i)]
+    courts = diversifier(_ordre_des_shorts([i for i in ids if not est_long(i)]))
+    pris, sortie = set(creneaux_pris(cfg, chaine)), []
+    while longs or courts:
+        cl = prochain_creneau_pour(True, cfg, maintenant(), pris) if longs else None
+        cs = prochain_creneau_pour(False, cfg, maintenant(), pris) if courts else None
+        if cl is not None and (cs is None or cl <= cs):
+            sortie.append(longs.pop(0))
+            pris.add(cl)
+        else:
+            sortie.append(courts.pop(0))
+            pris.add(cs)
+    return sortie
+
+
+def dry_run(ids: list[str], cfg: dict, chaine: str | None = None) -> int:
     code = 0
-    pris = jours_pris(cfg)
+    pris = creneaux_pris(cfg, chaine)
     for ep_id in ids:
         print(f"[{ep_id}] état : {common.get_status(ep_id)['etat']}")
         pb, av, pub = valider(ep_id, cfg)
@@ -432,8 +534,10 @@ def dry_run(ids: list[str], cfg: dict) -> int:
         for p in pb:
             print(f"  PROBLÈME : {p}")
         if pub and not pb:
-            creneau = horaire.prochain_creneau(cfg["heure_publication"], cfg["fuseau"], maintenant_utc(), pris, cfg["marge_minimale_minutes"])
-            pris.add(horaire.vers_local(creneau, cfg["fuseau"]).date())
+            creneau = prochain_creneau_pour(est_long(ep_id), cfg, maintenant_utc(), pris)
+            pris.add(creneau)
+            nb_h = len(seo.hashtags_du_texte(description_finale(pub, cfg, ep_id)))
+            print(f"  {nb_h} hashtags dans la description finale (15 au plus)")
             print(f"  titre ({len(pub['titre'])} car.) : {pub['titre']}")
             print(f"  {len(pub.get('tags', []))} tags, contenu_ia={pub.get('contenu_ia', False)}, miniature : {chemin_miniature(ep_id)}")
             print(f"  mise en ligne prévue : {horaire.iso_utc(creneau)} (privé jusque-là)")
@@ -442,52 +546,118 @@ def dry_run(ids: list[str], cfg: dict) -> int:
     return code
 
 
+def a_du_travail(chaine: str) -> bool:
+    """Vrai si la chaîne a une vidéo à envoyer, à synchroniser ou un commentaire à poster : sinon son jeton n'est même pas ouvert."""
+    if common.list_episodes("pret", chaine=chaine) or common.list_episodes("programme", chaine=chaine):
+        return True
+    for ep_id in common.list_episodes("publie", chaine=chaine):
+        yt_st = common.get_status(ep_id).get("youtube") or {}
+        if not yt_st.get("commentaire_id") and commentaire.texte(common.read_json(common.ep_dir(ep_id) / "publication.json", {}) or {}):
+            return True
+    return False
+
+
+def plans_de_publication(args: list[str], chaine_cli: str | None, en_attente: bool) -> tuple[list[tuple[dict, dict, list[str]]], list[str]]:
+    """[(profil, réglages, épisodes à publier)] pour chaque chaîne concernée, et les erreurs de demande (chaîne inconnue...).
+    `--en-attente` : toutes les chaînes ACTIVES (une chaîne inactive est ignorée) ; sinon la chaîne de chaque épisode nommé."""
+    profils = chaines.charger_profils()
+    erreurs: list[str] = []
+    plans: list[tuple[dict, dict, list[str]]] = []
+    if en_attente:
+        # cloud : seuls les épisodes dont la vidéo a été récupérée dans le stock (liste séparée par des virgules, « - » = aucun)
+        seulement = os.environ.get("BDF_PUBLIER_SEULEMENT")
+        for p in chaines.actives(profils):
+            if chaine_cli and p["id"] != chaine_cli:
+                continue
+            cfg = reglages.charger_chaine(p)
+            ids = common.list_episodes("pret", chaine=p["id"])
+            if seulement is not None:
+                ids = [i for i in ids if i in seulement.split(",")]
+            plans.append((p, cfg, ordonner_par_rythme(ids, cfg, chaine=p["id"])))
+        if chaine_cli and not any(p["id"] == chaine_cli for p, _, _ in plans):
+            erreurs.append(f"chaîne « {chaine_cli} » inconnue, inactive ou au profil invalide : rien à publier")
+        return plans, erreurs
+    par_chaine: dict[str, list[str]] = {}
+    for ep_id in args:
+        par_chaine.setdefault(common.chaine_de(ep_id), []).append(ep_id)
+    for ident, ids in par_chaine.items():
+        p = profils.get(ident)
+        if p is None or not p["valide"]:
+            erreurs.append(f"{', '.join(ids)} : chaîne « {ident} » sans profil valide (autopilot/chaines/{ident}.json)")
+            continue
+        plans.append((p, reglages.charger_chaine(p), ids))
+    return plans, erreurs
+
+
 def main(argv: list[str]) -> int:
-    cfg = reglages.charger()
-    seul_exemple = "--exemple" in argv
-    dry = "--dry-run" in argv
-    ids = [a for a in argv if not a.startswith("--")]
+    args = list(argv)
+    chaine_cli = None
+    if "--chaine" in args:  # la valeur suit l'option : elle n'est pas un identifiant d'épisode
+        i = args.index("--chaine")
+        chaine_cli = args[i + 1] if i + 1 < len(args) else None
+        del args[i:i + 2]
+    seul_exemple = "--exemple" in args
+    dry = "--dry-run" in args
+    en_attente = "--en-attente" in args
+    ids = [a for a in args if not a.startswith("--")]
     if seul_exemple:
         for ep_id in ids:
             print(f"{creer_exemple(ep_id)}")
         return 0
-    if "--en-attente" in argv:
-        ids = common.list_episodes("pret")
-        # cloud : seuls les épisodes dont la vidéo a été récupérée dans le stock (liste séparée par des virgules, « - » = aucun)
-        seulement = os.environ.get("BDF_PUBLIER_SEULEMENT")
-        if seulement is not None:
-            ids = [i for i in ids if i in seulement.split(",")]
-        ids = ordonner_par_rythme(ids, cfg)
-    elif not ids:
+    if not en_attente and not ids:
         print(__doc__)
         return 2
+    plans, erreurs = plans_de_publication(ids, chaine_cli, en_attente)
+    for e in erreurs:
+        print(f"PROBLÈME : {e}", file=sys.stderr)
+    code = 1 if erreurs else 0
     if dry:
-        return dry_run(ids, cfg)
+        for p, cfg, ids_c in plans:
+            if len(plans) > 1 or p["id"] != chaines.CHAINE_DEFAUT:
+                print(f"=== chaîne {p['id']} ({p['nom']}) ===")
+            code = dry_run(ids_c, cfg, p["id"]) or code
+        return code
 
-    quota = RegistreQuota(cfg)
-    yt = YouTube(Jeton(), cfg, quota)
-    resultats, code = [], 0
-    try:
-        if "--en-attente" in argv:
-            resultats += synchroniser(yt, cfg)
-        envoyes = 0
-        for ep_id in ids:
-            if envoyes >= cfg["max_envois_par_execution"]:
-                break
-            print(f"[{ep_id}]")
-            r = publier(ep_id, yt, cfg)
-            print(f"  -> {r['resultat']} {r['detail']}")
-            resultats.append(r)
-            if r["resultat"] == "reporte":
-                break  # le quota est le même pour tous : inutile d'insister
-            if r["resultat"] == "quarantaine":
-                code = 1
-            if r["resultat"] in ("programme", "publie"):
-                envoyes += 1
-    except ErreurAuth as e:
-        noter_etat_auth("a_refaire", str(e))
-        print(f"AUTHENTIFICATION À REFAIRE : {e}", file=sys.stderr)
-        resultats.append({"resultat": "auth", "detail": str(e)})
+    with contextlib.suppress(Exception):
+        ecrire_etat_jetons()  # état de connexion de chaque chaîne (booléens), lu par l'orchestrateur et la web app
+    quota = RegistreQuota(reglages.charger())  # un seul registre : le quota est celui du projet Google, partagé par toutes les chaînes
+    resultats, auth_ko = [], False
+    for p, cfg, ids_c in plans:
+        ident = p["id"]
+        if en_attente and not a_du_travail(ident):
+            continue
+        yt = YouTube(Jeton(chaine=ident), cfg, quota.pour(ident))
+        envoyes, quota_epuise = 0, False
+        try:
+            if en_attente:
+                resultats += [{**r, "chaine": ident} for r in synchroniser(yt, cfg, chaine=ident)]
+            for ep_id in ids_c:
+                if envoyes >= cfg["max_envois_par_execution"]:
+                    break
+                print(f"[{ep_id}]" + ("" if ident == chaines.CHAINE_DEFAUT else f" (chaîne {ident})"))
+                r = {**publier(ep_id, yt, cfg), "chaine": ident}
+                print(f"  -> {r['resultat']} {r['detail']}")
+                resultats.append(r)
+                if r["resultat"] == "reporte":
+                    quota_epuise = True  # le quota est le même pour toutes les chaînes : inutile d'insister
+                    break
+                if r["resultat"] == "quarantaine":
+                    code = code or 1
+                if r["resultat"] in ("programme", "publie"):
+                    envoyes += 1
+        except ErreurAuth as e:
+            # le jeton de CETTE chaîne est à refaire ; les autres chaînes continuent
+            noter_etat_auth("a_refaire", str(e), chaine=ident)
+            print(f"AUTHENTIFICATION À REFAIRE (chaîne {ident}) : {e}", file=sys.stderr)
+            resultats.append({"chaine": ident, "resultat": "auth", "detail": str(e)})
+            auth_ko = True
+        except Exception as e:  # noqa: BLE001 - une chaîne qui plante ne doit pas arrêter les autres
+            print(f"ERREUR INATTENDUE (chaîne {ident}) :\n{traceback.format_exc()}", file=sys.stderr)
+            resultats.append({"chaine": ident, "resultat": "erreur", "detail": f"{type(e).__name__}: {e}"})
+            code = code or 1
+        if quota_epuise:
+            break
+    if auth_ko:
         code = 3
     print(json.dumps({"code": code, "resultats": resultats}, ensure_ascii=False))
     return code

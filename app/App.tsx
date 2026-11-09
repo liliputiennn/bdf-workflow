@@ -3,15 +3,19 @@ import { api, type BatchStatus } from "./api";
 import { CLOUD_ONLY, ONLINE } from "./config";
 import { JobTray } from "./JobTray";
 import { Autopilote } from "./screens/Autopilote";
+import { Chaines } from "./screens/Chaines";
 import { Ideas } from "./screens/Ideas";
 import { Production } from "./screens/Production";
 import { Published } from "./screens/Published";
+import { Route } from "./screens/Route";
 import { Week } from "./screens/Week";
 import { useJobs } from "./useJobs";
 
-type Tab = "auto" | "week" | "ideas" | "production" | "published";
+type Tab = "auto" | "chaines" | "route" | "week" | "ideas" | "production" | "published";
 const TABS: [Tab, string][] = [
   ["auto", "Autopilote"],
+  ["chaines", "Chaînes"],
+  ["route", "Feuille de route"],
   ["week", "Semaine"],
   ["ideas", "Idées"],
   ["production", "Production"],
@@ -19,8 +23,8 @@ const TABS: [Tab, string][] = [
 ];
 
 export const App = () => {
-  // en ligne (Console sur le cloud), seul l'onglet Autopilote est utile : les autres pilotent le PC
-  const tabs = import.meta.env.VITE_CLOUD_REPO ? TABS.filter(([k]) => k === "auto") : TABS;
+  // en ligne (Console sur le cloud), seuls Autopilote, Chaînes et Feuille de route sont utiles : les autres pilotent le PC
+  const tabs = import.meta.env.VITE_CLOUD_REPO ? TABS.filter(([k]) => k === "auto" || k === "chaines" || k === "route") : TABS;
   const [tab, setTab] = useState<Tab>("auto");
   const [episodeId, setEpisodeId] = useState<string | null>(null);
   const [missing, setMissing] = useState<string[]>([]);
@@ -84,7 +88,7 @@ export const App = () => {
         <JobTray active={jobs.active} toast={jobs.toast} />
         {episodeId && <span className="ep">Épisode : {episodeId}</span>}
       </header>
-      {missing.length > 0 && tab !== "auto" && <div className="banner">Outils introuvables : {missing.join(", ")}. Les tâches qui en ont besoin échoueront.</div>}
+      {missing.length > 0 && tab !== "auto" && tab !== "chaines" && tab !== "route" && <div className="banner">Outils introuvables : {missing.join(", ")}. Les tâches qui en ont besoin échoueront.</div>}
       {batch && batch.finishedAt !== seenBatch && (
         <div className={`banner ${batch.errors.length ? "" : "good"}`}>
           Lot terminé : {batch.text}
@@ -97,6 +101,8 @@ export const App = () => {
         </div>
       )}
       {tab === "auto" && <Autopilote />}
+      {tab === "chaines" && <Chaines />}
+      {tab === "route" && <Route />}
       {tab === "week" && <Week key={reconnects} openEpisode={openEpisode} version={jobs.version} />}
       {tab === "ideas" && <Ideas key={reconnects} openEpisode={openEpisode} version={jobs.version} />}
       {tab === "production" && <Production key={reconnects} episodeId={episodeId} jobs={jobs} />}

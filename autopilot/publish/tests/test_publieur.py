@@ -22,6 +22,7 @@ import horaire  # noqa: E402
 import publish  # noqa: E402
 import reglages  # noqa: E402
 import rendre_public  # noqa: E402
+import seo  # noqa: E402
 from erreurs import ErreurAuth  # noqa: E402
 from faux_youtube import FauxYouTube  # noqa: E402
 from quota import RegistreQuota  # noqa: E402
@@ -125,12 +126,79 @@ class TestEnvoi(Base):
         self.publier(ep)
         self.assertEqual(self.faux.videos["vids1"]["miniature"], manuelle)
 
-    def test_un_creneau_par_jour(self):
+    def test_huit_shorts_par_jour_sur_quatre_creneaux(self):
+        """Créneaux 08:00, 12:00, 18:00, 21:00 (Paris) x 2 Shorts espacés de 15 min : les premiers libres après 13h sont 18:00, 18:15, 21:00, 21:15."""
+        ids = [self.episode(f"s{i}") for i in range(5)]
+        for i in ids:
+            self.publier(i)
+        pris = [common.get_status(i)["youtube"]["publie_a"] for i in ids]
+        self.assertEqual(pris, ["2026-11-02T17:00:00Z", "2026-11-02T17:15:00Z", "2026-11-02T20:00:00Z", "2026-11-02T20:15:00Z",
+                                "2026-11-03T07:00:00Z"])
+        self.assertEqual(len(set(pris)), 5)
+
+    def test_un_long_part_a_l_heure_des_longs_les_jours_de_longs(self):
+        """Le 2 novembre 2026 est un lundi : le long prend 17:00 Paris (16:00 UTC), encore dans le futur à 13h."""
+        lg = self.episode("lg")
+        common.write_json(common.ep_dir(lg) / "episode-long.json", {"id": lg})
+        self.publier(lg)
+        self.assertEqual(common.get_status(lg)["youtube"]["publie_a"], "2026-11-02T16:00:00Z")
+
+    def test_un_long_ne_prend_jamais_un_jour_sans_long(self):
+        mardi = datetime(2026, 11, 3, 12, 0, tzinfo=timezone.utc)
+        self.assertEqual(horaire.iso_utc(publish.prochain_creneau_pour(True, self.cfg, mardi, set())), "2026-11-04T16:00:00Z")  # mercredi
+
+    def test_ordre_des_shorts_derives_d_abord_et_en_alternant_les_longs(self):
+        for i in ("solo1", "a-s1", "a-s2", "b-s1", "b-s2", "solo2"):
+            self.episode(i)
+        for i, longue in (("a-s1", "a"), ("a-s2", "a"), ("b-s1", "b"), ("b-s2", "b")):
+            common.write_json(common.ep_dir(i) / "origine.json", {"long": longue})
+        for longue in ("a", "b"):
+            self.episode(longue)
+            common.write_json(common.ep_dir(longue) / "episode-long.json", {"id": longue})
+        ordre = publish.ordonner_par_rythme(["solo1", "a-s1", "a-s2", "b-s1", "b-s2", "solo2"], self.cfg, maintenant=lambda: MAINTENANT)
+        self.assertEqual(ordre, ["a-s1", "b-s1", "a-s2", "b-s2", "solo1", "solo2"])
+
+    def test_long_et_shorts_se_melangent_dans_l_ordre_des_creneaux(self):
+        lg = self.episode("lg")
+        common.write_json(common.ep_dir(lg) / "episode-long.json", {"id": lg})
+        for i in range(3):
+            self.episode(f"s{i}")
+        ordre = publish.ordonner_par_rythme(["s0", "s1", "s2", "lg"], self.cfg, maintenant=lambda: MAINTENANT)
+        self.assertEqual(ordre[0], "lg")  # 17:00 Paris précède 18:00
+        self.assertEqual(ordre[1:], ["s0", "s1", "s2"])
+
+    def test_jamais_deux_titres_de_meme_forme_de_suite(self):
+        titres = {"a": "5 machines à acheter", "b": "7 business sans stock", "c": "Combien rapporte une presse à chaud ?", "d": "Le secret des pros"}
+        for i, t in titres.items():
+            self.episode(i, pub={"titre": t, "description": "d", "tags": [], "langue": "fr", "contenu_ia": True})
+        ordre = publish.diversifier(["a", "b", "c", "d"])
+        formes = [seo.forme_du_titre(titres[i]) for i in ordre]
+        self.assertTrue(all(x != y for x, y in zip(formes, formes[1:])), (ordre, formes))
+        self.assertEqual(ordre[0], "a")  # le premier de la file ne bouge pas
+
+    def test_jamais_deux_gabarits_identiques_de_suite(self):
+        for i, g in (("a", "fiche"), ("b", "fiche"), ("c", "clips")):
+            self.episode(i, pub={"titre": f"Titre {i}", "description": "d", "tags": [], "langue": "fr", "contenu_ia": True})
+            common.write_json(common.ep_dir(i) / "episode.json", {"id": i, "gabarit": g, "phrases": []})
+        self.assertEqual(publish.diversifier(["a", "b", "c"]), ["a", "c", "b"])
+
+    def test_sans_alternative_l_ordre_est_garde(self):
+        for i in "abc":
+            self.episode(i, pub={"titre": "5 machines", "description": "d", "tags": [], "langue": "fr", "contenu_ia": True})
+        self.assertEqual(publish.diversifier(["a", "b", "c"]), ["a", "b", "c"])
+
+    def test_repli_sur_une_seule_heure_sans_heures_shorts(self):
+        cfg = reglages.charger(surcharge={"heures_shorts": [], "shorts_par_creneau": 1})
+        a = publish.prochain_creneau_pour(False, cfg, MAINTENANT, set())
+        b = publish.prochain_creneau_pour(False, cfg, MAINTENANT, {a})
+        self.assertEqual((horaire.iso_utc(a), horaire.iso_utc(b)), ("2026-11-02T17:00:00Z", "2026-11-03T17:00:00Z"))
+
+    def test_creneaux_pris_ignorent_la_quarantaine(self):
         a, b = self.episode("a"), self.episode("b")
         self.publier(a)
         self.publier(b)
-        self.assertEqual(common.get_status(a)["youtube"]["publie_a"], "2026-11-02T17:00:00Z")
-        self.assertEqual(common.get_status(b)["youtube"]["publie_a"], "2026-11-03T17:00:00Z")
+        common.set_status(b, "quarantaine", "test")
+        self.assertEqual(publish.creneaux_pris(self.cfg), {horaire.lire_iso("2026-11-02T17:00:00Z")})
 
     def test_miniature_refusee_ne_perd_pas_la_video(self):
         ep = self.episode()
@@ -435,6 +503,94 @@ class TestHoraire(unittest.TestCase):
         self.assertEqual(horaire.iso_utc(c), "2026-11-03T17:00:00Z")
         pris = {datetime(2026, 11, 3).date()}
         self.assertEqual(horaire.iso_utc(horaire.prochain_creneau("18:00", "Europe/Paris", tard, pris, 30)), "2026-11-04T17:00:00Z")
+
+
+class TestCreneaux(unittest.TestCase):
+    def test_etaler_heures(self):
+        self.assertEqual(horaire.etaler_heures(["08:00", "12:00"], 2, 15), ["08:00", "08:15", "12:00", "12:15"])
+        self.assertEqual(horaire.etaler_heures(["23:50"], 2, 15), ["00:05", "23:50"])
+        self.assertEqual(len(horaire.etaler_heures(reglages.DEFAUTS["heures_shorts"], reglages.DEFAUTS["shorts_par_creneau"],
+                                                    reglages.DEFAUTS["ecart_creneau_minutes"])), 8)
+
+    def test_creneau_libre_saute_les_heures_prises_et_passees(self):
+        tard = datetime(2026, 11, 2, 17, 0, tzinfo=timezone.utc)  # 18h à Paris
+        heures = ["08:00", "18:00", "21:00"]
+        self.assertEqual(horaire.iso_utc(horaire.prochain_creneau_libre(heures, "Europe/Paris", tard, set(), 30)), "2026-11-02T20:00:00Z")
+        pris = {datetime(2026, 11, 2, 20, 0, tzinfo=timezone.utc)}
+        self.assertEqual(horaire.iso_utc(horaire.prochain_creneau_libre(heures, "Europe/Paris", tard, pris, 30)), "2026-11-03T07:00:00Z")
+
+    def test_jours_de_la_semaine(self):
+        lundi_soir = datetime(2026, 11, 2, 20, 0, tzinfo=timezone.utc)
+        c = horaire.prochain_creneau_libre(["17:00"], "Europe/Paris", lundi_soir, set(), 30, {2})  # mercredi
+        self.assertEqual(horaire.iso_utc(c), "2026-11-04T16:00:00Z")
+
+    def test_heure_d_ete(self):
+        ete = datetime(2026, 7, 1, 0, 0, tzinfo=timezone.utc)
+        self.assertEqual(horaire.iso_utc(horaire.prochain_creneau_libre(["08:00"], "Europe/Paris", ete, set(), 30)), "2026-07-01T06:00:00Z")
+
+    def test_seize_creneaux_sont_tous_differents(self):
+        pris, now = set(), datetime(2026, 11, 2, 0, 0, tzinfo=timezone.utc)
+        heures = horaire.etaler_heures(["08:00", "12:00", "18:00", "21:00"], 2, 15)
+        for _ in range(16):
+            pris.add(horaire.prochain_creneau_libre(heures, "Europe/Paris", now, pris, 30))
+        self.assertEqual(len(pris), 16)
+
+
+class TestReferencement(Base):
+    def pub(self, **kw):
+        return {"titre": "Graveuse laser : 57 € par jour", "description": "Une graveuse laser peut rapporter du cash.\n\n#Business",
+                "tags": ["graveuse laser", "business", "argent", "idée business", "revendre"], "question_commentaires": "Tu en as déjà une ?",
+                "langue": "fr", "contenu_ia": True, **kw}
+
+    def test_un_short_recoit_une_dizaine_de_hashtags_et_un_bloc_de_mots_cles(self):
+        ep = self.episode("sh")
+        d = publish.description_finale(self.pub(), self.cfg, ep)
+        h = seo.hashtags_du_texte(d)
+        self.assertGreaterEqual(len(h), 8, h)
+        self.assertLessEqual(len(h), 15)
+        self.assertIn("#Shorts", h)
+        self.assertIn("Mots-clés :", d)
+        self.assertEqual(h[0], "#Business")  # ceux du rédacteur restent en tête
+
+    def test_jamais_plus_de_quinze_hashtags(self):
+        ep = self.episode("sh")
+        trop = " ".join(f"#mot{chr(97 + i)}x" for i in range(20))
+        d = publish.description_finale(self.pub(description="Résumé. " + trop), self.cfg, ep)
+        self.assertLessEqual(len(seo.hashtags_du_texte(d)), 15)
+
+    def test_un_long_n_a_pas_de_shorts_mais_a_ses_hashtags(self):
+        ep = self.episode("lg")
+        common.write_json(common.ep_dir(ep) / "episode-long.json", {"id": ep})
+        d = publish.description_finale(self.pub(), self.cfg, ep)
+        self.assertNotIn("#Shorts", d)
+        self.assertGreaterEqual(len(seo.hashtags_du_texte(d)), 8)
+
+    def test_chapitres_et_mots_cles_ne_sautent_pas_meme_si_la_description_est_longue(self):
+        ep = self.episode("lg")
+        common.write_json(common.ep_dir(ep) / "episode-long.json", {"id": ep})
+        common.write_json(common.ep_dir(ep) / "chapitres.json", [{"titre": "Intro", "debut_s": 0}, {"titre": "Vendre sur Vinted", "borne_s": 40},
+                                                                  {"titre": "Graver du bois", "borne_s": 100}])
+        d = publish.description_finale(self.pub(description="Mot. " * 2000), self.cfg, ep)
+        self.assertLessEqual(len(d.encode("utf-8")), self.cfg["description_max_octets"])
+        self.assertIn("00:40 Vendre sur Vinted", d)
+        self.assertIn("Mots-clés :", d)
+        self.assertLessEqual(len(seo.hashtags_du_texte(d)), 15)
+
+    def test_un_short_renvoie_vers_l_adresse_du_long_quand_elle_existe(self):
+        lg, sh = self.episode("lg"), self.episode("lg-s1")
+        common.write_json(common.ep_dir(sh) / "origine.json", {"long": lg})
+        desc = "Accroche.\n\n▶ Vidéo complète : 7 machines à acheter"
+        d1 = publish.description_finale(self.pub(description=desc), self.cfg, sh)
+        self.assertIn("▶ Vidéo complète : 7 machines à acheter", d1)
+        common.set_status(lg, "publie", None, youtube={"video_id": "L1", "url": "https://youtu.be/L1"})
+        d2 = publish.description_finale(self.pub(description=desc), self.cfg, sh)
+        self.assertIn("▶ Vidéo complète : https://youtu.be/L1", d2)
+
+    def test_aucune_mention_d_ia_n_est_ajoutee(self):
+        ep = self.episode("sh")
+        d = publish.description_finale(self.pub(), self.cfg, ep).lower()
+        self.assertNotIn("synthèse", d)
+        self.assertIsNone(seo.RE_MENTION_INTERDITE.search(d))
 
 
 class TestFluxOAuth(Base):

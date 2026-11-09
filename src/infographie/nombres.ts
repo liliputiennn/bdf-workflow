@@ -1,3 +1,4 @@
+import { afficheEn } from "./nombres-en";
 import type { Word } from "./types";
 
 /**
@@ -79,7 +80,10 @@ const lisEntier = (t: Sub[], i: number): { valeur: number; fin: number; coef: nu
 const groupe = (n: number) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, NBSP);
 
 /** Convertit les nombres écrits en lettres en chiffres ; fusionne les mots concernés (début du premier, fin du dernier). */
-export const affiche = (words: Word[]): Word[] => {
+/** Sous-titres : nombres en chiffres, selon la langue de l'épisode (`Episode.langue`) ; sans langue : le français, comme avant. */
+export const affiche = (words: Word[], langue?: string): Word[] => (langue && langue.toLowerCase().startsWith("en") ? afficheEn(words) : afficheFr(words));
+
+const afficheFr = (words: Word[]): Word[] => {
   const subs: Sub[] = [];
   const debutMot: number[] = [];
   words.forEach((w, idx) => {

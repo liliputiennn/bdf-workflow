@@ -87,3 +87,7 @@ python -m unittest -v
 ```
 
 Dossier temporaire via `BDF_ROOT` (épisodes, exports, état) ; fausses briques ; aucune voix, aucun GPU, aucune vraie notification (`BDF_NOTIF_DESACTIVEE=1`, `BDF_DISQUE_LIBRE_GO` simule le disque, `BDF_PAUSE_S` règle la pause entre deux essais).
+
+## Multilingue (chantier 2)
+
+Une chaîne dont le profil a une `source` (ex. `en` ← `fr`) reprend les épisodes de sa source, **adaptés** (jamais copiés) : `python autopilot/run_daily.py traduire` (appelé aussi au début de `fabriquer`) crée les demandes de traduction pour Claude (`autopilot/traduction/CONSIGNES-TRADUCTION.md`), et un moteur gratuit de repli (MarianMT, Apache-2.0, à installer une fois : `python autopilot/traduction/moteurs.py installer fr-en`) prend celles que Claude n'a pas traitées. `preparation: true` fabrique le stock sans rien publier ; seule l'activation (`active: true`, ta décision) autorise la publication, 48 h après la version source. Détails : `docs/superpowers/specs/2026-11-08-multilingue-design.md`.

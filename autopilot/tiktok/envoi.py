@@ -55,6 +55,8 @@ def video(ep: str) -> Path:
 def eligible(ep: str) -> bool:
     if est_long(ep) or common.get_status(ep).get("etat") not in ETATS_ELIGIBLES or not video(ep).exists():
         return False
+    if not common.tiktok_pour(ep):
+        return False  # le compte TikTok n'est pas celui de cette chaîne
     qa = common.read_json(common.EXPORTS / ep / "qa.json", None) or {}
     return bool(qa.get("publiable"))
 

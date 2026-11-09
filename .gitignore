@@ -54,6 +54,9 @@ exports-tiktok/
 # images et clips tÃ©lÃ©chargÃ©s Ã  la fabrication (jamais dans Git)
 episodes-b/*/visuels/
 
-# musiques de fond : licence Pixabay (pas de redistribution), téléchargées du jeu Kaggle privé « bdf-musique »
+# musiques de fond : licence Pixabay (pas de redistribution), envoyÃ©es au jeu Kaggle privÃ© Â« bdf-musique Â»
 autopilot/musique/*
 !autopilot/musique/LISEZ-MOI.md
+!autopilot/musique/histoire/
+autopilot/musique/histoire/*
+!autopilot/musique/histoire/LISEZ-MOI.md

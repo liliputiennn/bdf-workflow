@@ -1,0 +1,73 @@
+{
+  "id": "histoire",
+  "nom": "Histoire (nom à choisir)",
+  "langue": "fr",
+  "format": "histoire",
+  "niche": "Récits d'histoire « incroyables mais vrais », racontés simplement",
+  "active": false,
+  "vague": 3,
+  "jeton_fichier": "token-histoire.json",
+  "voix": {
+    "dossier": "voix/histoire"
+  },
+  "musique": {
+    "dossier": "musique/histoire"
+  },
+  "style": {
+    "theme": "parchemin",
+    "miniature": null
+  },
+  "publication": {
+    "heures_shorts": [
+      "12:00",
+      "19:00"
+    ],
+    "shorts_par_creneau": 1,
+    "heure_long": "18:00",
+    "jours_longs": [
+      1,
+      4
+    ]
+  },
+  "frequence": {
+    "shorts_par_jour": 2,
+    "longs_par_semaine": 2
+  },
+  "dossiers": {
+    "sujets": "subjects/histoire"
+  },
+  "source": null,
+  "format_module": "autopilot.formats.histoire",
+  "format_options": {
+    "duree_long_min": [
+      8,
+      12
+    ],
+    "sources_minimum": 2
+  },
+  "format_pret": false,
+  "briques": {
+    "fabrique": null,
+    "miniature": "formats/miniature_histoire.py"
+  },
+  "notes": "Chantier 3, format 1. Spec : docs/superpowers/specs/2026-11-09-format-histoire-design.md. active reste false (décision de l'utilisateur) ; format_pret à true après la première fabrication réelle complète.",
+  "preparation": true,
+  "format_statut": {
+    "verifie": "2026-11-09",
+    "test": "Contrôles, thème parchemin, scènes frise/carte/citation et miniature testés ; aucun long complet de bout en bout.",
+    "manque": [
+      "Produire un premier long réel (voix GPU + rendu Remotion de 8 à 12 min) puis passer format_pret à true",
+      "Écouter et confirmer la voix (Aiden)",
+      "Fournir la musique libre de droits (facultatif)",
+      "Créer la chaîne YouTube, connecter son jeton, choisir quand activer"
+    ],
+    "licences": [
+      "Voix : Qwen3-TTS CustomVoice, Apache-2.0",
+      "Visuels : scènes dessinées par le code, aucune image d'archive"
+    ],
+    "risques": [
+      "Un fait historique faux nuit à la chaîne : 2 sources par fait, incertitude dite à voix haute",
+      "Sujets sensibles refusés automatiquement"
+    ]
+  }
+}

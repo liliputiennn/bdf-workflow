@@ -27,6 +27,10 @@ class FauxYouTube:
         self.maj_ignoree = False          # videos.update sans effet (projet non audité)
         self.exiger_jeton_recent = False  # 401 si le jeton n'est pas le dernier émis
         self.morceaux_recus = 0
+        # plusieurs chaînes : chaque chaîne a son propre jeton de rafraîchissement
+        self.refus_refresh: set[str] = set()   # ces jetons de rafraîchissement sont refusés (invalid_grant), les autres passent
+        self.acces_de: dict[str, str] = {}      # jeton d'accès émis -> jeton de rafraîchissement qui l'a demandé
+        self.chaines_de: dict[str, tuple[str, str]] = {}  # jeton de rafraîchissement -> (identifiant, titre) de la chaîne YouTube
         self.serveur = ThreadingHTTPServer(("127.0.0.1", 0), self._handler())
         self.port = self.serveur.server_address[1]
         self.base = f"http://127.0.0.1:{self.port}"
@@ -86,9 +90,10 @@ class FauxYouTube:
                 if chemin.path == "/token":
                     champs = dict(urllib.parse.parse_qsl(corps.decode()))
                     faux.appels_jeton += 1
-                    if faux.refus_jeton or champs.get("grant_type") != "refresh_token":
+                    if faux.refus_jeton or champs.get("grant_type") != "refresh_token" or champs.get("refresh_token") in faux.refus_refresh:
                         return self._rep(400, {"error": "invalid_grant"})
                     faux.jeton_courant = f"jeton-{faux.appels_jeton}"
+                    faux.acces_de[faux.jeton_courant] = champs.get("refresh_token", "")
                     return self._rep(200, {"access_token": faux.jeton_courant, "expires_in": 3600})
                 if not self._auth_ok():
                     return
@@ -103,6 +108,7 @@ class FauxYouTube:
                     meta = json.loads(corps)
                     sid = f"s{len(faux.sessions) + 1}"
                     faux.sessions[sid] = {"meta": meta, "data": bytearray(), "taille": int(self.headers["X-Upload-Content-Length"]),
+                                          "refresh": faux.acces_de.get((self.headers.get("Authorization") or "")[7:]),
                                           "ouverture_requete": dict(self.headers)}
                     return self._rep(200, None, {"Location": f"{faux.base}/session/{sid}"})
                 if chemin.path == "/youtube/v3/commentThreads":
@@ -171,7 +177,8 @@ class FauxYouTube:
                     ids = [i for i in q["id"].split(",") if i in faux.videos]
                     return self._rep(200, {"items": [faux._statut(i, self) for i in ids]})
                 if chemin.path == "/youtube/v3/channels":
-                    return self._rep(200, {"items": [{"contentDetails": {"relatedPlaylists": {"uploads": "UU1"}}}]})
+                    ident, titre = faux.chaines_de.get(faux.acces_de.get((self.headers.get("Authorization") or "")[7:], ""), ("UCfaux", "Chaîne test"))
+                    return self._rep(200, {"items": [{"id": ident, "snippet": {"title": titre}, "contentDetails": {"relatedPlaylists": {"uploads": "UU1"}}}]})
                 if chemin.path == "/youtube/v3/playlistItems":
                     return self._rep(200, {"items": [{"contentDetails": {"videoId": v}} for v in faux.videos]})
                 self._erreur(404, "notFound")
@@ -184,5 +191,5 @@ class FauxYouTube:
     def _creer_video(self, sid):
         s = self.sessions[sid]
         vid = f"vid{sid}"
-        self.videos[vid] = {"status": dict(s["meta"]["status"]), "snippet": s["meta"]["snippet"], "octets": bytes(s["data"])}
+        self.videos[vid] = {"status": dict(s["meta"]["status"]), "snippet": s["meta"]["snippet"], "octets": bytes(s["data"]), "refresh": s.get("refresh")}
         return {"id": vid, "status": s["meta"]["status"], "snippet": s["meta"]["snippet"]}

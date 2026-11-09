@@ -70,6 +70,13 @@ GROS_FICHIERS = (".mp4", ".mov", ".webm", ".wav")
 DOSSIERS_VOIX = ("cache",)  # cache de voix de l'épisode, regénérable
 
 
+def tiktok_pour(ep_id: str) -> bool:
+    """Le compte TikTok (un seul) reçoit-il les Shorts de cette chaîne ? Par défaut : seulement ceux de la chaîne par défaut (champ `tiktok` du profil)."""
+    ch = chaine_de(ep_id)
+    voulu = (read_json(ROOT / "autopilot" / "chaines" / f"{ch}.json", {}) or {}).get("tiktok")
+    return ch == CHAINE_DEFAUT if voulu is None else bool(voulu)
+
+
 def _tiktok_actif() -> bool:
     return (ROOT / "autopilot" / "secrets" / "tiktok_token.json").exists()
 
@@ -89,7 +96,7 @@ def peut_liberer(ep_id: str) -> bool:
     if st.get("etat") != "publie" or not (st.get("youtube") or {}).get("video_id"):
         return False
     est_long = (ep_dir(ep_id) / "episode-long.json").exists()
-    if not est_long and _tiktok_actif() and not _tiktok_envoye(ep_id):
+    if not est_long and _tiktok_actif() and tiktok_pour(ep_id) and not _tiktok_envoye(ep_id):
         return False
     if est_long:
         for s in (read_json(EXPORTS / ep_id / "qa.json", {}) or {}).get("shorts", []):
@@ -132,13 +139,22 @@ def liberer_tout_publie(dry_run: bool = False) -> dict:
     return out
 
 
-def list_episodes(etat: str | None = None) -> list[str]:
-    """Identifiants d'épisodes (triés), éventuellement filtrés par état. Ignore les dossiers `_*`."""
+CHAINE_DEFAUT = "fr"  # chaîne des épisodes sans `chaine_id` dans leur status.json (voir chaines.py)
+
+
+def chaine_de(ep_id: str) -> str:
+    """Chaîne à laquelle appartient un épisode (`chaine_id` du status.json ; à défaut la chaîne historique)."""
+    return str((read_json(ep_dir(ep_id) / "status.json", {}) or {}).get("chaine_id") or CHAINE_DEFAUT)
+
+
+def list_episodes(etat: str | None = None, chaine: str | None = None) -> list[str]:
+    """Identifiants d'épisodes (triés), éventuellement filtrés par état et par chaîne. Ignore les dossiers `_*`."""
     out = []
     for d in sorted(EPISODES.glob("*")):
         if d.is_dir() and not d.name.startswith("_") and (d / "episode.json").exists():
             if etat is None or get_status(d.name)["etat"] == etat:
-                out.append(d.name)
+                if chaine is None or chaine_de(d.name) == chaine:
+                    out.append(d.name)
     return out
 
 

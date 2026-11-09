@@ -1,5 +1,6 @@
 import React from "react";
 import { Easing, Img, interpolate, staticFile } from "remotion";
+import { formatNombre, LangueCtx, Mot } from "./langue";
 import { Video } from "@remotion/media";
 import { Icon } from "./icons";
 import { GIANT, UI, type Theme } from "./themes";
@@ -35,11 +36,7 @@ const Kicker: React.FC<{ th: Theme; children: React.ReactNode; color?: string }>
 const Stage: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div style={{ position: "absolute", left: 60, right: 60, top: 250, height: 1160, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: 36 }}>{children}</div>
 );
-const fmt = (n: number, d = 0) => {
-  const [i, f] = n.toFixed(d).split(".");
-  const g = i.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-  return f ? `${g},${f}` : g;
-};
+const fmt = (n: number, d = 0, langue?: string) => formatNombre(n, d, langue);
 
 /* ─────────── Gros sous-titres : les mots claquent au rythme de la voix ─────────── */
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]/g, "");
@@ -70,13 +67,14 @@ export const TitreGeant: React.FC<Ctx<"titre-geant">> = ({ p, th, words, t }) =>
 
 /* ─────────── Gros chiffre ─────────── */
 export const Chiffre: React.FC<Ctx<"chiffre">> = ({ p, l, th }) => {
+  const lg = React.useContext(LangueCtx);
   const v = ease(l, 4, 36) * p.valeur;
   return (
     <Stage>
       <Card th={th} style={{ width: 900, textAlign: "center", transform: `translateY(${ease(l, 0, 14, 70, 0)}px)`, opacity: ease(l, 0, 8) }}>
         <Kicker th={th}>{p.etiquette}</Kicker>
-        <div style={{ fontFamily: GIANT, fontSize: `${p.prefixe ?? ""}${fmt(p.valeur, p.decimales ?? 0)}${p.suffixe ?? ""}`.length > 5 ? 230 : 340, lineHeight: 1.05, color: th.ink, marginTop: 20, whiteSpace: "nowrap", textShadow: `0 0 80px ${th.accent}66`, transform: `scale(${1 + 0.05 * Math.max(0, 1 - Math.abs(l - 36) / 8)})` }}>
-          {p.prefixe}{fmt(v, p.decimales ?? 0)}<span style={{ color: th.accent }}>{p.suffixe}</span>
+        <div style={{ fontFamily: GIANT, fontSize: `${p.prefixe ?? ""}${fmt(p.valeur, p.decimales ?? 0, lg)}${p.suffixe ?? ""}`.length > 5 ? 230 : 340, lineHeight: 1.05, color: th.ink, marginTop: 20, whiteSpace: "nowrap", textShadow: `0 0 80px ${th.accent}66`, transform: `scale(${1 + 0.05 * Math.max(0, 1 - Math.abs(l - 36) / 8)})` }}>
+          {p.prefixe}{fmt(v, p.decimales ?? 0, lg)}<span style={{ color: th.accent }}>{p.suffixe}</span>
         </div>
         {p.sous && <div style={{ fontFamily: UI, fontSize: 46, color: th.muted, marginTop: 16 }}>{p.sous}</div>}
       </Card>
@@ -86,6 +84,7 @@ export const Chiffre: React.FC<Ctx<"chiffre">> = ({ p, l, th }) => {
 
 /* ─────────── Barres ─────────── */
 export const Barres: React.FC<Ctx<"barres">> = ({ p, l, th }) => {
+  const lg = React.useContext(LangueCtx);
   const max = Math.max(...p.barres.map((b) => b.valeur));
   const H0 = p.badge ? 480 : 540;
   return (
@@ -103,7 +102,7 @@ export const Barres: React.FC<Ctx<"barres">> = ({ p, l, th }) => {
             const h = (b.valeur / max) * H0 * g;
             return (
               <div key={i} style={{ width: 260, textAlign: "center" }}>
-                <div style={{ fontFamily: UI, fontSize: 84, fontWeight: 700, color: th.ink, opacity: g, height: 100 }}>{fmt(Math.round(b.valeur * g))}</div>
+                <div style={{ fontFamily: UI, fontSize: 84, fontWeight: 700, color: th.ink, opacity: g, height: 100 }}>{fmt(Math.round(b.valeur * g), 0, lg)}</div>
                 <div style={{ height: h, background: b.accent ? th.accent : th.line, borderRadius: 22, position: "relative", overflow: "hidden", marginTop: 8, boxShadow: b.accent ? `0 0 50px ${th.accent}88` : "none" }}>
                   {b.part != null && <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: (b.part / max) * H0 * g, background: th.hot }} />}
                 </div>
@@ -291,9 +290,9 @@ export const Annonce: React.FC<Ctx<"annonce">> = ({ p, l, th }) => (
           {p.ancien && <div style={{ fontFamily: UI, fontSize: 56, color: th.muted, textDecoration: "line-through" }}>{p.ancien}</div>}
         </div>
         <div style={{ fontFamily: UI, fontSize: 38, color: th.muted, marginTop: 10, opacity: ease(l, 18, 30) }}>{[p.etat, p.lieu].filter(Boolean).join("  ·  ")}</div>
-        {p.source && <div style={{ fontFamily: UI, fontSize: 32, color: th.muted, marginTop: 6, opacity: ease(l, 22, 34) }}>Source : {p.source}</div>}
+        {p.source && <div style={{ fontFamily: UI, fontSize: 32, color: th.muted, marginTop: 6, opacity: ease(l, 22, 34) }}><Mot k="source" /> {p.source}</div>}
         {p.vendu && (
-          <div style={{ position: "absolute", right: 40, top: 28, fontFamily: GIANT, fontSize: 84, color: th.alert, border: `8px solid ${th.alert}`, borderRadius: 18, padding: "4px 26px", textTransform: "uppercase", transform: `rotate(-9deg) scale(${ease(l, 34, 44, 1.8, 1)})`, opacity: ease(l, 34, 42) }}>Vendu</div>
+          <div style={{ position: "absolute", right: 40, top: 28, fontFamily: GIANT, fontSize: 84, color: th.alert, border: `8px solid ${th.alert}`, borderRadius: 18, padding: "4px 26px", textTransform: "uppercase", transform: `rotate(-9deg) scale(${ease(l, 34, 44, 1.8, 1)})`, opacity: ease(l, 34, 42) }}><Mot k="vendu" /></div>
         )}
       </div>
     </Card>
@@ -327,5 +326,62 @@ export const Clip: React.FC<Ctx<"clip">> = ({ p, l, th }) => (
       )}
       {p.credit && <div style={{ position: "absolute", right: 18, bottom: 10, fontFamily: UI, fontSize: 22, color: "rgba(255,255,255,0.7)" }}>{p.credit}</div>}
     </div>
+  </Stage>
+);
+
+/* ─────────── Histoire : frise de dates ─────────── */
+export const Frise: React.FC<Ctx<"frise">> = ({ p, l, th }) => (
+  <Stage>
+    {p.titre && <Kicker th={th}>{p.titre}</Kicker>}
+    <div style={{ position: "relative", width: 900, display: "flex", flexDirection: "column", gap: p.reperes.length > 4 ? 20 : 44, paddingLeft: 70 }}>
+      <div style={{ position: "absolute", left: 22, top: 20, bottom: 20, width: 6, background: th.line, borderRadius: 3, transformOrigin: "top", transform: `scaleY(${ease(l, 0, 24)})` }} />
+      {p.reperes.map((r, i) => {
+        const a = ease(l, 6 + i * 10, 20 + i * 10);
+        return (
+          <div key={i} style={{ position: "relative", opacity: a, transform: `translateX(${(1 - a) * 40}px)` }}>
+            <div style={{ position: "absolute", left: -70, top: p.reperes.length > 4 ? 10 : 18, width: 44, height: 44, borderRadius: 22, background: r.accent ? th.accent : th.card, border: `6px solid ${r.accent ? th.deep : th.line}` }} />
+            <div style={{ fontFamily: GIANT, fontSize: p.reperes.length > 4 ? 72 : 96, lineHeight: 1, color: r.accent ? th.accent : th.ink }}>{r.date}</div>
+            <div style={{ fontFamily: UI, fontSize: p.reperes.length > 4 ? 38 : 44, fontWeight: 700, color: th.muted }}>{r.label}</div>
+          </div>
+        );
+      })}
+    </div>
+  </Stage>
+);
+
+/* ─────────── Histoire : carte schématique ─────────── */
+export const Carte: React.FC<Ctx<"carte">> = ({ p, l, th }) => {
+  const pts = p.lieux.map((q) => `${q.x},${q.y}`).join(" ");
+  return (
+    <Stage>
+      {p.titre && <Kicker th={th}>{p.titre}</Kicker>}
+      <Card th={th} style={{ width: 780, height: 780, padding: 22 }}>
+        <svg viewBox="0 0 100 100" width="100%" height="100%" style={{ display: "block" }}>
+          {[20, 40, 60, 80].map((g) => (
+            <g key={g} stroke={th.line} strokeWidth={0.3}><line x1={g} y1={0} x2={g} y2={100} /><line x1={0} y1={g} x2={100} y2={g} /></g>
+          ))}
+          {p.trajet !== false && <polyline points={pts} fill="none" stroke={th.accent} strokeWidth={1} strokeDasharray="2 1.6" style={{ opacity: ease(l, 10, 30) }} />}
+          {p.lieux.map((q, i) => {
+            const a = ease(l, 6 + i * 9, 16 + i * 9);
+            return (
+              <g key={i} style={{ opacity: a }}>
+                <circle cx={q.x} cy={q.y} r={2.4 + (1 - a) * 3} fill={th.accent} stroke={th.deep} strokeWidth={0.6} />
+                <text x={q.x} y={q.y - 4.5} textAnchor="middle" fontSize={4.6} fontWeight={700} fill={th.ink} style={{ fontFamily: UI, paintOrder: "stroke", stroke: th.card, strokeWidth: 1.6, strokeLinejoin: "round" }}>{q.nom}</text>
+              </g>
+            );
+          })}
+        </svg>
+      </Card>
+      <div style={{ fontFamily: UI, fontSize: 30, color: th.muted }}>Schéma, pas à l’échelle</div>
+    </Stage>
+  );
+};
+
+/* ─────────── Histoire : citation d'époque ─────────── */
+export const Citation: React.FC<Ctx<"citation">> = ({ p, l, th }) => (
+  <Stage>
+    <div style={{ fontFamily: GIANT, fontSize: 420, lineHeight: 0.7, color: th.accent, opacity: ease(l, 0, 12), transform: `scale(${ease(l, 0, 14, 0.6, 1)})` }}>“</div>
+    <div style={{ fontFamily: UI, fontSize: 62, fontWeight: 700, color: th.ink, textAlign: "center", maxWidth: 900, lineHeight: 1.2, opacity: ease(l, 6, 22) }}>{p.texte}</div>
+    <div style={{ fontFamily: UI, fontSize: 44, color: th.muted, opacity: ease(l, 20, 34) }}>— {p.auteur}{p.date ? `, ${p.date}` : ""}</div>
   </Stage>
 );

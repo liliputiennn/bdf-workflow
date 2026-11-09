@@ -24,6 +24,8 @@ export type Theme = {
   alert: string;
   /** thème sombre (ombres, grille) */
   dark: boolean;
+  /** symboles flottants du fond (défaut : € % $ +) */
+  glyphs?: string[];
 };
 
 export const THEMES: Record<string, Theme> = {
@@ -95,6 +97,10 @@ export const THEMES: Record<string, Theme> = {
   "chocolat-framboise": {
     id: "chocolat-framboise", bg: ["#3A1A12", "#6B2F20"], card: "#2C130D", line: "#8A4A38", ink: "#FFF1EA", muted: "#E0B3A3",
     accent: "#FF5C8A", onAccent: "#2C130D", deep: "#D23A6A", hot: "#FFC857", alert: "#FFB020", dark: true,
+  },
+  "parchemin": {
+    id: "parchemin", bg: ["#F3E7CC", "#E6D3A8"], card: "#FBF4E1", line: "#CDB98A", ink: "#2B1D12", muted: "#7A6648",
+    accent: "#9B2D20", onAccent: "#FFF8EA", deep: "#6E1F16", hot: "#C98A1B", alert: "#B3261E", dark: false, glyphs: ["+", "·"],
   },
 };
 

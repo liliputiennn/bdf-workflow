@@ -1,0 +1,70 @@
+{
+  "id": "musique-enfants",
+  "nom": "Musique pour enfants (nom à choisir)",
+  "langue": "fr",
+  "format": "musique_enfants",
+  "niche": "Comptines et chansons simples",
+  "active": false,
+  "vague": 7,
+  "jeton_fichier": "token-musique-enfants.json",
+  "voix": {
+    "dossier": null
+  },
+  "musique": {
+    "dossier": null
+  },
+  "style": {
+    "theme": "musique",
+    "miniature": "musique"
+  },
+  "publication": {
+    "heures_shorts": [
+      "10:00"
+    ],
+    "shorts_par_creneau": 1,
+    "heure_long": "16:00",
+    "jours_longs": [
+      2,
+      5
+    ],
+    "mention_ia_description": true,
+    "pour_enfants": true,
+    "commentaire_auto": false,
+    "question_dans_description": false,
+    "hashtag_shorts": true
+  },
+  "frequence": {
+    "shorts_par_jour": 1,
+    "longs_par_semaine": 2
+  },
+  "dossiers": {
+    "sujets": "subjects/musique-enfants"
+  },
+  "source": null,
+  "format_module": "autopilot.formats.musique_enfants",
+  "format_options": {},
+  "format_pret": true,
+  "briques": {
+    "fabrique": "formats/fabrique.py",
+    "miniature": "formats/miniature_formats.py"
+  },
+  "notes": "Chantier 3, format 5 (le plus risqué). Chansons ORIGINALES à chanter (karaoké) : mélodie synthétisée par du code (aucune licence tierce), paroles syllabées par le rédacteur, aucune voix chantée générée. MusicGen = CC-BY-NC (interdit) ; Stable Audio Open = licence communautaire (écarté) ; ACE-Step et YuE = Apache-2.0 mais non branchés (voir spec). Déclaration « conçue pour les enfants » (selfDeclaredMadeForKids) faite par le publieur via publication.pour_enfants.",
+  "preparation": true,
+  "format_statut": {
+    "verifie": "2026-11-09",
+    "test": "musique-essai : chanson originale, rendu karaoké, pret, faux YouTube avec selfDeclaredMadeForKids = true.",
+    "manque": [
+      "Relire les premières chansons avant d'activer",
+      "Créer la chaîne YouTube, connecter son jeton, choisir quand activer"
+    ],
+    "licences": [
+      "Mélodie : synthétisée par le code, aucune licence tierce",
+      "MusicGen (CC-BY-NC) interdit ; Stable Audio Open écarté ; ACE-Step et YuE (Apache-2.0) non branchés"
+    ],
+    "risques": [
+      "Chansons synthétiques répétitives : YouTube peut y voir du contenu de masse",
+      "Similarité de mélodie vérifiée seulement contre une liste d'airs connus",
+      "Déclaration « conçue pour les enfants » : commentaires désactivés par YouTube"
+    ]
+  }
+}

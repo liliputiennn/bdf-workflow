@@ -25,6 +25,12 @@ export type SceneParams = {
   photo: { fichier?: string; recherche?: string; legende?: string; credit?: string };
   /** Extrait vidéo libre de droits en boucle (sans son) ; `recherche` : mots-clés (anglais), la fabrication renseigne `fichier`. */
   clip: { fichier?: string; recherche?: string; legende?: string; credit?: string };
+  /** Histoire : frise de dates (2 à 6 repères, `accent` met un repère en avant). */
+  frise: { titre?: string; reperes: { date: string; label: string; accent?: boolean }[] };
+  /** Histoire : schéma de lieux (x, y de 0 à 100), pas à l'échelle ; `trajet` relie les lieux dans l'ordre. */
+  carte: { titre?: string; lieux: { nom: string; x: number; y: number }[]; trajet?: boolean };
+  /** Histoire : citation d'époque, sourcée dans faits.json. */
+  citation: { texte: string; auteur: string; date?: string };
 };
 export type SceneType = keyof SceneParams;
 
@@ -46,6 +52,8 @@ export type Episode = {
   theme_accent?: string;
   /** Étiquette du coin haut gauche (nom de la chaîne). */
   chaine: string;
+  /** Langue du texte parlé et affiché (« en »…) ; sans valeur : le français. Règle les sous-titres (nombres en chiffres) et le format des nombres. */
+  langue?: string;
   phrases: string[];
   scenes: Scene[];
   /** Miniature YouTube (facultatif, voir src/miniature/resolve.ts) : style, texte_haut, gros, icone, contraste. */

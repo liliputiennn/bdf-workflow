@@ -8,12 +8,15 @@ import path from "node:path";
 import { spawn } from "node:child_process";
 import { Router } from "express";
 import { safeJoin } from "./paths";
+import { construireChaines, lireFeuille, type ChaineVue, type Feuille, type QuotaVue } from "./chaines";
 
 export const ETATS = ["ecrit", "voix", "rendu", "controle", "pret", "programme", "publie", "quarantaine"] as const;
 export type Etat = (typeof ETATS)[number];
 
 export type AutoEp = {
   id: string;
+  /** chaîne à laquelle appartient l'épisode (« fr » pour les épisodes d'avant les profils) */
+  chaine: string;
   parent: string | null;
   long: boolean;
   titre: string;
@@ -34,11 +37,17 @@ export type AutoEp = {
 export type Snapshot = {
   genere: string;
   stock: Record<string, unknown> | null;
+  /** toutes les chaînes (actives ou non) : jeton, stock par état, alertes, avancement */
+  chaines: ChaineVue[];
+  /** quota YouTube du jour, partagé par toutes les chaînes (un seul projet Google) */
+  quota: QuotaVue;
+  /** les trois chantiers (moteur, multilingue, nouveaux formats) */
+  feuille: Feuille;
   episodes: AutoEp[];
   alertes: { t: string; msg: string }[];
   logs: { nom: string; maj: string; octets: number }[];
   redaction: { dernier_passage: string | null; cible: number | null; a_ecrire: number | null } | null;
-  verrous: { gpu: boolean; fabrique: boolean };
+  verrous: { gpu: boolean; fabrique: boolean; /** heure de lancement de la fabrication en cours (date du verrou), si connue */ depuis?: string | null };
 };
 
 const readJson = <T,>(p: string): T | null => {
@@ -49,6 +58,14 @@ const readJson = <T,>(p: string): T | null => {
   }
 };
 const exists = (p: string) => fs.existsSync(p);
+/** Date de création d'un fichier verrou (= heure de lancement de la fabrication), ou null. */
+const lockSince = (p: string): string | null => {
+  try {
+    return fs.statSync(p).mtime.toISOString();
+  } catch {
+    return null;
+  }
+};
 /** Retire les codes couleur du terminal des journaux. */
 const stripAnsi = (s: string) => s.replace(/\x1b\[[0-9;]*m/g, "");
 
@@ -62,7 +79,7 @@ export const createAutopilot = (root: string) => {
   const readEpisode = (id: string, tiktok: Record<string, { statut?: string }>): AutoEp | null => {
     const d = path.join(eps, id);
     if (!exists(path.join(d, "episode.json"))) return null;
-    const st = readJson<Partial<AutoEp>>(path.join(d, "status.json")) ?? {};
+    const st = readJson<Partial<AutoEp> & { chaine_id?: string }>(path.join(d, "status.json")) ?? {};
     // anciennes vidéos retirées de YouTube lors de la refonte (archivées) : on ne les montre plus dans l'interface
     if (String(st.raison ?? "").startsWith("retiré de YouTube")) return null;
     const pub = readJson<{ titre?: string; tags?: string[] }>(path.join(d, "publication.json"));
@@ -72,6 +89,7 @@ export const createAutopilot = (root: string) => {
     const parent = m && exists(path.join(eps, m[1], "episode-long.json")) ? m[1] : null;
     return {
       id,
+      chaine: st.chaine_id ?? "fr",
       parent,
       long,
       titre: pub?.titre ?? id,
@@ -124,14 +142,18 @@ export const createAutopilot = (root: string) => {
     const ids = exists(eps) ? fs.readdirSync(eps).filter((n) => !n.startsWith("_") && !n.startsWith(".")) : [];
     const episodes = ids.map((id) => readEpisode(id, tiktok)).filter((e): e is AutoEp => e !== null);
     const red = readJson<{ dernier_passage?: string; cible?: number; a_ecrire?: number }>(path.join(stateDir, "redaction.json"));
+    const { chaines, quota } = construireChaines(root, episodes);
     return {
       genere: new Date().toISOString(),
       stock: readJson(path.join(stateDir, "stock.json")),
+      chaines,
+      quota,
+      feuille: lireFeuille(root),
       episodes,
       alertes: alertes(),
       logs: listLogs(),
       redaction: red ? { dernier_passage: red.dernier_passage ?? null, cible: red.cible ?? null, a_ecrire: red.a_ecrire ?? null } : null,
-      verrous: { gpu: exists(path.join(stateDir, "gpu.lock")), fabrique: exists(path.join(stateDir, "run_fabriquer.lock")) },
+      verrous: { gpu: exists(path.join(stateDir, "gpu.lock")), fabrique: exists(path.join(stateDir, "run_fabriquer.lock")), depuis: lockSince(path.join(stateDir, "run_fabriquer.lock")) },
     };
   };
 

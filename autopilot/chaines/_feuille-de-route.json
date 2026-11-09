@@ -1,0 +1,149 @@
+{
+ "maj": "2026-11-09",
+ "chantiers": [
+  {
+   "id": "moteur",
+   "titre": "1. Moteur multi-chaînes",
+   "statut": "en_cours",
+   "resume": "Un seul pipeline fait tourner plusieurs chaînes YouTube, chacune avec son profil et son jeton, dans un seul projet Google (quota partagé). Le code est livré ; il reste à créer les chaînes et connecter leurs jetons.",
+   "etapes": [
+    {
+     "titre": "Un profil par chaîne (7 profils, activation en vagues)",
+     "fait": true
+    },
+    {
+     "titre": "Rédacteur, fabrique, miniatures et publieur conscients de la chaîne",
+     "fait": true
+    },
+    {
+     "titre": "Quota partagé, échecs isolés, chaîne inactive ignorée",
+     "fait": true
+    },
+    {
+     "titre": "Outil de connexion d'une chaîne + guide",
+     "fait": true
+    },
+    {
+     "titre": "Vue d'ensemble des chaînes et feuille de route",
+     "fait": true
+    },
+    {
+     "titre": "Créer chaque chaîne dans YouTube",
+     "fait": false,
+     "qui": "toi"
+    },
+    {
+     "titre": "Connecter le jeton de chaque chaîne",
+     "fait": false,
+     "qui": "toi"
+    }
+   ],
+   "chaines": [
+    "fr"
+   ]
+  },
+  {
+   "id": "multilingue",
+   "titre": "2. Multilingue (anglais d'abord)",
+   "statut": "en_cours",
+   "resume": "La chaîne anglaise adapte (sans copier) les épisodes de la chaîne française : Claude traduit et localise, un moteur gratuit prend le relais s'il est bloqué, la voix anglaise est intégrée (Qwen3-TTS, Apache-2.0), les miniatures et titres sont distincts et la publication a 48 h de décalage. Le code est livré et vérifié de bout en bout ; il reste à créer la chaîne, connecter son jeton et décider de l'activer.",
+   "etapes": [
+    {
+     "titre": "Profil de la chaîne anglaise (source = chaîne française, créneaux New York)",
+     "fait": true
+    },
+    {
+     "titre": "Adaptation des épisodes : demandes pour Claude, contrôle de parité (mêmes chiffres, scènes, sources), faits revérifiés",
+     "fait": true
+    },
+    {
+     "titre": "Repli gratuit si Claude est bloqué (MarianMT, Apache-2.0) — code livré",
+     "fait": true
+    },
+    {
+     "titre": "Voix anglaise (voix intégrée Ryan, sans fichier à fournir) et rendu adapté à la durée",
+     "fait": true
+    },
+    {
+     "titre": "Sous-titres, textes d'écran, miniatures et titres en anglais",
+     "fait": true
+    },
+    {
+     "titre": "Décalage de 48 h après la version française, aucune activation automatique",
+     "fait": true
+    },
+    {
+     "titre": "Écrans Chaînes et Feuille de route : file de traduction, voix, épisodes prêts",
+     "fait": true
+    },
+    {
+     "titre": "Installer le moteur de repli (≈ 300 Mo, une fois : python autopilot/traduction/moteurs.py installer fr-en)",
+     "fait": false,
+     "qui": "toi (facultatif)"
+    },
+    {
+     "titre": "Réécouter quelques épisodes anglais, puis créer la chaîne YouTube anglaise",
+     "fait": false,
+     "qui": "toi"
+    },
+    {
+     "titre": "Connecter le jeton de la chaîne anglaise puis l'activer (active: true)",
+     "fait": false,
+     "qui": "toi"
+    }
+   ],
+   "chaines": [
+    "en"
+   ]
+  },
+  {
+   "id": "formats",
+   "titre": "3. Nouveaux formats, un par un",
+   "statut": "en_cours",
+   "resume": "Chaque format se branche sur le moteur par son profil (module de format, scripts de remplacement, rendu léger Pillow + ffmpeg). Quiz, langues, sommeil et musique enfants traversent le pipeline de bout en bout avec le faux YouTube (voix simulée) ; Histoire a son code mais pas encore de long complet. Les voix réelles sont à confirmer à l'écoute ; l'utilisateur crée les chaînes, connecte les jetons et décide de l'activation.",
+   "etapes": [
+    {
+     "titre": "Socle : contrôles propres au format, vidéo longue des formats maison, déclaration « enfants » du publieur",
+     "fait": true
+    },
+    {
+     "titre": "Histoire : code, thème et scènes livrés ; long complet à produire (format_pret reste faux)",
+     "fait": false
+    },
+    {
+     "titre": "Quiz : prêt de bout en bout (voix simulée)",
+     "fait": true
+    },
+    {
+     "titre": "Apprentissage des langues : prêt de bout en bout (voix simulée), prononciation à écouter",
+     "fait": true
+    },
+    {
+     "titre": "Sommeil : prêt de bout en bout, rendu léger",
+     "fait": true
+    },
+    {
+     "titre": "Musique pour enfants : prêt de bout en bout, licences relues, « conçue pour les enfants » déclarée",
+     "fait": true
+    },
+    {
+     "titre": "Écouter et confirmer les voix de chaque chaîne",
+     "fait": false,
+     "qui": "toi"
+    },
+    {
+     "titre": "Créer chaque chaîne YouTube, connecter son jeton, décider de l'activation",
+     "fait": false,
+     "qui": "toi"
+    }
+   ],
+   "chaines": [
+    "histoire",
+    "sommeil",
+    "langues",
+    "quiz",
+    "musique-enfants"
+   ]
+  }
+ ]
+}

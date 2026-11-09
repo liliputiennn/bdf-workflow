@@ -25,9 +25,12 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import chaines  # noqa: E402
 import common  # noqa: E402
 
-RYTHME_PAR_JOUR = 1            # vidéos publiées par jour
+SHORTS_PAR_JOUR = 8            # cadence voulue (8 nov. 2026) : 4 créneaux x 2 Shorts, voir publish/config.json
+LONGS_PAR_SEMAINE = 3          # lundi, mercredi, vendredi
+RYTHME_PAR_JOUR = SHORTS_PAR_JOUR + LONGS_PAR_SEMAINE / 7   # vidéos publiées par jour, longs compris (≈ 8,43)
 SEUIL_STOCK_JOURS = 3
 SEUIL_DISQUE_GO = 3.0
 MAX_TENTATIVES = 2
@@ -257,13 +260,19 @@ def lever_cles(garder) -> None:
 
 
 # ---------------------------------------------------------------- stock
-def auth_youtube_presente() -> bool:
-    """`youtube_auth.json` est écrit par le publieur : {"etat": "ok"} = tout va bien, autre chose = jeton à renouveler."""
-    p = common.STATE / "youtube_auth.json"
+def auth_youtube_presente(chaine: str = chaines.CHAINE_DEFAUT) -> bool:
+    """`youtube_auth.json` (`youtube_auth-<chaine>.json` pour les autres chaînes) est écrit par le publieur :
+    {"etat": "ok"} = tout va bien, autre chose = jeton à renouveler."""
+    p = common.STATE / chaines.fichier_etat_auth(chaine)
     if not p.exists():
         return False
     contenu = common.read_json(p, None)
     return not (isinstance(contenu, dict) and contenu.get("etat") == "ok")
+
+
+def jeton_connecte(chaine: str):
+    """Vrai/faux si le publieur a noté (state/jetons.json, sans aucun secret) que la chaîne a un jeton ; None si inconnu."""
+    return ((common.read_json(common.STATE / "jetons.json", {}) or {}).get(chaine) or {}).get("connecte")
 
 
 def redaction_en_retard() -> tuple[str | None, bool]:
@@ -277,42 +286,97 @@ def redaction_en_retard() -> tuple[str | None, bool]:
         return d, True
 
 
-def calculer_stock() -> dict:
-    par_etat = {e: 0 for e in common.ETATS}
-    ids = {e: [] for e in common.ETATS}
-    quarantaines = []
+def rythme_chaine(p: dict) -> float:
+    """Vidéos mises en ligne par jour (longs compris). La chaîne par défaut, sans cadence propre dans son profil, garde `RYTHME_PAR_JOUR` (valeur historique)."""
+    if p["id"] == chaines.CHAINE_DEFAUT and not p.get("frequence"):
+        return RYTHME_PAR_JOUR
+    shorts, longs = chaines.frequence(p, SHORTS_PAR_JOUR, LONGS_PAR_SEMAINE)
+    return shorts + longs / 7
+
+
+def stock_par_chaine() -> dict:
+    """Stock détaillé de CHAQUE chaîne (actives ou non) : états, jours d'avance, dernière publication, connexion YouTube."""
+    profils = chaines.charger_profils()
+    out: dict = {}
+    for ident, p in profils.items():
+        out[ident] = {"nom": p["nom"], "langue": p["langue"], "format": p["format"], "niche": p["niche"], "vague": p["vague"],
+                      "active": bool(p["active"] and p["valide"]), "souhaitee_active": bool(p["active"]), "erreurs": p["erreurs"],
+                      "preparation": bool(p.get("preparation") and p["valide"]), "source": (p.get("source") or {}).get("chaine"),
+                      "source_mode": (p.get("source") or {}).get("mode"), "voix": chaines.voix_info(p),
+                      "par_etat": {e: 0 for e in common.ETATS}, "ids_par_etat": {e: [] for e in common.ETATS},
+                      "quarantaines": [], "derniere_publication": None}
     for ep in common.list_episodes():
         st = common.get_status(ep)
         etat = st.get("etat", "ecrit")
-        if etat not in par_etat:
-            continue
-        par_etat[etat] += 1
-        ids[etat].append(ep)
+        b = out.get(common.chaine_de(ep))
+        if b is None or etat not in b["par_etat"]:
+            continue  # chaîne sans profil : ses épisodes sont laissés de côté
+        b["par_etat"][etat] += 1
+        b["ids_par_etat"][etat].append(ep)
         if etat == "quarantaine":
-            quarantaines.append({"id": ep, "raison": st.get("raison"), "maj": st.get("maj")})
-    publiable = par_etat["pret"] + par_etat["programme"]
-    prep = sum(par_etat[e] for e in ("ecrit", "voix", "rendu", "controle"))
-    jours = publiable / RYTHME_PAR_JOUR
+            b["quarantaines"].append({"id": ep, "raison": st.get("raison"), "maj": st.get("maj")})
+        elif etat == "publie":
+            quand = (st.get("youtube") or {}).get("publie_a") or st.get("maj")
+            if quand and (b["derniere_publication"] is None or quand > b["derniere_publication"]):
+                b["derniere_publication"] = quand
+    for ident, b in out.items():
+        p = profils[ident]
+        pe = b["par_etat"]
+        publiable = pe["pret"] + pe["programme"]
+        prep = sum(pe[e] for e in ("ecrit", "voix", "rendu", "controle"))
+        rythme = rythme_chaine(p)
+        jours = round(publiable / rythme, 2)
+        shorts, longs = chaines.frequence(p, SHORTS_PAR_JOUR, LONGS_PAR_SEMAINE)
+        connecte = jeton_connecte(ident)
+        b.update(
+            rythme_par_jour=round(rythme, 2), shorts_par_jour=shorts, longs_par_semaine=longs,
+            stock_publiable=publiable, en_preparation=prep, jours_de_stock=jours,
+            jours_avec_preparation=round((publiable + prep) / rythme, 2),
+            date_rupture=(datetime.now().date() + timedelta(days=int(jours))).isoformat(),
+            stock_bas=b["active"] and jours < SEUIL_STOCK_JOURS,
+            jeton_connecte=connecte,
+            auth_a_renouveler=b["active"] and (auth_youtube_presente(ident) or connecte is False),
+        )
+    return out
+
+
+def calculer_stock() -> dict:
+    """Stock global = somme des chaînes ACTIVES (seule la chaîne par défaut est active tant qu'on n'a pas activé les autres : résultat inchangé).
+    `jours_de_stock` est celui de la chaîne la plus juste (la première à tomber en rupture) ; le détail est dans `par_chaine`."""
+    par_chaine = stock_par_chaine()
+    actives = [b for b in par_chaine.values() if b["active"]]
+    par_etat = {e: sum(b["par_etat"][e] for b in actives) for e in common.ETATS}
+    ids = {e: [i for b in actives for i in b["ids_par_etat"][e]] for e in common.ETATS}
+    quarantaines = [{**q, "chaine": ident} for ident, b in par_chaine.items() if b["active"] for q in b["quarantaines"]]
+    publiable = sum(b["stock_publiable"] for b in actives)
+    prep = sum(b["en_preparation"] for b in actives)
+    rythme = sum(b["rythme_par_jour"] for b in actives) or RYTHME_PAR_JOUR
+    jours = min((b["jours_de_stock"] for b in actives), default=0)
+    jours_prep = min((b["jours_avec_preparation"] for b in actives), default=0)
     libre = disque_libre_go()
     passage, retard = redaction_en_retard()
     return {
         "maj": common.now(),
-        "rythme_par_jour": RYTHME_PAR_JOUR,
+        "rythme_par_jour": round(rythme, 2),
+        "shorts_par_jour": sum(b["shorts_par_jour"] for b in actives) if actives else SHORTS_PAR_JOUR,
+        "longs_par_semaine": sum(b["longs_par_semaine"] for b in actives) if actives else LONGS_PAR_SEMAINE,
         "par_etat": par_etat,
         "ids_par_etat": {e: v for e, v in ids.items() if v},
         "stock_publiable": publiable,
         "jours_de_stock": jours,
         "en_preparation": prep,
-        "jours_avec_preparation": (publiable + prep) / RYTHME_PAR_JOUR,
+        "jours_avec_preparation": jours_prep,
         "date_rupture": (datetime.now().date() + timedelta(days=int(jours))).isoformat(),
-        "stock_bas": jours < SEUIL_STOCK_JOURS,
+        "stock_bas": any(b["stock_bas"] for b in actives),
         "quarantaines": quarantaines,
         "disque_libre_go": round(libre, 2),
         "disque_bas": libre < SEUIL_DISQUE_GO,
-        "youtube_auth_a_renouveler": auth_youtube_presente(),
+        "youtube_auth_a_renouveler": any(b["auth_a_renouveler"] for b in actives),
         "redaction_dernier_passage": passage,
         "redaction_en_retard": retard,
         "claude_bloque": (common.STATE / "claude_blocked.json").exists(),
+        "par_chaine": {i: {k: v for k, v in b.items() if k != "ids_par_etat"} for i, b in par_chaine.items()},
+        "chaines_actives": [i for i, b in par_chaine.items() if b["active"]],
     }
 
 
@@ -325,19 +389,28 @@ def rafraichir_stock(alerter: bool = True, ecrire: bool = True) -> dict:
     return stock
 
 
+def _cle(base: str, ident: str) -> str:
+    """Clé d'alerte : celle d'avant pour la chaîne par défaut (les alertes déjà notifiées restent connues), suffixée pour les autres."""
+    return base if ident == chaines.CHAINE_DEFAUT else f"{base}:{ident}"
+
+
 def envoyer_alertes(stock: dict) -> None:
-    jours = stock["jours_de_stock"]
-    if stock["stock_bas"]:
-        notifier_si_nouveau("stock-bas", "La Débrouille : stock bas",
-                            f"{jours:g} jour(s) de vidéos prêtes (seuil {SEUIL_STOCK_JOURS}). "
-                            f"{stock['en_preparation']} en préparation.")
+    par_chaine = stock.get("par_chaine") or {}
+    for ident, b in par_chaine.items():
+        if b["active"] and b["stock_bas"]:
+            notifier_si_nouveau(_cle("stock-bas", ident), f"{b['nom']} : stock bas",
+                                f"{b['jours_de_stock']:g} jour(s) de vidéos prêtes (seuil {SEUIL_STOCK_JOURS}). "
+                                f"{b['en_preparation']} en préparation.")
     nouvelles = []
     for q in stock["quarantaines"]:
         cle = f"quarantaine:{q['id']}:{q['maj']}"
         if cle not in _etat_alertes()["envoyees"]:
             nouvelles.append((cle, q))
     if nouvelles:
-        resume = " ; ".join(f"{q['id']} ({(q['raison'] or '?')[:90]})" for _, q in nouvelles[:5])
+        def _ligne(q: dict) -> str:
+            ch = q.get("chaine", chaines.CHAINE_DEFAUT)
+            return f"{q['id']}{'' if ch == chaines.CHAINE_DEFAUT else f' [{ch}]'} ({(q['raison'] or '?')[:90]})"
+        resume = " ; ".join(_ligne(q) for _, q in nouvelles[:5])
         if len(nouvelles) > 5:
             resume += f" … (+{len(nouvelles) - 5})"
         envoyer_notification("La Débrouille : quarantaine", resume)
@@ -345,9 +418,14 @@ def envoyer_alertes(stock: dict) -> None:
         for cle, _ in nouvelles:
             etat["envoyees"][cle] = common.now()
         common.write_json(common.STATE / "alertes.json", etat)
-    if stock["youtube_auth_a_renouveler"]:
-        notifier_si_nouveau("youtube-auth", "La Débrouille : YouTube",
-                            "Jeton YouTube à renouveler (voir autopilot/state/youtube_auth.json).")
+    for ident, b in par_chaine.items():
+        if b["active"] and b["auth_a_renouveler"]:
+            fichier = chaines.fichier_etat_auth(ident)
+            if b.get("jeton_connecte") is False:
+                msg = f"Aucun jeton pour cette chaîne : connecte-la (autopilot/publish/CONNECTER-UNE-CHAINE.md), chaîne « {ident} »."
+            else:
+                msg = f"Jeton YouTube à renouveler (voir autopilot/state/{fichier})."
+            notifier_si_nouveau(_cle("youtube-auth", ident), f"{b['nom']} : YouTube", msg)
     if stock["disque_bas"]:
         notifier_si_nouveau("disque-bas", "La Débrouille : disque presque plein",
                             f"{stock['disque_libre_go']:.1f} Go libres (seuil {SEUIL_DISQUE_GO:g} Go) : rendu suspendu.")
@@ -355,11 +433,20 @@ def envoyer_alertes(stock: dict) -> None:
         notifier_si_nouveau("redaction-retard", "La Débrouille : rédacteur silencieux",
                             f"Dernier passage du rédacteur : {stock['redaction_dernier_passage']} (plus de {REDACTION_MAX_H} h).")
     quarantaine_cles = {f"quarantaine:{q['id']}:{q['maj']}" for q in stock["quarantaines"]}
-    lever_cles(lambda k: (k in quarantaine_cles) if k.startswith("quarantaine:") else (
-        (stock["stock_bas"] if k == "stock-bas" else
-         stock["youtube_auth_a_renouveler"] if k == "youtube-auth" else
-         stock["disque_bas"] if k == "disque-bas" else
-         stock["redaction_en_retard"] if k == "redaction-retard" else True)))
+
+    def toujours_vraie(k: str) -> bool:
+        if k.startswith("quarantaine:"):
+            return k in quarantaine_cles
+        base, _, ident = k.partition(":")
+        ident = ident or chaines.CHAINE_DEFAUT
+        b = par_chaine.get(ident) or {}
+        if base == "stock-bas":
+            return bool(b.get("active") and b.get("stock_bas"))
+        if base == "youtube-auth":
+            return bool(b.get("active") and b.get("auth_a_renouveler"))
+        return stock["disque_bas"] if k == "disque-bas" else stock["redaction_en_retard"] if k == "redaction-retard" else True
+
+    lever_cles(toujours_vraie)
 
 
 # ---------------------------------------------------------------- appel des briques
@@ -419,7 +506,7 @@ def appeler_brique(ep: str, nom: str, cmd: list, timeout_s: float, apres_succes)
     rc, sortie = 1, ""
     while faites < MAX_TENTATIVES:
         faites += 1
-        rc, sortie = lancer(cmd, timeout_s)
+        rc, sortie = lancer(cmd, timeout_s, env_chaine(ep))
         log.info("[%s] %s : code %s\n%s", ep, nom, rc, _queue(sortie, 15))
         if common.get_status(ep)["etat"] == "quarantaine":
             return "quarantaine"
@@ -477,9 +564,44 @@ def _apres_miniature(ep: str) -> None:
 
 
 # ---------------------------------------------------------------- sous-commandes
-def candidats(etats, seul: str | None) -> list:
-    out = [ep for ep in common.list_episodes() if common.get_status(ep).get("etat") in etats]
-    return [ep for ep in out if seul in (None, ep)]
+def profil_de(ep: str) -> dict:
+    """Profil de la chaîne de l'épisode (la chaîne par défaut si son profil a disparu)."""
+    return chaines.profil(common.chaine_de(ep)) or chaines.defaut_fr()
+
+
+def env_chaine(ep: str) -> dict:
+    """Variables transmises aux briques : chaîne, langue, voix et musique propres à la chaîne de l'épisode."""
+    return chaines.env_briques(profil_de(ep))
+
+
+def entrelacer(ids: list) -> list:
+    """Tour de rôle entre les chaînes : sans cela, une chaîne qui a beaucoup d'épisodes en attente épuiserait `--max` et le budget de temps
+    avant que les autres passent. Avec une seule chaîne, l'ordre ne change pas."""
+    groupes: dict[str, list] = {}
+    for ep in ids:
+        groupes.setdefault(common.chaine_de(ep), []).append(ep)
+    if len(groupes) < 2:
+        return ids
+    out = []
+    while any(groupes.values()):
+        for g in groupes.values():
+            if g:
+                out.append(g.pop(0))
+    return out
+
+
+def candidats(etats, seul: str | None, chaine: str | None = None, preparees: bool = False) -> list:
+    """Épisodes à traiter dans ces états, des chaînes ACTIVES seulement (une chaîne inactive ou au profil invalide est ignorée).
+    `preparees=True` (fabrication, miniatures) y ajoute les chaînes en préparation : du stock se constitue, mais le publieur ne les lit jamais."""
+    actives = {p["id"] for p in (chaines.preparees() if preparees else chaines.actives())}
+    out = []
+    for ep in common.list_episodes():
+        if common.get_status(ep).get("etat") not in etats or seul not in (None, ep):
+            continue
+        c = common.chaine_de(ep)
+        if c in actives and chaine in (None, c):
+            out.append(ep)
+    return entrelacer(out)
 
 
 def est_long(ep: str) -> bool:
@@ -495,7 +617,7 @@ def fabriquer_long(ep: str, a) -> str:
         log.error("[%s] make_long.py introuvable", ep)
         return "ignores"
     cmd = [python_exe(), str(brique), ep, "--budget-min", str(a.budget_long_min)] + (["--sans-voix"] if a.sans_voix else [])
-    rc, sortie = lancer(cmd, (a.budget_long_min + 150) * 60)
+    rc, sortie = lancer(cmd, (a.budget_long_min + 150) * 60, env_chaine(ep))
     log.info("[%s] long : code %s\n%s", ep, rc, _queue(sortie, 15))
     if common.get_status(ep)["etat"] == "quarantaine":
         return "quarantaine"
@@ -544,7 +666,7 @@ def shorts_du_long(long_id: str, a, bilan: dict) -> None:
             continue
         try:
             with verrou(d / ".lock", wait_s=0):
-                bilan[appeler_brique(ep, "fabrique", [python_exe(), str(brique), ep, "--voix-prete"], a.timeout_min * 60, _apres_fabrique)] += 1
+                bilan[appeler_brique(ep, "fabrique", [python_exe(), str(chaines.brique(profil_de(ep), "fabrique", brique)), ep, "--voix-prete"], a.timeout_min * 60, _apres_fabrique)] += 1
         except TimeoutError:
             log.info("[%s] verrou d'épisode occupé : ignoré pour ce passage", ep)
             bilan["ignores"] += 1
@@ -553,10 +675,42 @@ def shorts_du_long(long_id: str, a, bilan: dict) -> None:
             bilan["erreurs"] += 1
 
 
+def _traduction():
+    """Brique de traduction (chantier 2), importée à la demande : l'orchestrateur n'en dépend pas tant qu'aucune chaîne n'est une adaptation."""
+    racine = str(Path(__file__).resolve().parent.parent)
+    if racine not in sys.path:
+        sys.path.insert(0, racine)
+    from autopilot.traduction import traduire
+    return traduire
+
+
+def traduire_avant_fabrication(chaine: str | None = None) -> None:
+    """Alimente en stock les chaînes cibles (demandes de traduction + repli gratuit) juste avant de fabriquer : un échec ici n'arrête jamais la fabrication."""
+    try:
+        bilan = _traduction().passe(chaine=chaine)
+        if bilan:
+            log.info("traduction : %s", {k: {s: (len(v) if isinstance(v, list) else v) for s, v in b.get("repli", {}).items() if s in ("acceptes", "quarantaine", "echecs")}
+                                         | {"demandes": len((b.get("demandes") or {}).get("creees", []))} for k, b in bilan.items()})
+    except Exception:
+        log.error("traduction : erreur inattendue (la fabrication continue) :\n%s", traceback.format_exc())
+
+
+def cmd_traduire(a) -> dict:
+    """Une passe d'alimentation des chaînes cibles : demandes de traduction pour Claude, puis repli gratuit pour celles qu'il n'a pas prises."""
+    bilan = _traduction().passe(chaine=a.chaine, maximum=a.max, avec_repli=not a.sans_repli, dry_run=a.dry_run, forcer=a.forcer)
+    if not bilan:
+        log.info("traduire : aucune chaîne cible (profil avec `source`, active ou en préparation)")
+    for ident, b in bilan.items():
+        log.info("traduire [%s] : %s", ident, json.dumps(b, ensure_ascii=False)[:600])
+    return {"chaines": len(bilan), "erreurs": sum(1 for b in bilan.values() if "erreur" in b)}
+
+
 def cmd_fabriquer(a) -> dict:
     brique = autopilot_dir() / "make_short.py"
     bilan = {"ok": 0, "quarantaine": 0, "ignores": 0, "erreurs": 0}
-    todo = candidats(ETATS_FABRIQUE, a.id)
+    if not a.id and not a.dry_run and not getattr(a, "sans_traduction", False):
+        traduire_avant_fabrication(getattr(a, "chaine", None))
+    todo = candidats(ETATS_FABRIQUE, a.id, getattr(a, "chaine", None), preparees=True)
     if not todo:
         log.info("fabriquer : aucun épisode à fabriquer")
         return bilan
@@ -597,7 +751,7 @@ def cmd_fabriquer(a) -> dict:
                 log.error("[%s] erreur inattendue de l'orchestrateur :\n%s", ep, traceback.format_exc())
                 bilan["erreurs"] += 1
             continue
-        cmd = [python_exe(), str(brique), ep] + (["--sans-voix"] if a.sans_voix else [])
+        cmd = [python_exe(), str(chaines.brique(profil_de(ep), "fabrique", brique)), ep] + (["--sans-voix"] if a.sans_voix else [])
         try:
             with verrou(common.STATE / "gpu.lock", wait_s=a.attente_gpu):
                 try:
@@ -638,7 +792,7 @@ def cmd_finaliser(a) -> dict:
     brique = autopilot_dir() / "miniature.py"
     manuelles = common.ROOT / "miniatures-manuelles"
     bilan = {"ok": 0, "quarantaine": 0, "ignores": 0, "erreurs": 0}
-    for ep in candidats(("controle",), a.id):
+    for ep in candidats(("controle",), a.id, getattr(a, "chaine", None), preparees=True):
         if a.dry_run:
             log.info("[dry-run] finaliserait %s", ep)
             continue
@@ -657,7 +811,7 @@ def cmd_finaliser(a) -> dict:
                         continue
                     log.warning("[%s] miniature manuelle refusée (%s) : repli sur la miniature automatique", ep, defaut)
                 if brique.exists():
-                    cmd = [python_exe(), str(brique), ep]
+                    cmd = [python_exe(), str(chaines.brique(profil_de(ep), "miniature", brique)), ep]
                     res = appeler_brique(ep, "miniature", cmd, TIMEOUT_MINIATURE_MIN * 60, _apres_miniature)
                     bilan[res] += 1
                 else:
@@ -729,11 +883,23 @@ def rendu_etat(s: dict) -> str:
         L.append(f"  {e:<11}{n:>3}  {', '.join(ids[:6])}{' …' if len(ids) > 6 else ''}")
     L.append("")
     marque = "  ⚠ SOUS LE SEUIL" if s["stock_bas"] else ""
-    L.append(f"Stock publiable : {s['stock_publiable']} vidéo(s) = {s['jours_de_stock']:g} jour(s) à {s['rythme_par_jour']}/jour{marque}")
+    L.append(f"Stock publiable : {s['stock_publiable']} vidéo(s) = {s['jours_de_stock']:g} jour(s) à {s['rythme_par_jour']:g}/jour ({s.get('shorts_par_jour', '?')} Shorts + {s.get('longs_par_semaine', '?')} longs par semaine){marque}")
     L.append(f"En préparation  : {s['en_preparation']} (soit {s['jours_avec_preparation']:g} jour(s) si tout passe)")
     L.append(f"Rupture prévue  : {s['date_rupture']} (sans nouvelle vidéo)")
     L.append(f"Disque          : {s['disque_libre_go']:.1f} Go libres{'  ⚠ SOUS LE SEUIL, rendu suspendu' if s['disque_bas'] else ''}")
     L.append(f"Jeton YouTube   : {'À RENOUVELER (state/youtube_auth.json)' if s['youtube_auth_a_renouveler'] else 'rien à signaler'}")
+    pc = s.get("par_chaine") or {}
+    if len(pc) > 1:  # plusieurs profils : une ligne par chaîne (la chaîne seule garde l'affichage historique)
+        L.append("")
+        L.append("Chaînes :")
+        for ident, b in pc.items():
+            jeton = {True: "jeton connecté", False: "jeton NON connecté", None: "jeton ?"}[b.get("jeton_connecte")]
+            stock_txt = f"{b['stock_publiable']} prêt(s) = {b['jours_de_stock']:g} j" if b["active"] else "inactive"
+            alerte = "  ⚠ STOCK BAS" if b.get("stock_bas") else ""
+            L.append(f"  {ident:<16}{b['langue']:<4}{b['format']:<16}{stock_txt:<22}{jeton}{alerte}")
+            if b.get("erreurs"):
+                L.append(f"      profil invalide : {' ; '.join(b['erreurs'])}")
+        L.append("")
     L.append(f"Rédacteur       : dernier passage {s['redaction_dernier_passage'] or 'inconnu'}{'  ⚠ PLUS DE 36 h' if s['redaction_en_retard'] else ''}")
     if s["claude_bloque"]:
         L.append("Rédacteur Claude: bloqué (state/claude_blocked.json)")
@@ -760,7 +926,16 @@ def etat_taches() -> str:
                                               for c in lignes)
 
 
+def noter_jetons() -> None:
+    """Demande au publieur (seul à ouvrir autopilot/secrets/) d'écrire state/jetons.json : pour chaque chaîne, jeton présent ou non. Aucun secret n'en sort."""
+    brique = autopilot_dir() / "publish" / "auth.py"
+    if brique.exists():
+        with contextlib.suppress(Exception):
+            lancer([python_exe(), str(brique), "--ecrire-etat"], 60)
+
+
 def cmd_etat(a) -> dict:
+    noter_jetons()
     stock = rafraichir_stock(alerter=a.alertes)
     log.info("etat : stock publiable %s, en préparation %s, quarantaines %s, disque %.1f Go",
              stock["stock_publiable"], stock["en_preparation"], len(stock["quarantaines"]), stock["disque_libre_go"])
@@ -780,6 +955,7 @@ def parser() -> argparse.ArgumentParser:
     sub = ap.add_subparsers(dest="cmd", required=True)
     f = sub.add_parser("fabriquer", help="ecrit -> controle (voix + rendu), un épisode à la fois sous gpu.lock")
     f.add_argument("--id")
+    f.add_argument("--chaine", help="ne traiter que cette chaîne (profils : autopilot/chaines/)")
     f.add_argument("--max", type=int)
     f.add_argument("--sans-voix", action="store_true")
     f.add_argument("--attente-gpu", type=float, default=120, help="secondes d'attente du verrou GPU")
@@ -787,8 +963,16 @@ def parser() -> argparse.ArgumentParser:
     f.add_argument("--timeout-min", type=float, default=TIMEOUT_FABRIQUE_MIN)
     f.add_argument("--budget-long-min", type=float, default=90.0, help="durée maximale d'une reprise de voix pour un long (format 16:9)")
     f.add_argument("--dry-run", action="store_true")
+    f.add_argument("--sans-traduction", action="store_true", help="ne pas alimenter les chaînes cibles (traduction) avant de fabriquer")
+    tr = sub.add_parser("traduire", help="alimente les chaînes cibles (chantier 2) : demandes de traduction pour Claude, repli gratuit si Claude est bloqué")
+    tr.add_argument("--chaine", help="ne traiter que cette chaîne cible")
+    tr.add_argument("--max", type=int, help="nombre maximal de demandes par chaîne (sinon source.max_par_passage du profil)")
+    tr.add_argument("--sans-repli", action="store_true", help="seulement créer les demandes (laisser Claude traduire)")
+    tr.add_argument("--forcer", action="store_true", help="repli aussi pour les demandes récentes (sans attendre Claude)")
+    tr.add_argument("--dry-run", action="store_true")
     n = sub.add_parser("finaliser", help="controle -> pret (miniature)")
     n.add_argument("--id")
+    n.add_argument("--chaine", help="ne traiter que cette chaîne")
     n.add_argument("--dry-run", action="store_true")
     p = sub.add_parser("publier", help="appelle publish.py --en-attente")
     p.add_argument("--dry-run", action="store_true")
@@ -814,7 +998,7 @@ def main(argv=None) -> int:
         except Exception:
             log.error("etat : %s", traceback.format_exc())
             return 1
-    fonction = {"fabriquer": cmd_fabriquer, "finaliser": cmd_finaliser, "publier": cmd_publier, "tiktok": cmd_tiktok}[a.cmd]
+    fonction = {"fabriquer": cmd_fabriquer, "finaliser": cmd_finaliser, "publier": cmd_publier, "tiktok": cmd_tiktok, "traduire": cmd_traduire}[a.cmd]
     try:
         with verrou(common.STATE / f"run_{a.cmd}.lock", ttl_s=RUN_LOCK_TTL_S, wait_s=0), eveil():
             log.info("=== %s (dry-run=%s) ===", a.cmd, getattr(a, "dry_run", False))

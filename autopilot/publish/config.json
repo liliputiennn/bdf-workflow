@@ -1,9 +1,14 @@
 {
  "heure_publication": "18:00",
+ "heures_shorts": ["08:00", "12:00", "18:00", "21:00"],
+ "shorts_par_creneau": 2,
+ "ecart_creneau_minutes": 15,
+ "heure_long": "17:00",
+ "jours_longs": [0, 2, 4],
  "fuseau": "Europe/Paris",
  "marge_minimale_minutes": 30,
  "categorie_id": "27",
- "max_envois_par_execution": 2,
+ "max_envois_par_execution": 10,
  "hashtag_shorts": true,
  "question_dans_description": true
 }

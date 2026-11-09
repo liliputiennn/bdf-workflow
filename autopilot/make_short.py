@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import musique  # noqa: E402
 VENV_PY = r"C:\VoiceStudio\tts-direct\venv\Scripts\python.exe"
-SCENE_TYPES = {"titre-geant", "chiffre", "barres", "courbe", "ligne-temps", "anneau", "duel", "objet", "question", "liste", "fiche", "annonce", "photo", "clip"}
+SCENE_TYPES = {"titre-geant", "chiffre", "barres", "courbe", "ligne-temps", "anneau", "duel", "objet", "question", "liste", "fiche", "annonce", "photo", "clip", "frise", "carte", "citation"}
 def _themes() -> set[str]:
     """Les thèmes connus sont ceux de src/infographie/themes.ts : une seule source de vérité."""
     try:
@@ -25,6 +25,14 @@ def _themes() -> set[str]:
 THEMES = _themes()
 ICONES = {"carte", "hotdog", "magasin", "pieces", "panier"}
 FORBIDDEN = re.compile(r"\b(garanti|sans risque|devenez riche|100 ?% ?sûr)\b", re.I)
+
+
+def _promesse_langue(code):
+    """Promesses de gain interdites dans la langue de l'épisode (None pour le français : FORBIDDEN suffit)."""
+    if not code or str(code).lower().startswith("fr"):
+        return None
+    import langues
+    return langues.motifs_interdits(code)[0]
 
 
 def validate(ep: dict) -> list[str]:
@@ -64,8 +72,9 @@ def validate(ep: dict) -> list[str]:
         last_type = s["type"]
         if s["type"] == "objet" and s.get("params", {}).get("icone") not in ICONES:
             err.append(f"scène {i + 1} : icône inconnue ({', '.join(sorted(ICONES))})")
+    promesse_langue = _promesse_langue(ep.get("langue"))
     for i, p in enumerate(ep["phrases"]):
-        if FORBIDDEN.search(p):
+        if FORBIDDEN.search(p) or (promesse_langue and promesse_langue.search(p)):
             err.append(f"phrase {i + 1} : formulation interdite (promesse de gain)")
         if len(p) > 140:
             err.append(f"phrase {i + 1} : trop longue ({len(p)} caractères)")

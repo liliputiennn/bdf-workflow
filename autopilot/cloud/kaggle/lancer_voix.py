@@ -83,7 +83,11 @@ def main() -> int:
         print("KAGGLE_USERNAME manquant")
         return 2
     entree = (ep / a.episode_file).read_bytes()
-    options = {"essais": a.essais, "seuil": a.seuil, "budget_s": a.budget_s, "fichier": a.episode_file, "modele_hf": a.modele_hf, "vitesse": a.vitesse}
+    options = {"essais": a.essais, "seuil": a.seuil, "budget_s": a.budget_s, "fichier": a.episode_file, "modele_hf": a.modele_hf, "vitesse": a.vitesse,
+               # chaîne dans une autre langue (chantier 2) : langue, voix intégrée de Qwen3-TTS CustomVoice (Apache-2.0) transmises au noyau
+               "langue": os.environ.get("BDF_LANGUE", ""), "locuteur": os.environ.get("BDF_LOCUTEUR", ""), "style": os.environ.get("BDF_STYLE", "")}
+    if options["locuteur"] and not options["modele_hf"]:
+        options["modele_hf"] = os.environ.get("BDF_MODELE_HF_CUSTOM", "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice")
     with tempfile.TemporaryDirectory(prefix="bdf-kaggle-") as tmp:
         d = construire_kernel(Path(tmp), entree, options, utilisateur)
         if a.dry_run:

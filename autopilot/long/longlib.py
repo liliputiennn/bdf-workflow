@@ -16,6 +16,7 @@ if str(AUTOPILOT) not in sys.path:
     sys.path.insert(0, str(AUTOPILOT))
 
 import make_short  # noqa: E402  (validation des scènes et des Shorts, source unique)
+import seo  # noqa: E402  (hashtags et mots-clés des descriptions)
 
 CHAPITRES_MIN, CHAPITRES_MAX = 4, 12
 PHRASES_MIN, PHRASES_MAX = 90, 260  # 6 à 12 minutes parlées
@@ -171,6 +172,17 @@ def titre_miniature(titre: str, n: int = 4) -> str:
 
 
 
+# Les Shorts d'un même long n'ont pas tous la même miniature : le style tourne d'un chapitre à l'autre (le moteur de miniature se replie
+# tout seul sur un autre style quand les données manquent pour celui-ci).
+STYLES_MINIATURE_TOURNANTS = ("createur", "chiffre", "telephone", "pile")
+
+
+def style_miniature_du_short(ep: dict, ch_index: int) -> str:
+    base = (ep.get("miniature") or {}).get("style")
+    ordre = [base] + [x for x in STYLES_MINIATURE_TOURNANTS if x != base] if base in STYLES_MINIATURE_TOURNANTS else list(STYLES_MINIATURE_TOURNANTS)
+    return ordre[ch_index % len(ordre)]
+
+
 def build_short_episode(ep: dict, ch_index: int, short_id: str) -> tuple[dict, list[str]]:
     """Épisode 9:16 d'un Short marqué : phrases d..f du chapitre, scènes recalées. Renvoie (épisode, notes)."""
     ch = ep["chapitres"][ch_index]
@@ -187,8 +199,9 @@ def build_short_episode(ep: dict, ch_index: int, short_id: str) -> tuple[dict, l
             scenes.append(ns)
     return {
         "id": short_id, "titre": ch["short"]["accroche"], "theme": ep["theme"], "chaine": ep["chaine"],
+        **({"langue": ep["langue"]} if ep.get("langue") else {}),
         **({"theme_accent": ep["theme_accent"]} if ep.get("theme_accent") else {}),
-        "miniature": {"style": (ep.get("miniature") or {}).get("style", "createur"), "texte_haut": titre_miniature(ch["titre"]),
+        "miniature": {"style": style_miniature_du_short(ep, ch_index), "texte_haut": titre_miniature(ch["titre"]),
                       "icone": (ep.get("miniature") or {}).get("icone", "pieces")},
         "phrases": ch["phrases"][d - 1:f], "scenes": scenes,
     }, notes
@@ -216,11 +229,16 @@ def faits_du_short(faits: list[dict], g0: int, g1: int) -> list[dict]:
 
 
 def publication_du_short(pub_long: dict | None, ep: dict, accroche: str, url_long: str | None) -> dict:
+    """Publication d'un Short découpé dans un long : titre court (mot-clé en tête), description avec lien vers le long, mots-clés et une dizaine
+    de hashtags repris du long ; le publieur remplace le titre du long par son adresse dès qu'elle existe (voir seo.py)."""
     base = pub_long or {}
-    desc = accroche + "\n\nVidéo complète : " + (url_long or ep["titre"])
+    tags_long = list(base.get("tags", []))
+    question = base.get("question_commentaires", "")
+    langue = base.get("langue") or ep.get("langue") or "fr"
+    desc = seo.description_short(accroche, ep["titre"], url_long, question, tags_long, seo.hashtags_du_texte(base.get("description", "")), langue=langue)
     return {
-        "titre": accroche[:70], "description": desc, "tags": list(base.get("tags", [])),
-        "question_commentaires": base.get("question_commentaires", ""), "langue": "fr", "contenu_ia": True,
+        "titre": accroche[:70], "description": desc, "tags": seo.tags_du_short(tags_long, accroche),
+        "question_commentaires": question, "langue": langue, "contenu_ia": True,
     }
 
 

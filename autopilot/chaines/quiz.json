@@ -1,0 +1,67 @@
+{
+  "id": "quiz",
+  "nom": "Quiz (nom à choisir)",
+  "langue": "fr",
+  "format": "quiz",
+  "niche": "Questions-réponses courtes",
+  "active": false,
+  "vague": 6,
+  "jeton_fichier": "token-quiz.json",
+  "voix": {
+    "dossier": "voix/quiz"
+  },
+  "musique": {
+    "dossier": null
+  },
+  "style": {
+    "theme": "quiz",
+    "miniature": "quiz"
+  },
+  "publication": {
+    "heures_shorts": [
+      "12:30",
+      "19:30"
+    ],
+    "shorts_par_creneau": 1,
+    "heure_long": "18:00",
+    "jours_longs": [
+      6
+    ],
+    "commentaire_auto": false,
+    "question_dans_description": false,
+    "mention_ia_description": true
+  },
+  "frequence": {
+    "shorts_par_jour": 2,
+    "longs_par_semaine": 1
+  },
+  "dossiers": {
+    "sujets": "subjects/quiz"
+  },
+  "source": null,
+  "format_module": "autopilot.formats.quiz",
+  "format_options": {},
+  "format_pret": true,
+  "briques": {
+    "fabrique": "formats/fabrique.py",
+    "miniature": "formats/miniature_formats.py"
+  },
+  "notes": "Chantier 3, format 2. Quiz de 3 questions (Short 9:16) et quiz de 10 questions le samedi (16:9) ; rendu léger Pillow + ffmpeg (formats/quiz.py), voix intégrée Qwen3-TTS (Apache-2.0). Spec : docs/superpowers/specs/2026-11-09-formats-design.md.",
+  "preparation": true,
+  "format_statut": {
+    "verifie": "2026-11-09",
+    "test": "quiz-essai : brouillon, validation, fabrique, miniature, état pret, faux YouTube (programme). Voix simulée.",
+    "manque": [
+      "Écouter et confirmer la voix (Vivian) : voice-previews",
+      "Créer la chaîne YouTube, connecter son jeton, choisir quand activer"
+    ],
+    "licences": [
+      "Voix : Qwen3-TTS CustomVoice, Apache-2.0",
+      "Visuels et bruitages : générés par le code, rien à créditer"
+    ],
+    "risques": [
+      "Format très répandu : la valeur vient de réponses sourcées et variées",
+      "Voix de synthèse : contenu_ia déclaré"
+    ]
+  }
+}

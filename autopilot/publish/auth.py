@@ -1,10 +1,13 @@
 """OAuth « application de bureau » pour YouTube : navigateur + redirection 127.0.0.1 + PKCE.
 
-Lit `autopilot/secrets/client_secret.json` (déposé par le propriétaire), écrit `autopilot/secrets/token.json`.
+Lit `autopilot/secrets/client_secret.json` (déposé par le propriétaire), écrit `autopilot/secrets/token.json`
+(`token-<chaîne>.json` pour une autre chaîne : un jeton par chaîne YouTube, un seul client OAuth pour tout le projet).
 Ce module ne crée ni client, ni compte, ni jeton de lui-même : le propriétaire se connecte dans son navigateur.
 
-    python autopilot/publish/auth.py             # connexion (une seule fois)
-    python autopilot/publish/auth.py --statut    # état du jeton, sans rien afficher de secret
+    python autopilot/publish/auth.py                       # connexion de la chaîne par défaut (une seule fois)
+    python autopilot/publish/auth.py --chaine en           # connexion d'une autre chaîne (voir connecter_chaine.py, qui vérifie en plus la chaîne)
+    python autopilot/publish/auth.py --statut [--chaine X] # état du jeton, sans rien afficher de secret
+    python autopilot/publish/auth.py --ecrire-etat         # écrit state/jetons.json : pour chaque chaîne, jeton présent ou non (aucun secret)
 """
 import base64
 import hashlib
@@ -24,6 +27,7 @@ for _p in (ICI, ICI.parent):
     if str(_p) not in sys.path:
         sys.path.insert(0, str(_p))
 
+import chaines  # noqa: E402
 import common  # noqa: E402
 from erreurs import ErreurAuth, ErreurReseau  # noqa: E402
 
@@ -41,12 +45,25 @@ def chemin_client() -> Path:
     return dossier_secrets() / "client_secret.json"
 
 
-def chemin_jeton() -> Path:
-    return dossier_secrets() / "token.json"
+def nom_fichier_jeton(chaine: str | None = None) -> str:
+    """Nom du fichier de jeton d'une chaîne (champ `jeton_fichier` de son profil ; token.json pour la chaîne par défaut)."""
+    if not chaine or chaine == chaines.CHAINE_DEFAUT:
+        p = chaines.profil(chaines.CHAINE_DEFAUT)
+        return (p or {}).get("jeton_fichier") or "token.json"
+    p = chaines.profil(chaine)
+    if p is None:
+        raise ErreurAuth(f"chaîne inconnue : {chaine} (profils dans autopilot/chaines/)")
+    if not chaines.FICHIER_JETON_VALIDE.match(p["jeton_fichier"]) or p["jeton_fichier"] in ("client_secret.json", "tiktok_token.json", "tiktok_client.json"):
+        raise ErreurAuth(f"profil {chaine} : jeton_fichier invalide")
+    return p["jeton_fichier"]
 
 
-def chemin_etat_auth() -> Path:
-    return common.STATE / "youtube_auth.json"
+def chemin_jeton(chaine: str | None = None) -> Path:
+    return dossier_secrets() / nom_fichier_jeton(chaine)
+
+
+def chemin_etat_auth(chaine: str | None = None) -> Path:
+    return common.STATE / chaines.fichier_etat_auth(chaine or chaines.CHAINE_DEFAUT)
 
 
 def charger_client() -> dict:
@@ -65,9 +82,9 @@ def charger_client() -> dict:
     }
 
 
-def noter_etat_auth(etat: str, raison: str | None = None) -> None:
-    """`autopilot/state/youtube_auth.json` : l'orchestrateur s'y fie pour savoir si la publication est possible."""
-    common.write_json(chemin_etat_auth(), {"etat": etat, "raison": raison, "maj": common.now()})
+def noter_etat_auth(etat: str, raison: str | None = None, chaine: str | None = None) -> None:
+    """`autopilot/state/youtube_auth.json` (`youtube_auth-<chaîne>.json` pour les autres) : l'orchestrateur s'y fie pour savoir si la publication est possible."""
+    common.write_json(chemin_etat_auth(chaine), {"etat": etat, "raison": raison, "maj": common.now()})
 
 
 def _poster(url: str, champs: dict, timeout: float = 30.0) -> tuple[int, dict]:
@@ -90,14 +107,16 @@ def _poster(url: str, champs: dict, timeout: float = 30.0) -> tuple[int, dict]:
 class Jeton:
     """Jeton d'accès avec rafraîchissement automatique à partir du jeton de rafraîchissement."""
 
-    def __init__(self, horloge=time.time):
+    def __init__(self, horloge=time.time, chaine: str | None = None):
         self.horloge = horloge
+        self.chaine = chaine or chaines.CHAINE_DEFAUT
         self._client = None
 
     def _charger(self) -> dict:
-        jeton = common.read_json(chemin_jeton())
+        jeton = common.read_json(chemin_jeton(self.chaine))
         if not jeton or not jeton.get("refresh_token"):
-            raise ErreurAuth("aucun jeton : lancer `python autopilot/publish/auth.py` (voir INSTALLATION.md)")
+            option = "" if self.chaine == chaines.CHAINE_DEFAUT else f" --chaine {self.chaine}"
+            raise ErreurAuth(f"aucun jeton pour la chaîne « {self.chaine} » : lancer `python autopilot/publish/auth.py{option}` (voir INSTALLATION.md et CONNECTER-UNE-CHAINE.md)")
         return jeton
 
     def acces(self, force: bool = False) -> str:
@@ -117,12 +136,13 @@ class Jeton:
                          maj=common.now())
             if rep.get("refresh_token"):
                 jeton["refresh_token"] = rep["refresh_token"]
-            common.write_json(chemin_jeton(), jeton)
-            if (common.read_json(chemin_etat_auth(), {}) or {}).get("etat") == "a_refaire":
-                noter_etat_auth("ok")  # un rafraîchissement réussi lève l'alerte
+            common.write_json(chemin_jeton(self.chaine), jeton)
+            if (common.read_json(chemin_etat_auth(self.chaine), {}) or {}).get("etat") == "a_refaire":
+                noter_etat_auth("ok", chaine=self.chaine)  # un rafraîchissement réussi lève l'alerte
             return jeton["access_token"]
         if code in (400, 401) or rep.get("error") in ("invalid_grant", "invalid_client", "unauthorized_client"):
-            raise ErreurAuth(f"jeton refusé ({rep.get('error', code)}) : refaire la connexion avec auth.py")
+            option = "" if self.chaine == chaines.CHAINE_DEFAUT else f" --chaine {self.chaine}"
+            raise ErreurAuth(f"jeton refusé ({rep.get('error', code)}) : refaire la connexion avec auth.py{option}")
         raise ErreurReseau(f"rafraîchissement du jeton impossible (HTTP {code})")
 
 
@@ -136,7 +156,7 @@ PAGE_OK = "<html><meta charset=utf-8><body style='font-family:sans-serif'><h2>Co
 PAGE_KO = "<html><meta charset=utf-8><body style='font-family:sans-serif'><h2>Connexion refusée</h2><p>Retourne au terminal pour voir le détail.</p></body></html>"
 
 
-def autoriser(ouvrir_navigateur: bool = True, attente_s: int = 300, afficher=print) -> dict:
+def autoriser(ouvrir_navigateur: bool = True, attente_s: int = 300, afficher=print, chaine: str | None = None) -> dict:
     """Flux complet. Retourne le jeton écrit. Le propriétaire clique « Autoriser » dans son navigateur."""
     client = charger_client()
     verif, defi = _verifier_pkce()
@@ -186,26 +206,44 @@ def autoriser(ouvrir_navigateur: bool = True, attente_s: int = 300, afficher=pri
     jeton = {"access_token": rep["access_token"], "refresh_token": rep["refresh_token"],
              "expiry": time.time() + int(rep.get("expires_in", 3600)), "scope": rep.get("scope", PORTEE),
              "token_type": rep.get("token_type", "Bearer"), "maj": common.now()}
-    common.write_json(chemin_jeton(), jeton)
-    noter_etat_auth("ok")
+    common.write_json(chemin_jeton(chaine), jeton)
+    noter_etat_auth("ok", chaine=chaine)
     return jeton
 
 
-def statut() -> dict:
-    jeton = common.read_json(chemin_jeton())
-    return {"client_secret": chemin_client().exists(),
+def statut(chaine: str | None = None) -> dict:
+    jeton = common.read_json(chemin_jeton(chaine))
+    return {"chaine": chaine or chaines.CHAINE_DEFAUT, "client_secret": chemin_client().exists(),
             "jeton": bool(jeton and jeton.get("refresh_token")),
             "acces_valide_encore_s": int(jeton.get("expiry", 0) - time.time()) if jeton else None,
-            "etat_auth": common.read_json(chemin_etat_auth())}
+            "etat_auth": common.read_json(chemin_etat_auth(chaine))}
+
+
+def ecrire_etat_jetons() -> dict:
+    """`autopilot/state/jetons.json` : pour chaque chaîne, un jeton est-il enregistré ? Seulement des booléens (aucun contenu de jeton) ;
+    c'est ce que lisent l'orchestrateur et la web app, qui n'ont pas le droit d'ouvrir autopilot/secrets/."""
+    client = chemin_client().exists()
+    etat = {}
+    for ident in chaines.charger_profils():
+        try:
+            jeton = common.read_json(chemin_jeton(ident))
+        except ErreurAuth:
+            jeton = None
+        etat[ident] = {"connecte": bool(jeton and jeton.get("refresh_token")), "client": client, "maj": common.now()}
+    common.write_json(common.STATE / "jetons.json", etat)
+    return etat
 
 
 if __name__ == "__main__":
     try:
-        if "--statut" in sys.argv:
-            print(json.dumps(statut(), ensure_ascii=False, indent=1))
+        chaine_cli = sys.argv[sys.argv.index("--chaine") + 1] if "--chaine" in sys.argv else None
+        if "--ecrire-etat" in sys.argv:
+            ecrire_etat_jetons()
+        elif "--statut" in sys.argv:
+            print(json.dumps(statut(chaine_cli), ensure_ascii=False, indent=1))
         else:
-            autoriser(ouvrir_navigateur="--sans-navigateur" not in sys.argv)
-            print("Jeton enregistré dans autopilot/secrets/token.json. C'est terminé.")
+            autoriser(ouvrir_navigateur="--sans-navigateur" not in sys.argv, chaine=chaine_cli)
+            print(f"Jeton enregistré dans autopilot/secrets/{nom_fichier_jeton(chaine_cli)}. C'est terminé.")
     except (ErreurAuth, ErreurReseau) as e:
         print(f"ÉCHEC : {e}", file=sys.stderr)
         sys.exit(3)

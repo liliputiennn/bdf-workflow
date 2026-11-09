@@ -25,9 +25,13 @@ def decalage(fuseau: str, instant_utc: datetime) -> timedelta:
         debut = datetime.combine(_dimanche(a, 3, 2), datetime.min.time(), UTC) + timedelta(hours=10)
         fin = datetime.combine(_dimanche(a, 11, 1), datetime.min.time(), UTC) + timedelta(hours=9)
         return timedelta(hours=-7 if debut <= instant_utc < fin else -8)
+    if fuseau == "America/New_York":  # mêmes règles d'heure d'été que Los Angeles, trois heures plus tôt en UTC
+        debut = datetime.combine(_dimanche(a, 3, 2), datetime.min.time(), UTC) + timedelta(hours=7)
+        fin = datetime.combine(_dimanche(a, 11, 1), datetime.min.time(), UTC) + timedelta(hours=6)
+        return timedelta(hours=-4 if debut <= instant_utc < fin else -5)
     if fuseau in ("UTC", "Etc/UTC"):
         return timedelta(0)
-    raise ValueError(f"fuseau non géré : {fuseau} (utiliser Europe/Paris, America/Los_Angeles ou UTC)")
+    raise ValueError(f"fuseau non géré : {fuseau} (utiliser Europe/Paris, America/New_York, America/Los_Angeles ou UTC)")
 
 
 def vers_local(instant_utc: datetime, fuseau: str) -> datetime:
@@ -60,6 +64,34 @@ def prochain_creneau(heure: str, fuseau: str, maintenant_utc: datetime, jours_pr
             if cand > maintenant_utc + timedelta(minutes=marge_min):
                 return cand
         jour += timedelta(days=1)
+
+
+def etaler_heures(heures: list[str], par_creneau: int = 1, ecart_min: int = 15) -> list[str]:
+    """Heures de mise en ligne d'une journée : chaque heure de `heures` accueille `par_creneau` vidéos, espacées de `ecart_min` minutes.
+    ["08:00", "12:00"] avec 2 par créneau et 15 min -> 08:00, 08:15, 12:00, 12:15."""
+    sortie = set()
+    for h in heures:
+        hh, mm = (int(x) for x in h.split(":"))
+        for k in range(max(1, par_creneau)):
+            total = hh * 60 + mm + k * ecart_min
+            sortie.add(f"{(total // 60) % 24:02d}:{total % 60:02d}")
+    return sorted(sortie)
+
+
+def prochain_creneau_libre(heures: list[str], fuseau: str, maintenant_utc: datetime, pris: set[datetime],
+                           marge_min: int = 30, jours_semaine: set[int] | None = None, horizon_jours: int = 400) -> datetime:
+    """Premier instant UTC (heure locale parmi `heures`, un des `jours_semaine` si donnés) qui n'est pas dans `pris`
+    et qui est à plus de `marge_min` minutes. Plusieurs vidéos par jour : on ne réserve plus le jour, mais l'heure."""
+    jour = vers_local(maintenant_utc, fuseau).date()
+    for _ in range(horizon_jours):
+        if jours_semaine is None or jour.weekday() in jours_semaine:
+            for h in sorted(heures):
+                hh, mm = (int(x) for x in h.split(":"))
+                cand = local_vers_utc(datetime.combine(jour, datetime.min.time()).replace(hour=hh, minute=mm), fuseau)
+                if cand > maintenant_utc + timedelta(minutes=marge_min) and cand not in pris:
+                    return cand
+        jour += timedelta(days=1)
+    raise ValueError("aucun créneau libre dans l'horizon : vérifier heures et jours de publication")
 
 
 def iso_utc(instant_utc: datetime) -> str:

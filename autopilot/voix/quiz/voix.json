@@ -1,0 +1,8 @@
+{
+ "locuteur": "Vivian",
+ "style": "Une animatrice claire, enjouée mais régulière, rythme posé, articulation nette.",
+ "vitesse": 1.0,
+ "licence": "Qwen3-TTS-12Hz-0.6B-CustomVoice, Apache-2.0 (voix intégrée)",
+ "a_confirmer": true,
+ "note": "À confirmer à l'écoute ; clonage possible avec ref.wav + ref.txt dans ce dossier."
+}

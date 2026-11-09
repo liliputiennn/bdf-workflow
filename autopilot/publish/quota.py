@@ -4,7 +4,11 @@ Deux compteurs, remis à zéro à minuit heure du Pacifique :
 - `unites` : réserve générale (10 000/jour) — miniature 50, lecture 1, mise à jour 50 ;
 - `envois` : compteur propre à `videos.insert` (100/jour, 1 par envoi).
 Les coûts viennent de `config.json` (section `quota`) : si Google change les règles, on ajuste là.
+
+Le quota appartient au PROJET Google, pas à une chaîne : toutes les chaînes puisent dans ce même registre (`pour(chaine)` ne fait
+qu'étiqueter les dépenses ; `par_chaine` donne le détail du jour pour la web app).
 """
+import copy
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -28,6 +32,13 @@ class RegistreQuota:
         self.cfg = cfg["quota"]
         self.fuseau = cfg["fuseau"]
         self.horloge = horloge
+        self.chaine: str | None = None
+
+    def pour(self, chaine: str) -> "RegistreQuota":
+        """Même registre (même fichier, même verrou), dépenses étiquetées au nom de `chaine`."""
+        autre = copy.copy(self)
+        autre.chaine = chaine
+        return autre
 
     @property
     def chemin(self) -> Path:
@@ -40,7 +51,7 @@ class RegistreQuota:
         jour = horaire.jour_pacifique(self.horloge()).isoformat()
         reg = common.read_json(self.chemin, None) or {}
         if reg.get("jour_pt") != jour:
-            reg = {"jour_pt": jour, "unites": 0, "envois": 0, "epuise": False, "journal": []}
+            reg = {"jour_pt": jour, "unites": 0, "envois": 0, "epuise": False, "journal": [], "par_chaine": {}}
         reg["plafond_unites"] = self.cfg["plafond_unites"]
         reg["plafond_envois"] = self.cfg["plafond_envois"]
         return reg
@@ -72,7 +83,13 @@ class RegistreQuota:
             reg = self._charger()
             reg["unites"] += unites
             reg["envois"] += envois
-            reg["journal"] = (reg["journal"] + [{"t": common.now(), "op": operation, "unites": unites, "envois": envois}])[-200:]
+            ligne = {"t": common.now(), "op": operation, "unites": unites, "envois": envois}
+            if self.chaine:
+                ligne["chaine"] = self.chaine
+                pc = reg.setdefault("par_chaine", {}).setdefault(self.chaine, {"unites": 0, "envois": 0})
+                pc["unites"] += unites
+                pc["envois"] += envois
+            reg["journal"] = (reg["journal"] + [ligne])[-200:]
             reg["maj"] = common.now()
             common.write_json(self.chemin, reg)
 

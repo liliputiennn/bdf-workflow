@@ -23,6 +23,7 @@ os.environ["BDF_PAUSE_S"] = "0"
 os.environ["BDF_DISQUE_LIBRE_GO"] = "50"
 sys.path.insert(0, str(REAL_AUTOPILOT))
 
+import chaines  # noqa: E402
 import common  # noqa: E402
 import run_daily  # noqa: E402
 
@@ -472,6 +473,14 @@ class Publier(Base):
 
 
 class StockEtAlertes(Base):
+    """Scénarios d'alerte écrits pour une vidéo par jour : on fixe le rythme à 1 pour qu'ils restent lisibles (le vrai rythme est testé dans StockCadence)."""
+
+    def setUp(self):
+        super().setUp()
+        p = mock.patch.object(run_daily, "RYTHME_PAR_JOUR", 1)
+        p.start()
+        self.addCleanup(p.stop)
+
     def test_calcul_du_stock(self):
         for ep, etat in [("p1", "pret"), ("p2", "pret"), ("g1", "programme"), ("e1", "ecrit"),
                          ("c1", "controle"), ("pub", "publie")]:
@@ -605,6 +614,290 @@ class Divers(Base):
 
 def tearDownModule():
     shutil.rmtree(TMP, ignore_errors=True)
+
+
+class StockCadence(Base):
+    """Cadence du 8 novembre 2026 : 8 Shorts par jour + 3 longs par semaine."""
+
+    def test_rythme_par_defaut(self):
+        self.assertEqual(run_daily.SHORTS_PAR_JOUR, 8)
+        self.assertEqual(run_daily.LONGS_PAR_SEMAINE, 3)
+        self.assertAlmostEqual(run_daily.RYTHME_PAR_JOUR, 8 + 3 / 7)
+
+    def test_un_jour_de_stock_vaut_huit_shorts_et_demi(self):
+        for i in range(17):
+            faux_episode(f"p{i}", etat="pret")
+        s = run_daily.calculer_stock()
+        self.assertEqual(s["stock_publiable"], 17)
+        self.assertAlmostEqual(s["jours_de_stock"], round(17 / run_daily.RYTHME_PAR_JOUR, 2))
+        self.assertTrue(s["stock_bas"])  # moins de 3 jours = moins de 26 vidéos
+        self.assertEqual(s["shorts_par_jour"], 8)
+
+    def test_stock_confortable(self):
+        for i in range(30):
+            faux_episode(f"p{i}", etat="pret")
+        s = run_daily.calculer_stock()
+        self.assertFalse(s["stock_bas"])
+        self.assertGreater(s["jours_de_stock"], 3)
+
+    def test_le_tableau_dit_la_cadence(self):
+        faux_episode("p1", etat="pret")
+        texte = run_daily.rendu_etat(run_daily.calculer_stock())
+        self.assertIn("8 Shorts + 3 longs par semaine", texte)
+
+
+FAKE_BRIQUE_CHAINE = '''
+import os, sys
+sys.path.insert(0, r"%(real)s")
+import common
+ep = sys.argv[1]
+with open(common.ROOT / "appels.log", "a", encoding="utf-8") as f:
+    f.write("make_en " + ep + " chaine=" + os.environ.get("BDF_CHAINE", "?") + " langue=" + os.environ.get("BDF_LANGUE", "?")
+            + " ref=" + os.path.basename(os.path.dirname(os.environ.get("BDF_REF_WAV", "?"))) + "\\n")
+(common.EXPORTS / ep).mkdir(parents=True, exist_ok=True)
+(common.EXPORTS / ep / (ep + ".mp4")).write_bytes(b"x")
+common.write_json(common.EXPORTS / ep / "qa.json", {"publiable": True, "problemes": [], "alertes": []})
+common.set_status(ep, "controle")
+'''
+
+
+class MultiChaines(Base):
+    """Plusieurs chaînes : rattachement des épisodes, activation, environnement par chaîne, isolation des échecs, stock par chaîne."""
+
+    def setUp(self):
+        super().setUp()
+        self.profils()  # fr et en actives, sommeil inactive
+
+    def profils(self, actives=("fr", "en"), **extra):
+        d = TMP / "autopilot" / "chaines"
+        d.mkdir(parents=True, exist_ok=True)
+        base = {"fr": {}, "en": {"langue": "en", "voix": {"dossier": "voix/en"}, "frequence": {"shorts_par_jour": 2, "longs_par_semaine": 0}},
+                "sommeil": {"format": "sommeil", "frequence": {"shorts_par_jour": 1, "longs_par_semaine": 0}}}
+        for ident, plus in {**base, **extra}.items():
+            p = {"id": ident, "nom": f"Chaîne {ident.upper()}", "langue": "fr", "format": "business", "active": ident in actives,
+                 "jeton_fichier": "token.json" if ident == "fr" else f"token-{ident}.json", **plus}
+            (d / f"{ident}.json").write_text(json.dumps(p), encoding="utf-8")
+        (TMP / "autopilot" / "voix" / "en").mkdir(parents=True, exist_ok=True)
+        (TMP / "autopilot" / "voix" / "en" / "ref.wav").write_bytes(b"RIFF")
+
+    def ep(self, ep_id, chaine, etat="ecrit", mode=None):
+        faux_episode(ep_id, etat=etat, mode=mode)
+        common.set_status(ep_id, etat, chaine_id=chaine)
+
+    # ---- rattachement et migration
+    def test_un_episode_sans_chaine_appartient_a_la_chaine_par_defaut(self):
+        shutil.rmtree(TMP / "autopilot" / "chaines")
+        faux_episode("ancien", etat="pret")
+        self.assertEqual(common.chaine_de("ancien"), "fr")
+        self.assertEqual(list(chaines.charger_profils()), ["fr"])  # sans dossier de profils : la chaîne historique seule, active
+        self.assertTrue(chaines.est_active("fr"))
+        self.assertEqual(run_daily.calculer_stock()["par_chaine"]["fr"]["stock_publiable"], 1)
+
+    def test_migration_non_destructive_et_idempotente(self):
+        faux_episode("a", etat="pret")
+        faux_episode("b", etat="ecrit")
+        common.set_status("a", "pret", youtube={"video_id": None, "url": None, "visibilite": None, "publie_a": None}, tentatives=1)
+        avant = {e: common.read_json(common.ep_dir(e) / "status.json") for e in ("a", "b") if (common.ep_dir(e) / "status.json").exists()}
+        essai = chaines.migrer(dry_run=True)
+        self.assertEqual(essai["rattaches"], ["a"])  # b n'a pas de status.json : on n'en crée pas
+        self.assertEqual({e: common.read_json(common.ep_dir(e) / "status.json") for e in avant}, avant)  # dry-run : rien de changé
+        res = chaines.migrer()
+        self.assertEqual(res["rattaches"], ["a"])
+        apres = common.read_json(common.ep_dir("a") / "status.json")
+        self.assertEqual(apres["chaine_id"], "fr")
+        self.assertEqual({k: v for k, v in apres.items() if k != "chaine_id"}, avant["a"])  # tout le reste est intact
+        self.assertEqual(chaines.migrer(), {"rattaches": [], "deja_rattaches": 1, "dry_run": False})
+        self.assertFalse((common.ep_dir("b") / "status.json").exists())
+
+    def test_set_status_conserve_la_chaine(self):
+        self.ep("x", "en", "ecrit")
+        common.set_status("x", "voix")
+        common.set_status("x", "controle")
+        self.assertEqual(common.chaine_de("x"), "en")
+        self.assertEqual(common.list_episodes(chaine="en"), ["x"])
+        self.assertEqual(common.list_episodes(chaine="fr"), [])
+
+    # ---- activation
+    def test_une_chaine_inactive_est_ignoree_par_toutes_les_commandes(self):
+        self.profils(actives=("fr",))
+        (TMP / "autopilot" / "miniature.py").write_text(FAKE_MINIATURE % {"real": REAL_AUTOPILOT}, encoding="utf-8")
+        self.ep("en-1", "en", "ecrit")
+        self.ep("en-2", "en", "controle")
+        self.ep("fr-1", "fr", "ecrit")
+        lancer("fabriquer")
+        lancer("finaliser")
+        self.assertEqual((self.etat("en-1"), self.etat("en-2")), ("ecrit", "controle"))
+        self.assertEqual(self.etat("fr-1"), "pret")
+        self.assertEqual(appels(), ["make_short fr-1 ", "miniature fr-1"])  # rien n'est fabriqué ni miniaturé pour la chaîne inactive
+
+    def test_publier_n_appelle_pas_le_publieur_pour_une_chaine_inactive(self):
+        self.profils(actives=("fr",))
+        (TMP / "autopilot" / "publish").mkdir()
+        (TMP / "autopilot" / "publish" / "publish.py").write_text(FAKE_PUBLISH % {"real": REAL_AUTOPILOT}, encoding="utf-8")
+        self.ep("en-3", "en", "pret")
+        lancer("publier")
+        self.assertEqual(appels(), [])
+
+    def test_profil_invalide_jamais_active(self):
+        self.profils(en={"langue": "en", "voix": {"dossier": None}})  # chaîne active en anglais sans voix propre : refusée
+        self.ep("en-1", "en", "ecrit")
+        p = chaines.charger_profils()["en"]
+        self.assertFalse(p["valide"])
+        self.assertTrue(any("sans voix propre" in e for e in p["erreurs"]))
+        lancer("fabriquer")
+        self.assertEqual(self.etat("en-1"), "ecrit")
+        self.assertIn("en", run_daily.calculer_stock()["par_chaine"])
+        self.assertFalse(run_daily.calculer_stock()["par_chaine"]["en"]["active"])
+
+    def test_validation_des_profils(self):
+        ok = chaines.normaliser({"id": "histoire", "langue": "fr", "format": "histoire"})
+        self.assertEqual(chaines.valider_profil(ok, {"fr", "histoire"}), [])
+        mauvais = [
+            ({"id": "Mauvais Id"}, "identifiant invalide"),
+            ({"id": "a", "format": "inconnu"}, "format"),
+            ({"id": "a", "jeton_fichier": "../token.json"}, "jeton_fichier"),
+            ({"id": "a", "jeton_fichier": "client_secret.json"}, "jeton_fichier"),
+            ({"id": "a", "source": {"chaine": "a"}}, "source"),
+            ({"id": "a", "publication": {"quota": {"plafond_envois": 999}}}, "non surchargeable"),
+            ({"id": "a", "voix": {"dossier": "../../secrets"}}, "voix.dossier"),
+            ({"id": "a", "briques": {"fabrique": "/etc/passwd"}}, "briques.fabrique"),
+        ]
+        for brut, attendu in mauvais:
+            erreurs = chaines.valider_profil(chaines.normaliser(brut), {"a", "fr"})
+            self.assertTrue(any(attendu in e for e in erreurs), (brut, erreurs))
+
+    # ---- environnement et briques par chaîne
+    def test_chaque_chaine_recoit_sa_voix_sa_langue_et_sa_brique(self):
+        self.profils(en={"langue": "en", "voix": {"dossier": "voix/en"}, "briques": {"fabrique": "make_en.py"}})
+        (TMP / "autopilot" / "make_en.py").write_text(FAKE_BRIQUE_CHAINE % {"real": REAL_AUTOPILOT}, encoding="utf-8")
+        self.ep("fr-1", "fr", "ecrit")
+        self.ep("en-1", "en", "ecrit")
+        lancer("fabriquer")
+        self.assertEqual(sorted(appels()), ["make_en en-1 chaine=en langue=en ref=en", "make_short fr-1 "])
+        self.assertEqual((self.etat("fr-1"), self.etat("en-1")), ("controle", "controle"))
+
+    def test_une_brique_hors_de_autopilot_est_refusee(self):
+        p = chaines.normaliser({"id": "x", "briques": {"fabrique": "../../evil.py"}})
+        defaut = TMP / "autopilot" / "make_short.py"
+        self.assertEqual(chaines.brique(p, "fabrique", defaut), defaut)
+
+    # ---- isolation
+    def test_une_chaine_en_echec_ne_bloque_pas_les_autres(self):
+        self.ep("en-1", "en", "ecrit", mode="crash")
+        self.ep("en-2", "en", "ecrit", mode="quarantaine")
+        self.ep("fr-1", "fr", "ecrit")
+        self.assertEqual(lancer("fabriquer"), 0)
+        self.assertEqual((self.etat("en-1"), self.etat("en-2")), ("quarantaine", "quarantaine"))
+        self.assertEqual(self.etat("fr-1"), "controle")
+        # les quarantaines de chaque chaîne sont comptées chez elle
+        pc = common.read_json(common.STATE / "stock.json")["par_chaine"]
+        self.assertEqual((pc["en"]["par_etat"]["quarantaine"], pc["fr"]["par_etat"]["quarantaine"]), (2, 0))
+
+    def test_tour_de_role_entre_chaines_avec_max(self):
+        for i in (1, 2, 3):
+            self.ep(f"a{i}", "fr", "ecrit")
+            self.ep(f"b{i}", "en", "ecrit")
+        lancer("fabriquer", "--max", "2")
+        self.assertEqual(sorted(e.split()[1] for e in appels()), ["a1", "b1"])  # sans tour de rôle : a1 et a2, et la chaîne en attendrait
+        lancer("fabriquer", "--max", "2", "--chaine", "en")
+        self.assertEqual(sorted(e.split()[1] for e in appels()), ["a1", "b1", "b2", "b3"])
+        self.assertEqual([self.etat(f"a{i}") for i in (1, 2, 3)], ["controle", "ecrit", "ecrit"])
+
+    def test_option_chaine_limite_le_traitement(self):
+        self.ep("a1", "fr", "ecrit")
+        self.ep("b1", "en", "ecrit")
+        lancer("fabriquer", "--chaine", "en")
+        self.assertEqual((self.etat("a1"), self.etat("b1")), ("ecrit", "controle"))
+
+    def test_le_publieur_est_appele_une_fois_pour_toutes_les_chaines(self):
+        (TMP / "autopilot" / "publish").mkdir()
+        (TMP / "autopilot" / "publish" / "publish.py").write_text(FAKE_PUBLISH % {"real": REAL_AUTOPILOT}, encoding="utf-8")
+        self.ep("a1", "fr", "pret")
+        self.ep("b1", "en", "pret")
+        lancer("publier")
+        self.assertEqual(appels(), ["publish --en-attente"])
+
+    # ---- stock et alertes par chaîne
+    def test_stock_par_chaine_et_global_des_chaines_actives(self):
+        self.profils(actives=("fr", "en"))
+        for i in range(30):
+            self.ep(f"f{i}", "fr", "pret")
+        for i in range(4):
+            self.ep(f"e{i}", "en", "pret")
+        for i in range(5):
+            self.ep(f"s{i}", "sommeil", "pret")  # chaîne inactive : ne compte pas dans le global
+        s = run_daily.calculer_stock()
+        pc = s["par_chaine"]
+        self.assertEqual((pc["fr"]["stock_publiable"], pc["en"]["stock_publiable"], pc["sommeil"]["stock_publiable"]), (30, 4, 5))
+        self.assertEqual(s["stock_publiable"], 34)
+        self.assertEqual(sorted(s["chaines_actives"]), ["en", "fr"])
+        self.assertEqual(pc["en"]["jours_de_stock"], 2.0)  # 4 vidéos à 2 par jour
+        self.assertEqual(s["jours_de_stock"], 2.0)         # la chaîne la plus juste donne le ton
+        self.assertTrue(s["stock_bas"] and pc["en"]["stock_bas"] and not pc["fr"]["stock_bas"])
+        self.assertFalse(pc["sommeil"]["active"])
+        self.assertFalse(pc["sommeil"]["stock_bas"])  # pas d'alerte pour une chaîne inactive
+
+    def test_alerte_de_stock_bas_nomme_la_chaine_et_n_est_envoyee_qu_une_fois(self):
+        for i in range(40):
+            self.ep(f"f{i}", "fr", "pret")
+        self.ep("e0", "en", "pret")
+        lancer("etat", "--alertes")
+        lancer("etat", "--alertes")
+        titres = [t for t, _ in self.notifs]
+        self.assertEqual(titres.count("Chaîne EN : stock bas"), 1)
+        self.assertNotIn("Chaîne FR : stock bas", titres)
+        cles = common.read_json(common.STATE / "alertes.json")["envoyees"]
+        self.assertIn("stock-bas:en", cles)
+        self.assertNotIn("stock-bas", cles)  # la clé de la chaîne par défaut reste « stock-bas »
+
+    def test_jeton_manquant_d_une_chaine_active_alerte_une_fois(self):
+        for i in range(40):
+            self.ep(f"f{i}", "fr", "pret")
+            self.ep(f"e{i}", "en", "pret")
+        common.write_json(common.STATE / "jetons.json", {"fr": {"connecte": True}, "en": {"connecte": False}})
+        lancer("etat", "--alertes")
+        lancer("etat", "--alertes")
+        s = common.read_json(common.STATE / "stock.json")
+        self.assertTrue(s["par_chaine"]["en"]["auth_a_renouveler"])
+        self.assertFalse(s["par_chaine"]["fr"]["auth_a_renouveler"])
+        self.assertTrue(s["youtube_auth_a_renouveler"])
+        self.assertEqual([t for t, _ in self.notifs].count("Chaîne EN : YouTube"), 1)
+        self.assertIn("CONNECTER-UNE-CHAINE", next(m for t, m in self.notifs if t == "Chaîne EN : YouTube"))
+
+    def test_etat_auth_propre_a_chaque_chaine(self):
+        for i in range(40):
+            self.ep(f"f{i}", "fr", "pret")
+            self.ep(f"e{i}", "en", "pret")
+        common.write_json(common.STATE / "youtube_auth-en.json", {"etat": "a_refaire", "raison": "jeton expiré"})
+        s = run_daily.calculer_stock()
+        self.assertTrue(s["par_chaine"]["en"]["auth_a_renouveler"])
+        self.assertFalse(s["par_chaine"]["fr"]["auth_a_renouveler"])
+
+    def test_tableau_etat_liste_les_chaines(self):
+        self.ep("a", "fr", "pret")
+        texte = run_daily.rendu_etat(run_daily.calculer_stock())
+        self.assertIn("Chaînes :", texte)
+        self.assertIn("en", texte)
+        self.assertIn("inactive", texte)
+
+    def test_les_quarantaines_de_chaines_inactives_n_alertent_pas(self):
+        self.profils(actives=("fr",))
+        faux_episode("e0", etat="quarantaine", raison="raison")
+        common.set_status("e0", "quarantaine", "raison", chaine_id="en")
+        self.assertEqual(run_daily.calculer_stock()["quarantaines"], [])
+
+    def test_tiktok_seulement_pour_la_chaine_par_defaut(self):
+        self.ep("a", "fr", "pret")
+        self.ep("b", "en", "pret")
+        self.assertTrue(common.tiktok_pour("a"))
+        self.assertFalse(common.tiktok_pour("b"))
+
+    def test_frequence(self):
+        fr = chaines.profil("fr")
+        self.assertEqual(chaines.frequence(fr, 8, 3), (8, 3))
+        p = chaines.normaliser({"id": "q", "publication": {"heures_shorts": ["10:00", "18:00"], "shorts_par_creneau": 2, "jours_longs": [1, 4]}})
+        self.assertEqual(chaines.frequence(p, 8, 3), (4, 2))
+        self.assertEqual(chaines.frequence(chaines.normaliser({"id": "z", "frequence": {"shorts_par_jour": 0, "longs_par_semaine": 4}}), 8, 3), (0, 4))
 
 
 if __name__ == "__main__":

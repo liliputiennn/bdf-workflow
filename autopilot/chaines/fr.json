@@ -1,0 +1,34 @@
+{
+  "id": "fr",
+  "nom": "La Débrouille",
+  "langue": "fr",
+  "format": "business",
+  "niche": "Faits et business (Top 10, idées à lancer)",
+  "active": true,
+  "vague": 1,
+  "jeton_fichier": "token.json",
+  "voix": {
+    "dossier": null
+  },
+  "musique": {
+    "dossier": null
+  },
+  "style": {
+    "theme": "pelouse",
+    "miniature": null
+  },
+  "publication": {},
+  "frequence": {},
+  "dossiers": {
+    "sujets": "subjects"
+  },
+  "source": null,
+  "format_module": null,
+  "format_options": {},
+  "format_pret": true,
+  "briques": {
+    "fabrique": null,
+    "miniature": null
+  },
+  "notes": "Chaîne actuelle : tourne à l'identique (publication = publish/config.json, cadence = run_daily.py)."
+}

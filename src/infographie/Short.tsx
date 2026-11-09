@@ -1,9 +1,10 @@
 import React from "react";
 import { AbsoluteFill, staticFile, useCurrentFrame, type CalculateMetadataFunction } from "remotion";
 import { Audio } from "@remotion/media";
-import { Annonce, Anneau, Barres, Chiffre, Clip, Courbe, Duel, ease, FPS, Fiche, H, Liste, LigneTemps, Objet, Photo, Question, SceneClock, TitreGeant, W } from "./scenes";
+import { Annonce, Anneau, Barres, Carte, Chiffre, Citation, Clip, Courbe, Duel, ease, FPS, Fiche, Frise, H, Liste, LigneTemps, Objet, Photo, Question, SceneClock, TitreGeant, W } from "./scenes";
 import { Backdrop } from "./fx";
 import { affiche, decoupe } from "./nombres";
+import { LangueCtx } from "./langue";
 import { getTheme, UI } from "./themes";
 import type { Episode, Scene, ShortProps, Timings } from "./types";
 
@@ -42,6 +43,9 @@ const SceneView: React.FC<{ s: Scene; l: number; th: ReturnType<typeof getTheme>
           case "duel": return <Duel {...c} p={s.params as never} />;
           case "objet": return <Objet {...c} p={s.params as never} />;
           case "question": return <Question {...c} p={s.params as never} />;
+          case "frise": return <Frise {...c} p={s.params as never} />;
+          case "carte": return <Carte {...c} p={s.params as never} />;
+          case "citation": return <Citation {...c} p={s.params as never} />;
           case "liste": return <Liste {...c} p={s.params as never} />;
           case "fiche": return <Fiche {...c} p={s.params as never} />;
           case "annonce": return <Annonce {...c} p={s.params as never} />;
@@ -80,7 +84,7 @@ export const Short: React.FC<ShortProps> = ({ id, episode, timings }) => {
   const l = f - startF(si);
   const line = timings.lines[lineAt(t)];
   // à l'écran : nombres en chiffres, puis morceaux courts (un seul affiché à la fois, celui qu'on entend)
-  const mots = affiche(line.words);
+  const mots = affiche(line.words, episode.langue);
   const morceaux = decoupe(mots);
   const ck = morceaux.reduce((acc, c, k) => (t >= c[0].start - 0.02 ? k : acc), 0);
   const morceau = morceaux[ck];
@@ -98,6 +102,7 @@ export const Short: React.FC<ShortProps> = ({ id, episode, timings }) => {
   const camera = SAFE_SCALE * (1 + Math.min(l, 150) * 0.00017); // respiration lente, plafonnée pour ne jamais sortir de la zone sûre
 
   return (
+    <LangueCtx.Provider value={episode.langue}>
     <AbsoluteFill style={{ background: th.bg[0], fontFamily: UI, overflow: "hidden" }}>
       <Backdrop th={th} f={f} w={W} h={H} />
       {/* changement de thème entre deux scènes : l'ancien fond se fond dans le nouveau */}
@@ -120,7 +125,7 @@ export const Short: React.FC<ShortProps> = ({ id, episode, timings }) => {
       <AbsoluteFill style={{ transform: `scale(${camera}) rotate(${Math.sin(f / 70) * 0.3}deg)`, transformOrigin: "50% 45%" }}>
         {showPrev && (
           <AbsoluteFill key={`p${si}`} style={{ opacity: 1 - enter, transform: `translateX(${-dir * enter * 160}px) scale(${1 - 0.07 * enter})`, filter: `blur(${enter * 16}px)` }}>
-            <SceneView s={episode.scenes[si - 1]} l={f - startF(si - 1)} th={prevTh} words={affiche(prevLine.words)} t={prevT} />
+            <SceneView s={episode.scenes[si - 1]} l={f - startF(si - 1)} th={prevTh} words={affiche(prevLine.words, episode.langue)} t={prevT} />
           </AbsoluteFill>
         )}
         <AbsoluteFill key={si} style={{ opacity: ease(l, 0, 6), transform: `perspective(1800px) translateX(${(1 - enter) * dir * 180}px) scale(${1.08 - 0.08 * enter}) rotateY(${(1 - enter) * dir * -7}deg)`, filter: `blur(${(1 - enter) * 14}px)` }}>
@@ -150,5 +155,6 @@ export const Short: React.FC<ShortProps> = ({ id, episode, timings }) => {
       <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(0,0,0,${th.dark ? 0.32 : 0.1}) 100%)`, pointerEvents: "none" }} />
       <Audio src={staticFile(`${id}/voice.wav`)} />
     </AbsoluteFill>
+    </LangueCtx.Provider>
   );
 };

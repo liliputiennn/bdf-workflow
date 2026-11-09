@@ -90,3 +90,23 @@ Référence locale : un Short rend en ≈ 80 s avec 4 cœurs ; un runner gratuit
 Fichiers : `kaggle/lancer_voix.py` (remplace `voice.py` : pousse un kernel, attend, récupère voice.wav + timings.json), `kaggle/kernel_template.py` (script exécuté sur Kaggle ; embarque voice.py et le texte), `kaggle/preparer_datasets.ps1` (envoi unique des modèles : Qwen3-TTS 2,3 Go, Whisper 0,45 Go, voix de référence, en jeux privés). `voice.py` accepte maintenant des variables `BDF_*` pour changer les chemins.
 À faire par toi, dans l'ordre : (1) compte Kaggle + téléphone vérifié ; (2) jeton API (Settings > API) ; (3) `pip install kaggle` ; (4) définir `$env:KAGGLE_USERNAME` et `$env:KAGGLE_API_TOKEN` ; (5) `powershell -File autopilot/cloud/kaggle/preparer_datasets.ps1` ; (6) test : `python autopilot/cloud/kaggle/lancer_voix.py episodes-b/appli-gratuite-argent`.
 Points à confirmer au premier essai : accélérateur choisi par Kaggle (P100 ou T4) et `bfloat16` accepté (sinon `BDF_DTYPE=float16`), `ffmpeg` présent, accès internet du kernel.
+
+## Capacité à 8 Shorts par jour + 3 longs par semaine (estimation du 8 novembre 2026)
+**Mesuré** : rendu d'un Short sur un runner gratuit (2 cœurs) = 238 s pour 33 s de vidéo ; installation = 80 s par exécution ; en local (4 cœurs), `make_short` prend en médiane 106 s sur 13 Shorts (23 à 261 s). Voix en local (RTX 3050) : 146 à 186 s de calcul pour 31 à 33 s de parole (≈ 5 fois le temps réel). **Non mesuré** : le rendu d'un long de 9 min sur 2 cœurs (≈ 65 min estimé), le temps d'un noyau Kaggle (envoi, file d'attente, chargement du modèle).
+
+**Hypothèses** : 8 Shorts par jour dont ≈ 3,4 découpés des longs (3 longs par semaine, ≈ 8 Shorts marqués par long, sans voix ni écriture en plus) et ≈ 4,6 écrits seuls ; un long ≈ 60 min de voix + 65 min de rendu + 8 x 4 min de Shorts.
+
+| Ressource | Besoin par jour | Limite gratuite | Verdict |
+|---|---|---|---|
+| Minutes GitHub Actions (dépôt privé) | **≈ 60 min** si seul le rendu est facturé (4,6 x 4 min + 3/7 x 97 min), **≈ 115 min** si l'attente de la voix Kaggle est facturée (le runner attend pendant le noyau) ; + ≈ 8 min de publication (2 passages) | ≈ 2 000 min/mois = **≈ 65 min/jour** | **Insuffisant** : de ≈ 2 000 à ≈ 3 700 min/mois nécessaires |
+| GPU Kaggle | ≈ 1 h de voix pour les Shorts seuls (4,6 x 5 min) + 3/7 x 1 h de long + démarrages ≈ 1 h | ≈ 30 h/semaine | **OK** (≈ 8 h/semaine) |
+| Fabrication de nuit (job de 330 min) | nuit chargée : un long (≈ 160 min) + quelques Shorts (≈ 50 min) | 330 min par job, relance en chaîne si reste du travail (`--max 12`) | OK grâce à l'enchaînement |
+| Quota YouTube | 9 envois, 459 unités | 100 envois, 10 000 unités | OK, très large |
+
+**Conclusion** : le goulot n'est ni YouTube ni le GPU, ce sont les **minutes de calcul Actions du dépôt privé**. Pistes, de la plus simple à la plus lourde :
+1. **Dépôt public** (minutes illimitées) : le code et les épisodes (textes, faits sourcés) deviennent lisibles par tous ; les secrets restent en secrets GitHub. À décider par le propriétaire.
+2. **Tout fabriquer sur le PC** (4 cœurs, GPU local : ≈ 3 min de voix + ≈ 2 min de rendu par Short, soit au plus ≈ 40 min pour 8 Shorts par nuit, hors longs) avec les tâches planifiées déjà écrites (`installer_taches.ps1`) ; le cloud ne fait plus que la publication (≈ 240 min/mois). Demande un PC allumé la nuit.
+3. **Une seule voix pour tous les Shorts de la nuit** : un noyau Kaggle qui lit N textes (au lieu d'un noyau par épisode) supprime les démarrages répétés et l'attente facturée par le runner (≈ -45 % de minutes). Demande de modifier `lancer_voix.py` et `kernel_template.py` (non fait : pas de GPU de test ici).
+4. **Plus de Shorts découpés, moins de Shorts seuls** : un Short marqué dans l'accroche et la conclusion de chaque long (consigne ajoutée à `CONSIGNES.md`), jusqu'à 12 par long ; chaque Short découpé ne coûte que son rendu (≈ 4 min).
+5. **Shorts plus courts** (≤ 35 s) : le rendu est proportionnel à la durée (238 s pour 33 s).
+Le rendu en parallèle sur plusieurs jobs réduit la durée de la nuit mais pas le nombre de minutes facturées.

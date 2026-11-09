@@ -55,3 +55,26 @@ Chaque brique **ne fait avancer que l'état qu'elle possède** :
 
 ## Libération du disque après publication (règle pour tout le projet)
 Quand un épisode passe à `publie` (identifiant YouTube connu), `common.set_status` appelle `common.liberer_disque` : elle supprime les gros fichiers regénérables (`exports-b/<id>/*.mp4|wav`, `episodes-b/<id>/*.wav`, `cache/` de voix) et garde textes, faits, publication, statut, `qa.json`, miniatures ; elle note `nettoyage.json`. Exceptions : un Short attend d'être envoyé à TikTok si le jeton TikTok existe ; un long attend que tous ses Shorts aient leur propre voix. `run_daily.py` repasse sur tous les épisodes publiés à la fin de chaque commande (`common.liberer_tout_publie`). Tests : `autopilot/tests/test_liberer_disque.py`.
+
+## Plusieurs chaînes (moteur à profils, 8 nov. 2026)
+
+Conception : `docs/superpowers/specs/2026-11-08-moteur-chaines-design.md`. Un profil par chaîne : `autopilot/chaines/<id>.json` (lu par `autopilot/chaines.py`) ; sans dossier de profils, seule la chaîne `fr` existe, comme avant.
+
+- **Appartenance** : `episodes-b/<id>/status.json` porte `chaine_id`. Sans ce champ, l'épisode est de la chaîne par défaut (`fr`) : aucun épisode existant n'est à migrer (`python autopilot/chaines.py migrer` ajoute le champ, rien d'autre). Un Short découpé d'un long garde la chaîne de son long. Toutes les chaînes partagent `episodes-b/` et `exports-b/` : les identifiants sont uniques (les sujets des autres chaînes sont préfixés `<chaine>-`).
+- **États** : inchangés (tableau plus haut). Chaque brique ne traite que les épisodes des chaînes **actives** (`active: true` et profil valide) ; une chaîne inactive est ignorée par toutes.
+- **Quota** : un seul registre `state/youtube_quota.json` pour toutes les chaînes (même projet Google) ; `par_chaine` en donne le détail.
+- **Isolation** : l'échec d'un épisode ou d'une chaîne (jeton refusé, erreur imprévue) n'arrête pas les autres ; un quota épuisé arrête tout.
+- **Secrets** : un jeton par chaîne (`jeton_fichier` du profil, dans `autopilot/secrets/`). Seul `autopilot/publish/` l'ouvre ; il écrit `state/jetons.json` (booléens) que les autres briques et la web app lisent. Connexion d'une chaîne : `autopilot/publish/CONNECTER-UNE-CHAINE.md`.
+- **Rédacteur** : `stock.py besoin --chaine <id>` puis `valider.py <id> --chaine <id>` (sans `--chaine` : chaîne par défaut).
+- **TikTok** : seulement la chaîne par défaut (un seul compte), sauf `"tiktok": true` dans le profil.
+
+## Multilingue (chantier 2, 9 nov. 2026)
+
+Conception : `docs/superpowers/specs/2026-11-08-multilingue-design.md`. Une chaîne dont le profil a une `source` (ex. `en` ← `fr`, mode `traduction`) reprend les épisodes de sa source **adaptés** (jamais copiés) : `autopilot/traduction/`.
+
+- **Épisode adapté** : `episodes-b/<cible>-<id source>/`, `status.json` avec `chaine_id` de la cible, `traduction.json` (`source`, `moteur` = `claude` ou `marian`, `a_relire`, `acceptee`), `episode.json` avec `langue`. Même nombre de phrases, mêmes scènes, mêmes chiffres, mêmes faits et sources que la source (`traduction/parite.py`) ; texte parlé sans chiffre (mots-nombres), dans la langue cible.
+- **Demandes** : `episodes-b/_traductions/<id>/demande.json` (créées par `traduire.py besoin`, consommées à l'acceptation ou à la quarantaine). Claude (rédacteur planifié) écrit le brouillon puis `valider.py <id> --chaine <cible>` ; si Claude est bloqué (`state/claude_blocked.json`) ou muet depuis `source.attente_claude_heures`, le repli gratuit (MarianMT, Apache-2.0) prend les Shorts.
+- **Préparation sans publication** : `preparation: true` dans le profil = l'orchestrateur fabrique voix, rendu et miniature (stock), mais seul `active: true` autorise la publication. **Aucune brique n'écrit `active`.**
+- **Décalage** : l'adaptation n'est publiable que `source.decalage_heures` (48 h) après la publication de sa source (`traduction/decalage.py`, appelé par le publieur).
+- **Voix** : `voix/<langue>/voix.json` (voix intégrée Qwen3-TTS CustomVoice, Apache-2.0) ou `ref.wav` + `ref.txt` (clonage, prioritaire). L'orchestrateur transmet `BDF_LANGUE`, `BDF_LOCUTEUR`, `BDF_STYLE`, `BDF_VITESSE` ; `voice.py` en déduit la langue de synthèse et de Whisper. Sans ces variables : français inchangé.
+- **État** : `autopilot/state/traduction.json` (file, adaptés par état, voix, moteur de repli) lu par la web app. Commande : `python autopilot/run_daily.py traduire` (appelée aussi au début de `fabriquer`).
