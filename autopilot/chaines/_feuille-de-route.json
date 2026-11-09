@@ -159,7 +159,7 @@
    "id": "tiktok",
    "titre": "4. TikTok multi-chaînes",
    "statut": "en_cours",
-   "resume": "Chaque chaîne que tu choisis envoie ses Shorts dans la boîte de réception de son propre compte TikTok (un jeton par compte) ; tu touches « Publier ». TikTok force le « privé » pour une application non auditée et refuse en principe l'audit pour un outil personnel : la publication directe est codée mais éteinte tant que tu n'écris pas toi-même audit_confirme.",
+   "resume": "Chaque chaîne que tu choisis envoie ses Shorts dans la boîte de réception de son propre compte TikTok (un jeton par compte) ; tu touches « Publier ». TikTok force le « privé » pour une application non auditée et refuse en principe l'audit pour un outil personnel : la publication directe est codée mais éteinte tant que tu n'écris pas toi-même audit_confirme. Voie recommandée pour publier en public sans toi : le planificateur Upload-Post (forfait Basic, 16 $/mois en annuel ou 24 $/mois), moteur codé et testé mais éteint tant que tu n'écris pas moteur: planificateur dans le profil de la chaîne.",
    "etapes": [
     {
      "titre": "Recherche : ce que TikTok permet, audit, planificateurs tiers (OPTIONS-PUBLICATION.md)",
@@ -178,6 +178,18 @@
      "fait": true
     },
     {
+     "titre": "Recherche des planificateurs (Upload-Post, Blotato, Postiz, Publer, Metricool, Buffer) et comparatif chiffré",
+     "fait": true
+    },
+    {
+     "titre": "Moteur planificateur (tiktok.moteur) + tests avec faux serveur",
+     "fait": true
+    },
+    {
+     "titre": "Dossier d'audit TikTok (DOSSIER-AUDIT.md)",
+     "fait": true
+    },
+    {
      "titre": "Étendre le workflow cloud (un secret de jeton TikTok par chaîne)",
      "fait": false
     },
@@ -188,6 +200,16 @@
     },
     {
      "titre": "Décider si tu tentes l'audit TikTok (réponse incertaine) ou si tu gardes les 30 secondes par vidéo",
+     "fait": false,
+     "qui": "toi"
+    },
+    {
+     "titre": "Choisir : abonnement Upload-Post Basic (16 à 24 $/mois), créer le compte, connecter le TikTok de la chaîne, déposer la clé dans secrets/upload_post.json",
+     "fait": false,
+     "qui": "toi"
+    },
+    {
+     "titre": "Tester une vidéo en privé (visibilite SELF_ONLY) puis activer moteur: planificateur",
      "fait": false,
      "qui": "toi"
     }

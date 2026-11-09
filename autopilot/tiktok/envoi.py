@@ -8,6 +8,9 @@ Quelles chaînes envoient quoi : le champ `tiktok` du profil de chaîne (autopil
 par défaut ; `true`/`false` ; ou un objet {actif, mode, audit_confirme, jeton_fichier, hashtags, visibilite, max_par_24h, ia}.
 Un jeton par compte : `python autopilot/tiktok/auth.py --chaine <id>` (voir CONNECTER-TIKTOK.md).
 
+Deux moteurs (par chaîne, réglage `tiktok.moteur`) : « boite » (défaut, ci-dessous) ou « planificateur » (planificateur.py : un service
+tiers déjà audité par TikTok publie EN PUBLIC ; clé dans autopilot/secrets/upload_post.json ; voir OPTIONS-PUBLICATION.md).
+
 Deux modes (par chaîne) :
   - « boite » (défaut) : brouillon dans la boîte de réception TikTok (portée `video.upload`). TikTok notifie ; tu colles la légende et
     tu touches « Publier » (environ 30 secondes par vidéo). Rien n'est publié sans toi.
@@ -30,6 +33,7 @@ ICI = Path(__file__).resolve().parent
 sys.path.insert(0, str(ICI))
 sys.path.insert(0, str(ICI.parent))
 import client as C  # noqa: E402
+import planificateur as PL  # noqa: E402
 import common  # noqa: E402
 
 MAX_PAR_24H = 4
@@ -174,7 +178,9 @@ def envoyer_file(tt, max_n: int, seul: str | None, dry_run: bool, afficher=print
         try:
             with common.episode_lock(ep):
                 afficher(f"envoi de {ep} ({ch}, {mode})")
-                if mode == "direct":
+                if mode == "planificateur":
+                    pid = client.publier(video(ep), legende(ep), reg, afficher)
+                elif mode == "direct":
                     info = client.post_info_direct(legende(ep), reg["visibilite"], reg["ia"])
                     pid = client.envoyer(video(ep), afficher, post_info=info)
                 else:
@@ -199,6 +205,13 @@ def clients_pour(chaines, charger_client=None, jeton_valide=None, appel=None) ->
     charger_client, jeton_valide, appel = charger_client or C.charger_client, jeton_valide or C.jeton_valide, appel or C.appel_http
     clients, refus, pannes = {}, {}, {}
     for ch in chaines:
+        reg = common.tiktok_reglage(ch)
+        if reg["moteur"] == "planificateur":  # service tiers déjà audité : une clé d'accès, pas de jeton TikTok chez nous
+            try:
+                clients[ch] = PL.charger(reg, appel)
+            except C.ErreurAuth as e:
+                refus[ch] = str(e)
+            continue
         try:
             cl = charger_client()
             jeton = jeton_valide(cl, C.chemin_jeton(common.tiktok_reglage(ch)["jeton_fichier"]), appel)

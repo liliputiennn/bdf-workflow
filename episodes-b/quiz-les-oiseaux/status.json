@@ -1,13 +1,13 @@
 {
- "etat": "quarantaine",
- "maj": "2026-11-09T18:05:45",
- "raison": "fabrique : échec inattendu après 2 essais (code 1) : subprocess.CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.12.16/x64/bin/python', '/home/runner/work/bdf-workflow/bdf-workflow/autopilot/cloud/kaggle/lancer_voix.py', '/home/runner/work/b — trace : trace-fabrique.log",
- "tentatives": 2,
- "youtube": {
-  "video_id": null,
-  "url": null,
-  "visibilite": null,
-  "publie_a": null
- },
- "chaine_id": "quiz"
+    "etat":  "ecrit",
+    "maj":  "2026-11-09T18:05:45",
+    "raison":  null,
+    "tentatives":  0,
+    "youtube":  {
+                    "video_id":  null,
+                    "url":  null,
+                    "visibilite":  null,
+                    "publie_a":  null
+                },
+    "chaine_id":  "quiz"
 }

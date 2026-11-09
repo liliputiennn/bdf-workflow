@@ -80,3 +80,7 @@ Sans `"audit_confirme": true`, le mode `direct` est ignoré et on reste sur la b
 - Code retour 3 / « à reconnecter » : relance l'étape 3 pour la chaîne citée. En attendant, un **paquet de secours** (vidéo + légende) est prêt dans `exports-tiktok/<épisode>/` : dépose-le à la main dans TikTok et coche « Contenu généré par IA ».
 - « 403 spam_risk_too_many_pending_share » : trop de vidéos en attente dans la boîte de réception ; publie ou supprime les brouillons dans TikTok.
 - Un autre compte reçoit les vidéos : tu t'es connecté au mauvais compte à l'étape 3 ; refais-la en te déconnectant d'abord.
+
+## Variante : publier en public par un service tiers (sans notification téléphone)
+
+Si tu veux que les Shorts partent **en public sans que tu touches « Publier »**, utilise le moteur « planificateur » au lieu de la boîte de réception (aucun jeton TikTok chez nous, donc pas d'`auth.py` pour cette chaîne). Deux services codés : **Zernio** (gratuit pour 2 comptes sociaux, à tester) puis **Upload-Post** (payant, repli). Marche à suivre, réglages et avertissements (audit non confirmé, test d'une vidéo avant de compter dessus) : section « Voie automatique publique » de `OPTIONS-PUBLICATION.md`. Tu crées toi-même le compte du service, tu connectes toi-même le TikTok de la chaîne et tu déposes toi-même la clé dans `autopilot/secrets/zernio.json` (ou `upload_post.json`). Pour Zernio, tu écris aussi toi-même `"consentement": true` dans le profil (confirmation de contenu exigée par TikTok).

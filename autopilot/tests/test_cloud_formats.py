@@ -121,3 +121,12 @@ class JetonsParChaine(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class VoixIntegreeSurKaggle(unittest.TestCase):
+    def test_une_voix_integree_force_le_modele_customvoice(self):
+        """Régression (GitHub Actions, 2026-11-09) : `--modele-hf` valait le modèle Base, qui ne sait pas lire une voix intégrée."""
+        src = (Path(__file__).resolve().parents[1] / "cloud" / "kaggle" / "lancer_voix.py").read_text(encoding="utf-8")
+        self.assertIn('if options["locuteur"]:', src)
+        self.assertNotIn('options["locuteur"] and not options["modele_hf"]', src)
+        self.assertIn("0.6B-CustomVoice", src)

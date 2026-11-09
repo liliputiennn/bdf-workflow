@@ -86,7 +86,9 @@ def main() -> int:
     options = {"essais": a.essais, "seuil": a.seuil, "budget_s": a.budget_s, "fichier": a.episode_file, "modele_hf": a.modele_hf, "vitesse": a.vitesse,
                # chaîne dans une autre langue (chantier 2) : langue, voix intégrée de Qwen3-TTS CustomVoice (Apache-2.0) transmises au noyau
                "langue": os.environ.get("BDF_LANGUE", ""), "locuteur": os.environ.get("BDF_LOCUTEUR", ""), "style": os.environ.get("BDF_STYLE", "")}
-    if options["locuteur"] and not options["modele_hf"]:
+    if options["locuteur"]:
+        # voix intégrée : il faut le modèle CustomVoice. `--modele-hf` vaut par défaut le modèle Base (clonage), qui « ne supporte pas generate_custom_voice »
+        # (échec constaté sur GitHub Actions le 2026-11-09) : on ne le garde donc jamais avec une voix intégrée.
         options["modele_hf"] = os.environ.get("BDF_MODELE_HF_CUSTOM", "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice")
     with tempfile.TemporaryDirectory(prefix="bdf-kaggle-") as tmp:
         d = construire_kernel(Path(tmp), entree, options, utilisateur)

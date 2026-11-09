@@ -73,6 +73,8 @@ DOSSIERS_VOIX = ("cache",)  # cache de voix de l'épisode, regénérable
 
 TIKTOK_VISIBILITES = ("PUBLIC_TO_EVERYONE", "MUTUAL_FOLLOW_FRIENDS", "FOLLOWER_OF_CREATOR", "SELF_ONLY")
 TIKTOK_MODES = ("boite", "direct")
+TIKTOK_SERVICES = ("upload-post", "zernio")  # services tiers (moteur « planificateur »)
+TIKTOK_MOTEURS = ("boite", "planificateur")  # « planificateur » : un service tiers déjà audité par TikTok publie à notre place
 
 
 def tiktok_reglage(chaine: str) -> dict:
@@ -89,17 +91,28 @@ def tiktok_reglage(chaine: str) -> dict:
     mode = o.get("mode") if o.get("mode") in TIKTOK_MODES else "boite"
     if mode == "direct" and not audit:
         mode = "boite"
+    moteur = o.get("moteur") if o.get("moteur") in TIKTOK_MOTEURS else "boite"
+    pl = o.get("planificateur") if isinstance(o.get("planificateur"), dict) else {}
+    service = pl.get("service") if pl.get("service") in TIKTOK_SERVICES else "upload-post"
+    cle = pl.get("cle_fichier")
+    if not (isinstance(cle, str) and re.fullmatch(r"[A-Za-z0-9._-]+\.json", cle) and cle not in ("tiktok_client.json", "client_secret.json")):
+        cle = "zernio.json" if service == "zernio" else "upload_post.json"
+    profil = pl.get("profil") if isinstance(pl.get("profil"), str) and pl.get("profil").strip() else chaine
+    if moteur == "planificateur":
+        mode = "planificateur"  # publication directe faite par le service (son application est auditée) : pas de jeton TikTok chez nous
     jeton = o.get("jeton_fichier")
     if not (isinstance(jeton, str) and re.fullmatch(r"[A-Za-z0-9._-]+\.json", jeton) and jeton not in ("tiktok_client.json", "client_secret.json")):
         jeton = "tiktok_token.json" if chaine == CHAINE_DEFAUT else f"tiktok_token-{chaine}.json"
     tags = [t for t in (o.get("hashtags") or []) if isinstance(t, str) and t.strip()] if isinstance(o.get("hashtags"), list) else None
     if tags is None:
         tags = ["#business"] if chaine == CHAINE_DEFAUT else []
-    limite = 15 if mode == "direct" else 5
+    limite = 15 if mode in ("direct", "planificateur") else 5
     par_jour = o.get("max_par_24h")
-    par_jour = min(limite, par_jour) if isinstance(par_jour, int) and not isinstance(par_jour, bool) and par_jour > 0 else (12 if mode == "direct" else 4)
+    par_jour = min(limite, par_jour) if isinstance(par_jour, int) and not isinstance(par_jour, bool) and par_jour > 0 else (12 if mode in ("direct", "planificateur") else 4)
     vis = o.get("visibilite") if o.get("visibilite") in TIKTOK_VISIBILITES else "PUBLIC_TO_EVERYONE"
-    return {"actif": actif, "mode": mode, "audit_confirme": audit, "jeton_fichier": jeton, "hashtags": tags,
+    return {"actif": actif, "mode": mode, "moteur": moteur, "planificateur": {"service": service, "profil": profil, "cle_fichier": cle,
+                                  "compte": str(pl.get("compte") or ""), "consentement": pl.get("consentement") is True},
+            "audit_confirme": audit, "jeton_fichier": jeton, "hashtags": tags,
             "max_par_24h": par_jour, "visibilite": vis, "ia": o.get("ia") is not False}
 
 
@@ -110,7 +123,9 @@ def tiktok_pour(ep_id: str) -> bool:
 
 def _tiktok_actif(chaine: str = "fr") -> bool:
     """Un jeton TikTok existe-t-il pour cette chaîne ?"""
-    return (ROOT / "autopilot" / "secrets" / tiktok_reglage(chaine)["jeton_fichier"]).exists()
+    r = tiktok_reglage(chaine)
+    nom = r["planificateur"]["cle_fichier"] if r["moteur"] == "planificateur" else r["jeton_fichier"]
+    return (ROOT / "autopilot" / "secrets" / nom).exists()
 
 
 def _tiktok_envoye(ep_id: str) -> bool:
