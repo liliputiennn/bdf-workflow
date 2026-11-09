@@ -14,6 +14,8 @@ Rien n'est créé ni activé par le code : tu crées les secrets toi-même (GitH
 | langues | `YT_TOKEN_LANGUES` | `token-langues.json` |
 | quiz | `YT_TOKEN_QUIZ` | `token-quiz.json` |
 | musique-enfants | `YT_TOKEN_MUSIQUE_ENFANTS` | `token-musique-enfants.json` |
+| meditation | `YT_TOKEN_MEDITATION` | `token-meditation.json` |
+| histoires-enfants | `YT_TOKEN_HISTOIRES_ENFANTS` | `token-histoires-enfants.json` |
 
 Règle : `YT_TOKEN_` + identifiant du profil en majuscules, le « - » devenant « _ ». Le fichier est le `jeton_fichier` du profil (`autopilot/chaines/<id>.json`).
 Le secret `YT_CLIENT_SECRET` (le même client OAuth pour toutes les chaînes) existe déjà et ne change pas.

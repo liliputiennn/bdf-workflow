@@ -21,6 +21,10 @@ import common  # noqa: E402
 import envoi  # noqa: E402
 
 MO = 1024 * 1024
+# Jamais les vrais secrets : tout passe par le dossier temporaire (aucun réseau réel).
+C.SECRETS = TMP / "autopilot" / "secrets"
+C.FICHIER_CLIENT = C.SECRETS / "tiktok_client.json"
+C.FICHIER_JETON = C.SECRETS / "tiktok_token.json"
 
 
 def reponse(code=200, **corps):

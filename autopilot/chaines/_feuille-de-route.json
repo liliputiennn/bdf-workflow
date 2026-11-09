@@ -100,7 +100,7 @@
    "id": "formats",
    "titre": "3. Nouveaux formats, un par un",
    "statut": "en_cours",
-   "resume": "Chaque format se branche sur le moteur par son profil (module de format, scripts de remplacement, rendu léger Pillow + ffmpeg). Quiz, langues, sommeil et musique enfants traversent le pipeline de bout en bout avec le faux YouTube (voix simulée) ; Histoire a son code mais pas encore de long complet. Les voix réelles sont à confirmer à l'écoute ; l'utilisateur crée les chaînes, connecte les jetons et décide de l'activation.",
+   "resume": "Chaque format se branche sur le moteur par son profil (module de format, scripts de remplacement, rendu léger Pillow + ffmpeg). Quiz, langues, sommeil, méditation guidée et musique enfants traversent le pipeline de bout en bout avec le faux YouTube (voix simulée) ; Histoire a son code mais pas encore de long complet. Les voix réelles sont à confirmer à l'écoute ; l'utilisateur crée les chaînes, connecte les jetons et décide de l'activation.",
    "etapes": [
     {
      "titre": "Socle : contrôles propres au format, vidéo longue des formats maison, déclaration « enfants » du publieur",
@@ -127,6 +127,14 @@
      "fait": true
     },
     {
+     "titre": "Histoires pour enfants : prêt de bout en bout (voix simulée), scènes dessinées par le code, règles « conçu pour les enfants »",
+     "fait": true
+    },
+    {
+     "titre": "Méditation guidée : prête de bout en bout, rendu léger (séances de 10 à 40 min, aucune promesse de santé)",
+     "fait": true
+    },
+    {
      "titre": "Écouter et confirmer les voix de chaque chaîne",
      "fait": false,
      "qui": "toi"
@@ -142,7 +150,50 @@
     "sommeil",
     "langues",
     "quiz",
-    "musique-enfants"
+    "musique-enfants",
+    "meditation",
+    "histoires-enfants"
+   ]
+  },
+  {
+   "id": "tiktok",
+   "titre": "4. TikTok multi-chaînes",
+   "statut": "en_cours",
+   "resume": "Chaque chaîne que tu choisis envoie ses Shorts dans la boîte de réception de son propre compte TikTok (un jeton par compte) ; tu touches « Publier ». TikTok force le « privé » pour une application non auditée et refuse en principe l'audit pour un outil personnel : la publication directe est codée mais éteinte tant que tu n'écris pas toi-même audit_confirme.",
+   "etapes": [
+    {
+     "titre": "Recherche : ce que TikTok permet, audit, planificateurs tiers (OPTIONS-PUBLICATION.md)",
+     "fait": true
+    },
+    {
+     "titre": "Code : un jeton par chaîne, choix par chaîne dans le profil, formats maison inclus, limite de 24 h par compte",
+     "fait": true
+    },
+    {
+     "titre": "Mode boîte de réception par défaut ; publication directe seulement avec audit_confirme",
+     "fait": true
+    },
+    {
+     "titre": "Guide pas à pas (CONNECTER-TIKTOK.md)",
+     "fait": true
+    },
+    {
+     "titre": "Étendre le workflow cloud (un secret de jeton TikTok par chaîne)",
+     "fait": false
+    },
+    {
+     "titre": "Créer un compte TikTok par chaîne et connecter chaque jeton",
+     "fait": false,
+     "qui": "toi"
+    },
+    {
+     "titre": "Décider si tu tentes l'audit TikTok (réponse incertaine) ou si tu gardes les 30 secondes par vidéo",
+     "fait": false,
+     "qui": "toi"
+    }
+   ],
+   "chaines": [
+    "fr"
    ]
   }
  ]

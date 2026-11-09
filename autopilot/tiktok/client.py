@@ -67,6 +67,11 @@ def _json(corps: bytes) -> dict:
         return {}
 
 
+def chemin_jeton(nom: str | None = None) -> Path:
+    """Fichier de jeton d'un compte TikTok (un par chaîne) ; sans nom : le jeton historique de la chaîne par défaut."""
+    return SECRETS / (nom or FICHIER_JETON.name)
+
+
 def lire(chemin: Path) -> dict | None:
     try:
         return json.loads(chemin.read_text(encoding="utf-8"))
@@ -175,19 +180,37 @@ class TikTok:
             raise ErreurApi(str(err.get("code") or code), str(err.get("message") or ""), code)
         return d.get("data") or {}
 
-    def initialiser(self, taille: int) -> tuple[str, str, list[tuple[int, int]]]:
+    def initialiser(self, taille: int, post_info: dict | None = None) -> tuple[str, str, list[tuple[int, int]]]:
         blocs = plan_blocs(taille)
         gros = BLOC_MAX if taille <= BLOC_MAX else BLOC_DEFAUT
-        data = self._api("/v2/post/publish/inbox/video/init/", {"source_info": {
-            "source": "FILE_UPLOAD", "video_size": taille, "chunk_size": taille if len(blocs) == 1 else gros, "total_chunk_count": len(blocs)}})
+        source = {"source": "FILE_UPLOAD", "video_size": taille, "chunk_size": taille if len(blocs) == 1 else gros, "total_chunk_count": len(blocs)}
+        if post_info is None:
+            data = self._api("/v2/post/publish/inbox/video/init/", {"source_info": source})
+        else:  # publication directe (exige l'application auditée + la portée video.publish)
+            data = self._api("/v2/post/publish/video/init/", {"post_info": post_info, "source_info": source})
         if not data.get("publish_id") or not data.get("upload_url"):
             raise ErreurApi("reponse_incomplete", "publish_id ou upload_url manquant")
         return data["publish_id"], data["upload_url"], blocs
 
-    def envoyer(self, chemin: Path, afficher=print) -> str:
-        """Envoie la vidéo dans la boîte de réception TikTok de l'utilisateur ; renvoie le `publish_id`."""
+    def infos_createur(self) -> dict:
+        """Réglages du compte connecté (visibilités permises, durée maximale…) ; demandé avant toute publication directe."""
+        return self._api("/v2/post/publish/creator_info/query/", {})
+
+    def post_info_direct(self, titre: str, visibilite: str = "PUBLIC_TO_EVERYONE", ia: bool = True) -> dict:
+        """Corps `post_info` d'une publication directe. La visibilité demandée est ramenée à une valeur que le compte accepte
+        (un compte privé ou une application non auditée n'offre que SELF_ONLY) ; les interactions suivent les réglages du compte."""
+        info = self.infos_createur()
+        permises = info.get("privacy_level_options") or ["SELF_ONLY"]
+        if visibilite not in permises:
+            visibilite = "SELF_ONLY" if "SELF_ONLY" in permises else permises[0]
+        return {"title": titre[:2200], "privacy_level": visibilite, "is_aigc": bool(ia),
+                "disable_comment": bool(info.get("comment_disabled")), "disable_duet": bool(info.get("duet_disabled")),
+                "disable_stitch": bool(info.get("stitch_disabled"))}
+
+    def envoyer(self, chemin: Path, afficher=print, post_info: dict | None = None) -> str:
+        """Envoie la vidéo dans la boîte de réception TikTok (par défaut) ou la publie directement (`post_info`) ; renvoie le `publish_id`."""
         taille = chemin.stat().st_size
-        publish_id, url, blocs = self.initialiser(taille)
+        publish_id, url, blocs = self.initialiser(taille, post_info)
         with chemin.open("rb") as f:
             for k, (a, b) in enumerate(blocs, 1):
                 f.seek(a)

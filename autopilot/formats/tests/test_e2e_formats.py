@@ -24,8 +24,8 @@ for p in (PUB / "tests", PUB, RACINE / "autopilot"):
 from test_multichaines import BaseChaines  # noqa: E402
 
 import common  # noqa: E402
-from autopilot.formats import apprendre, musique_enfants, quiz, sommeil  # noqa: E402
-from autopilot.formats.tests import faux, test_apprendre, test_musique_enfants, test_quiz, test_sommeil  # noqa: E402
+from autopilot.formats import apprendre, histoires_enfants, meditation, musique_enfants, quiz, sommeil  # noqa: E402
+from autopilot.formats.tests import faux, test_apprendre, test_histoires_enfants, test_meditation, test_musique_enfants, test_quiz, test_sommeil  # noqa: E402
 from test_publieur import MAINTENANT  # noqa: E402
 
 
@@ -41,8 +41,12 @@ FORMATS = {
                     pub=lambda ep: pub("Anglais : commander au café", "Trois phrases pour commander. Prononciation approximative.\n#anglais #apprendre")),
     "sommeil": dict(module=sommeil, ep=lambda: test_sommeil.episode(ambiance={"type": "pluie", "graine": 3, "duree_min": 30}), long=True, kids=False,
                     pub=lambda ep: pub("Histoire pour s'endormir : le village", "Une histoire douce et de la pluie. Cette vidéo détend mais ne remplace pas un avis médical.\n#sommeil #histoire")),
+    "meditation": dict(module=meditation, ep=lambda: test_meditation.episode(), long=True, kids=False,
+                       pub=lambda ep: pub("Méditation guidée : la lumière douce", "Une séance guidée, voix lente et nappe sonore. Ne remplace pas un avis médical. Ne pas écouter en conduisant.\n#méditation #respiration")),
     "musique-enfants": dict(module=musique_enfants, ep=lambda: test_musique_enfants.episode(), long=False, kids=True,
                             pub=lambda ep: pub("Chanson du petit jardin pour enfants", "Une petite chanson. Chanson originale à chanter avec les paroles à l'écran.\n#chanson #enfants")),
+    "histoires-enfants": dict(module=histoires_enfants, ep=lambda: test_histoires_enfants.episode(), long=False, kids=True,
+                              pub=lambda ep: pub("Histoire pour enfants : Lila partage ses carottes", "Lila partage ses carottes. Histoire originale pour les enfants de 3 à 7 ans. Voix et images créées avec des outils informatiques.\n#histoire #enfants")),
 }
 
 
@@ -139,7 +143,7 @@ class BoutEnBout(BaseChaines):
         self.assertFalse((self.tmp / "exports-b" / inactif).exists())
 
     def test_le_code_n_active_jamais_une_chaine(self):
-        for ident in ("histoire", "quiz", "langues", "sommeil", "musique-enfants"):
+        for ident in ("histoire", "quiz", "langues", "sommeil", "meditation", "musique-enfants", "histoires-enfants"):
             p = json.loads((RACINE / "autopilot" / "chaines" / f"{ident}.json").read_text(encoding="utf-8"))
             self.assertIs(p["active"], False, ident)
 
