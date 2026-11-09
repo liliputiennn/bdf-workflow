@@ -1,0 +1,2256 @@
+{
+ "id": "en-7-business-a-voler-a-l-asie-avant-qu-ils-arriven",
+ "source": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven",
+ "chaine_source": "fr",
+ "chaine_cible": "en",
+ "langue": "en",
+ "langue_nom": "English",
+ "langue_source": "fr",
+ "format": "long",
+ "fichier_episode": "episode-long.json",
+ "cree_le": "2026-11-09T21:01:18",
+ "nom_chaine": "Business Facts (EN)",
+ "consignes": "autopilot/traduction/CONSIGNES-TRADUCTION.md",
+ "episode": {
+  "id": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven",
+  "titre": "7 business à voler à l'Asie avant qu'ils arrivent",
+  "theme": "pelouse",
+  "theme_accent": "pelouse-nuit",
+  "chaine": "La Débrouille",
+  "miniature": {
+   "style": "createur",
+   "texte_haut": "7 BUSINESS VOLÉS À L'ASIE",
+   "gros": "7",
+   "icone": "pieces"
+  },
+  "chapitres": [
+   {
+    "titre": "Accroche",
+    "phrases": [
+     "Selon un rapport de tendances de menus, l'intérêt pour la cuisine chinoise en France a bondi de soixante-dix-sept virgule huit pour cent en un an.",
+     "La France s'ouvre à l'Asie, et il manque encore plein d'adresses.",
+     "Voilà des business déjà installés là-bas, que très peu de gens ont copiés ici.",
+     "Pour chacun, tu auras ce que ça coûte, le prix de vente constaté et le gain par jour, avec le calcul.",
+     "Le premier se lance pour moins de trois cents euros.",
+     "C'est un petit poisson en pâte, vendu quatre fois plus cher qu'au Japon.",
+     "Le dernier demande un gros budget, mais c'est celui qui fait venir la foule.",
+     "On commence tout de suite."
+    ],
+    "scenes": [
+     {
+      "type": "chiffre",
+      "phrase": 1,
+      "params": {
+       "valeur": 77.8,
+       "decimales": 1,
+       "suffixe": " %",
+       "etiquette": "d'intérêt en plus pour la cuisine chinoise en un an",
+       "sous": "selon Tastewise, France"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 4,
+      "params": {
+       "titre": "À CHAQUE FOIS",
+       "items": [
+        {
+         "texte": "Ce que ça coûte"
+        },
+        {
+         "texte": "Le prix de vente constaté"
+        },
+        {
+         "texte": "Le gain par jour"
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 5,
+      "params": {
+       "accents": [
+        "moins",
+        "trois",
+        "cents",
+        "euros"
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 8,
+      "params": {
+       "question": "Lequel tu lances ?",
+       "pistes": [
+        "Poisson",
+        "Capsule",
+        "Chat"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "titre": "Business 1 : le taiyaki, la gaufre poisson",
+    "phrases": [
+     "Premier business : le taiyaki, une gaufre en forme de poisson fourrée aux haricots rouges.",
+     "Dans un stand parisien, un taiyaki se vendait cinq euros cinquante.",
+     "Au Japon, dans une pâtisserie historique, le même poisson coûte cent quatre-vingts yens, soit un euro trente.",
+     "Ici, le même snack se vend plus de quatre fois plus cher.",
+     "Pour démarrer, une machine professionnelle livrée avec trois moules taiyaki coûte deux cent soixante-quatorze euros quatre-vingt-dix-neuf.",
+     "La garniture, c'est de la pâte de haricots rouges sucrée : quatorze euros quatre-vingts le kilo.",
+     "Calcul : trente-cinq grammes de garniture par poisson, ça fait cinquante-deux centimes.",
+     "Avec la pâte, compte soixante-dix centimes de revient par poisson.",
+     "Tu le vends cinq euros : il te reste quatre euros trente.",
+     "À quarante poissons par jour, ça fait cent soixante-douze euros de gain par jour.",
+     "Première action aujourd'hui : repère les marchés et les fêtes de ton coin, et note le prix des gaufres vendues.",
+     "Le piège : un poisson refroidi ne se vend plus, donc cuis à la commande.",
+     "Et le business d'après se range dans une machine qui crache des capsules."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 1,
+       "titre": "Taiyaki",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "275 €"
+        },
+        {
+         "label": "Temps par jour",
+         "valeur": "4 h"
+        },
+        {
+         "label": "Gain par jour",
+         "valeur": "172 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 2,
+      "params": {
+       "titre": "PRIX D'UN TAIYAKI",
+       "barres": [
+        {
+         "label": "Paris",
+         "valeur": 5.5,
+         "accent": true
+        },
+        {
+         "label": "Japon",
+         "valeur": 1.3
+        }
+       ],
+       "badge": "prix constatés"
+      }
+     },
+     {
+      "type": "clip",
+      "phrase": 3,
+      "params": {
+       "recherche": "taiyaki fish cake",
+       "legende": "Le taiyaki",
+       "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/taiyaki-fish-cake.webm",
+       "credit": "Vidéo : Nesnad, Wikimedia Commons"
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 4,
+      "params": {
+       "titre": "Taiyaki, stand parisien",
+       "prix": "5,50 €",
+       "source": "prix constaté à Paris (Sortiraparis)",
+       "lieu": "Paris"
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 5,
+      "params": {
+       "valeur": 274.99,
+       "decimales": 2,
+       "suffixe": " €",
+       "etiquette": "machine pro avec moules taiyaki"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 7,
+      "params": {
+       "titre": "CALCUL PAR POISSON",
+       "items": [
+        {
+         "texte": "Revient",
+         "valeur": "0,70 €"
+        },
+        {
+         "texte": "Vendu",
+         "valeur": "5 €"
+        },
+        {
+         "texte": "Reste",
+         "valeur": "4,30 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 10,
+      "params": {
+       "valeur": 172,
+       "suffixe": " €",
+       "etiquette": "de gain par jour, estimation",
+       "sous": "40 poissons à 4,30 € de reste"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 11,
+      "params": {
+       "question": "Un marché près de chez toi ?",
+       "pistes": [
+        "Samedi",
+        "Dimanche",
+        "Fête"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Ce snack se vend quatre fois plus cher qu'au Japon"
+    }
+   },
+   {
+    "titre": "Business 2 : les machines à capsules",
+    "phrases": [
+     "Deuxième business : les machines à capsules japonaises, qu'on appelle gashapon.",
+     "Le marché mondial de ces jouets a doublé depuis deux mille vingt et pèse deux milliards d'euros.",
+     "Une boutique de trois cents machines vient d'ouvrir à Paris.",
+     "Chaque capsule s'y vend de cinq à six euros.",
+     "Les patrons de la boutique attendent un million et demi d'euros de ventes par an.",
+     "Divise par trois cents machines et par trois cent soixante-cinq jours : treize euros soixante-dix par machine et par jour.",
+     "Pour toi, une machine avec son pied coûte trois cent soixante euros.",
+     "Selon des acteurs du secteur, la marge nette dépasse soixante pour cent.",
+     "Calcul : dix capsules à cinq euros, ça fait cinquante euros de ventes.",
+     "À soixante pour cent de marge, il te reste trente euros par jour.",
+     "Ta machine à trois cent soixante euros est remboursée en douze jours.",
+     "Le plus dur, c'est la place : propose la machine à un commerçant, et partage les ventes avec lui.",
+     "Première action aujourd'hui : demande à un commerce de quartier une place pour ta première machine.",
+     "Le piège : une machine mal placée reste vide, donc choisis un endroit où l'on attend.",
+     "Et le suivant se mange avec du riz."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 2,
+       "titre": "Machines à capsules",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "360 €"
+        },
+        {
+         "label": "Temps par jour",
+         "valeur": "2 h"
+        },
+        {
+         "label": "Gain par jour",
+         "valeur": "30 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 2,
+      "params": {
+       "valeur": 2,
+       "suffixe": " milliards €",
+       "etiquette": "le marché mondial des jouets en capsule",
+       "sous": "doublé depuis 2020"
+      }
+     },
+     {
+      "type": "duel",
+      "phrase": 3,
+      "params": {
+       "titre": "UNE CAPSULE À PARIS",
+       "haut": {
+        "titre": "Prix de vente 5 à 6 €",
+        "part": 100
+       },
+       "bas": {
+        "titre": "Japon : 1 à 3 €",
+        "part": 40
+       }
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 5,
+      "params": {
+       "recherche": "capsule toy vending machine",
+       "legende": "Une machine à capsules",
+       "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/capsule-toy-vending-machine.jpg",
+       "credit": "Photo : Ka23 13, CC BY 4.0"
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 6,
+      "params": {
+       "valeur": 13.7,
+       "decimales": 2,
+       "suffixe": " €",
+       "etiquette": "de ventes par machine et par jour",
+       "sous": "1,5 million € ÷ 300 machines ÷ 365 jours"
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 7,
+      "params": {
+       "titre": "Distributeur de capsules, pied inclus",
+       "prix": "360 €",
+       "source": "annonce B2B Destockplus"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 9,
+      "params": {
+       "titre": "CALCUL D'UNE MACHINE",
+       "items": [
+        {
+         "texte": "Machine",
+         "valeur": "360 €"
+        },
+        {
+         "texte": "10 capsules à 5 €",
+         "valeur": "50 €"
+        },
+        {
+         "texte": "Marge à 60 %",
+         "valeur": "30 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 11,
+      "params": {
+       "valeur": 12,
+       "suffixe": " jours",
+       "etiquette": "pour rembourser la machine, estimation"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 13,
+      "params": {
+       "question": "Quel commerce pour ta machine ?",
+       "pistes": [
+        "Café",
+        "Coiffeur",
+        "Salle de sport"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 11,
+     "accroche": "Une machine à capsules, remboursée en douze jours"
+    }
+   },
+   {
+    "titre": "Business 3 : les onigiri, boules de riz",
+    "phrases": [
+     "Troisième business : l'onigiri, la boule de riz japonaise fourrée.",
+     "Selon un magazine de franchise, ces onigiri ne sont vendus qu'à Paris en Europe.",
+     "Une enseigne japonaise installée là-bas a vu ses ventes grimper de trente pour cent en deux ans.",
+     "Dans les boutiques parisiennes, un onigiri coûte de un euro dix à quatre euros trente.",
+     "Un comptoir du quartier vend le poulet mayonnaise deux euros quatre-vingts, et le saumon trois euros dix.",
+     "Côté achat, le riz à sushi se trouve à cinq euros quarante-quatre le kilo.",
+     "Calcul : cinquante grammes de riz sec par onigiri, ça fait vingt-sept centimes.",
+     "Avec l'algue et la garniture, compte un euro de revient.",
+     "Tu le vends trois euros : il te reste deux euros par onigiri.",
+     "À quarante onigiri par jour, ça fait quatre-vingts euros de gain par jour.",
+     "L'outil : un cuiseur de riz, de l'algue et quelques garnitures simples.",
+     "Première action aujourd'hui : fais cuire du riz, moule tes premiers onigiri et fais-les goûter autour de toi.",
+     "Le piège : le riz sèche vite, donc emballe l'algue au dernier moment.",
+     "Prochain business : une boisson verte dont le monde entier manque."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 3,
+       "titre": "Onigiri",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "27 € de riz"
+        },
+        {
+         "label": "Temps par jour",
+         "valeur": "3 h"
+        },
+        {
+         "label": "Gain par jour",
+         "valeur": "80 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 3,
+      "params": {
+       "valeur": 30,
+       "suffixe": " %",
+       "etiquette": "de ventes en plus en deux ans",
+       "sous": "enseigne japonaise à Paris"
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 4,
+      "params": {
+       "titre": "PRIX D'UN ONIGIRI À PARIS",
+       "barres": [
+        {
+         "label": "Poulet mayo",
+         "valeur": 2.8
+        },
+        {
+         "label": "Saumon",
+         "valeur": 3.1
+        },
+        {
+         "label": "Le plus garni",
+         "valeur": 4.3,
+         "accent": true
+        }
+       ],
+       "badge": "prix constatés"
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 5,
+      "params": {
+       "recherche": "making onigiri rice balls",
+       "legende": "Des onigiri faits main",
+       "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/making-onigiri-rice-balls.jpg",
+       "credit": "Photo : Maria from McLean, Virginia, USA, CC BY 2.0"
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 6,
+      "params": {
+       "titre": "Onigiri poulet mayonnaise",
+       "prix": "2,80 €",
+       "source": "prix constaté, comptoir à onigiri de Paris (Time Out)",
+       "lieu": "Paris"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 7,
+      "params": {
+       "titre": "CALCUL PAR ONIGIRI",
+       "items": [
+        {
+         "texte": "Revient",
+         "valeur": "1 €"
+        },
+        {
+         "texte": "Vendu",
+         "valeur": "3 €"
+        },
+        {
+         "texte": "Reste",
+         "valeur": "2 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 10,
+      "params": {
+       "valeur": 80,
+       "suffixe": " €",
+       "etiquette": "de gain par jour, estimation",
+       "sous": "40 onigiri à 2 € de reste"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 12,
+      "params": {
+       "question": "Quelle garniture en premier ?",
+       "pistes": [
+        "Poulet",
+        "Saumon",
+        "Thon"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Cet onigiri coûte un euro et se vend trois euros"
+    }
+   },
+   {
+    "titre": "Business 4 : le latte au matcha",
+    "phrases": [
+     "Quatrième business : le latte au matcha, la boisson verte venue du Japon.",
+     "En deux mille dix, le Japon produisait mille quatre cent soixante et onze tonnes de matcha.",
+     "En deux mille vingt-trois, quatre mille cent soixante-seize tonnes.",
+     "Et ça ne suffit pas : les exportations ont bondi de trente-trois pour cent en deux mille vingt-trois.",
+     "À Paris, un café japonais vend son latte matcha azuki six euros quatre-vingt-dix.",
+     "Côté achat, un kilo de matcha en poudre pour les cafés coûte cent quarante-neuf euros quatre-vingt-quinze.",
+     "Pour un latte, compte deux grammes de poudre : ça fait trente centimes.",
+     "Avec le lait et le gobelet, compte un euro de revient.",
+     "Tu le vends six euros quatre-vingt-dix : il te reste cinq euros quatre-vingt-dix.",
+     "À trente lattes par jour, ça fait cent soixante-dix-sept euros de gain par jour.",
+     "L'outil : une poudre de matcha, un fouet en bambou et un frigo pour le lait.",
+     "Première action aujourd'hui : goûte plusieurs poudres, choisis la plus douce et teste ta recette sur tes proches.",
+     "Le piège : le matcha est rationné chez les grandes marques, donc commande ton stock tout de suite.",
+     "Le suivant se boit aussi, avec des perles à croquer."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 4,
+       "titre": "Latte au matcha",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "150 € de poudre"
+        },
+        {
+         "label": "Temps par jour",
+         "valeur": "4 h"
+        },
+        {
+         "label": "Gain par jour",
+         "valeur": "177 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 2,
+      "params": {
+       "titre": "PRODUCTION JAPONAISE DE MATCHA",
+       "barres": [
+        {
+         "label": "2010",
+         "valeur": 1471
+        },
+        {
+         "label": "2023",
+         "valeur": 4176,
+         "accent": true
+        }
+       ],
+       "badge": "tonnes"
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 4,
+      "params": {
+       "valeur": 33,
+       "suffixe": " %",
+       "etiquette": "d'exportations en plus en 2023"
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 5,
+      "params": {
+       "titre": "Latte matcha azuki",
+       "prix": "6,90 €",
+       "source": "prix affiché, café japonais de Paris (Sortiraparis)",
+       "lieu": "Paris"
+      }
+     },
+     {
+      "type": "duel",
+      "phrase": 6,
+      "params": {
+       "titre": "UN LATTE",
+       "haut": {
+        "titre": "Vente 6,90 €",
+        "part": 100
+       },
+       "bas": {
+        "titre": "Revient 1 €",
+        "part": 14.5
+       }
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 7,
+      "params": {
+       "titre": "CALCUL PAR LATTE",
+       "items": [
+        {
+         "texte": "Poudre 2 g",
+         "valeur": "0,30 €"
+        },
+        {
+         "texte": "Revient total",
+         "valeur": "1 €"
+        },
+        {
+         "texte": "Reste",
+         "valeur": "5,90 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 8,
+      "params": {
+       "recherche": "whisking matcha tea",
+       "legende": "Le matcha fouetté",
+       "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/whisking-matcha-tea.jpg",
+       "credit": "Photo : Andy Li, CC0"
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 10,
+      "params": {
+       "valeur": 177,
+       "suffixe": " €",
+       "etiquette": "de gain par jour, estimation",
+       "sous": "30 lattes à 5,90 € de reste"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 12,
+      "params": {
+       "question": "Quelle poudre est la plus douce ?",
+       "pistes": [
+        "Bio",
+        "Café",
+        "Cérémonie"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Un latte vert à un euro, vendu presque sept euros"
+    }
+   },
+   {
+    "titre": "Business 5 : le bubble tea",
+    "phrases": [
+     "Cinquième business : le bubble tea, le thé au lait avec des perles à croquer.",
+     "En France, le marché du bubble tea pèse entre quatre-vingt-cinq et cent millions d'euros.",
+     "Dans une boutique de Paris, un petit coûte trois euros quatre-vingts, un moyen quatre euros quatre-vingts, un grand cinq euros cinquante.",
+     "La marge brute annoncée va de soixante-cinq à quatre-vingt-trois pour cent.",
+     "Pour te lancer sans boutique, une machine professionnelle coûte de sept cents à cinq mille euros.",
+     "Calcul : tu vends un moyen quatre euros quatre-vingts.",
+     "À soixante-dix pour cent de marge, il te reste trois euros trente-six par verre.",
+     "À quarante verres par jour, ça fait cent trente-quatre euros de gain par jour.",
+     "L'outil : des perles de tapioca, du thé, du lait, du sirop et une machine à sceller les gobelets.",
+     "Première action aujourd'hui : monte une carte courte, avec quelques parfums seulement.",
+     "Le piège : les perles durcissent en refroidissant, donc cuis-les en petites quantités.",
+     "Et le dernier fait payer les gens pour caresser des chats."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 5,
+       "titre": "Bubble tea",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "700 €"
+        },
+        {
+         "label": "Temps par jour",
+         "valeur": "4 h"
+        },
+        {
+         "label": "Gain par jour",
+         "valeur": "134 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 2,
+      "params": {
+       "valeur": 100,
+       "prefixe": "85 à ",
+       "suffixe": " millions €",
+       "etiquette": "le marché du bubble tea en France",
+       "sous": "estimation 2025"
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 3,
+      "params": {
+       "titre": "PRIX D'UN BUBBLE TEA À PARIS",
+       "barres": [
+        {
+         "label": "Petit",
+         "valeur": 3.8
+        },
+        {
+         "label": "Moyen",
+         "valeur": 4.8
+        },
+        {
+         "label": "Grand",
+         "valeur": 5.5,
+         "accent": true
+        }
+       ],
+       "badge": "prix constatés"
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 4,
+      "params": {
+       "recherche": "bubble tea tapioca pearls",
+       "legende": "Les perles de tapioca",
+       "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/bubble-tea-tapioca-pearls.jpg",
+       "credit": "Photo : Battlesnake1, CC0"
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 6,
+      "params": {
+       "titre": "Bubble tea moyen",
+       "prix": "4,80 €",
+       "source": "prix affiché à Paris (Time Out)",
+       "lieu": "Paris"
+      }
+     },
+     {
+      "type": "anneau",
+      "phrase": 7,
+      "params": {
+       "valeur": 70,
+       "repere": 100,
+       "centre": "70 %",
+       "etiquette": "de marge par verre, moyenne annoncée"
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 8,
+      "params": {
+       "valeur": 134,
+       "suffixe": " €",
+       "etiquette": "de gain par jour, estimation",
+       "sous": "40 verres à 3,36 € de reste"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 10,
+      "params": {
+       "question": "Quels parfums sur ta carte ?",
+       "pistes": [
+        "Fruit",
+        "Thé",
+        "Taro"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 8,
+     "accroche": "Le bubble tea : trois euros trente-six de reste par verre"
+    }
+   },
+   {
+    "titre": "Business 6 : la laverie libre-service",
+    "phrases": [
+     "Sixième business : la laverie libre-service, la boutique où les machines travaillent seules.",
+     "Un cycle de lavage rapporte en moyenne de trois à sept euros, selon la taille de la machine.",
+     "Dans une laverie de Paris, une machine de sept kilos facture trois euros cinquante à quatre euros.",
+     "Selon un guide du secteur, ça pèse sept cent vingt-six millions d'euros, avec plus de quatre mille cinq cents laveries.",
+     "Selon un autre guide, le chiffre d'affaires moyen est de trente-huit mille euros par laverie.",
+     "Ça fait environ cent quatre euros par jour.",
+     "La marge nette du secteur tourne autour de vingt-cinq à trente-cinq pour cent.",
+     "À trente pour cent, il te reste environ onze mille quatre cents euros par an, soit trente et un euros par jour.",
+     "Les bonnes adresses montent bien plus haut : jusqu'à cent cinquante mille euros de ventes par an.",
+     "Le ticket d'entrée : de cinquante mille à cent cinquante mille euros, machines comprises.",
+     "L'outil : des machines pro, une borne de paiement et un local près de logements trop petits pour une machine.",
+     "Première action aujourd'hui : compte les laveries autour d'une rue qui te plaît, et regarde laquelle est toujours pleine.",
+     "Le piège : une laverie sans clients de passage reste vide, donc regarde le passage avant de choisir ton local.",
+     "Et le dernier ronronne."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 6,
+       "titre": "Laverie libre-service",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "50 000 €"
+        },
+        {
+         "label": "Temps par jour",
+         "valeur": "2 h"
+        },
+        {
+         "label": "Gain par jour",
+         "valeur": "31 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 2,
+      "params": {
+       "valeur": 7,
+       "prefixe": "3 à ",
+       "suffixe": " €",
+       "etiquette": "par cycle de lavage, en moyenne"
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 3,
+      "params": {
+       "titre": "Lavage 7 kg",
+       "prix": "3,50 €",
+       "source": "tarif relevé dans une laverie de Paris (Pages Jaunes)",
+       "lieu": "Paris"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 4,
+      "params": {
+       "titre": "LE SECTEUR EN FRANCE",
+       "items": [
+        {
+         "texte": "Chiffre d'affaires",
+         "valeur": "726 M€"
+        },
+        {
+         "texte": "Laveries",
+         "valeur": "4 500"
+        },
+        {
+         "texte": "CA moyen par laverie",
+         "valeur": "38 000 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "clip",
+      "phrase": 6,
+      "params": {
+       "recherche": "laundromat washing machines",
+       "legende": "Une laverie libre-service",
+       "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/laundromat-washing-machines.webm",
+       "credit": "Vidéo : Boot Hill, Wikimedia Commons"
+      }
+     },
+     {
+      "type": "anneau",
+      "phrase": 7,
+      "params": {
+       "valeur": 30,
+       "repere": 100,
+       "centre": "25–35 %",
+       "etiquette": "de marge nette selon un guide"
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 8,
+      "params": {
+       "valeur": 31,
+       "suffixe": " €",
+       "etiquette": "de gain par jour, estimation",
+       "sous": "38 000 € × 30 % ÷ 365 jours"
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 10,
+      "params": {
+       "titre": "TICKET D'ENTRÉE ET VENTES MAXI",
+       "barres": [
+        {
+         "label": "Ouverture min.",
+         "valeur": 50000
+        },
+        {
+         "label": "Ouverture max.",
+         "valeur": 150000
+        },
+        {
+         "label": "Ventes an max.",
+         "valeur": 150000,
+         "accent": true
+        }
+       ],
+       "badge": "€"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 12,
+      "params": {
+       "question": "Quelle rue pour ta laverie ?",
+       "pistes": [
+        "Étudiants",
+        "Gare",
+        "Marché"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 8,
+     "accroche": "La laverie libre-service : ce qu'il reste par jour"
+    }
+   },
+   {
+    "titre": "Business 7 : le café à chats",
+    "phrases": [
+     "Septième business : le café à chats, où les clients caressent des chats en buvant un café.",
+     "À Paris, le Café des Chats a ouvert une deuxième adresse à Bastille.",
+     "Un autre café à chats s'est ouvert dans le treizième arrondissement en août deux mille vingt-cinq.",
+     "Au Café des Chats, une boisson démarre à trois euros cinquante.",
+     "Le week-end, un pass Ronron de cinq euros s'ajoute par personne.",
+     "Le ticket d'entrée est lourd : de soixante mille à cent cinquante mille euros.",
+     "Rien que l'aménagement, les meubles et les parcours pour chats, coûte de trente mille à quatre-vingt mille euros.",
+     "Calcul : un pass de cinq euros et une boisson à trois euros cinquante, ça fait huit euros cinquante par client.",
+     "Cinquante clients par jour, ça fait quatre cent vingt-cinq euros de ventes par jour.",
+     "Sur vingt-six jours, ça fait onze mille cinquante euros de ventes par mois.",
+     "Avec ça, tu paies le loyer, les croquettes et les boissons : le reste, c'est ton gain.",
+     "L'outil : un lieu, des chats qui cherchent une famille et une cuisine bien séparée.",
+     "Première action aujourd'hui : va dans un café à chats et compte les clients pendant une heure.",
+     "Le piège : le premier café à chats de Paris a fermé, donc commence par un petit lieu.",
+     "Voilà le tour complet."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 7,
+       "titre": "Café à chats",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "60 000 €"
+        },
+        {
+         "label": "Temps par jour",
+         "valeur": "7 h"
+        },
+        {
+         "label": "Ventes par jour",
+         "valeur": "425 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 2,
+      "params": {
+       "recherche": "cat cafe interior",
+       "legende": "Un café à chats",
+       "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/cat-cafe-interior.jpg",
+       "credit": "Photo : Santiago Rusiñol i Prats, Public domain"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 4,
+      "params": {
+       "titre": "CAFÉ DES CHATS, PARIS",
+       "items": [
+        {
+         "texte": "Boisson dès",
+         "valeur": "3,50 €"
+        },
+        {
+         "texte": "Pass Ronron week-end",
+         "valeur": "5 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 5,
+      "params": {
+       "titre": "Pass Ronron, week-end",
+       "prix": "5 €",
+       "source": "tarif du Café des Chats, Paris (Paris Friendly)",
+       "lieu": "Paris"
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 6,
+      "params": {
+       "titre": "TICKET D'ENTRÉE",
+       "barres": [
+        {
+         "label": "Minimum",
+         "valeur": 60000
+        },
+        {
+         "label": "Maximum",
+         "valeur": 150000,
+         "accent": true
+        }
+       ],
+       "badge": "€"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 8,
+      "params": {
+       "titre": "CALCUL PAR CLIENT",
+       "items": [
+        {
+         "texte": "Pass",
+         "valeur": "5 €"
+        },
+        {
+         "texte": "Boisson",
+         "valeur": "3,50 €"
+        },
+        {
+         "texte": "Total",
+         "valeur": "8,50 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 9,
+      "params": {
+       "valeur": 425,
+       "suffixe": " €",
+       "etiquette": "de ventes par jour, estimation",
+       "sous": "50 clients à 8,50 €"
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 12,
+      "params": {
+       "recherche": "cat cafe cats",
+       "legende": "Des chats en liberté",
+       "fichier": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven/visuels/cat-cafe-cats.jpg",
+       "credit": "Photo : Petar Milošević, CC BY-SA 4.0"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 13,
+      "params": {
+       "question": "Un café à chats près de chez toi ?",
+       "pistes": [
+        "Visite",
+        "Compte",
+        "Note"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 9,
+     "accroche": "Un café à chats : le calcul des ventes par jour"
+    }
+   },
+   {
+    "titre": "Lequel lancer en premier",
+    "phrases": [
+     "Récap : un poisson, une capsule, une boule de riz, un latte vert, un thé à perles, une machine à laver et un chat.",
+     "Petit budget ? Prends le taiyaki ou la machine à capsules : moins de quatre cents euros chacun.",
+     "Tu aimes cuisiner ? L'onigiri et le matcha se vendent sur une petite table de marché.",
+     "Tu as un vrai budget ? La laverie travaille toute seule, et le café à chats fait venir la foule.",
+     "Dans tous les cas, refais le calcul avec les prix de ta ville avant d'acheter quoi que ce soit.",
+     "Dis-moi en commentaire le business que tu copies en premier.",
+     "Abonne-toi, la prochaine liste arrive bientôt."
+    ],
+    "scenes": [
+     {
+      "type": "liste",
+      "phrase": 1,
+      "params": {
+       "titre": "LE RÉCAP",
+       "items": [
+        {
+         "texte": "Taiyaki"
+        },
+        {
+         "texte": "Capsules"
+        },
+        {
+         "texte": "Onigiri"
+        },
+        {
+         "texte": "Matcha"
+        },
+        {
+         "texte": "Bubble tea"
+        },
+        {
+         "texte": "Laverie"
+        },
+        {
+         "texte": "Café à chats"
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 2,
+      "params": {
+       "accents": [
+        "quatre",
+        "cents",
+        "euros"
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 6,
+      "params": {
+       "question": "Lequel tu copies en premier ?",
+       "pistes": [
+        "Poisson",
+        "Capsule",
+        "Chat"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "faits": [
+  {
+   "claim": "Selon un rapport de tendances de menus, « chinois » comme motivation de cuisine a progressé de 77,8 % en un an en France.",
+   "valeur": "77,8 %",
+   "phrase": 1,
+   "sources": [
+    "https://tastewise.io/blog/menu-trends-in-france",
+    "https://www.verdictfoodservice.com/data-insights/chinese-cuisine-price-trends-france/"
+   ],
+   "check": [
+    "77.8"
+   ],
+   "verified": [
+    "https://tastewise.io/blog/menu-trends-in-france"
+   ]
+  },
+  {
+   "claim": "Une machine professionnelle livrée avec trois moules taiyaki coûte 274,99 euros, soit moins de 300 euros.",
+   "valeur": "274,99 €",
+   "phrase": 5,
+   "sources": [
+    "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph",
+    "https://japan-avenue.com/products/taiyaki-pan"
+   ],
+   "check": [
+    "274,99"
+   ],
+   "verified": [
+    "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph"
+   ]
+  },
+  {
+   "claim": "Un taiyaki à 5,50 euros dans un stand parisien contre 180 yens (1,3 euro) au Japon : environ quatre fois plus.",
+   "valeur": "5,50 € contre 1,30 €",
+   "phrase": 6,
+   "sources": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+    "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+   ],
+   "check": [
+    "5.5"
+   ],
+   "verified": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+   ]
+  },
+  {
+   "claim": "Un taiyaki se vendait 5,50 euros chez Road Trip Paris (stand fermé depuis).",
+   "valeur": "5,50 €",
+   "phrase": 10,
+   "sources": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+    "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+   ],
+   "check": [
+    "5.5",
+    "taiyaki"
+   ],
+   "verified": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+   ]
+  },
+  {
+   "claim": "À Naniwaya, le taiyaki à emporter se vend 180 yens la pièce (1,3 euro).",
+   "valeur": "180 yens",
+   "phrase": 11,
+   "sources": [
+    "https://www.nippon.com/fr/guide-to-japan/gu900222/",
+    "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+   ],
+   "check": [
+    "180"
+   ],
+   "verified": [
+    "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+   ]
+  },
+  {
+   "claim": "5,50 euros à Paris contre 1,30 euro au Japon : environ quatre fois plus.",
+   "valeur": "×4",
+   "phrase": 12,
+   "sources": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+    "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+   ],
+   "check": [
+    "5.5"
+   ],
+   "verified": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+   ]
+  },
+  {
+   "claim": "Machine professionnelle 1,6 kW livrée avec 3 moules taiyaki : 274,99 euros.",
+   "valeur": "274,99 €",
+   "phrase": 13,
+   "sources": [
+    "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph",
+    "https://japan-avenue.com/products/taiyaki-pan"
+   ],
+   "check": [
+    "274,99",
+    "taiyaki"
+   ],
+   "verified": [
+    "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph"
+   ]
+  },
+  {
+   "claim": "Préparation de haricots azuki sucrés Imuraya, 1 kg : 14,80 euros.",
+   "valeur": "14,80 €/kg",
+   "phrase": 14,
+   "sources": [
+    "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees",
+    "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+   ],
+   "check": [
+    "14,80"
+   ],
+   "verified": [
+    "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees"
+   ]
+  },
+  {
+   "claim": "35 g de garniture à 14,80 euros le kilo = 0,52 euro.",
+   "valeur": "0,52 €",
+   "phrase": 15,
+   "sources": [
+    "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees",
+    "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+   ],
+   "check": [
+    "14,80"
+   ],
+   "verified": [
+    "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees"
+   ]
+  },
+  {
+   "claim": "Hypothèse de revient : 0,52 euro de garniture + pâte = environ 0,70 euro.",
+   "valeur": "0,70 €",
+   "phrase": 16,
+   "sources": [
+    "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees",
+    "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+   ],
+   "check": [
+    "14,80"
+   ],
+   "verified": [
+    "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees"
+   ]
+  },
+  {
+   "claim": "Vendu 5 euros (prix constaté à Paris : 5,50 euros), il reste 4,30 euros.",
+   "valeur": "4,30 €",
+   "phrase": 17,
+   "sources": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+    "https://www.nippon.com/fr/guide-to-japan/gu900222/"
+   ],
+   "check": [
+    "5.5"
+   ],
+   "verified": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+   ]
+  },
+  {
+   "claim": "40 poissons × 4,30 euros de reste = 172 euros par jour (hypothèse de 40 ventes).",
+   "valeur": "172 €",
+   "phrase": 18,
+   "sources": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed",
+    "https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees"
+   ],
+   "check": [
+    "5.5"
+   ],
+   "verified": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed"
+   ]
+  },
+  {
+   "claim": "Le marché mondial des jouets en capsules a doublé depuis 2020 et représente 2 milliards d'euros.",
+   "valeur": "2 milliards €",
+   "phrase": 23,
+   "sources": [
+    "https://www.cbnews.fr/node/99992",
+    "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+   ],
+   "check": [
+    "2 milliards"
+   ],
+   "verified": [
+    "https://www.cbnews.fr/node/99992"
+   ]
+  },
+  {
+   "claim": "Une boutique de 300 machines à capsules japonaises ouvre à Paris.",
+   "valeur": "300 machines",
+   "phrase": 24,
+   "sources": [
+    "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris",
+    "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+   ],
+   "check": [
+    "300"
+   ],
+   "verified": [
+    "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris",
+    "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+   ]
+  },
+  {
+   "claim": "Chaque capsule se vend 5 à 6 euros dans la boutique parisienne.",
+   "valeur": "5 à 6 €",
+   "phrase": 25,
+   "sources": [
+    "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris",
+    "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+   ],
+   "check": [
+    "€5",
+    "€6"
+   ],
+   "verified": [
+    "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+   ]
+  },
+  {
+   "claim": "Le chiffre d'affaires attendu de la boutique gashapon de Paris est de 1,5 million d'euros par an.",
+   "valeur": "1,5 million €",
+   "phrase": 26,
+   "sources": [
+    "https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet",
+    "https://www.cbnews.fr/node/99992"
+   ],
+   "check": [
+    "1,5 million"
+   ],
+   "verified": [
+    "https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet",
+    "https://www.cbnews.fr/node/99992"
+   ]
+  },
+  {
+   "claim": "1,5 million d'euros ÷ 300 machines ÷ 365 jours ≈ 13,70 euros par machine et par jour.",
+   "valeur": "13,70 €",
+   "phrase": 27,
+   "sources": [
+    "https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet",
+    "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+   ],
+   "check": [
+    "1,5 million"
+   ],
+   "verified": [
+    "https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet"
+   ]
+  },
+  {
+   "claim": "Distributeur de capsules vendu avec partie haute et basse : 360 euros.",
+   "valeur": "360 €",
+   "phrase": 28,
+   "sources": [
+    "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html",
+    "https://french.alibaba.com/f/distributeur-capsule.html"
+   ],
+   "check": [
+    "360"
+   ],
+   "verified": [
+    "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html",
+    "https://french.alibaba.com/f/distributeur-capsule.html"
+   ]
+  },
+  {
+   "claim": "Selon les acteurs du secteur en France, les machines gashapon peuvent espérer une marge nette supérieure à 60 %.",
+   "valeur": "60 %",
+   "phrase": 29,
+   "sources": [
+    "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/",
+    "https://www.cbnews.fr/node/99992"
+   ],
+   "check": [
+    "60%"
+   ],
+   "verified": [
+    "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/"
+   ]
+  },
+  {
+   "claim": "10 capsules à 5 euros = 50 euros de ventes par jour (hypothèse de 10 ventes).",
+   "valeur": "50 €",
+   "phrase": 30,
+   "sources": [
+    "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris",
+    "https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/"
+   ],
+   "check": [
+    "€5"
+   ],
+   "verified": [
+    "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+   ]
+  },
+  {
+   "claim": "60 % de 50 euros = 30 euros par jour.",
+   "valeur": "30 €",
+   "phrase": 31,
+   "sources": [
+    "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/",
+    "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+   ],
+   "check": [
+    "60%"
+   ],
+   "verified": [
+    "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/",
+    "https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris"
+   ]
+  },
+  {
+   "claim": "360 euros ÷ 30 euros par jour = 12 jours.",
+   "valeur": "12 jours",
+   "phrase": 32,
+   "sources": [
+    "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html",
+    "https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/"
+   ],
+   "check": [
+    "360"
+   ],
+   "verified": [
+    "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html"
+   ]
+  },
+  {
+   "claim": "En Europe, ces onigiri ne sont vendus qu'à Paris (L'Express Franchise).",
+   "valeur": "Paris seulement",
+   "phrase": 38,
+   "sources": [
+    "https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/",
+    "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+   ],
+   "check": [
+    "onigiri",
+    "Paris"
+   ],
+   "verified": [
+    "https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/",
+    "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+   ]
+  },
+  {
+   "claim": "Hausse de 30 % du chiffre d'affaires d'Omusubi Gonbei entre les exercices clos en mars 2023 et mars 2025.",
+   "valeur": "30 %",
+   "phrase": 39,
+   "sources": [
+    "https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/",
+    "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+   ],
+   "check": [
+    "30%"
+   ],
+   "verified": [
+    "https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/"
+   ]
+  },
+  {
+   "claim": "Chez Omusubi Gonbei, les omusubi vont du plus simple (1,10 euro) au plus garni (4,30 euros).",
+   "valeur": "1,10 à 4,30 €",
+   "phrase": 40,
+   "sources": [
+    "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html",
+    "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226"
+   ],
+   "check": [
+    "1,10",
+    "4,30"
+   ],
+   "verified": [
+    "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+   ]
+  },
+  {
+   "claim": "Un comptoir à onigiri de Paris propose le poulet mayo à 2,80 euros et le saumon à 3,10 euros.",
+   "valeur": "2,80 € et 3,10 €",
+   "phrase": 41,
+   "sources": [
+    "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226",
+    "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+   ],
+   "check": [
+    "2,80",
+    "3,10"
+   ],
+   "verified": [
+    "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226"
+   ]
+  },
+  {
+   "claim": "Riz à sushi Okura Minori, 5 kg : 27,20 euros, soit 5,44 euros le kilo.",
+   "valeur": "5,44 €/kg",
+   "phrase": 42,
+   "sources": [
+    "https://kioko.fr/en/products/okura-riz-sushi-minori-l",
+    "https://shop.kioko.fr/en/products/okura-riz-sushi-minori-l"
+   ],
+   "check": [
+    "5,44"
+   ],
+   "verified": [
+    "https://kioko.fr/en/products/okura-riz-sushi-minori-l",
+    "https://shop.kioko.fr/en/products/okura-riz-sushi-minori-l"
+   ]
+  },
+  {
+   "claim": "50 g de riz × 5,44 euros le kilo ≈ 0,27 euro.",
+   "valeur": "0,27 €",
+   "phrase": 43,
+   "sources": [
+    "https://kioko.fr/en/products/okura-riz-sushi-minori-l",
+    "https://shop.kioko.fr/en/products/okura-riz-sushi-minori-l"
+   ],
+   "check": [
+    "5,44"
+   ],
+   "verified": [
+    "https://kioko.fr/en/products/okura-riz-sushi-minori-l",
+    "https://shop.kioko.fr/en/products/okura-riz-sushi-minori-l"
+   ]
+  },
+  {
+   "claim": "Vendu 3 euros (prix constatés de 2,80 à 3,10 euros), avec 1 euro de revient : 2 euros restent.",
+   "valeur": "2 €",
+   "phrase": 45,
+   "sources": [
+    "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226",
+    "https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html"
+   ],
+   "check": [
+    "2,80",
+    "3,10"
+   ],
+   "verified": [
+    "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226"
+   ]
+  },
+  {
+   "claim": "40 onigiri × 2 euros de reste = 80 euros par jour (hypothèse de 40 ventes).",
+   "valeur": "80 €",
+   "phrase": 46,
+   "sources": [
+    "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226",
+    "https://kioko.fr/en/products/okura-riz-sushi-minori-l"
+   ],
+   "check": [
+    "2,80",
+    "3,10"
+   ],
+   "verified": [
+    "https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226"
+   ]
+  },
+  {
+   "claim": "Le Japon produisait 1 471 tonnes de matcha en 2010 contre 4 176 tonnes en 2023.",
+   "valeur": "1 471 tonnes",
+   "phrase": 52,
+   "sources": [
+    "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738",
+    "https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/"
+   ],
+   "check": [
+    "1471"
+   ],
+   "verified": [
+    "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738"
+   ]
+  },
+  {
+   "claim": "Le Japon produisait 4 176 tonnes de matcha en 2023.",
+   "valeur": "4 176 tonnes",
+   "phrase": 53,
+   "sources": [
+    "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738",
+    "https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/"
+   ],
+   "check": [
+    "4176"
+   ],
+   "verified": [
+    "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738"
+   ]
+  },
+  {
+   "claim": "Les exportations de matcha ont bondi de 33 % en 2023 par rapport à l'année précédente.",
+   "valeur": "33 %",
+   "phrase": 54,
+   "sources": [
+    "https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/",
+    "https://lessentieldeleco.fr/2912-matcha-japonais/"
+   ],
+   "check": [
+    "33%"
+   ],
+   "verified": [
+    "https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/"
+   ]
+  },
+  {
+   "claim": "Au Aki Café à Paris, le matcha azuki (latte matcha, azuki, chantilly) est affiché 6,90 euros.",
+   "valeur": "6,90 €",
+   "phrase": 55,
+   "sources": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris",
+    "https://www.timeout.com/paris/en/restaurants/umami-matcha-cafe"
+   ],
+   "check": [
+    "6.9"
+   ],
+   "verified": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris"
+   ]
+  },
+  {
+   "claim": "Matcha wholesale 1 kg pour cafés et foodservice : 149,95 euros.",
+   "valeur": "149,95 €",
+   "phrase": 56,
+   "sources": [
+    "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder",
+    "https://ileauxepices.com/pro/thes-verts/649-the-matcha-bio.html"
+   ],
+   "check": [
+    "149,95"
+   ],
+   "verified": [
+    "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder"
+   ]
+  },
+  {
+   "claim": "2 g de poudre × 149,95 euros le kilo ≈ 0,30 euro.",
+   "valeur": "0,30 €",
+   "phrase": 57,
+   "sources": [
+    "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder",
+    "https://ileauxepices.com/pro/thes-verts/649-the-matcha-bio.html"
+   ],
+   "check": [
+    "149,95"
+   ],
+   "verified": [
+    "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder"
+   ]
+  },
+  {
+   "claim": "Vendu 6,90 euros avec 1 euro de revient : 5,90 euros restent.",
+   "valeur": "5,90 €",
+   "phrase": 59,
+   "sources": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris",
+    "https://www.timeout.com/paris/en/restaurants/umami-matcha-cafe"
+   ],
+   "check": [
+    "6.9"
+   ],
+   "verified": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris"
+   ]
+  },
+  {
+   "claim": "30 lattes × 5,90 euros = 177 euros par jour (hypothèse de 30 ventes).",
+   "valeur": "177 €",
+   "phrase": 60,
+   "sources": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris",
+    "https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder"
+   ],
+   "check": [
+    "6.9"
+   ],
+   "verified": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris"
+   ]
+  },
+  {
+   "claim": "Le producteur Ippodo a limité les commandes à un seul produit par commande en décembre 2024.",
+   "valeur": "Rationnement",
+   "phrase": 63,
+   "sources": [
+    "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738",
+    "https://lessentieldeleco.fr/2912-matcha-japonais/"
+   ],
+   "check": [
+    "Ippodo"
+   ],
+   "verified": [
+    "https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738"
+   ]
+  },
+  {
+   "claim": "Le marché du bubble tea en France est estimé entre 85 et 100 millions d'euros (données 2025).",
+   "valeur": "85 à 100 millions €",
+   "phrase": 66,
+   "sources": [
+    "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/",
+    "https://propulsebyca.fr/idees-business/bubble-tea"
+   ],
+   "check": [
+    "85 et 100"
+   ],
+   "verified": [
+    "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+   ]
+  },
+  {
+   "claim": "Bubbolitas (Paris) : petit 3,80 euros, moyen 4,80 euros, grand 5,50 euros.",
+   "valeur": "3,80 / 4,80 / 5,50 €",
+   "phrase": 67,
+   "sources": [
+    "https://www.timeout.fr/paris/restaurants/bubbolitas",
+    "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+   ],
+   "check": [
+    "3,80",
+    "4,80",
+    "5,50"
+   ],
+   "verified": [
+    "https://www.timeout.fr/paris/restaurants/bubbolitas"
+   ]
+  },
+  {
+   "claim": "Les boutiques peuvent afficher des marges brutes comprises entre 65 % et 83 %.",
+   "valeur": "65 à 83 %",
+   "phrase": 68,
+   "sources": [
+    "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/",
+    "https://propulsebyca.fr/idees-business/bubble-tea"
+   ],
+   "check": [
+    "65%",
+    "83%"
+   ],
+   "verified": [
+    "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+   ]
+  },
+  {
+   "claim": "Moyenne des tarifs d'une machine à bubble tea professionnelle : 700 à 5 000 euros (novembre 2026).",
+   "valeur": "700 à 5 000 €",
+   "phrase": 69,
+   "sources": [
+    "https://conseils.hellopro.fr/combien-coute-une-machine-a-bubble-tea-professionnelle-3738.html",
+    "https://propulsebyca.fr/idees-business/bubble-tea"
+   ],
+   "check": [
+    "700",
+    "5000"
+   ],
+   "verified": [
+    "https://conseils.hellopro.fr/combien-coute-une-machine-a-bubble-tea-professionnelle-3738.html",
+    "https://propulsebyca.fr/idees-business/bubble-tea"
+   ]
+  },
+  {
+   "claim": "Un bubble tea moyen se vend 4,80 euros à Paris.",
+   "valeur": "4,80 €",
+   "phrase": 70,
+   "sources": [
+    "https://www.timeout.fr/paris/restaurants/bubbolitas",
+    "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+   ],
+   "check": [
+    "4,80"
+   ],
+   "verified": [
+    "https://www.timeout.fr/paris/restaurants/bubbolitas"
+   ]
+  },
+  {
+   "claim": "Marge moyenne d'environ 70 % : 4,80 × 0,70 = 3,36 euros par verre.",
+   "valeur": "3,36 €",
+   "phrase": 71,
+   "sources": [
+    "https://propulsebyca.fr/idees-business/bubble-tea",
+    "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+   ],
+   "check": [
+    "70%"
+   ],
+   "verified": [
+    "https://propulsebyca.fr/idees-business/bubble-tea",
+    "https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/"
+   ]
+  },
+  {
+   "claim": "40 verres × 3,36 euros = 134 euros par jour (hypothèse de 40 ventes).",
+   "valeur": "134 €",
+   "phrase": 72,
+   "sources": [
+    "https://propulsebyca.fr/idees-business/bubble-tea",
+    "https://www.timeout.fr/paris/restaurants/bubbolitas"
+   ],
+   "check": [
+    "70%"
+   ],
+   "verified": [
+    "https://propulsebyca.fr/idees-business/bubble-tea"
+   ]
+  },
+  {
+   "claim": "Chaque cycle de lavage rapporte en moyenne 3 à 7 euros, chaque cycle de séchage 2 à 4 euros.",
+   "valeur": "3 à 7 €",
+   "phrase": 78,
+   "sources": [
+    "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/",
+    "https://www.pagesjaunes.fr/pros/56857554"
+   ],
+   "check": [
+    "3 à 7"
+   ],
+   "verified": [
+    "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+   ]
+  },
+  {
+   "claim": "Le tarif d'une machine Miele de 7 kg se situe entre 3,50 euros TTC et 4 euros TTC pour un cycle de lavage.",
+   "valeur": "3,50 à 4 €",
+   "phrase": 79,
+   "sources": [
+    "https://www.pagesjaunes.fr/pros/56857554",
+    "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+   ],
+   "check": [
+    "3,50"
+   ],
+   "verified": [
+    "https://www.pagesjaunes.fr/pros/56857554"
+   ]
+  },
+  {
+   "claim": "La laverie automatique en France représente environ 726 millions d'euros de chiffre d'affaires et plus de 4 500 établissements.",
+   "valeur": "726 M€",
+   "phrase": 80,
+   "sources": [
+    "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/",
+    "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+   ],
+   "check": [
+    "726",
+    "4500"
+   ],
+   "verified": [
+    "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+   ]
+  },
+  {
+   "claim": "Chiffre d'affaires moyen national de 38 000 euros par laverie.",
+   "valeur": "38 000 €",
+   "phrase": 81,
+   "sources": [
+    "https://www.shine.fr/blog/ouvrir-laverie-automatique/",
+    "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/"
+   ],
+   "check": [
+    "38000"
+   ],
+   "verified": [
+    "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+   ]
+  },
+  {
+   "claim": "38 000 euros ÷ 365 jours ≈ 104 euros par jour.",
+   "valeur": "104 €",
+   "phrase": 82,
+   "sources": [
+    "https://www.shine.fr/blog/ouvrir-laverie-automatique/",
+    "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/"
+   ],
+   "check": [
+    "38000"
+   ],
+   "verified": [
+    "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+   ]
+  },
+  {
+   "claim": "La marge nette du secteur se situe entre 25 et 35 % du chiffre d'affaires hors taxes.",
+   "valeur": "25 à 35 %",
+   "phrase": 83,
+   "sources": [
+    "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/",
+    "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/"
+   ],
+   "check": [
+    "35%"
+   ],
+   "verified": [
+    "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+   ]
+  },
+  {
+   "claim": "38 000 euros × 30 % = 11 400 euros par an, soit environ 31 euros par jour.",
+   "valeur": "31 €",
+   "phrase": 84,
+   "sources": [
+    "https://www.shine.fr/blog/ouvrir-laverie-automatique/",
+    "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+   ],
+   "check": [
+    "38000"
+   ],
+   "verified": [
+    "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+   ]
+  },
+  {
+   "claim": "En moyenne, une laverie génère entre 50 000 et 150 000 euros de chiffre d'affaires par an.",
+   "valeur": "150 000 €",
+   "phrase": 85,
+   "sources": [
+    "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/",
+    "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+   ],
+   "check": [
+    "150000"
+   ],
+   "verified": [
+    "https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/",
+    "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+   ]
+  },
+  {
+   "claim": "Budget total pour ouvrir une laverie automatique : entre 50 000 et 150 000 euros.",
+   "valeur": "50 000 à 150 000 €",
+   "phrase": 86,
+   "sources": [
+    "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/",
+    "https://www.shine.fr/blog/ouvrir-laverie-automatique/"
+   ],
+   "check": [
+    "50000",
+    "150000"
+   ],
+   "verified": [
+    "https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/"
+   ]
+  },
+  {
+   "claim": "Après l'ouverture du premier Café des Chats, la marque ouvre un second café à Bastille.",
+   "valeur": "2 adresses",
+   "phrase": 92,
+   "sources": [
+    "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille",
+    "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+   ],
+   "check": [
+    "second"
+   ],
+   "verified": [
+    "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille",
+    "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+   ]
+  },
+  {
+   "claim": "Un café à chats a ouvert ses portes en août 2025 dans le 13e arrondissement de Paris (Chat-Rivari Café).",
+   "valeur": "août 2025",
+   "phrase": 93,
+   "sources": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/331596-cat-rivari-cafe-vegan-cozy-adopt-cat-paris-13",
+    "https://unidivers.fr/paris-bars-a-chats/"
+   ],
+   "check": [
+    "august 2025"
+   ],
+   "verified": [
+    "https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/331596-cat-rivari-cafe-vegan-cozy-adopt-cat-paris-13"
+   ]
+  },
+  {
+   "claim": "Au Café des Chats, les boissons démarrent à 3,5 euros.",
+   "valeur": "3,50 €",
+   "phrase": 94,
+   "sources": [
+    "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html",
+    "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille"
+   ],
+   "check": [
+    "3,5"
+   ],
+   "verified": [
+    "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+   ]
+  },
+  {
+   "claim": "Pass Ronron de 5 euros par personne pour les week-ends, jours fériés et vacances.",
+   "valeur": "5 €",
+   "phrase": 95,
+   "sources": [
+    "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html",
+    "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille"
+   ],
+   "check": [
+    "ronron"
+   ],
+   "verified": [
+    "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+   ]
+  },
+  {
+   "claim": "Investissement de départ d'un café à chats : 60 000 à 150 000 euros selon les sources.",
+   "valeur": "60 000 à 150 000 €",
+   "phrase": 96,
+   "sources": [
+    "https://businessornot.fr/creation-entreprise/bar-a-chat-business-or-not-ce-que-revele-la-faillite-du-premier-cafe-a-chats-de-paris",
+    "https://comdewouf.fr/ouvrir-un-bar-a-chat-budget-formation-conditions"
+   ],
+   "check": [
+    "60000",
+    "150000"
+   ],
+   "verified": [
+    "https://businessornot.fr/creation-entreprise/bar-a-chat-business-or-not-ce-que-revele-la-faillite-du-premier-cafe-a-chats-de-paris"
+   ]
+  },
+  {
+   "claim": "Aménagement et décoration d'un café à chats : 30 000 à 80 000 euros.",
+   "valeur": "30 000 à 80 000 €",
+   "phrase": 97,
+   "sources": [
+    "https://comdewouf.fr/ouvrir-un-bar-a-chat-budget-formation-conditions",
+    "https://businessornot.fr/creation-entreprise/bar-a-chat-business-or-not-ce-que-revele-la-faillite-du-premier-cafe-a-chats-de-paris"
+   ],
+   "check": [
+    "30000",
+    "80000"
+   ],
+   "verified": [
+    "https://comdewouf.fr/ouvrir-un-bar-a-chat-budget-formation-conditions"
+   ]
+  },
+  {
+   "claim": "Pass de 5 euros + boisson à 3,50 euros = 8,50 euros par client.",
+   "valeur": "8,50 €",
+   "phrase": 98,
+   "sources": [
+    "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html",
+    "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille"
+   ],
+   "check": [
+    "3,5",
+    "ronron"
+   ],
+   "verified": [
+    "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+   ]
+  },
+  {
+   "claim": "50 clients × 8,50 euros = 425 euros de ventes par jour (hypothèse de 50 clients).",
+   "valeur": "425 €",
+   "phrase": 99,
+   "sources": [
+    "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html",
+    "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille"
+   ],
+   "check": [
+    "3,5",
+    "ronron"
+   ],
+   "verified": [
+    "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+   ]
+  },
+  {
+   "claim": "425 euros × 26 jours = 11 050 euros de ventes par mois.",
+   "valeur": "11 050 €",
+   "phrase": 100,
+   "sources": [
+    "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html",
+    "https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille"
+   ],
+   "check": [
+    "3,5",
+    "ronron"
+   ],
+   "verified": [
+    "https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html"
+   ]
+  },
+  {
+   "claim": "Le premier café à chats de France, à Paris, a fermé ses portes en 2016.",
+   "valeur": "fermé",
+   "phrase": 104,
+   "sources": [
+    "https://www.sortiraparis.com/en/where-to-eat-in-paris/bars-cafes/articles/62794-cafe-des-chats-the-first-french-cat-bar-in-paris-closed",
+    "https://businessornot.fr/creation-entreprise/bar-a-chat-business-or-not-ce-que-revele-la-faillite-du-premier-cafe-a-chats-de-paris"
+   ],
+   "check": [
+    "closed"
+   ],
+   "verified": [
+    "https://www.sortiraparis.com/en/where-to-eat-in-paris/bars-cafes/articles/62794-cafe-des-chats-the-first-french-cat-bar-in-paris-closed"
+   ]
+  },
+  {
+   "claim": "Machine taiyaki à 274,99 euros et machine à capsules à 360 euros : moins de 400 euros chacune.",
+   "valeur": "< 400 €",
+   "phrase": 107,
+   "sources": [
+    "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph",
+    "https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html"
+   ],
+   "check": [
+    "274,99"
+   ],
+   "verified": [
+    "https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph"
+   ]
+  }
+ ],
+ "publication": {
+  "titre": "7 business à voler à l'Asie avant qu'ils arrivent",
+  "description": "7 business à voler à l'Asie avant qu'ils arrivent en France : taiyaki, machines à capsules, onigiri, latte au matcha, bubble tea, laverie libre-service et café à chats.\nPour chaque idée : ce que ça coûte à démarrer, le prix de vente constaté, un exemple chiffré (achat, vente, reste) et le gain par jour calculé avec des hypothèses annoncées dans la vidéo.\n\nLe point de départ : selon un rapport de tendances de menus, l'intérêt pour la cuisine chinoise en France a progressé de 77,8 % en un an. Les gains sont des estimations calculées à partir des prix relevés ci-dessous (prix et chiffres relevés le 4 novembre 2026).\n\nEt toi, lequel tu copies en premier ? Dis-le en commentaire.\n\nSOURCES\nTendance : https://tastewise.io/blog/menu-trends-in-france\nTaiyaki :\n- https://sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/262505-road-trip-paris-the-street-food-spot-for-gourmet-hot-dogs-and-taiyaki-waffles-permanently-closed\n- https://www.nippon.com/fr/guide-to-japan/gu900222/\n- https://www.ggmgastro.com/en-it-eur/professional-tartlet-machine-1-6-kw-incl-tartlet-mould-3x-taiyaki-fish-tmtph\n- https://shop.kioko.fr/en/products/imuraya-preparation-graines-de-haricots-rouges-sucrees\nMachines à capsules :\n- https://sortiraparis.com/en/what-to-do-in-paris/shopping-fashion/articles/343364-gashapon-a-pop-up-shop-with-300-capsule-machines-japanese-figurines-and-gadgets-opens-in-paris\n- https://www.pariszigzag.fr/paris-au-quotidien/magasin-gashapon-paris/\n- https://www.lagazettefrance.fr/article/bandai-ouvre-sa-premiere-boutique-a-paris-en-partenariat-avec-king-jouet\n- https://www.cbnews.fr/node/99992\n- https://www.journaldugeek.com/2026/04/09/gashapon-on-a-teste-la-premiere-boutique-officielle-de-paris-et-on-a-depense-beaucoup-trop-dargent/\n- https://www.destockplus.com/acheter/c-943366-distributeur-automatiques-de-jouet.html\nOnigiri :\n- https://lexpress-franchise.com/actualites/omusubi-gonbei-onigiri-paris/\n- https://www.paris-friendly.fr/omusubi-onigiri-gonbei-paris.html\n- https://www.timeout.fr/paris/actualites/ou-manger-japonais-sans-se-ruiner-040226\n- https://kioko.fr/en/products/okura-riz-sushi-minori-l\nLatte au matcha :\n- https://www.linfodurable.fr/societe/matcha-un-engouement-fou-qui-fait-redouter-une-penurie-50738\n- https://www.journaldugeek.com/2025/05/07/pourquoi-le-matcha-va-devenir-de-plus-en-plus-difficile-a-trouver/\n- https://sortiraparis.com/en/where-to-eat-in-paris/brunch-cafe-tea-time/articles/136938-aki-cafe-the-japanese-tea-room-in-paris\n- https://www.ochaandco.com/en-ie/products/matcha-wholesale-1kg-japanese-green-tea-powder\nBubble tea :\n- https://lexpress-franchise.com/articles/marche-du-bubble-tea-en-france/\n- https://www.timeout.fr/paris/restaurants/bubbolitas\n- https://propulsebyca.fr/idees-business/bubble-tea\n- https://conseils.hellopro.fr/combien-coute-une-machine-a-bubble-tea-professionnelle-3738.html\nLaverie libre-service :\n- https://www.leblogdudirigeant.com/ouvrir-laverie-automatique-budget-rentabilite/\n- https://www.shine.fr/blog/ouvrir-laverie-automatique/\n- https://finom.co/fr-fr/blog/ouvrir-laverie-automatique/\n- https://www.pagesjaunes.fr/pros/56857554\nCafé à chats :\n- https://www.paris-friendly.fr/Cafe-des-Chats-chill-restaurant-chats-neko-cafe.html\n- https://www.sortiraparis.com/en/lieux/55171-cafe-des-chats-bastille\n- https://businessornot.fr/creation-entreprise/bar-a-chat-business-or-not-ce-que-revele-la-faillite-du-premier-cafe-a-chats-de-paris\n- https://comdewouf.fr/ouvrir-un-bar-a-chat-budget-formation-conditions\n\n#business #asie #idees\n\nImages : vidéo Nesnad (CC BY 4.0, Wikimedia Commons) ; Ka23 13 (CC BY 4.0, Wikimedia Commons) ; Maria from McLean, Virginia, USA (CC BY 2.0, Wikimedia Commons) ; Andy Li (CC0, Wikimedia Commons) ; Battlesnake1 (CC0, Wikimedia Commons) ; vidéo Boot Hill (CC BY 3.0, Wikimedia Commons) ; Santiago Rusiñol i Prats (Public domain, Wikimedia Commons) ; Petar Milošević (CC BY-SA 4.0, Wikimedia Commons)",
+  "tags": [
+   "business asie",
+   "idées de business",
+   "business à copier",
+   "taiyaki",
+   "gashapon",
+   "onigiri",
+   "matcha",
+   "bubble tea",
+   "laverie libre-service",
+   "café à chats",
+   "business pas cher",
+   "entreprendre"
+  ],
+  "question_commentaires": "Lequel de ces 7 business asiatiques tu copies en premier ?",
+  "langue": "fr",
+  "contenu_ia": true
+ },
+ "mots_source": 1608,
+ "libelles": {
+  "chapitres": "Chapters",
+  "mots_cles": "Keywords",
+  "mention_ia": "Synthetic voice (AI).",
+  "video_complete": "Full video",
+  "question_defaut": "What did you think before watching this video? Tell me in the comments."
+ }
+}
