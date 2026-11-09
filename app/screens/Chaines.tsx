@@ -21,6 +21,23 @@ type Filtre = "toutes" | "actives" | "inactives" | "attention";
 const jeton = (c: ChaineVue) =>
   c.jeton === true ? { cls: "pret", texte: "Jeton connecté" } : c.jeton === false ? { cls: c.active ? "quarantaine" : "", texte: "Jeton non connecté" } : { cls: "", texte: "Jeton : état inconnu" };
 
+/** En une phrase, où en est la chaîne (pour quelqu'un qui ne connaît pas le vocabulaire technique). */
+const resume = (c: ChaineVue): string => {
+  if (c.active) return c.alertes.some((a) => a.niveau === "bad") ? "Active, mais un problème bloque : voir les alertes." : "Active : elle publie toute seule.";
+  if (!c.format_pret) return "Le contenu de cette chaîne n'est pas encore au point : rien ne peut sortir.";
+  if (c.jeton !== true) return "Le contenu est prêt. Il reste à créer la chaîne YouTube et à la connecter.";
+  return "Tout est prêt : tu peux l'activer quand tu veux.";
+};
+
+/** Ce que SEUL l'utilisateur peut faire pour cette chaîne (jamais fait par le code). */
+const aToi = (c: ChaineVue): string | null => {
+  if (c.active) return null;
+  const voix = c.format_statut?.manque.find((m) => /écouter|confirmer la voix/i.test(m));
+  if (c.format_pret && c.jeton !== true) return voix ? `${voix} · puis créer la chaîne YouTube et la connecter` : "Créer la chaîne YouTube puis la connecter (guide CONNECTER-UNE-CHAINE)";
+  if (c.format_pret) return voix ?? "Décider d'activer la chaîne (active: true dans son profil)";
+  return c.format_statut?.manque[0] ?? "Attendre la fin du format de contenu";
+};
+
 const VOIX: Record<string, string> = {
   clone: "voix clonée (référence de l'utilisateur)", integree: "voix intégrée du modèle", projet: "voix du projet",
 };
@@ -69,6 +86,7 @@ const Carte = ({ c, ouverte, basculer }: { c: ChaineVue; ouverte: boolean; bascu
         <span className="ch-name">
           <b>{c.nom}</b>
           <span className="small">{LANGUES[c.langue] ?? c.langue} · {FORMATS[c.format] ?? c.format}</span>
+          <span className="ch-resume">{resume(c)}</span>
         </span>
         <span className="ch-chips">
           <span className={`ap-chip ${c.active ? "pret" : ""}`}>{c.active ? "Active" : "Inactive"}</span>
@@ -170,6 +188,30 @@ export const Chaines = () => {
           <p className="small">{STATIQUE ? "Instantané" : "Direct depuis le PC"} · les chaînes se mettent en route par vagues (voir la feuille de route).</p>
         </div>
       </section>
+
+      {chaines.some((c) => aToi(c)) && (
+        <section className="ch-todo" aria-label="Ce que tu dois faire">
+          <h3>À faire par toi</h3>
+          <p className="small">Le code ne fait jamais ces étapes à ta place : créer une chaîne, écouter une voix, activer.</p>
+          <ul>
+            {chaines.filter((c) => aToi(c)).map((c) => (
+              <li key={c.id}><b>{c.nom}</b><span>{aToi(c)}</span></li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <details className="ch-aide">
+        <summary>Comment lire cette page ?</summary>
+        <dl>
+          <dt>Active</dt><dd>La chaîne publie toute seule. Seul toi peux l'activer.</dd>
+          <dt>En préparation</dt><dd>Des vidéos sont fabriquées à l'avance, mais rien n'est publié.</dd>
+          <dt>Inactive</dt><dd>Rien n'est fabriqué ni publié.</dd>
+          <dt>Format prêt</dt><dd>Une vidéo de test a traversé toute la chaîne de fabrication jusqu'à l'envoi sur un faux YouTube.</dd>
+          <dt>Jeton connecté</dt><dd>La chaîne YouTube est reliée au programme (sans mot de passe stocké ici).</dd>
+          <dt>Quota</dt><dd>YouTube limite à 100 envois par jour pour toutes les chaînes ensemble.</dd>
+        </dl>
+      </details>
 
       <section className="ch-quota" aria-label="Quota YouTube du jour">
         <div className="ch-quota-top">

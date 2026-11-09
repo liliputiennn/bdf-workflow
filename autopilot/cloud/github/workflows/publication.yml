@@ -2,7 +2,7 @@
 # envoie les Shorts dans la boîte de réception TikTok, nettoie le stock et met l'état à jour pour l'interface.
 # Lancement à la main au début (Actions > Publication > Run workflow, « à blanc » par défaut) ; la planification 2 fois par jour
 # se décommente quand le premier essai réel a réussi.
-# Identifiants (secrets GitHub, jamais affichés) : YT_CLIENT_SECRET, YT_TOKEN ; TikTok (facultatif) : TIKTOK_CLIENT, TIKTOK_TOKEN.
+# Identifiants (secrets GitHub, jamais affichés) : YT_CLIENT_SECRET, YT_TOKEN (chaîne française) et un YT_TOKEN_<ID> par autre chaîne (voir autopilot/cloud/SECRETS-PAR-CHAINE.md) ; TikTok (facultatif) : TIKTOK_CLIENT, TIKTOK_TOKEN.
 name: Publication
 on:
   schedule:
@@ -45,6 +45,13 @@ jobs:
         env:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_TOKEN: ${{ secrets.YT_TOKEN }}
+          # un jeton par chaîne (facultatifs : une chaîne sans secret est simplement ignorée) ; nouveau profil = une ligne de plus ici
+          YT_TOKEN_EN: ${{ secrets.YT_TOKEN_EN }}
+          YT_TOKEN_HISTOIRE: ${{ secrets.YT_TOKEN_HISTOIRE }}
+          YT_TOKEN_SOMMEIL: ${{ secrets.YT_TOKEN_SOMMEIL }}
+          YT_TOKEN_LANGUES: ${{ secrets.YT_TOKEN_LANGUES }}
+          YT_TOKEN_QUIZ: ${{ secrets.YT_TOKEN_QUIZ }}
+          YT_TOKEN_MUSIQUE_ENFANTS: ${{ secrets.YT_TOKEN_MUSIQUE_ENFANTS }}
           TIKTOK_CLIENT: ${{ secrets.TIKTOK_CLIENT }}
           TIKTOK_TOKEN: ${{ secrets.TIKTOK_TOKEN }}
         run: |
@@ -53,6 +60,7 @@ jobs:
           [ -n "$YT_TOKEN" ] && printf '%s' "$YT_TOKEN" > autopilot/secrets/token.json
           [ -n "$TIKTOK_CLIENT" ] && printf '%s' "$TIKTOK_CLIENT" > autopilot/secrets/tiktok_client.json
           [ -n "$TIKTOK_TOKEN" ] && printf '%s' "$TIKTOK_TOKEN" > autopilot/secrets/tiktok_token.json
+          python autopilot/cloud/jetons_chaines.py   # écrit token-<id>.json pour chaque chaîne dont le secret existe (n'affiche aucune valeur)
           echo "YouTube : $( [ -f autopilot/secrets/token.json ] && echo identifiants présents || echo identifiants ABSENTS )"
           echo "TikTok  : $( [ -f autopilot/secrets/tiktok_token.json ] && echo identifiants présents || echo non configuré )"
       - name: Récupération des vidéos dans le stock

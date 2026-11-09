@@ -1,0 +1,912 @@
+{
+ "id": "histoire-shackleton-et-l-endurance-survivre-a-la",
+ "titre": "28 hommes, un bateau écrasé par la glace : tous sont revenus",
+ "theme": "parchemin",
+ "chaine": "Histoire",
+ "miniature": {
+  "style": "chiffre",
+  "texte_haut": "TOUS SONT REVENUS",
+  "gros": "28",
+  "icone": "carte"
+ },
+ "chapitres": [
+  {
+   "titre": "Un bateau prisonnier de la glace",
+   "phrases": [
+    "Imagine un bateau coincé dans la glace, à des milliers de kilomètres de la moindre maison.",
+    "Pas de téléphone, pas de radio pour appeler, et personne ne sait où tu es.",
+    "C'est ce qui est arrivé à vingt-huit hommes, en mille neuf cent quinze.",
+    "Leur bateau s'appelait l'Endurance, et la glace allait l'écraser comme une boîte en carton.",
+    "Sans bateau, sans secours, sans aucun moyen de prévenir qui que ce soit.",
+    "Pourtant, ces vingt-huit hommes sont tous rentrés chez eux, vivants.",
+    "Leur chef s'appelait Ernest Shackleton, et il n'a jamais lâché.",
+    "Dans cette vidéo, je te raconte tout, étape par étape, comme si tu y étais.",
+    "Reste jusqu'au bout : tu verras un tout petit canot de bois affronter l'une des mers les plus dangereuses du monde."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "bateau",
+       "glace"
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 3,
+     "params": {
+      "valeur": 28,
+      "etiquette": "hommes",
+      "sous": "dans un bateau prisonnier de la glace"
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 5,
+     "params": {
+      "question": "Comment survivre sans aucun secours ?",
+      "pistes": [
+       "Courage",
+       "Chef",
+       "Équipe"
+      ]
+     }
+    },
+    {
+     "type": "anneau",
+     "phrase": 6,
+     "params": {
+      "valeur": 100,
+      "centre": "28 sur 28",
+      "etiquette": "hommes revenus vivants"
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 8,
+     "params": {
+      "titre": "AU PROGRAMME",
+      "items": [
+       {
+        "texte": "Un bateau écrasé"
+       },
+       {
+        "texte": "Un canot minuscule"
+       },
+       {
+        "texte": "Une marche de montagne"
+       },
+       {
+        "texte": "Un sauvetage"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "titre": "Le rêve de Shackleton",
+   "phrases": [
+    "Revenons un peu en arrière, avant que tout ne tourne mal.",
+    "Ernest Shackleton est un explorateur anglais, un homme qui adore l'aventure.",
+    "À son époque, le pôle Sud venait d'être atteint par un autre explorateur, Roald Amundsen.",
+    "Shackleton voulait faire quelque chose de plus grand encore : traverser tout le continent de l'Antarctique à pied.",
+    "L'Antarctique, c'est un immense continent de glace, tout au sud de la Terre.",
+    "Il y fait plus froid que dans n'importe quel congélateur, et le vent ne s'arrête presque jamais.",
+    "Pour y aller, Shackleton avait besoin d'un bateau solide, et il a choisi l'Endurance.",
+    "Le nom veut dire « endurance », la force de tenir longtemps malgré la fatigue.",
+    "Le bateau a quitté l'Angleterre en août mille neuf cent quatorze.",
+    "C'était le début de la Première Guerre mondiale, et l'Europe avait la tête ailleurs.",
+    "Selon la légende, Shackleton aurait publié cette annonce : « Hommes recherchés pour voyage dangereux, froid terrible, retour incertain. »",
+    "Mais personne n'a jamais retrouvé cette annonce : les historiens pensent que c'est une légende.",
+    "Ce qui est sûr, c'est que plus de cinq mille personnes ont demandé à partir avec lui.",
+    "Il a choisi des marins, un charpentier, un cuisinier, un médecin et un photographe, Frank Hurley.",
+    "En décembre mille neuf cent quatorze, l'Endurance quitte la Géorgie du Sud, la dernière terre habitée avant la glace.",
+    "Devant lui, il n'y a plus que l'océan, les glaçons géants, et le silence."
+   ],
+   "scenes": [
+    {
+     "type": "question",
+     "phrase": 1,
+     "params": {
+      "question": "Qui était Shackleton ?",
+      "pistes": [
+       "Explorateur",
+       "Anglais",
+       "Rêveur"
+      ]
+     }
+    },
+    {
+     "type": "frise",
+     "phrase": 9,
+     "params": {
+      "reperes": [
+       {
+        "date": "Août 1914",
+        "label": "Départ d'Angleterre"
+       },
+       {
+        "date": "Déc. 1914",
+        "label": "Dernière terre habitée"
+       }
+      ]
+     }
+    },
+    {
+     "type": "citation",
+     "phrase": 11,
+     "params": {
+      "texte": "Hommes recherchés pour voyage dangereux, froid terrible, retour incertain.",
+      "auteur": "Annonce attribuée à Shackleton (légende)"
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 13,
+     "params": {
+      "titre": "SON ÉQUIPE",
+      "items": [
+       {
+        "texte": "Des marins"
+       },
+       {
+        "texte": "Un charpentier"
+       },
+       {
+        "texte": "Un cuisinier"
+       },
+       {
+        "texte": "Un photographe"
+       }
+      ]
+     }
+    },
+    {
+     "type": "carte",
+     "phrase": 15,
+     "params": {
+      "lieux": [
+       {
+        "nom": "Angleterre",
+        "x": 40,
+        "y": 12
+       },
+       {
+        "nom": "Géorgie du Sud",
+        "x": 62,
+        "y": 62
+       },
+       {
+        "nom": "Antarctique",
+        "x": 50,
+        "y": 92
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "titre": "Prisonniers de la glace",
+   "phrases": [
+    "Quelques semaines plus tard, la glace est devenue de plus en plus épaisse.",
+    "Le bateau avançait doucement, en cherchant un passage entre les blocs.",
+    "En janvier mille neuf cent quinze, l'Endurance se retrouve pris dans la glace de la mer de Weddell.",
+    "La glace s'est refermée autour de lui, comme une main qui se ferme.",
+    "Les hommes ont essayé de la casser avec des outils, mais elle était beaucoup trop épaisse.",
+    "Shackleton a compris qu'ils ne repartiraient pas tout de suite.",
+    "Alors il a pris une décision : attendre l'arrivée du printemps, quand la glace s'ouvrirait.",
+    "Pendant des mois, le bateau a dérivé doucement, poussé par la glace qui bougeait sans arrêt.",
+    "Il fallait occuper les hommes, sinon l'ennui et la peur allaient finir par les ronger.",
+    "Ils chantaient le soir, jouaient sur la glace, et faisaient des courses avec les chiens.",
+    "Le photographe, Frank Hurley, prenait des photos incroyables du bateau figé dans la glace.",
+    "Ces photos existent encore aujourd'hui, et on peut les regarder sur Internet.",
+    "Shackleton savait une chose : un équipage qui garde le moral est un équipage qui survit.",
+    "Il parlait avec chacun, partageait la même nourriture que tout le monde, et gardait toujours son calme.",
+    "Et pourtant, le plus dur arrivait."
+   ],
+   "scenes": [
+    {
+     "type": "question",
+     "phrase": 1,
+     "params": {
+      "question": "Que faire quand la glace se referme ?",
+      "pistes": [
+       "Attendre",
+       "Casser",
+       "Marcher"
+      ]
+     }
+    },
+    {
+     "type": "frise",
+     "phrase": 3,
+     "params": {
+      "reperes": [
+       {
+        "date": "Janv. 1915",
+        "label": "Pris dans la glace",
+        "accent": true
+       },
+       {
+        "date": "Printemps",
+        "label": "Espoir de repartir"
+       }
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 6,
+     "params": {
+      "titre": "LA VIE À BORD",
+      "items": [
+       {
+        "texte": "Jeux sur la glace"
+       },
+       {
+        "texte": "Chants le soir"
+       },
+       {
+        "texte": "Courses de chiens"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 13,
+     "params": {
+      "question": "Le moral compte autant que la nourriture ?",
+      "pistes": [
+       "Oui",
+       "Un peu",
+       "Non"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "titre": "La fin de l'Endurance",
+   "phrases": [
+    "Puis, la glace s'est mise à bouger, à pousser, à serrer le bateau de tous les côtés.",
+    "Le bois craquait comme un énorme arbre qui plie sous la tempête.",
+    "En octobre mille neuf cent quinze, la pression a tordu la coque, et l'eau a commencé à entrer.",
+    "Les hommes ont pompé, encore et encore, jour et nuit, mais la glace était plus forte.",
+    "Shackleton a donné l'ordre que personne n'aurait voulu entendre : abandonner le navire.",
+    "Ils ont sorti la nourriture, des vêtements, et trois canots de sauvetage.",
+    "Tout ce qui ne servait pas à survivre est resté dans le bateau.",
+    "Quelques semaines plus tard, l'Endurance a glissé sous la glace et a disparu pour toujours.",
+    "Les hommes l'ont regardé couler, en silence.",
+    "Imagine ce moment : ton seul abri disparaît, et tu restes debout sur un grand morceau de glace.",
+    "Ils étaient vingt-huit, loin de tout, sans bateau et sans moyen de prévenir le monde.",
+    "Shackleton a rassemblé tout le monde et il a parlé calmement.",
+    "Il a expliqué le plan : tirer les canots sur la glace, marcher vers la terre la plus proche.",
+    "Mais la glace était trop abîmée pour marcher dessus, alors ils ont installé un camp : le Camp de la Patience.",
+    "Pendant des mois, ils ont vécu sous des tentes fines, en mangeant des phoques et des manchots.",
+    "Et lentement, la glace les emmenait vers le nord, à la merci des courants."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "glace",
+       "bouger"
+      ]
+     }
+    },
+    {
+     "type": "frise",
+     "phrase": 3,
+     "params": {
+      "reperes": [
+       {
+        "date": "Octobre 1915",
+        "label": "La coque est tordue",
+        "accent": true
+       },
+       {
+        "date": "Novembre 1915",
+        "label": "L'Endurance coule"
+       }
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 6,
+     "params": {
+      "titre": "CE QU'ILS ONT SAUVÉ",
+      "items": [
+       {
+        "texte": "De la nourriture"
+       },
+       {
+        "texte": "Des vêtements"
+       },
+       {
+        "texte": "Trois canots"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 9,
+     "params": {
+      "question": "Que fais-tu quand ton abri disparaît ?",
+      "pistes": [
+       "Panique",
+       "Calme",
+       "Plan"
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 11,
+     "params": {
+      "valeur": 28,
+      "etiquette": "hommes seuls sur la glace"
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 14,
+     "params": {
+      "titre": "LEUR CAMP",
+      "items": [
+       {
+        "texte": "Camp de la Patience"
+       },
+       {
+        "texte": "Tentes fines"
+       },
+       {
+        "texte": "Phoques et manchots"
+       }
+      ]
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 1,
+    "fin_phrase": 12,
+    "accroche": "Le jour où la glace a écrasé le bateau de Shackleton"
+   }
+  },
+  {
+   "titre": "Sur l'île Éléphant",
+   "phrases": [
+    "Un jour, la glace s'est cassée sous leurs pieds, et il a fallu partir sur les canots.",
+    "Pendant plusieurs jours, les hommes ont ramé dans un froid terrible, trempés des pieds à la tête.",
+    "Vers le quinze avril mille neuf cent seize, ils ont enfin posé le pied sur une terre : l'île Éléphant.",
+    "C'était la première fois depuis plus d'un an qu'ils touchaient autre chose que de la glace.",
+    "Certains ont pleuré de joie, d'autres se sont mis à rire, juste parce que le sol ne bougeait plus.",
+    "Mais Shackleton savait que le plus dur n'était pas fini.",
+    "L'île était déserte, battue par le vent, loin de toutes les routes des bateaux.",
+    "Personne ne viendrait les chercher ici, car personne ne savait où ils étaient.",
+    "Il restait un seul espoir : aller chercher de l'aide soi-même.",
+    "La seule terre habitée dans la région était la Géorgie du Sud, mais elle était à plus de mille trois cents kilomètres.",
+    "Et sur la route, il y avait l'un des océans les plus dangereux de la planète.",
+    "Shackleton a décidé de partir avec le plus solide des trois canots, qui s'appelait le James Caird.",
+    "Il a choisi cinq compagnons, dont le navigateur Frank Worsley et le marin Tom Crean.",
+    "Vingt-deux hommes sont restés sur l'île, sous la direction de Frank Wild.",
+    "Pour s'abriter, ils ont retourné des canots et ont vécu dessous, comme dans une petite maison.",
+    "Ils ont fait la promesse de se revoir, et personne ne savait si elle serait tenue."
+   ],
+   "scenes": [
+    {
+     "type": "question",
+     "phrase": 1,
+     "params": {
+      "question": "Où sont-ils arrivés ?",
+      "pistes": [
+       "Une île",
+       "Un port",
+       "Un désert"
+      ]
+     }
+    },
+    {
+     "type": "frise",
+     "phrase": 3,
+     "params": {
+      "reperes": [
+       {
+        "date": "Janv. 1915",
+        "label": "Pris dans la glace"
+       },
+       {
+        "date": "Mi-avril 1916",
+        "label": "Arrivée sur l'île Éléphant",
+        "accent": true
+       }
+      ]
+     }
+    },
+    {
+     "type": "carte",
+     "phrase": 7,
+     "params": {
+      "lieux": [
+       {
+        "nom": "Île Éléphant",
+        "x": 30,
+        "y": 28
+       },
+       {
+        "nom": "Géorgie du Sud",
+        "x": 82,
+        "y": 62
+       }
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 10,
+     "params": {
+      "valeur": 1300,
+      "suffixe": " km",
+      "etiquette": "jusqu'à la Géorgie du Sud"
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 12,
+     "params": {
+      "titre": "LE DÉPART",
+      "items": [
+       {
+        "texte": "Un seul canot : le James Caird"
+       },
+       {
+        "texte": "Six hommes à bord"
+       },
+       {
+        "texte": "Vingt-deux restent sur l'île"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 15,
+     "params": {
+      "question": "Auraient-ils une chance ?",
+      "pistes": [
+       "Peu",
+       "Un peu",
+       "Oui"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "titre": "Le voyage du James Caird",
+   "phrases": [
+    "Le James Caird était un petit canot de bois, pas fait pour traverser un océan.",
+    "Les hommes l'ont renforcé avec des caisses et de la toile pour essayer de le rendre plus solide.",
+    "Le vingt-quatre avril, le canot a quitté l'île Éléphant, sous les cris et les saluts de ceux qui restaient.",
+    "Devant eux, il y avait des vagues énormes, un vent glacé, et des tempêtes qui n'en finissaient pas.",
+    "Le navigateur, Frank Worsley, devait retrouver sa route avec le soleil, quand il apparaissait entre les nuages.",
+    "Mais le ciel restait presque toujours gris, et il fallait deviner où l'on était.",
+    "Imagine : viser une île minuscule dans un océan immense, avec un canot qui tangue sans arrêt.",
+    "Une petite erreur de quelques degrés, et le canot passait à côté sans jamais la voir.",
+    "Les hommes étaient trempés jour et nuit, assis dans l'eau glacée au fond du bateau.",
+    "L'eau gelait sur la toile, et le canot devenait de plus en plus lourd.",
+    "Il fallait casser la glace à coups de couteau pour ne pas couler.",
+    "Par moments, une vague gigantesque s'élevait derrière eux, et Shackleton a cru que tout était fini.",
+    "Mais le canot a tenu, et le vent a fini par les pousser dans la bonne direction.",
+    "Ils ont tenu environ dix-sept jours dans ces conditions, sans jamais pouvoir se sécher.",
+    "Le dix mai, ils ont enfin aperçu la Géorgie du Sud.",
+    "Après tant de jours à regarder l'eau, ils ont vu des rochers, de l'herbe et des oiseaux.",
+    "Ils venaient de réussir l'un des plus longs voyages en canot jamais racontés.",
+    "Mais ils avaient un nouveau problème : les hommes de la station baleinière étaient de l'autre côté de l'île."
+   ],
+   "scenes": [
+    {
+     "type": "titre-geant",
+     "phrase": 1,
+     "params": {
+      "accents": [
+       "petit",
+       "canot"
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 3,
+     "params": {
+      "valeur": 1300,
+      "suffixe": " km",
+      "etiquette": "de mer à traverser"
+     }
+    },
+    {
+     "type": "carte",
+     "phrase": 5,
+     "params": {
+      "lieux": [
+       {
+        "nom": "Île Éléphant",
+        "x": 28,
+        "y": 28
+       },
+       {
+        "nom": "Géorgie du Sud",
+        "x": 82,
+        "y": 62
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 7,
+     "params": {
+      "question": "Comment trouver une île minuscule ?",
+      "pistes": [
+       "Soleil",
+       "Calcul",
+       "Chance"
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 9,
+     "params": {
+      "titre": "SUR LE CANOT",
+      "items": [
+       {
+        "texte": "Trempés jour et nuit"
+       },
+       {
+        "texte": "Glace sur la toile"
+       },
+       {
+        "texte": "Vagues énormes"
+       }
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 14,
+     "params": {
+      "valeur": 17,
+      "suffixe": " jours",
+      "etiquette": "en mer sur un canot"
+     }
+    },
+    {
+     "type": "frise",
+     "phrase": 15,
+     "params": {
+      "reperes": [
+       {
+        "date": "24 avril",
+        "label": "Départ de l'île Éléphant"
+       },
+       {
+        "date": "10 mai",
+        "label": "La Géorgie du Sud en vue",
+        "accent": true
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 18,
+     "params": {
+      "question": "Et maintenant, comment trouver de l'aide ?",
+      "pistes": [
+       "Marcher",
+       "Attendre",
+       "Ramer"
+      ]
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 1,
+    "fin_phrase": 15,
+    "accroche": "Six hommes, un canot minuscule et un océan de tempêtes"
+   }
+  },
+  {
+   "titre": "Traverser l'île à pied",
+   "phrases": [
+    "Le canot était trop abîmé pour repartir, et la mer trop dangereuse pour essayer.",
+    "Il n'y avait qu'une solution : traverser l'île à pied, par les montagnes.",
+    "Personne n'avait jamais fait ce chemin, avec ses glaciers, ses falaises et ses pentes de neige.",
+    "Shackleton a choisi deux compagnons : Frank Worsley, le navigateur, et Tom Crean, le plus costaud du groupe.",
+    "Les autres hommes sont restés sur la côte, pour attendre.",
+    "Ils ont enroulé des clous dans leurs bottes pour mieux tenir sur la glace.",
+    "Ils sont partis en pleine nuit, à la lueur de la lune.",
+    "Ils ont marché, grimpé, glissé, et ils ont même descendu une pente en s'asseyant sur une corde enroulée.",
+    "Ils ne devaient surtout pas s'arrêter : s'endormir dans le froid, c'était trop dangereux.",
+    "Au bout de la marche, la fatigue était si forte qu'ils avançaient presque sans réfléchir.",
+    "Ils ont marché environ trente-six heures d'affilée, presque sans dormir.",
+    "Et puis, au petit matin, ils ont entendu un bruit qu'ils n'avaient pas entendu depuis longtemps : un sifflet.",
+    "C'était le sifflet de la station baleinière de Stromness, qui appelait ses ouvriers au travail.",
+    "Ils étaient sauvés, ou presque.",
+    "Les ouvriers n'en croyaient pas leurs yeux : des hommes sales, barbus, aux vêtements en lambeaux, sortis de nulle part."
+   ],
+   "scenes": [
+    {
+     "type": "question",
+     "phrase": 1,
+     "params": {
+      "question": "Peut-on traverser une île de glace à pied ?",
+      "pistes": [
+       "Non",
+       "Peut-être",
+       "Oui"
+      ]
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 4,
+     "params": {
+      "titre": "LES TROIS MARCHEURS",
+      "items": [
+       {
+        "texte": "Ernest Shackleton"
+       },
+       {
+        "texte": "Frank Worsley"
+       },
+       {
+        "texte": "Tom Crean"
+       }
+      ]
+     }
+    },
+    {
+     "type": "carte",
+     "phrase": 6,
+     "params": {
+      "lieux": [
+       {
+        "nom": "Côte sud",
+        "x": 25,
+        "y": 70
+       },
+       {
+        "nom": "Montagnes",
+        "x": 50,
+        "y": 40
+       },
+       {
+        "nom": "Stromness",
+        "x": 78,
+        "y": 22
+       }
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 11,
+     "params": {
+      "valeur": 36,
+      "suffixe": " h",
+      "etiquette": "de marche presque sans dormir"
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 12,
+     "params": {
+      "question": "Quel est ce bruit ?",
+      "pistes": [
+       "Un sifflet",
+       "Un loup",
+       "Le vent"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "titre": "Le sauvetage",
+   "phrases": [
+    "Shackleton n'a pas pris de repos : il pensait à ses hommes restés sur l'île Éléphant.",
+    "Il a d'abord envoyé un bateau chercher les compagnons restés sur la côte de la Géorgie du Sud.",
+    "Puis il a essayé de rejoindre l'île Éléphant, mais la glace l'a arrêté, encore et encore.",
+    "Au total, il lui a fallu quatre tentatives pour réussir.",
+    "Pour la dernière, le gouvernement du Chili lui a prêté un petit remorqueur, le Yelcho.",
+    "Le capitaine était un marin chilien courageux, Luis Pardo.",
+    "Le trente août mille neuf cent seize, le Yelcho est enfin arrivé devant l'île Éléphant.",
+    "Sur le rivage, les hommes ont vu un bateau au loin, et ils n'ont pas osé y croire.",
+    "Ils ont allumé un feu de fumée pour être sûrs d'être vus.",
+    "Shackleton a crié depuis le petit bateau : « Vous allez tous bien ? ». Une voix a répondu : « Tout va bien ! »",
+    "Il a poussé un grand soupir, et ses hommes ont poussé des cris de joie.",
+    "Les vingt-deux hommes de l'île ont embarqué, serrés les uns contre les autres.",
+    "Pas un seul des vingt-huit hommes n'était mort, après des mois à lutter contre la glace.",
+    "C'est l'une des plus belles histoires de survie jamais racontées."
+   ],
+   "scenes": [
+    {
+     "type": "question",
+     "phrase": 1,
+     "params": {
+      "question": "Qui viendrait les sauver ?",
+      "pistes": [
+       "Personne",
+       "Un bateau",
+       "Le Chili"
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 3,
+     "params": {
+      "valeur": 4,
+      "etiquette": "tentatives pour les rejoindre"
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 5,
+     "params": {
+      "titre": "L'AIDE ARRIVE",
+      "items": [
+       {
+        "texte": "Un remorqueur chilien : le Yelcho"
+       },
+       {
+        "texte": "Capitaine : Luis Pardo"
+       }
+      ]
+     }
+    },
+    {
+     "type": "frise",
+     "phrase": 7,
+     "params": {
+      "reperes": [
+       {
+        "date": "30 août 1916",
+        "label": "Le Yelcho arrive",
+        "accent": true
+       },
+       {
+        "date": "Mi-avril 1916",
+        "label": "Arrivée sur l'île Éléphant"
+       }
+      ]
+     }
+    },
+    {
+     "type": "citation",
+     "phrase": 10,
+     "params": {
+      "texte": "Vous allez tous bien ? — Tout va bien !",
+      "auteur": "Shackleton et ses hommes",
+      "date": "30 août 1916"
+     }
+    },
+    {
+     "type": "anneau",
+     "phrase": 13,
+     "params": {
+      "valeur": 100,
+      "centre": "28 sur 28",
+      "etiquette": "hommes revenus vivants"
+     }
+    }
+   ],
+   "short": {
+    "debut_phrase": 5,
+    "fin_phrase": 14,
+    "accroche": "« Vous allez tous bien ? » : le sauvetage de l'île Éléphant"
+   }
+  },
+  {
+   "titre": "Ce qu'on en retient",
+   "phrases": [
+    "Shackleton n'a jamais traversé l'Antarctique, et son rêve de départ est resté un rêve.",
+    "Mais il a fait quelque chose de plus important : il a ramené tous ses hommes à la maison.",
+    "Il est mort en mille neuf cent vingt-deux, lors d'un autre voyage, sur un bateau au large de la Géorgie du Sud.",
+    "Plus d'un siècle plus tard, en deux mille vingt-deux, des chercheurs ont retrouvé l'épave de l'Endurance.",
+    "Elle reposait à plus de trois mille mètres de profondeur, sur le fond de la mer de Weddell.",
+    "Le bois est tellement bien conservé que le chef de l'expédition a parlé du plus beau naufrage en bois qu'il ait jamais vu.",
+    "Qu'est-ce que cette histoire nous apprend ?",
+    "D'abord, qu'on peut échouer dans son projet et réussir ce qui compte vraiment.",
+    "Ensuite, qu'un bon chef reste calme, partage les efforts et pense à son équipe avant lui-même.",
+    "Enfin, qu'on ne perd vraiment que lorsqu'on abandonne.",
+    "Si cette histoire t'a plu, dis-moi en commentaire quelle aventure tu veux entendre ensuite.",
+    "À bientôt pour un nouveau récit incroyable mais vrai."
+   ],
+   "scenes": [
+    {
+     "type": "question",
+     "phrase": 1,
+     "params": {
+      "question": "A-t-il raté son voyage ?",
+      "pistes": [
+       "Oui",
+       "Non",
+       "Peut-être"
+      ]
+     }
+    },
+    {
+     "type": "frise",
+     "phrase": 3,
+     "params": {
+      "reperes": [
+       {
+        "date": "1922",
+        "label": "Mort de Shackleton"
+       },
+       {
+        "date": "2022",
+        "label": "L'épave est retrouvée",
+        "accent": true
+       }
+      ]
+     }
+    },
+    {
+     "type": "chiffre",
+     "phrase": 5,
+     "params": {
+      "valeur": 3008,
+      "suffixe": " m",
+      "etiquette": "de profondeur : l'épave de l'Endurance"
+     }
+    },
+    {
+     "type": "liste",
+     "phrase": 7,
+     "params": {
+      "titre": "CE QU'ON RETIENT",
+      "items": [
+       {
+        "texte": "Réussir ce qui compte"
+       },
+       {
+        "texte": "Rester calme"
+       },
+       {
+        "texte": "Penser à l'équipe"
+       },
+       {
+        "texte": "Ne jamais abandonner"
+       }
+      ]
+     }
+    },
+    {
+     "type": "question",
+     "phrase": 11,
+     "params": {
+      "question": "Quelle aventure ensuite ?",
+      "pistes": [
+       "Pyramide",
+       "Pirates",
+       "Volcan"
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

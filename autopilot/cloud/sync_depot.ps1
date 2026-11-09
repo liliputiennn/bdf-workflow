@@ -8,7 +8,7 @@ if (-not (Test-Path (Join-Path $Dest ".git"))) { throw "$Dest n'est pas le dép�
 $ok = '^(autopilot|src|tools|sfx-src|app|server|episodes-b|tests|miniatures-manuelles|miniatures-ref|public|\.github)/|^(package\.json|package-lock\.json|remotion\.config\.ts|tsconfig\.json|eslint\.config\.mjs|vitest\.config\.ts|firebase\.json|\.firebaserc|\.gitignore|README\.md)$'
 # dépôt PUBLIC : jamais d'audio (ta voix), ni idées / planning / anciens épisodes
 $files = git -C $src -c core.quotepath=off ls-files | Where-Object { $_ -match $ok -and $_ -notmatch '\.(mp3|wav)$' }
-$suspects = $files | Where-Object { $_ -match "client_secret|token\.json|tiktok_client|(^|/)\.env($|\.(local|secret))|\.pem$|id_rsa" }
+$suspects = $files | Where-Object { $_ -match "client_secret|token(-[\w-]+)?\.json|tiktok_client|(^|/)\.env($|\.(local|secret))|\.pem$|id_rsa" }
 if ($suspects) { throw "Fichiers suspects suivis par Git : $($suspects -join ', ')" }
 foreach ($f in $files) {
   $from = Join-Path $src $f

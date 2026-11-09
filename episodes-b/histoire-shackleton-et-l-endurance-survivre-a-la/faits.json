@@ -1,0 +1,749 @@
+[
+ {
+  "claim": "L'expédition de Shackleton comptait 28 hommes et tous ont survécu.",
+  "valeur": "28 hommes",
+  "phrase": 3,
+  "sources": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ],
+  "check": [
+   "all 28"
+  ],
+  "verified": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ]
+ },
+ {
+  "claim": "L'Endurance a été écrasé par la glace de la mer de Weddell en 1915.",
+  "valeur": "1915",
+  "phrase": 4,
+  "sources": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.livescience.com/shackleton-lost-endurance-ship-discovered-antarctic"
+  ],
+  "check": [
+   "1915",
+   "crushed"
+  ],
+  "verified": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.livescience.com/shackleton-lost-endurance-ship-discovered-antarctic"
+  ]
+ },
+ {
+  "claim": "L'expédition de Shackleton comptait 28 hommes et tous ont survécu.",
+  "valeur": "28 hommes",
+  "phrase": 6,
+  "sources": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ],
+  "check": [
+   "all 28"
+  ],
+  "verified": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ]
+ },
+ {
+  "claim": "Le pôle Sud avait déjà été atteint avant l'expédition (Roald Amundsen).",
+  "valeur": "Amundsen",
+  "phrase": 12,
+  "sources": [
+   "https://maritime-executive.com/features/1916-the-greatest-boat-journey-ever-made",
+   "https://www.historic-uk.com/HistoryUK/HistoryofBritain/Ernest-Shackleton-And-Endurance/"
+  ],
+  "check": [
+   "amundsen"
+  ],
+  "verified": [
+   "https://maritime-executive.com/features/1916-the-greatest-boat-journey-ever-made",
+   "https://www.historic-uk.com/HistoryUK/HistoryofBritain/Ernest-Shackleton-And-Endurance/"
+  ]
+ },
+ {
+  "claim": "Le but de l'expédition était de traverser le continent antarctique.",
+  "valeur": "traversée",
+  "phrase": 13,
+  "sources": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.historic-uk.com/HistoryUK/HistoryofBritain/Ernest-Shackleton-And-Endurance/"
+  ],
+  "check": [
+   "cross the continent"
+  ],
+  "verified": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.historic-uk.com/HistoryUK/HistoryofBritain/Ernest-Shackleton-And-Endurance/"
+  ]
+ },
+ {
+  "claim": "L'Endurance a quitté l'Angleterre en août 1914.",
+  "valeur": "août 1914",
+  "phrase": 18,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://www.historic-uk.com/HistoryUK/HistoryofBritain/Ernest-Shackleton-And-Endurance/"
+  ],
+  "check": [
+   "august 1914"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://www.historic-uk.com/HistoryUK/HistoryofBritain/Ernest-Shackleton-And-Endurance/"
+  ]
+ },
+ {
+  "claim": "Selon la légende, Shackleton aurait publié l'annonce « Hommes recherchés pour voyage dangereux » ; aucune trace n'en a été retrouvée.",
+  "valeur": "annonce",
+  "phrase": 20,
+  "sources": [
+   "https://www.smithsonianmag.com/smart-news/shackleton-probably-never-took-out-an-ad-seeking-men-for-a-hazardous-journey-5552379/",
+   "https://shipwrecks.hist.sites.carleton.edu/?p=5993"
+  ],
+  "check": [
+   "hazardous journey",
+   "myth"
+  ],
+  "statut": "legende",
+  "verified": [
+   "https://www.smithsonianmag.com/smart-news/shackleton-probably-never-took-out-an-ad-seeking-men-for-a-hazardous-journey-5552379/",
+   "https://shipwrecks.hist.sites.carleton.edu/?p=5993"
+  ]
+ },
+ {
+  "claim": "Selon la légende, Shackleton aurait publié l'annonce « Hommes recherchés pour voyage dangereux » ; aucune trace n'en a été retrouvée.",
+  "valeur": "annonce",
+  "phrase": 21,
+  "sources": [
+   "https://www.smithsonianmag.com/smart-news/shackleton-probably-never-took-out-an-ad-seeking-men-for-a-hazardous-journey-5552379/",
+   "https://shipwrecks.hist.sites.carleton.edu/?p=5993"
+  ],
+  "check": [
+   "hazardous journey",
+   "myth"
+  ],
+  "statut": "legende",
+  "verified": [
+   "https://www.smithsonianmag.com/smart-news/shackleton-probably-never-took-out-an-ad-seeking-men-for-a-hazardous-journey-5552379/",
+   "https://shipwrecks.hist.sites.carleton.edu/?p=5993"
+  ]
+ },
+ {
+  "claim": "Plus de 5 000 personnes ont demandé à faire partie de l'expédition.",
+  "valeur": "5 000",
+  "phrase": 22,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Imperial_Trans-Antarctic_Expedition",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ],
+  "check": [
+   "5000",
+   "applications"
+  ],
+  "verified": [
+   "https://en.wikipedia.org/wiki/Imperial_Trans-Antarctic_Expedition",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ]
+ },
+ {
+  "claim": "Frank Hurley, le photographe de l'expédition, a pris des photos de l'Endurance prisonnier de la glace.",
+  "valeur": "Frank Hurley",
+  "phrase": 23,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://jamescairdsociety.com/?p=911"
+  ],
+  "check": [
+   "frank hurley"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://jamescairdsociety.com/?p=911"
+  ]
+ },
+ {
+  "claim": "L'Endurance a quitté la Géorgie du Sud en décembre 1914.",
+  "valeur": "décembre 1914",
+  "phrase": 24,
+  "sources": [
+   "https://www.historic-uk.com/HistoryUK/HistoryofBritain/Ernest-Shackleton-And-Endurance/",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "december 1914"
+  ],
+  "verified": [
+   "https://www.historic-uk.com/HistoryUK/HistoryofBritain/Ernest-Shackleton-And-Endurance/",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "En janvier 1915, l'Endurance est pris dans la glace de la mer de Weddell.",
+  "valeur": "janvier 1915",
+  "phrase": 28,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "january 1915"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "L'expédition emmenait des chiens de traîneau.",
+  "valeur": "chiens",
+  "phrase": 35,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://maritime-executive.com/features/1916-the-greatest-boat-journey-ever-made"
+  ],
+  "check": [
+   "dogs"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://maritime-executive.com/features/1916-the-greatest-boat-journey-ever-made"
+  ]
+ },
+ {
+  "claim": "Frank Hurley, le photographe de l'expédition, a pris des photos de l'Endurance prisonnier de la glace.",
+  "valeur": "Frank Hurley",
+  "phrase": 36,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://jamescairdsociety.com/?p=911"
+  ],
+  "check": [
+   "frank hurley"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://jamescairdsociety.com/?p=911"
+  ]
+ },
+ {
+  "claim": "En octobre 1915, la pression de la glace a brisé la coque de l'Endurance.",
+  "valeur": "octobre 1915",
+  "phrase": 43,
+  "sources": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.livescience.com/shackleton-lost-endurance-ship-discovered-antarctic"
+  ],
+  "check": [
+   "october 1915"
+  ],
+  "verified": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.livescience.com/shackleton-lost-endurance-ship-discovered-antarctic"
+  ]
+ },
+ {
+  "claim": "Les hommes ont sauvé trois canots de sauvetage du navire.",
+  "valeur": "trois canots",
+  "phrase": 46,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ],
+  "check": [
+   "three boats"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ]
+ },
+ {
+  "claim": "L'Endurance a été écrasé par la glace de la mer de Weddell en 1915.",
+  "valeur": "1915",
+  "phrase": 48,
+  "sources": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.livescience.com/shackleton-lost-endurance-ship-discovered-antarctic"
+  ],
+  "check": [
+   "1915",
+   "crushed"
+  ],
+  "verified": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.livescience.com/shackleton-lost-endurance-ship-discovered-antarctic"
+  ]
+ },
+ {
+  "claim": "L'expédition de Shackleton comptait 28 hommes et tous ont survécu.",
+  "valeur": "28 hommes",
+  "phrase": 51,
+  "sources": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ],
+  "check": [
+   "all 28"
+  ],
+  "verified": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ]
+ },
+ {
+  "claim": "Les hommes ont campé sur la banquise, au Camp de la Patience.",
+  "valeur": "Camp de la Patience",
+  "phrase": 54,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Imperial_Trans-Antarctic_Expedition",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ],
+  "check": [
+   "patience camp"
+  ],
+  "verified": [
+   "https://en.wikipedia.org/wiki/Imperial_Trans-Antarctic_Expedition",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ]
+ },
+ {
+  "claim": "Les hommes se nourrissaient de phoques et de manchots.",
+  "valeur": "phoques et manchots",
+  "phrase": 55,
+  "sources": [
+   "https://www.aljazeera.com/news/2022/3/9/shackletons-lost-ship-discovered-off-antarctica-after-100-years",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "penguin",
+   "seal"
+  ],
+  "verified": [
+   "https://www.aljazeera.com/news/2022/3/9/shackletons-lost-ship-discovered-off-antarctica-after-100-years",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "Les hommes ont atteint l'île Éléphant vers le 15 avril 1916.",
+  "valeur": "15 avril 1916",
+  "phrase": 59,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "15 april"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "La Géorgie du Sud est à environ 800 milles nautiques, soit 1 300 kilomètres, de l'île Éléphant.",
+  "valeur": "1 300 km",
+  "phrase": 66,
+  "sources": [
+   "https://www.aljazeera.com/news/2022/3/9/shackletons-lost-ship-discovered-off-antarctica-after-100-years",
+   "https://www.livescience.com/shackleton-endurance-expedition"
+  ],
+  "check": [
+   "800 miles"
+  ],
+  "verified": [
+   "https://www.aljazeera.com/news/2022/3/9/shackletons-lost-ship-discovered-off-antarctica-after-100-years",
+   "https://www.livescience.com/shackleton-endurance-expedition"
+  ]
+ },
+ {
+  "claim": "Les hommes ont sauvé trois canots de sauvetage du navire.",
+  "valeur": "trois canots",
+  "phrase": 68,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ],
+  "check": [
+   "three boats"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ]
+ },
+ {
+  "claim": "Le James Caird est parti avec Shackleton, Frank Worsley, Tom Crean et trois autres hommes.",
+  "valeur": "6 hommes",
+  "phrase": 69,
+  "sources": [
+   "https://maritime-executive.com/features/1916-the-greatest-boat-journey-ever-made",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ],
+  "check": [
+   "five men"
+  ],
+  "verified": [
+   "https://maritime-executive.com/features/1916-the-greatest-boat-journey-ever-made",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ]
+ },
+ {
+  "claim": "Vingt-deux hommes sont restés sur l'île Éléphant.",
+  "valeur": "22 hommes",
+  "phrase": 70,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "22 men"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "Les hommes ont retourné des canots pour s'abriter.",
+  "valeur": "canots retournés",
+  "phrase": 71,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ],
+  "check": [
+   "upturned"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ]
+ },
+ {
+  "claim": "Le James Caird a quitté l'île Éléphant le 24 avril.",
+  "valeur": "24 avril",
+  "phrase": 75,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "24 april"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "Frank Worsley était le navigateur ; Tom Crean faisait partie de l'équipage du James Caird.",
+  "valeur": "Worsley et Crean",
+  "phrase": 77,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "tom crean",
+   "frank worsley"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "La traversée du James Caird a duré environ 17 jours.",
+  "valeur": "17 jours",
+  "phrase": 86,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://burkemuseum.org/static/endurance/expedition2.html"
+  ],
+  "check": [
+   "17 days"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://burkemuseum.org/static/endurance/expedition2.html"
+  ]
+ },
+ {
+  "claim": "Le James Caird a touché la Géorgie du Sud le 10 mai.",
+  "valeur": "10 mai",
+  "phrase": 87,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "10 may"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "Les stations baleinières se trouvaient de l'autre côté de l'île.",
+  "valeur": "autre côté",
+  "phrase": 90,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://jamescairdsociety.com/?p=911"
+  ],
+  "check": [
+   "other side"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://jamescairdsociety.com/?p=911"
+  ]
+ },
+ {
+  "claim": "Frank Worsley était le navigateur ; Tom Crean faisait partie de l'équipage du James Caird.",
+  "valeur": "Worsley et Crean",
+  "phrase": 94,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "tom crean",
+   "frank worsley"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "La marche à travers la Géorgie du Sud a duré environ 36 heures.",
+  "valeur": "36 heures",
+  "phrase": 101,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "36 hours"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "Ils ont entendu le sifflet de la station de Stromness.",
+  "valeur": "sifflet",
+  "phrase": 102,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Imperial_Trans-Antarctic_Expedition",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ],
+  "check": [
+   "whistle"
+  ],
+  "verified": [
+   "https://en.wikipedia.org/wiki/Imperial_Trans-Antarctic_Expedition",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ]
+ },
+ {
+  "claim": "Shackleton, Worsley et Crean sont arrivés à la station baleinière de Stromness.",
+  "valeur": "Stromness",
+  "phrase": 103,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://burkemuseum.org/static/endurance/expedition2.html"
+  ],
+  "check": [
+   "stromness"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://burkemuseum.org/static/endurance/expedition2.html"
+  ]
+ },
+ {
+  "claim": "Il a fallu quatre tentatives à Shackleton pour atteindre l'île Éléphant.",
+  "valeur": "4 tentatives",
+  "phrase": 109,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "four attempts"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "Le gouvernement chilien a prêté à Shackleton le remorqueur Yelcho.",
+  "valeur": "Yelcho",
+  "phrase": 110,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://jamescairdsociety.com/?p=911"
+  ],
+  "check": [
+   "yelcho",
+   "chilean"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://jamescairdsociety.com/?p=911"
+  ]
+ },
+ {
+  "claim": "Le capitaine du Yelcho était Luis Pardo.",
+  "valeur": "Luis Pardo",
+  "phrase": 111,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Endurance_(1912_ship)",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ],
+  "check": [
+   "luis pardo"
+  ],
+  "verified": [
+   "https://en.wikipedia.org/wiki/Endurance_(1912_ship)",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ]
+ },
+ {
+  "claim": "Le Yelcho est arrivé à l'île Éléphant le 30 août 1916.",
+  "valeur": "30 août 1916",
+  "phrase": 112,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Endurance_(1912_ship)",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "30 august"
+  ],
+  "verified": [
+   "https://en.wikipedia.org/wiki/Endurance_(1912_ship)",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "En approchant de l'île, Shackleton a crié « Are you all well ? » et la réponse est venue : « All well ! »",
+  "valeur": "Tout va bien",
+  "phrase": 115,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ],
+  "check": [
+   "all well"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ]
+ },
+ {
+  "claim": "Vingt-deux hommes sont restés sur l'île Éléphant.",
+  "valeur": "22 hommes",
+  "phrase": 117,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "22 men"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "L'expédition de Shackleton comptait 28 hommes et tous ont survécu.",
+  "valeur": "28 hommes",
+  "phrase": 118,
+  "sources": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ],
+  "check": [
+   "all 28"
+  ],
+  "verified": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ]
+ },
+ {
+  "claim": "Ernest Shackleton est mort en 1922.",
+  "valeur": "1922",
+  "phrase": 122,
+  "sources": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.historic-uk.com/HistoryUK/HistoryofBritain/Ernest-Shackleton-And-Endurance/"
+  ],
+  "check": [
+   "1922"
+  ],
+  "verified": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.historic-uk.com/HistoryUK/HistoryofBritain/Ernest-Shackleton-And-Endurance/"
+  ]
+ },
+ {
+  "claim": "L'épave de l'Endurance a été retrouvée en 2022, à 3 008 mètres de profondeur.",
+  "valeur": "3 008 m",
+  "phrase": 123,
+  "sources": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.aljazeera.com/news/2022/3/9/shackletons-lost-ship-discovered-off-antarctica-after-100-years"
+  ],
+  "check": [
+   "3008"
+  ],
+  "verified": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.aljazeera.com/news/2022/3/9/shackletons-lost-ship-discovered-off-antarctica-after-100-years"
+  ]
+ },
+ {
+  "claim": "L'épave de l'Endurance a été retrouvée en 2022, à 3 008 mètres de profondeur.",
+  "valeur": "3 008 m",
+  "phrase": 124,
+  "sources": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.aljazeera.com/news/2022/3/9/shackletons-lost-ship-discovered-off-antarctica-after-100-years"
+  ],
+  "check": [
+   "3008"
+  ],
+  "verified": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.aljazeera.com/news/2022/3/9/shackletons-lost-ship-discovered-off-antarctica-after-100-years"
+  ]
+ },
+ {
+  "claim": "Mensun Bound a dit de l'épave que c'était de loin le plus bel exemple de naufrage en bois qu'il ait vu.",
+  "valeur": "Mensun Bound",
+  "phrase": 125,
+  "sources": [
+   "https://www.aljazeera.com/news/2022/3/9/shackletons-lost-ship-discovered-off-antarctica-after-100-years",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ],
+  "check": [
+   "finest wooden shipwreck"
+  ],
+  "verified": [
+   "https://www.aljazeera.com/news/2022/3/9/shackletons-lost-ship-discovered-off-antarctica-after-100-years",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ]
+ }
+]

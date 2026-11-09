@@ -1,0 +1,58 @@
+{
+ "id": "langues-anglais-au-cafe",
+ "titre": "Anglais : commander au café",
+ "chaine": "Langues",
+ "theme": "langues",
+ "video": "short",
+ "format_contenu": "langues",
+ "langue_cible": "en",
+ "situation": "Au café",
+ "lecons": [
+  {
+   "fr": "Je voudrais un café, s'il vous plaît.",
+   "cible": "I would like a coffee, please.",
+   "phonetique": "aï woud laïk a kofi, pliz",
+   "retraduction": "Je voudrais un café, s'il vous plaît.",
+   "confiance": "sure",
+   "check": [
+    "coffee"
+   ],
+   "sources": [
+    "https://en.wiktionary.org/wiki/coffee",
+    "https://dictionary.cambridge.org/dictionary/english-french/coffee"
+   ]
+  },
+  {
+   "fr": "Combien ça coûte ?",
+   "cible": "How much is it?",
+   "phonetique": "hao meutch iz it",
+   "retraduction": "Combien est-ce que ça coûte ?",
+   "confiance": "sure",
+   "check": [
+    "much"
+   ],
+   "sources": [
+    "https://en.wiktionary.org/wiki/much",
+    "https://dictionary.cambridge.org/dictionary/english-french/much"
+   ]
+  },
+  {
+   "fr": "Puis-je avoir de l'eau ?",
+   "cible": "Can I have some water?",
+   "phonetique": "kane aï hav seum wotœr",
+   "retraduction": "Puis-je avoir de l'eau ?",
+   "confiance": "sure",
+   "check": [
+    "water"
+   ],
+   "sources": [
+    "https://en.wiktionary.org/wiki/water",
+    "https://dictionary.cambridge.org/dictionary/english-french/water"
+   ]
+  }
+ ],
+ "miniature": {
+  "texte_haut": "Au café",
+  "gros": "Coffee?"
+ }
+}

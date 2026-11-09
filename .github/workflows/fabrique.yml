@@ -46,11 +46,12 @@ jobs:
       - name: Installation
         run: |
           mkdir -p autopilot/state
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          # ffmpeg + une police (DejaVu) pour les formats maison (quiz, langues, sommeil, musique) rendus avec Pillow
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null
           npm ci --silent
           npx remotion browser ensure > /dev/null
           bash tools/fetch-audio.sh
-          pip install -q kaggle six
+          pip install -q kaggle six pillow numpy
       # Garde-fou : la fabrication s'arrête d'elle-même à 270 min, ce qui laisse ~60 min (sur les 330 du job) pour la miniature,
       # le contrôle et le dépôt dans le stock. Sans cela, un timeout du job faisait sauter ces étapes et tous les rendus étaient perdus
       # (le stock n'est alimenté qu'à la fin). Le budget de 200 min empêche de commencer un nouvel épisode trop tard.

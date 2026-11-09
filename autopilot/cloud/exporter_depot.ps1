@@ -9,7 +9,7 @@ if (Test-Path $Dest) { throw "$Dest existe déjà : choisis un autre -Dest ou su
 
 $files = git -C $src -c core.quotepath=off ls-files
 # garde-fou : aucun fichier qui ressemble à un secret ne part dans le dépôt
-$suspects = $files | Where-Object { $_ -match "client_secret|token\.json|tiktok_client|(^|/)\.env($|\.(local|secret))|\.pem$|id_rsa" }
+$suspects = $files | Where-Object { $_ -match "client_secret|token(-[\w-]+)?\.json|tiktok_client|(^|/)\.env($|\.(local|secret))|\.pem$|id_rsa" }
 if ($suspects) { throw "Fichiers suspects suivis par Git : $($suspects -join ', ')" }
 
 foreach ($f in $files) {

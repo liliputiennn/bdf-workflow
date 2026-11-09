@@ -20,6 +20,26 @@ import argparse, os, sys
 from datetime import datetime, timedelta, timezone
 
 GRATUIT_OCTETS = 10 * 1024**3
+# Une pièce jointe de release GitHub est limitée à 2 Gio (2 147 483 648 octets) : une vidéo de 3 h (format sommeil) peut s'en approcher.
+# Marge de 64 Mio ; R2 n'a pas cette limite (envoi multipart géré par boto3).
+LIMITE_ASSET_GITHUB = 2 * 1024**3 - 64 * 1024**2
+
+
+class TropGros(Exception):
+    """Le fichier dépasse la limite du stock : il faut le réencoder plus léger (voir taille_ok)."""
+
+
+def taille_ok(octets: int, backend: str | None = None) -> bool:
+    """Vrai si un fichier de cette taille peut être déposé dans le stock choisi (fonction pure, testée)."""
+    backend = backend or os.environ.get("STOCKAGE", "github")
+    return backend != "github" or octets <= LIMITE_ASSET_GITHUB
+
+
+def verifier_taille(fichier, backend: str | None = None) -> None:
+    n = os.path.getsize(fichier)
+    if not taille_ok(n, backend):
+        raise TropGros(f"{os.path.basename(str(fichier))} : {n / 1024**3:.2f} Go dépasse la limite de {LIMITE_ASSET_GITHUB / 1024**3:.2f} Go d'une pièce jointe GitHub "
+                       "(réencoder plus léger, par exemple crf 28, ou passer à STOCKAGE=r2)")
 
 
 def client():
@@ -76,6 +96,7 @@ def main_github(a) -> int:
         _gh("release", "create", TAG, "--title", "Stock de vidéos", "--notes", "Fichiers temporaires du workflow (purgés automatiquement).")
     if a.cmd == "put":
         import shutil, tempfile
+        verifier_taille(a.fichier, "github")
         tmp = os.path.join(tempfile.mkdtemp(prefix="bdf-st-"), nom_asset(a.cle))
         shutil.copy(a.fichier, tmp)  # le nom de l'asset est celui du fichier : on le renomme par copie
         _gh("release", "upload", TAG, tmp, "--clobber")
@@ -107,6 +128,14 @@ def main_github(a) -> int:
 
 
 def main() -> int:
+    try:
+        return _main()
+    except TropGros as e:
+        print(f"ERREUR stock : {e}", file=sys.stderr)
+        return 4
+
+
+def _main() -> int:
     ap = argparse.ArgumentParser()
     sp = ap.add_subparsers(dest="cmd", required=True)
     p = sp.add_parser("put"); p.add_argument("fichier"); p.add_argument("cle")

@@ -1,0 +1,65 @@
+{
+ "id": "quiz-les-oiseaux",
+ "titre": "Quiz les oiseaux : sauras-tu répondre ?",
+ "chaine": "Quiz",
+ "theme": "quiz",
+ "video": "short",
+ "format_contenu": "quiz",
+ "manches": [
+  {
+   "question": "Quel est le plus grand oiseau ?",
+   "options": [
+    "L'autruche",
+    "L'aigle",
+    "Le cygne"
+   ],
+   "bonne": 0,
+   "explication": "Elle mesure plus de deux mètres.",
+   "sources": [
+    "https://fr.wikipedia.org/wiki/Autruche_d%27Afrique",
+    "https://www.larousse.fr/encyclopedie/vie-sauvage/autruche/178188"
+   ],
+   "check": [
+    "autruche"
+   ]
+  },
+  {
+   "question": "Quel oiseau peut voler en arrière ?",
+   "options": [
+    "Le moineau",
+    "Le pigeon",
+    "Le colibri"
+   ],
+   "bonne": 2,
+   "explication": "Le colibri peut même reculer en plein vol.",
+   "sources": [
+    "https://www.larousse.fr/encyclopedie/vie-sauvage/colibri/184040",
+    "https://www.especes-menacees.fr/le-saviez-vous/colibri-seul-oiseau-a-voler-en-arriere/"
+   ],
+   "check": [
+    "colibri"
+   ]
+  },
+  {
+   "question": "Quel oiseau ne vole pas mais nage très bien ?",
+   "options": [
+    "Le manchot",
+    "La cigogne",
+    "Le moineau"
+   ],
+   "bonne": 0,
+   "explication": "Ses ailes sont des nageoires.",
+   "sources": [
+    "https://fr.wikipedia.org/wiki/Spheniscidae",
+    "https://www.futura-sciences.com/planete/actualites/zoologie-manchot-cap-ne-sait-pas-voler-mais-nageur-hors-pair-103200/"
+   ],
+   "check": [
+    "manchot"
+   ]
+  }
+ ],
+ "miniature": {
+  "texte_haut": "Les oiseaux",
+  "gros": "?"
+ }
+}
