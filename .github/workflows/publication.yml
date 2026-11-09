@@ -52,6 +52,8 @@ jobs:
           YT_TOKEN_LANGUES: ${{ secrets.YT_TOKEN_LANGUES }}
           YT_TOKEN_QUIZ: ${{ secrets.YT_TOKEN_QUIZ }}
           YT_TOKEN_MUSIQUE_ENFANTS: ${{ secrets.YT_TOKEN_MUSIQUE_ENFANTS }}
+          YT_TOKEN_MEDITATION: ${{ secrets.YT_TOKEN_MEDITATION }}
+          YT_TOKEN_HISTOIRES_ENFANTS: ${{ secrets.YT_TOKEN_HISTOIRES_ENFANTS }}
           TIKTOK_CLIENT: ${{ secrets.TIKTOK_CLIENT }}
           TIKTOK_TOKEN: ${{ secrets.TIKTOK_TOKEN }}
         run: |

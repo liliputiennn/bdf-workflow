@@ -1,0 +1,68 @@
+{
+  "id": "meditation",
+  "nom": "Méditation guidée (nom à choisir)",
+  "langue": "fr",
+  "format": "meditation",
+  "niche": "Respiration et relaxation guidées, voix lente et décor doux",
+  "active": false,
+  "vague": 8,
+  "jeton_fichier": "token-meditation.json",
+  "voix": {
+    "dossier": "voix/meditation"
+  },
+  "musique": {
+    "dossier": null
+  },
+  "style": {
+    "theme": "meditation",
+    "miniature": "meditation"
+  },
+  "publication": {
+    "heures_shorts": [
+      "07:00"
+    ],
+    "shorts_par_creneau": 1,
+    "heure_long": "07:30",
+    "jours_longs": [
+      1,
+      3,
+      5
+    ],
+    "commentaire_auto": false,
+    "question_dans_description": false,
+    "mention_ia_description": true
+  },
+  "frequence": {
+    "shorts_par_jour": 0,
+    "longs_par_semaine": 3
+  },
+  "dossiers": {
+    "sujets": "subjects/meditation"
+  },
+  "source": null,
+  "format_module": "autopilot.formats.meditation",
+  "format_options": {},
+  "format_pret": true,
+  "briques": {
+    "fabrique": "formats/fabrique.py",
+    "miniature": "formats/miniature_formats.py"
+  },
+  "notes": "Chantier 3, format 8. Longs de 10 à 40 min : séance guidée lue très lentement (voix Qwen3-TTS, Apache-2.0, pauses de 4,5 à 9 s) sur un décor d'aube lavande qui respire en boucle et une ambiance synthétisée par du code ; rendu léger (boucle de 30 s bouclée par ffmpeg sans réencodage). Aucun Short. Aucune promesse de santé, aucun conseil médical. preparation=false tant que l'utilisateur n'a pas décidé.",
+  "preparation": false,
+  "format_statut": {
+    "verifie": "2026-11-09",
+    "test": "meditation-essai : séance guidée de 10 min, rendu léger, pret, faux YouTube au créneau des longs. Voix simulée.",
+    "manque": [
+      "Écouter et confirmer la voix (Serena) et les pauses",
+      "Créer la chaîne YouTube, connecter son jeton, décider de la préparer puis de l'activer"
+    ],
+    "licences": [
+      "Voix : Qwen3-TTS CustomVoice, Apache-2.0",
+      "Ambiances et décors : générés par le code, rien à créditer"
+    ],
+    "risques": [
+      "Séances trop semblables : thème, images, graines et décor différents obligatoires",
+      "Aucune promesse de santé ni conseil médical ; phrase « Ne remplace pas un avis médical. » obligatoire"
+    ]
+  }
+}

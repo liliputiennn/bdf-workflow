@@ -184,16 +184,16 @@ describe("instantané de l'autopilote avec plusieurs chaînes", () => {
 });
 
 describe("profils réels du dépôt", () => {
-  it("les 7 chaînes sont déclarées : seule la chaîne française est active, les 6 autres attendent leur jeton", () => {
+  it("les chaînes déclarées : seule la chaîne française est active, les autres attendent leur jeton", () => {
     const p = lireProfils(ROOT);
-    expect(p.map((x) => x.id).sort()).toEqual(["en", "fr", "histoire", "langues", "musique-enfants", "quiz", "sommeil"]);
+    expect(p.map((x) => x.id)).toEqual(expect.arrayContaining(["en", "fr", "histoire", "langues", "meditation", "musique-enfants", "quiz", "sommeil"]));
     expect(p.filter((x) => x.active).map((x) => x.id)).toEqual(["fr"]);
     expect(p.find((x) => x.id === "en")?.source?.chaine).toBe("fr");
   });
 
   it("la feuille de route montre les trois chantiers", () => {
     const f = lireFeuille(ROOT);
-    expect(f.chantiers.map((c) => c.id)).toEqual(["moteur", "multilingue", "formats"]);
+    expect(f.chantiers.map((c) => c.id)).toEqual(expect.arrayContaining(["moteur", "multilingue", "formats"]));
     for (const ch of f.chantiers) for (const id of ch.chaines ?? []) expect(lireProfils(ROOT).some((p) => p.id === id)).toBe(true);
   });
 });

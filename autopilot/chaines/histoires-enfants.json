@@ -1,0 +1,72 @@
+{
+  "id": "histoires-enfants",
+  "nom": "Histoires pour enfants (nom à choisir)",
+  "langue": "fr",
+  "format": "histoires_enfants",
+  "niche": "Petites histoires originales pour les 3 à 7 ans",
+  "active": false,
+  "vague": 8,
+  "jeton_fichier": "token-histoires-enfants.json",
+  "voix": {
+    "dossier": "voix/histoires-enfants"
+  },
+  "musique": {
+    "dossier": null
+  },
+  "style": {
+    "theme": "conte",
+    "miniature": "conte"
+  },
+  "publication": {
+    "heures_shorts": [
+      "18:00"
+    ],
+    "shorts_par_creneau": 1,
+    "heure_long": "10:00",
+    "jours_longs": [
+      5,
+      6
+    ],
+    "mention_ia_description": true,
+    "pour_enfants": true,
+    "commentaire_auto": false,
+    "question_dans_description": false,
+    "hashtag_shorts": true
+  },
+  "frequence": {
+    "shorts_par_jour": 1,
+    "longs_par_semaine": 1
+  },
+  "dossiers": {
+    "sujets": "subjects/histoires-enfants"
+  },
+  "source": null,
+  "format_module": "autopilot.formats.histoires_enfants",
+  "format_options": {},
+  "format_pret": true,
+  "briques": {
+    "fabrique": "formats/fabrique.py",
+    "miniature": "formats/miniature_formats.py"
+  },
+  "notes": "Chantier 3, format 6. Petites histoires ORIGINALES (3 à 7 ans) lues d'une voix douce (Qwen3-TTS CustomVoice, Apache-2.0) et illustrées par des scènes dessinées par le code (personnages en formes géométriques, aucune image externe). Un Short (mini-histoire) par jour, un long le week-end. Déclaration « conçue pour les enfants » (selfDeclaredMadeForKids) faite par le publieur via publication.pour_enfants. Règles de sécurité enfants comme musique-enfants (mots interdits, aucun lien, commentaires fermés).",
+  "preparation": true,
+  "format_statut": {
+    "verifie": "2026-11-09",
+    "test": "histoires-enfants-essai : histoire originale, rendu avec scènes dessinées, pret, faux YouTube avec selfDeclaredMadeForKids = true (voix simulée).",
+    "manque": [
+      "Écouter et confirmer la voix douce (voix intégrée à confirmer)",
+      "Relire les premières histoires avant d'activer",
+      "Créer la chaîne YouTube, connecter son jeton, choisir quand activer"
+    ],
+    "licences": [
+      "Voix : Qwen3-TTS CustomVoice, Apache-2.0 (voix intégrée)",
+      "Images : formes dessinées par le code (Pillow), aucune image externe",
+      "Fond sonore : boîte à musique synthétisée par le code"
+    ],
+    "risques": [
+      "Histoires produites en série : YouTube peut y voir du contenu de masse ; chaque histoire a un autre animal, un autre lieu, une autre situation",
+      "Déclaration « conçue pour les enfants » : commentaires désactivés par YouTube, publicité personnalisée coupée",
+      "Ressemblance entre histoires vérifiée par des mots-clés seulement"
+    ]
+  }
+}

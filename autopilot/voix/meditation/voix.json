@@ -1,0 +1,8 @@
+{
+ "locuteur": "Serena",
+ "style": "Une voix très lente, douce et chaude, qui laisse de la place au silence, comme pour guider une personne qui ferme les yeux.",
+ "vitesse": 1.0,
+ "licence": "Qwen3-TTS-12Hz-0.6B-CustomVoice, Apache-2.0 (voix intégrée)",
+ "a_confirmer": true,
+ "note": "À confirmer à l'écoute (lenteur, pauses). Clonage possible avec ref.wav + ref.txt dans ce dossier."
+}

@@ -5,6 +5,7 @@ Bibliothèque standard seulement, utilisable depuis Python 3.11 à 3.14.
 import contextlib
 import json
 import os
+import re
 import time
 from datetime import datetime
 from pathlib import Path
@@ -70,15 +71,46 @@ GROS_FICHIERS = (".mp4", ".mov", ".webm", ".wav")
 DOSSIERS_VOIX = ("cache",)  # cache de voix de l'épisode, regénérable
 
 
+TIKTOK_VISIBILITES = ("PUBLIC_TO_EVERYONE", "MUTUAL_FOLLOW_FRIENDS", "FOLLOWER_OF_CREATOR", "SELF_ONLY")
+TIKTOK_MODES = ("boite", "direct")
+
+
+def tiktok_reglage(chaine: str) -> dict:
+    """Réglage TikTok normalisé d'une chaîne (champ `tiktok` du profil : absent/true/false ou objet).
+
+    - actif : cette chaîne envoie-t-elle ses Shorts sur TikTok ? (absent = seulement la chaîne par défaut)
+    - mode : « boite » (brouillon dans la boîte de réception, défaut) ou « direct » ;
+      « direct » n'est pris en compte que si `audit_confirme` est vrai (réglage explicite de l'utilisateur), sinon repli sur « boite » ;
+    - jeton_fichier : un compte TikTok par chaîne (défaut : tiktok_token.json pour la chaîne par défaut, tiktok_token-<id>.json sinon)."""
+    brut = (read_json(ROOT / "autopilot" / "chaines" / f"{chaine}.json", {}) or {}).get("tiktok")
+    o = brut if isinstance(brut, dict) else {}
+    actif = (chaine == CHAINE_DEFAUT) if brut is None else (bool(brut) if not isinstance(brut, dict) else bool(o.get("actif", True)))
+    audit = o.get("audit_confirme") is True
+    mode = o.get("mode") if o.get("mode") in TIKTOK_MODES else "boite"
+    if mode == "direct" and not audit:
+        mode = "boite"
+    jeton = o.get("jeton_fichier")
+    if not (isinstance(jeton, str) and re.fullmatch(r"[A-Za-z0-9._-]+\.json", jeton) and jeton not in ("tiktok_client.json", "client_secret.json")):
+        jeton = "tiktok_token.json" if chaine == CHAINE_DEFAUT else f"tiktok_token-{chaine}.json"
+    tags = [t for t in (o.get("hashtags") or []) if isinstance(t, str) and t.strip()] if isinstance(o.get("hashtags"), list) else None
+    if tags is None:
+        tags = ["#business"] if chaine == CHAINE_DEFAUT else []
+    limite = 15 if mode == "direct" else 5
+    par_jour = o.get("max_par_24h")
+    par_jour = min(limite, par_jour) if isinstance(par_jour, int) and not isinstance(par_jour, bool) and par_jour > 0 else (12 if mode == "direct" else 4)
+    vis = o.get("visibilite") if o.get("visibilite") in TIKTOK_VISIBILITES else "PUBLIC_TO_EVERYONE"
+    return {"actif": actif, "mode": mode, "audit_confirme": audit, "jeton_fichier": jeton, "hashtags": tags,
+            "max_par_24h": par_jour, "visibilite": vis, "ia": o.get("ia") is not False}
+
+
 def tiktok_pour(ep_id: str) -> bool:
-    """Le compte TikTok (un seul) reçoit-il les Shorts de cette chaîne ? Par défaut : seulement ceux de la chaîne par défaut (champ `tiktok` du profil)."""
-    ch = chaine_de(ep_id)
-    voulu = (read_json(ROOT / "autopilot" / "chaines" / f"{ch}.json", {}) or {}).get("tiktok")
-    return ch == CHAINE_DEFAUT if voulu is None else bool(voulu)
+    """Le compte TikTok de la chaîne de cet épisode reçoit-il ses Shorts ? (champ `tiktok` du profil ; par défaut seulement la chaîne par défaut)."""
+    return tiktok_reglage(chaine_de(ep_id))["actif"]
 
 
-def _tiktok_actif() -> bool:
-    return (ROOT / "autopilot" / "secrets" / "tiktok_token.json").exists()
+def _tiktok_actif(chaine: str = "fr") -> bool:
+    """Un jeton TikTok existe-t-il pour cette chaîne ?"""
+    return (ROOT / "autopilot" / "secrets" / tiktok_reglage(chaine)["jeton_fichier"]).exists()
 
 
 def _tiktok_envoye(ep_id: str) -> bool:
@@ -96,7 +128,7 @@ def peut_liberer(ep_id: str) -> bool:
     if st.get("etat") != "publie" or not (st.get("youtube") or {}).get("video_id"):
         return False
     est_long = (ep_dir(ep_id) / "episode-long.json").exists()
-    if not est_long and _tiktok_actif() and tiktok_pour(ep_id) and not _tiktok_envoye(ep_id):
+    if not est_long and _tiktok_actif(chaine_de(ep_id)) and tiktok_pour(ep_id) and not _tiktok_envoye(ep_id):
         return False
     if est_long:
         for s in (read_json(EXPORTS / ep_id / "qa.json", {}) or {}).get("shorts", []):

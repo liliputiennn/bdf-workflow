@@ -11,7 +11,7 @@ Pour chaque nouvelle chaîne, il ne reste que trois choses : la créer, l'autori
 
 ## 2. Connecter la chaîne
 
-Dans un terminal, depuis `section3-motion/pixel-faits` (remplace `en` par l'identifiant du profil : `en`, `histoire`, `sommeil`, `langues`, `quiz`, `musique-enfants`) :
+Dans un terminal, depuis `section3-motion/pixel-faits` (remplace `en` par l'identifiant du profil : `en`, `histoire`, `sommeil`, `langues`, `quiz`, `musique-enfants`, `histoires-enfants`) :
 
 ```bash
 python autopilot/publish/connecter_chaine.py en
