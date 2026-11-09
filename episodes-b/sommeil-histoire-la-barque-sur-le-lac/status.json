@@ -1,7 +1,7 @@
 {
- "etat": "ecrit",
- "maj": "2026-11-09T16:39:40",
- "raison": null,
+ "etat": "quarantaine",
+ "maj": "2026-11-09T20:58:48",
+ "raison": "contrôle qualité : phrase 38 : lecture douteuse (score 0.89) : entendu « Les jambes aussi devenaient lourdes, et chaudes sous la couverture. »",
  "tentatives": 0,
  "youtube": {
   "video_id": null,

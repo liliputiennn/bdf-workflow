@@ -1,0 +1,1238 @@
+{
+ "id": "en-10-business-bizarres-qui-existent-vraiment",
+ "source": "10-business-bizarres-qui-existent-vraiment",
+ "chaine_source": "fr",
+ "chaine_cible": "en",
+ "langue": "en",
+ "langue_nom": "English",
+ "langue_source": "fr",
+ "format": "long",
+ "fichier_episode": "episode-long.json",
+ "cree_le": "2026-11-09T20:25:56",
+ "nom_chaine": "Business Facts (EN)",
+ "consignes": "autopilot/traduction/CONSIGNES-TRADUCTION.md",
+ "episode": {
+  "id": "10-business-bizarres-qui-existent-vraiment",
+  "titre": "10 business bizarres qui existent vraiment en France",
+  "theme": "pelouse",
+  "theme_accent": "pelouse-nuit",
+  "chaine": "Bureau des Faits",
+  "miniature": {
+   "style": "createur",
+   "texte_haut": "10 MÉTIERS QUI EXISTENT VRAIMENT",
+   "gros": "10",
+   "icone": "panier"
+  },
+  "chapitres": [
+   {
+    "titre": "Accroche",
+    "phrases": [
+     "Louer des poules à des familles, envoyer des faucons chasser les pigeons : ça existe vraiment en France.",
+     "Dans cette vidéo, tu découvres des métiers qui semblent faux, mais qui existent vraiment.",
+     "Pour chacun, tu vois ce que la loi demande : une déclaration, un agrément, une formation ou une assurance.",
+     "Tu vois aussi les outils les plus utiles, souvent gratuits, et toutes les adresses sont dans la description.",
+     "Un point d'honnêteté : ce sont des niches, c'est-à-dire de très petits marchés.",
+     "Aucun revenu n'est promis, et certaines de ces idées n'auront peut-être aucun client près de chez toi.",
+     "Les règles citées sont celles de la France, et elles peuvent changer : relis toujours la page officielle.",
+     "Et quand un animal est en jeu, son bien-être passe avant l'argent."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "existe",
+        "vraiment"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 3,
+      "params": {
+       "titre": "CE QUE TU VERRAS",
+       "items": [
+        {
+         "texte": "La loi qui s'applique"
+        },
+        {
+         "texte": "Les outils utiles"
+        },
+        {
+         "texte": "Les limites"
+        }
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 6,
+      "params": {
+       "question": "Combien ça rapporte ?",
+       "pistes": [
+        "Aucune promesse",
+        "Des niches",
+        "Du sérieux"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "titre": "Louer des poules pondeuses à des familles",
+    "phrases": [
+     "Première idée : louer des poules pondeuses à des familles, pour quelques mois.",
+     "La famille reçoit un petit poulailler, des poules et un sac de grains, et elle ramasse les œufs chez elle.",
+     "Toi, tu fournis les poules, tu expliques les soins, et tu reprends les poules à la fin.",
+     "Ce n'est pas qu'une idée en l'air : les Fermiers de Loué ont proposé de louer des poules pondeuses à des particuliers.",
+     "Premier point de loi : les poules sont des animaux, alors leur santé passe avant tout.",
+     "Quand le risque de grippe aviaire est élevé, les volailles des particuliers doivent être protégées de tout contact avec la faune sauvage.",
+     "Selon la direction régionale de l'agriculture de Bretagne, les particuliers qui gardent des volailles doivent aussi se déclarer à leur mairie.",
+     "Pour cela, il existe un formulaire officiel en ligne, sur le site Mes démarches du ministère de l'agriculture.",
+     "Les règles locales varient : demande à la mairie avant de prêter une seule poule.",
+     "Pense aussi à une assurance de responsabilité civile : demande conseil à un assureur.",
+     "La limite : une poule malade ou qui s'échappe devient vite ton problème, pas celui de la famille."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "louer",
+        "poules"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 3,
+      "params": {
+       "titre": "TU FOURNIS",
+       "items": [
+        {
+         "texte": "Un petit poulailler"
+        },
+        {
+         "texte": "Les poules"
+        },
+        {
+         "texte": "Des conseils clairs"
+        }
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 6,
+      "params": {
+       "question": "Les poules sortent-elles ?",
+       "pistes": [
+        "Selon le risque",
+        "Protégées"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 8,
+      "params": {
+       "titre": "TES OUTILS",
+       "items": [
+        {
+         "texte": "Mes démarches (ministère)"
+        },
+        {
+         "texte": "Fiche du formulaire officiel"
+        },
+        {
+         "texte": "La mairie"
+        }
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 9,
+     "accroche": "Louer des poules à des familles : ce que dit la loi"
+    }
+   },
+   {
+    "titre": "Louer des ruches aux entreprises",
+    "phrases": [
+     "Autre idée : installer des ruches dans une entreprise, qui les loue ou les parraine.",
+     "Les employés voient les abeilles, et l'entreprise reçoit du miel et une belle histoire à raconter.",
+     "Des entreprises françaises parrainent déjà des ruches, par exemple avec l'association Un toit pour les abeilles.",
+     "Toi, tu poses les ruches, tu les visites, tu récoltes le miel et tu rends compte au client.",
+     "Premier point de loi : tout apiculteur doit déclarer ses colonies d'abeilles chaque année.",
+     "La déclaration se fait du premier septembre au trente et un décembre, dès la première colonie.",
+     "Elle se fait en ligne sur Mes démarches, le site du ministère de l'agriculture.",
+     "Le texte vise le propriétaire ou le détenteur des colonies : écris dans le contrat qui déclare.",
+     "Les abeilles piquent : pense à une assurance, à une tenue de protection et à une formation chez un apiculteur.",
+     "La limite : une ruche demande du temps toute l'année, et le miel dépend de la météo."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "ruches",
+        "entreprise"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 4,
+      "params": {
+       "titre": "TON TRAVAIL",
+       "items": [
+        {
+         "texte": "Poser les ruches"
+        },
+        {
+         "texte": "Les visiter"
+        },
+        {
+         "texte": "Récolter le miel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 6,
+      "params": {
+       "question": "Quand déclarer ?",
+       "pistes": [
+        "Septembre à décembre"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 8,
+      "params": {
+       "titre": "TES OUTILS",
+       "items": [
+        {
+         "texte": "Mes démarches (ministère)"
+        },
+        {
+         "texte": "Formation chez un apiculteur"
+        },
+        {
+         "texte": "Association de parrainage"
+        }
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 8,
+     "accroche": "Louer des ruches à une entreprise : la déclaration obligatoire"
+    }
+   },
+   {
+    "titre": "Cueilleur de plantes sauvages pour restaurants",
+    "phrases": [
+     "Autre métier : cueilleur de plantes sauvages pour les restaurants.",
+     "Un cuisinier veut des feuilles, des fleurs ou des herbes qu'on ne trouve pas au marché.",
+     "Toi, tu les ramasses le matin, tu les nettoies et tu les livres bien frais.",
+     "Premier outil : l'application Plantnet, qui reconnaît une plante grâce à une photo, et elle est gratuite.",
+     "Mais une application peut se tromper : au moindre doute, tu ne ramasses pas et tu ne vends pas.",
+     "Premier point de loi : les fruits et les produits du sol appartiennent au propriétaire, alors il faut son accord.",
+     "Deuxième point : certaines plantes sont protégées, et leur cueillette est interdite.",
+     "Troisième point : beaucoup de plantes médicinales ne peuvent se vendre qu'en pharmacie.",
+     "Seules cent quarante-huit plantes ont été libérées de ce monopole des pharmaciens.",
+     "Un parc ou une commune peut avoir ses propres règles : renseigne-toi avant de ramasser.",
+     "La limite : tout dépend de la saison et du temps, et un restaurant peut changer d'avis."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "cueilleur",
+        "plantes"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 4,
+      "params": {
+       "titre": "TON OUTIL",
+       "items": [
+        {
+         "texte": "Plantnet : reconnaître une plante"
+        },
+        {
+         "texte": "Gratuit"
+        }
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 6,
+      "params": {
+       "question": "À qui est la plante ?",
+       "pistes": [
+        "Au propriétaire"
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 9,
+      "params": {
+       "valeur": 148,
+       "suffixe": " plantes",
+       "etiquette": "libérées du monopole des pharmaciens"
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 9,
+     "accroche": "Cueilleur de plantes sauvages : trois règles à connaître"
+    }
+   },
+   {
+    "titre": "Fauconnier qui éloigne les oiseaux",
+    "phrases": [
+     "Autre métier : le fauconnier, qui éloigne les oiseaux gênants.",
+     "Des pigeons salissent un toit, des étourneaux mangent les raisins : un rapace dressé peut les faire fuir.",
+     "Des fauconniers travaillent déjà ainsi dans les vignes et autour de certains aéroports.",
+     "Le but est d'effrayer les oiseaux, pas de les chasser pour le plaisir.",
+     "Premier point de loi : garder des rapaces demande un certificat de capacité, une preuve de compétence.",
+     "Un lieu qui détient ce type d'animaux est aussi soumis à une autorisation.",
+     "Il faut donc d'abord apprendre ce métier auprès d'un fauconnier, avant de proposer ce service.",
+     "Certains oiseaux sauvages sont protégés : renseigne-toi auprès de la préfecture avant d'intervenir.",
+     "Il faut aussi de la place, une volière, de la nourriture et des soins vétérinaires toute l'année.",
+     "La limite : peu de clients, des saisons courtes, et un animal qui dépend de toi chaque jour."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "fauconnier",
+        "oiseaux"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 5,
+      "params": {
+       "titre": "À OBTENIR",
+       "items": [
+        {
+         "texte": "Un certificat de capacité"
+        },
+        {
+         "texte": "Une autorisation du lieu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 8,
+      "params": {
+       "question": "Où intervenir ?",
+       "pistes": [
+        "Demande à la préfecture"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 8,
+     "accroche": "Fauconnier : un métier qui existe, et ce que la loi demande"
+    }
+   },
+   {
+    "titre": "Détruire les nids de frelons asiatiques",
+    "phrases": [
+     "Autre métier : détruire les nids de frelons asiatiques.",
+     "Un nid dans un arbre ou sous un toit inquiète les voisins, et personne ne veut s'en occuper seul.",
+     "Détruire un nid est dangereux : le travail se fait en hauteur, avec des produits.",
+     "Pour utiliser certains insecticides réservés aux professionnels, il faut un certificat appelé certibiocide.",
+     "Ce certificat est obligatoire depuis le premier juillet deux mille quinze.",
+     "Et la formation se renouvelle tous les cinq ans.",
+     "Pense à une assurance et à du matériel de sécurité pour le travail en hauteur.",
+     "Chaque département organise la lutte à sa façon : demande à la mairie ou au groupement de défense sanitaire.",
+     "La limite : un métier dangereux, des piqûres possibles, et un travail surtout saisonnier."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "nids",
+        "frelons"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 4,
+      "params": {
+       "titre": "LE CERTIFICAT",
+       "items": [
+        {
+         "texte": "Il s'appelle certibiocide"
+        },
+        {
+         "texte": "Obligatoire pour les produits pros"
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 6,
+      "params": {
+       "valeur": 5,
+       "suffixe": " ans",
+       "etiquette": "avant de renouveler la formation certibiocide"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 8,
+      "params": {
+       "question": "Qui organise la lutte ?",
+       "pistes": [
+        "Le département"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 7,
+     "accroche": "Détruire des nids de frelons : le certificat obligatoire"
+    }
+   },
+   {
+    "titre": "Éco-pâturage : louer des moutons",
+    "phrases": [
+     "Autre métier : louer des moutons pour tondre des pelouses et des terrains.",
+     "Une entreprise ou une commune veut un terrain entretenu sans moteur ni bruit, alors des moutons broutent l'herbe.",
+     "Le point de loi surprenant : dès le premier mouton, on doit se déclarer à l'établissement départemental de l'élevage.",
+     "Les moutons restent des animaux d'élevage, même quand ils servent seulement à tondre.",
+     "Chaque mouton doit porter des boucles d'oreille officielles pour être identifié.",
+     "Les arrivées et les départs d'animaux se déclarent dans les sept jours.",
+     "Il faut aussi des clôtures, de l'eau, de l'ombre et une visite régulière, parce que le bien-être des animaux compte.",
+     "Pense à une assurance, car un mouton qui s'échappe peut causer un accident.",
+     "La limite : un terrain pollué ou mal clôturé peut être dangereux pour les animaux."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "moutons",
+        "tondre"
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 3,
+      "params": {
+       "question": "Déclarer à partir de quand ?",
+       "pistes": [
+        "Dès le premier mouton"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 5,
+      "params": {
+       "titre": "À FAIRE",
+       "items": [
+        {
+         "texte": "Se déclarer"
+        },
+        {
+         "texte": "Poser les boucles"
+        },
+        {
+         "texte": "Noter les mouvements"
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 6,
+      "params": {
+       "valeur": 7,
+       "suffixe": " jours",
+       "etiquette": "pour déclarer un mouvement d'animaux"
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 7,
+     "accroche": "Éco-pâturage : les règles à connaître avant de louer des moutons"
+    }
+   },
+   {
+    "titre": "Récolter les algues de rive",
+    "phrases": [
+     "Autre métier : récolter les algues qui poussent sur les rochers, près du bord de mer.",
+     "Des cuisiniers et des fabricants cherchent des algues fraîches.",
+     "Premier point de loi : en Bretagne, récolter à titre professionnel demande une licence.",
+     "Cette licence est donnée chaque année par le comité régional des pêches.",
+     "Ce n'est donc pas un métier où l'on se lance du jour au lendemain.",
+     "Ailleurs qu'en Bretagne, les règles ne sont pas les mêmes : renseigne-toi auprès de la préfecture de ta région.",
+     "Un outil très utile : les horaires de marée, publiés par le service hydrographique de la marine.",
+     "On respecte la ressource, avec des outils et des périodes autorisés.",
+     "La limite : un travail physique, des marées et des tempêtes qui décident de tes journées."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "algues",
+        "rochers"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 3,
+      "params": {
+       "titre": "LA LICENCE",
+       "items": [
+        {
+         "texte": "Donnée chaque année"
+        },
+        {
+         "texte": "Par le comité régional des pêches"
+        }
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 6,
+      "params": {
+       "question": "Mêmes règles ailleurs ?",
+       "pistes": [
+        "Non",
+        "Renseigne-toi"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 6,
+     "accroche": "Récolter des algues de rive : une licence est nécessaire"
+    }
+   },
+   {
+    "titre": "Piégeur agréé",
+    "phrases": [
+     "Autre métier : piégeur agréé, qui capture les animaux qui causent des dégâts.",
+     "Des ragondins creusent des berges, et des propriétaires cherchent quelqu'un de compétent.",
+     "Pour utiliser des pièges contre certaines espèces, il faut un agrément délivré par le préfet.",
+     "Cet agrément s'obtient après une formation d'au moins seize heures.",
+     "Ces formations sont proposées par les fédérations de chasseurs.",
+     "Toutes les bêtes ne relèvent pas de la même règle : même pour une taupe, renseigne-toi, car la règle dépend de l'espèce.",
+     "Un piège doit être choisi et posé selon des règles précises, pour ne pas blesser d'autres animaux.",
+     "Le terrain compte : chaque propriétaire doit donner son accord avant que tu poses un piège.",
+     "La limite : un travail tôt le matin, par tous les temps, avec une clientèle très locale."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "piégeur",
+        "agréé"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 3,
+      "params": {
+       "titre": "LES ÉTAPES",
+       "items": [
+        {
+         "texte": "Une formation"
+        },
+        {
+         "texte": "Un agrément du préfet"
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 4,
+      "params": {
+       "valeur": 16,
+       "suffixe": " heures",
+       "etiquette": "de formation au minimum"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 6,
+      "params": {
+       "question": "Et la taupe ?",
+       "pistes": [
+        "Selon l'espèce"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 8,
+     "accroche": "Piégeur agréé : la formation et l'agrément exigés"
+    }
+   },
+   {
+    "titre": "Garde particulier",
+    "phrases": [
+     "Autre métier : garde particulier, la personne qui surveille un domaine, une forêt ou un étang pour son propriétaire.",
+     "Elle peut constater des infractions, par exemple une pêche sans autorisation, et dresser un procès-verbal.",
+     "Premier point de loi : le garde doit d'abord être commissionné par le propriétaire, qui le désigne.",
+     "Ensuite, le préfet l'agrée pour une durée de cinq ans, renouvelable.",
+     "Avant d'exercer, il prête serment devant le tribunal judiciaire.",
+     "Une formation d'aptitude technique est aussi exigée, et les fédérations de chasseurs en organisent.",
+     "On est toujours lié à un propriétaire précis, jamais à n'importe quel terrain.",
+     "Toi, tu proposes ta surveillance à des propriétaires d'étangs, de domaines de chasse ou de grandes forêts.",
+     "La limite : le garde n'est pas un policier, et il agit seulement dans le cadre de sa commission."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "garde",
+        "particulier"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 3,
+      "params": {
+       "titre": "LES ÉTAPES",
+       "items": [
+        {
+         "texte": "Commission du propriétaire"
+        },
+        {
+         "texte": "Agrément du préfet"
+        },
+        {
+         "texte": "Serment"
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 4,
+      "params": {
+       "valeur": 5,
+       "suffixe": " ans",
+       "etiquette": "durée de l'agrément, renouvelable"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 8,
+      "params": {
+       "question": "Qui t'engage ?",
+       "pistes": [
+        "Un propriétaire"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 8,
+     "accroche": "Garde particulier : comment le devenir, étape par étape"
+    }
+   },
+   {
+    "titre": "Pension pour chiens et chats à la maison",
+    "phrases": [
+     "Dernière idée : accueillir chez toi les chiens et les chats des gens qui partent en vacances.",
+     "Les propriétaires veulent une pension où l'animal vit dans une vraie maison, plutôt que dans un grand chenil.",
+     "Une pension qui héberge des chiens ou des chats à titre commercial doit se déclarer à la direction de la protection des populations.",
+     "Au moins une personne en contact avec les animaux doit prouver ses connaissances, avec un diplôme ou avec une attestation officielle.",
+     "Cette attestation s'appelle l'attestation de connaissances pour les animaux de compagnie.",
+     "Le lieu doit être propre, sûr et adapté, et tu dois pouvoir joindre un vétérinaire.",
+     "Les règles de la commune, de la copropriété ou du bail peuvent limiter le nombre d'animaux : lis-les avant.",
+     "Pense à une assurance de responsabilité civile professionnelle, car un animal qui s'échappe ou se blesse engage ta responsabilité.",
+     "La limite : tu es de garde jour et nuit, surtout en été et pendant les fêtes."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "accueillir",
+        "chiens"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 3,
+      "params": {
+       "titre": "À PRÉVOIR",
+       "items": [
+        {
+         "texte": "La déclaration"
+        },
+        {
+         "texte": "Un diplôme ou une attestation"
+        },
+        {
+         "texte": "Une assurance"
+        }
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 6,
+      "params": {
+       "question": "Qui doit être formé ?",
+       "pistes": [
+        "Une personne au contact"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 8,
+     "accroche": "Pension pour animaux chez soi : déclaration et attestation"
+    }
+   },
+   {
+    "titre": "Bilan : ce que ces métiers ont en commun",
+    "phrases": [
+     "Voilà des métiers qui semblent faux, mais qui reposent sur de vraies règles.",
+     "Retiens un point commun : dès qu'il y a un animal, une plante protégée ou un produit dangereux, la loi s'en mêle.",
+     "Chaque fois, la bonne question est la même : qui doit déclarer, qui doit autoriser, qui doit être formé ?",
+     "Ces niches sont petites, et aucun revenu n'est promis.",
+     "Avant de te lancer, appelle la mairie, la chambre d'agriculture ou la préfecture, parce que les règles changent d'un endroit à l'autre.",
+     "Teste avec un seul client, et ne dépense rien avant d'avoir parlé à de vraies personnes.",
+     "Tous les outils et leurs adresses sont dans la description.",
+     "Dis-moi en commentaire lequel de ces métiers t'a le plus surpris."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "métiers",
+        "vraies"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 3,
+      "params": {
+       "titre": "TROIS QUESTIONS",
+       "items": [
+        {
+         "texte": "Qui doit déclarer ?"
+        },
+        {
+         "texte": "Qui doit autoriser ?"
+        },
+        {
+         "texte": "Qui doit être formé ?"
+        }
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 8,
+      "params": {
+       "question": "Lequel t'a surpris ?",
+       "pistes": [
+        "Dis-le en commentaire"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "faits": [
+  {
+   "claim": "Les Fermiers de Loué ont proposé de louer des poules pondeuses à des particuliers.",
+   "valeur": "location de poules",
+   "phrase": 12,
+   "sources": [
+    "https://jai-un-pote-dans-la.com/fermiers-de-loue-proposent-poules-de-loue-a-louer/",
+    "https://lareclame.fr/josiane-loue-poules-louer-annonce-296636"
+   ],
+   "check": [
+    "poules",
+    "louer"
+   ],
+   "verified": [
+    "https://jai-un-pote-dans-la.com/fermiers-de-loue-proposent-poules-de-loue-a-louer/",
+    "https://lareclame.fr/josiane-loue-poules-louer-annonce-296636"
+   ]
+  },
+  {
+   "claim": "Quand le niveau de risque d'influenza aviaire est élevé, les volailles des particuliers doivent être protégées de tout contact avec la faune sauvage.",
+   "valeur": "faune sauvage",
+   "phrase": 14,
+   "sources": [
+    "https://draaf.bretagne.agriculture.gouv.fr/influenza-aviaire-hautement-pathogene-iahp-la-france-eleve-son-niveau-de-risque-a3794.html",
+    "https://www.ille-et-vilaine.gouv.fr/Actions-de-l-Etat/Agriculture-et-developpement-rural/Influenza-aviaire/Influenza-aviaire-Claustration-des-volailles-obligatoire-en-zone-a-risque-particulier"
+   ],
+   "check": [
+    "faune sauvage"
+   ],
+   "verified": [
+    "https://draaf.bretagne.agriculture.gouv.fr/influenza-aviaire-hautement-pathogene-iahp-la-france-eleve-son-niveau-de-risque-a3794.html",
+    "https://www.ille-et-vilaine.gouv.fr/Actions-de-l-Etat/Agriculture-et-developpement-rural/Influenza-aviaire/Influenza-aviaire-Claustration-des-volailles-obligatoire-en-zone-a-risque-particulier"
+   ]
+  },
+  {
+   "claim": "Selon la DRAAF Bretagne, les particuliers qui détiennent des volailles doivent se déclarer auprès de leur mairie.",
+   "valeur": "mairie",
+   "phrase": 15,
+   "sources": [
+    "https://draaf.bretagne.agriculture.gouv.fr/influenza-aviaire-hautement-pathogene-iahp-la-france-eleve-son-niveau-de-risque-a3794.html",
+    "https://www.seine-maritime.gouv.fr/index.php/Actions-de-l-Etat/Agriculture-Foret/Controles-en-Exploitation-Agricole/Influenza-aviaire-la-France-place-son-territoire-en-niveau-de-risque-eleve"
+   ],
+   "check": [
+    "mairie"
+   ],
+   "verified": [
+    "https://draaf.bretagne.agriculture.gouv.fr/influenza-aviaire-hautement-pathogene-iahp-la-france-eleve-son-niveau-de-risque-a3794.html",
+    "https://www.seine-maritime.gouv.fr/index.php/Actions-de-l-Etat/Agriculture-Foret/Controles-en-Exploitation-Agricole/Influenza-aviaire-la-France-place-son-territoire-en-niveau-de-risque-eleve"
+   ]
+  },
+  {
+   "claim": "Des entreprises françaises parrainent des ruches, par exemple avec l'association Un toit pour les abeilles.",
+   "valeur": "parrainage de ruches",
+   "phrase": 22,
+   "sources": [
+    "https://www.untoitpourlesabeilles.fr/",
+    "https://www.editions-tissot.fr/un-toit-pour-les-abeilles/"
+   ],
+   "check": [
+    "ruche",
+    "entreprise"
+   ],
+   "verified": [
+    "https://www.untoitpourlesabeilles.fr/",
+    "https://www.editions-tissot.fr/un-toit-pour-les-abeilles/"
+   ]
+  },
+  {
+   "claim": "Chaque année, du 1er septembre au 31 décembre, tout apiculteur doit déclarer ses colonies d'abeilles, dès la première colonie détenue.",
+   "valeur": "1er septembre - 31 décembre",
+   "phrase": 25,
+   "sources": [
+    "https://agriculture.gouv.fr/la-declaration-de-ruches-du-1er-septembre-au-31-decembre",
+    "https://draaf.auvergne-rhone-alpes.agriculture.gouv.fr/apiculteurs-professionnels-ou-amateurs-la-declaration-des-ruches-est-a2150.html"
+   ],
+   "check": [
+    "1er septembre",
+    "31 décembre",
+    "première colonie"
+   ],
+   "verified": [
+    "https://agriculture.gouv.fr/la-declaration-de-ruches-du-1er-septembre-au-31-decembre",
+    "https://draaf.auvergne-rhone-alpes.agriculture.gouv.fr/apiculteurs-professionnels-ou-amateurs-la-declaration-des-ruches-est-a2150.html"
+   ]
+  },
+  {
+   "claim": "L'application Pl@ntNet, qui reconnaît les plantes sur photo, est gratuite.",
+   "valeur": "gratuite",
+   "phrase": 33,
+   "sources": [
+    "https://plantnet.org/",
+    "https://www.umontpellier.fr/articles/plntnet-lapplication-creee-par-des-chercheurs-de-montpellier-pour-reconnaitre-les-plantes"
+   ],
+   "check": [
+    "gratuit"
+   ],
+   "verified": [
+    "https://plantnet.org/",
+    "https://www.umontpellier.fr/articles/plntnet-lapplication-creee-par-des-chercheurs-de-montpellier-pour-reconnaitre-les-plantes"
+   ]
+  },
+  {
+   "claim": "Les fruits et produits du sol appartiennent à leur propriétaire : la cueillette demande son accord.",
+   "valeur": "propriétaire",
+   "phrase": 35,
+   "sources": [
+    "https://www.onf.fr/vivre-la-foret/que-faire-en-foret/regles-et-bonnes-pratiques-en-foret/+/287b::myrtilles-fraises-des-bois-framboises-baies-de-sureau-les-regles-dor-dune-bonne-cueillette-estivale.html",
+    "https://www.senat.fr/questions/base/2004/qSEQ040913877.html"
+   ],
+   "check": [
+    "propriétaire"
+   ],
+   "verified": [
+    "https://www.onf.fr/vivre-la-foret/que-faire-en-foret/regles-et-bonnes-pratiques-en-foret/+/287b::myrtilles-fraises-des-bois-framboises-baies-de-sureau-les-regles-dor-dune-bonne-cueillette-estivale.html",
+    "https://www.senat.fr/questions/base/2004/qSEQ040913877.html"
+   ]
+  },
+  {
+   "claim": "La cueillette des espèces végétales protégées est interdite.",
+   "valeur": "espèces protégées",
+   "phrase": 36,
+   "sources": [
+    "https://aida.ineris.fr/reglementation/arrete-200182-fixant-liste-especes-vegetales-protegees-lensemble-territoire",
+    "https://www.ffrandonnee.fr/s-informer/actualites/environnement-la-reglementation-de-la-cueillette-des-plantes-sauvages"
+   ],
+   "check": [
+    "protégée"
+   ],
+   "verified": [
+    "https://aida.ineris.fr/reglementation/arrete-200182-fixant-liste-especes-vegetales-protegees-lensemble-territoire",
+    "https://www.ffrandonnee.fr/s-informer/actualites/environnement-la-reglementation-de-la-cueillette-des-plantes-sauvages"
+   ]
+  },
+  {
+   "claim": "Cent quarante-huit plantes médicinales ont été libérées du monopole des pharmaciens ; les autres restent réservées aux pharmacies.",
+   "valeur": "148",
+   "phrase": 38,
+   "sources": [
+    "https://questions.assemblee-nationale.fr/q15/15-39475QE.htm",
+    "https://www.senat.fr/rap/r17-727/r17-727-syn.pdf"
+   ],
+   "check": [
+    "148"
+   ],
+   "verified": [
+    "https://questions.assemblee-nationale.fr/q15/15-39475QE.htm",
+    "https://www.senat.fr/rap/r17-727/r17-727-syn.pdf"
+   ]
+  },
+  {
+   "claim": "Des fauconniers utilisent des rapaces pour effrayer les oiseaux dans les vignes et autour de certains aéroports.",
+   "valeur": "fauconnerie de lutte",
+   "phrase": 43,
+   "sources": [
+    "https://ac-franchise.com/article/as-de-pic-nouveau-service-de-fauconnerie-pour-lutter-contre-les-volatiles-indesirables",
+    "https://www.slate.fr/story/81393/avec-les-faucons-armee-francaise"
+   ],
+   "check": [
+    "faucon"
+   ],
+   "verified": [
+    "https://ac-franchise.com/article/as-de-pic-nouveau-service-de-fauconnerie-pour-lutter-contre-les-volatiles-indesirables",
+    "https://www.slate.fr/story/81393/avec-les-faucons-armee-francaise"
+   ]
+  },
+  {
+   "claim": "Détenir des rapaces demande un certificat de capacité.",
+   "valeur": "certificat de capacité",
+   "phrase": 45,
+   "sources": [
+    "https://www.ecologie.gouv.fr/faune-sauvage-captive",
+    "https://aida.ineris.fr/reglementation/circulaire-dnpcff-ndeg-2005-03-170505-detention-transport-utilisation-rapaces-chasse"
+   ],
+   "check": [
+    "certificat de capacité"
+   ],
+   "verified": [
+    "https://www.ecologie.gouv.fr/faune-sauvage-captive",
+    "https://aida.ineris.fr/reglementation/circulaire-dnpcff-ndeg-2005-03-170505-detention-transport-utilisation-rapaces-chasse"
+   ]
+  },
+  {
+   "claim": "Un établissement qui détient des animaux d'espèces non domestiques est soumis à autorisation.",
+   "valeur": "autorisation d'ouverture",
+   "phrase": 46,
+   "sources": [
+    "https://www.ecologie.gouv.fr/faune-sauvage-captive",
+    "https://aida.ineris.fr/reglementation/circulaire-dnpcff-ndeg-2005-03-170505-detention-transport-utilisation-rapaces-chasse"
+   ],
+   "check": [
+    "autorisation"
+   ],
+   "verified": [
+    "https://www.ecologie.gouv.fr/faune-sauvage-captive",
+    "https://aida.ineris.fr/reglementation/circulaire-dnpcff-ndeg-2005-03-170505-detention-transport-utilisation-rapaces-chasse"
+   ]
+  },
+  {
+   "claim": "Pour utiliser certains insecticides réservés aux professionnels, il faut le certificat individuel appelé certibiocide.",
+   "valeur": "certibiocide",
+   "phrase": 54,
+   "sources": [
+    "https://www.ecologie.gouv.fr/politiques-publiques/produits-biocides",
+    "https://draaf.paca.agriculture.gouv.fr/certibiocide-a1676.html"
+   ],
+   "check": [
+    "certibiocide"
+   ],
+   "verified": [
+    "https://www.ecologie.gouv.fr/politiques-publiques/produits-biocides",
+    "https://draaf.paca.agriculture.gouv.fr/certibiocide-a1676.html"
+   ]
+  },
+  {
+   "claim": "Le certibiocide est obligatoire depuis le 1er juillet 2015.",
+   "valeur": "1er juillet 2015",
+   "phrase": 55,
+   "sources": [
+    "https://www.ecologie.gouv.fr/politiques-publiques/produits-biocides",
+    "https://draaf.paca.agriculture.gouv.fr/certibiocide-a1676.html"
+   ],
+   "check": [
+    "1er juillet"
+   ],
+   "verified": [
+    "https://www.ecologie.gouv.fr/politiques-publiques/produits-biocides",
+    "https://draaf.paca.agriculture.gouv.fr/certibiocide-a1676.html"
+   ]
+  },
+  {
+   "claim": "La formation du certibiocide se renouvelle tous les 5 ans.",
+   "valeur": "5 ans",
+   "phrase": 56,
+   "sources": [
+    "https://draaf.paca.agriculture.gouv.fr/certibiocide-a1676.html",
+    "https://draaf.hauts-de-france.agriculture.gouv.fr/certibiocide-a1793.html"
+   ],
+   "check": [
+    "5 ans"
+   ],
+   "verified": [
+    "https://draaf.paca.agriculture.gouv.fr/certibiocide-a1676.html",
+    "https://draaf.hauts-de-france.agriculture.gouv.fr/certibiocide-a1793.html"
+   ]
+  },
+  {
+   "claim": "Tout détenteur de moutons ou de chèvres doit se déclarer à l'établissement départemental de l'élevage, dès le premier animal.",
+   "valeur": "dès le premier animal",
+   "phrase": 62,
+   "sources": [
+    "https://draaf.occitanie.agriculture.gouv.fr/je-suis-detenteur-d-ovins-et-ou-de-caprins-quelles-obligations-sanitaires-a290.html",
+    "https://bfc.chambres-agriculture.fr/minformer/reglementations/detail-de-reglementation/identification-des-ovins-et-caprins"
+   ],
+   "check": [
+    "ede",
+    "premier"
+   ],
+   "verified": [
+    "https://draaf.occitanie.agriculture.gouv.fr/je-suis-detenteur-d-ovins-et-ou-de-caprins-quelles-obligations-sanitaires-a290.html",
+    "https://bfc.chambres-agriculture.fr/minformer/reglementations/detail-de-reglementation/identification-des-ovins-et-caprins"
+   ]
+  },
+  {
+   "claim": "Les moutons doivent être identifiés avec des boucles d'oreille officielles.",
+   "valeur": "boucles",
+   "phrase": 64,
+   "sources": [
+    "https://draaf.occitanie.agriculture.gouv.fr/je-suis-detenteur-d-ovins-et-ou-de-caprins-quelles-obligations-sanitaires-a290.html",
+    "https://bfc.chambres-agriculture.fr/minformer/reglementations/detail-de-reglementation/identification-des-ovins-et-caprins"
+   ],
+   "check": [
+    "boucle"
+   ],
+   "verified": [
+    "https://draaf.occitanie.agriculture.gouv.fr/je-suis-detenteur-d-ovins-et-ou-de-caprins-quelles-obligations-sanitaires-a290.html",
+    "https://bfc.chambres-agriculture.fr/minformer/reglementations/detail-de-reglementation/identification-des-ovins-et-caprins"
+   ]
+  },
+  {
+   "claim": "Les entrées et sorties d'animaux sont à déclarer dans un délai de 7 jours.",
+   "valeur": "7 jours",
+   "phrase": 65,
+   "sources": [
+    "https://draaf.occitanie.agriculture.gouv.fr/je-suis-detenteur-d-ovins-et-ou-de-caprins-quelles-obligations-sanitaires-a290.html",
+    "https://bfc.chambres-agriculture.fr/minformer/reglementations/detail-de-reglementation/identification-des-ovins-et-caprins"
+   ],
+   "check": [
+    "7 jours"
+   ],
+   "verified": [
+    "https://draaf.occitanie.agriculture.gouv.fr/je-suis-detenteur-d-ovins-et-ou-de-caprins-quelles-obligations-sanitaires-a290.html",
+    "https://bfc.chambres-agriculture.fr/minformer/reglementations/detail-de-reglementation/identification-des-ovins-et-caprins"
+   ]
+  },
+  {
+   "claim": "En Bretagne, la récolte professionnelle d'algues de rive demande une licence délivrée chaque année par le comité régional des pêches.",
+   "valeur": "licence annuelle",
+   "phrase": 72,
+   "sources": [
+    "https://cdpmem22.fr/pecher-en-cotes-darmor/recolte-dalgues/",
+    "https://www.cdpmem35.fr/fr/peche-professionelle-ille-et-vilaine/elevage-recolte-des-algues/metier-11-algoculture-et-recolte-des-algues.html"
+   ],
+   "check": [
+    "licence",
+    "crpmem"
+   ],
+   "verified": [
+    "https://cdpmem22.fr/pecher-en-cotes-darmor/recolte-dalgues/",
+    "https://www.cdpmem35.fr/fr/peche-professionelle-ille-et-vilaine/elevage-recolte-des-algues/metier-11-algoculture-et-recolte-des-algues.html"
+   ]
+  },
+  {
+   "claim": "Pour utiliser des pièges contre certaines espèces, une personne doit être agréée par le préfet.",
+   "valeur": "agrément du préfet",
+   "phrase": 80,
+   "sources": [
+    "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000648027",
+    "https://aida.ineris.fr/reglementation/arrete-290107-fixant-dispositions-relatives-piegeage-animaux-classes-nuisibles"
+   ],
+   "check": [
+    "agrément",
+    "préfet"
+   ],
+   "verified": [
+    "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000648027",
+    "https://aida.ineris.fr/reglementation/arrete-290107-fixant-dispositions-relatives-piegeage-animaux-classes-nuisibles"
+   ]
+  },
+  {
+   "claim": "L'agrément de piégeur suppose une formation d'au moins 16 heures.",
+   "valeur": "16 heures",
+   "phrase": 81,
+   "sources": [
+    "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000648027",
+    "https://aida.ineris.fr/reglementation/arrete-290107-fixant-dispositions-relatives-piegeage-animaux-classes-nuisibles"
+   ],
+   "check": [
+    "seize heures"
+   ],
+   "verified": [
+    "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000648027",
+    "https://aida.ineris.fr/reglementation/arrete-290107-fixant-dispositions-relatives-piegeage-animaux-classes-nuisibles"
+   ]
+  },
+  {
+   "claim": "Un garde particulier doit être commissionné par le propriétaire.",
+   "valeur": "commission",
+   "phrase": 89,
+   "sources": [
+    "https://aida.ineris.fr/reglementation/decret-ndeg-2006-1100-300806-relatif-gardes-particuliers-assermentes-completant-code",
+    "https://www.chasse-nature-occitanie.fr/lot/formations/gardes-particuliers.php"
+   ],
+   "check": [
+    "commission"
+   ],
+   "verified": [
+    "https://aida.ineris.fr/reglementation/decret-ndeg-2006-1100-300806-relatif-gardes-particuliers-assermentes-completant-code",
+    "https://www.chasse-nature-occitanie.fr/lot/formations/gardes-particuliers.php"
+   ]
+  },
+  {
+   "claim": "Le garde particulier est agréé par le préfet pour cinq ans, renouvelable.",
+   "valeur": "5 ans",
+   "phrase": 90,
+   "sources": [
+    "https://aida.ineris.fr/reglementation/decret-ndeg-2006-1100-300806-relatif-gardes-particuliers-assermentes-completant-code",
+    "https://www.chasse-nature-occitanie.fr/lot/formations/gardes-particuliers.php"
+   ],
+   "check": [
+    "agrément",
+    "préfet"
+   ],
+   "verified": [
+    "https://aida.ineris.fr/reglementation/decret-ndeg-2006-1100-300806-relatif-gardes-particuliers-assermentes-completant-code",
+    "https://www.chasse-nature-occitanie.fr/lot/formations/gardes-particuliers.php"
+   ]
+  },
+  {
+   "claim": "Une pension qui héberge des chiens ou des chats à titre commercial doit se déclarer à la direction de la protection des populations (DDPP).",
+   "valeur": "DDPP",
+   "phrase": 98,
+   "sources": [
+    "https://draaf.centre-val-de-loire.agriculture.gouv.fr/l-attestation-de-connaissances-pour-les-animaux-a1907.html",
+    "https://draaf.hauts-de-france.agriculture.gouv.fr/activites-liees-aux-animaux-de-compagnie-d-especes-domestiques-a84.html"
+   ],
+   "check": [
+    "DDPP"
+   ],
+   "verified": [
+    "https://draaf.centre-val-de-loire.agriculture.gouv.fr/l-attestation-de-connaissances-pour-les-animaux-a1907.html",
+    "https://draaf.hauts-de-france.agriculture.gouv.fr/activites-liees-aux-animaux-de-compagnie-d-especes-domestiques-a84.html"
+   ]
+  },
+  {
+   "claim": "Au moins une personne en contact avec les animaux doit justifier de ses connaissances par un diplôme ou par l'ACACED.",
+   "valeur": "ACACED",
+   "phrase": 99,
+   "sources": [
+    "https://draaf.centre-val-de-loire.agriculture.gouv.fr/l-attestation-de-connaissances-pour-les-animaux-a1907.html",
+    "https://draaf.hauts-de-france.agriculture.gouv.fr/activites-liees-aux-animaux-de-compagnie-d-especes-domestiques-a84.html"
+   ],
+   "check": [
+    "ACACED"
+   ],
+   "verified": [
+    "https://draaf.centre-val-de-loire.agriculture.gouv.fr/l-attestation-de-connaissances-pour-les-animaux-a1907.html",
+    "https://draaf.hauts-de-france.agriculture.gouv.fr/activites-liees-aux-animaux-de-compagnie-d-especes-domestiques-a84.html"
+   ]
+  }
+ ],
+ "publication": {
+  "titre": "10 business bizarres qui existent vraiment en France",
+  "description": "Des métiers qui semblent faux mais qui existent vraiment en France : location de poules pondeuses, location de ruches à des entreprises, cueilleur de plantes sauvages, fauconnier, destruction de nids de frelons asiatiques, éco-pâturage avec des moutons, récolte d'algues de rive, piégeur agréé, garde particulier et pension pour chiens et chats à la maison. Pour chacun : ce que la loi demande (déclaration, agrément, formation, assurance) et les outils les plus utiles. Ce sont des niches, de très petits marchés : aucun revenu n'est promis, et certaines idées n'auront peut-être aucun client près de chez toi. Quand un animal est en jeu, son bien-être passe avant l'argent. Les règles citées sont celles de la France, tirées de sites officiels : relis la page à jour avant de te lancer. La voix est une voix de synthèse et ce contenu est réalisé avec l'aide d'une IA.\n\nOUTILS CITÉS (adresses relevées le 3 novembre 2026 ; les offres changent, revérifie sur chaque site)\n\n1. Louer des poules pondeuses à des familles\n- Mes démarches, déclarer la détention de volailles (ministère de l'Agriculture) : https://mesdemarches.agriculture.gouv.fr/demarches/particulier/effectuer-une-declaration-55/article/lutter-contre-l-influenza-aviaire-498 (déclaration en ligne)\n- Service-public, déclaration de détention d'oiseaux (formulaire 15472) : https://entreprendre.service-public.fr/vosdroits/R42501 (fiche du formulaire officiel)\n- Ministère de l'Agriculture, mesures de biosécurité contre la grippe aviaire : https://agriculture.gouv.fr/influenza-aviaire-les-mesures-de-biosecurite-pour-les-operateurs-professionnels-et-les-particuliers (gestes à respecter pour les poulaillers)\n- LibreOffice, pour écrire un contrat de location : https://fr.libreoffice.org (logiciel libre)\n\n2. Louer des ruches aux entreprises\n- Ministère de l'Agriculture, la déclaration de ruches : https://agriculture.gouv.fr/la-declaration-de-ruches-du-1er-septembre-au-31-decembre (du 1er septembre au 31 décembre)\n- Mes démarches, déclarer des ruches : https://mesdemarches.agriculture.gouv.fr/demarches/particulier/effectuer-une-declaration-55/article/declarer-des-ruches (démarche en ligne)\n- ADA France, l'association de développement de l'apiculture : https://www.adafrance.org (formations et informations pour apiculteurs)\n- Un toit pour les abeilles : https://www.untoitpourlesabeilles.fr (exemple de parrainage de ruches par des entreprises)\n\n3. Cueilleur de plantes sauvages pour restaurants\n- Pl@ntNet : https://plantnet.org (reconnaissance de plantes sur photo ; gratuit d'après le site)\n- INPN, inventaire national du patrimoine naturel : https://inpn.mnhn.fr (fiches des espèces)\n- Arrêté du 20 janvier 1982 sur les espèces végétales protégées : https://aida.ineris.fr/reglementation/arrete-200182-fixant-liste-especes-vegetales-protegees-lensemble-territoire (la liste nationale)\n- ONF, règles de cueillette en forêt : https://www.onf.fr/vivre-la-foret/que-faire-en-foret/regles-et-bonnes-pratiques-en-foret/+/287b::myrtilles-fraises-des-bois-framboises-baies-de-sureau-les-regles-dor-dune-bonne-cueillette-estivale.html (accord du propriétaire, cueillette commerciale)\n- Géoportail : https://www.geoportail.gouv.fr (cartes et parcelles)\n\n4. Fauconnier qui éloigne les oiseaux\n- Ministère de l'Écologie, faune sauvage captive : https://www.ecologie.gouv.fr/faune-sauvage-captive (certificat de capacité et autorisation d'ouverture)\n- Circulaire de 2005 sur la détention des rapaces : https://aida.ineris.fr/reglementation/circulaire-dnpcff-ndeg-2005-03-170505-detention-transport-utilisation-rapaces-chasse (texte officiel sur les rapaces)\n\n5. Détruire les nids de frelons asiatiques\n- Ministère de l'Écologie, produits biocides et certibiocide : https://www.ecologie.gouv.fr/politiques-publiques/produits-biocides (le certificat obligatoire)\n- Site officiel d'inscription au certibiocide : https://certibiocide.din.developpement-durable.gouv.fr (démarche en ligne)\n- DRAAF Provence-Alpes-Côte d'Azur, fiche certibiocide : https://draaf.paca.agriculture.gouv.fr/certibiocide-a1676.html (durée de validité)\n- FREDON Île-de-France, gestion du frelon asiatique : https://fredon.fr/idf/frelon-asiatique (conseils sur la destruction des nids)\n\n6. Éco-pâturage : louer des moutons\n- DRAAF Occitanie, détenteur d'ovins et de caprins : https://draaf.occitanie.agriculture.gouv.fr/je-suis-detenteur-d-ovins-et-ou-de-caprins-quelles-obligations-sanitaires-a290.html (obligations dès le premier animal)\n- Chambre d'agriculture, identification des ovins et caprins : https://bfc.chambres-agriculture.fr/minformer/reglementations/detail-de-reglementation/identification-des-ovins-et-caprins (boucles d'oreille et déclaration)\n- Chambres d'agriculture, identification des animaux : https://chambres-agriculture.fr/sinformer/nos-ressources/elevage/identification (fiche nationale)\n- Géoportail : https://www.geoportail.gouv.fr (mesurer la surface d'un terrain)\n\n7. Récolter les algues de rive\n- Comité des pêches des Côtes-d'Armor, récolte d'algues : https://cdpmem22.fr/pecher-en-cotes-darmor/recolte-dalgues/ (licence et démarches)\n- Comité des pêches d'Ille-et-Vilaine, algoculture et récolte des algues : https://www.cdpmem35.fr/fr/peche-professionelle-ille-et-vilaine/elevage-recolte-des-algues/metier-11-algoculture-et-recolte-des-algues.html (licence délivrée chaque année)\n- Shom, horaires de marée : https://maree.shom.fr (gratuit d'après le site)\n\n8. Piégeur agréé\n- Arrêté du 29 janvier 2007 sur le piégeage (Légifrance) : https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000648027 (agrément et formation)\n- Fédération des chasseurs, formation au piégeage : https://www.chasse-nature-occitanie.fr/commun/formations/piegeage.php (formation de 16 heures)\n- Base AIDA de l'Ineris, arrêté sur le piégeage : https://aida.ineris.fr/reglementation/arrete-290107-fixant-dispositions-relatives-piegeage-animaux-classes-nuisibles (texte consolidé)\n\n9. Garde particulier\n- Décret du 30 août 2006 sur les gardes particuliers (Ineris) : https://aida.ineris.fr/reglementation/decret-ndeg-2006-1100-300806-relatif-gardes-particuliers-assermentes-completant-code (agrément, serment)\n- Article 29-1 du code de procédure pénale (Légifrance) : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037825610 (conditions d'agrément)\n- Fédération des chasseurs du Lot, formation de garde particulier : https://www.chasse-nature-occitanie.fr/lot/formations/gardes-particuliers.php (formation et critères)\n\n10. Pension pour chiens et chats à la maison\n- Mes démarches, déclarer une activité en lien avec des animaux de compagnie : https://mesdemarches.agriculture.gouv.fr/demarches/particulier/vivre-avec-un-animal-de-compagnie/article/declarer-une-activite?id_rubrique=54 (déclaration en ligne)\n- DRAAF Centre-Val de Loire, attestation de connaissances pour les animaux : https://draaf.centre-val-de-loire.agriculture.gouv.fr/l-attestation-de-connaissances-pour-les-animaux-a1907.html (attestation et déclaration)\n- DRAAF Hauts-de-France, activités liées aux animaux de compagnie : https://draaf.hauts-de-france.agriculture.gouv.fr/activites-liees-aux-animaux-de-compagnie-d-especes-domestiques-a84.html (qui doit se déclarer)\n\nPour tous : appelle la mairie, la chambre d'agriculture ou la préfecture avant de te lancer.\n\n#business #metiers #niche #france",
+  "tags": [
+   "business bizarres",
+   "métiers insolites",
+   "idées de business",
+   "location de poules",
+   "location de ruches",
+   "éco-pâturage",
+   "fauconnier",
+   "frelon asiatique",
+   "cueilleur de plantes",
+   "explication"
+  ],
+  "question_commentaires": "Lequel de ces métiers t'a le plus surpris ?",
+  "langue": "fr",
+  "contenu_ia": true
+ },
+ "mots_source": 1735,
+ "libelles": {
+  "chapitres": "Chapters",
+  "mots_cles": "Keywords",
+  "mention_ia": "Synthetic voice (AI).",
+  "video_complete": "Full video",
+  "question_defaut": "What did you think before watching this video? Tell me in the comments."
+ }
+}

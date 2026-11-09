@@ -1,0 +1,13 @@
+{
+ "seuil": 0.9,
+ "a_relire": [
+  {
+   "phrase": 38,
+   "texte": "Ses jambes aussi devenaient lourdes, et chaudes sous la couverture.",
+   "score": 0.89,
+   "entendu": "Les jambes aussi devenaient lourdes, et chaudes sous la couverture."
+  }
+ ],
+ "duree_s": 265.6,
+ "calcul_s": 1239
+}

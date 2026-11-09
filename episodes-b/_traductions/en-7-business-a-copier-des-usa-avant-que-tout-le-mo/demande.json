@@ -1,0 +1,1257 @@
+{
+ "id": "en-7-business-a-copier-des-usa-avant-que-tout-le-mo",
+ "source": "7-business-a-copier-des-usa-avant-que-tout-le-mo",
+ "chaine_source": "fr",
+ "chaine_cible": "en",
+ "langue": "en",
+ "langue_nom": "English",
+ "langue_source": "fr",
+ "format": "long",
+ "fichier_episode": "episode-long.json",
+ "cree_le": "2026-11-09T20:25:56",
+ "nom_chaine": "Business Facts (EN)",
+ "consignes": "autopilot/traduction/CONSIGNES-TRADUCTION.md",
+ "episode": {
+  "id": "7-business-a-copier-des-usa-avant-que-tout-le-mo",
+  "titre": "7 business à copier des USA avant tout le monde",
+  "theme": "pelouse",
+  "theme_accent": "pelouse-nuit",
+  "chaine": "La Débrouille",
+  "miniature": {
+   "style": "createur",
+   "texte_haut": "7 BUSINESS DES USA",
+   "gros": "7",
+   "icone": "pieces"
+  },
+  "chapitres": [
+   {
+    "titre": "Accroche",
+    "phrases": [
+     "Presque rien à acheter, et des Américains en vivent.",
+     "Je te montre comment copier ces business ici, avec le message exact à envoyer.",
+     "Pour chacun : où trouver ton premier client, quoi lui écrire, et ce que ça peut rapporter.",
+     "Et le dernier est celui qui paie le mieux à l'heure.",
+     "Tous les messages sont dans la description : tu n'as plus qu'à les copier.",
+     "On commence par un business qui se lance avec un seul outil."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "rien"
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 3,
+      "params": {
+       "question": "Combien ça peut rapporter ?",
+       "pistes": [
+        "Par jour",
+        "Où chercher",
+        "Quoi écrire"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 5,
+      "params": {
+       "titre": "Dans chaque business",
+       "items": [
+        {
+         "texte": "Où trouver ton client"
+        },
+        {
+         "texte": "Le message à copier"
+        },
+        {
+         "texte": "Le calcul du gain"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "titre": "Nettoyage de terrasses",
+    "phrases": [
+     "Une terrasse verte, c'est un client qui attend.",
+     "Aux États-Unis, nettoyer à haute pression est un métier à part entière.",
+     "Ici, un nettoyage de terrasse se paie de trois à quinze euros le mètre carré, selon le sol.",
+     "Il te faut un nettoyeur haute pression : tu peux le louer à la journée dans un magasin de bricolage.",
+     "Prends une petite terrasse chez un voisin : cinquante mètres carrés à cinq euros, ça fait déjà deux cent cinquante euros.",
+     "Où trouver ce client ? Dans les groupes de ton quartier et les annonces de services de Leboncoin.",
+     "Cherche les gens qui se plaignent d'une terrasse sale ou d'un portail verdi.",
+     "Écris à une dizaine de personnes par jour : les premières réponses arrivent vite.",
+     "Voici le message : tu dis bonjour, tu parles de leur terrasse, et tu proposes un devis gratuit.",
+     "Le message complet à copier est dans la description de la vidéo.",
+     "Premier jour : tu nettoies un coin de ta propre terrasse et tu prends une photo avant-après.",
+     "Le lendemain, tu envoies ton message avec cette photo.",
+     "Le troisième jour, tu relances ceux qui n'ont pas répondu et tu fixes un rendez-vous.",
+     "Accélérateur : fais un tarif de départ plus bas au premier client, contre un avis écrit.",
+     "Et le suivant se lance avec une simple échelle."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 1,
+       "titre": "Nettoyage de terrasses",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Prix constaté",
+         "valeur": "3 à 15 €/m²"
+        },
+        {
+         "label": "Départ",
+         "valeur": "Une location"
+        },
+        {
+         "label": "Gain estimé",
+         "valeur": "250 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 5,
+      "params": {
+       "valeur": 250,
+       "suffixe": " €",
+       "etiquette": "ESTIMATION : 50 M² À 5 €"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 6,
+      "params": {
+       "titre": "Où trouver ton client",
+       "items": [
+        {
+         "texte": "Groupes du quartier"
+        },
+        {
+         "texte": "Services de Leboncoin"
+        },
+        {
+         "texte": "Terrasses vertes"
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 8,
+      "params": {}
+     },
+     {
+      "type": "liste",
+      "phrase": 9,
+      "params": {
+       "titre": "Message à copier",
+       "items": [
+        {
+         "texte": "Un bonjour naturel"
+        },
+        {
+         "texte": "Une phrase sur leur situation"
+        },
+        {
+         "texte": "Un essai gratuit ou un prix d'essai"
+        },
+        {
+         "texte": "Une question facile"
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 11,
+      "params": {}
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 14,
+      "params": {
+       "accents": [
+        "accélérateur"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Une terrasse verte, c'est un client qui attend."
+    }
+   },
+   {
+    "titre": "Nettoyage de gouttières",
+    "phrases": [
+     "Des gouttières bouchées, c'est de l'argent qui tombe du ciel.",
+     "Aux États-Unis, des entreprises ne font que ça.",
+     "Ici, un nettoyage de gouttières coûte entre dix et vingt-cinq euros le mètre.",
+     "Ton matériel : une échelle, des gants et un seau, que tu as peut-être déjà.",
+     "Pour une maison de quinze mètres, ça fait cent cinquante euros.",
+     "Cherche les maisons entourées d'arbres : ce sont elles qui ont le plus besoin de toi.",
+     "Tape « nettoyage gouttière » dans les groupes de quartier et regarde qui demande.",
+     "Passe aussi voir les petites agences immobilières, et écris à une dizaine de propriétaires par jour.",
+     "Voici le message : tu parles des feuilles, tu proposes des photos avant-après, et un passage cette semaine.",
+     "Le message complet à copier est dans la description de la vidéo.",
+     "Premier jour : tu prends en photo une gouttière sale chez toi ou chez un proche.",
+     "Le lendemain, tu envoies ton message avec la photo.",
+     "Le troisième jour, tu proposes un créneau et tu viens avec ton échelle.",
+     "Accélérateur : offre la gouttière du voisin d'à côté si le client te recommande.",
+     "Et le suivant se lance avec une simple raclette."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 2,
+       "titre": "Nettoyage de gouttières",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Prix constaté",
+         "valeur": "10 à 25 €/m"
+        },
+        {
+         "label": "Départ",
+         "valeur": "Une échelle"
+        },
+        {
+         "label": "Gain estimé",
+         "valeur": "150 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 5,
+      "params": {
+       "valeur": 150,
+       "suffixe": " €",
+       "etiquette": "ESTIMATION : 15 M À 10 €"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 6,
+      "params": {
+       "titre": "Où trouver ton client",
+       "items": [
+        {
+         "texte": "Maisons avec arbres"
+        },
+        {
+         "texte": "Groupes de quartier"
+        },
+        {
+         "texte": "Petites agences"
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 8,
+      "params": {}
+     },
+     {
+      "type": "liste",
+      "phrase": 9,
+      "params": {
+       "titre": "Message à copier",
+       "items": [
+        {
+         "texte": "Un bonjour naturel"
+        },
+        {
+         "texte": "Une phrase sur leur situation"
+        },
+        {
+         "texte": "Un essai gratuit ou un prix d'essai"
+        },
+        {
+         "texte": "Une question facile"
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 11,
+      "params": {}
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 14,
+      "params": {
+       "accents": [
+        "accélérateur"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Les gouttières bouchées : de l'argent qui tombe du ciel."
+    }
+   },
+   {
+    "titre": "Nettoyage de vitres",
+    "phrases": [
+     "Des vitres propres, ça se voit tout de suite, et ça se paie.",
+     "Aux États-Unis, laver des vitres est une industrie à part entière.",
+     "Ici, un laveur de vitres facture de vingt-cinq à quarante-cinq euros de l'heure.",
+     "Ton matériel : une raclette, un seau, et un chiffon propre.",
+     "Deux heures chez un voisin à trente euros de l'heure, ça fait soixante euros.",
+     "Cherche les commerces de ta rue : boulangeries, coiffeurs, petites boutiques.",
+     "Regarde leurs vitrines : si elles sont sales, ils ont besoin de toi.",
+     "Passe en personne avec un petit mot, puis écris à une dizaine de commerces par jour.",
+     "Voici le message : tu complimentes la boutique et tu proposes un premier nettoyage à prix d'essai.",
+     "Le message complet à copier est dans la description de la vidéo.",
+     "Premier jour : tu nettoies ta propre fenêtre et tu prends une photo avant-après.",
+     "Le lendemain, tu passes dans tes commerces avec la photo sur ton téléphone.",
+     "Le troisième jour, tu fixes un passage régulier, par exemple une fois par mois.",
+     "Accélérateur : propose un abonnement mensuel, un client fidèle vaut mieux que des passages isolés.",
+     "Et le suivant se lance avec un simple tournevis."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 3,
+       "titre": "Nettoyage de vitres",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Prix constaté",
+         "valeur": "25 à 45 €/h"
+        },
+        {
+         "label": "Départ",
+         "valeur": "Une raclette"
+        },
+        {
+         "label": "Gain estimé",
+         "valeur": "60 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 5,
+      "params": {
+       "valeur": 60,
+       "suffixe": " €",
+       "etiquette": "ESTIMATION : 2 H À 30 €"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 6,
+      "params": {
+       "titre": "Où trouver ton client",
+       "items": [
+        {
+         "texte": "Commerces de ta rue"
+        },
+        {
+         "texte": "Vitrines sales"
+        },
+        {
+         "texte": "Passage en personne"
+        }
+       ]
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 8,
+      "params": {
+       "recherche": "window cleaning squeegee",
+       "legende": "Nettoyage de vitres",
+       "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo/visuels/window-cleaning-squeegee.jpg",
+       "credit": "Photo : It's No Game, CC BY 2.0"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 9,
+      "params": {
+       "titre": "Message à copier",
+       "items": [
+        {
+         "texte": "Un bonjour naturel"
+        },
+        {
+         "texte": "Une phrase sur leur situation"
+        },
+        {
+         "texte": "Un essai gratuit ou un prix d'essai"
+        },
+        {
+         "texte": "Une question facile"
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 11,
+      "params": {}
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 14,
+      "params": {
+       "accents": [
+        "accélérateur"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Des vitres propres, ça se voit tout de suite, et ça se paie."
+    }
+   },
+   {
+    "titre": "Montage de meubles",
+    "phrases": [
+     "Un meuble en kit, c'est des heures de galère pour les autres.",
+     "Aux États-Unis, des gens vivent du montage de meubles pour leurs voisins.",
+     "Ici, un bricoleur à domicile facture en moyenne quarante-quatre euros par intervention.",
+     "Un meuble en kit monté se paie environ soixante-trois euros.",
+     "Trois meubles dans la journée, ça fait environ cent quatre-vingt-dix euros.",
+     "Ton matériel : un tournevis, une perceuse, et de la patience.",
+     "Cherche les gens qui viennent d'emménager : ils ont toujours des cartons et des meubles à monter.",
+     "Les groupes du quartier sont pleins de ces gens : écris à une dizaine de personnes par jour.",
+     "Voici le message : tu proposes un prix clair par meuble et un passage dès demain.",
+     "Le message complet à copier est dans la description de la vidéo.",
+     "Premier jour : tu montes un meuble chez un proche et tu prends des photos.",
+     "Le lendemain, tu envoies ton message avec le prix par meuble.",
+     "Le troisième jour, tu passes chez ton premier client avec ton tournevis.",
+     "Accélérateur : demande un avis écrit au premier client et montre-le dans tes messages.",
+     "Et le suivant se fait en marchant, avec un chien."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 4,
+       "titre": "Montage de meubles",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Prix constaté",
+         "valeur": "63 € / meuble"
+        },
+        {
+         "label": "Départ",
+         "valeur": "Un tournevis"
+        },
+        {
+         "label": "Gain estimé",
+         "valeur": "190 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 5,
+      "params": {
+       "valeur": 190,
+       "suffixe": " €",
+       "etiquette": "ESTIMATION : 3 MEUBLES À 63 €"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 6,
+      "params": {
+       "titre": "Où trouver ton client",
+       "items": [
+        {
+         "texte": "Gens qui emménagent"
+        },
+        {
+         "texte": "Groupes du quartier"
+        },
+        {
+         "texte": "Prix clair par meuble"
+        }
+       ]
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 8,
+      "params": {
+       "recherche": "assembling flat pack furniture",
+       "legende": "Montage de meubles",
+       "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo/visuels/assembling-flat-pack-furniture.jpg",
+       "credit": "Photo : Bruce Szalwinski, CC BY 2.0"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 9,
+      "params": {
+       "titre": "Message à copier",
+       "items": [
+        {
+         "texte": "Un bonjour naturel"
+        },
+        {
+         "texte": "Une phrase sur leur situation"
+        },
+        {
+         "texte": "Un essai gratuit ou un prix d'essai"
+        },
+        {
+         "texte": "Une question facile"
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 11,
+      "params": {}
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 14,
+      "params": {
+       "accents": [
+        "accélérateur"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Un meuble en kit monté : le calcul qui fait envie."
+    }
+   },
+   {
+    "titre": "Promenade de chiens",
+    "phrases": [
+     "Des chiens qui s'ennuient, des maîtres qui travaillent : voilà ton marché.",
+     "Aux États-Unis, la promenade de chiens fait vivre des plateformes entières.",
+     "À Paris, une promenade de quarante-cinq minutes est affichée dix-sept euros.",
+     "Ton matériel : une laisse solide, des sacs, et ton téléphone pour les photos.",
+     "Quatre promenades dans l'après-midi, ça fait soixante-huit euros.",
+     "Cherche les maîtres qui travaillent toute la journée : leurs chiens attendent seuls.",
+     "Les groupes de quartier et les panneaux des petits commerces sont ton terrain.",
+     "Va dans les parcs, parle aux maîtres, puis écris à une dizaine de personnes par jour.",
+     "Voici le message : tu proposes une première promenade d'essai, avec une photo du chien.",
+     "Le message complet à copier est dans la description de la vidéo.",
+     "Premier jour : tu promènes le chien d'un proche et tu prends de belles photos.",
+     "Le lendemain, tu envoies ces photos avec ton message.",
+     "Le troisième jour, tu fixes une promenade régulière : c'est là que ça devient un vrai revenu.",
+     "Accélérateur : propose un petit tarif pour plusieurs chiens du même maître.",
+     "Et le suivant se lance avec une tondeuse."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 5,
+       "titre": "Promenade de chiens",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Prix constaté",
+         "valeur": "17 € / 45 min"
+        },
+        {
+         "label": "Départ",
+         "valeur": "Une laisse"
+        },
+        {
+         "label": "Gain estimé",
+         "valeur": "68 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 5,
+      "params": {
+       "valeur": 68,
+       "suffixe": " €",
+       "etiquette": "ESTIMATION : 4 PROMENADES À 17 €"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 6,
+      "params": {
+       "titre": "Où trouver ton client",
+       "items": [
+        {
+         "texte": "Maîtres qui travaillent"
+        },
+        {
+         "texte": "Parcs du quartier"
+        },
+        {
+         "texte": "Petits commerces"
+        }
+       ]
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 8,
+      "params": {
+       "recherche": "dog walking park",
+       "legende": "Promenade de chiens",
+       "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo/visuels/dog-walking-park.jpg",
+       "credit": "Photo : David Adam Kess, CC BY-SA 4.0"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 9,
+      "params": {
+       "titre": "Message à copier",
+       "items": [
+        {
+         "texte": "Un bonjour naturel"
+        },
+        {
+         "texte": "Une phrase sur leur situation"
+        },
+        {
+         "texte": "Un essai gratuit ou un prix d'essai"
+        },
+        {
+         "texte": "Une question facile"
+        }
+       ]
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 11,
+      "params": {
+       "recherche": "dog walking leash park",
+       "legende": "Ton premier jour",
+       "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo/visuels/dog-walking-leash-park.jpg",
+       "credit": "Photo : Lovemedead, CC BY-SA 4.0"
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 14,
+      "params": {
+       "accents": [
+        "accélérateur"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Des chiens qui s'ennuient, des maîtres qui travaillent."
+    }
+   },
+   {
+    "titre": "Entretien de jardins",
+    "phrases": [
+     "Un jardin qui pousse, c'est un client qui revient chaque mois.",
+     "Aux États-Unis, des gens vivent de la tonte de pelouses.",
+     "Selon un guide de prix, un jardinier se paie entre vingt-cinq et quarante-cinq euros de l'heure.",
+     "Ton matériel : une tondeuse et un taille-haie, qu'on loue ou qu'on trouve d'occasion.",
+     "Trois heures à trente euros de l'heure, ça fait quatre-vingt-dix euros.",
+     "Cherche les maisons dont la pelouse est haute ou la haie déborde sur le trottoir.",
+     "Les retraités et les gens qui travaillent beaucoup sont tes meilleurs clients.",
+     "Écris à une dizaine de personnes par jour dans les groupes de ton quartier.",
+     "Voici le message : tu parles de leur jardin et tu proposes un premier passage au prix d'essai.",
+     "Le message complet à copier est dans la description de la vidéo.",
+     "Premier jour : tu tonds le jardin d'un proche et tu prends une photo avant-après.",
+     "Le lendemain, tu envoies ton message avec la photo.",
+     "Le troisième jour, tu proposes un passage régulier toutes les semaines.",
+     "Accélérateur : propose aussi la taille de haie, une prestation de plus sans chercher un nouveau client.",
+     "Et le dernier est celui qui paie le mieux à l'heure : il se lance avec un ordinateur."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 6,
+       "titre": "Entretien de jardins",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Prix constaté",
+         "valeur": "25 à 45 €/h"
+        },
+        {
+         "label": "Départ",
+         "valeur": "Une tondeuse"
+        },
+        {
+         "label": "Gain estimé",
+         "valeur": "90 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 5,
+      "params": {
+       "valeur": 90,
+       "suffixe": " €",
+       "etiquette": "ESTIMATION : 3 H À 30 €"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 6,
+      "params": {
+       "titre": "Où trouver ton client",
+       "items": [
+        {
+         "texte": "Pelouses hautes"
+        },
+        {
+         "texte": "Retraités du quartier"
+        },
+        {
+         "texte": "Groupes de quartier"
+        }
+       ]
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 8,
+      "params": {
+       "recherche": "lawn mowing garden",
+       "legende": "Entretien de jardins",
+       "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo/visuels/lawn-mowing-garden.jpg",
+       "credit": "Photo : Shixart1985, CC BY 2.0"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 9,
+      "params": {
+       "titre": "Message à copier",
+       "items": [
+        {
+         "texte": "Un bonjour naturel"
+        },
+        {
+         "texte": "Une phrase sur leur situation"
+        },
+        {
+         "texte": "Un essai gratuit ou un prix d'essai"
+        },
+        {
+         "texte": "Une question facile"
+        }
+       ]
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 11,
+      "params": {
+       "recherche": "lawn mowing garden",
+       "legende": "Ton premier jour",
+       "fichier": "7-business-a-copier-des-usa-avant-que-tout-le-mo/visuels/lawn-mowing-garden.jpg",
+       "credit": "Photo : Shixart1985, CC BY 2.0"
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 14,
+      "params": {
+       "accents": [
+        "accélérateur"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Un jardin qui pousse, c'est un client qui revient."
+    }
+   },
+   {
+    "titre": "Aide informatique à domicile",
+    "phrases": [
+     "Ton voisin n'arrive pas à imprimer, et il paiera pour que tu l'aides.",
+     "Aux États-Unis, des entreprises vivent de l'aide informatique à domicile.",
+     "Ici, l'aide informatique à domicile se paie entre vingt-cinq et soixante euros de l'heure.",
+     "Ton seul matériel : ton ordinateur, ton téléphone, et de la patience.",
+     "Deux heures chez un voisin à quarante euros de l'heure, ça fait quatre-vingts euros.",
+     "Cherche les personnes âgées, les petits commerces et les familles débordées.",
+     "Repère ceux qui disent qu'ils n'arrivent pas à régler leur box ou leur imprimante.",
+     "Les groupes de quartier et les associations de seniors sont ton terrain : écris à une dizaine de personnes par jour.",
+     "Voici le message : tu proposes de régler un problème précis, avec une première demi-heure offerte.",
+     "Le message complet à copier est dans la description de la vidéo.",
+     "Premier jour : tu dépannes un proche et tu notes ce que tu as réglé.",
+     "Le lendemain, tu envoies ton message avec un exemple de problème résolu.",
+     "Le troisième jour, tu fixes ton premier rendez-vous chez un voisin.",
+     "Accélérateur : propose un forfait pour plusieurs problèmes d'un coup, c'est plus simple pour le client.",
+     "Voilà, tu as de quoi te lancer ce soir."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 7,
+       "titre": "Aide informatique à domicile",
+       "badge": "Business",
+       "lignes": [
+        {
+         "label": "Prix constaté",
+         "valeur": "25 à 60 €/h"
+        },
+        {
+         "label": "Départ",
+         "valeur": "Ton ordinateur"
+        },
+        {
+         "label": "Gain estimé",
+         "valeur": "80 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 5,
+      "params": {
+       "valeur": 80,
+       "suffixe": " €",
+       "etiquette": "ESTIMATION : 2 H À 40 €"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 6,
+      "params": {
+       "titre": "Où trouver ton client",
+       "items": [
+        {
+         "texte": "Personnes âgées"
+        },
+        {
+         "texte": "Petits commerces"
+        },
+        {
+         "texte": "Associations de seniors"
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 8,
+      "params": {}
+     },
+     {
+      "type": "liste",
+      "phrase": 9,
+      "params": {
+       "titre": "Message à copier",
+       "items": [
+        {
+         "texte": "Un bonjour naturel"
+        },
+        {
+         "texte": "Une phrase sur leur situation"
+        },
+        {
+         "texte": "Un essai gratuit ou un prix d'essai"
+        },
+        {
+         "texte": "Une question facile"
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 11,
+      "params": {}
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 14,
+      "params": {
+       "accents": [
+        "accélérateur"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Ton voisin n'arrive pas à imprimer, et il paiera."
+    }
+   },
+   {
+    "titre": "Par où commencer",
+    "phrases": [
+     "Alors, par lequel commencer ?",
+     "Si tu veux ton premier euro le plus vite, choisis celui où tu as déjà le matériel.",
+     "Si tu veux le plus gros tarif à l'heure, prends l'aide informatique.",
+     "Dans tous les cas, écris à une dizaine de personnes dès ce soir, avec le message de la description.",
+     "Abonne-toi : la semaine prochaine, les messages pour décrocher des clients en entreprise.",
+     "Dis-moi en commentaire lequel tu testes en premier."
+    ],
+    "scenes": [
+     {
+      "type": "question",
+      "phrase": 1,
+      "params": {
+       "question": "Lequel tu testes en premier ?",
+       "pistes": [
+        "Terrasses",
+        "Vitres",
+        "Informatique"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 4,
+      "params": {
+       "titre": "Ce soir",
+       "items": [
+        {
+         "texte": "Choisis ton business"
+        },
+        {
+         "texte": "Copie le message"
+        },
+        {
+         "texte": "Écris à une dizaine de personnes"
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 5,
+      "params": {
+       "accents": [
+        "Abonne-toi"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "faits": [
+  {
+   "claim": "Un nettoyage de terrasse se paie de 3 à 15 € le mètre carré selon le sol (fourchette constatée).",
+   "valeur": "3 à 15 €/m²",
+   "phrase": 9,
+   "sources": [
+    "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/",
+    "https://ynspir.com/conseils-decoration/renovation/prix-renovation/prix-nettoyage-de-terrasse/"
+   ],
+   "check": [
+    "3 et 15"
+   ],
+   "verified": [
+    "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+   ]
+  },
+  {
+   "claim": "Calcul d'hypothèse : 50 m² à 5 € le mètre carré (dans la fourchette de 3 à 15 €) = 250 €.",
+   "valeur": "250 €",
+   "phrase": 11,
+   "sources": [
+    "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/",
+    "https://ynspir.com/conseils-decoration/renovation/prix-renovation/prix-nettoyage-de-terrasse/"
+   ],
+   "check": [
+    "3 et 15"
+   ],
+   "verified": [
+    "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+   ]
+  },
+  {
+   "claim": "Un nettoyage de gouttières coûte de 10 à 25 € le mètre linéaire (10 à 20 € HT selon un guide, 12 à 25 € TTC selon un autre).",
+   "valeur": "10 à 25 €/m",
+   "phrase": 24,
+   "sources": [
+    "https://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php",
+    "https://mesdepanneurs.fr/cas/nettoyage-gouttiere"
+   ],
+   "check": [
+    "10 euros",
+    "20 euros"
+   ],
+   "verified": [
+    "https://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php"
+   ]
+  },
+  {
+   "claim": "Calcul d'hypothèse : 15 mètres à 10 € le mètre = 150 €.",
+   "valeur": "150 €",
+   "phrase": 26,
+   "sources": [
+    "https://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php",
+    "https://mesdepanneurs.fr/cas/nettoyage-gouttiere"
+   ],
+   "check": [
+    "10 euros",
+    "20 euros"
+   ],
+   "verified": [
+    "https://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php"
+   ]
+  },
+  {
+   "claim": "Un laveur de vitres auto-entrepreneur facture de 25 à 45 € de l'heure hors taxes.",
+   "valeur": "25 à 45 €/h",
+   "phrase": 39,
+   "sources": [
+    "https://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/",
+    "https://businessornot.fr/creation-entreprise/nettoyage-de-vitres-a-domicile-jusqua-45-eur-de-lheure-un-tarif-qui-grimpe-vite-avec-la-hauteur"
+   ],
+   "check": [
+    "25€ et 45€ de l'heure"
+   ],
+   "verified": [
+    "https://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/"
+   ]
+  },
+  {
+   "claim": "Calcul d'hypothèse : 2 heures à 30 € de l'heure (dans la fourchette de 25 à 45 €) = 60 €.",
+   "valeur": "60 €",
+   "phrase": 41,
+   "sources": [
+    "https://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/",
+    "https://businessornot.fr/creation-entreprise/nettoyage-de-vitres-a-domicile-jusqua-45-eur-de-lheure-un-tarif-qui-grimpe-vite-avec-la-hauteur"
+   ],
+   "check": [
+    "25€ et 45€ de l'heure"
+   ],
+   "verified": [
+    "https://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/"
+   ]
+  },
+  {
+   "claim": "Un bricoleur à domicile facture environ 44 € en moyenne par intervention en 2026.",
+   "valeur": "44 €",
+   "phrase": 54,
+   "sources": [
+    "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant",
+    "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+   ],
+   "check": [
+    "44 € en moyenne"
+   ],
+   "verified": [
+    "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant"
+   ]
+  },
+  {
+   "claim": "Le montage d'un meuble en kit se paie environ 63 €.",
+   "valeur": "63 €",
+   "phrase": 55,
+   "sources": [
+    "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant",
+    "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+   ],
+   "check": [
+    "63 € pour un meuble en kit"
+   ],
+   "verified": [
+    "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant"
+   ]
+  },
+  {
+   "claim": "Calcul d'hypothèse : 3 meubles en kit à 63 € = 189 €, soit environ 190 €.",
+   "valeur": "190 €",
+   "phrase": 56,
+   "sources": [
+    "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant",
+    "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+   ],
+   "check": [
+    "63 € pour un meuble en kit"
+   ],
+   "verified": [
+    "https://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant"
+   ]
+  },
+  {
+   "claim": "À Paris, une promenade de chien de 45 minutes est affichée 17 € (individuelle).",
+   "valeur": "17 €",
+   "phrase": 69,
+   "sources": [
+    "https://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e",
+    "https://conseils-animaux.fr/garde-animaux/petsitter/prix/"
+   ],
+   "check": [
+    "45 minutes = 17 euros"
+   ],
+   "verified": [
+    "https://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e"
+   ]
+  },
+  {
+   "claim": "Calcul d'hypothèse : 4 promenades à 17 € = 68 €.",
+   "valeur": "68 €",
+   "phrase": 71,
+   "sources": [
+    "https://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e",
+    "https://conseils-animaux.fr/garde-animaux/petsitter/prix/"
+   ],
+   "check": [
+    "45 minutes = 17 euros"
+   ],
+   "verified": [
+    "https://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e"
+   ]
+  },
+  {
+   "claim": "Le coût horaire d'un jardinier se situe en moyenne entre 25 et 45 € de l'heure.",
+   "valeur": "25 à 45 €/h",
+   "phrase": 84,
+   "sources": [
+    "https://travaux.obat.fr/guides/prix-entretien-jardin/",
+    "https://copeps.fr/actualites/entreprise-individuel-jardinier-tarif/"
+   ],
+   "check": [
+    "entre 25 € et 45 €"
+   ],
+   "verified": [
+    "https://travaux.obat.fr/guides/prix-entretien-jardin/"
+   ]
+  },
+  {
+   "claim": "Calcul d'hypothèse : 3 heures à 30 € de l'heure (dans la fourchette de 25 à 45 €) = 90 €.",
+   "valeur": "90 €",
+   "phrase": 86,
+   "sources": [
+    "https://travaux.obat.fr/guides/prix-entretien-jardin/",
+    "https://copeps.fr/actualites/entreprise-individuel-jardinier-tarif/"
+   ],
+   "check": [
+    "entre 25 € et 45 €"
+   ],
+   "verified": [
+    "https://travaux.obat.fr/guides/prix-entretien-jardin/"
+   ]
+  },
+  {
+   "claim": "L'assistance informatique à domicile se facture entre 25 et 60 € de l'heure selon les sources (25 à 50 € en moyenne, 40 à 60 € en services à la personne).",
+   "valeur": "25 à 60 €/h",
+   "phrase": 99,
+   "sources": [
+    "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/",
+    "https://www.creerentreprise.fr/creer-une-entreprise-informatique-depannage-maintenance/"
+   ],
+   "check": [
+    "40€ a 60€ de l'heure"
+   ],
+   "verified": [
+    "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+   ]
+  },
+  {
+   "claim": "Calcul d'hypothèse : 2 heures à 40 € de l'heure (dans la fourchette de 40 à 60 €) = 80 €.",
+   "valeur": "80 €",
+   "phrase": 101,
+   "sources": [
+    "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/",
+    "https://www.creerentreprise.fr/creer-une-entreprise-informatique-depannage-maintenance/"
+   ],
+   "check": [
+    "40€ a 60€ de l'heure"
+   ],
+   "verified": [
+    "https://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/"
+   ]
+  }
+ ],
+ "publication": {
+  "titre": "7 business à copier des USA avant tout le monde",
+  "description": "7 business à copier des USA, à lancer en France avec presque rien : où trouver ton premier client, le message exact à envoyer et le calcul de gain pour chacun.\nNettoyage de terrasses, gouttières, vitres, montage de meubles, promenade de chiens, jardins et aide informatique à domicile.\n\n🎁 Messages prêts à envoyer (copie-colle, change juste le prénom) :\n\n1. Terrasses :\nBonjour [prénom], je passe dans le quartier et j'ai remarqué que votre terrasse a pris un peu de vert. Je fais des nettoyages haute pression chez les particuliers : elle retrouve son aspect neuf. Je peux vous faire un devis gratuit cette semaine ?\n\n2. Gouttières :\nBonjour [prénom], les feuilles s'accumulent vite dans les gouttières à cette saison. Je propose un nettoyage complet, avec photos avant et après pour vous montrer le résultat. Seriez-vous disponible un après-midi cette semaine pour que je regarde la vôtre ?\n\n3. Vitres :\nBonjour, j'adore votre boutique ! Je nettoie les vitrines des commerces de la rue, et je propose un premier passage à prix d'essai pour que vous jugiez le résultat. Puis-je passer vous voir quelques minutes demain matin ?\n\n4. Meubles en kit :\nBonjour [prénom], vous venez d'emménager ? Je monte vos meubles en kit à prix fixe par meuble, avec mes outils. Dites-moi ce qu'il vous reste à monter et je vous envoie un prix tout de suite. Je peux passer dès demain.\n\n5. Promenade de chiens :\nBonjour [prénom], je promène les chiens du quartier pendant que leurs maîtres travaillent. Je vous propose une première promenade d'essai, avec photos pour que vous voyiez comme votre chien est content. Quel jour vous arrangerait ?\n\n6. Jardins :\nBonjour [prénom], votre jardin mérite un petit coup de main ! Je fais la tonte et la taille de haie chez les particuliers du quartier. Je vous propose un premier passage à prix d'essai, avec photo avant-après. Quand seriez-vous disponible ?\n\n7. Aide informatique :\nBonjour [prénom], un souci d'ordinateur, d'imprimante ou de box internet ? Je viens chez vous régler le problème, et la première demi-heure est offerte pour voir si je peux vous aider. Quel est le souci exactement ?\n\nLa semaine prochaine : les messages pour décrocher des clients en entreprise. Abonne-toi pour ne pas le rater.\n\nSérie « Business à copier » : n°1\n\nSources des prix (tarifs constatés en France, les gains sont des calculs d'hypothèse) :\nhttps://blog.trustup.be/fr/comment-entretenir-sa-terrasse/\nhttps://ynspir.com/conseils-decoration/renovation/prix-renovation/prix-nettoyage-de-terrasse/\nhttps://www.prix-travaux-m2.com/prix-nettoyage-gouttieres.php\nhttps://mesdepanneurs.fr/cas/nettoyage-gouttiere\nhttps://copeps.fr/actualites/auto-entrepreneur-laveur-de-vitre/\nhttps://businessornot.fr/creation-entreprise/nettoyage-de-vitres-a-domicile-jusqua-45-eur-de-lheure-un-tarif-qui-grimpe-vite-avec-la-hauteur\nhttps://www.businessornot.fr/creation-entreprise/bricolage-a-domicile-en-2026-les-tarifs-reels-dun-homme-a-tout-faire-independant\nhttps://copeps.fr/actualites/tarif-horaire-auto-entrepreneur-service-personne/\nhttps://www.aladom.fr/garde-chien/paris-75/promenades-et-gardes-de-chiens-k0e\nhttps://conseils-animaux.fr/garde-animaux/petsitter/prix/\nhttps://travaux.obat.fr/guides/prix-entretien-jardin/\nhttps://copeps.fr/actualites/entreprise-individuel-jardinier-tarif/\nhttps://www.creerentreprise.fr/creer-une-entreprise-informatique-depannage-maintenance/\n\n#business #argent #ideesdebusiness\n\nImages : It's No Game (CC BY 2.0, Wikimedia Commons) ; Bruce Szalwinski (CC BY 2.0, Wikimedia Commons) ; David Adam Kess (CC BY-SA 4.0, Wikimedia Commons) ; Lovemedead (CC BY-SA 4.0, Wikimedia Commons) ; Shixart1985 (CC BY 2.0, Wikimedia Commons)",
+  "tags": [
+   "business",
+   "idées de business",
+   "gagner de l'argent",
+   "business à lancer",
+   "sans argent",
+   "services à domicile",
+   "auto-entrepreneur",
+   "premier client",
+   "USA"
+  ],
+  "question_commentaires": "Lequel tu testes en premier ?",
+  "langue": "fr",
+  "contenu_ia": true,
+  "cadeau": {
+   "titre": "Messages prêts à envoyer",
+   "messages": [
+    "Bonjour [prénom], je passe dans le quartier et j'ai remarqué que votre terrasse a pris un peu de vert. Je fais des nettoyages haute pression chez les particuliers : elle retrouve son aspect neuf. Je peux vous faire un devis gratuit cette semaine ?",
+    "Bonjour [prénom], les feuilles s'accumulent vite dans les gouttières à cette saison. Je propose un nettoyage complet, avec photos avant et après pour vous montrer le résultat. Seriez-vous disponible un après-midi cette semaine pour que je regarde la vôtre ?",
+    "Bonjour, j'adore votre boutique ! Je nettoie les vitrines des commerces de la rue, et je propose un premier passage à prix d'essai pour que vous jugiez le résultat. Puis-je passer vous voir quelques minutes demain matin ?",
+    "Bonjour [prénom], vous venez d'emménager ? Je monte vos meubles en kit à prix fixe par meuble, avec mes outils. Dites-moi ce qu'il vous reste à monter et je vous envoie un prix tout de suite. Je peux passer dès demain.",
+    "Bonjour [prénom], je promène les chiens du quartier pendant que leurs maîtres travaillent. Je vous propose une première promenade d'essai, avec photos pour que vous voyiez comme votre chien est content. Quel jour vous arrangerait ?",
+    "Bonjour [prénom], votre jardin mérite un petit coup de main ! Je fais la tonte et la taille de haie chez les particuliers du quartier. Je vous propose un premier passage à prix d'essai, avec photo avant-après. Quand seriez-vous disponible ?",
+    "Bonjour [prénom], un souci d'ordinateur, d'imprimante ou de box internet ? Je viens chez vous régler le problème, et la première demi-heure est offerte pour voir si je peux vous aider. Quel est le souci exactement ?"
+   ],
+   "suite": "La semaine prochaine : les messages pour décrocher des clients en entreprise. Abonne-toi pour ne pas le rater."
+  }
+ },
+ "mots_source": 1543,
+ "libelles": {
+  "chapitres": "Chapters",
+  "mots_cles": "Keywords",
+  "mention_ia": "Synthetic voice (AI).",
+  "video_complete": "Full video",
+  "question_defaut": "What did you think before watching this video? Tell me in the comments."
+ }
+}
