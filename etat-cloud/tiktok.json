@@ -111,7 +111,35 @@
    "envoye_ts": 1794140594.9595516,
    "statut": "SEND_TO_USER_INBOX",
    "legende": "Un nettoyeur haute pression : 120 € par terrasse nettoyée\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
+  },
+  "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s6": {
+   "publish_id": "v_inbox_file~v2.7706179620848191510",
+   "envoye_a": "2026-11-09T14:33:47",
+   "envoye_ts": 1794234827.4544728,
+   "statut": "PROCESSING_UPLOAD",
+   "legende": "Un distributeur automatique : 20 à 35 € de marge par jour\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
+  },
+  "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s7": {
+   "publish_id": "v_inbox_file~v2.7706179620848257046",
+   "envoye_a": "2026-11-09T14:33:49",
+   "envoye_ts": 1794234829.4940941,
+   "statut": "PROCESSING_UPLOAD",
+   "legende": "La borne photo se loue 350 à 600 € la soirée\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
+  },
+  "7-services-d-ia-que-les-petites-entreprises-paie-s1": {
+   "publish_id": "v_inbox_file~v2.7706179620848289814",
+   "envoye_a": "2026-11-09T14:33:51",
+   "envoye_ts": 1794234831.3492613,
+   "statut": "PROCESSING_UPLOAD",
+   "legende": "Un mois de posts pour les réseaux sociaux : 420 € de reste\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business"
+  },
+  "7-services-d-ia-que-les-petites-entreprises-paie-s2": {
+   "publish_id": "v_inbox_file~v2.7706179664875931670",
+   "envoye_a": "2026-11-09T14:33:53",
+   "envoye_ts": 1794234833.2880707,
+   "statut": "PROCESSING_UPLOAD",
+   "legende": "Écrire les fiches produit d'une boutique : 460 € de reste\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business"
   }
  },
- "maj": "2026-11-08T20:04:43"
+ "maj": "2026-11-09T14:33:53"
 }
