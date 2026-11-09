@@ -1,8 +1,8 @@
 {
- "etat": "ecrit",
- "maj": "2026-11-09T16:45:55",
- "raison": null,
- "tentatives": 0,
+ "etat": "quarantaine",
+ "maj": "2026-11-09T18:05:45",
+ "raison": "fabrique : échec inattendu après 2 essais (code 1) : subprocess.CalledProcessError: Command '['/opt/hostedtoolcache/Python/3.12.16/x64/bin/python', '/home/runner/work/bdf-workflow/bdf-workflow/autopilot/cloud/kaggle/lancer_voix.py', '/home/runner/work/b — trace : trace-fabrique.log",
+ "tentatives": 2,
  "youtube": {
   "video_id": null,
   "url": null,
