@@ -20,7 +20,7 @@ from . import commun, rendu, synth
 CONTROLES_STANDARD = False
 VIDEO_PAR_DEFAUT = "short"
 LUFS = -14.0
-DUREE_S = {"short": (20, 60), "long": (90, 900)}
+DUREE_S = {"short": (20, 90), "long": (90, 900)}  # un Short YouTube peut durer jusqu à 3 minutes ; la voix réelle donne ~66 s pour 3 questions (constaté dans le cloud)
 MANCHES = {"short": (3, 4), "long": (8, 12)}
 PAUSE_REFLEXION_S = {"short": 3.0, "long": 5.0}
 LETTRES = "ABCD"

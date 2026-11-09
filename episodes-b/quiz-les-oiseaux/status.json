@@ -1,13 +1,13 @@
 {
- "etat": "quarantaine",
- "maj": "2026-11-09T20:03:03",
- "raison": "contrôle qualité : durée 66 s hors de 20-60 s",
- "tentatives": 0,
- "youtube": {
-  "video_id": null,
-  "url": null,
-  "visibilite": null,
-  "publie_a": null
- },
- "chaine_id": "quiz"
+    "etat":  "ecrit",
+    "maj":  "2026-11-09T20:03:03",
+    "raison":  null,
+    "tentatives":  0,
+    "youtube":  {
+                    "video_id":  null,
+                    "url":  null,
+                    "visibilite":  null,
+                    "publie_a":  null
+                },
+    "chaine_id":  "quiz"
 }
