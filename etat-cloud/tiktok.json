@@ -349,7 +349,27 @@
    "mode": "planificateur",
    "statut": "PUBLISH_COMPLETE",
    "legende": "Sous-titrer des vidéos : 63 € de l'heure, le calcul\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business"
+  },
+  "youtube-paliers-500-puis-1000-abonnes": {
+   "publish_id": "6af385a05930efd7eee5f1bb",
+   "envoye_a": "2026-11-10T20:59:13",
+   "envoye_ts": 1794344353.707919,
+   "chaine": "fr",
+   "mode": "planificateur",
+   "statut": "PROCESSING_UPLOAD",
+   "legende": "Être payé sur YouTube : 500, puis 1 000 abonnés\n\n#youtube #monetisation #argent #business #pourtoi",
+   "programme_pour": "2026-11-11T08:30:00"
+  },
+  "tiktok-live-comment-ca-paie-1000-abonnes": {
+   "publish_id": "6af385a45930efd7eee5f1e9",
+   "envoye_a": "2026-11-10T20:59:18",
+   "envoye_ts": 1794344358.6779711,
+   "chaine": "fr",
+   "mode": "planificateur",
+   "statut": "PROCESSING_UPLOAD",
+   "legende": "Live TikTok : 1 000 abonnés, puis les diamants\n\n#tiktoklive #livetiktok #argent #business #pourtoi",
+   "programme_pour": "2026-11-11T12:30:00"
   }
  },
- "maj": "2026-11-10T14:37:48"
+ "maj": "2026-11-10T20:59:18"
 }

@@ -1,13 +1,14 @@
 {
- "etat": "pret",
- "maj": "2026-11-05T12:30:23",
+ "etat": "programme",
+ "maj": "2026-11-10T20:58:47",
  "raison": null,
  "tentatives": 0,
  "youtube": {
-  "video_id": null,
-  "url": null,
-  "visibilite": null,
-  "publie_a": null
+  "video_id": "xZWczgRAQhM",
+  "url": "https://youtu.be/xZWczgRAQhM",
+  "visibilite": "programme",
+  "publie_a": "2026-11-15T20:00:00Z",
+  "miniature": true
  },
  "origine": "10-business-des-16-ans",
  "miniature": {
