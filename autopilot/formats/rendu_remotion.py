@@ -14,7 +14,7 @@ import subprocess
 from pathlib import Path
 
 RACINE = Path(__file__).resolve().parents[2]  # section3-motion/pixel-faits
-ENTREE = "src/index.ts"
+ENTREE = "src/formats/entry.ts"
 
 
 def _npx() -> str | None:
