@@ -1,37 +1,52 @@
-"""Format musique pour enfants : sécurité des paroles, mélodie originale et chantable, rendu, déclaration « conçu pour les enfants ». Aucun réseau."""
-import copy
+"""Format musique pour enfants (PomPikoBoo) : sécurité des paroles, alignement paroles/chant, personnages, rendu, déclaration « conçu pour les enfants ». Aucun réseau, aucun GPU."""
 import json
 import shutil
 import tempfile
 import unittest
 from pathlib import Path
 
+import numpy as np
+
+from autopilot.formats import alignement, pompikoboo, rendu
 from autopilot.formats import musique_enfants as m
 
 RACINE = Path(__file__).resolve().parents[3]
 DESC = {"description": "Une petite chanson sur le jardin. Chanson originale à chanter avec les paroles à l'écran.", "langue": "fr"}
 
 
-def lg(par, notes, r):
-    return {"paroles": par, "notes": notes, "rythme": r}
-
-
 def episode():
-    return {"id": "musique-test", "titre": "Chanson du petit jardin pour enfants", "chaine": "Musique", "theme": "musique", "video": "short",
+    return {"id": "musique-test", "titre": "Chanson du petit jardin pour enfants", "chaine": "PomPikoBoo", "theme": "musique", "video": "short",
             "format_contenu": "musique_enfants", "pour_enfants": True,
-            "chanson": {"tempo": 90, "tonalite": "sol", "instrument": "boite", "ordre": ["c1", "r"], "strophes": {
-                "c1": {"lignes": [lg("Le so|leil se lè|ve", [1, 1, 3, 3, 5, 3], [1, 1, 1, 1, 2, 2]), lg("Les fleurs sou|rient au ma|tin", [5, 6, 5, 3, 2, 3, 1], [1, 1, 1, 1, 1, 1, 2]),
-                                lg("Les a|beil|les chan|tent", [3, 3, 5, 6, 5, 3], [1, 1, 1, 1, 2, 2]), lg("Zou zou zou, bon|jour", [6, 5, 3, 1, 2], [1, 1, 2, 2, 2])]},
-                "r": {"lignes": [lg("Ta|pe des mains tra la la", [1, 3, 5, 3, 1, 5, 3], [1, 1, 1, 1, 1, 1, 2]), lg("Sau|te sau|te dans l'her|be", [5, 6, 5, 3, 2, 1, 3], [1, 1, 1, 1, 1, 1, 2])]}}},
+            "chanson": {"tempo": 100, "style": "comptine_joyeuse", "ordre": ["c1", "r"], "strophes": {
+                "c1": {"lignes": ["Le soleil se lève sur le jardin", "Pompi saute dans l'herbe", "Piko ouvre sa jolie fleur", "Les abeilles chantent bonjour"]},
+                "r": {"lignes": ["Tape des mains, tra la la", "Saute avec nous, tra la la", "Tourne, tourne, tra la la"]}}},
             "miniature": {"texte_haut": "Chanson", "gros": "Le jardin"}}
+
+
+def fausse_chanson(ep, dossier: Path, appariement_ok: bool = True) -> None:
+    """chanson.wav (salves de sons par mot, 48 kHz) + alignement.json cohérent avec les paroles : remplace le noyau Kaggle dans les tests."""
+    lignes = [l["texte"] for l in m.lignes_dans_l_ordre(ep["chanson"])]
+    sr = rendu.SR
+    total = 6 + 4.5 * len(lignes) + 3
+    x = np.zeros(int(total * sr), dtype=np.float32)
+    mots = []
+    t = 6.0
+    for l in lignes:
+        for w in l.split():
+            d = 0.5
+            k = np.arange(int(d * sr))
+            x[int(t * sr):int(t * sr) + len(k)] += 0.3 * np.sin(2 * np.pi * 330 * k / sr) * np.hanning(len(k))
+            mots.append({"mot": w, "debut": t, "fin": t + d})
+            t += d + 0.08
+        t += 0.5
+    rendu.ecrire_wav(dossier / "chanson.wav", x)
+    al = alignement.aligner(lignes, mots if appariement_ok else [], total)
+    al.update(duree=round(total, 2), graine=1)
+    (dossier / "alignement.json").write_text(json.dumps(al), encoding="utf-8")
 
 
 def valider(ep, pub=None):
     return m.valider_episode(ep, None, DESC if pub is None else pub, {}, reseau=False)
-
-
-def lignes(ep):
-    return [l for s in ep["chanson"]["strophes"].values() for l in s["lignes"]]
 
 
 class Validation(unittest.TestCase):
@@ -42,60 +57,57 @@ class Validation(unittest.TestCase):
     def test_chanson_valide(self):
         self.assertEqual(valider(episode())[0], [])
 
-    def test_une_note_par_syllabe(self):
+    def test_style_ferme(self):
         ep = episode()
-        ep["chanson"]["strophes"]["c1"]["lignes"][0]["notes"] = [1, 1, 3]
-        self.refuse(ep, "une note et une durée par syllabe")
+        ep["chanson"]["style"] = "dans le style de quelqu'un"
+        self.refuse(ep, "style")
 
-    def test_ligne_de_4_ou_8_temps(self):
+    def test_tempo(self):
         ep = episode()
-        ep["chanson"]["strophes"]["c1"]["lignes"][2]["rythme"] = [1, 1, 1, 1, 1, 2]
-        self.refuse(ep, "il en faut 4 ou 8")
+        ep["chanson"]["tempo"] = 200
+        self.refuse(ep, "tempo")
 
-    def test_chantable(self):
+    def test_lignes_courtes(self):
         ep = episode()
-        ep["chanson"]["strophes"]["c1"]["lignes"][0]["notes"] = [1, 8, 1, 8, 1, 8]
-        self.refuse(ep, "saut de plus de 5 degrés")
+        ep["chanson"]["strophes"]["c1"]["lignes"][0] = "Un deux trois quatre cinq six sept huit neuf dix onze"
+        self.refuse(ep, "2 à 9 mots")
         ep = episode()
-        ep["chanson"]["strophes"]["r"]["lignes"][0]["notes"] = [1, 3, 5, 3, 1, 5, 12]
-        self.refuse(ep, "tessiture")
+        ep["chanson"]["strophes"]["r"]["lignes"] = ["Seule"]
+        self.refuse(ep, "2 à 8 lignes")
 
-    def test_melodie_connue_refusee(self):
-        ep = episode()  # « Ah ! vous dirai-je, maman » : 1 1 5 5 6 6 5
-        ep["chanson"]["strophes"]["r"]["lignes"][0] = lg("Tou|jours tou|jours tou|jours là", [1, 1, 5, 5, 6, 6, 5], [1, 1, 1, 1, 1, 1, 2])
-        self.refuse(ep, "ressemble à")
-        ep = episode()  # « Frère Jacques » : 1 2 3 1 1 2 3 1
-        ep["chanson"]["strophes"]["r"]["lignes"][0] = lg("Lu|ne le so|leil et le vent", [1, 2, 3, 1, 1, 2, 3, 1], [0.5, 0.5, 1, 1, 1, 1, 1, 2])
-        self.refuse(ep, "ressemble à")
+    def test_air_connu_refuse(self):
+        ep = episode()
+        ep["chanson"]["strophes"]["r"]["lignes"][0] = "Frère Jacques dort encore"
+        self.refuse(ep, "existante")
+        ep = episode()
+        ep["titre"] = "Chanson de la petite étoile pour enfants"
+        self.refuse(ep, "existante")
 
     def test_mots_interdits_pour_enfants(self):
         ep = episode()
         ep["titre"] = "Chanson du monstre pour enfants"
         self.refuse(ep, "interdit sur une chaîne pour enfants")
         ep = episode()
-        ep["chanson"]["strophes"]["c1"]["lignes"][3]["paroles"] = "Zou zou zou, ar|gent"
+        ep["chanson"]["strophes"]["c1"]["lignes"][3] = "Zou zou, cocomelon bonjour"
         self.refuse(ep, "interdit sur une chaîne pour enfants")
 
-    def test_mot_trop_long_et_chiffres(self):
-        ep = episode()
-        ep["chanson"]["strophes"]["c1"]["lignes"][3] = lg("Zou zou, ex|tra|or|di|naire", [6, 5, 3, 1, 2, 3, 4], [1, 1, 1, 0.5, 0.5, 2, 2])
-        self.refuse(ep, "3 syllabes")
+    def test_chiffres_et_pour_enfants(self):
         ep = episode()
         ep["titre"] = "Chanson des 3 petits chats pour enfants"
         self.refuse(ep, "pas de chiffres")
-
-    def test_pour_enfants_obligatoire(self):
         ep = episode()
         ep["pour_enfants"] = False
         self.refuse(ep, "pour_enfants")
 
-    def test_durees_et_pauvrete(self):
+    def test_durees_et_refrain(self):
         ep = episode()
         ep["chanson"]["ordre"] = ["r"]
-        self.refuse(ep, "la chanson dure")
+        ep["chanson"]["strophes"]["r"]["lignes"] = ep["chanson"]["strophes"]["r"]["lignes"][:2]
+        self.refuse(ep, "la chanson durera")
         ep = episode()
-        ep["chanson"]["tempo"] = 200
-        self.refuse(ep, "tempo")
+        ep["chanson"]["strophes"] = {"c1": ep["chanson"]["strophes"]["c1"], "c2": ep["chanson"]["strophes"]["r"]}
+        ep["chanson"]["ordre"] = ["c1", "c2"]
+        self.refuse(ep, "refrain")
 
     def test_description_sans_lien_ni_appel(self):
         self.refuse(episode(), "aucun lien", pub={"description": "Chanson originale. Voir https://exemple.com", "langue": "fr"})
@@ -118,30 +130,116 @@ class Validation(unittest.TestCase):
         self.assertTrue(valider(ep)[0])
 
 
-class Partition(unittest.TestCase):
-    def test_calendrier(self):
+class Paroles(unittest.TestCase):
+    def test_balises_et_entree_modele(self):
         ep = episode()
-        p = m.partition(ep["chanson"])
-        self.assertEqual(len(p["lignes"]), 6)
-        self.assertAlmostEqual(p["lignes"][0]["debut"], 4 * 60 / 90)
-        self.assertAlmostEqual(p["fin"], m.duree_chanson_s(ep["chanson"]))
-        self.assertEqual(m.syllabes("Le pe|tit chat"), [("Le", 0), ("pe", 1), ("tit", 1), ("chat", 2)])
+        p = m.paroles_balisees(ep["chanson"])
+        self.assertTrue(p.startswith("[Intro]") and p.rstrip().endswith("[Outro]"))
+        self.assertIn("[Verse 1]\nLe soleil", p)
+        self.assertIn("[Chorus]\nTape des mains", p)
+        e = m.entree_musique(ep)
+        self.assertEqual(len(e["lignes"]), 7)
+        self.assertEqual(e["langue"], "fr")
+        self.assertNotRegex(e["caption"].lower(), r"disney|cocomelon|pinkfong")  # style fermé : jamais de nom d'artiste ni de marque
+        self.assertEqual(m.script_voix(ep)["phrases"], [])
 
-    def test_pas_de_voix(self):
-        self.assertEqual(m.script_voix(episode())["phrases"], [])
+    def test_styles_sans_marque(self):
+        for s in m.STYLES.values():
+            self.assertIsNone(m.RE_MOT_INTERDIT.search(s))
+
+
+class Alignement(unittest.TestCase):
+    LIGNES = ["Le soleil se lève", "Pompi saute dans l'herbe", "Tape des mains"]
+
+    def mots(self, deb=5.0):
+        out, t = [], deb
+        for l in self.LIGNES:
+            for w in l.split():
+                out.append({"mot": w, "debut": t, "fin": t + 0.4})
+                t += 0.5
+            t += 1.0
+        return out
+
+    def test_whisper_parfait(self):
+        al = alignement.aligner(self.LIGNES, self.mots(), 30)
+        self.assertEqual(al["methode"], "whisper")
+        self.assertGreater(al["appariement"], 0.9)
+        self.assertAlmostEqual(al["lignes"][0]["debut"], 5.0, delta=0.2)
+        self.assertGreater(al["lignes"][1]["debut"], al["lignes"][0]["fin"] - 0.01)
+
+    def test_transcription_bruitee_et_mots_manquants(self):
+        mots = [dict(w, mot=w["mot"].replace("o", "ou")) if i % 4 == 0 else w for i, w in enumerate(self.mots()) if i != 3]
+        al = alignement.aligner(self.LIGNES, mots, 30)
+        self.assertEqual(al["methode"], "whisper")
+        debuts = [l["debut"] for l in al["lignes"]]
+        self.assertEqual(debuts, sorted(debuts))
+
+    def test_repli_regulier_si_chant_inintelligible(self):
+        al = alignement.aligner(self.LIGNES, [{"mot": "zzz", "debut": 1, "fin": 2}], 40)
+        self.assertEqual(al["methode"], "regulier")
+        self.assertLess(al["appariement"], alignement.MIN_APPARIEMENT)
+        self.assertEqual(len(al["lignes"]), 3)
+        self.assertGreater(al["lignes"][2]["fin"], al["lignes"][0]["debut"])
+
+    def test_enveloppe_bouche(self):
+        sr, fps = rendu.SR, 24
+        x = np.zeros(sr * 2, dtype=np.float32)
+        x[sr:] = 0.4 * np.sin(2 * np.pi * 400 * np.arange(sr) / sr)
+        e = alignement.enveloppe_voix(x, sr, fps)
+        self.assertLess(e[:20].mean(), 0.1)
+        self.assertGreater(e[30:46].mean(), 0.7)
+
+
+class Personnages(unittest.TestCase):
+    def test_sprites_et_animation(self):
+        for nom in ("elephant", "cactus"):
+            s = pompikoboo.sprite(nom, 2, False, 1)
+            self.assertEqual(s.size, (pompikoboo.L, pompikoboo.H))
+            self.assertGreater(np.array(s.getchannel("A")).mean(), 40)  # le personnage est bien dessiné (pas un calque vide)
+            img, dy, _ = pompikoboo.animer(nom, 1.3, 0.6, 0.8, True)
+            self.assertEqual(img.mode, "RGBA")
+            self.assertLessEqual(dy, 0)
+        a = np.array(pompikoboo.sprite("elephant", 0, False, 0))
+        b = np.array(pompikoboo.sprite("elephant", 3, False, 0))
+        self.assertGreater(np.abs(a.astype(int) - b.astype(int)).sum(), 1000)  # la bouche ouverte change l'image
 
 
 class Rendu(unittest.TestCase):
     def test_rendu_complet(self):
         tmp = Path(tempfile.mkdtemp(prefix="bdf-mus-"))
         try:
+            ep = episode()
+            fausse_chanson(ep, tmp)
             qa = {}
-            final = m.rendre(episode(), tmp, tmp, {"nom": "Musique (nom à choisir)"}, qa, fps=8)
+            final = m.rendre(ep, tmp, tmp, {"nom": "PomPikoBoo"}, qa, fps=6)
             self.assertTrue(final.exists())
-            self.assertTrue(20 <= qa["duree_s"] <= 60, qa)
+            self.assertTrue(25 <= qa["duree_s"] <= 80, qa)
             self.assertTrue(-17.5 <= qa["lufs"] <= -14.5, qa)
             self.assertTrue(qa["pour_enfants"])
-            self.assertEqual(m.miniature(episode(), {}).size, (1280, 720))
+            self.assertGreater(qa["appariement"], 0.9)
+            self.assertFalse(qa.get("alertes"))
+            self.assertEqual(m.miniature(ep, {}).size, (1280, 720))
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+
+    def test_chant_inintelligible_alerte(self):
+        tmp = Path(tempfile.mkdtemp(prefix="bdf-mus-"))
+        try:
+            ep = episode()
+            fausse_chanson(ep, tmp, appariement_ok=False)
+            qa = {}
+            m.rendre(ep, tmp, tmp, {}, qa, fps=4)
+            self.assertTrue(any("peu intelligible" in a for a in qa["alertes"]), qa)
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+
+    def test_audio_manquant_sans_cloud(self):
+        tmp = Path(tempfile.mkdtemp(prefix="bdf-mus-"))
+        try:
+            with self.assertRaises(FileNotFoundError):
+                m.generer_audio(episode(), tmp, sans_cloud=True)
+            fausse_chanson(episode(), tmp)
+            m.generer_audio(episode(), tmp, sans_cloud=True)  # fichiers présents : rien à faire
         finally:
             shutil.rmtree(tmp, ignore_errors=True)
 
@@ -152,7 +250,7 @@ class Banque(unittest.TestCase):
         self.assertGreaterEqual(len(s), 25)
         self.assertEqual(len({x["titre"] for x in s}), len(s))
         txt = " ".join(x["titre"] + x.get("angle", "") for x in s)
-        self.assertIsNone(m.RE_MOT_INTERDIT.search(txt), m.RE_MOT_INTERDIT.search(txt))  # les sujets eux-mêmes respectent la sécurité enfants
+        self.assertIsNone(m.RE_MOT_INTERDIT.search(txt), m.RE_MOT_INTERDIT.search(txt))
 
 
 if __name__ == "__main__":
