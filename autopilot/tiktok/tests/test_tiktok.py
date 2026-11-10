@@ -172,8 +172,9 @@ class File(unittest.TestCase):
         faux_short("a", titre="Revendre : quand le fisc est prévenu")
         t = envoi.legende("a")
         self.assertTrue(t.startswith("Revendre : quand le fisc est prévenu"))
-        self.assertIn("#Business", t)
-        self.assertIn("#MicroEntreprise", t)
+        self.assertIn("#business", t)
+        self.assertIn("#microentreprise", t)
+        self.assertLessEqual(t.count("#"), 5)
         self.assertEqual(t.lower().count("#business"), 1)
 
     def test_quatre_envois_par_24_heures_et_pas_de_doublon(self):

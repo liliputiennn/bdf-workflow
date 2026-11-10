@@ -36,6 +36,8 @@
     "moteur": "planificateur",
     "visibilite": "PUBLIC_TO_EVERYONE",
     "max_par_24h": 15,
+    "hashtags": ["#argent", "#business", "#pourtoi"],
+    "creneaux": ["08:30", "12:30", "18:00", "21:00"],
     "planificateur": {
       "service": "zernio",
       "compte": "6af25a629937ca6558b1878a",

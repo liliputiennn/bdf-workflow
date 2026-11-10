@@ -78,8 +78,8 @@ class UploadPost:
             raise C.ErreurApi("refus", str(d.get("message") or d.get("error") or code)[:200], code)
         return d
 
-    def publier(self, video: Path, legende: str, reg: dict, afficher=print) -> str:
-        """Envoie la vidéo + la légende ; renvoie l'identifiant de suivi. Publication directe publique (réglage `visibilite` de la chaîne)."""
+    def publier(self, video: Path, legende: str, reg: dict, afficher=print, quand: str | None = None) -> str:
+        """Envoie la vidéo + la légende (`quand` ignoré ici : publication immédiate) ; renvoie l'identifiant de suivi. Publication directe publique (réglage `visibilite` de la chaîne)."""
         champs = [("user", self.profil), ("platform[]", "tiktok"), ("title", legende), ("tiktok_title", legende),
                   ("privacy_level", reg["visibilite"]), ("post_mode", "DIRECT_POST"), ("async_upload", "true")]
         corps, ctype = corps_multipart(champs, ("video", video.name, video.read_bytes(), "video/mp4"))
@@ -149,7 +149,8 @@ class Zernio:
             raise C.ErreurApi("refus", msg, code)
         return d
 
-    def publier(self, video: Path, legende: str, reg: dict, afficher=print) -> str:
+    def publier(self, video: Path, legende: str, reg: dict, afficher=print, quand: str | None = None) -> str:
+        """`quand` : heure de Paris (ISO sans fuseau) à laquelle le service publie ; sans, publication immédiate."""
         if not self.compte:
             raise C.ErreurAuth("identifiant de compte absent : mets `planificateur.compte` (accountId Zernio) dans le profil de la chaîne")
         if not self.consentement:
@@ -165,10 +166,14 @@ class Zernio:
             raise C.ErreurReseau(f"dépôt refusé ({code})")
         if code >= 400:
             raise C.ErreurApi("depot", f"dépôt refusé ({code})", code)
-        corps = {"content": legende, "mediaItems": [{"url": d["publicUrl"], "type": "video"}], "publishNow": True,
+        corps = {"content": legende, "mediaItems": [{"url": d["publicUrl"], "type": "video"}],
                  "platforms": [{"platform": "tiktok", "accountId": self.compte}],
                  "tiktokSettings": {"privacy_level": reg["visibilite"], "allow_comment": False, "allow_duet": False, "allow_stitch": False,
                                     "content_preview_confirmed": True, "express_consent_given": True}}
+        if quand:
+            corps.update({"scheduledFor": quand, "timezone": "Europe/Paris"})
+        else:
+            corps["publishNow"] = True
         r = self._reponse(*self._json("POST", f"{BASE_ZERNIO}/posts", corps))
         pid = (r.get("post") or {}).get("_id")
         if not pid:

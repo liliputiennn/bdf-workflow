@@ -109,10 +109,12 @@ def tiktok_reglage(chaine: str) -> dict:
     limite = 15 if mode in ("direct", "planificateur") else 5
     par_jour = o.get("max_par_24h")
     par_jour = min(limite, par_jour) if isinstance(par_jour, int) and not isinstance(par_jour, bool) and par_jour > 0 else (12 if mode in ("direct", "planificateur") else 4)
+    cren = [c for c in (o.get("creneaux") or []) if isinstance(c, str) and re.fullmatch(r"([01]\d|2[0-3]):[0-5]\d", c)] if isinstance(o.get("creneaux"), list) else []
+    cren = sorted(set(cren)) or ["08:30", "12:30", "18:00", "21:00"]  # heures de Paris : un seul envoi par créneau, jamais en rafale
     vis = o.get("visibilite") if o.get("visibilite") in TIKTOK_VISIBILITES else "PUBLIC_TO_EVERYONE"
     return {"actif": actif, "mode": mode, "moteur": moteur, "planificateur": {"service": service, "profil": profil, "cle_fichier": cle,
                                   "compte": str(pl.get("compte") or ""), "consentement": pl.get("consentement") is True},
-            "audit_confirme": audit, "jeton_fichier": jeton, "hashtags": tags,
+            "audit_confirme": audit, "jeton_fichier": jeton, "hashtags": tags, "creneaux": cren,
             "max_par_24h": par_jour, "visibilite": vis, "ia": o.get("ia") is not False}
 
 

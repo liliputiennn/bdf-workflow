@@ -232,5 +232,39 @@ class MoteurZernio(unittest.TestCase):
         self.assertEqual(etat["envoyes"]["zn_e2e_ep"]["statut"], "PUBLISH_COMPLETE")
 
 
+class Rythme(unittest.TestCase):
+    def test_un_seul_envoi_par_creneau(self):
+        import calendar
+        t = calendar.timegm((2026, 11, 10, 6, 0, 0))  # 07:00 à Paris
+        etat = {"envoyes": {}}
+        c1 = envoi.prochain_creneau(etat, ["08:30", "12:30"], "fr", lambda: t)
+        self.assertEqual(c1, "2026-11-10T08:30:00")
+        etat["envoyes"]["a"] = {"chaine": "fr", "programme_pour": c1}
+        self.assertEqual(envoi.prochain_creneau(etat, ["08:30", "12:30"], "fr", lambda: t), "2026-11-10T12:30:00")
+        etat["envoyes"]["b"] = {"chaine": "fr", "programme_pour": "2026-11-10T12:30:00"}
+        self.assertEqual(envoi.prochain_creneau(etat, ["08:30", "12:30"], "fr", lambda: t), "2026-11-11T08:30:00")
+
+    def test_autre_chaine_independante(self):
+        import calendar
+        t = calendar.timegm((2026, 11, 10, 6, 0, 0))
+        etat = {"envoyes": {"a": {"chaine": "fr", "programme_pour": "2026-11-10T08:30:00"}}}
+        self.assertEqual(envoi.prochain_creneau(etat, ["08:30"], "quiz", lambda: t), "2026-11-10T08:30:00")
+
+    def test_zernio_programme_au_lieu_de_publier_tout_de_suite(self):
+        f = FauxZernio()
+        v = TMP / "z5.mp4"
+        v.write_bytes(b"x")
+        PL.Zernio("sk", "a", True, f).publier(v, "t", {"visibilite": "PUBLIC_TO_EVERYONE"}, lambda *_: None, quand="2026-11-10T18:00:00")
+        corps = json.loads(f.appels[2][3])
+        self.assertEqual((corps["scheduledFor"], corps["timezone"]), ("2026-11-10T18:00:00", "Europe/Paris"))
+        self.assertNotIn("publishNow", corps)
+
+    def test_hashtags_courts_et_utiles(self):
+        self.assertEqual(envoi.hashtag("services IA"), "#servicesia")
+        self.assertEqual(envoi.hashtag("Éco-pâturage"), "#ecopaturage")
+        self.assertIsNone(envoi.hashtag("gagner de l'argent avec l'IA"))
+        self.assertIsNone(envoi.hashtag("IA"))
+
+
 if __name__ == "__main__":
     unittest.main()

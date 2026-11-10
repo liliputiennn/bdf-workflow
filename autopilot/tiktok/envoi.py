@@ -76,16 +76,31 @@ def eligible(ep: str) -> bool:
     return bool(qa.get("publiable"))
 
 
+MAX_HASHTAGS = 5  # TikTok recommande 3 à 5 mots-clés ; plus nuit à la lisibilité et ne rapporte rien
+
+
+def hashtag(texte: str) -> str | None:
+    """« gagner de l'argent avec l'IA » -> None (trop long) ; « services IA » -> #servicesia ; accents et ponctuation retirés."""
+    import unicodedata
+    s = unicodedata.normalize("NFKD", str(texte).lower()).encode("ascii", "ignore").decode()
+    s = "".join(c for c in s if c.isalnum())
+    return f"#{s}" if 3 <= len(s) <= 16 else None
+
+
 def legende(ep: str) -> str:
     """Titre + hashtags de publication.json (+ hashtags du profil de la chaîne) ; la voix de synthèse est signalée
     (TikTok demande d'étiqueter les contenus générés par IA)."""
     pub = common.read_json(common.ep_dir(ep) / "publication.json", {}) or {}
     titre = str(pub.get("titre") or (common.read_json(common.ep_dir(ep) / "episode.json", {}) or {}).get("titre") or ep).strip()
-    tags = [t for t in (pub.get("tags") or []) if isinstance(t, str) and t.strip()][:4]
-    hashtags = ["#" + "".join(c for c in t.title() if c.isalnum()) for t in tags]
+    hashtags = []
+    for t in (pub.get("tags") or []):  # 2 mots-clés du sujet au plus, courts, en minuscules, comme les gens les cherchent
+        h = hashtag(t)
+        if h and h not in hashtags and len(hashtags) < 2:
+            hashtags.append(h)
     for h in common.tiktok_reglage(chaine_de(ep))["hashtags"]:
         if h.lower() not in [x.lower() for x in hashtags]:
-            hashtags.append(h)
+            hashtags.append(h.lower())
+    hashtags = hashtags[:MAX_HASHTAGS]
     texte = f"{titre}\n\n{' '.join(hashtags)}".strip()
     return texte[:LEGENDE_MAX]
 
@@ -93,6 +108,32 @@ def legende(ep: str) -> str:
 def candidats(deja: dict) -> list[str]:
     ids = [ep for ep in common.list_episodes() if eligible(ep) and (ep not in deja or deja[ep].get("a_reessayer"))]
     return sorted(ids, key=lambda e: common.get_status(e).get("maj", ""))
+
+
+def _paris(ts: float):
+    from datetime import datetime, timedelta, timezone
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.fromtimestamp(ts, ZoneInfo("Europe/Paris"))
+    except Exception:  # pas de base de fuseaux : heure d'hiver de Paris
+        return datetime.fromtimestamp(ts, timezone(timedelta(hours=1)))
+
+
+def prochain_creneau(etat: dict, creneaux: list[str], chaine: str, maintenant=time.time, horizon_h: int = 48) -> str | None:
+    """Premier créneau libre (heure de Paris, ISO sans fuseau) au moins 20 min dans le futur, pas déjà pris par la chaîne ; None si
+    rien dans l'horizon. Un envoi par créneau : jamais plusieurs vidéos en même temps."""
+    from datetime import timedelta
+    pris = {v.get("programme_pour") for v in etat["envoyes"].values() if (v.get("chaine") or common.CHAINE_DEFAUT) == chaine}
+    t0 = _paris(maintenant() + 20 * 60)
+    for j in range(0, horizon_h // 24 + 2):
+        jour = (t0 + timedelta(days=j)).date()
+        for c in creneaux:
+            h, m = map(int, c.split(":"))
+            cand = t0.replace(year=jour.year, month=jour.month, day=jour.day, hour=h, minute=m, second=0, microsecond=0)
+            iso = cand.strftime("%Y-%m-%dT%H:%M:%S")
+            if cand >= t0 and iso not in pris and (cand - t0).total_seconds() <= horizon_h * 3600:
+                return iso
+    return None
 
 
 def preparer_paquet(ep: str) -> Path:
@@ -179,7 +220,11 @@ def envoyer_file(tt, max_n: int, seul: str | None, dry_run: bool, afficher=print
             with common.episode_lock(ep):
                 afficher(f"envoi de {ep} ({ch}, {mode})")
                 if mode == "planificateur":
-                    pid = client.publier(video(ep), legende(ep), reg, afficher)
+                    quand = prochain_creneau(etat, reg["creneaux"], ch, maintenant)
+                    if quand is None:
+                        bilan["ignores"] += 1
+                        continue
+                    pid = client.publier(video(ep), legende(ep), reg, afficher, quand=quand)
                 elif mode == "direct":
                     info = client.post_info_direct(legende(ep), reg["visibilite"], reg["ia"])
                     pid = client.envoyer(video(ep), afficher, post_info=info)
@@ -189,7 +234,7 @@ def envoyer_file(tt, max_n: int, seul: str | None, dry_run: bool, afficher=print
             bilan["ignores"] += 1
             continue
         etat["envoyes"][ep] = {"publish_id": pid, "envoye_a": common.now(), "envoye_ts": maintenant(), "chaine": ch, "mode": mode,
-                               "statut": "PROCESSING_UPLOAD", "legende": legende(ep)}
+                               "statut": "PROCESSING_UPLOAD", "legende": legende(ep), "programme_pour": quand if mode == "planificateur" else None}
         ecrire_etat(etat)  # on sauvegarde après chaque envoi : une panne ne le fait pas refaire
         bilan["envoyes"].append(ep)
         places[ch] -= 1
