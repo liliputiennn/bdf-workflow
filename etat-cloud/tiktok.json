@@ -311,7 +311,7 @@
    "envoye_ts": 1794318312.5921574,
    "chaine": "fr",
    "mode": "planificateur",
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "PUBLISH_COMPLETE",
    "legende": "Résumer des réunions : 482 € pour une journée\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business"
   },
   "7-services-d-ia-que-les-petites-entreprises-paie-s6": {
@@ -320,7 +320,7 @@
    "envoye_ts": 1794318331.7780561,
    "chaine": "fr",
    "mode": "planificateur",
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "PUBLISH_COMPLETE",
    "legende": "Surveiller des concurrents : 316 € de reste par mois\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business"
   },
   "7-services-d-ia-que-les-petites-entreprises-paie-s7": {
@@ -329,7 +329,7 @@
    "envoye_ts": 1794318348.7450526,
    "chaine": "fr",
    "mode": "planificateur",
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "PUBLISH_COMPLETE",
    "legende": "Une secrétaire qui prend les rendez-vous : 490 € la mise en place\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business"
   },
   "7-services-d-ia-que-les-petites-entreprises-paie-s3": {
@@ -338,7 +338,7 @@
    "envoye_ts": 1794318366.2293503,
    "chaine": "fr",
    "mode": "planificateur",
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "PUBLISH_COMPLETE",
    "legende": "Un assistant qui répond aux clients : 410 € le premier mois\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business"
   },
   "7-services-d-ia-que-les-petites-entreprises-paie-s4": {
@@ -347,9 +347,9 @@
    "envoye_ts": 1794318382.8580306,
    "chaine": "fr",
    "mode": "planificateur",
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "PUBLISH_COMPLETE",
    "legende": "Sous-titrer des vidéos : 63 € de l'heure, le calcul\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business"
   }
  },
- "maj": "2026-11-10T13:46:22"
+ "maj": "2026-11-10T14:37:48"
 }
