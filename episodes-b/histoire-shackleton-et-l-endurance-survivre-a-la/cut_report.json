@@ -1,0 +1,28 @@
+{
+ "long": "histoire-shackleton-et-l-endurance-survivre-a-la",
+ "shorts": [
+  {
+   "id": "histoire-shackleton-et-l-endurance-survivre-a-la-s1",
+   "chapitre": 4,
+   "phrases": 12,
+   "duree_s": 55.023,
+   "notes": []
+  },
+  {
+   "id": "histoire-shackleton-et-l-endurance-survivre-a-la-s3",
+   "chapitre": 8,
+   "phrases": 10,
+   "duree_s": 44.216,
+   "notes": []
+  }
+ ],
+ "ignores": [
+  {
+   "id": "histoire-shackleton-et-l-endurance-survivre-a-la-s2",
+   "chapitre": 6,
+   "raison": [
+    "69 s de parole : un Short tient en 58 s au plus"
+   ]
+  }
+ ]
+}

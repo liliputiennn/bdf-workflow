@@ -1,0 +1,67 @@
+[
+ {
+  "claim": "En octobre 1915, la pression de la glace a brisé la coque de l'Endurance.",
+  "valeur": "octobre 1915",
+  "phrase": 3,
+  "sources": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.livescience.com/shackleton-lost-endurance-ship-discovered-antarctic"
+  ],
+  "check": [
+   "october 1915"
+  ],
+  "verified": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.livescience.com/shackleton-lost-endurance-ship-discovered-antarctic"
+  ]
+ },
+ {
+  "claim": "Les hommes ont sauvé trois canots de sauvetage du navire.",
+  "valeur": "trois canots",
+  "phrase": 6,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ],
+  "check": [
+   "three boats"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ]
+ },
+ {
+  "claim": "L'Endurance a été écrasé par la glace de la mer de Weddell en 1915.",
+  "valeur": "1915",
+  "phrase": 8,
+  "sources": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.livescience.com/shackleton-lost-endurance-ship-discovered-antarctic"
+  ],
+  "check": [
+   "1915",
+   "crushed"
+  ],
+  "verified": [
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/",
+   "https://www.livescience.com/shackleton-lost-endurance-ship-discovered-antarctic"
+  ]
+ },
+ {
+  "claim": "L'expédition de Shackleton comptait 28 hommes et tous ont survécu.",
+  "valeur": "28 hommes",
+  "phrase": 11,
+  "sources": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ],
+  "check": [
+   "all 28"
+  ],
+  "verified": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ]
+ }
+]

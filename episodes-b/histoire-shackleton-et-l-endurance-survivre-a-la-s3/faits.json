@@ -1,0 +1,99 @@
+[
+ {
+  "claim": "Le gouvernement chilien a prêté à Shackleton le remorqueur Yelcho.",
+  "valeur": "Yelcho",
+  "phrase": 1,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://jamescairdsociety.com/?p=911"
+  ],
+  "check": [
+   "yelcho",
+   "chilean"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://jamescairdsociety.com/?p=911"
+  ]
+ },
+ {
+  "claim": "Le capitaine du Yelcho était Luis Pardo.",
+  "valeur": "Luis Pardo",
+  "phrase": 2,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Endurance_(1912_ship)",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ],
+  "check": [
+   "luis pardo"
+  ],
+  "verified": [
+   "https://en.wikipedia.org/wiki/Endurance_(1912_ship)",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ]
+ },
+ {
+  "claim": "Le Yelcho est arrivé à l'île Éléphant le 30 août 1916.",
+  "valeur": "30 août 1916",
+  "phrase": 3,
+  "sources": [
+   "https://en.wikipedia.org/wiki/Endurance_(1912_ship)",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "30 august"
+  ],
+  "verified": [
+   "https://en.wikipedia.org/wiki/Endurance_(1912_ship)",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "En approchant de l'île, Shackleton a crié « Are you all well ? » et la réponse est venue : « All well ! »",
+  "valeur": "Tout va bien",
+  "phrase": 6,
+  "sources": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ],
+  "check": [
+   "all well"
+  ],
+  "verified": [
+   "https://www.livescience.com/shackleton-endurance-expedition",
+   "https://gutenberg.org/files/5199/5199-h/5199-h.htm"
+  ]
+ },
+ {
+  "claim": "Vingt-deux hommes sont restés sur l'île Éléphant.",
+  "valeur": "22 hommes",
+  "phrase": 8,
+  "sources": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ],
+  "check": [
+   "22 men"
+  ],
+  "verified": [
+   "https://jamescairdsociety.com/?p=911",
+   "https://oceanwide-expeditions.com/es/blog/an-antarctic-voyage-unlike-any-other-the-unbelievable-exploits-of-the-james-caird"
+  ]
+ },
+ {
+  "claim": "L'expédition de Shackleton comptait 28 hommes et tous ont survécu.",
+  "valeur": "28 hommes",
+  "phrase": 9,
+  "sources": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ],
+  "check": [
+   "all 28"
+  ],
+  "verified": [
+   "https://burkemuseum.org/static/endurance/expedition2.html",
+   "https://www.scientificamerican.com/article/legendary-shipwreck-of-shackletons-endurance-discovered-in-antarctic-waters1/"
+  ]
+ }
+]

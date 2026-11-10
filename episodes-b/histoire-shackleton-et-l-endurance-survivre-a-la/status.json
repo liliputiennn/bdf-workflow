@@ -1,13 +1,20 @@
 {
- "etat": "ecrit",
- "maj": "2026-11-09T21:01:18",
+ "etat": "pret",
+ "maj": "2026-11-10T03:04:23",
  "raison": null,
- "tentatives": 2,
+ "tentatives": 0,
  "youtube": {
   "video_id": null,
   "url": null,
   "visibilite": null,
   "publie_a": null
  },
- "chaine_id": "histoire"
+ "chaine_id": "histoire",
+ "voix_progression": null,
+ "miniature": {
+  "source": "auto",
+  "fichier": "miniature.png",
+  "style": "createur",
+  "octets": 703513
+ }
 }

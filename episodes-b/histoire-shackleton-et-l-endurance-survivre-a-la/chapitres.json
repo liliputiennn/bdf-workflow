@@ -1,0 +1,110 @@
+[
+ {
+  "n": 1,
+  "titre": "Un bateau prisonnier de la glace",
+  "phrase_debut": 1,
+  "phrase_fin": 9,
+  "debut_s": 0.15,
+  "fin_s": 39.416,
+  "carte_de_s": null,
+  "borne_s": 0.0,
+  "borne_fin_s": 39.516,
+  "duree_s": 39.516
+ },
+ {
+  "n": 2,
+  "titre": "Le rêve de Shackleton",
+  "phrase_debut": 10,
+  "phrase_fin": 25,
+  "debut_s": 41.556,
+  "fin_s": 121.054,
+  "carte_de_s": 39.516,
+  "borne_s": 39.516,
+  "borne_fin_s": 121.154,
+  "duree_s": 81.638
+ },
+ {
+  "n": 3,
+  "titre": "Prisonniers de la glace",
+  "phrase_debut": 26,
+  "phrase_fin": 40,
+  "debut_s": 123.194,
+  "fin_s": 188.517,
+  "carte_de_s": 121.154,
+  "borne_s": 121.154,
+  "borne_fin_s": 188.617,
+  "duree_s": 67.463
+ },
+ {
+  "n": 4,
+  "titre": "La fin de l'Endurance",
+  "phrase_debut": 41,
+  "phrase_fin": 56,
+  "debut_s": 190.657,
+  "fin_s": 265.618,
+  "carte_de_s": 188.617,
+  "borne_s": 188.617,
+  "borne_fin_s": 265.718,
+  "duree_s": 77.101
+ },
+ {
+  "n": 5,
+  "titre": "Sur l'île Éléphant",
+  "phrase_debut": 57,
+  "phrase_fin": 72,
+  "debut_s": 267.758,
+  "fin_s": 343.498,
+  "carte_de_s": 265.718,
+  "borne_s": 265.718,
+  "borne_fin_s": 343.598,
+  "duree_s": 77.88
+ },
+ {
+  "n": 6,
+  "titre": "Le voyage du James Caird",
+  "phrase_debut": 73,
+  "phrase_fin": 90,
+  "debut_s": 345.638,
+  "fin_s": 428.079,
+  "carte_de_s": 343.598,
+  "borne_s": 343.598,
+  "borne_fin_s": 428.179,
+  "duree_s": 84.581
+ },
+ {
+  "n": 7,
+  "titre": "Traverser l'île à pied",
+  "phrase_debut": 91,
+  "phrase_fin": 105,
+  "debut_s": 430.219,
+  "fin_s": 498.488,
+  "carte_de_s": 428.179,
+  "borne_s": 428.179,
+  "borne_fin_s": 498.588,
+  "duree_s": 70.409
+ },
+ {
+  "n": 8,
+  "titre": "Le sauvetage",
+  "phrase_debut": 106,
+  "phrase_fin": 119,
+  "debut_s": 500.628,
+  "fin_s": 563.541,
+  "carte_de_s": 498.588,
+  "borne_s": 498.588,
+  "borne_fin_s": 563.641,
+  "duree_s": 65.053
+ },
+ {
+  "n": 9,
+  "titre": "Ce qu'on en retient",
+  "phrase_debut": 120,
+  "phrase_fin": 131,
+  "debut_s": 565.681,
+  "fin_s": 618.577,
+  "carte_de_s": 563.641,
+  "borne_s": 563.641,
+  "borne_fin_s": 618.717,
+  "duree_s": 55.076
+ }
+]

@@ -1,0 +1,92 @@
+{
+ "id": "histoire-shackleton-et-l-endurance-survivre-a-la-s1",
+ "titre": "Le jour où la glace a écrasé le bateau de Shackleton",
+ "theme": "parchemin",
+ "chaine": "Histoire",
+ "miniature": {
+  "style": "pile",
+  "texte_haut": "FIN ENDURANCE",
+  "icone": "carte"
+ },
+ "phrases": [
+  "Puis, la glace s'est mise à bouger, à pousser, à serrer le bateau de tous les côtés.",
+  "Le bois craquait comme un énorme arbre qui plie sous la tempête.",
+  "En octobre mille neuf cent quinze, la pression a tordu la coque, et l'eau a commencé à entrer.",
+  "Les hommes ont pompé, encore et encore, jour et nuit, mais la glace était plus forte.",
+  "Shackleton a donné l'ordre que personne n'aurait voulu entendre : abandonner le navire.",
+  "Ils ont sorti la nourriture, des vêtements, et trois canots de sauvetage.",
+  "Tout ce qui ne servait pas à survivre est resté dans le bateau.",
+  "Quelques semaines plus tard, l'Endurance a glissé sous la glace et a disparu pour toujours.",
+  "Les hommes l'ont regardé couler, en silence.",
+  "Imagine ce moment : ton seul abri disparaît, et tu restes debout sur un grand morceau de glace.",
+  "Ils étaient vingt-huit, loin de tout, sans bateau et sans moyen de prévenir le monde.",
+  "Shackleton a rassemblé tout le monde et il a parlé calmement."
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "glace",
+     "bouger"
+    ]
+   }
+  },
+  {
+   "type": "frise",
+   "phrase": 3,
+   "params": {
+    "reperes": [
+     {
+      "date": "Octobre 1915",
+      "label": "La coque est tordue",
+      "accent": true
+     },
+     {
+      "date": "Novembre 1915",
+      "label": "L'Endurance coule"
+     }
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 6,
+   "params": {
+    "titre": "CE QU'ILS ONT SAUVÉ",
+    "items": [
+     {
+      "texte": "De la nourriture"
+     },
+     {
+      "texte": "Des vêtements"
+     },
+     {
+      "texte": "Trois canots"
+     }
+    ]
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 9,
+   "params": {
+    "question": "Que fais-tu quand ton abri disparaît ?",
+    "pistes": [
+     "Panique",
+     "Calme",
+     "Plan"
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 11,
+   "params": {
+    "valeur": 28,
+    "etiquette": "hommes seuls sur la glace"
+   }
+  }
+ ]
+}

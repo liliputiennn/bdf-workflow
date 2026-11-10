@@ -1,0 +1,75 @@
+{
+ "id": "histoire-shackleton-et-l-endurance-survivre-a-la-s3",
+ "titre": "« Vous allez tous bien ? » : le sauvetage de l'île Éléphant",
+ "theme": "parchemin",
+ "chaine": "Histoire",
+ "miniature": {
+  "style": "pile",
+  "texte_haut": "SAUVETAGE",
+  "icone": "carte"
+ },
+ "phrases": [
+  "Pour la dernière, le gouvernement du Chili lui a prêté un petit remorqueur, le Yelcho.",
+  "Le capitaine était un marin chilien courageux, Luis Pardo.",
+  "Le trente août mille neuf cent seize, le Yelcho est enfin arrivé devant l'île Éléphant.",
+  "Sur le rivage, les hommes ont vu un bateau au loin, et ils n'ont pas osé y croire.",
+  "Ils ont allumé un feu de fumée pour être sûrs d'être vus.",
+  "Shackleton a crié depuis le petit bateau : « Vous allez tous bien ? ». Une voix a répondu : « Tout va bien ! »",
+  "Il a poussé un grand soupir, et ses hommes ont poussé des cris de joie.",
+  "Les vingt-deux hommes de l'île ont embarqué, serrés les uns contre les autres.",
+  "Pas un seul des vingt-huit hommes n'était mort, après des mois à lutter contre la glace.",
+  "C'est l'une des plus belles histoires de survie jamais racontées."
+ ],
+ "scenes": [
+  {
+   "type": "liste",
+   "phrase": 1,
+   "params": {
+    "titre": "L'AIDE ARRIVE",
+    "items": [
+     {
+      "texte": "Un remorqueur chilien : le Yelcho"
+     },
+     {
+      "texte": "Capitaine : Luis Pardo"
+     }
+    ]
+   }
+  },
+  {
+   "type": "frise",
+   "phrase": 3,
+   "params": {
+    "reperes": [
+     {
+      "date": "30 août 1916",
+      "label": "Le Yelcho arrive",
+      "accent": true
+     },
+     {
+      "date": "Mi-avril 1916",
+      "label": "Arrivée sur l'île Éléphant"
+     }
+    ]
+   }
+  },
+  {
+   "type": "citation",
+   "phrase": 6,
+   "params": {
+    "texte": "Vous allez tous bien ? — Tout va bien !",
+    "auteur": "Shackleton et ses hommes",
+    "date": "30 août 1916"
+   }
+  },
+  {
+   "type": "anneau",
+   "phrase": 9,
+   "params": {
+    "valeur": 100,
+    "centre": "28 sur 28",
+    "etiquette": "hommes revenus vivants"
+   }
+  }
+ ]
+}

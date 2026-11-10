@@ -1,0 +1,20 @@
+{
+ "etat": "pret",
+ "maj": "2026-11-10T03:04:30",
+ "raison": null,
+ "tentatives": 0,
+ "youtube": {
+  "video_id": null,
+  "url": null,
+  "visibilite": null,
+  "publie_a": null
+ },
+ "origine": "histoire-shackleton-et-l-endurance-survivre-a-la",
+ "chaine_id": "histoire",
+ "miniature": {
+  "source": "auto",
+  "fichier": "miniature.png",
+  "style": "pile",
+  "octets": 724671
+ }
+}
