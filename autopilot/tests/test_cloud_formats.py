@@ -66,6 +66,17 @@ class VoixKaggle(unittest.TestCase):
             self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
             self.assertIn("kernel prêt", r.stdout)
 
+    def test_arguments_locuteur_et_style_acceptes(self):
+        # make_long transmet --locuteur/--style en arguments : un argument inconnu faisait échouer la voix (code 2) du long Histoire
+        import subprocess
+        with tempfile.TemporaryDirectory() as tmp:
+            Path(tmp, "voix-entree.json").write_text(json.dumps({"phrases": ["a"]}), encoding="utf-8")
+            env = {**os.environ, "KAGGLE_USERNAME": "x", "PYTHONIOENCODING": "utf-8"}
+            r = subprocess.run([sys.executable, str(CLOUD / "kaggle" / "lancer_voix.py"), tmp, "--episode-file", "voix-entree.json", "--essais", "4",
+                                "--budget-s", "5400", "--locuteur", "Aiden", "--style", "Un conteur calme", "--dry-run"],
+                               capture_output=True, text=True, env=env, encoding="utf-8", errors="replace")
+            self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+
 
 class StockGithub(unittest.TestCase):
     def test_limite_de_2_gio(self):

@@ -52,6 +52,7 @@ class Base(unittest.TestCase):
         self.faux = FauxYouTube()
         self.cfg = reglages.charger(surcharge={
             "urls": {"api": self.faux.base + "/youtube/v3", "upload": self.faux.base + "/upload/youtube/v3"},
+            "heures_shorts": ["08:00", "12:00", "18:00", "21:00"], "jours_longs": [0, 2, 4],  # grille de référence des tests (la production a la sienne : voir test_cadence.py)
             "chunk_octets": 262144, "reseau": {"tentatives_max": 4, "attente_initiale_s": 0.01}})
         (self.tmp / "autopilot" / "secrets").mkdir(parents=True)
         common.write_json(auth.chemin_client(), {"installed": {
@@ -510,7 +511,7 @@ class TestCreneaux(unittest.TestCase):
         self.assertEqual(horaire.etaler_heures(["08:00", "12:00"], 2, 15), ["08:00", "08:15", "12:00", "12:15"])
         self.assertEqual(horaire.etaler_heures(["23:50"], 2, 15), ["00:05", "23:50"])
         self.assertEqual(len(horaire.etaler_heures(reglages.DEFAUTS["heures_shorts"], reglages.DEFAUTS["shorts_par_creneau"],
-                                                    reglages.DEFAUTS["ecart_creneau_minutes"])), 8)
+                                                    reglages.DEFAUTS["ecart_creneau_minutes"])), 10)
 
     def test_creneau_libre_saute_les_heures_prises_et_passees(self):
         tard = datetime(2026, 11, 2, 17, 0, tzinfo=timezone.utc)  # 18h à Paris

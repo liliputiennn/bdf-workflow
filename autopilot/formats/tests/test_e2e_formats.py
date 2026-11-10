@@ -24,8 +24,8 @@ for p in (PUB / "tests", PUB, RACINE / "autopilot"):
 from test_multichaines import BaseChaines  # noqa: E402
 
 import common  # noqa: E402
-from autopilot.formats import apprendre, histoires_enfants, meditation, musique_enfants, quiz, sommeil  # noqa: E402
-from autopilot.formats.tests import faux, test_apprendre, test_histoires_enfants, test_meditation, test_musique_enfants, test_quiz, test_sommeil  # noqa: E402
+from autopilot.formats import apprendre, asmr, finance, histoires_enfants, meditation, musique_enfants, quiz, sommeil  # noqa: E402
+from autopilot.formats.tests import faux, test_apprendre, test_asmr, test_finance, test_histoires_enfants, test_meditation, test_musique_enfants, test_quiz, test_sommeil  # noqa: E402
 from test_publieur import MAINTENANT  # noqa: E402
 
 
@@ -43,6 +43,10 @@ FORMATS = {
                     pub=lambda ep: pub("Histoire pour s'endormir : le village", "Une histoire douce et de la pluie. Cette vidéo détend mais ne remplace pas un avis médical.\n#sommeil #histoire")),
     "meditation": dict(module=meditation, ep=lambda: test_meditation.episode(), long=True, kids=False,
                        pub=lambda ep: pub("Méditation guidée : la lumière douce", "Une séance guidée, voix lente et nappe sonore. Ne remplace pas un avis médical. Ne pas écouter en conduisant.\n#méditation #respiration")),
+    "finance-perso": dict(module=finance, ep=lambda: test_finance.episode(), long=False, kids=False,
+                          pub=lambda ep: pub("Le livret A expliqué simplement", test_finance.DESC + "\n#finance #épargne")),
+    "asmr": dict(module=asmr, ep=lambda: test_asmr.episode(ambiance={"type": "pluie", "graine": 3, "duree_min": 30}), long=True, kids=False,
+                 pub=lambda ep: pub("ASMR chuchoté : la petite bibliothèque", "Un scénario chuchoté, voix de synthèse. Sons : pages, tapotements. Cette vidéo détend mais ne remplace pas un avis médical.\n#asmr #relaxation")),
     "musique-enfants": dict(module=musique_enfants, ep=lambda: test_musique_enfants.episode(), long=False, kids=True,
                             pub=lambda ep: pub("Chanson du petit jardin pour enfants", "Une petite chanson. Chanson originale à chanter avec les paroles à l'écran.\n#chanson #enfants")),
     "histoires-enfants": dict(module=histoires_enfants, ep=lambda: test_histoires_enfants.episode(), long=False, kids=True,
@@ -86,11 +90,15 @@ class BoutEnBout(BaseChaines):
     def voix(self, spec, ep_id, ep):
         d = self.tmp / "episodes-b" / ep_id
         s = spec["module"].script_voix(ep)
+        if hasattr(spec["module"], "generer_audio"):  # chant généré : le noyau Kaggle est remplacé par une fausse chanson alignée
+            test_musique_enfants.fausse_chanson(ep, d)
         if s["phrases"]:
             faux.fausse_voix(d, s["phrases"], s.get("pauses"), mot_s=0.2 if spec["long"] else 0.28)
 
     def test_chaque_format_va_jusqu_a_la_publication(self):
         for ident, spec in FORMATS.items():
+            if os.environ.get("BDF_E2E_FORMATS") and ident not in os.environ["BDF_E2E_FORMATS"].split(","):  # essai ciblé : BDF_E2E_FORMATS=asmr,finance-perso
+                continue
             with self.subTest(format=ident):
                 self.profil(ident)
                 ep_id = f"{ident}-essai"
@@ -143,7 +151,7 @@ class BoutEnBout(BaseChaines):
         self.assertFalse((self.tmp / "exports-b" / inactif).exists())
 
     def test_le_code_n_active_jamais_une_chaine(self):
-        for ident in ("histoire", "quiz", "langues", "sommeil", "meditation", "musique-enfants", "histoires-enfants"):
+        for ident in ("histoire", "quiz", "langues", "sommeil", "meditation", "musique-enfants", "histoires-enfants", "finance-perso", "asmr"):
             p = json.loads((RACINE / "autopilot" / "chaines" / f"{ident}.json").read_text(encoding="utf-8"))
             self.assertIs(p["active"], False, ident)
 

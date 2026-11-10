@@ -1,0 +1,25 @@
+{
+ "_doc": "Vidéos gérées à la main sur TikTok : le cloud ne doit JAMAIS les renvoyer. Fusionné dans l'état à chaque restauration (etat_cloud.py restore). Ajouter ici toute vidéo traitée hors automatisme.",
+ "envoyes": {
+  "10-business-a-lancer-avec-moins-de-500-s2": {
+   "statut": "programme_zernio",
+   "chaine": "fr",
+   "note": "géré à la main le 2026-11-10 (programme retiré de YouTube) : ne pas renvoyer"
+  },
+  "10-business-a-lancer-avec-moins-de-500-s3": {
+   "statut": "programme_zernio",
+   "chaine": "fr",
+   "note": "géré à la main le 2026-11-10 (programme retiré de YouTube) : ne pas renvoyer"
+  },
+  "10-business-a-lancer-avec-moins-de-500-s4": {
+   "statut": "publie_test",
+   "chaine": "fr",
+   "note": "géré à la main le 2026-11-10 (programme retiré de YouTube) : ne pas renvoyer"
+  },
+  "10-business-a-lancer-avec-moins-de-500-s10": {
+   "statut": "exclu",
+   "chaine": "fr",
+   "note": "géré à la main le 2026-11-10 (programme retiré de YouTube) : ne pas renvoyer"
+  }
+ }
+}

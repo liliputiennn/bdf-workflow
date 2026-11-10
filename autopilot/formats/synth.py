@@ -123,3 +123,55 @@ def melodie(evenements: list[tuple[float, float, float]], duree_totale_s: float,
         i = int(debut * sr)
         piste[i:i + len(nn)] += nn[: max(0, len(piste) - i)]
     return piste[: int(duree_totale_s * sr)]
+
+
+# ---------------------------------------------------------------- sons « déclencheurs » (ASMR) : tapotements, brossage, pages, grattement
+DECLENCHEURS = ("tapotement", "brossage", "pages", "grattement")
+
+
+def _enveloppe(n: int, attaque: float, chute: float, sr: int = SR) -> np.ndarray:
+    t = np.arange(n) / sr
+    return (np.minimum(1.0, t / max(attaque, 1e-4)) * np.exp(-t / max(chute, 1e-4))).astype(np.float32)
+
+
+def declencheur(type_: str, duree_s: float, graine: int = 1, sr: int = SR) -> np.ndarray:
+    """Boucle mono de sons doux et espacés (aucun échantillon : tout est calculé). Les événements restent à l'intérieur de la boucle (queue de 1,5 s
+    de silence), donc elle se raccorde sans clic. Doux par construction : crête ≈ 0,5, aucun bruit soudain (attaques de 8 ms au moins)."""
+    if type_ not in DECLENCHEURS:
+        raise ValueError(f"déclencheur inconnu : {type_}")
+    n = int(duree_s * sr)
+    r = _rng(graine)
+    x = np.zeros(n, dtype=np.float32)
+    t = float(r.uniform(0.5, 2.0))
+    while t < duree_s - 1.5:
+        d0 = int(t * sr)
+        if type_ == "tapotement":  # grappe de 2 à 5 petits coups de doigt sur du bois : sinus grave amorti + bruit filtré
+            f0 = r.uniform(180, 520)
+            for k in range(int(r.integers(2, 6))):
+                m = int(0.18 * sr)
+                tt = np.arange(m) / sr
+                coup = np.sin(2 * np.pi * f0 * tt) * _enveloppe(m, 0.008, 0.035, sr) + 0.25 * bruit_colore(m, 0.3, r, 800, 5000, sr) * _enveloppe(m, 0.008, 0.012, sr)
+                i = d0 + int(k * r.uniform(0.14, 0.26) * sr)
+                if i + m < n:
+                    x[i:i + m] += (coup * r.uniform(0.5, 1.0)).astype(np.float32)
+            t += r.uniform(2.5, 6.0)
+        elif type_ == "brossage":  # passage d'un pinceau : bruit médium-aigu qui monte et redescend (0,8 à 1,8 s)
+            m = int(r.uniform(0.8, 1.8) * sr)
+            env = np.sin(np.pi * np.arange(m) / m) ** 2
+            if d0 + m < n:
+                x[d0:d0 + m] += bruit_colore(m, 0.6, r, 1200, 9000, sr) * env * r.uniform(0.5, 0.9)
+            t += r.uniform(2.0, 4.5)
+        elif type_ == "pages":  # feuille de papier qu'on tourne : froissement aigu court puis léger glissement
+            m = int(r.uniform(0.5, 1.1) * sr)
+            env = np.sin(np.pi * np.arange(m) / m) ** 1.5 * (0.6 + 0.4 * (r.random(m) > 0.5))
+            if d0 + m < n:
+                x[d0:d0 + m] += bruit_colore(m, 0.1, r, 2500, 12000, sr) * env.astype(np.float32) * r.uniform(0.35, 0.7)
+            t += r.uniform(5.0, 12.0)
+        else:  # grattement léger à l'ongle sur du tissu : rafale modulée très rapide, aiguë et douce
+            m = int(r.uniform(0.6, 1.4) * sr)
+            tt = np.arange(m) / sr
+            env = np.sin(np.pi * np.arange(m) / m) ** 2 * (0.55 + 0.45 * np.sin(2 * np.pi * r.uniform(11, 19) * tt))
+            if d0 + m < n:
+                x[d0:d0 + m] += bruit_colore(m, 0.0, r, 3000, 11000, sr) * env.astype(np.float32) * r.uniform(0.3, 0.6)
+            t += r.uniform(3.0, 7.0)
+    return 0.5 * x / (np.max(np.abs(x)) + 1e-9)

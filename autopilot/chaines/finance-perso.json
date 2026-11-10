@@ -1,0 +1,80 @@
+{
+  "id": "finance-perso",
+  "nom": "Finance perso (nom à choisir)",
+  "langue": "fr",
+  "format": "finance",
+  "niche": "L'argent du quotidien expliqué simplement : budget, épargne, crédit, impôts",
+  "active": false,
+  "vague": 5,
+  "jeton_fichier": "token-finance-perso.json",
+  "voix": {
+    "dossier": "voix/finance-perso"
+  },
+  "musique": {
+    "dossier": null
+  },
+  "style": {
+    "theme": "finance",
+    "miniature": "finance"
+  },
+  "publication": {
+    "heures_shorts": [
+      "08:30",
+      "12:30",
+      "19:00"
+    ],
+    "shorts_par_creneau": 1,
+    "heure_long": "18:00",
+    "jours_longs": [
+      1,
+      3,
+      5
+    ],
+    "commentaire_auto": false,
+    "question_dans_description": false,
+    "mention_ia_description": true,
+    "categorie_id": "27",
+    "hashtags_chaine": [
+      "#FinancePerso",
+      "#Budget",
+      "#Épargne",
+      "#ArgentSimplement",
+      "#Éducation"
+    ]
+  },
+  "frequence": {
+    "shorts_par_jour": 3,
+    "longs_par_semaine": 3
+  },
+  "dossiers": {
+    "sujets": "subjects/finance-perso"
+  },
+  "source": null,
+  "format_module": "autopilot.formats.finance",
+  "format_options": {
+    "sources_minimum": 2
+  },
+  "format_pret": true,
+  "briques": {
+    "fabrique": "formats/fabrique.py",
+    "miniature": "formats/miniature_formats.py"
+  },
+  "notes": "Chantier 4. Finance perso PÉDAGOGIQUE (CPM élevé) : on explique des mécanismes, jamais de conseil personnalisé ni de promesse de gain. Chaque point a 2 sources de sites différents (service-public.fr, banque-france.fr, impots.gouv.fr, amf-france.org, insee.fr…), contrôlées en ligne à la validation ; mention « pas un conseil financier » lue, affichée en bandeau et dans la description. Rendu léger Pillow + ffmpeg. active reste false (décision de l'utilisateur).",
+  "preparation": true,
+  "format_statut": {
+    "verifie": "2026-11-10",
+    "test": "Validation (sources, promesses, conseils, marques), script de voix, rendu Short et long avec voix simulée, miniature, publication sur faux YouTube.",
+    "manque": [
+      "Écouter et confirmer la voix (Aiden)",
+      "Créer la chaîne YouTube, connecter son jeton (YT_TOKEN_FINANCE_PERSO), choisir quand activer"
+    ],
+    "licences": [
+      "Voix : Qwen3-TTS CustomVoice, Apache-2.0",
+      "Visuels : générés par le code, rien à créditer"
+    ],
+    "risques": [
+      "Contenu financier : aucune promesse, aucun conseil, sources officielles ; relire les chiffres (taux, plafonds) avant d'activer",
+      "YouTube peut limiter la monétisation de certains sujets financiers"
+    ]
+  }
+}

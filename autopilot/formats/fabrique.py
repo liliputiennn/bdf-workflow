@@ -27,7 +27,7 @@ def sha(o) -> str:
     return hashlib.sha1(json.dumps(o, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()[:16]
 
 
-def voix(ep_id: str, ep_dir: Path, script: dict, essais: int) -> None:
+def voix(ep_id: str, ep_dir: Path, script: dict, essais: int, seuil: float | None = None) -> None:
     entree = {"phrases": script["phrases"], "pauses": script.get("pauses") or {}, "vitesses": script.get("vitesses") or {}, "langues": script.get("langues") or {}}
     marque = ep_dir / "voix.sha"
     cle = sha([entree, os.environ.get("BDF_LOCUTEUR", ""), os.environ.get("BDF_STYLE", ""), os.environ.get("BDF_REF_WAV", "")])
@@ -38,6 +38,8 @@ def voix(ep_id: str, ep_dir: Path, script: dict, essais: int) -> None:
     if os.environ.get("BDF_VOIX") == "kaggle":
         cmd = [sys.executable, str(RACINE / "autopilot" / "cloud" / "kaggle" / "lancer_voix.py")]
     cmd += [str(ep_dir), "--episode-file", "voix-entree.json", "--essais", str(essais)]
+    if seuil is not None:  # seuil de relecture propre au format (voix lente et chuchotée : la reconnaissance se trompe plus, ex. « Ses » entendu « Les »)
+        cmd += ["--seuil", str(seuil)]
     env = {**os.environ, "HF_HUB_OFFLINE": "1", "TRANSFORMERS_OFFLINE": "1", "PYTHONIOENCODING": "utf-8", "PYTHONWARNINGS": "ignore"}
     print("$", " ".join(cmd), flush=True)
     subprocess.run(cmd, check=True, env=env)
@@ -73,10 +75,18 @@ def main(argv=None) -> int:
                 print("Épisode invalide :", *qa["problemes"], sep="\n - ")
                 return 2
         else:
-            voix(a.id, ep_dir, script, a.essais)
+            voix(a.id, ep_dir, script, a.essais, getattr(module, "SEUIL_VOIX", None))
         rep = common.read_json(ep_dir / "voice_report.json", {"a_relire": []}) or {"a_relire": []}
         for r in rep.get("a_relire", []):
             qa["alertes"].append(f"phrase {r['phrase']} : lecture douteuse (score {r['score']}) : entendu « {r['entendu']} »")
+    if hasattr(module, "generer_audio"):  # format à chant généré (musique enfants) : ACE-Step sur Kaggle, ou fichiers déjà là avec --sans-voix
+        try:
+            module.generer_audio(ep, ep_dir, sans_cloud=a.sans_voix or a.voix_prete)
+        except (FileNotFoundError, subprocess.CalledProcessError) as e:
+            qa["problemes"].append(f"chanson non générée : {e}")
+            common.write_json(out_dir / "qa.json", qa)
+            print("Épisode invalide :", *qa["problemes"], sep=chr(10) + " - ")
+            return 2
     video = "long" if ep.get("video") == "long" else "short"
     final = module.rendre(ep, ep_dir, out_dir, profil, qa)
     bornes = getattr(module, "DUREE_S", {}).get(video)

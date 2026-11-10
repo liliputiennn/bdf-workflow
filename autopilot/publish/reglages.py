@@ -7,21 +7,22 @@ ICI = Path(__file__).resolve().parent
 
 DEFAUTS = {
     "heure_publication": "18:00",    # repli : une seule heure, si `heures_shorts` est vide
-    "heures_shorts": ["08:00", "12:00", "18:00", "21:00"],  # créneaux de mise en ligne des Shorts (heure locale du fuseau)
-    "shorts_par_creneau": 2,         # 4 créneaux x 2 = 8 Shorts par jour
+    "heures_shorts": ["07:30", "12:00", "16:00", "18:30", "21:00"],  # créneaux de mise en ligne des Shorts (heure locale du fuseau)
+    "shorts_par_creneau": 2,         # 5 créneaux x 2 = 10 Shorts par jour (limité en pratique par le stock)
     "ecart_creneau_minutes": 15,     # écart entre deux Shorts du même créneau (08:00 et 08:15)
     "heure_long": "17:00",           # heure de mise en ligne d'un long, les `jours_longs`
     "fuseau": "Europe/Paris",
     "marge_minimale_minutes": 30,
     "categorie_id": "27",
     "langue": "fr",
-    "max_envois_par_execution": 10,   # 2 passages par jour x 10 = 20 envois possibles pour 8 Shorts + 1 long par jour (le plafond YouTube est de 100 envois par jour)
+    "max_envois_par_execution": 15,   # 2 passages par jour x 15 = 30 envois possibles pour 10 Shorts + 1 long par jour (le plafond YouTube est de 100 envois par jour)
+    "rapprochements_max": 40,        # vidéos déjà programmées dont on avance la date par passage (videos.update : 50 unités chacune)
     "chunk_octets": 8 * 1024 * 1024,
     "titre_max": 70,
     "description_max_octets": 5000,
     "tags_max_caracteres": 500,
     "miniature_max_octets": 2 * 1024 * 1024,
-    "jours_longs": [0, 2, 4],        # jours de la semaine où part un long (0 = lundi) : lundi, mercredi, vendredi ; les Shorts partent tous les jours
+    "jours_longs": [0, 1, 2, 3, 4, 5, 6],  # jours de la semaine où part un long (0 = lundi) : tous les jours tant qu'il y a du stock ; les Shorts partent aussi tous les jours
     "hashtag_shorts": True,
     "hashtags_max": 15,              # au-delà de 15 hashtags, YouTube les ignore tous
     "hashtags_cible": 12,            # on complète la description jusqu'à ce nombre (une dizaine), jamais plus de `hashtags_max`

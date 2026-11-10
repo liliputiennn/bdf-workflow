@@ -75,6 +75,8 @@ def main() -> int:
     ap.add_argument("--timeout-min", type=int, default=150)
     ap.add_argument("--modele-hf", default=os.environ.get("BDF_MODELE_HF", "Qwen/Qwen3-TTS-12Hz-1.7B-Base"), help="identifiant Hugging Face d'un autre modèle (ex. Qwen/Qwen3-TTS-12Hz-1.7B-Base), téléchargé dans le kernel")
     ap.add_argument("--vitesse", type=float, default=float(os.environ.get("BDF_VITESSE") or 1.10), help="accélération de la voix finale (1.0 = vitesse d'origine)")
+    ap.add_argument("--locuteur", default=os.environ.get("BDF_LOCUTEUR", ""), help="voix intégrée de Qwen3-TTS CustomVoice (make_long la transmet aussi en argument)")
+    ap.add_argument("--style", default=os.environ.get("BDF_STYLE", ""), help="consigne de ton pour la voix intégrée")
     ap.add_argument("--dry-run", action="store_true", help="prépare le kernel dans un dossier temporaire et s'arrête")
     a = ap.parse_args()
     ep = Path(a.episode_dir).resolve()
@@ -85,7 +87,7 @@ def main() -> int:
     entree = (ep / a.episode_file).read_bytes()
     options = {"essais": a.essais, "seuil": a.seuil, "budget_s": a.budget_s, "fichier": a.episode_file, "modele_hf": a.modele_hf, "vitesse": a.vitesse,
                # chaîne dans une autre langue (chantier 2) : langue, voix intégrée de Qwen3-TTS CustomVoice (Apache-2.0) transmises au noyau
-               "langue": os.environ.get("BDF_LANGUE", ""), "locuteur": os.environ.get("BDF_LOCUTEUR", ""), "style": os.environ.get("BDF_STYLE", "")}
+               "langue": os.environ.get("BDF_LANGUE", ""), "locuteur": a.locuteur, "style": a.style}
     if options["locuteur"]:
         # voix intégrée : il faut le modèle CustomVoice. `--modele-hf` vaut par défaut le modèle Base (clonage), qui « ne supporte pas generate_custom_voice »
         # (échec constaté sur GitHub Actions le 2026-11-09) : on ne le garde donc jamais avec une voix intégrée.

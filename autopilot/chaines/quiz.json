@@ -46,8 +46,8 @@
     "fabrique": "formats/fabrique.py",
     "miniature": "formats/miniature_formats.py"
   },
-  "notes": "Chantier 3, format 2. Quiz de 3 questions (Short 9:16) et quiz de 10 questions le samedi (16:9) ; rendu léger Pillow + ffmpeg (formats/quiz.py), voix intégrée Qwen3-TTS (Apache-2.0). Spec : docs/superpowers/specs/2026-11-09-formats-design.md.",
-  "preparation": true,
+  "notes": "Chantier 3, format 2. Quiz de 3 questions (Short 9:16) et quiz de 10 questions le samedi (16:9) ; rendu léger Pillow + ffmpeg (formats/quiz.py), voix intégrée Qwen3-TTS (Apache-2.0). Spec : docs/superpowers/specs/2026-11-09-formats-design.md. EN PAUSE depuis le 2026-11-10 (décision de l'utilisateur) : plus de fabrication (preparation=false), rien supprimé ; pour reprendre, remettre preparation à true et retirer « pause ».",
+  "preparation": false,
   "format_statut": {
     "verifie": "2026-11-09",
     "test": "quiz-essai : brouillon, validation, fabrique, miniature, état pret, faux YouTube (programme). Voix simulée.",
@@ -63,5 +63,6 @@
       "Format très répandu : la valeur vient de réponses sourcées et variées",
       "Voix de synthèse : contenu_ia déclaré"
     ]
-  }
+  },
+  "pause": true
 }

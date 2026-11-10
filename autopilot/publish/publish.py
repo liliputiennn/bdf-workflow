@@ -18,7 +18,7 @@ import os
 import struct
 import sys
 import traceback
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ICI = Path(__file__).resolve().parent
@@ -460,6 +460,67 @@ def synchroniser(yt: YouTube, cfg: dict, maintenant=maintenant_utc, afficher=pri
     return sortie
 
 
+# --- rapprochement des dates -----------------------------------------------------------------------------
+
+STATUT_MODIFIABLE = ("privacyStatus", "publishAt", "selfDeclaredMadeForKids", "embeddable", "publicStatsViewable", "license", "containsSyntheticMedia")
+
+
+def plan_rapprochement(cfg: dict, chaine: str | None, maintenant_utc_=None) -> list[tuple[str, str, str]]:
+    """Vidéos déjà programmées (privées, pas encore en ligne) qu'une grille de créneaux plus serrée permet de mettre en ligne plus tôt.
+    Retourne [(épisode, ancienne date ISO, nouvelle date ISO)], dans l'ordre chronologique des anciennes dates : l'ordre est conservé,
+    chaque vidéo prend le premier créneau libre de son format (long ou Short) ; on ne repousse jamais une vidéo."""
+    maintenant_ = maintenant_utc_ or maintenant_utc()
+    marge = cfg["marge_minimale_minutes"]
+    mobiles = []
+    for ep in common.list_episodes("programme", chaine=chaine):
+        yt = common.get_status(ep).get("youtube") or {}
+        if not (yt.get("video_id") and yt.get("publie_a")) or yt.get("visibilite") == "public":
+            continue
+        quand = horaire.lire_iso(yt["publie_a"])
+        if quand > maintenant_ + timedelta(minutes=marge):
+            mobiles.append((quand, ep))
+    mobiles.sort()
+    bougent = {ep for _, ep in mobiles}
+    pris = set()
+    for ep in common.list_episodes(chaine=chaine):
+        st = common.get_status(ep)
+        yt = st.get("youtube") or {}
+        if ep not in bougent and st["etat"] != "quarantaine" and yt.get("video_id") and yt.get("publie_a"):
+            pris.add(horaire.lire_iso(yt["publie_a"]))
+    plan = []
+    for quand, ep in mobiles:
+        nouveau = prochain_creneau_pour(est_long(ep), cfg, maintenant_, pris)
+        if nouveau < quand:
+            pris.add(nouveau)
+            plan.append((ep, horaire.iso_utc(quand), horaire.iso_utc(nouveau)))
+        else:
+            pris.add(quand)
+    return plan
+
+
+def rapprocher(yt: YouTube, cfg: dict, chaine: str | None = None, afficher=print) -> list[dict]:
+    """Applique `plan_rapprochement` (videos.update : 50 unités de quota par vidéo ; `rapprochements_max` par passage)."""
+    sortie = []
+    for ep, ancien, nouveau in plan_rapprochement(cfg, chaine)[: int(cfg.get("rapprochements_max", 40))]:
+        yt_st = common.get_status(ep).get("youtube") or {}
+        try:
+            lu = yt.lire_videos([yt_st["video_id"]], "status")
+            if not lu:
+                continue
+            statut = {k: v for k, v in (lu[0].get("status") or {}).items() if k in STATUT_MODIFIABLE}
+            statut["publishAt"] = nouveau
+            yt.mettre_a_jour_statut(yt_st["video_id"], statut)
+        except ErreurQuota:
+            break
+        except ErreurReseau:
+            continue
+        with common.episode_lock(ep):
+            common.set_status(ep, "programme", None, youtube=_maj_youtube(ep, publie_a=nouveau))
+        afficher(f"  [{ep}] mise en ligne avancée : {ancien} -> {nouveau}")
+        sortie.append({"id": ep, "resultat": "avance", "detail": f"{ancien} -> {nouveau}"})
+    return sortie
+
+
 # --- ligne de commande ----------------------------------------------------------------------------------
 
 def _ordre_des_shorts(courts: list[str]) -> list[str]:
@@ -615,6 +676,8 @@ def main(argv: list[str]) -> int:
         for p, cfg, ids_c in plans:
             if len(plans) > 1 or p["id"] != chaines.CHAINE_DEFAUT:
                 print(f"=== chaîne {p['id']} ({p['nom']}) ===")
+            for ep, ancien, nouveau in (plan_rapprochement(cfg, p["id"]) if en_attente else []):
+                print(f"[{ep}] avancée prévue : {ancien} -> {nouveau}")
             code = dry_run(ids_c, cfg, p["id"]) or code
         return code
 
@@ -631,6 +694,7 @@ def main(argv: list[str]) -> int:
         try:
             if en_attente:
                 resultats += [{**r, "chaine": ident} for r in synchroniser(yt, cfg, chaine=ident)]
+                resultats += [{**r, "chaine": ident} for r in rapprocher(yt, cfg, ident)]
             for ep_id in ids_c:
                 if envoyes >= cfg["max_envois_par_execution"]:
                     break

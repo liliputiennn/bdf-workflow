@@ -1,0 +1,39 @@
+# Essai d'une chanson PomPikoBoo : ACE-Step (MIT) chante sur Kaggle, le clip animé est rendu ici, le résultat part dans la release « stock ».
+# À lancer à la main : Actions > Musique essai > Run workflow. Ne publie rien (ni YouTube ni TikTok) et ne touche à aucun épisode.
+name: Musique essai
+on:
+  workflow_dispatch:
+    inputs:
+      long:
+        description: "Version longue (chanson plus longue, 16:9)"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+jobs:
+  essai:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env:
+      STOCKAGE: github
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Installation
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null
+          pip install -q kaggle six pillow numpy
+      - name: Chanson (Kaggle) + clip animé
+        run: python autopilot/cloud/kaggle/essai_musique.py --sortie musique-essai ${{ inputs.long && '--long' || '' }}
+      - name: Dépôt du résultat
+        if: always()
+        run: |
+          for f in musique-essai/*.mp4 musique-essai/miniature.png musique-essai/qa.json musique-essai/alignement.json musique-essai/chanson.wav; do
+            [ -f "$f" ] && python autopilot/cloud/stockage.py put "$f" "musique/$(basename "$f")" || true
+          done

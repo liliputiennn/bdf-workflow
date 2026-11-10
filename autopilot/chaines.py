@@ -24,7 +24,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import common  # noqa: E402
 
 CHAINE_DEFAUT = common.CHAINE_DEFAUT
-FORMATS = ("faits", "business", "histoire", "sommeil", "langues", "quiz", "musique_enfants", "meditation", "histoires_enfants")
+FORMATS = ("faits", "business", "histoire", "sommeil", "langues", "quiz", "musique_enfants", "meditation", "histoires_enfants", "finance", "asmr")
 ID_VALIDE = re.compile(r"^[a-z][a-z0-9-]{0,30}$")
 FICHIER_JETON_VALIDE = re.compile(r"^[A-Za-z0-9][\w.-]*\.json$")
 # Réglages de publication qu'une chaîne peut surcharger. Le quota, les adresses d'API et les limites de YouTube restent communs.
@@ -143,6 +143,10 @@ def valider_profil(p: dict, tous_ids: set | None = None) -> list[str]:
                   "mode": valeur in ("boite", "direct"),
                   "visibilite": valeur in ("PUBLIC_TO_EVERYONE", "MUTUAL_FOLLOW_FRIENDS", "FOLLOWER_OF_CREATOR", "SELF_ONLY"),
                   "max_par_24h": isinstance(valeur, int) and not isinstance(valeur, bool) and 1 <= valeur <= 15,
+                  "moteur": valeur in ("boite", "planificateur"),
+                  "planificateur": isinstance(valeur, dict) and set(valeur) <= {"service", "profil", "cle_fichier", "compte", "consentement"}
+                                   and valeur.get("service", "upload-post") in ("upload-post", "zernio")
+                                   and isinstance(valeur.get("consentement", False), bool),
                   "hashtags": isinstance(valeur, list) and all(isinstance(h, str) for h in valeur),
                   "jeton_fichier": isinstance(valeur, str) and bool(FICHIER_JETON_VALIDE.match(valeur)) and valeur not in ("client_secret.json", "tiktok_client.json"),
                   }.get(cle)

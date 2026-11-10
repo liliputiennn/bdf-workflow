@@ -28,6 +28,13 @@ def valider(ep, pub=None):
     return sommeil.valider_episode(ep, None, DESC if pub is None else pub, {}, reseau=False)
 
 
+class Seuil(unittest.TestCase):
+    def test_seuil_de_voix_propre_au_format(self):
+        # « Ses jambes » entendu « Les jambes » (score 0,89) ne doit plus mettre un épisode de sommeil en quarantaine
+        self.assertLessEqual(sommeil.SEUIL_VOIX, 0.89)
+        self.assertGreaterEqual(sommeil.SEUIL_VOIX, 0.8)
+
+
 class Validation(unittest.TestCase):
     def refuse(self, ep, morceau, pub=None):
         err, _ = valider(ep, pub)

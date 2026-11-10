@@ -30,5 +30,16 @@
     "fabrique": null,
     "miniature": null
   },
-  "notes": "Chaîne actuelle : tourne à l'identique (publication = publish/config.json, cadence = run_daily.py)."
+  "notes": "Chaîne actuelle : tourne à l'identique (publication = publish/config.json, cadence = run_daily.py).",
+  "tiktok": {
+    "actif": true,
+    "moteur": "planificateur",
+    "visibilite": "PUBLIC_TO_EVERYONE",
+    "max_par_24h": 3,
+    "planificateur": {
+      "service": "zernio",
+      "compte": "6af25a629937ca6558b1878a",
+      "consentement": true
+    }
+  }
 }

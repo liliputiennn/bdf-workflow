@@ -20,13 +20,19 @@
   "publication": {
     "heures_shorts": [
       "12:00",
+      "16:30",
       "19:00"
     ],
-    "shorts_par_creneau": 1,
+    "shorts_par_creneau": 2,
     "heure_long": "18:00",
     "jours_longs": [
+      0,
       1,
-      4
+      2,
+      3,
+      4,
+      5,
+      6
     ]
   },
   "frequence": {

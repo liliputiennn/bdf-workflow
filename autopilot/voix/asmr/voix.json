@@ -1,0 +1,8 @@
+{
+  "locuteur": "Serena",
+  "style": "Une voix chuchotée, très proche du micro, douce, basse et très lente, avec de longs silences, sans aucune emphase.",
+  "vitesse": 1.0,
+  "licence": "Qwen3-TTS-12Hz-0.6B-CustomVoice, Apache-2.0 (voix intégrée)",
+  "a_confirmer": true,
+  "note": "À confirmer à l'écoute : le chuchotement dépend de la consigne de style ; si le résultat est trop parlé, durcir la consigne (« chuchote »)."
+}

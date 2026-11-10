@@ -15,6 +15,30 @@ FICHIERS = ["youtube_quota.json", "youtube_auth.json", "youtube_audit.json", "ti
 DEPOT = common.ROOT / "etat-cloud"
 
 
+EXCLUS = common.ROOT / "autopilot" / "tiktok" / "exclus.json"  # suivi par Git : vidéos TikTok gérées à la main, jamais renvoyées
+
+
+def fusionner_exclus_tiktok(etat_dir: Path = None, exclus: Path = None) -> int:
+    """Ajoute à l'état TikTok les vidéos exclues à la main (sans écraser une entrée existante). Retourne le nombre d'ajouts."""
+    import json
+    etat_dir, exclus = etat_dir or common.STATE, exclus or EXCLUS
+    if not exclus.exists():
+        return 0
+    voulu = (json.loads(exclus.read_text(encoding="utf-8")).get("envoyes") or {})
+    f = etat_dir / "tiktok.json"
+    etat = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+    env = etat.setdefault("envoyes", {})
+    n = 0
+    for ep, v in voulu.items():
+        if ep not in env:
+            env[ep] = v
+            n += 1
+    if n:
+        etat_dir.mkdir(parents=True, exist_ok=True)
+        f.write_text(json.dumps(etat, ensure_ascii=False, indent=1), encoding="utf-8")
+    return n
+
+
 def main(mode: str) -> int:
     common.STATE.mkdir(parents=True, exist_ok=True)
     src, dst = (DEPOT, common.STATE) if mode == "restore" else (common.STATE, DEPOT)
@@ -23,6 +47,9 @@ def main(mode: str) -> int:
         if (src / f).exists():
             shutil.copy(src / f, dst / f)
             print(f"{mode} : {f}")
+    if mode == "restore":
+        n = fusionner_exclus_tiktok()
+        print(f"restore : {n} exclusion(s) TikTok ajoutée(s)")
     return 0
 
 

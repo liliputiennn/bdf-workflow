@@ -1,9 +1,9 @@
 {
   "id": "musique-enfants",
-  "nom": "Musique pour enfants (nom à choisir)",
+  "nom": "PomPikoBoo",
   "langue": "fr",
   "format": "musique_enfants",
-  "niche": "Comptines et chansons simples",
+  "niche": "Chansons chantées pour enfants avec un éléphant rose et un cactus (3D colorée)",
   "active": false,
   "vague": 7,
   "jeton_fichier": "token-musique-enfants.json",
@@ -19,12 +19,16 @@
   },
   "publication": {
     "heures_shorts": [
-      "10:00"
+      "08:00",
+      "10:00",
+      "16:30"
     ],
     "shorts_par_creneau": 1,
     "heure_long": "16:00",
     "jours_longs": [
+      0,
       2,
+      4,
       5
     ],
     "mention_ia_description": true,
@@ -48,22 +52,26 @@
     "fabrique": "formats/fabrique.py",
     "miniature": "formats/miniature_formats.py"
   },
-  "notes": "Chantier 3, format 5 (le plus risqué). Chansons ORIGINALES à chanter (karaoké) : mélodie synthétisée par du code (aucune licence tierce), paroles syllabées par le rédacteur, aucune voix chantée générée. MusicGen = CC-BY-NC (interdit) ; Stable Audio Open = licence communautaire (écarté) ; ACE-Step et YuE = Apache-2.0 mais non branchés (voir spec). Déclaration « conçue pour les enfants » (selfDeclaredMadeForKids) faite par le publieur via publication.pour_enfants.",
+  "notes": "Refonte 2026-11-10 : VRAIES chansons chantées par ACE-Step 1.5 (licence MIT, vérifiée sur le fichier LICENSE officiel) sur GPU Kaggle, paroles originales du rédacteur, clip animé avec les personnages de la chaîne (petit éléphant rose, cactus à fleur rose, dessinés par code : pompikoboo.py), paroles mot par mot calées par Whisper. Exclus : MusicGen (CC-BY-NC), Stable Audio Open (licence communautaire). Déclaration « conçue pour les enfants » faite par le publieur (publication.pour_enfants).",
   "preparation": true,
   "format_statut": {
-    "verifie": "2026-11-09",
-    "test": "musique-essai : chanson originale, rendu karaoké, pret, faux YouTube avec selfDeclaredMadeForKids = true.",
+    "verifie": "2026-11-10",
+    "test": "musique-essai : chanson chantée (fausse en test), alignement, clip animé, pret, faux YouTube avec selfDeclaredMadeForKids = true. Essai réel : workflow « Musique essai ».",
     "manque": [
-      "Relire les premières chansons avant d'activer",
-      "Créer la chaîne YouTube, connecter son jeton, choisir quand activer"
+      "Lancer l'essai réel (workflow Musique essai ou essai_musique.py) et ÉCOUTER : français chanté intelligible, voix agréable, aucune ressemblance avec une chanson connue",
+      "Confirmer les noms des personnages (Pompi / Piko proposés) et fournir plus d'images de référence (face, poses) pour affiner le dessin",
+      "Créer la chaîne YouTube @PomPikoBoo, connecter son jeton, choisir quand activer"
     ],
     "licences": [
-      "Mélodie : synthétisée par le code, aucune licence tierce",
-      "MusicGen (CC-BY-NC) interdit ; Stable Audio Open écarté ; ACE-Step et YuE (Apache-2.0) non branchés"
+      "ACE-Step 1.5 : MIT (LICENSE du dépôt + fiche Hugging Face, usage commercial autorisé), relu le 2026-11-10",
+      "faster-whisper / Whisper : MIT (alignement des paroles)",
+      "Personnages et décor : dessinés par code, aucune image tierce",
+      "MusicGen (CC-BY-NC) interdit ; Stable Audio Open écarté"
     ],
     "risques": [
-      "Chansons synthétiques répétitives : YouTube peut y voir du contenu de masse",
-      "Similarité de mélodie vérifiée seulement contre une liste d'airs connus",
+      "Voix chantée générée par IA sur une chaîne pour enfants : politique YouTube sur le contenu synthétique répétitif (mention dans la description, variété des chansons)",
+      "Ressemblance MÉLODIQUE avec une chanson connue : impossible à vérifier par code sur un chant généré, écoute humaine avant activation (les paroles sont filtrées)",
+      "Français chanté par ACE-Step : intelligibilité mesurée (taux d'appariement Whisper) mais à valider à l'oreille",
       "Déclaration « conçue pour les enfants » : commentaires désactivés par YouTube"
     ]
   }

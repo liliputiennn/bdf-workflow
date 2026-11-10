@@ -17,10 +17,11 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
-from . import commun, rendu, synth
+from . import commun, rendu, rendu_remotion, synth
 
 CONTROLES_STANDARD = False
 LUFS = -23.0
+SEUIL_VOIX = 0.85  # voix lente et douce : le contrôle par reconnaissance confond des mots voisins (« Ses » / « Les », score 0,89) sans que l'histoire en souffre ; en dessous de 0,85 la phrase est refaite puis signalée
 DUREE_S = {"long": (20 * 60, 3 * 3600 + 180), "short": (20 * 60, 3 * 3600 + 180)}
 AMBIANCES = ("pluie", "vagues", "vent", "foret", "nappe")
 DECORS = ("nuit-etoilee", "lune-sur-mer", "foret-brume")
@@ -220,11 +221,21 @@ def mixer(boucle: Path, voix: Path, sortie: Path, total_s: float) -> None:
 
 def rendre(ep: dict, ep_dir: Path, out_dir: Path, profil: dict, qa: dict, fps: int = FPS) -> Path:
     total = duree_totale_s(ep)
-    decor = Decor(ep["decor"]["type"], ep["decor"]["graine"])
     boucle_v = out_dir / "boucle.mp4"
-    with rendu.Encodeur(boucle_v, decor.w, decor.h, fps, crf=32) as enc:
-        for i in range(int(BOUCLE_VIDEO_S * fps)):
-            enc.ecrire(decor.image(i / fps))
+    moteur = "pillow"
+    if rendu_remotion.disponible():
+        try:  # décor « créateur » (Remotion), boucle parfaite de {BOUCLE_VIDEO_S} s
+            rendu_remotion.rendre_video("Fmt-Boucle", rendu_remotion.props_boucle("sommeil", ep["decor"]["type"], ep["decor"]["graine"], 1280, 720, fps, BOUCLE_VIDEO_S), boucle_v, crf=26)
+            moteur = "remotion"
+        except Exception as ex:  # noqa: BLE001 - repli sur le rendu léger
+            qa.setdefault("alertes_rendu", []).append(f"remotion indisponible, rendu Pillow : {str(ex)[:200]}")
+            boucle_v.unlink(missing_ok=True)
+    if moteur == "pillow":
+        decor = Decor(ep["decor"]["type"], ep["decor"]["graine"])
+        with rendu.Encodeur(boucle_v, decor.w, decor.h, fps, crf=32) as enc:
+            for i in range(int(BOUCLE_VIDEO_S * fps)):
+                enc.ecrire(decor.image(i / fps))
+    qa["moteur_rendu"] = moteur
     boucle_a = out_dir / "boucle.wav"
     boucle_audio(ep, boucle_a)
     mix = out_dir / "mixage.m4a"

@@ -350,6 +350,8 @@ def valider_brouillon(ep_id: str, chaine: str | None = None, sans_reseau: bool =
         court = ep.get("video") != "long"
         err = list(controles_publication(pub, court=court)) + controles_texte_public([p for p in phrases_f if isinstance(p, str)], pub, langue)
         avert = list(avertissements_publication(pub, court=court))
+        if getattr(module_format, "MENTIONS_PERMISES", False):  # format qui DOIT afficher une mention (finance : « pas un conseil financier » ; ASMR : voix de synthèse) : décision de l'utilisateur
+            err = [e for e in err if not (e.startswith("publication : «") and "pas d'avertissement, de loi" in e)]
     else:
         err, avert, faits = (controles_long if long else controles)(ep, faits, pub, reseau=not a.sans_reseau, langue=langue)
     if profil_chaine.get("format_module") and chaines.charger_format(profil_chaine) is None:

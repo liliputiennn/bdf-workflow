@@ -1,8 +1,8 @@
 # Publication, PC éteint : récupère dans le stock les vidéos prêtes, les envoie sur YouTube (programmées sur les créneaux de la chaîne : 8 Shorts par jour + un long les lundi, mercredi, vendredi),
-# envoie les Shorts dans la boîte de réception TikTok, nettoie le stock et met l'état à jour pour l'interface.
+# envoie les Shorts sur TikTok (en public par Zernio si ZERNIO_API_KEY existe ; sinon boîte de réception), nettoie le stock et met l'état à jour pour l'interface.
 # Lancement à la main au début (Actions > Publication > Run workflow, « à blanc » par défaut) ; la planification 2 fois par jour
 # se décommente quand le premier essai réel a réussi.
-# Identifiants (secrets GitHub, jamais affichés) : YT_CLIENT_SECRET, YT_TOKEN (chaîne française) et un YT_TOKEN_<ID> par autre chaîne (voir autopilot/cloud/SECRETS-PAR-CHAINE.md) ; TikTok (facultatif) : TIKTOK_CLIENT, TIKTOK_TOKEN.
+# Identifiants (secrets GitHub, jamais affichés) : YT_CLIENT_SECRET, YT_TOKEN (chaîne française) et un YT_TOKEN_<ID> par autre chaîne (voir autopilot/cloud/SECRETS-PAR-CHAINE.md) ; TikTok (facultatif) : ZERNIO_API_KEY (public), TIKTOK_CLIENT, TIKTOK_TOKEN (boîte de réception).
 name: Publication
 on:
   schedule:
@@ -54,17 +54,22 @@ jobs:
           YT_TOKEN_MUSIQUE_ENFANTS: ${{ secrets.YT_TOKEN_MUSIQUE_ENFANTS }}
           YT_TOKEN_MEDITATION: ${{ secrets.YT_TOKEN_MEDITATION }}
           YT_TOKEN_HISTOIRES_ENFANTS: ${{ secrets.YT_TOKEN_HISTOIRES_ENFANTS }}
+          YT_TOKEN_FINANCE_PERSO: ${{ secrets.YT_TOKEN_FINANCE_PERSO }}
+          YT_TOKEN_ASMR: ${{ secrets.YT_TOKEN_ASMR }}
           TIKTOK_CLIENT: ${{ secrets.TIKTOK_CLIENT }}
           TIKTOK_TOKEN: ${{ secrets.TIKTOK_TOKEN }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}   # TikTok en public via Zernio (moteur « planificateur » du profil fr)
         run: |
           set +x
           [ -n "$YT_CLIENT_SECRET" ] && printf '%s' "$YT_CLIENT_SECRET" > autopilot/secrets/client_secret.json
           [ -n "$YT_TOKEN" ] && printf '%s' "$YT_TOKEN" > autopilot/secrets/token.json
           [ -n "$TIKTOK_CLIENT" ] && printf '%s' "$TIKTOK_CLIENT" > autopilot/secrets/tiktok_client.json
           [ -n "$TIKTOK_TOKEN" ] && printf '%s' "$TIKTOK_TOKEN" > autopilot/secrets/tiktok_token.json
+          # clé Zernio : écrite au format attendu {"api_key": "..."} sans jamais passer par la ligne de commande ni les journaux
+          [ -n "$ZERNIO_API_KEY" ] && python -c "import json,os; open('autopilot/secrets/zernio.json','w',encoding='utf-8').write(json.dumps({'api_key': os.environ['ZERNIO_API_KEY'].strip()}))"
           python autopilot/cloud/jetons_chaines.py   # écrit token-<id>.json pour chaque chaîne dont le secret existe (n'affiche aucune valeur)
           echo "YouTube : $( [ -f autopilot/secrets/token.json ] && echo identifiants présents || echo identifiants ABSENTS )"
-          echo "TikTok  : $( [ -f autopilot/secrets/tiktok_token.json ] && echo identifiants présents || echo non configuré )"
+          echo "TikTok  : $( [ -f autopilot/secrets/tiktok_token.json ] && echo boîte de réception présente || echo boîte de réception non configurée ) ; $( [ -f autopilot/secrets/zernio.json ] && echo clé Zernio présente || echo clé Zernio ABSENTE '(secret ZERNIO_API_KEY)' )"
       - name: Récupération des vidéos dans le stock
         run: python autopilot/cloud/recuperer.py
       - name: Publication YouTube
@@ -79,8 +84,8 @@ jobs:
           # 1 = au moins un épisode en quarantaine (déjà noté dans son état) ; 3 = connexion YouTube à refaire
           [ "$code" = "3" ] && { echo "::error::Connexion YouTube à refaire (jeton expiré ou absent)"; exit 3; }
           exit 0
-      - name: Envoi TikTok (boîte de réception)
-        if: ${{ env.A_BLANC != 'true' && hashFiles('autopilot/secrets/tiktok_token.json') != '' }}
+      - name: Envoi TikTok (Zernio en public, boîte de réception pour les chaînes sans service)
+        if: ${{ env.A_BLANC != 'true' && (hashFiles('autopilot/secrets/tiktok_token.json') != '' || hashFiles('autopilot/secrets/zernio.json') != '') }}
         continue-on-error: true
         run: python autopilot/tiktok/envoi.py
       - name: Nettoyage du stock

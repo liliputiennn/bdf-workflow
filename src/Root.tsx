@@ -1,6 +1,7 @@
 import { Composition, Still } from "remotion";
 import { EPISODES } from "./episodes/registry";
 import { DEMO, DemoCover } from "./scenes/demo";
+import { FormatsRoot } from "./formats";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ export const RemotionRoot: React.FC = () => {
         <Still key={`${e.id}-cover`} id={e.coverId} component={e.cover} width={1080} height={1920} />
       ))}
       <Composition id="Catalogue-Scenes" component={DEMO.component} durationInFrames={DEMO.frames} fps={30} width={1080} height={1920} defaultProps={{ mix: { music: 1, sfx: 1 } }} />
+      <FormatsRoot />
       <Still id="Catalogue-Cover" component={DemoCover} width={1080} height={1920} />
     </>
   );
