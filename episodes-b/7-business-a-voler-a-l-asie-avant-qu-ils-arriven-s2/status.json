@@ -1,13 +1,14 @@
 {
- "etat": "pret",
- "maj": "2026-11-04T22:03:44",
+ "etat": "programme",
+ "maj": "2026-11-10T12:55:09",
  "raison": null,
  "tentatives": 0,
  "youtube": {
-  "video_id": null,
-  "url": null,
-  "visibilite": null,
-  "publie_a": null
+  "video_id": "BTJLKmRe_f0",
+  "url": "https://youtu.be/BTJLKmRe_f0",
+  "visibilite": "programme",
+  "publie_a": "2026-11-12T20:00:00Z",
+  "miniature": true
  },
  "origine": "7-business-a-voler-a-l-asie-avant-qu-ils-arriven",
  "miniature": {

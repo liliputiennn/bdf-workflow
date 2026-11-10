@@ -5,140 +5,160 @@
    "envoye_a": "2026-11-04T17:58:33",
    "envoye_ts": 1793815113.4942818,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Les gouttières bouchées : de l'argent qui tombe du ciel.\n\n#Business #IdéesDeBusiness #GagnerDeLArgent #BusinessÀLancer"
+   "legende": "Les gouttières bouchées : de l'argent qui tombe du ciel.\n\n#Business #IdéesDeBusiness #GagnerDeLArgent #BusinessÀLancer",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-business-a-copier-des-usa-avant-que-tout-le-mo-s3": {
    "publish_id": "v_inbox_file~v2.7704377051473971222",
    "envoye_a": "2026-11-04T17:58:35",
    "envoye_ts": 1793815115.7780237,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Des vitres propres, ça se voit tout de suite, et ça se paie.\n\n#Business #IdéesDeBusiness #GagnerDeLArgent #BusinessÀLancer"
+   "legende": "Des vitres propres, ça se voit tout de suite, et ça se paie.\n\n#Business #IdéesDeBusiness #GagnerDeLArgent #BusinessÀLancer",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-business-a-copier-des-usa-avant-que-tout-le-mo-s4": {
    "publish_id": "v_inbox_file~v2.7704377073795975190",
    "envoye_a": "2026-11-04T17:58:38",
    "envoye_ts": 1793815118.265592,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Un meuble en kit monté : le calcul qui fait envie.\n\n#Business #IdéesDeBusiness #GagnerDeLArgent #BusinessÀLancer"
+   "legende": "Un meuble en kit monté : le calcul qui fait envie.\n\n#Business #IdéesDeBusiness #GagnerDeLArgent #BusinessÀLancer",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-business-a-copier-des-usa-avant-que-tout-le-mo-s5": {
    "publish_id": "v_inbox_file~v2.7704377051474036758",
    "envoye_a": "2026-11-04T17:58:40",
    "envoye_ts": 1793815120.0691419,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Des chiens qui s'ennuient, des maîtres qui travaillent.\n\n#Business #IdéesDeBusiness #GagnerDeLArgent #BusinessÀLancer"
+   "legende": "Des chiens qui s'ennuient, des maîtres qui travaillent.\n\n#Business #IdéesDeBusiness #GagnerDeLArgent #BusinessÀLancer",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s1": {
    "publish_id": "v_inbox_file~v2.7704806065401366550",
    "envoye_a": "2026-11-05T21:43:52",
    "envoye_ts": 1793915032.9605038,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Ce snack se vend quatre fois plus cher qu'au Japon\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
+   "legende": "Ce snack se vend quatre fois plus cher qu'au Japon\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s2": {
    "publish_id": "v_inbox_file~v2.7704805658109872150",
    "envoye_a": "2026-11-05T21:43:55",
    "envoye_ts": 1793915035.1125655,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Une machine à capsules, remboursée en douze jours\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
+   "legende": "Une machine à capsules, remboursée en douze jours\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s3": {
    "publish_id": "v_inbox_file~v2.7704806119620773910",
    "envoye_a": "2026-11-05T21:43:57",
    "envoye_ts": 1793915037.3417282,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Cet onigiri coûte un euro et se vend trois euros\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
+   "legende": "Cet onigiri coûte un euro et se vend trois euros\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s4": {
    "publish_id": "v_inbox_file~v2.7704806065401432086",
    "envoye_a": "2026-11-05T21:43:59",
    "envoye_ts": 1793915039.4487264,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Un latte vert à un euro, vendu presque sept euros\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
+   "legende": "Un latte vert à un euro, vendu presque sept euros\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s5": {
    "publish_id": "v_inbox_file~v2.7705398906695387158",
    "envoye_a": "2026-11-07T12:03:18",
    "envoye_ts": 1794052998.2628994,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Le bubble tea : trois euros trente-six de reste par verre\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
+   "legende": "Le bubble tea : trois euros trente-six de reste par verre\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s6": {
    "publish_id": "v_inbox_file~v2.7705398905864964118",
    "envoye_a": "2026-11-07T12:03:20",
    "envoye_ts": 1794053000.5915802,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "La laverie libre-service : ce qu'il reste par jour\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
+   "legende": "La laverie libre-service : ce qu'il reste par jour\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-business-a-voler-a-l-asie-avant-qu-ils-arriven-s7": {
    "publish_id": "v_inbox_file~v2.7705398913024903190",
    "envoye_a": "2026-11-07T12:03:22",
    "envoye_ts": 1794053002.9889321,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Un café à chats : le calcul des ventes par jour\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business"
+   "legende": "Un café à chats : le calcul des ventes par jour\n\n#BusinessAsie #IdéesDeBusiness #BusinessÀCopier #Taiyaki #business",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s1": {
    "publish_id": "v_inbox_file~v2.7705398923657086998",
    "envoye_a": "2026-11-07T12:03:25",
    "envoye_ts": 1794053005.039052,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Une graveuse laser transforme une planche en cadeau à 41 €\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
+   "legende": "Une graveuse laser transforme une planche en cadeau à 41 €\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s2": {
    "publish_id": "v_inbox_file~v2.7705774682028984342",
    "envoye_a": "2026-11-08T12:23:07",
    "envoye_ts": 1794140587.5750704,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Une imprimante 3D à 189 € : 72 € par jour avec 3 pièces\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
+   "legende": "Une imprimante 3D à 189 € : 72 € par jour avec 3 pièces\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s3": {
    "publish_id": "v_inbox_file~v2.7705774955946182678",
    "envoye_a": "2026-11-08T12:23:09",
    "envoye_ts": 1794140589.7816262,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Un mug à 1,38 € revendu 18 € : le calcul de la presse à mug\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
+   "legende": "Un mug à 1,38 € revendu 18 € : le calcul de la presse à mug\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s4": {
    "publish_id": "v_inbox_file~v2.7705775002754238486",
    "envoye_a": "2026-11-08T12:23:12",
    "envoye_ts": 1794140592.0060847,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "La machine à barbe à papa se rembourse dès le premier événement\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
+   "legende": "La machine à barbe à papa se rembourse dès le premier événement\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s5": {
    "publish_id": "v_inbox_file~v2.7705774955946248214",
    "envoye_a": "2026-11-08T12:23:14",
    "envoye_ts": 1794140594.9595516,
    "statut": "SEND_TO_USER_INBOX",
-   "legende": "Un nettoyeur haute pression : 120 € par terrasse nettoyée\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
+   "legende": "Un nettoyeur haute pression : 120 € par terrasse nettoyée\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s6": {
    "publish_id": "v_inbox_file~v2.7706179620848191510",
    "envoye_a": "2026-11-09T14:33:47",
    "envoye_ts": 1794234827.4544728,
    "statut": "PROCESSING_UPLOAD",
-   "legende": "Un distributeur automatique : 20 à 35 € de marge par jour\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
+   "legende": "Un distributeur automatique : 20 à 35 € de marge par jour\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-machines-a-acheter-pour-gagner-de-l-argent-ava-s7": {
    "publish_id": "v_inbox_file~v2.7706179620848257046",
    "envoye_a": "2026-11-09T14:33:49",
    "envoye_ts": 1794234829.4940941,
    "statut": "PROCESSING_UPLOAD",
-   "legende": "La borne photo se loue 350 à 600 € la soirée\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser"
+   "legende": "La borne photo se loue 350 à 600 € la soirée\n\n#MachinesÀAcheter #Business #GagnerDeLArgent #GraveuseLaser",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-services-d-ia-que-les-petites-entreprises-paie-s1": {
    "publish_id": "v_inbox_file~v2.7706179620848289814",
    "envoye_a": "2026-11-09T14:33:51",
    "envoye_ts": 1794234831.3492613,
    "statut": "PROCESSING_UPLOAD",
-   "legende": "Un mois de posts pour les réseaux sociaux : 420 € de reste\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business"
+   "legende": "Un mois de posts pour les réseaux sociaux : 420 € de reste\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business",
+   "erreur": "refus : Invalid post ID format"
   },
   "7-services-d-ia-que-les-petites-entreprises-paie-s2": {
    "publish_id": "v_inbox_file~v2.7706179664875931670",
    "envoye_a": "2026-11-09T14:33:53",
    "envoye_ts": 1794234833.2880707,
    "statut": "PROCESSING_UPLOAD",
-   "legende": "Écrire les fiches produit d'une boutique : 460 € de reste\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business"
+   "legende": "Écrire les fiches produit d'une boutique : 460 € de reste\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business",
+   "erreur": "refus : Invalid post ID format"
   },
   "10-business-a-lancer-avec-moins-de-500-s2": {
    "statut": "programme_zernio",
@@ -161,5 +181,5 @@
    "note": "géré à la main le 2026-11-10 (programme retiré de YouTube) : ne pas renvoyer"
   }
  },
- "maj": "2026-11-09T14:33:53"
+ "maj": "2026-11-10T12:55:33"
 }
