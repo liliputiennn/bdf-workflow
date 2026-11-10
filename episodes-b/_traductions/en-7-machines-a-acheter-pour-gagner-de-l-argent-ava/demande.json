@@ -1,0 +1,1998 @@
+{
+ "id": "en-7-machines-a-acheter-pour-gagner-de-l-argent-ava",
+ "source": "7-machines-a-acheter-pour-gagner-de-l-argent-ava",
+ "chaine_source": "fr",
+ "chaine_cible": "en",
+ "langue": "en",
+ "langue_nom": "English",
+ "langue_source": "fr",
+ "format": "long",
+ "fichier_episode": "episode-long.json",
+ "cree_le": "2026-11-10T08:31:56",
+ "nom_chaine": "Business Facts (EN)",
+ "consignes": "autopilot/traduction/CONSIGNES-TRADUCTION.md",
+ "episode": {
+  "id": "7-machines-a-acheter-pour-gagner-de-l-argent-ava",
+  "titre": "7 machines à acheter pour gagner de l'argent avant les autres",
+  "theme": "pelouse",
+  "theme_accent": "pelouse-nuit",
+  "chaine": "La Débrouille",
+  "miniature": {
+   "style": "createur",
+   "texte_haut": "7 MACHINES À ACHETER",
+   "gros": "600 €",
+   "icone": "pieces"
+  },
+  "chapitres": [
+   {
+    "titre": "Accroche : six cents euros en une soirée",
+    "phrases": [
+     "Six cents euros pour quatre heures de travail, juste en posant une machine dans un coin de salle.",
+     "Voilà les machines qu'on achète une fois et qui rapportent à chaque utilisation.",
+     "Pour chacune, tu auras le prix d'achat réel, le prix de vente, ce qu'il reste, et la première action à faire.",
+     "Pas de théorie. Que des calculs avec les vrais prix relevés en novembre.",
+     "Reste jusqu'au bout : la dernière machine est celle qui rapporte le plus en une seule journée.",
+     "On commence par celle qui fait un tabac sur les marchés de Noël : la graveuse laser."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "Six",
+        "cents",
+        "euros"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 3,
+      "params": {
+       "titre": "POUR CHAQUE MACHINE",
+       "items": [
+        {
+         "texte": "Prix d'achat réel"
+        },
+        {
+         "texte": "Prix de vente"
+        },
+        {
+         "texte": "Ce qu'il reste"
+        },
+        {
+         "texte": "Première action"
+        }
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 5,
+      "params": {
+       "question": "Laquelle rapporte le plus ?",
+       "pistes": [
+        "Laser",
+        "Sucre",
+        "Photo"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "titre": "Graveuse laser : planches gravées",
+    "phrases": [
+     "Première machine : la graveuse laser, celle qui transforme un bout de bois en cadeau à quarante euros.",
+     "Pourquoi maintenant ? Chaque cadeau de Noël, de mariage ou de naissance se vend mieux avec un prénom dessus.",
+     "Le modèle de départ : l'xTool D1 Pro, la version de vingt watts.",
+     "Prix d'achat : mille trois cent quatre-vingt-dix-neuf euros, et parfois mille cent quatre-vingt-dix-neuf en promotion.",
+     "Ce qu'elle produit : des planches à découper, des plateaux, des porte-clés, des sous-verres gravés au prénom.",
+     "Une planche de bambou nue coûte cinq euros quatre-vingt-dix-huit dans un magasin.",
+     "Les artisans vendent une planche gravée entre quarante et un et cinquante-huit euros.",
+     "Le calcul : achat six euros environ, vente quarante et un euros, il te reste trente-cinq euros par planche.",
+     "À deux planches par jour, soixante-dix euros. À cinq, cent soixante-quinze. À dix, trois cent cinquante.",
+     "Pour rembourser la machine, il faut en vendre quarante.",
+     "C'est un marché de Noël et quelques commandes entre amis.",
+     "Première action aujourd'hui : publie une annonce planche gravée au prénom et prends cinq commandes avant d'acheter quoi que ce soit.",
+     "Le piège pratique : la première planche rate toujours, alors prévois-en quelques-unes d'avance.",
+     "La machine suivante fabrique des objets toute seule pendant que tu dors."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 1,
+       "titre": "Graveuse laser",
+       "badge": "Machine",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "1 399 €"
+        },
+        {
+         "label": "Temps par jour (estimation)",
+         "valeur": "1 h"
+        },
+        {
+         "label": "Gain par jour (estimation)",
+         "valeur": "175 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 2,
+      "params": {
+       "recherche": "laser engraving machine wood",
+       "legende": "La machine au travail",
+       "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/laser-engraving-machine-wood.jpg",
+       "credit": "Photo : Kalender Laser Machine, CC BY-SA 4.0"
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 4,
+      "params": {
+       "valeur": 1399,
+       "suffixe": " €",
+       "etiquette": "xTool D1 Pro : prix d'achat"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 5,
+      "params": {
+       "titre": "CE QU'ELLE GRAVE",
+       "items": [
+        {
+         "texte": "Planches à découper"
+        },
+        {
+         "texte": "Plateaux"
+        },
+        {
+         "texte": "Porte-clés"
+        },
+        {
+         "texte": "Sous-verres"
+        }
+       ]
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 7,
+      "params": {
+       "titre": "Planche à découper gravée (chêne)",
+       "prix": "41 €",
+       "source": "prix constaté : marques-de-france.fr",
+       "etat": "Neuf",
+       "lieu": "Livraison",
+       "recherche": "engraved wooden cutting board"
+      }
+     },
+     {
+      "type": "duel",
+      "phrase": 8,
+      "params": {
+       "titre": "PAR PLANCHE (€)",
+       "haut": {
+        "titre": "Vente 41 €",
+        "part": 100
+       },
+       "bas": {
+        "titre": "Achat 6 €",
+        "part": 15
+       }
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 9,
+      "params": {
+       "titre": "GAIN PAR JOUR (€)",
+       "barres": [
+        {
+         "label": "2 planches",
+         "valeur": 70
+        },
+        {
+         "label": "5 planches",
+         "valeur": 175,
+         "accent": true
+        },
+        {
+         "label": "10 planches",
+         "valeur": 350
+        }
+       ],
+       "badge": "estimation"
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 10,
+      "params": {
+       "valeur": 40,
+       "suffixe": " planches",
+       "etiquette": "pour rembourser la machine"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 12,
+      "params": {
+       "question": "Combien de commandes avant d'acheter ?",
+       "pistes": [
+        "Cinq",
+        "Annonce",
+        "Test"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Une graveuse laser transforme une planche en cadeau à 41 €"
+    }
+   },
+   {
+    "titre": "Imprimante 3D : pièces à la commande",
+    "phrases": [
+     "Deuxième machine : l'imprimante trois D, dès cent quatre-vingt-neuf euros.",
+     "Le modèle de départ : la petite Bambu Lab, le modèle A un mini, au prix relevé chez la marque et sur un comparateur.",
+     "Pourquoi maintenant ? Des gens cherchent une pièce cassée, un support sur mesure, un boîtier, et personne près d'eux ne sait la faire.",
+     "Ce qu'elle produit : des pièces en plastique, une par une, à partir d'un fichier.",
+     "Le plastique, c'est du filament : un kilo coûte de quinze à trente euros.",
+     "Prix de vente constaté : un devis type, pour un petit boîtier de quarante-cinq grammes, tombe à trente euros quatre-vingt-cinq.",
+     "Dans ce devis, le plastique pèse seulement un euro trente-cinq.",
+     "L'impression dure trois heures, facturées quatre euros de l'heure, donc douze euros de machine.",
+     "Le calcul : trente euros quatre-vingt-cinq, moins cinq euros cinquante de port, moins le plastique, il reste vingt-quatre euros.",
+     "À une pièce par jour, vingt-quatre euros. À trois, soixante-douze. À cinq, cent vingt.",
+     "Pour rembourser la machine, il faut en vendre huit.",
+     "Première action aujourd'hui : cherche sur les sites d'annonces des gens qui demandent une pièce introuvable, et propose-leur un prix.",
+     "Le piège pratique : ne promets jamais un délai avant d'avoir vu combien d'heures la pièce demande.",
+     "Et la machine suivante transforme un simple mug en cadeau à dix-huit euros."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 2,
+       "titre": "Imprimante 3D",
+       "badge": "Machine",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "189 €"
+        },
+        {
+         "label": "Temps par jour (estimation)",
+         "valeur": "3 h par pièce"
+        },
+        {
+         "label": "Gain par jour (estimation)",
+         "valeur": "72 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 2,
+      "params": {
+       "valeur": 189,
+       "suffixe": " €",
+       "etiquette": "Bambu Lab A1 mini : prix d'achat"
+      }
+     },
+     {
+      "type": "clip",
+      "phrase": 3,
+      "params": {
+       "recherche": "3d printer printing",
+       "legende": "La machine au travail",
+       "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/3d-printer-printing.webm",
+       "credit": "Vidéo : BoardGamesN3Dprint, Wikimedia Commons"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 4,
+      "params": {
+       "titre": "CE QU'ELLE FABRIQUE",
+       "items": [
+        {
+         "texte": "Pièces cassées"
+        },
+        {
+         "texte": "Supports sur mesure"
+        },
+        {
+         "texte": "Boîtiers"
+        }
+       ]
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 6,
+      "params": {
+       "titre": "Devis type : boîtier de 45 g",
+       "prix": "30,85 €",
+       "source": "devis type : lv3dofficiel.fr",
+       "etat": "Sur mesure",
+       "lieu": "Port inclus"
+      }
+     },
+     {
+      "type": "duel",
+      "phrase": 9,
+      "params": {
+       "titre": "PAR PIÈCE (€)",
+       "haut": {
+        "titre": "Devis 30,85 €",
+        "part": 100
+       },
+       "bas": {
+        "titre": "Port 5,50 €",
+        "part": 18
+       }
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 10,
+      "params": {
+       "titre": "GAIN PAR JOUR (€)",
+       "barres": [
+        {
+         "label": "1 pièce",
+         "valeur": 24
+        },
+        {
+         "label": "3 pièces",
+         "valeur": 72,
+         "accent": true
+        },
+        {
+         "label": "5 pièces",
+         "valeur": 120
+        }
+       ],
+       "badge": "estimation"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 12,
+      "params": {
+       "question": "Quelle pièce manque autour de toi ?",
+       "pistes": [
+        "Support",
+        "Boîtier",
+        "Pièce cassée"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 12,
+     "accroche": "Une imprimante 3D à 189 € : 72 € par jour avec 3 pièces"
+    }
+   },
+   {
+    "titre": "Presse à mug : tasses personnalisées",
+    "phrases": [
+     "Troisième machine : la presse à mugs, pour imprimer photos et prénoms sur des tasses.",
+     "Ça s'appelle la sublimation : l'encre entre dans la tasse, donc le dessin résiste au lavage.",
+     "Pourquoi ça marche : fête des mères, anniversaire, équipe de foot, tout le monde offre un mug avec sa photo.",
+     "Une presse à mugs coûte de cent à trois cent cinquante euros.",
+     "Il te faut aussi une imprimante à réservoirs d'encre, avec de l'encre de sublimation : des packs prêts à l'emploi existent.",
+     "Une tasse blanche prête à sublimer coûte un euro trente-huit pièce, par lot de trente-six.",
+     "Le prix de vente constaté : dix-huit euros sur un site de cadeaux, jusqu'à dix-neuf euros quatre-vingt-quinze ailleurs.",
+     "Le calcul : tasse un euro trente-huit, vente dix-huit euros, il reste seize euros soixante-deux avant l'encre.",
+     "L'encre et le papier, c'est quelques centimes par tasse.",
+     "Cinq mugs par jour, quatre-vingt-trois euros. Dix, cent soixante-six. Vingt, trois cent trente-deux.",
+     "Pour rembourser une presse à trois cent cinquante euros, il faut vendre vingt et un mugs.",
+     "Première action aujourd'hui : demande à dix personnes quelle photo elles mettraient sur une tasse, et prends les commandes.",
+     "Le piège pratique : commence par un petit lot de tasses, pas par un carton entier.",
+     "La suivante fait rêver tous les enfants : du sucre qui devient un nuage."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 3,
+       "titre": "Presse à mugs",
+       "badge": "Machine",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "100 à 350 €"
+        },
+        {
+         "label": "Temps par jour (estimation)",
+         "valeur": "1 h"
+        },
+        {
+         "label": "Gain par jour (estimation)",
+         "valeur": "166 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 2,
+      "params": {}
+     },
+     {
+      "type": "chiffre",
+      "phrase": 4,
+      "params": {
+       "valeur": 350,
+       "prefixe": "jusqu'à ",
+       "suffixe": " €",
+       "etiquette": "presse à mugs : prix d'achat"
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 7,
+      "params": {
+       "titre": "Mug personnalisé avec photo",
+       "prix": "18 €",
+       "source": "prix constaté : paris-friendly.fr",
+       "etat": "Neuf",
+       "lieu": "Livraison",
+       "recherche": "personalized photo mug",
+       "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/personalized-photo-mug.jpg",
+       "credit": "Photo : Personal Creations, CC BY 2.0"
+      }
+     },
+     {
+      "type": "duel",
+      "phrase": 8,
+      "params": {
+       "titre": "UN MUG (€)",
+       "haut": {
+        "titre": "Vente 18 €",
+        "part": 100
+       },
+       "bas": {
+        "titre": "Tasse 1,38 €",
+        "part": 8
+       }
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 10,
+      "params": {
+       "titre": "GAIN PAR JOUR (€)",
+       "barres": [
+        {
+         "label": "5 mugs",
+         "valeur": 83
+        },
+        {
+         "label": "10 mugs",
+         "valeur": 166,
+         "accent": true
+        },
+        {
+         "label": "20 mugs",
+         "valeur": 332
+        }
+       ],
+       "badge": "estimation"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 12,
+      "params": {
+       "question": "Quelle photo sur ta tasse ?",
+       "pistes": [
+        "Famille",
+        "Équipe",
+        "Animal"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 11,
+     "accroche": "Un mug à 1,38 € revendu 18 € : le calcul de la presse à mug"
+    }
+   },
+   {
+    "titre": "Barbe à papa : le stand de sucre",
+    "phrases": [
+     "Quatrième machine : la machine à barbe à papa, le stand qui ne désemplit jamais.",
+     "Pourquoi ça marche : kermesses, mariages, anniversaires, comités d'entreprise, tout le monde veut son stand de sucre.",
+     "Une machine professionnelle de table se trouve à partir de cent quatre-vingt-sept euros.",
+     "Ce qu'elle produit : un nuage de sucre en quelques instants, avec presque rien comme matière.",
+     "Le sucre coûte quelques centimes par barbe à papa.",
+     "Côté prix de vente : des prestataires facturent une animation barbe à papa de quatre cent cinquante à cinq cents euros la journée.",
+     "Ils apportent la machine, le sucre et l'installation, et ils repartent le soir.",
+     "Le calcul : cinq cents euros de forfait, moins quelques euros de sucre, il te reste presque tout.",
+     "Une machine à cent quatre-vingt-sept euros est remboursée dès le premier événement.",
+     "Un événement par week-end, ça fait environ cinq cents euros la journée.",
+     "Première action aujourd'hui : écris aux associations, aux écoles et aux mairies de ta ville pour leur proposer ton stand.",
+     "Le piège pratique : teste ta machine chez toi, le sucre colle et le premier nuage ne ressemble à rien.",
+     "La prochaine machine ne vend rien : elle nettoie, et les gens la paient pour ça."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 4,
+       "titre": "Machine à barbe à papa",
+       "badge": "Machine",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "dès 187,99 €"
+        },
+        {
+         "label": "Temps par jour (estimation)",
+         "valeur": "1 journée d'événement"
+        },
+        {
+         "label": "Gain par jour (estimation)",
+         "valeur": "500 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 2,
+      "params": {
+       "recherche": "cotton candy machine spinning",
+       "legende": "La machine au travail",
+       "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/cotton-candy-machine-spinning.jpg",
+       "credit": "Photo : No machine-readable author provided. Mat, CC BY-SA 3.0"
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 3,
+      "params": {
+       "valeur": 187.99,
+       "decimales": 2,
+       "suffixe": " €",
+       "etiquette": "machine pro de table : dès"
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 6,
+      "params": {
+       "titre": "Animation barbe à papa, 1 jour",
+       "prix": "500 €",
+       "source": "prix constaté : 1001salles.com",
+       "lieu": "Livré et installé"
+      }
+     },
+     {
+      "type": "duel",
+      "phrase": 8,
+      "params": {
+       "titre": "UNE JOURNÉE (€)",
+       "haut": {
+        "titre": "Forfait 500 €",
+        "part": 100
+       },
+       "bas": {
+        "titre": "Sucre : quelques €",
+        "part": 3
+       }
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 10,
+      "params": {
+       "titre": "UNE JOURNÉE (€)",
+       "barres": [
+        {
+         "label": "Prudent",
+         "valeur": 450
+        },
+        {
+         "label": "Haut",
+         "valeur": 500,
+         "accent": true
+        }
+       ],
+       "badge": "estimation"
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "La machine à barbe à papa se rembourse dès le premier événement"
+    }
+   },
+   {
+    "titre": "Nettoyeur haute pression : terrasses",
+    "phrases": [
+     "Cinquième machine : le nettoyeur haute pression, la plus simple à lancer.",
+     "Tout le monde a une terrasse ou une cour grise et verte, et personne n'a envie de se mettre à genoux pour la frotter.",
+     "Un modèle professionnel comme le Kärcher HD cinq quinze C Plus coûte huit cent soixante-quatre euros quatre-vingt-quinze.",
+     "Ce qu'il produit : une terrasse qui redevient claire en quelques heures.",
+     "Prix de vente constaté : entre trois et quinze euros le mètre carré selon la surface et l'état.",
+     "Dans plusieurs grandes villes, on tourne plutôt autour de quatre euros le mètre carré.",
+     "Le calcul : une terrasse de trente mètres carrés à quatre euros, ça fait cent vingt euros.",
+     "Certains appliquent un forfait minimum de cent cinquante euros pour les petites surfaces.",
+     "Une terrasse par jour, cent vingt euros. Deux, deux cent quarante. Trois, trois cent soixante.",
+     "Pour rembourser la machine, il faut nettoyer environ sept terrasses.",
+     "Première action aujourd'hui : prends une photo avant et après chez un voisin, et poste-la dans le groupe de ton quartier.",
+     "Le piège pratique : baisse la pression doucement, un jet trop fort marque le bois.",
+     "Suite de la liste : une machine qui vend à ta place, jour et nuit."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 5,
+       "titre": "Nettoyeur haute pression",
+       "badge": "Machine",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "864,95 €"
+        },
+        {
+         "label": "Temps par jour (estimation)",
+         "valeur": "2 h par terrasse"
+        },
+        {
+         "label": "Gain par jour (estimation)",
+         "valeur": "240 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 2,
+      "params": {}
+     },
+     {
+      "type": "chiffre",
+      "phrase": 3,
+      "params": {
+       "valeur": 864.95,
+       "decimales": 2,
+       "suffixe": " €",
+       "etiquette": "Kärcher HD 5/15 C+ : prix d'achat"
+      }
+     },
+     {
+      "type": "titre-geant",
+      "phrase": 4,
+      "params": {}
+     },
+     {
+      "type": "annonce",
+      "phrase": 5,
+      "params": {
+       "titre": "Nettoyage de terrasse",
+       "prix": "4 €/m²",
+       "source": "prix constaté : yoojo.fr",
+       "lieu": "Grandes villes"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 6,
+      "params": {
+       "titre": "PRIX AU m²",
+       "items": [
+        {
+         "texte": "Fourchette",
+         "valeur": "3 à 15 €"
+        },
+        {
+         "texte": "Grandes villes",
+         "valeur": "4 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 9,
+      "params": {
+       "titre": "GAIN PAR JOUR (€)",
+       "barres": [
+        {
+         "label": "1 terrasse",
+         "valeur": 120
+        },
+        {
+         "label": "2 terrasses",
+         "valeur": 240,
+         "accent": true
+        },
+        {
+         "label": "3 terrasses",
+         "valeur": 360
+        }
+       ],
+       "badge": "estimation"
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Un nettoyeur haute pression : 120 € par terrasse nettoyée"
+    }
+   },
+   {
+    "titre": "Distributeur automatique : vendre sans présence",
+    "phrases": [
+     "Sixième machine : le distributeur automatique, celle qui vend pendant que tu fais autre chose.",
+     "Pourquoi ça marche : des gens ont faim ou soif à toute heure, et il n'y a personne pour les servir.",
+     "Un distributeur neuf coûte à partir de trois mille euros.",
+     "En occasion, on en trouve de mille cinq cents à huit mille euros.",
+     "Ce qu'il produit : des canettes, des snacks, du café, vendus un par un.",
+     "Une machine bien placée fait entre cinq cents et trois mille euros de ventes par mois.",
+     "La marge sur les produits va de quarante à soixante-dix pour cent.",
+     "Le calcul : mille cinq cents euros de ventes par mois, ça fait cinquante euros par jour.",
+     "Avec quarante pour cent de marge, il reste vingt euros par jour.",
+     "Avec soixante-dix pour cent de marge, trente-cinq euros par jour.",
+     "Si la machine monte à trois mille euros par mois, ça fait cent euros de ventes par jour et soixante-dix de marge au mieux.",
+     "Le retour sur investissement se fait en douze à trente-six mois.",
+     "Tout se joue sur l'emplacement : il faut au moins quarante passages par jour.",
+     "Première action aujourd'hui : va compter les passages devant un local de ta ville pendant une journée entière.",
+     "Le piège pratique : n'achète rien avant d'avoir compté.",
+     "La dernière machine rapporte le plus par jour, parce qu'on la loue pour une soirée."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 6,
+       "titre": "Distributeur automatique",
+       "badge": "Machine",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "dès 3 000 €"
+        },
+        {
+         "label": "Temps par jour (estimation)",
+         "valeur": "15 min de réassort"
+        },
+        {
+         "label": "Gain par jour (estimation)",
+         "valeur": "20 à 35 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 2,
+      "params": {
+       "recherche": "vending machine snacks",
+       "legende": "La machine au travail",
+       "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/vending-machine-snacks.jpg",
+       "credit": "Photo : Eugenio Hansen, OFS, CC BY-SA 3.0"
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 3,
+      "params": {
+       "valeur": 3000,
+       "prefixe": "dès ",
+       "suffixe": " €",
+       "etiquette": "distributeur neuf : prix d'achat"
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 4,
+      "params": {
+       "titre": "Distributeur d'occasion",
+       "prix": "1 500 à 8 000 €",
+       "source": "prix constaté : comdewouf.fr",
+       "etat": "Occasion"
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 6,
+      "params": {
+       "titre": "UNE MACHINE PAR MOIS",
+       "items": [
+        {
+         "texte": "Ventes",
+         "valeur": "500 à 3 000 €"
+        },
+        {
+         "texte": "Marge brute",
+         "valeur": "40 à 70 %"
+        }
+       ]
+      }
+     },
+     {
+      "type": "anneau",
+      "phrase": 9,
+      "params": {
+       "valeur": 40,
+       "centre": "40 %",
+       "etiquette": "marge prudente"
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 11,
+      "params": {
+       "titre": "MARGE PAR JOUR (€)",
+       "barres": [
+        {
+         "label": "Prudent",
+         "valeur": 20
+        },
+        {
+         "label": "Réaliste",
+         "valeur": 35,
+         "accent": true
+        },
+        {
+         "label": "Haut",
+         "valeur": 70
+        }
+       ],
+       "badge": "estimation"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 14,
+      "params": {
+       "question": "Où passent le plus de gens ?",
+       "pistes": [
+        "Gare",
+        "Bureaux",
+        "Salle de sport"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "Un distributeur automatique : 20 à 35 € de marge par jour"
+    }
+   },
+   {
+    "titre": "Photobooth : la borne photo à louer",
+    "phrases": [
+     "Septième machine, la meilleure : la borne photo, ou photobooth.",
+     "Pourquoi ça marche : mariages, anniversaires, soirées d'entreprise, tout le monde veut sa photo imprimée sur place.",
+     "Une borne et ses accessoires coûtent de mille cinq cents à cinq mille euros.",
+     "Ce qu'elle produit : des souvenirs, avec une borne que tu déposes et que tu récupères.",
+     "Prix de location constaté : de trois cent cinquante à six cents euros pour une demi-journée de quatre heures.",
+     "Une formule week-end sans animateur se loue de deux cent quatre-vingt-dix-neuf à quatre cent cinquante euros.",
+     "Le calcul : une soirée à trois cent cinquante euros, c'est le tarif bas.",
+     "Quatre soirées par mois, ça fait mille quatre cents euros.",
+     "Au tarif haut de six cents euros, quatre soirées te rapportent deux mille quatre cents euros.",
+     "Une borne à mille cinq cents euros est remboursée à la cinquième location.",
+     "Première action aujourd'hui : cherche les photobooths de ta ville, note leurs tarifs, et trouve la soirée qu'ils ne couvrent pas.",
+     "Le piège pratique : fais un test gratuit chez un ami avant ta première vraie soirée.",
+     "Voilà pourquoi je te l'ai gardée pour la fin."
+    ],
+    "scenes": [
+     {
+      "type": "fiche",
+      "phrase": 1,
+      "params": {
+       "numero": 7,
+       "titre": "Borne photo",
+       "badge": "Machine",
+       "lignes": [
+        {
+         "label": "Coût de lancement",
+         "valeur": "dès 1 500 €"
+        },
+        {
+         "label": "Temps par jour (estimation)",
+         "valeur": "4 h par soirée"
+        },
+        {
+         "label": "Gain par jour (estimation)",
+         "valeur": "350 à 600 €",
+         "accent": true
+        }
+       ]
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 2,
+      "params": {
+       "recherche": "photo booth party",
+       "legende": "La machine au travail",
+       "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/photo-booth-party.jpg",
+       "credit": "Photo : Vyacheslav Argenberg, CC BY 4.0"
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 3,
+      "params": {
+       "valeur": 1500,
+       "prefixe": "dès ",
+       "suffixe": " €",
+       "etiquette": "borne photo : prix d'achat"
+      }
+     },
+     {
+      "type": "photo",
+      "phrase": 4,
+      "params": {
+       "recherche": "photo booth wedding guests",
+       "legende": "Une borne photo en soirée",
+       "fichier": "7-machines-a-acheter-pour-gagner-de-l-argent-ava/visuels/photo-booth-wedding-guests.jpg",
+       "credit": "Photo : USFWS Mountain Prairie, Public domain"
+      }
+     },
+     {
+      "type": "annonce",
+      "phrase": 5,
+      "params": {
+       "titre": "Location photobooth, 4 h",
+       "prix": "350 à 600 €",
+       "source": "prix constaté : plateya.fr",
+       "lieu": "Demi-journée"
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 6,
+      "params": {
+       "titre": "UNE SOIRÉE (€)",
+       "barres": [
+        {
+         "label": "Prudent",
+         "valeur": 350
+        },
+        {
+         "label": "Haut",
+         "valeur": 600,
+         "accent": true
+        }
+       ],
+       "badge": "estimation"
+      }
+     },
+     {
+      "type": "chiffre",
+      "phrase": 7,
+      "params": {
+       "valeur": 350,
+       "suffixe": " €",
+       "etiquette": "une soirée, tarif bas"
+      }
+     },
+     {
+      "type": "barres",
+      "phrase": 9,
+      "params": {
+       "titre": "QUATRE SOIRÉES PAR MOIS (€)",
+       "barres": [
+        {
+         "label": "Prudent",
+         "valeur": 1400
+        },
+        {
+         "label": "Haut",
+         "valeur": 2400,
+         "accent": true
+        }
+       ],
+       "badge": "estimation"
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 11,
+      "params": {
+       "question": "Quel événement n'a pas de borne ?",
+       "pistes": [
+        "Mariage",
+        "Bal",
+        "Entreprise"
+       ]
+      }
+     }
+    ],
+    "short": {
+     "debut_phrase": 1,
+     "fin_phrase": 10,
+     "accroche": "La borne photo se loue 350 à 600 € la soirée"
+    }
+   },
+   {
+    "titre": "Laquelle acheter en premier",
+    "phrases": [
+     "Récap rapide, pour que tu choisisses.",
+     "Pour démarrer avec peu : la presse à mugs ou le nettoyeur haute pression.",
+     "Pour gagner le plus par jour d'événement : la machine à barbe à papa et la borne photo.",
+     "Pour un revenu sans présence : le distributeur, mais il faut un bon emplacement.",
+     "Choisis une seule machine et prends tes premières commandes avant de payer quoi que ce soit.",
+     "Dis-moi en commentaire laquelle tu choisis, et abonne-toi : la prochaine liste est encore plus étonnante."
+    ],
+    "scenes": [
+     {
+      "type": "titre-geant",
+      "phrase": 1,
+      "params": {
+       "accents": [
+        "choisisses"
+       ]
+      }
+     },
+     {
+      "type": "liste",
+      "phrase": 2,
+      "params": {
+       "titre": "POUR DÉMARRER",
+       "items": [
+        {
+         "texte": "Presse à mugs"
+        },
+        {
+         "texte": "Nettoyeur haute pression"
+        },
+        {
+         "texte": "Imprimante 3D"
+        }
+       ]
+      }
+     },
+     {
+      "type": "question",
+      "phrase": 5,
+      "params": {
+       "question": "Laquelle tu achètes en premier ?",
+       "pistes": [
+        "Laser",
+        "Sucre",
+        "Photo"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "faits": [
+  {
+   "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+   "valeur": "350 à 600 €",
+   "phrase": 1,
+   "sources": [
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ],
+   "check": [
+    "350"
+   ],
+   "verified": [
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ]
+  },
+  {
+   "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+   "valeur": "41 €",
+   "phrase": 7,
+   "sources": [
+    "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+    "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+   ],
+   "check": [
+    "41"
+   ],
+   "verified": [
+    "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+   ]
+  },
+  {
+   "claim": "Le graveur laser xTool D1 Pro 20 W est vendu 1 399 euros TTC par les revendeurs français.",
+   "valeur": "1 399 €",
+   "phrase": 9,
+   "sources": [
+    "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+    "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+   ],
+   "check": [
+    "1399"
+   ],
+   "verified": [
+    "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+    "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+   ]
+  },
+  {
+   "claim": "Le graveur laser xTool D1 Pro 20 W est vendu 1 399 euros TTC par les revendeurs français.",
+   "valeur": "1 399 €",
+   "phrase": 10,
+   "sources": [
+    "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+    "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+   ],
+   "check": [
+    "1399"
+   ],
+   "verified": [
+    "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+    "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+   ]
+  },
+  {
+   "claim": "Une planche à découper en bambou de 42 x 30 cm se vend 5 euros 98 chez un revendeur français.",
+   "valeur": "5,98 €",
+   "phrase": 12,
+   "sources": [
+    "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html",
+    "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+   ],
+   "check": [
+    "5 € 98"
+   ],
+   "verified": [
+    "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+   ]
+  },
+  {
+   "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+   "valeur": "41 €",
+   "phrase": 13,
+   "sources": [
+    "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+    "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+   ],
+   "check": [
+    "41"
+   ],
+   "verified": [
+    "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+   ]
+  },
+  {
+   "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+   "valeur": "41 €",
+   "phrase": 14,
+   "sources": [
+    "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+    "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+   ],
+   "check": [
+    "41"
+   ],
+   "verified": [
+    "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+   ]
+  },
+  {
+   "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+   "valeur": "41 €",
+   "phrase": 15,
+   "sources": [
+    "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+    "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+   ],
+   "check": [
+    "41"
+   ],
+   "verified": [
+    "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+   ]
+  },
+  {
+   "claim": "Le graveur laser xTool D1 Pro 20 W est vendu 1 399 euros TTC par les revendeurs français.",
+   "valeur": "1 399 €",
+   "phrase": 16,
+   "sources": [
+    "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+    "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+   ],
+   "check": [
+    "1399"
+   ],
+   "verified": [
+    "https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/",
+    "https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande"
+   ]
+  },
+  {
+   "claim": "Un artisan français vend une planche à découper en chêne gravée d'un texte 41 euros, jusqu'à 58 euros pour une composition sur mesure.",
+   "valeur": "41 €",
+   "phrase": 18,
+   "sources": [
+    "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/",
+    "https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html"
+   ],
+   "check": [
+    "41"
+   ],
+   "verified": [
+    "https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/"
+   ]
+  },
+  {
+   "claim": "La Bambu Lab A1 mini est vendue environ 189 euros (179 euros sur la boutique de la marque, 189 euros chez un revendeur comparé).",
+   "valeur": "189 €",
+   "phrase": 21,
+   "sources": [
+    "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+    "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+   ],
+   "check": [
+    "189"
+   ],
+   "verified": [
+    "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+    "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+   ]
+  },
+  {
+   "claim": "La Bambu Lab A1 mini est vendue environ 189 euros (179 euros sur la boutique de la marque, 189 euros chez un revendeur comparé).",
+   "valeur": "189 €",
+   "phrase": 22,
+   "sources": [
+    "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+    "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+   ],
+   "check": [
+    "189"
+   ],
+   "verified": [
+    "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+    "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+   ]
+  },
+  {
+   "claim": "Un kilo de filament PLA se négocie entre 15 et 30 euros.",
+   "valeur": "15 à 30 €",
+   "phrase": 25,
+   "sources": [
+    "https://lv3dofficiel.fr/post/calculateur-prix-impression-3d",
+    "https://www.ldlc.com/en/product/PB00751012.html"
+   ],
+   "check": [
+    "15 € et 30 €"
+   ],
+   "verified": [
+    "https://lv3dofficiel.fr/post/calculateur-prix-impression-3d"
+   ]
+  },
+  {
+   "claim": "Un devis type pour un boîtier en impression 3D de 45 grammes atteint 30,85 euros.",
+   "valeur": "30,85 €",
+   "phrase": 26,
+   "sources": [
+    "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+    "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+   ],
+   "check": [
+    "30,85"
+   ],
+   "verified": [
+    "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+   ]
+  },
+  {
+   "claim": "Dans ce devis, la matière (45 g de PETG) coûte 1,35 euro.",
+   "valeur": "1,35 €",
+   "phrase": 27,
+   "sources": [
+    "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+    "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+   ],
+   "check": [
+    "1,35"
+   ],
+   "verified": [
+    "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+   ]
+  },
+  {
+   "claim": "Dans ce devis, 3 heures de machine à 4 euros de l'heure font 12 euros.",
+   "valeur": "12 €",
+   "phrase": 28,
+   "sources": [
+    "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+    "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+   ],
+   "check": [
+    "12,00"
+   ],
+   "verified": [
+    "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+   ]
+  },
+  {
+   "claim": "Le devis type comprend 5,50 euros d'expédition sur un total de 30,85 euros.",
+   "valeur": "5,50 €",
+   "phrase": 29,
+   "sources": [
+    "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+    "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+   ],
+   "check": [
+    "5,50"
+   ],
+   "verified": [
+    "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+   ]
+  },
+  {
+   "claim": "Le devis type comprend 5,50 euros d'expédition sur un total de 30,85 euros.",
+   "valeur": "5,50 €",
+   "phrase": 30,
+   "sources": [
+    "https://lv3dofficiel.fr/post/exemple-devis-impression-3d",
+    "https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/"
+   ],
+   "check": [
+    "5,50"
+   ],
+   "verified": [
+    "https://lv3dofficiel.fr/post/exemple-devis-impression-3d"
+   ]
+  },
+  {
+   "claim": "La Bambu Lab A1 mini est vendue environ 189 euros (179 euros sur la boutique de la marque, 189 euros chez un revendeur comparé).",
+   "valeur": "189 €",
+   "phrase": 31,
+   "sources": [
+    "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+    "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+   ],
+   "check": [
+    "189"
+   ],
+   "verified": [
+    "https://eu.store.bambulab.com/collections/a1-series/products/a1-mini?skr=yes",
+    "https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini"
+   ]
+  },
+  {
+   "claim": "Un mug personnalisé avec photo se vend 18 euros sur un site de cadeaux et jusqu'à 19,95 euros ailleurs.",
+   "valeur": "18 €",
+   "phrase": 34,
+   "sources": [
+    "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+    "https://www.cherchons.com/maison/art-de-la-table/service-pour-le-repas/mug/mug-magique-personnalise.html"
+   ],
+   "check": [
+    "18 €"
+   ],
+   "verified": [
+    "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+   ]
+  },
+  {
+   "claim": "Une presse à mug coûte entre 100 et 350 euros.",
+   "valeur": "100 à 350 €",
+   "phrase": 38,
+   "sources": [
+    "https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html",
+    "https://www.intercyprus.com/fr/products/succebuy-auto-tumbler-heat-press-machine-mug-heat-press-11-30oz-sublimation-tumblers-heat-up-fast-even-tumbler-press-with-tape"
+   ],
+   "check": [
+    "350"
+   ],
+   "verified": [
+    "https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html"
+   ]
+  },
+  {
+   "claim": "Une tasse blanche à sublimation coûte 1,38 euro pièce par lot de 36 (hors TVA).",
+   "valeur": "1,38 €",
+   "phrase": 40,
+   "sources": [
+    "https://www.brildor.com/en/white-sublimation-mug-orca",
+    "https://www.longforte.com/en-ie/products/mugs-36-x-11oz-white-sublimation-mugs-with-silver-handle"
+   ],
+   "check": [
+    "1.38"
+   ],
+   "verified": [
+    "https://www.brildor.com/en/white-sublimation-mug-orca"
+   ]
+  },
+  {
+   "claim": "Un mug personnalisé avec photo se vend 18 euros sur un site de cadeaux et jusqu'à 19,95 euros ailleurs.",
+   "valeur": "18 €",
+   "phrase": 41,
+   "sources": [
+    "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+    "https://www.cherchons.com/maison/art-de-la-table/service-pour-le-repas/mug/mug-magique-personnalise.html"
+   ],
+   "check": [
+    "18 €"
+   ],
+   "verified": [
+    "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+   ]
+  },
+  {
+   "claim": "Calcul : mug vendu 18 euros moins 1,38 euro de tasse = 16,62 euros restants.",
+   "valeur": "16,62 €",
+   "phrase": 42,
+   "sources": [
+    "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+    "https://www.brildor.com/en/white-sublimation-mug-orca"
+   ],
+   "check": [
+    "18 €"
+   ],
+   "verified": [
+    "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+   ]
+  },
+  {
+   "claim": "Calcul : mug vendu 18 euros moins 1,38 euro de tasse = 16,62 euros restants.",
+   "valeur": "16,62 €",
+   "phrase": 44,
+   "sources": [
+    "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+    "https://www.brildor.com/en/white-sublimation-mug-orca"
+   ],
+   "check": [
+    "18 €"
+   ],
+   "verified": [
+    "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+   ]
+  },
+  {
+   "claim": "Une presse à mug coûte entre 100 et 350 euros.",
+   "valeur": "100 à 350 €",
+   "phrase": 45,
+   "sources": [
+    "https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html",
+    "https://www.intercyprus.com/fr/products/succebuy-auto-tumbler-heat-press-machine-mug-heat-press-11-30oz-sublimation-tumblers-heat-up-fast-even-tumbler-press-with-tape"
+   ],
+   "check": [
+    "350"
+   ],
+   "verified": [
+    "https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html"
+   ]
+  },
+  {
+   "claim": "Un mug personnalisé avec photo se vend 18 euros sur un site de cadeaux et jusqu'à 19,95 euros ailleurs.",
+   "valeur": "18 €",
+   "phrase": 46,
+   "sources": [
+    "https://www.paris-friendly.fr/mug-i-love-personnalise.html",
+    "https://www.cherchons.com/maison/art-de-la-table/service-pour-le-repas/mug/mug-magique-personnalise.html"
+   ],
+   "check": [
+    "18 €"
+   ],
+   "verified": [
+    "https://www.paris-friendly.fr/mug-i-love-personnalise.html"
+   ]
+  },
+  {
+   "claim": "Une machine à barbe à papa professionnelle de table se trouve à partir de 187,99 euros.",
+   "valeur": "187,99 €",
+   "phrase": 51,
+   "sources": [
+    "https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa",
+    "https://www.lagrange.fr/en/groceries/214-sucre-pour-barbe-a-papa.html"
+   ],
+   "check": [
+    "187,99"
+   ],
+   "verified": [
+    "https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa"
+   ]
+  },
+  {
+   "claim": "Des prestataires facturent une animation barbe à papa à partir de 450 à 500 euros la journée.",
+   "valeur": "500 €",
+   "phrase": 54,
+   "sources": [
+    "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales",
+    "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx"
+   ],
+   "check": [
+    "490"
+   ],
+   "verified": [
+    "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales"
+   ]
+  },
+  {
+   "claim": "Un prestataire facture le forfait sucre une journée 500 euros.",
+   "valeur": "500 €",
+   "phrase": 55,
+   "sources": [
+    "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx",
+    "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales"
+   ],
+   "check": [
+    "500 €"
+   ],
+   "verified": [
+    "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx"
+   ]
+  },
+  {
+   "claim": "Un prestataire facture le forfait sucre une journée 500 euros.",
+   "valeur": "500 €",
+   "phrase": 56,
+   "sources": [
+    "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx",
+    "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales"
+   ],
+   "check": [
+    "500 €"
+   ],
+   "verified": [
+    "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx"
+   ]
+  },
+  {
+   "claim": "Une machine à barbe à papa professionnelle de table se trouve à partir de 187,99 euros.",
+   "valeur": "187,99 €",
+   "phrase": 57,
+   "sources": [
+    "https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa",
+    "https://www.lagrange.fr/en/groceries/214-sucre-pour-barbe-a-papa.html"
+   ],
+   "check": [
+    "187,99"
+   ],
+   "verified": [
+    "https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa"
+   ]
+  },
+  {
+   "claim": "Un prestataire facture le forfait sucre une journée 500 euros.",
+   "valeur": "500 €",
+   "phrase": 58,
+   "sources": [
+    "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx",
+    "https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales"
+   ],
+   "check": [
+    "500 €"
+   ],
+   "verified": [
+    "https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx"
+   ]
+  },
+  {
+   "claim": "Le nettoyeur haute pression professionnel Kärcher HD 5/15 C+ est affiché 864,95 euros TTC.",
+   "valeur": "864,95 €",
+   "phrase": 64,
+   "sources": [
+    "https://www.bricozor.com/15C+.951.html",
+    "https://conseils.hellopro.fr/combien-coute-un-nettoyeur-haute-pression-1759.html"
+   ],
+   "check": [
+    "864,95"
+   ],
+   "verified": [
+    "https://www.bricozor.com/15C+.951.html"
+   ]
+  },
+  {
+   "claim": "Un nettoyage professionnel de terrasse coûte entre 3 et 15 euros le mètre carré.",
+   "valeur": "3 à 15 €/m²",
+   "phrase": 66,
+   "sources": [
+    "https://www.prosnettoyage.fr/nettoyage-terrasse",
+    "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+   ],
+   "check": [
+    "15 €/m²"
+   ],
+   "verified": [
+    "https://www.prosnettoyage.fr/nettoyage-terrasse",
+    "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+   ]
+  },
+  {
+   "claim": "Dans plusieurs grandes villes (Bordeaux, Lyon, Lille, Toulouse, Nantes), le nettoyage de terrasse revient à 4 à 4,80 euros le mètre carré.",
+   "valeur": "4 €/m²",
+   "phrase": 67,
+   "sources": [
+    "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83",
+    "https://www.prosnettoyage.fr/nettoyage-terrasse"
+   ],
+   "check": [
+    "4,00"
+   ],
+   "verified": [
+    "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83"
+   ]
+  },
+  {
+   "claim": "Dans plusieurs grandes villes (Bordeaux, Lyon, Lille, Toulouse, Nantes), le nettoyage de terrasse revient à 4 à 4,80 euros le mètre carré.",
+   "valeur": "4 €/m²",
+   "phrase": 68,
+   "sources": [
+    "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83",
+    "https://www.prosnettoyage.fr/nettoyage-terrasse"
+   ],
+   "check": [
+    "4,00"
+   ],
+   "verified": [
+    "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83"
+   ]
+  },
+  {
+   "claim": "Un forfait minimum de 150 euros est souvent appliqué aux petites surfaces.",
+   "valeur": "150 €",
+   "phrase": 69,
+   "sources": [
+    "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/",
+    "https://www.prosnettoyage.fr/nettoyage-terrasse"
+   ],
+   "check": [
+    "150 €"
+   ],
+   "verified": [
+    "https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/"
+   ]
+  },
+  {
+   "claim": "Dans plusieurs grandes villes (Bordeaux, Lyon, Lille, Toulouse, Nantes), le nettoyage de terrasse revient à 4 à 4,80 euros le mètre carré.",
+   "valeur": "4 €/m²",
+   "phrase": 70,
+   "sources": [
+    "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83",
+    "https://www.prosnettoyage.fr/nettoyage-terrasse"
+   ],
+   "check": [
+    "4,00"
+   ],
+   "verified": [
+    "https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83"
+   ]
+  },
+  {
+   "claim": "Le nettoyeur haute pression professionnel Kärcher HD 5/15 C+ est affiché 864,95 euros TTC.",
+   "valeur": "864,95 €",
+   "phrase": 71,
+   "sources": [
+    "https://www.bricozor.com/15C+.951.html",
+    "https://conseils.hellopro.fr/combien-coute-un-nettoyeur-haute-pression-1759.html"
+   ],
+   "check": [
+    "864,95"
+   ],
+   "verified": [
+    "https://www.bricozor.com/15C+.951.html"
+   ]
+  },
+  {
+   "claim": "Un distributeur automatique neuf coûte à partir de 3 000 euros.",
+   "valeur": "3 000 €",
+   "phrase": 77,
+   "sources": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+    "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+   ],
+   "check": [
+    "3000"
+   ],
+   "verified": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+    "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+   ]
+  },
+  {
+   "claim": "En occasion, un distributeur coûte entre 1 500 et 8 000 euros.",
+   "valeur": "1 500 à 8 000 €",
+   "phrase": 78,
+   "sources": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+    "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+   ],
+   "check": [
+    "1500"
+   ],
+   "verified": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+    "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+   ]
+  },
+  {
+   "claim": "Un distributeur rapporte en moyenne 500 à 3 000 euros de chiffre d'affaires par mois.",
+   "valeur": "500 à 3 000 €",
+   "phrase": 80,
+   "sources": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+    "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+   ],
+   "check": [
+    "500 à 3000"
+   ],
+   "verified": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+   ]
+  },
+  {
+   "claim": "La marge brute des produits d'un distributeur va de 40 à 70 %.",
+   "valeur": "40 à 70 %",
+   "phrase": 81,
+   "sources": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+    "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+   ],
+   "check": [
+    "40 à 70%"
+   ],
+   "verified": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+   ]
+  },
+  {
+   "claim": "Un distributeur rapporte en moyenne 500 à 3 000 euros de chiffre d'affaires par mois.",
+   "valeur": "500 à 3 000 €",
+   "phrase": 82,
+   "sources": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+    "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+   ],
+   "check": [
+    "500 à 3000"
+   ],
+   "verified": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+   ]
+  },
+  {
+   "claim": "La marge brute des produits d'un distributeur va de 40 à 70 %.",
+   "valeur": "40 à 70 %",
+   "phrase": 83,
+   "sources": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+    "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+   ],
+   "check": [
+    "40 à 70%"
+   ],
+   "verified": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+   ]
+  },
+  {
+   "claim": "La marge brute des produits d'un distributeur va de 40 à 70 %.",
+   "valeur": "40 à 70 %",
+   "phrase": 84,
+   "sources": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+    "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+   ],
+   "check": [
+    "40 à 70%"
+   ],
+   "verified": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+   ]
+  },
+  {
+   "claim": "Un distributeur rapporte en moyenne 500 à 3 000 euros de chiffre d'affaires par mois.",
+   "valeur": "500 à 3 000 €",
+   "phrase": 85,
+   "sources": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+    "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+   ],
+   "check": [
+    "500 à 3000"
+   ],
+   "verified": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+   ]
+  },
+  {
+   "claim": "Le retour sur investissement d'un distributeur se fait en 12 à 36 mois.",
+   "valeur": "12 à 36 mois",
+   "phrase": 86,
+   "sources": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+    "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+   ],
+   "check": [
+    "12 à 36 mois"
+   ],
+   "verified": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+   ]
+  },
+  {
+   "claim": "Il faut au moins 40 passages par jour devant un distributeur.",
+   "valeur": "40 passages",
+   "phrase": 87,
+   "sources": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite",
+    "https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique"
+   ],
+   "check": [
+    "40 passages"
+   ],
+   "verified": [
+    "https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite"
+   ]
+  },
+  {
+   "claim": "Une borne photo et ses accessoires coûtent de 1 500 à 5 000 euros.",
+   "valeur": "1 500 à 5 000 €",
+   "phrase": 93,
+   "sources": [
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/",
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi"
+   ],
+   "check": [
+    "1500"
+   ],
+   "verified": [
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ]
+  },
+  {
+   "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+   "valeur": "350 à 600 €",
+   "phrase": 95,
+   "sources": [
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ],
+   "check": [
+    "350"
+   ],
+   "verified": [
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ]
+  },
+  {
+   "claim": "Une formule week-end en libre installation se loue de 299 à 450 euros.",
+   "valeur": "299 à 450 €",
+   "phrase": 96,
+   "sources": [
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/",
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi"
+   ],
+   "check": [
+    "299"
+   ],
+   "verified": [
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ]
+  },
+  {
+   "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+   "valeur": "350 à 600 €",
+   "phrase": 97,
+   "sources": [
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ],
+   "check": [
+    "350"
+   ],
+   "verified": [
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ]
+  },
+  {
+   "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+   "valeur": "350 à 600 €",
+   "phrase": 98,
+   "sources": [
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ],
+   "check": [
+    "350"
+   ],
+   "verified": [
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ]
+  },
+  {
+   "claim": "La location d'un photobooth pour une demi-journée (4 heures) coûte en moyenne 350 à 600 euros TTC.",
+   "valeur": "350 à 600 €",
+   "phrase": 99,
+   "sources": [
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ],
+   "check": [
+    "350"
+   ],
+   "verified": [
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi",
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ]
+  },
+  {
+   "claim": "Une borne photo et ses accessoires coûtent de 1 500 à 5 000 euros.",
+   "valeur": "1 500 à 5 000 €",
+   "phrase": 100,
+   "sources": [
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/",
+    "https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi"
+   ],
+   "check": [
+    "1500"
+   ],
+   "verified": [
+    "https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/"
+   ]
+  }
+ ],
+ "publication": {
+  "titre": "7 machines à acheter pour gagner de l'argent avant les autres",
+  "description": "7 machines à acheter pour gagner de l'argent avant les autres : prix d'achat réel, prix de vente constaté, ce qu'il reste et gain par jour pour une graveuse laser, une imprimante 3D, une presse à mugs, une machine à barbe à papa, un nettoyeur haute pression, un distributeur automatique et une borne photo.\nPour chaque machine, un calcul chiffré : achat, vente, reste, nombre de ventes pour rembourser, et la première action à faire aujourd'hui. La dernière se loue 350 à 600 € pour une soirée de quatre heures.\n\nDis-moi en commentaire laquelle tu achètes en premier.\n\nPRIX RELEVÉS EN NOVEMBRE 2026 (les offres changent, recoupe sur chaque site)\n\n1. Graveuse laser\n- xTool D1 Pro 20 W : https://dailygeekshow.com/test-avis-et-guide-de-montage-du-graveur-laser-xtool-d1-pro-et-le-kit-ra2-pro/ et https://www.lv3dofficiel.fr/product-page/xtool-d1-pro-20w-machine-de-gravure-et-de-d%C3%A9coupe-laser-%C3%A0-diode-de-plus-grande\n- Planche en chêne gravée : https://www.marques-de-france.fr/produit/planche-a-decouper-en-chene-le-petit-hachoir-gravure-personnalisee/\n- Planche en bambou : https://www.electrodepot.fr/planche-a-decouper-bambou-42x30-cm.html\n\n2. Imprimante 3D\n- Bambu Lab A1 mini : https://eu.store.bambulab.com/collections/a1-series/products/a1-mini et https://www.billiger.de/baseproducts/116933-bambu-lab-a1-mini\n- Prix du filament et devis type : https://lv3dofficiel.fr/post/calculateur-prix-impression-3d et https://lv3dofficiel.fr/post/exemple-devis-impression-3d\n- Méthode de calcul du coût : https://blog.prusa3d.com/fr/comment-calculer-les-couts-dimpression_38650/\n\n3. Presse à mugs (sublimation)\n- Prix des presses : https://conseils.hellopro.fr/guide-des-prix-des-presses-a-mug-et-presses-a-assiette-2789.html\n- Tasses blanches : https://www.brildor.com/en/white-sublimation-mug-orca\n- Mug personnalisé vendu : https://www.paris-friendly.fr/mug-i-love-personnalise.html et https://www.cherchons.com/maison/art-de-la-table/service-pour-le-repas/mug/mug-magique-personnalise.html\n\n4. Machine à barbe à papa\n- Machines professionnelles : https://www.ggmgastro.com/fr-fr-eur/cafe-glace-und-gaufres/glaces-patisserie-und-plus/pop-corn-et-barbe-a-papa/machine-barbe-a-papa\n- Prix d'une animation à la journée : https://www.1001salles.com/pro/animation-spectacle/64772-la-pause-barbe-a-papa.aspx et https://www.evenementielpourtous.com/spectacles-enfants-et-animations-de-noel/location-machine-barbe-a-papa/occitanie/pyrenees-orientales\n\n5. Nettoyeur haute pression\n- Kärcher HD 5/15 C+ : https://www.bricozor.com/15C+.951.html et https://conseils.hellopro.fr/combien-coute-un-nettoyeur-haute-pression-1759.html\n- Prix du nettoyage de terrasse : https://www.prosnettoyage.fr/nettoyage-terrasse, https://blog.trustup.be/fr/comment-entretenir-sa-terrasse/ et https://yoojo.fr/jardinage/guides/prix-nettoyage-terrasse-83\n\n6. Distributeur automatique\n- Prix, ventes et marges : https://comdewouf.fr/investir-distributeur-automatique-prix-rentabilite et https://www.companeo.com/distribution-automatique-o-c-s/guide/rentabilite-d-un-distributeur-automatique\n\n7. Borne photo (photobooth)\n- Tarifs de location : https://www.plateya.fr/blog/detail/photobooth-combien-coute-la-location-pour-un-evenement-reussi\n- Prix d'achat et formule week-end : https://creation.superindep.fr/guides-pratiques/metiers/loueur-photobooth-auto-entreprise/\n\n#business #argent #machines\n\nImages : Kalender Laser Machine (CC BY-SA 4.0, Wikimedia Commons) ; vidéo BoardGamesN3Dprint (CC0, Wikimedia Commons) ; Personal Creations (CC BY 2.0, Wikimedia Commons) ; No machine-readable author provided. MatthiasKabel assumed ( (CC BY-SA 3.0, Wikimedia Commons) ; Eugenio Hansen, OFS (CC BY-SA 3.0, Wikimedia Commons) ; Vyacheslav Argenberg (CC BY 4.0, Wikimedia Commons) ; USFWS Mountain Prairie (Public domain, Wikimedia Commons)",
+  "tags": [
+   "machines à acheter",
+   "business",
+   "gagner de l'argent",
+   "graveuse laser",
+   "imprimante 3D",
+   "sublimation mug",
+   "barbe à papa",
+   "nettoyeur haute pression",
+   "distributeur automatique",
+   "photobooth",
+   "idées de business"
+  ],
+  "question_commentaires": "Laquelle de ces machines tu achèterais en premier, et pourquoi ?",
+  "langue": "fr",
+  "contenu_ia": true
+ },
+ "mots_source": 1662,
+ "libelles": {
+  "chapitres": "Chapters",
+  "mots_cles": "Keywords",
+  "mention_ia": "Synthetic voice (AI).",
+  "video_complete": "Full video",
+  "question_defaut": "What did you think before watching this video? Tell me in the comments."
+ }
+}
