@@ -183,6 +183,8 @@ class MoteurZernio(unittest.TestCase):
         self.assertEqual(corps["mediaItems"][0]["url"], "https://media.example/v.mp4")
         self.assertEqual(corps["platforms"], [{"platform": "tiktok", "accountId": "acc1"}])
         self.assertEqual(corps["tiktokSettings"]["privacy_level"], "PUBLIC_TO_EVERYONE")
+        for k in ("allow_comment", "allow_duet", "allow_stitch"):
+            self.assertIs(corps["tiktokSettings"][k], True)  # jamais de commentaires désactivés
         self.assertNotIn("Authorization", f.appels[1][2])  # le dépôt va au stockage, sans la clé
 
     def test_sans_consentement_rien_ne_part(self):

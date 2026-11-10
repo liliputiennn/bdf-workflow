@@ -168,7 +168,7 @@ class Zernio:
             raise C.ErreurApi("depot", f"dépôt refusé ({code})", code)
         corps = {"content": legende, "mediaItems": [{"url": d["publicUrl"], "type": "video"}],
                  "platforms": [{"platform": "tiktok", "accountId": self.compte}],
-                 "tiktokSettings": {"privacy_level": reg["visibilite"], "allow_comment": False, "allow_duet": False, "allow_stitch": False,
+                 "tiktokSettings": {"privacy_level": reg["visibilite"], "allow_comment": True, "allow_duet": True, "allow_stitch": True,  # commentaires et interactions toujours ouverts
                                     "content_preview_confirmed": True, "express_consent_given": True}}
         if quand:
             corps.update({"scheduledFor": quand, "timezone": "Europe/Paris"})
