@@ -1,0 +1,118 @@
+{
+ "id": "youtube-paliers-500-puis-1000-abonnes",
+ "titre": "Être payé sur YouTube : 500, puis 1 000 abonnés",
+ "theme": "pelouse",
+ "theme_accent": "pelouse-nuit",
+ "chaine": "La Débrouille",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "YOUTUBE : LES PALIERS",
+  "gros": "500",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "À cinq cents abonnés, YouTube t'ouvre le financement par les fans.",
+  "Il faut aussi trois vidéos publiées sur les quatre-vingt-dix derniers jours.",
+  "Puis trois mille heures de visionnage sur trois cent soixante-cinq jours.",
+  "Ou bien trois millions de visionnages sur les quatre-vingt-dix derniers jours.",
+  "Le palier suivant, c'est la pub sur tes vidéos.",
+  "Il demande mille abonnés.",
+  "Et quatre mille heures de visionnage sur trois cent soixante-cinq jours.",
+  "Ou dix millions de vues sur quatre-vingt-dix jours.",
+  "Ça fait environ cent onze mille vues par jour.",
+  "Tu choisis la route qui colle à ta chaîne.",
+  "Tu vises quel palier en premier ?"
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "cinq",
+     "cents"
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 2,
+   "params": {
+    "titre": "PREMIER PALIER",
+    "items": [
+     {
+      "texte": "500 abonnés"
+     },
+     {
+      "texte": "3 vidéos en 90 jours"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 4,
+   "params": {
+    "valeur": 3,
+    "suffixe": " millions",
+    "etiquette": "de visionnages",
+    "sous": "en 90 jours"
+   }
+  },
+  {
+   "type": "barres",
+   "phrase": 6,
+   "params": {
+    "titre": "ABONNÉS REQUIS",
+    "barres": [
+     {
+      "label": "Fans",
+      "valeur": 500
+     },
+     {
+      "label": "Pub",
+      "valeur": 1000,
+      "accent": true
+     }
+    ]
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 8,
+   "params": {
+    "titre": "PALIER PUB",
+    "items": [
+     {
+      "texte": "1 000 abonnés"
+     },
+     {
+      "texte": "4 000 h ou 10 M de vues"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 9,
+   "params": {
+    "valeur": 111,
+    "suffixe": " mille",
+    "etiquette": "vues par jour",
+    "sous": "10 millions ÷ 90 jours"
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 11,
+   "params": {
+    "question": "Quel palier en premier ?",
+    "pistes": [
+     "500",
+     "1 000",
+     "Shorts"
+    ]
+   }
+  }
+ ]
+}

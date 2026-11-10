@@ -1,0 +1,35 @@
+[
+ {
+  "claim": "Il faut environ 1000 abonnés pour que le bouton LIVE apparaisse sur TikTok.",
+  "valeur": "1 000 abonnés",
+  "phrase": 1,
+  "sources": [
+   "https://www.blogdumoderateur.com/comment-faire-live-tiktok-criteres-etapes/",
+   "https://metricool.com/fr/comment-faire-lives-tiktok/"
+  ],
+  "check": [
+   "abonnés",
+   "1000"
+  ],
+  "verified": [
+   "https://www.blogdumoderateur.com/comment-faire-live-tiktok-criteres-etapes/",
+   "https://metricool.com/fr/comment-faire-lives-tiktok/"
+  ]
+ },
+ {
+  "claim": "Il faut avoir au moins 18 ans pour faire un live sur TikTok.",
+  "valeur": "18 ans",
+  "phrase": 4,
+  "sources": [
+   "https://www.blogdumoderateur.com/comment-faire-live-tiktok-criteres-etapes/",
+   "https://metricool.com/fr/comment-faire-lives-tiktok/"
+  ],
+  "check": [
+   "18 ans"
+  ],
+  "verified": [
+   "https://www.blogdumoderateur.com/comment-faire-live-tiktok-criteres-etapes/",
+   "https://metricool.com/fr/comment-faire-lives-tiktok/"
+  ]
+ }
+]

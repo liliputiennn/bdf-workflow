@@ -1,0 +1,85 @@
+{
+ "id": "tiktok-live-comment-ca-paie-1000-abonnes",
+ "titre": "Live TikTok : 1 000 abonnés, puis les diamants",
+ "theme": "pelouse",
+ "theme_accent": "pelouse-nuit",
+ "chaine": "La Débrouille",
+ "miniature": {
+  "style": "createur",
+  "texte_haut": "LIVE TIKTOK, 1000 ABONNÉS",
+  "gros": "1 000",
+  "icone": "pieces"
+ },
+ "phrases": [
+  "Pour faire un live sur TikTok, il te faut mille abonnés.",
+  "Sous ce seuil, le bouton n'apparaît même pas.",
+  "TikTok ouvre parfois l'accès un peu avant.",
+  "Ensuite, il faut avoir dix-huit ans au moins.",
+  "Pendant le live, tes spectateurs achètent des pièces.",
+  "Avec elles, ils t'envoient des cadeaux virtuels.",
+  "Ces cadeaux t'arrivent sous forme de diamants.",
+  "Les diamants s'échangent ensuite contre de l'argent réel.",
+  "Tu peux fixer un objectif de cadeaux avant de commencer.",
+  "Et tu peux couper les cadeaux quand tu veux.",
+  "Alors, c'est quand ton premier live ?"
+ ],
+ "scenes": [
+  {
+   "type": "titre-geant",
+   "phrase": 1,
+   "params": {
+    "accents": [
+     "mille",
+     "abonnés"
+    ]
+   }
+  },
+  {
+   "type": "chiffre",
+   "phrase": 4,
+   "params": {
+    "valeur": 18,
+    "suffixe": " ans",
+    "etiquette": "minimum pour faire un live"
+   }
+  },
+  {
+   "type": "liste",
+   "phrase": 5,
+   "params": {
+    "titre": "LE CIRCUIT",
+    "items": [
+     {
+      "texte": "Pièces → cadeaux"
+     },
+     {
+      "texte": "Cadeaux → diamants"
+     },
+     {
+      "texte": "Diamants → argent"
+     }
+    ]
+   }
+  },
+  {
+   "type": "objet",
+   "phrase": 8,
+   "params": {
+    "icone": "pieces",
+    "titre": "Diamants échangés en argent réel"
+   }
+  },
+  {
+   "type": "question",
+   "phrase": 11,
+   "params": {
+    "question": "Premier live : quand ?",
+    "pistes": [
+     "Ce soir",
+     "Demain",
+     "Ce week-end"
+    ]
+   }
+  }
+ ]
+}
