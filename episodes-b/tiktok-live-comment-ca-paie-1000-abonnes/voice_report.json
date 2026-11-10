@@ -1,13 +1,6 @@
 {
  "seuil": 0.9,
- "a_relire": [
-  {
-   "phrase": 6,
-   "texte": "Avec elles, ils t'envoient des cadeaux virtuels.",
-   "score": 0.71,
-   "entendu": "Avec elle, il t'envoie des cadeaux virtuels."
-  }
- ],
- "duree_s": 23.8,
- "calcul_s": 332
+ "a_relire": [],
+ "duree_s": 24.9,
+ "calcul_s": 217
 }

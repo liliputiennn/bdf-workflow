@@ -1,9 +1,9 @@
 {
- "total": 23.779,
+ "total": 24.924,
  "lines": [
   {
    "start": 0.136,
-   "end": 2.419,
+   "end": 2.385,
    "words": [
     {
      "w": "Pour",
@@ -13,502 +13,517 @@
     {
      "w": "faire",
      "start": 0.258,
-     "end": 0.397
+     "end": 0.398
     },
     {
      "w": "un",
-     "start": 0.397,
-     "end": 0.537
+     "start": 0.398,
+     "end": 0.52
     },
     {
      "w": "live",
-     "start": 0.537,
-     "end": 0.694
+     "start": 0.52,
+     "end": 0.695
     },
     {
      "w": "sur",
-     "start": 0.694,
-     "end": 0.868
+     "start": 0.695,
+     "end": 0.834
     },
     {
      "w": "TikTok,",
-     "start": 0.868,
-     "end": 1.165
+     "start": 0.834,
+     "end": 1.113
     },
     {
      "w": "il",
-     "start": 1.425,
-     "end": 1.469
+     "start": 1.339,
+     "end": 1.383
     },
     {
      "w": "te",
-     "start": 1.443,
-     "end": 1.547
+     "start": 1.374,
+     "end": 1.478
     },
     {
      "w": "faut",
-     "start": 1.547,
-     "end": 1.739
+     "start": 1.478,
+     "end": 1.635
     },
     {
      "w": "mille",
-     "start": 1.739,
-     "end": 2.07
+     "start": 1.635,
+     "end": 2.036
     },
     {
      "w": "abonnés.",
-     "start": 2.07,
-     "end": 2.349
+     "start": 2.036,
+     "end": 2.333
     }
    ]
   },
   {
-   "start": 2.546,
-   "end": 4.684,
+   "start": 2.512,
+   "end": 4.606,
    "words": [
     {
      "w": "Sous",
-     "start": 2.546,
-     "end": 2.802
+     "start": 2.512,
+     "end": 2.75
     },
     {
      "w": "ce",
-     "start": 2.802,
-     "end": 2.948
+     "start": 2.75,
+     "end": 2.896
     },
     {
      "w": "seuil,",
-     "start": 2.948,
-     "end": 3.314
+     "start": 2.896,
+     "end": 3.262
     },
     {
      "w": "le",
-     "start": 3.533,
-     "end": 3.643
+     "start": 3.39,
+     "end": 3.463
     },
     {
      "w": "bouton",
-     "start": 3.643,
-     "end": 3.916
+     "start": 3.463,
+     "end": 3.737
     },
     {
      "w": "n'apparaît",
-     "start": 3.916,
-     "end": 4.3
+     "start": 3.737,
+     "end": 4.104
     },
     {
      "w": "même",
-     "start": 4.3,
-     "end": 4.374
+     "start": 4.104,
+     "end": 4.25
     },
     {
      "w": "pas.",
-     "start": 4.374,
-     "end": 4.611
+     "start": 4.25,
+     "end": 4.469
     }
    ]
   },
   {
-   "start": 4.811,
-   "end": 6.724,
+   "start": 4.734,
+   "end": 6.64,
    "words": [
     {
      "w": "TikTok",
-     "start": 4.811,
-     "end": 5.144
+     "start": 4.734,
+     "end": 5.029
     },
     {
      "w": "ouvre",
-     "start": 5.144,
-     "end": 5.61
+     "start": 5.029,
+     "end": 5.441
     },
     {
      "w": "parfois",
-     "start": 5.61,
-     "end": 5.825
+     "start": 5.441,
+     "end": 5.674
     },
     {
      "w": "l'accès",
-     "start": 5.825,
-     "end": 6.185
+     "start": 5.674,
+     "end": 6.085
     },
     {
      "w": "un",
-     "start": 6.185,
-     "end": 6.311
+     "start": 6.085,
+     "end": 6.265
     },
     {
      "w": "peu",
-     "start": 6.311,
-     "end": 6.418
+     "start": 6.265,
+     "end": 6.372
     },
     {
      "w": "avant.",
-     "start": 6.418,
-     "end": 6.562
+     "start": 6.372,
+     "end": 6.551
     }
    ]
   },
   {
-   "start": 6.851,
-   "end": 8.58,
+   "start": 6.767,
+   "end": 8.626,
    "words": [
     {
      "w": "Ensuite,",
-     "start": 6.851,
-     "end": 7.157
+     "start": 6.767,
+     "end": 7.093
     },
     {
      "w": "il",
-     "start": 7.337,
-     "end": 7.391
+     "start": 7.273,
+     "end": 7.345
     },
     {
      "w": "faut",
-     "start": 7.391,
-     "end": 7.517
+     "start": 7.345,
+     "end": 7.471
     },
     {
      "w": "avoir",
-     "start": 7.517,
-     "end": 7.679
+     "start": 7.471,
+     "end": 7.705
     },
     {
      "w": "dix-huit",
-     "start": 7.679,
-     "end": 8.04
+     "start": 7.705,
+     "end": 8.139
     },
     {
      "w": "ans",
-     "start": 8.04,
-     "end": 8.165
+     "start": 8.139,
+     "end": 8.265
     },
     {
      "w": "au",
-     "start": 8.165,
-     "end": 8.292
+     "start": 8.265,
+     "end": 8.392
     },
     {
      "w": "moins.",
-     "start": 8.292,
-     "end": 8.418
+     "start": 8.392,
+     "end": 8.536
     }
    ]
   },
   {
-   "start": 8.707,
-   "end": 10.968,
+   "start": 8.754,
+   "end": 11.075,
    "words": [
     {
      "w": "Pendant",
-     "start": 8.707,
-     "end": 9.004
+     "start": 8.754,
+     "end": 9.049
     },
     {
      "w": "le",
-     "start": 9.004,
-     "end": 9.096
+     "start": 9.049,
+     "end": 9.142
     },
     {
      "w": "live,",
-     "start": 9.096,
-     "end": 9.319
+     "start": 9.142,
+     "end": 9.345
     },
     {
      "w": "tes",
-     "start": 9.356,
-     "end": 9.596
+     "start": 9.345,
+     "end": 9.678
     },
     {
      "w": "spectateurs",
-     "start": 9.596,
-     "end": 10.135
+     "start": 9.678,
+     "end": 10.141
     },
     {
      "w": "achètent",
-     "start": 10.135,
-     "end": 10.449
+     "start": 10.141,
+     "end": 10.493
     },
     {
      "w": "des",
-     "start": 10.449,
-     "end": 10.505
+     "start": 10.493,
+     "end": 10.566
     },
     {
      "w": "pièces.",
-     "start": 10.505,
-     "end": 10.838
+     "start": 10.566,
+     "end": 10.918
     }
    ]
   },
   {
-   "start": 11.095,
-   "end": 13.184,
+   "start": 11.203,
+   "end": 14.331,
    "words": [
     {
-     "w": "Avec",
-     "start": 11.095,
-     "end": 11.282
+     "w": "Grâce",
+     "start": 11.203,
+     "end": 11.487
     },
     {
-     "w": "elles,",
-     "start": 11.282,
-     "end": 11.625
+     "w": "à",
+     "start": 11.487,
+     "end": 11.58
     },
     {
-     "w": "ils",
-     "start": 11.625,
-     "end": 11.969
+     "w": "ces",
+     "start": 11.58,
+     "end": 11.635
+    },
+    {
+     "w": "pièces,",
+     "start": 11.635,
+     "end": 12.04
+    },
+    {
+     "w": "tes",
+     "start": 12.15,
+     "end": 12.353
+    },
+    {
+     "w": "spectateurs",
+     "start": 12.353,
+     "end": 12.868
     },
     {
      "w": "t'envoient",
-     "start": 11.969,
-     "end": 12.313
+     "start": 12.868,
+     "end": 13.291
     },
     {
      "w": "des",
-     "start": 12.313,
-     "end": 12.384
+     "start": 13.291,
+     "end": 13.384
     },
     {
      "w": "cadeaux",
-     "start": 12.384,
-     "end": 12.633
+     "start": 13.384,
+     "end": 13.659
     },
     {
      "w": "virtuels.",
-     "start": 12.633,
-     "end": 13.042
+     "start": 13.659,
+     "end": 14.175
     }
    ]
   },
   {
-   "start": 13.311,
-   "end": 14.895,
+   "start": 14.458,
+   "end": 16.034,
    "words": [
     {
      "w": "Ces",
-     "start": 13.311,
-     "end": 13.494
+     "start": 14.458,
+     "end": 14.65
     },
     {
      "w": "cadeaux",
-     "start": 13.494,
-     "end": 13.766
+     "start": 14.65,
+     "end": 14.959
     },
     {
      "w": "t'arrivent",
-     "start": 13.766,
-     "end": 14.075
+     "start": 14.959,
+     "end": 15.233
     },
     {
      "w": "sous",
-     "start": 14.075,
-     "end": 14.185
+     "start": 15.233,
+     "end": 15.342
     },
     {
      "w": "forme",
-     "start": 14.185,
-     "end": 14.367
+     "start": 15.342,
+     "end": 15.505
     },
     {
      "w": "de",
-     "start": 14.367,
-     "end": 14.495
+     "start": 15.505,
+     "end": 15.651
     },
     {
      "w": "diamants.",
-     "start": 14.495,
-     "end": 14.822
+     "start": 15.651,
+     "end": 16.015
     }
    ]
   },
   {
-   "start": 15.022,
-   "end": 17.385,
+   "start": 16.161,
+   "end": 18.697,
    "words": [
     {
      "w": "Les",
-     "start": 15.022,
-     "end": 15.176
+     "start": 16.161,
+     "end": 16.315
     },
     {
      "w": "diamants",
-     "start": 15.176,
-     "end": 15.504
+     "start": 16.315,
+     "end": 16.715
     },
     {
      "w": "s'échangent",
-     "start": 15.504,
-     "end": 15.904
+     "start": 16.715,
+     "end": 17.152
     },
     {
      "w": "ensuite",
-     "start": 15.904,
-     "end": 16.158
+     "start": 17.152,
+     "end": 17.37
     },
     {
      "w": "contre",
-     "start": 16.158,
-     "end": 16.431
+     "start": 17.37,
+     "end": 17.697
     },
     {
      "w": "de",
-     "start": 16.431,
-     "end": 16.613
+     "start": 17.697,
+     "end": 17.879
     },
     {
      "w": "l'argent",
-     "start": 16.613,
-     "end": 16.849
+     "start": 17.879,
+     "end": 18.134
     },
     {
      "w": "réel.",
-     "start": 16.849,
-     "end": 17.249
+     "start": 18.134,
+     "end": 18.534
     }
    ]
   },
   {
-   "start": 17.513,
-   "end": 20.009,
+   "start": 18.825,
+   "end": 21.092,
    "words": [
     {
      "w": "Tu",
-     "start": 17.513,
-     "end": 17.651
+     "start": 18.825,
+     "end": 18.972
     },
     {
      "w": "peux",
-     "start": 17.651,
-     "end": 17.799
+     "start": 18.972,
+     "end": 19.156
     },
     {
      "w": "fixer",
-     "start": 17.799,
-     "end": 18.13
+     "start": 19.156,
+     "end": 19.506
     },
     {
      "w": "un",
-     "start": 18.13,
-     "end": 18.185
+     "start": 19.506,
+     "end": 19.58
     },
     {
      "w": "objectif",
-     "start": 18.185,
-     "end": 18.591
+     "start": 19.58,
+     "end": 19.949
     },
     {
      "w": "de",
-     "start": 18.591,
-     "end": 18.665
+     "start": 19.949,
+     "end": 20.023
     },
     {
      "w": "cadeaux",
-     "start": 18.665,
-     "end": 19.033
+     "start": 20.023,
+     "end": 20.355
     },
     {
      "w": "avant",
-     "start": 19.033,
-     "end": 19.346
+     "start": 20.355,
+     "end": 20.484
     },
     {
      "w": "de",
-     "start": 19.346,
-     "end": 19.53
+     "start": 20.484,
+     "end": 20.613
     },
     {
      "w": "commencer.",
-     "start": 19.53,
-     "end": 19.862
+     "start": 20.613,
+     "end": 20.945
     }
    ]
   },
   {
-   "start": 20.136,
-   "end": 21.788,
+   "start": 21.219,
+   "end": 22.979,
    "words": [
     {
      "w": "Et",
-     "start": 20.136,
-     "end": 20.275
+     "start": 21.219,
+     "end": 21.357
     },
     {
      "w": "tu",
-     "start": 20.275,
-     "end": 20.385
+     "start": 21.357,
+     "end": 21.468
     },
     {
      "w": "peux",
-     "start": 20.385,
-     "end": 20.534
+     "start": 21.468,
+     "end": 21.579
     },
     {
      "w": "couper",
-     "start": 20.534,
-     "end": 20.81
+     "start": 21.579,
+     "end": 22.039
     },
     {
      "w": "les",
-     "start": 20.81,
-     "end": 20.921
+     "start": 22.039,
+     "end": 22.168
     },
     {
      "w": "cadeaux",
-     "start": 20.921,
-     "end": 21.235
+     "start": 22.168,
+     "end": 22.481
     },
     {
      "w": "quand",
-     "start": 21.235,
-     "end": 21.364
+     "start": 22.481,
+     "end": 22.574
     },
     {
      "w": "tu",
-     "start": 21.364,
-     "end": 21.53
+     "start": 22.574,
+     "end": 22.721
     },
     {
      "w": "veux.",
-     "start": 21.53,
-     "end": 21.695
+     "start": 22.721,
+     "end": 22.886
     }
    ]
   },
   {
-   "start": 21.915,
-   "end": 23.542,
+   "start": 23.106,
+   "end": 24.687,
    "words": [
     {
      "w": "Alors,",
-     "start": 21.915,
-     "end": 22.119
+     "start": 23.106,
+     "end": 23.355
     },
     {
      "w": "c'est",
-     "start": 22.341,
-     "end": 22.599
+     "start": 23.615,
+     "end": 23.836
     },
     {
      "w": "quand",
-     "start": 22.599,
-     "end": 22.692
+     "start": 23.836,
+     "end": 23.929
     },
     {
      "w": "ton",
-     "start": 22.692,
-     "end": 22.821
+     "start": 23.929,
+     "end": 24.077
     },
     {
      "w": "premier",
-     "start": 22.821,
-     "end": 23.08
+     "start": 24.077,
+     "end": 24.299
     },
     {
      "w": "live",
-     "start": 23.08,
-     "end": 23.284
+     "start": 24.299,
+     "end": 24.484
     }
    ]
   }
