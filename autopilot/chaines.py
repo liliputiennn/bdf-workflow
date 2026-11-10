@@ -148,6 +148,7 @@ def valider_profil(p: dict, tous_ids: set | None = None) -> list[str]:
                                    and valeur.get("service", "upload-post") in ("upload-post", "zernio")
                                    and isinstance(valeur.get("consentement", False), bool),
                   "hashtags": isinstance(valeur, list) and all(isinstance(h, str) for h in valeur),
+                  "creneaux": isinstance(valeur, list) and bool(valeur) and all(isinstance(h, str) and re.fullmatch(r"([01]\d|2[0-3]):[0-5]\d", h) for h in valeur),
                   "jeton_fichier": isinstance(valeur, str) and bool(FICHIER_JETON_VALIDE.match(valeur)) and valeur not in ("client_secret.json", "tiktok_client.json"),
                   }.get(cle)
             if ok is None:
