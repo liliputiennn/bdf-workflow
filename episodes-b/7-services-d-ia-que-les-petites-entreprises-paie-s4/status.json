@@ -1,13 +1,14 @@
 {
- "etat": "pret",
- "maj": "2026-11-04T22:05:54",
+ "etat": "programme",
+ "maj": "2026-11-10T13:44:11",
  "raison": null,
  "tentatives": 0,
  "youtube": {
-  "video_id": null,
-  "url": null,
-  "visibilite": null,
-  "publie_a": null
+  "video_id": "abipzUC3-fE",
+  "url": "https://youtu.be/abipzUC3-fE",
+  "visibilite": "programme",
+  "publie_a": "2026-11-14T06:45:00Z",
+  "miniature": true
  },
  "origine": "7-services-d-ia-que-les-petites-entreprises-paie",
  "miniature": {

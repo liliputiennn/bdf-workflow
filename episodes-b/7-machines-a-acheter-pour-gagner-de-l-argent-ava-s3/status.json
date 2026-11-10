@@ -1,13 +1,14 @@
 {
- "etat": "pret",
- "maj": "2026-11-04T22:04:45",
+ "etat": "programme",
+ "maj": "2026-11-10T13:43:40",
  "raison": null,
  "tentatives": 0,
  "youtube": {
-  "video_id": null,
-  "url": null,
-  "visibilite": null,
-  "publie_a": null
+  "video_id": "s8EcW1Teq2A",
+  "url": "https://youtu.be/s8EcW1Teq2A",
+  "visibilite": "programme",
+  "publie_a": "2026-11-13T17:30:00Z",
+  "miniature": true
  },
  "origine": "7-machines-a-acheter-pour-gagner-de-l-argent-ava",
  "miniature": {

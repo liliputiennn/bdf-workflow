@@ -1,13 +1,14 @@
 {
- "etat": "pret",
- "maj": "2026-11-05T14:25:23",
+ "etat": "programme",
+ "maj": "2026-11-10T13:44:50",
  "raison": null,
  "tentatives": 0,
  "youtube": {
-  "video_id": null,
-  "url": null,
-  "visibilite": null,
-  "publie_a": null
+  "video_id": "Xuak7OpItao",
+  "url": "https://youtu.be/Xuak7OpItao",
+  "visibilite": "programme",
+  "publie_a": "2026-11-14T17:30:00Z",
+  "miniature": true
  },
  "origine": "10-obligations-de-la-loi-qui-creent-des-business",
  "miniature": {

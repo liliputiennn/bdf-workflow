@@ -1,13 +1,14 @@
 {
- "etat": "pret",
- "maj": "2026-11-05T12:28:20",
+ "etat": "programme",
+ "maj": "2026-11-10T13:43:11",
  "raison": null,
  "tentatives": 0,
  "youtube": {
-  "video_id": null,
-  "url": null,
-  "visibilite": null,
-  "publie_a": null
+  "video_id": "WC12DxWQiKc",
+  "url": "https://youtu.be/WC12DxWQiKc",
+  "visibilite": "programme",
+  "publie_a": "2026-11-13T11:00:00Z",
+  "miniature": true
  },
  "origine": "10-business-bizarres-qui-existent-vraiment",
  "miniature": {
