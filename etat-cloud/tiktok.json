@@ -139,6 +139,26 @@
    "envoye_ts": 1794234833.2880707,
    "statut": "PROCESSING_UPLOAD",
    "legende": "Écrire les fiches produit d'une boutique : 460 € de reste\n\n#ServicesIa #BusinessIa #MicroAgenceIa #GagnerDeLArgentAvecLIa #business"
+  },
+  "10-business-a-lancer-avec-moins-de-500-s2": {
+   "statut": "programme_zernio",
+   "chaine": "fr",
+   "note": "géré à la main le 2026-11-10 (programme retiré de YouTube) : ne pas renvoyer"
+  },
+  "10-business-a-lancer-avec-moins-de-500-s3": {
+   "statut": "programme_zernio",
+   "chaine": "fr",
+   "note": "géré à la main le 2026-11-10 (programme retiré de YouTube) : ne pas renvoyer"
+  },
+  "10-business-a-lancer-avec-moins-de-500-s4": {
+   "statut": "publie_test",
+   "chaine": "fr",
+   "note": "géré à la main le 2026-11-10 (programme retiré de YouTube) : ne pas renvoyer"
+  },
+  "10-business-a-lancer-avec-moins-de-500-s10": {
+   "statut": "exclu",
+   "chaine": "fr",
+   "note": "géré à la main le 2026-11-10 (programme retiré de YouTube) : ne pas renvoyer"
   }
  },
  "maj": "2026-11-09T14:33:53"
