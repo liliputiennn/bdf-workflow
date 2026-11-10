@@ -227,7 +227,7 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--paquet", action="store_true", help="prépare seulement les paquets à déposer à la main")
-    ap.add_argument("--max", type=int, default=MAX_PAR_24H)
+    ap.add_argument("--max", type=int, default=None, help="plafond par passage (défaut : seulement la limite de 24 h de la chaîne)")
     ap.add_argument("--id")
     a = ap.parse_args(argv)
     etat = lire_etat()
@@ -244,7 +244,7 @@ def main(argv=None) -> int:
         sortie["reseau"] = "; ".join(f"{ch} : {m}" for ch, m in pannes.items())
     if clients:
         try:
-            sortie.update(envoyer_file(clients, a.max, a.id, a.dry_run))
+            sortie.update(envoyer_file(clients, a.max if a.max is not None else 1000, a.id, a.dry_run))
         except C.ErreurAuth as e:
             sortie["auth"] = str(e)
             a_reconnecter = sorted(set(a_reconnecter) | set(clients))

@@ -35,7 +35,7 @@
     "actif": true,
     "moteur": "planificateur",
     "visibilite": "PUBLIC_TO_EVERYONE",
-    "max_par_24h": 3,
+    "max_par_24h": 15,
     "planificateur": {
       "service": "zernio",
       "compte": "6af25a629937ca6558b1878a",

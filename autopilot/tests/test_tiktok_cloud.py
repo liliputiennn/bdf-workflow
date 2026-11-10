@@ -8,6 +8,7 @@ import etat_cloud  # noqa: E402
 
 WF = AP / "cloud" / "github" / "workflows" / "publication.yml"
 EXCLUS = ("s2", "s3", "s4", "s10")
+NB = len(json.loads(etat_cloud.EXCLUS.read_text(encoding="utf-8"))["envoyes"])  # toutes les exclusions du fichier
 
 
 class TikTokCloud(unittest.TestCase):
@@ -26,15 +27,15 @@ class TikTokCloud(unittest.TestCase):
             t = Path(t)
             (t / "tiktok.json").write_text(json.dumps({"envoyes": {"x": {"statut": "ok"}}}), encoding="utf-8")
             n = etat_cloud.fusionner_exclus_tiktok(t)
-            self.assertEqual(n, 4)
+            self.assertEqual(n, NB)
             env = json.loads((t / "tiktok.json").read_text(encoding="utf-8"))["envoyes"]
             self.assertIn("x", env)
-            self.assertEqual(len(env), 5)
+            self.assertEqual(len(env), NB + 1)
             self.assertEqual(etat_cloud.fusionner_exclus_tiktok(t), 0)
 
     def test_fusion_sans_etat_cree_le_fichier(self):
         with tempfile.TemporaryDirectory() as t:
-            self.assertEqual(etat_cloud.fusionner_exclus_tiktok(Path(t) / "neuf"), 4)
+            self.assertEqual(etat_cloud.fusionner_exclus_tiktok(Path(t) / "neuf"), NB)
 
 
 if __name__ == "__main__":
