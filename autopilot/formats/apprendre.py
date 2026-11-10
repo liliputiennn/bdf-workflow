@@ -15,7 +15,7 @@ from PIL import ImageDraw
 
 from autopilot import langues
 
-from . import commun, rendu, rendu_remotion
+from . import commun, rendu
 
 CONTROLES_STANDARD = False
 LUFS = -14.0
@@ -305,21 +305,9 @@ def rendre(ep: dict, ep_dir: Path, out_dir: Path, profil: dict, qa: dict, fps: i
     fond = rendu.degrade(w, h, STYLE["haut"], STYLE["bas"])
     nom = str(profil.get("nom", "")).replace(" (nom à choisir)", "")
     muet = out_dir / "rendu.mp4"
-    moteur = "pillow"
-    if rendu_remotion.disponible():
-        try:  # rendu « créateur » (Remotion) ; le long passe en 720p / 24 i/s pour tenir dans le temps de GitHub Actions
-            wr, hr, fr = (w, h, fps) if v == "short" else (1280, 720, 24)
-            props = rendu_remotion.props_langue(ep, timings, script["plan"], chrono, wr, hr, fr, total, nom, CIBLES.get(langue_cible(ep, profil), ""))
-            rendu_remotion.rendre_video("Fmt-Langue", props, muet)
-            moteur = "remotion"
-        except Exception as ex:  # noqa: BLE001 - on retombe sur le rendu léger plutôt que de perdre l'épisode
-            qa.setdefault("alertes_rendu", []).append(f"remotion indisponible, rendu Pillow : {str(ex)[:200]}")
-            muet.unlink(missing_ok=True)
-    if moteur == "pillow":
-        with rendu.Encodeur(muet, w, h, fps) as enc:
-            for i in range(int(total * fps)):
-                enc.ecrire(_image(i / fps, ep, chrono, fond, w, h, nom))
-    qa["moteur_rendu"] = moteur
+    with rendu.Encodeur(muet, w, h, fps) as enc:
+        for i in range(int(total * fps)):
+            enc.ecrire(_image(i / fps, ep, chrono, fond, w, h, nom))
     audio = out_dir / "mixage.wav"
     rendu.ecrire_wav(audio, voix)
     final = out_dir / f"{ep['id']}.mp4"

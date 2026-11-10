@@ -33,8 +33,7 @@ Interdit : violence décrite en détail, génocides et massacres, dirigeants apr
 Visuel (thème "parchemin") : en plus des scènes habituelles, utilise `frise` (params {"reperes":[{"date","label","accent"?}] 2 à 6}), `carte` (params {"lieux":[{"nom","x","y"}] 2 à 5, x et y de 0 à 100, schéma sans échelle})
 et `citation` (params {"texte","auteur","date"?}) : une citation doit avoir une source dans faits.json sur sa phrase. Pas de photo, pas d'image d'archive.
 Format : propose UNIQUEMENT des sujets longs ("format": "long") pour cette chaîne ; les Shorts sont découpés du long, jamais proposés seuls.
-Découpe : marque jusqu'à 3 segments `short` (les moments les plus forts) pour les Shorts.
-Publication : valider.py exige un `cadeau` dans publication.json : 3 petites fiches à partager (faits étonnants, un nombre en lettres, 450 caractères au plus chacune), recopiées mot pour mot dans la description, et une `suite` (15 à 160 caractères, aussi recopiée) qui annonce la prochaine vidéo."""
+Découpe : marque jusqu'à 3 segments `short` (les moments les plus forts) pour les Shorts."""
 
 
 def consignes(profil: dict) -> str:

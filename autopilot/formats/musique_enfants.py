@@ -1,67 +1,61 @@
-"""Format « Musique pour enfants » (chaîne PomPikoBoo) : VRAIES chansons chantées (ACE-Step 1.5, licence MIT) + clip animé façon comptines 3D colorées
-avec les deux personnages de la chaîne (petit éléphant rose, cactus vert à fleur rose), paroles à l'écran mot par mot.
+"""Format « Musique pour enfants » : petites chansons ORIGINALES à chanter (karaoké), mélodie jouée par un instrument synthétisé par du code.
 
-Chaîne de fabrication :
- 1. le rédacteur écrit les PAROLES (originales) et choisit un style musical dans une liste fermée (aucun nom d'artiste, de chanson ni de personnage connu) ;
- 2. `generer_audio` envoie les paroles à un noyau Kaggle GPU (autopilot/cloud/kaggle/lancer_musique.py) : ACE-Step chante, Whisper retranscrit le chant,
-    `alignement.py` cale les paroles sur le chant (taux d'appariement = contrôle de qualité : chant intelligible ou non) ;
- 3. `rendre` anime les personnages (rebond sur le tempo, bouche pilotée par l'énergie de la voix, bras, clignements), affiche les paroles et normalise le son.
+Choix de licence (relu sur les fiches officielles le 2026-11-09) :
+- le son est produit ici même (synth.py : boîte à musique, xylophone, flûte douce ; accompagnement de basse) : aucune licence tierce, rien à créditer ;
+- MusicGen (Meta) : poids sous CC-BY-NC 4.0 = INTERDIT (non commercial) ; Stable Audio Open : licence communautaire de Stability AI (conditions, inscription)
+  = écarté ; ACE-Step v1 (Apache-2.0) et YuE (Apache-2.0) seraient admissibles mais ne sont PAS branchés : GPU lourd, voix chantée française d'enfants non
+  vérifiable ici, et une voix chantée générée sur une chaîne pour enfants est le risque le plus élevé de la politique de YouTube. Voir la spec.
+- les paroles sont écrites par le rédacteur (originales, jamais copiées) ; aucune comptine ni chanson existante : un garde-fou refuse les mélodies qui
+  ressemblent à des airs connus.
 
-Licences (relues sur les fichiers officiels le 2026-11-10) : ACE-Step 1.5 = MIT (fichier LICENSE du dépôt + fiche Hugging Face, « usage commercial autorisé ») ;
-Whisper (faster-whisper) = MIT ; MusicGen (CC-BY-NC) et Stable Audio Open (licence communautaire) restent exclus. Personnages et décor : dessinés par code (pompikoboo.py).
-
-Garde-fous conservés : mots interdits pour enfants, `pour_enfants` obligatoire, pas de chiffres, pas d'appel à s'abonner, pas de comptine ni chanson connue
-(liste de titres et de premiers vers refusés ; la ressemblance MÉLODIQUE d'un chant généré ne se vérifie pas par code : écoute humaine avant activation, voir le bilan).
-Crochets du moteur : `consignes`, `valider_episode`, `generer_audio`, `rendre`, `miniature`. `CONTROLES_STANDARD = False`.
-
+Crochets du moteur : `consignes`, `valider_episode`. `CONTROLES_STANDARD = False`. Pas de voix (script_voix vide) : les paroles s'affichent, syllabe par syllabe.
 episode.json : {id, titre, chaine, theme, video: "short"|"long", format_contenu: "musique_enfants", pour_enfants: true,
-                chanson: {style: <STYLES>, tempo: 70-130, strophes: {"c1": {"lignes": ["Le petit éléphant danse", ...]}, "r": {...}}, ordre: ["c1","r",...]},
-                miniature: {texte_haut, gros}}
+                chanson: {tempo, tonalite, instrument, strophes: {"c1": {lignes: [{paroles: "Le pe|tit chat dort", notes: [degrés], rythme: [temps]}]}, "r": {...}},
+                          ordre: ["c1", "r", ...]}, miniature: {texte_haut, gros}}
+Syllabes séparées par « | » dans un mot, mots par des espaces ; une note par syllabe ; chaque ligne dure 4 ou 8 temps.
 """
-import hashlib
-import json
 import math
-import os
 import re
-import subprocess
-import sys
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw
 
-from . import alignement, commun, pompikoboo, rendu
+from . import commun, rendu, synth
 
 CONTROLES_STANDARD = False
 LUFS = -16.0
-DUREE_S = {"short": (25, 80), "long": (90, 480)}
-TEMPO = (70, 130)
-S_PAR_LIGNE = 5.2  # durée moyenne d'une ligne chantée (estimation pour demander la bonne durée au modèle)
-INTRO_S, FIN_S = 6.0, 5.0
-MIN_APPARIEMENT = alignement.MIN_APPARIEMENT
+DUREE_S = {"short": (20, 60), "long": (90, 900)}
+TONIQUES = {"do": 261.63, "re": 293.66, "fa": 349.23, "sol": 392.00}
+INSTRUMENTS = ("boite", "xylophone", "flute")
+TEMPO = (60, 110)
+TEMPS_VALIDES = (0.5, 1, 1.5, 2, 3, 4)
+INTRO_TEMPS = 4
+FIN_S = 2.5
 
-# Styles : liste fermée (le texte envoyé au modèle est écrit ici, jamais par le rédacteur : pas de nom d'artiste ni de marque).
-STYLES = {
-    "comptine_joyeuse": "cheerful children's pop song, nursery rhyme feel, bouncy ukulele, xylophone, glockenspiel, hand claps, bright and happy, simple singalong chorus, warm friendly female vocal, clear diction",
-    "danse": "upbeat children's dance song, playful bass, handclaps, bells, energetic and joyful, catchy singalong chorus, warm friendly female vocal, clear diction",
-    "berceuse": "gentle children's lullaby, soft music box, warm piano, slow and soothing, tender female vocal, clear diction",
-    "balade": "sweet children's folk song, acoustic guitar, light percussion, whistling, cheerful walking rhythm, warm friendly female vocal, clear diction",
-}
-PERSONNAGES = {"elephant": "Pompi", "cactus": "Piko"}  # à confirmer par l'utilisateur : assets-persos/pompikoboo/persos.json
+STYLE = {"ciel_haut": "#9ADBFF", "ciel_bas": "#FFF3D6", "colline1": "#7ED87A", "colline2": "#4FBF6A", "soleil": "#FFD84A", "encre": "#2F2A55", "doux": "#7C77A8",
+         "accent": "#FF5E8A", "carte": "#FFFFFF", "cyan": "#38C6E0"}
 
 RE_MOT_INTERDIT = re.compile(r"peur|mort|tuer|tue\b|sang|monstre|arme|guerre|fant[ôo]me|m[ée]chant|bagarre|alcool|\bvin\b|bi[èe]re|cigarette|drogue|argent|ach[èe]te|"
-                             r"gagner|disney|pok[ée]mon|mickey|coca|mcdonald|nintendo|youtube|tiktok|netflix|lego|abonne|likez?|clique|promo|dangereu|pleure|cauchemar|cocomelon", re.I)
+                             r"gagner|disney|pok[ée]mon|mickey|coca|mcdonald|nintendo|youtube|tiktok|netflix|lego|abonne|likez?|clique|promo|dangereu|pleure|cauchemar", re.I)
 RE_URL = re.compile(r"https?://|www\.|\.com\b|\.fr\b", re.I)
-# Titres et premiers vers de comptines/chansons existantes : refusés tels quels dans les paroles et le titre.
-RE_AIR_CONNU = re.compile(r"fr[èe]re jacques|clair de la lune|petite [ée]toile|vous dirai.?je|pont d.avignon|petit navire|souris verte|alouette|meunier|claire fontaine|"
-                          r"ainsi font|savez.vous planter|joyeux anniversaire|promenons.nous|baby shark|let it go|roues du bus|wheels on the bus|do r[ée] mi|"
-                          r"fais dodo|j.ai du bon tabac|il pleut,? il mouille|dans la ferme|vieux macdonald|marinier|cadet rousselle|ah ! ?vous", re.I)
-CONSIGNES = """Chaîne MUSIQUE POUR ENFANTS « PomPikoBoo » (3 à 8 ans) : tu écris les PAROLES de petites chansons ORIGINALES, qu'une IA chantera. Les deux héros de la chaîne sont un petit éléphant rose (Pompi) et un cactus vert à fleur rose (Piko) : ils peuvent apparaître dans les paroles (leurs prénoms, simples).
-Un Short = un couplet et un refrain (6 à 10 lignes en tout, 30 à 60 s) ; un long = une chanson entière (couplets et refrains, 2 à 6 minutes).
-Contenu : mots très simples, phrases courtes (3 à 8 mots), rimes faciles, beaucoup de répétitions dans le refrain (les enfants chantent avec), des gestes à imiter (taper des mains, sauter, tourner), les animaux, les couleurs, les saisons, se laver les mains, ranger ses jouets. Gentil, joyeux, jamais effrayant.
-Interdit : peur, mort, violence, monstre, arme, alcool, argent, achats, marques, personnages ou chansons existants (aucune comptine connue, aucun air connu, rien qui ressemble aux chansons d'autres chaînes), appel à s'abonner ou à liker, promesse de résultat, chiffres (écris les nombres en lettres), tout lien.
-Format du champ `chanson` : `style` parmi comptine_joyeuse, danse, berceuse, balade ; `tempo` 70 à 130 ; `strophes` : {"c1": {"lignes": ["…", "…"]}, "r": {"lignes": [...]}} (couplets "c1", "c2"…, refrain "r") de 2 à 8 lignes ; `ordre` (ex. ["c1","r","c2","r"]). Une ligne = un vers chanté sur environ 5 secondes. Le refrain reprend exactement les mêmes paroles à chaque passage.
-Titre : « Chanson … pour enfants » ou « Comptine … » (70 caractères au plus). Description : de quoi parle la chanson, « Chanson originale à chanter avec les paroles à l'écran. », une ligne disant que la voix, la musique et les images sont créées avec des outils informatiques ; AUCUN lien. La chaîne est déclarée « conçue pour les enfants » : les commentaires sont désactivés par YouTube, ne cherche pas à en provoquer."""
+
+# Airs connus (intervalles en degrés d'une gamme) : une suite de 5 intervalles identique = trop ressemblant, refusé.
+AIRS_CONNUS = {
+    "Ah ! vous dirai-je, maman (Brille, petite étoile)": [0, 4, 0, 1, 0, -1, -2, 0, -1, 0, -1, 0, -1, 0],
+    "Frère Jacques": [1, 1, -2, 0, 1, 1, -2, 2, 1, 1, -2, 1, 1],
+    "Au clair de la lune": [0, 0, 1, 1, -1, -1, 2, -1, 0, -1],
+    "Joyeux anniversaire": [0, 1, -1, 3, -1],
+    "Sur le pont d'Avignon": [0, 1, 1, 1, -1, 0, 0],
+    "Do, ré, mi (La mélodie du bonheur)": [1, 1, -2, 1, 1, 1, -1],
+}
+
+CONSIGNES = """Chaîne MUSIQUE POUR ENFANTS (3 à 8 ans) : tu composes de petites chansons ORIGINALES à chanter (karaoké : la mélodie est jouée, les paroles s'affichent syllabe par syllabe). Un Short = un couplet et un refrain (20 à 60 secondes) ; un long = la chanson entière (1 min 30 à 15 min).
+Contenu pour enfants : mots simples, phrases courtes, des animaux, des saisons, des gestes (taper des mains, sauter), les couleurs, les nombres, se laver les mains, ranger ses jouets. Gentil, joyeux, jamais effrayant.
+Interdit : peur, mort, violence, monstre, arme, alcool, argent, achats, marques, personnages ou chansons existants, appel à s'abonner ou à liker, promesse de résultat, tout lien dans la description. Pas de comptine connue ni de mélodie qui y ressemble : tout est original (un contrôle compare ta mélodie à des airs connus et refuse).
+Format du champ `chanson` (voir le module) : `tempo` 60 à 110, `tonalite` do, re, fa ou sol, `instrument` boite, xylophone ou flute, `strophes` (un couplet "c1", un refrain "r"…), `ordre` (ex. ["c1","r","c2","r"]).
+Chaque ligne : `paroles` avec les syllabes séparées par « | » (« Le pe|tit chat dort ») ; `notes` : UN degré de gamme par syllabe (1 = tonique, 5 = quinte, 8 = octave ; maximum 5 degrés d'écart entre deux notes, tessiture d'une octave ; reste facile à chanter pour un enfant) ; `rythme` : une durée en temps par note (0.5, 1, 1.5, 2, 3 ou 4) ; une ligne dure 4 ou 8 temps. Le refrain répète les mêmes paroles et la même mélodie à chaque passage.
+Titre : « Chanson … pour enfants » ou « Comptine … » (70 caractères au plus). Description : de quoi parle la chanson, « Chanson originale à chanter avec les paroles à l'écran. », une ligne sur la voix et la musique créées avec des outils informatiques ; AUCUN lien. La chaîne est déclarée « conçue pour les enfants » : les commentaires sont désactivés par YouTube, ne cherche pas à en provoquer."""
 
 
 def consignes(profil: dict) -> str:
@@ -73,43 +67,56 @@ def type_video(ep: dict) -> str:
 
 
 def script_voix(ep: dict) -> dict:
-    return {"phrases": []}  # la voix est CHANTÉE par le modèle de musique (generer_audio), pas lue par le moteur de voix
+    return {"phrases": []}  # pas de voix : la mélodie est jouée, les paroles s'affichent
 
 
-# ---------------------------------------------------------------- paroles
-def lignes_dans_l_ordre(chanson: dict) -> list[dict]:
-    """[{texte, strophe, refrain}] dans l'ordre chanté."""
+# ---------------------------------------------------------------- partition
+def syllabes(paroles: str) -> list[tuple[str, int]]:
+    """[(syllabe, index du mot)] pour « Le pe|tit chat dort »."""
     out = []
-    for cle in chanson["ordre"]:
-        for t in chanson["strophes"][cle]["lignes"]:
-            out.append({"texte": str(t).replace("|", ""), "strophe": cle, "refrain": cle.lower().startswith("r")})
+    for m, mot in enumerate(str(paroles).split()):
+        for s in mot.split("|"):
+            out.append((s, m))
     return out
 
 
-def duree_estimee_s(chanson: dict) -> float:
-    return INTRO_S + S_PAR_LIGNE * len(lignes_dans_l_ordre(chanson)) + FIN_S
+def lignes_dans_l_ordre(chanson: dict) -> list[dict]:
+    return [l for cle in chanson["ordre"] for l in chanson["strophes"][cle]["lignes"]]
 
 
-def paroles_balisees(chanson: dict) -> str:
-    """Paroles avec balises de structure comprises par ACE-Step ([Verse], [Chorus]…)."""
-    blocs, couplets = [], {}
-    for cle in chanson["ordre"]:
-        if cle.lower().startswith("r"):
-            tete = "[Chorus]"
-        else:
-            couplets.setdefault(cle, len(couplets) + 1)
-            tete = f"[Verse {couplets[cle]}]"
-        blocs.append(tete + chr(10) + chr(10).join(str(t).replace("|", "") for t in chanson["strophes"][cle]["lignes"]))
-    return "[Intro]\n\n" + "\n\n".join(blocs) + "\n\n[Outro]"
+def duree_chanson_s(chanson: dict) -> float:
+    temps = sum(sum(l["rythme"]) for l in lignes_dans_l_ordre(chanson))
+    return (INTRO_TEMPS + temps) * 60.0 / chanson["tempo"] + FIN_S
 
 
-def entree_musique(ep: dict) -> dict:
-    ch = ep["chanson"]
-    return {"caption": STYLES[ch["style"]] + f", {ch['tempo']} bpm, original melody", "paroles": paroles_balisees(ch), "duree": round(duree_estimee_s(ch)),
-            "bpm": ch["tempo"], "langue": "fr", "lignes": [l["texte"] for l in lignes_dans_l_ordre(ch)]}
+def partition(chanson: dict) -> dict:
+    """Calendrier : notes (début, durée, degré), lignes (début, fin, syllabes avec leur début/fin) en secondes."""
+    beat = 60.0 / chanson["tempo"]
+    t = INTRO_TEMPS * beat
+    notes, lignes = [], []
+    for k, l in enumerate(lignes_dans_l_ordre(chanson)):
+        debut, syl = t, []
+        for (s, m), deg, r in zip(syllabes(l["paroles"]), l["notes"], l["rythme"]):
+            notes.append((t, r * beat, deg, k))
+            syl.append({"s": s, "mot": m, "debut": t, "fin": t + r * beat})
+            t += r * beat
+        lignes.append({"debut": debut, "fin": t, "syl": syl, "paroles": l["paroles"]})
+    return {"notes": notes, "lignes": lignes, "fin": t + FIN_S, "beat": beat}
 
 
 # ---------------------------------------------------------------- validation
+def _intervalles(notes: list) -> list[int]:
+    return [b - a for a, b in zip(notes, notes[1:])]
+
+
+def _contient(grand: list[int], motif: list[int], n: int = 5) -> bool:
+    for i in range(len(motif) - n + 1):
+        m = motif[i:i + n]
+        if any(grand[j:j + n] == m for j in range(len(grand) - n + 1)):
+            return True
+    return False
+
+
 def valider_episode(ep: dict, faits, pub, profil: dict, reseau: bool = True) -> tuple[list[str], list[str]]:
     err: list[str] = []
     av: list[str] = []
@@ -125,48 +132,65 @@ def valider_episode(ep: dict, faits, pub, profil: dict, reseau: bool = True) -> 
         return err + ["« chanson » manque"], av
     if isinstance(ch.get("tempo"), bool) or not isinstance(ch.get("tempo"), int) or not TEMPO[0] <= ch["tempo"] <= TEMPO[1]:
         err.append(f"« tempo » : entier de {TEMPO[0]} à {TEMPO[1]}")
-    if ch.get("style") not in STYLES:
-        err.append(f"« style » doit être l'un de : {', '.join(STYLES)}")
+    if ch.get("tonalite") not in TONIQUES:
+        err.append(f"« tonalite » doit être l'une de : {', '.join(TONIQUES)}")
+    if ch.get("instrument") not in INSTRUMENTS:
+        err.append(f"« instrument » doit être l'un de : {', '.join(INSTRUMENTS)}")
     st, ordre = ch.get("strophes"), ch.get("ordre")
     if not isinstance(st, dict) or not st or not isinstance(ordre, list) or not ordre or any(o not in st for o in ordre):
         return err + ["« strophes » (dictionnaire) et « ordre » (liste de noms de strophes existantes) obligatoires"], av
+    toutes: list[int] = []
     paroles_all: list[str] = []
     for nom, s in st.items():
         ls = s.get("lignes") if isinstance(s, dict) else None
-        if not isinstance(ls, list) or not 2 <= len(ls) <= 8:
-            err.append(f"strophe {nom} : 2 à 8 lignes")
+        if not isinstance(ls, list) or not 2 <= len(ls) <= 6:
+            err.append(f"strophe {nom} : 2 à 6 lignes")
             continue
         for i, l in enumerate(ls, 1):
             n = f"strophe {nom}, ligne {i}"
-            if not isinstance(l, str) or not l.strip():
-                err.append(f"{n} : une ligne de paroles est un texte non vide")
+            if not isinstance(l, dict) or not isinstance(l.get("paroles"), str) or not isinstance(l.get("notes"), list) or not isinstance(l.get("rythme"), list):
+                err.append(f"{n} : paroles, notes et rythme obligatoires")
                 continue
-            mots = l.replace("|", "").split()
-            paroles_all.append(" ".join(mots))
-            if not 2 <= len(mots) <= 9 or len(" ".join(mots)) > 60:
-                err.append(f"{n} : 2 à 9 mots et 60 caractères au plus (phrase courte, chantée sur environ 5 secondes)")
-            if any(len(m) > 18 for m in mots):
-                err.append(f"{n} : mot de plus de 18 caractères (reste simple pour des enfants)")
+            syl = syllabes(l["paroles"])
+            paroles_all.append(l["paroles"].replace("|", ""))
+            if not syl or any(not x or len(x) > 12 for x, _ in syl):
+                err.append(f"{n} : syllabes vides ou de plus de 12 caractères")
+            if not len(syl) == len(l["notes"]) == len(l["rythme"]):
+                err.append(f"{n} : {len(syl)} syllabe(s), {len(l['notes'])} note(s), {len(l['rythme'])} durée(s) : une note et une durée par syllabe")
+                continue
+            if any(isinstance(x, bool) or not isinstance(x, int) or not -2 <= x <= 12 for x in l["notes"]):
+                err.append(f"{n} : notes = degrés entiers de -2 à 12 (1 = tonique)")
+                continue
+            if any(x not in TEMPS_VALIDES for x in l["rythme"]):
+                err.append(f"{n} : durées autorisées : {', '.join(map(str, TEMPS_VALIDES))}")
+                continue
+            if sum(l["rythme"]) not in (4, 8):
+                err.append(f"{n} : la ligne dure {sum(l['rythme'])} temps, il en faut 4 ou 8")
+            if max(l["notes"]) - min(l["notes"]) > 7:
+                err.append(f"{n} : tessiture de plus d'une octave : trop difficile à chanter")
+            if any(abs(b - a) > 5 for a, b in zip(l["notes"], l["notes"][1:])):
+                err.append(f"{n} : saut de plus de 5 degrés entre deux notes")
+            if max(len(m.split("|")) for m in l["paroles"].split()) > 3:
+                err.append(f"{n} : un mot de plus de 3 syllabes (reste simple pour des enfants)")
+            toutes += l["notes"]
+            for air, motif in AIRS_CONNUS.items():
+                if _contient(_intervalles(l["notes"]), motif):
+                    err.append(f"{n} : la mélodie ressemble à « {air} » : compose un air original")
     texte = " ".join(paroles_all) + " " + str(ep.get("titre", ""))
     m = RE_MOT_INTERDIT.search(texte)
     if m:
         err.append(f"paroles ou titre : « {m.group(0)} » interdit sur une chaîne pour enfants (peur, violence, argent, marque, appel à s'abonner…)")
-    m = RE_AIR_CONNU.search(texte)
-    if m:
-        err.append(f"paroles ou titre : « {m.group(0)} » ressemble à une chanson ou comptine existante : écris des paroles originales")
     if commun.RE_PROMESSE.search(texte):
         err.append("promesse interdite")
     if commun.chiffres(texte):
         err.append("pas de chiffres dans les paroles ni le titre (écris les nombres en lettres)")
     if not err:
+        d = duree_chanson_s(ch)
         bornes = DUREE_S[v]
-        d = duree_estimee_s(ch)
         if not bornes[0] <= d <= bornes[1]:
-            err.append(f"la chanson durera environ {d:.0f} s : il faut de {bornes[0]} à {bornes[1]} s pour un {'Short' if v == 'short' else 'long'}")
-        if not any(o.lower().startswith("r") for o in ordre):
-            err.append("il faut un refrain (strophe nommée « r »)")
-        if len(set(ordre)) == len(ordre) and len(ordre) > 2:
-            av.append("aucune strophe n'est reprise : une chanson d'enfants gagne à répéter son refrain")
+            err.append(f"la chanson dure {d:.0f} s : il faut de {bornes[0]} à {bornes[1]} s pour un {'Short' if v == 'short' else 'long'}")
+        if len(set(toutes)) < 3:
+            err.append("mélodie trop pauvre : au moins trois notes différentes")
     if not re.search(r"chanson|comptine", commun.norm(str(ep.get("titre", "")))):
         err.append("titre : doit contenir « chanson » ou « comptine »")
     if isinstance(pub, dict):
@@ -187,27 +211,28 @@ def valider_episode(ep: dict, faits, pub, profil: dict, reseau: bool = True) -> 
     return err, av
 
 
-# ---------------------------------------------------------------- audio (cloud)
-def _sha(o) -> str:
-    return hashlib.sha1(json.dumps(o, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()[:16]
-
-
-def generer_audio(ep: dict, ep_dir: Path, sans_cloud: bool = False) -> None:
-    """Produit ep_dir/chanson.wav (chant + musique) et ep_dir/alignement.json via le noyau Kaggle (ACE-Step + Whisper). Reprise : même entrée = rien à refaire."""
-    ep_dir = Path(ep_dir)
-    entree = entree_musique(ep)
-    marque = ep_dir / "chanson.sha"
-    cle = _sha(entree)
-    if (ep_dir / "chanson.wav").exists() and (ep_dir / "alignement.json").exists() and (not marque.exists() or marque.read_text().strip() == cle):
-        return
-    if sans_cloud:
-        raise FileNotFoundError("chanson annoncée prête mais chanson.wav / alignement.json absents")
-    (ep_dir / "chanson-entree.json").write_text(json.dumps(entree, ensure_ascii=False, indent=1), encoding="utf-8")
-    racine = Path(__file__).resolve().parents[1]
-    cmd = [sys.executable, str(racine / "cloud" / "kaggle" / "lancer_musique.py"), str(ep_dir)]
-    print("$", " ".join(cmd), flush=True)
-    subprocess.run(cmd, check=True, env={**os.environ, "PYTHONIOENCODING": "utf-8"})
-    marque.write_text(cle, encoding="utf-8")
+# ---------------------------------------------------------------- audio
+def piste_audio(ep: dict, graine: int = 0) -> np.ndarray:
+    ch = ep["chanson"]
+    p = partition(ch)
+    tonique = TONIQUES[ch["tonalite"]]
+    total = p["fin"]
+    ev = [(t, d * 0.97, synth.frequence(deg, tonique)) for t, d, deg, _ in p["notes"]]
+    melodie = synth.melodie(ev, total, ch["instrument"])
+    # accompagnement : basse douce sur chaque temps fort (accords 1, 4, 5, 1), petit arpège d'introduction
+    beat = p["beat"]
+    basse = []
+    racines = (1, 4, 5, 1)
+    for i in range(INTRO_TEMPS):
+        basse.append((i * beat, beat * 0.9, synth.frequence((1, 3, 5, 3)[i] + 7, tonique)))
+    for k, l in enumerate(p["lignes"]):
+        r = racines[k % 4]
+        n_temps = round((l["fin"] - l["debut"]) / beat)
+        for b in range(0, n_temps, 2):
+            basse.append((l["debut"] + b * beat, beat * 1.8, synth.frequence(r - 7, tonique)))
+    accomp = synth.melodie(basse, total, "boite")
+    x = melodie * 0.8 + accomp * 0.45
+    return (0.8 * x / (np.max(np.abs(x)) + 1e-9)).astype(np.float32)
 
 
 # ---------------------------------------------------------------- images
@@ -215,183 +240,105 @@ def _taille(v: str) -> tuple[int, int]:
     return (1080, 1920) if v == "short" else (1280, 720)
 
 
-STYLE = {"ciel_haut": "#4FC3F7", "ciel_bas": "#E1F5FE", "colline1": "#7CD84A", "colline2": "#4CBF4C", "colline3": "#2FA84F", "soleil": "#FFE14D", "encre": "#3B2A6E",
-         "accent": "#FF4F9A", "doux": "#7C6BC4", "orange": "#FF9A2E", "cyan": "#22C7E8"}
-COULEURS_NOTES = ("#FF4F9A", "#FFB400", "#22C7E8", "#7C6BC4", "#4CBF4C")
-
-
 class _Decor:
     def __init__(self, w: int, h: int, graine: int):
         self.w, self.h = w, h
         self.fond = rendu.degrade(w, h, STYLE["ciel_haut"], STYLE["ciel_bas"])
         d = ImageDraw.Draw(self.fond)
-        r = np.random.default_rng(graine)
-        base = h * 0.66
-        for c, y, a in ((STYLE["colline1"], 0.70, 0.07), (STYLE["colline2"], 0.78, 0.06), (STYLE["colline3"], 0.88, 0.05)):
-            ph = float(r.uniform(0, 6))
-            pts = [(x, h * y - h * a * (0.5 + 0.5 * math.sin(x / w * 3.4 + ph))) for x in range(0, w + 8, 8)]
+        for c, y, a in ((STYLE["colline1"], 0.86, 0.10), (STYLE["colline2"], 0.94, 0.07)):
+            pts = [(x, h * y - h * a * (0.5 + 0.5 * math.sin(x / w * 4 + graine))) for x in range(0, w + 10, 10)]
             d.polygon(pts + [(w, h), (0, h)], fill=c)
-            for _ in range(14):  # fleurs semées sur la colline
-                fx = float(r.uniform(0.02, 0.98)) * w
-                fy = h * y - h * a * (0.5 + 0.5 * math.sin(fx / w * 3.4 + ph)) + float(r.uniform(18, 60))
-                col = ("#FFFFFF", "#FF7BB5", "#FFD84A", "#B58CFF")[int(r.integers(0, 4))]
-                for k in range(5):
-                    ang = k * 1.2566
-                    d.ellipse((fx + math.cos(ang) * 11 - 8, fy + math.sin(ang) * 11 - 8, fx + math.cos(ang) * 11 + 8, fy + math.sin(ang) * 11 + 8), fill=col)
-                d.ellipse((fx - 6, fy - 6, fx + 6, fy + 6), fill="#FFB400")
-        del base
-        self.nuages = [(float(r.uniform(0, 1)), float(r.uniform(0.18, 0.5)), float(r.uniform(40, 80)), float(r.uniform(0.3, 0.8))) for _ in range(5)]
+        r = np.random.default_rng(graine)
+        self.formes = [(float(r.uniform(0, 1)), float(r.uniform(0.05, 0.6)), float(r.uniform(18, 46)), float(r.uniform(0.2, 0.6)), ("#FFFFFF", "#FFD1E3", "#C8F0FF", "#FFF2A8")[int(r.integers(0, 4))]) for _ in range(9)]
 
     def image(self, t: float) -> Image.Image:
         img = self.fond.copy()
         d = ImageDraw.Draw(img)
-        cx, cy = (self.w * 0.84, self.h * 0.34) if self.h > self.w else (self.w * 0.90, self.h * 0.32)
-        for i in range(14):  # soleil souriant, rayons qui tournent
-            a = t * 0.35 + i * math.pi / 7
-            d.line((cx + math.cos(a) * 82, cy + math.sin(a) * 82, cx + math.cos(a) * 128, cy + math.sin(a) * 128), fill=STYLE["soleil"], width=13)
-        d.ellipse((cx - 72, cy - 72, cx + 72, cy + 72), fill=STYLE["soleil"])
-        d.ellipse((cx - 28, cy - 18, cx - 16, cy - 2), fill=STYLE["encre"])
-        d.ellipse((cx + 16, cy - 18, cx + 28, cy - 2), fill=STYLE["encre"])
-        d.arc((cx - 30, cy - 12, cx + 30, cy + 34), 20, 160, fill=STYLE["encre"], width=6)
-        for (x0, y0, r, vit) in self.nuages:
-            x = ((x0 + vit * t / 60) % 1.3 - 0.15) * self.w
-            y = self.h * y0
-            for dx, dy, rr in ((0, 0, r), (-r * 0.9, r * 0.2, r * 0.7), (r * 0.9, r * 0.25, r * 0.75), (r * 0.2, -r * 0.4, r * 0.7)):
-                d.ellipse((x + dx - rr, y + dy - rr * 0.8, x + dx + rr, y + dy + rr * 0.8), fill="#FFFFFF")
+        cx, cy = self.w * 0.14, self.h * 0.09
+        for i in range(12):  # soleil : rayons qui tournent doucement
+            a = t * 0.3 + i * math.pi / 6
+            d.line((cx + math.cos(a) * 70, cy + math.sin(a) * 70, cx + math.cos(a) * 112, cy + math.sin(a) * 112), fill=STYLE["soleil"], width=10)
+        d.ellipse((cx - 62, cy - 62, cx + 62, cy + 62), fill=STYLE["soleil"])
+        for (x0, y0, r, vit, c) in self.formes:  # nuages et bulles qui dérivent
+            x = ((x0 + vit * t / 40) % 1.2 - 0.1) * self.w
+            y = self.h * y0 + 12 * math.sin(t * 0.8 + x0 * 9)
+            d.ellipse((x - r * 1.6, y - r, x + r * 1.6, y + r), fill=c)
+            d.ellipse((x - r * 0.4, y - r * 1.5, x + r * 1.1, y + r * 0.4), fill=c)
         return img
 
 
-def _notes(img: Image.Image, t: float, beat: float, ox: float, oy: float, e: float, graine: int) -> None:
-    """Petites notes de musique qui montent et ondulent depuis le personnage qui chante."""
-    d = ImageDraw.Draw(img)
-    for k in range(4):
-        age = ((t / (beat * 2) + k / 4) % 1.0)
-        x = ox + math.sin(age * 6 + k * 1.7 + graine) * 70 * e + (k - 1.5) * 40 * e
-        y = oy - age * 420 * e
-        col = COULEURS_NOTES[(k + graine) % 5]
-        s = 16 * e * (1 - age * 0.3)
-        d.ellipse((x - s, y - s * 0.75, x + s, y + s * 0.75), fill=col)
-        d.line((x + s * 0.85, y, x + s * 0.85, y - s * 3.1), fill=col, width=max(3, int(s * 0.28)))
-        d.line((x + s * 0.85, y - s * 3.1, x + s * 2.0, y - s * 2.3), fill=col, width=max(3, int(s * 0.3)))
-
-
-def _mots_ligne(d, ligne: dict, f, largeur_max: float):
-    """Retourne les lignes d'écran : [[(mot, largeur)], ...]."""
-    espace = d.textlength(" ", font=f)
-    rangees, cur, wcur = [], [], 0.0
-    for m in ligne["mots"]:
-        lw = d.textlength(m["m"], font=f)
-        if cur and wcur + lw > largeur_max:
-            rangees.append((cur, wcur - espace))
-            cur, wcur = [], 0.0
-        cur.append((m, lw))
-        wcur += lw + espace
-    rangees.append((cur, wcur - espace))
-    return rangees, espace
-
-
-def _paroles(img, d, t: float, lignes: list[dict], cur: int, w: int, h: int, e: float, portrait: bool) -> None:
-    f = rendu.police(int((78 if portrait else 62) * e))
-    l = lignes[cur]
-    rangees, espace = _mots_ligne(d, l, f, w - 120)
-    haut = f.size * 1.35 * len(rangees)
-    y0 = h * (0.075 if portrait else 0.06)
-    pad = 26
-    # bandeau doux blanc translucide derrière les paroles (lisibilité)
-    box = (50, int(y0 - pad), w - 50, int(y0 + haut + pad - 10))
-    zone = img.crop(box).convert("RGBA")
-    ov = Image.new("RGBA", zone.size, (0, 0, 0, 0))
-    ImageDraw.Draw(ov).rounded_rectangle((0, 0, zone.width - 1, zone.height - 1), radius=48, fill=(255, 255, 255, 190))
-    img.paste(Image.alpha_composite(zone, ov).convert("RGB"), box[:2])
-    y = y0
-    for rang, lw in rangees:
-        x = w / 2 - lw / 2
-        for m, mw in rang:
-            chantee = t >= m["debut"]
-            en_cours = m["debut"] <= t < max(m["fin"], m["debut"] + 0.25)
-            dy = -16 * e * math.sin(math.pi * (t - m["debut"]) / max(0.25, m["fin"] - m["debut"])) if en_cours else 0
-            col = STYLE["accent"] if chantee else STYLE["encre"]
-            d.text((x, y + dy), m["m"], font=f, fill=col, stroke_width=max(3, int(5 * e)), stroke_fill="#FFFFFF")
-            x += mw + espace
-        y += f.size * 1.35
-
-
-def _scene(t: float, ep: dict, lignes: list[dict], meta: list[dict], env: np.ndarray, fps: int, decor: _Decor, w: int, h: int, beat: float) -> Image.Image:
+def _image(t: float, ep: dict, p: dict, decor: _Decor, w: int, h: int, nom: str) -> Image.Image:
     img = decor.image(t)
     d = ImageDraw.Draw(img)
     portrait = h > w
     e = w / 1080 if portrait else w / 1280
-    cur = max([i for i, l in enumerate(lignes) if t >= l["debut"] - 0.3] or [-1])
-    chante_ligne = cur >= 0 and lignes[cur]["debut"] - 0.1 <= t <= lignes[cur]["fin"] + 0.25
-    ouv = float(env[min(len(env) - 1, int(t * fps))]) if chante_ligne else 0.0
-    refrain = cur >= 0 and meta[cur]["refrain"]
-    # qui chante : l'éléphant et le cactus se relaient d'une ligne à l'autre ; le refrain se chante à deux
-    chanteur = None if cur < 0 else "tous" if refrain else ("elephant" if cur % 2 == 0 else "cactus")
-    echelle = (0.90 if portrait else 0.72)
-    sol = h * (0.93 if portrait else 0.93)
-    pos = {"elephant": w * (0.26 if portrait else 0.30), "cactus": w * (0.74 if portrait else 0.70)}
-    for nom, ph in (("elephant", 0.0), ("cactus", 0.25)):
-        chante = chanteur in ("tous", nom) and chante_ligne
-        img_p, dy, _ = pompikoboo.animer(nom, t, beat, ouv if chante else 0.0, chante, ph)
-        s = echelle * (1.03 if chante else 1.0)
-        sp = img_p.resize((int(img_p.width * s), int(img_p.height * s)), Image.BICUBIC)
-        x = int(pos[nom] - sp.width / 2)
-        y = int(sol - sp.height + dy * e * echelle)
-        ombre = Image.new("RGBA", (int(sp.width * 0.8), int(34 * e)), (0, 0, 0, 0))
-        ImageDraw.Draw(ombre).ellipse((0, 0, ombre.width - 1, ombre.height - 1), fill=(20, 80, 40, 90))
-        img.paste(ombre, (int(pos[nom] - ombre.width / 2), int(sol - 22 * e)), ombre)
-        img.paste(sp, (x, y), sp)
-        if chante:
-            _notes(img, t, beat, pos[nom], sol - sp.height * 0.75, e, 0 if nom == "elephant" else 2)
-    d = ImageDraw.Draw(img)
-    if cur < 0 or t >= lignes[-1]["fin"] + 0.4:
+    f_l, f_p, f_n = rendu.police(int((92 if portrait else 70) * e)), rendu.police(int((54 if portrait else 40) * e)), rendu.police(int(34 * e))
+    cx = w / 2
+    lignes = p["lignes"]
+    cur = max([i for i, l in enumerate(lignes) if t >= l["debut"] - 0.5] or [-1])
+    if cur < 0 or t >= lignes[-1]["fin"] + 0.3:
         titre = ep["miniature"]["gros"] if cur < 0 else "Bravo !"
-        a = rendu.facilite(t / 0.7) if cur < 0 else rendu.facilite((t - lignes[-1]["fin"]) / 0.6)
-        rendu.texte_centre(d, w / 2, h * 0.12 - (1 - a) * 60, titre, rendu.police(int(130 * e)), STYLE["accent"], w - 100, ombre="#FFFFFF")
+        a = rendu.facilite(t / 0.6) if cur < 0 else 1.0
+        rendu.texte_centre(d, cx, h * 0.34 + (1 - a) * 80, titre, rendu.police(int(130 * e)), STYLE["accent"], w - 100, ombre="#FFFFFF")
         if cur < 0:
-            rendu.texte_centre(d, w / 2, h * 0.12 + 170 * e, "Chante avec nous !", rendu.police(int(58 * e)), STYLE["encre"], w - 120, ombre="#FFFFFF")
+            rendu.texte_centre(d, cx, h * 0.34 + 300 * e, "Chante avec nous !", f_p, STYLE["encre"], w - 120)
     else:
-        _paroles(img, ImageDraw.Draw(img), t, lignes, cur, w, h, e, portrait)
+        l = lignes[cur]
+        y = h * (0.40 if portrait else 0.36)
+        if cur + 1 < len(lignes):  # ligne suivante, en petit, pour préparer l'enfant
+            rendu.texte_centre(d, cx, h * (0.70 if portrait else 0.74), lignes[cur + 1]["paroles"].replace("|", ""), f_p, STYLE["doux"], w - 140)
+        mots: dict[int, list] = {}
+        for s in l["syl"]:
+            mots.setdefault(s["mot"], []).append(s)
+        # mise en ligne mot par mot, syllabe par syllabe : la syllabe chantée se colore et grossit un peu
+        espace = d.textlength(" ", font=f_l)
+        largeurs = [sum(d.textlength(s["s"], font=f_l) for s in ms) for ms in mots.values()]
+        lignes_mots, cur_l, wcur = [], [], 0.0
+        for ms, lw in zip(mots.values(), largeurs):
+            if cur_l and wcur + lw > w - 140:
+                lignes_mots.append((cur_l, wcur - espace))
+                cur_l, wcur = [], 0.0
+            cur_l.append(ms)
+            wcur += lw + espace
+        lignes_mots.append((cur_l, wcur - espace))
+        for ligne, lw in lignes_mots:
+            x = cx - lw / 2
+            for ms in ligne:
+                for s in ms:
+                    chantee = t >= s["debut"]
+                    en_cours = s["debut"] <= t < s["fin"]
+                    couleur = STYLE["accent"] if chantee else STYLE["encre"]
+                    dy = -14 * e * math.sin(math.pi * (t - s["debut"]) / max(0.2, s["fin"] - s["debut"])) if en_cours else 0
+                    d.text((x + 3, y + dy + 3), s["s"], font=f_l, fill="#FFFFFF")
+                    d.text((x, y + dy), s["s"], font=f_l, fill=couleur)
+                    x += d.textlength(s["s"], font=f_l)
+                x += espace
+            y += f_l.size * 1.3
+    d.text((cx - d.textlength(nom, font=f_n) / 2, h - 70 * e), nom, font=f_n, fill=STYLE["encre"])
     return img
-
-
-def charger_chanson(ep: dict, ep_dir: Path):
-    """(audio mono 48 kHz, lignes alignées, méta des lignes, alignement.json)."""
-    ep_dir = Path(ep_dir)
-    al = json.loads((ep_dir / "alignement.json").read_text(encoding="utf-8"))
-    audio = rendu.lire_audio(ep_dir / "chanson.wav", rendu.SR)
-    meta = lignes_dans_l_ordre(ep["chanson"])
-    lignes = al["lignes"]
-    if len(lignes) != len(meta):
-        raise ValueError(f"alignement.json : {len(lignes)} lignes pour {len(meta)} lignes de paroles")
-    return audio, lignes, meta, al
 
 
 def rendre(ep: dict, ep_dir: Path, out_dir: Path, profil: dict, qa: dict, fps: int = 24) -> Path:
     v = type_video(ep)
     w, h = _taille(v)
-    audio, lignes, meta, al = charger_chanson(ep, ep_dir)
-    total = len(audio) / rendu.SR
-    env = alignement.enveloppe_voix(audio, rendu.SR, fps)
-    beat = 60.0 / ep["chanson"]["tempo"]
+    p = partition(ep["chanson"])
     graine = sum(ord(c) for c in ep["id"])
+    audio_x = piste_audio(ep, graine)
+    total = len(audio_x) / rendu.SR
     decor = _Decor(w, h, graine % 17)
-    muet = Path(out_dir) / "rendu.mp4"
+    nom = str(profil.get("nom", "")).replace(" (nom à choisir)", "")
+    muet = out_dir / "rendu.mp4"
     with rendu.Encodeur(muet, w, h, fps) as enc:
         for i in range(int(total * fps)):
-            enc.ecrire(_scene(i / fps, ep, lignes, meta, env, fps, decor, w, h, beat))
-    wav = Path(out_dir) / "mixage.wav"
-    rendu.ecrire_wav(wav, np.clip(audio * 0.92, -1, 1))
-    final = Path(out_dir) / f"{ep['id']}.mp4"
+            enc.ecrire(_image(i / fps, ep, p, decor, w, h, nom))
+    wav = out_dir / "mixage.wav"
+    rendu.ecrire_wav(wav, audio_x)
+    final = out_dir / f"{ep['id']}.mp4"
     mes = rendu.muxer(muet, wav, final, LUFS)
     muet.unlink(missing_ok=True)
     wav.unlink(missing_ok=True)
-    qa.update(lufs=float(mes["input_i"]), pic_dbtp=float(mes["input_tp"]), duree_s=round(rendu.duree(final), 1), lignes=len(lignes), tempo=ep["chanson"]["tempo"],
-              style=ep["chanson"]["style"], appariement=al.get("appariement"), methode_alignement=al.get("methode"), pour_enfants=True)
-    if (al.get("appariement") or 0) < MIN_APPARIEMENT:
-        qa.setdefault("alertes", []).append(f"chant peu intelligible (appariement paroles/chant {al.get('appariement')}) : à écouter avant publication")
-    if al.get("a_ecouter"):
-        qa.setdefault("alertes", []).append(str(al["a_ecouter"]))
+    qa.update(lufs=float(mes["input_i"]), pic_dbtp=float(mes["input_tp"]), duree_s=round(rendu.duree(final), 1), lignes=len(p["lignes"]), tempo=ep["chanson"]["tempo"],
+              instrument=ep["chanson"]["instrument"], pour_enfants=True)
     return final
 
 
@@ -399,13 +346,13 @@ def miniature(ep: dict, profil: dict) -> Image.Image:
     w, h = 1280, 720
     decor = _Decor(w, h, sum(ord(c) for c in ep["id"]) % 17)
     img = decor.image(3.0)
-    mini = ep.get("miniature") or {}
-    for nom, x in (("elephant", 250), ("cactus", 1030)):
-        sp = pompikoboo.sprite(nom, 3, False, 2)
-        sp = sp.resize((int(sp.width * 0.78), int(sp.height * 0.78)), Image.LANCZOS)
-        img.paste(sp, (x - sp.width // 2, h - sp.height + 10), sp)
     d = ImageDraw.Draw(img)
-    rendu.texte_centre(d, 640, 36, str(mini.get("texte_haut", "")).upper(), rendu.police(66), STYLE["encre"], 760, ombre="#FFFFFF")
-    gros = str(mini.get("gros", ""))
-    rendu.texte_centre(d, 640, 190, gros, rendu.police(140 if len(gros) <= 10 else 96), STYLE["accent"], 520, ombre="#FFFFFF")
+    mini = ep.get("miniature") or {}
+    rendu.texte_centre(d, 640, 90, str(mini.get("texte_haut", "")).upper(), rendu.police(70), STYLE["encre"], 1100)
+    rendu.texte_centre(d, 640, 230, str(mini.get("gros", "")), rendu.police(190 if len(str(mini.get("gros", ""))) <= 10 else 130), STYLE["accent"], 1150, ombre="#FFFFFF")
+    for i in range(5):  # notes de musique dessinées (disque + hampe)
+        x, y = 200 + i * 220, 560 + 20 * math.sin(i * 1.7)
+        d.ellipse((x, y, x + 56, y + 42), fill=STYLE["encre"])
+        d.line((x + 52, y + 20, x + 52, y - 90), fill=STYLE["encre"], width=9)
+        d.line((x + 52, y - 90, x + 96, y - 60), fill=STYLE["encre"], width=9)
     return img

@@ -1,7 +1,7 @@
 {
- "etat": "quarantaine",
+ "etat": "ecrit",
  "maj": "2026-11-10T00:41:05",
- "raison": "contrôle qualité : module de format ou episode.json introuvable",
+ "raison": null,
  "tentatives": 0,
  "youtube": {
   "video_id": null,
