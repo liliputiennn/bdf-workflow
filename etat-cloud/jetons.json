@@ -2,56 +2,56 @@
  "fr": {
   "connecte": true,
   "client": true,
-  "maj": "2026-11-13T20:57:41"
+  "maj": "2026-11-14T11:39:19"
  },
  "en": {
   "connecte": false,
   "client": true,
-  "maj": "2026-11-13T20:57:41"
+  "maj": "2026-11-14T11:39:19"
  },
  "histoire": {
   "connecte": false,
   "client": true,
-  "maj": "2026-11-13T20:57:41"
+  "maj": "2026-11-14T11:39:20"
  },
  "sommeil": {
   "connecte": false,
   "client": true,
-  "maj": "2026-11-13T20:57:41"
+  "maj": "2026-11-14T11:39:20"
  },
  "finance-perso": {
   "connecte": false,
   "client": true,
-  "maj": "2026-11-13T20:57:41"
+  "maj": "2026-11-14T11:39:20"
  },
  "langues": {
   "connecte": false,
   "client": true,
-  "maj": "2026-11-13T20:57:41"
+  "maj": "2026-11-14T11:39:20"
  },
  "asmr": {
   "connecte": false,
   "client": true,
-  "maj": "2026-11-13T20:57:41"
+  "maj": "2026-11-14T11:39:20"
  },
  "quiz": {
   "connecte": false,
   "client": true,
-  "maj": "2026-11-13T20:57:41"
+  "maj": "2026-11-14T11:39:20"
  },
  "musique-enfants": {
   "connecte": false,
   "client": true,
-  "maj": "2026-11-13T20:57:41"
+  "maj": "2026-11-14T11:39:20"
  },
  "histoires-enfants": {
   "connecte": false,
   "client": true,
-  "maj": "2026-11-13T20:57:41"
+  "maj": "2026-11-14T11:39:20"
  },
  "meditation": {
   "connecte": false,
   "client": true,
-  "maj": "2026-11-13T20:57:41"
+  "maj": "2026-11-14T11:39:20"
  }
 }
