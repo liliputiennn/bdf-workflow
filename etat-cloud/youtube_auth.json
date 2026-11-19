@@ -1,5 +1,5 @@
 {
- "etat": "a_refaire",
- "raison": "jeton refusé (invalid_grant) : refaire la connexion avec auth.py",
- "maj": "2026-11-19T13:37:30"
+ "etat": "ok",
+ "raison": null,
+ "maj": "2026-11-19T22:20:37"
 }

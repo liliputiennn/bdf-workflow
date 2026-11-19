@@ -1,6 +1,6 @@
 {
  "jour_pt": "2026-11-19",
- "unites": 211,
+ "unites": 214,
  "envois": 3,
  "epuise": false,
  "journal": [
@@ -472,15 +472,36 @@
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T22:20:37",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T22:20:37",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T22:20:37",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
   }
  ],
  "par_chaine": {
   "fr": {
-   "unites": 211,
+   "unites": 214,
    "envois": 3
   }
  },
  "plafond_unites": 10000,
  "plafond_envois": 100,
- "maj": "2026-11-19T15:30:54"
+ "maj": "2026-11-19T22:20:37"
 }
