@@ -85,7 +85,8 @@ jobs:
           [ "$code" = "3" ] && { echo "::error::Connexion YouTube à refaire (jeton expiré ou absent)"; exit 3; }
           exit 0
       - name: Envoi TikTok (Zernio en public, boîte de réception pour les chaînes sans service)
-        if: ${{ env.A_BLANC != 'true' && (hashFiles('autopilot/secrets/tiktok_token.json') != '' || hashFiles('autopilot/secrets/zernio.json') != '') }}
+        # !cancelled() : TikTok part même si l'étape YouTube a échoué (jeton expiré, quota...), les deux envois sont indépendants
+        if: ${{ !cancelled() && env.A_BLANC != 'true' && (hashFiles('autopilot/secrets/tiktok_token.json') != '' || hashFiles('autopilot/secrets/zernio.json') != '') }}
         continue-on-error: true
         run: python autopilot/tiktok/envoi.py
       - name: Nettoyage du stock
