@@ -1,1285 +1,473 @@
 {
- "jour_pt": "2026-11-10",
- "unites": 3323,
- "envois": 45,
+ "jour_pt": "2026-11-19",
+ "unites": 211,
+ "envois": 3,
  "epuise": false,
  "journal": [
   {
-   "t": "2026-11-10T12:53:53",
+   "t": "2026-11-19T15:30:30",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:53",
+   "t": "2026-11-19T15:30:30",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:53",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:54",
+   "t": "2026-11-19T15:30:30",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:54",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:54",
+   "t": "2026-11-19T15:30:30",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:54",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:55",
+   "t": "2026-11-19T15:30:30",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:55",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:55",
+   "t": "2026-11-19T15:30:30",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:55",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:55",
+   "t": "2026-11-19T15:30:30",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:55",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:56",
+   "t": "2026-11-19T15:30:31",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:56",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:56",
+   "t": "2026-11-19T15:30:31",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:56",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:56",
+   "t": "2026-11-19T15:30:31",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:57",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:57",
+   "t": "2026-11-19T15:30:31",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:57",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:57",
+   "t": "2026-11-19T15:30:31",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:58",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:58",
+   "t": "2026-11-19T15:30:31",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:58",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:58",
+   "t": "2026-11-19T15:30:31",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:53:59",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:53:59",
+   "t": "2026-11-19T15:30:31",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:00",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:00",
+   "t": "2026-11-19T15:30:31",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:00",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:00",
+   "t": "2026-11-19T15:30:32",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:01",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:01",
+   "t": "2026-11-19T15:30:32",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:01",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:01",
+   "t": "2026-11-19T15:30:32",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:02",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:02",
+   "t": "2026-11-19T15:30:32",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:02",
-   "op": "videos.update",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:02",
+   "t": "2026-11-19T15:30:32",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:03",
-   "op": "videos.update",
-   "unites": 50,
+   "t": "2026-11-19T15:30:32",
+   "op": "videos.list",
+   "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:04",
+   "t": "2026-11-19T15:30:32",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:32",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:32",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:32",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:32",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:33",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:33",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:33",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:33",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:33",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:33",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:33",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:33",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:33",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:33",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:34",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:34",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:34",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:34",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:34",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:34",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:34",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:34",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:34",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:34",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:34",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:34",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:35",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:35",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:35",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:35",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:35",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:35",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:35",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:35",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:35",
+   "op": "videos.list",
+   "unites": 1,
+   "envois": 0,
+   "chaine": "fr"
+  },
+  {
+   "t": "2026-11-19T15:30:37",
    "op": "videos.insert",
    "unites": 0,
    "envois": 1,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:08",
+   "t": "2026-11-19T15:30:41",
    "op": "thumbnails.set",
    "unites": 50,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:08",
+   "t": "2026-11-19T15:30:41",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:10",
+   "t": "2026-11-19T15:30:43",
    "op": "videos.insert",
    "unites": 0,
    "envois": 1,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:15",
+   "t": "2026-11-19T15:30:46",
    "op": "thumbnails.set",
    "unites": 50,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:15",
+   "t": "2026-11-19T15:30:46",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:16",
+   "t": "2026-11-19T15:30:47",
    "op": "videos.insert",
    "unites": 0,
    "envois": 1,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:19",
+   "t": "2026-11-19T15:30:54",
    "op": "thumbnails.set",
    "unites": 50,
    "envois": 0,
    "chaine": "fr"
   },
   {
-   "t": "2026-11-10T12:54:19",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:21",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:25",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:25",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:26",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:33",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:33",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:34",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:37",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:38",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:39",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:43",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:43",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:44",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:47",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:47",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:48",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:52",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:52",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:53",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:56",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:57",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:54:58",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:04",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:04",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:05",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:08",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:09",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:09",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:15",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:15",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:16",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:21",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:21",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:22",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:28",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T12:55:28",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:05",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:11",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:11",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:12",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:21",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:21",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:23",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:26",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:26",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:27",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:32",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:32",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:33",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:40",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:40",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:41",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:44",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:44",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:46",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:50",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:51",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:52",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:57",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:57",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:43:58",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:07",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:07",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:08",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:11",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:11",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:12",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:19",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:20",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:21",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:27",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:27",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:28",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:35",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:35",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:36",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:43",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:43",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:44",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:50",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T13:44:50",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:57:51",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:57:51",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:57:51",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:57:51",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:57:51",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:57:51",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:57:52",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:57:53",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:57:56",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:57:56",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:57:57",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:00",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:00",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:01",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:06",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:06",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:08",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:11",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:11",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:12",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:15",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:15",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:16",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:20",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:20",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:21",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:24",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:24",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:25",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:28",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:28",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:30",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:34",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:34",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:35",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:38",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:38",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:39",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:43",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:43",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:44",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:47",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:47",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:48",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:52",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:52",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:54",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:57",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:57",
-   "op": "videos.list",
-   "unites": 1,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:58:58",
-   "op": "videos.insert",
-   "unites": 0,
-   "envois": 1,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:59:01",
-   "op": "thumbnails.set",
-   "unites": 50,
-   "envois": 0,
-   "chaine": "fr"
-  },
-  {
-   "t": "2026-11-10T20:59:01",
+   "t": "2026-11-19T15:30:54",
    "op": "videos.list",
    "unites": 1,
    "envois": 0,
@@ -1288,11 +476,11 @@
  ],
  "par_chaine": {
   "fr": {
-   "unites": 3323,
-   "envois": 45
+   "unites": 211,
+   "envois": 3
   }
  },
  "plafond_unites": 10000,
  "plafond_envois": 100,
- "maj": "2026-11-10T20:59:01"
+ "maj": "2026-11-19T15:30:54"
 }

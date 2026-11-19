@@ -1,12 +1,12 @@
 {
- "etat": "programme",
- "maj": "2026-11-10T12:54:33",
+ "etat": "publie",
+ "maj": "2026-11-19T15:30:31",
  "raison": null,
  "tentatives": 0,
  "youtube": {
   "video_id": "aV4M-vsI-R8",
   "url": "https://youtu.be/aV4M-vsI-R8",
-  "visibilite": "programme",
+  "visibilite": "public",
   "publie_a": "2026-11-12T06:45:00Z",
   "miniature": true
  },

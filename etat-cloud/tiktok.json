@@ -356,7 +356,7 @@
    "envoye_ts": 1794344353.707919,
    "chaine": "fr",
    "mode": "planificateur",
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "PUBLISH_COMPLETE",
    "legende": "Être payé sur YouTube : 500, puis 1 000 abonnés\n\n#youtube #monetisation #argent #business #pourtoi",
    "programme_pour": "2026-11-11T08:30:00"
   },
@@ -366,10 +366,10 @@
    "envoye_ts": 1794344358.6779711,
    "chaine": "fr",
    "mode": "planificateur",
-   "statut": "PROCESSING_UPLOAD",
+   "statut": "PUBLISH_COMPLETE",
    "legende": "Live TikTok : 1 000 abonnés, puis les diamants\n\n#tiktoklive #livetiktok #argent #business #pourtoi",
    "programme_pour": "2026-11-11T12:30:00"
   }
  },
- "maj": "2026-11-10T20:59:18"
+ "maj": "2026-11-19T15:31:00"
 }

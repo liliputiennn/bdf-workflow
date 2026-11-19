@@ -1,12 +1,12 @@
 {
- "etat": "programme",
- "maj": "2026-11-10T20:58:06",
+ "etat": "publie",
+ "maj": "2026-11-19T15:30:33",
  "raison": null,
  "tentatives": 0,
  "youtube": {
   "video_id": "GitRf_ZxMkM",
   "url": "https://youtu.be/GitRf_ZxMkM",
-  "visibilite": "programme",
+  "visibilite": "public",
   "publie_a": "2026-11-14T20:15:00Z",
   "miniature": true
  },
